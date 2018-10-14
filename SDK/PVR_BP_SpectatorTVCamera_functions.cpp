@@ -19,7 +19,7 @@ namespace SDK
 
 class USceneCaptureComponent2D* ABP_SpectatorTVCamera_C::GetSceneCapture()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_SpectatorTVCamera.BP_SpectatorTVCamera_C.GetSceneCapture"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_SpectatorTVCamera.BP_SpectatorTVCamera_C.GetSceneCapture");
 
 	ABP_SpectatorTVCamera_C_GetSceneCapture_Params params;
 
@@ -38,7 +38,7 @@ class USceneCaptureComponent2D* ABP_SpectatorTVCamera_C::GetSceneCapture()
 
 void ABP_SpectatorTVCamera_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_SpectatorTVCamera.BP_SpectatorTVCamera_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_SpectatorTVCamera.BP_SpectatorTVCamera_C.UserConstructionScript");
 
 	ABP_SpectatorTVCamera_C_UserConstructionScript_Params params;
 
@@ -55,7 +55,7 @@ void ABP_SpectatorTVCamera_C::UserConstructionScript()
 
 void ABP_SpectatorTVCamera_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_SpectatorTVCamera.BP_SpectatorTVCamera_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_SpectatorTVCamera.BP_SpectatorTVCamera_C.ReceiveBeginPlay");
 
 	ABP_SpectatorTVCamera_C_ReceiveBeginPlay_Params params;
 
@@ -72,7 +72,7 @@ void ABP_SpectatorTVCamera_C::ReceiveBeginPlay()
 
 void ABP_SpectatorTVCamera_C::OnAttachedToFocusedPawn()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_SpectatorTVCamera.BP_SpectatorTVCamera_C.OnAttachedToFocusedPawn"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_SpectatorTVCamera.BP_SpectatorTVCamera_C.OnAttachedToFocusedPawn");
 
 	ABP_SpectatorTVCamera_C_OnAttachedToFocusedPawn_Params params;
 
@@ -91,7 +91,7 @@ void ABP_SpectatorTVCamera_C::OnAttachedToFocusedPawn()
 
 void ABP_SpectatorTVCamera_C::ExecuteUbergraph_BP_SpectatorTVCamera(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_SpectatorTVCamera.BP_SpectatorTVCamera_C.ExecuteUbergraph_BP_SpectatorTVCamera"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_SpectatorTVCamera.BP_SpectatorTVCamera_C.ExecuteUbergraph_BP_SpectatorTVCamera");
 
 	ABP_SpectatorTVCamera_C_ExecuteUbergraph_BP_SpectatorTVCamera_Params params;
 	params.EntryPoint = EntryPoint;

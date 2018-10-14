@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_QuantumClouds_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_QuantumClouds.BP_QuantumClouds_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_QuantumClouds.BP_QuantumClouds_C.UserConstructionScript");
 
 	ABP_QuantumClouds_C_UserConstructionScript_Params params;
 

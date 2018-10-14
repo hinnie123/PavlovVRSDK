@@ -17,7 +17,7 @@ namespace SDK
 
 void AToolTip_RemoveMagazine_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_RemoveMagazine.ToolTip_RemoveMagazine_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_RemoveMagazine.ToolTip_RemoveMagazine_C.UserConstructionScript");
 
 	AToolTip_RemoveMagazine_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void AToolTip_RemoveMagazine_C::UserConstructionScript()
 
 void AToolTip_RemoveMagazine_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_RemoveMagazine.ToolTip_RemoveMagazine_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_RemoveMagazine.ToolTip_RemoveMagazine_C.ReceiveBeginPlay");
 
 	AToolTip_RemoveMagazine_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +53,7 @@ void AToolTip_RemoveMagazine_C::ReceiveBeginPlay()
 
 void AToolTip_RemoveMagazine_C::OnDestroyed_Event_1(class AActor* DestroyedActor)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_RemoveMagazine.ToolTip_RemoveMagazine_C.OnDestroyed_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_RemoveMagazine.ToolTip_RemoveMagazine_C.OnDestroyed_Event_1");
 
 	AToolTip_RemoveMagazine_C_OnDestroyed_Event_1_Params params;
 	params.DestroyedActor = DestroyedActor;
@@ -71,7 +71,7 @@ void AToolTip_RemoveMagazine_C::OnDestroyed_Event_1(class AActor* DestroyedActor
 
 void AToolTip_RemoveMagazine_C::CustomEvent_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_RemoveMagazine.ToolTip_RemoveMagazine_C.CustomEvent_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_RemoveMagazine.ToolTip_RemoveMagazine_C.CustomEvent_1");
 
 	AToolTip_RemoveMagazine_C_CustomEvent_1_Params params;
 
@@ -90,7 +90,7 @@ void AToolTip_RemoveMagazine_C::CustomEvent_1()
 
 void AToolTip_RemoveMagazine_C::ExecuteUbergraph_ToolTip_RemoveMagazine(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_RemoveMagazine.ToolTip_RemoveMagazine_C.ExecuteUbergraph_ToolTip_RemoveMagazine"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_RemoveMagazine.ToolTip_RemoveMagazine_C.ExecuteUbergraph_ToolTip_RemoveMagazine");
 
 	AToolTip_RemoveMagazine_C_ExecuteUbergraph_ToolTip_RemoveMagazine_Params params;
 	params.EntryPoint = EntryPoint;

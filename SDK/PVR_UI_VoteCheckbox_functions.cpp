@@ -19,7 +19,7 @@ namespace SDK
 
 void UUI_VoteCheckbox_C::SetState(EVoteState State)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_VoteCheckbox.UI_VoteCheckbox_C.SetState"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_VoteCheckbox.UI_VoteCheckbox_C.SetState");
 
 	UUI_VoteCheckbox_C_SetState_Params params;
 	params.State = State;

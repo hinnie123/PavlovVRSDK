@@ -17,7 +17,7 @@ namespace SDK
 
 void AShell_12Gauge_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Shell_12Gauge.Shell_12Gauge_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Shell_12Gauge.Shell_12Gauge_C.UserConstructionScript");
 
 	AShell_12Gauge_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void AShell_12Gauge_C::UserConstructionScript()
 
 void AShell_12Gauge_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Shell_12Gauge.Shell_12Gauge_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function Shell_12Gauge.Shell_12Gauge_C.ReceiveBeginPlay");
 
 	AShell_12Gauge_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +53,7 @@ void AShell_12Gauge_C::ReceiveBeginPlay()
 
 void AShell_12Gauge_C::ExecuteUbergraph_Shell_12Gauge(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Shell_12Gauge.Shell_12Gauge_C.ExecuteUbergraph_Shell_12Gauge"));
+	static auto fn = UObject::FindObject<UFunction>("Function Shell_12Gauge.Shell_12Gauge_C.ExecuteUbergraph_Shell_12Gauge");
 
 	AShell_12Gauge_C_ExecuteUbergraph_Shell_12Gauge_Params params;
 	params.EntryPoint = EntryPoint;

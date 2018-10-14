@@ -23,7 +23,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("BlueprintGeneratedClass ToolTip_Grab.ToolTip_Grab_C"));
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass ToolTip_Grab.ToolTip_Grab_C");
 		return ptr;
 	}
 

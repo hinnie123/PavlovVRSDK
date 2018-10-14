@@ -20,7 +20,7 @@ namespace SDK
 
 void UTurnBasedMatchInterface::OnMatchReceivedTurn(const struct FString& Match, bool bDidBecomeActive)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OnlineSubsystem.TurnBasedMatchInterface.OnMatchReceivedTurn"));
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystem.TurnBasedMatchInterface.OnMatchReceivedTurn");
 
 	UTurnBasedMatchInterface_OnMatchReceivedTurn_Params params;
 	params.Match = Match;
@@ -41,7 +41,7 @@ void UTurnBasedMatchInterface::OnMatchReceivedTurn(const struct FString& Match, 
 
 void UTurnBasedMatchInterface::OnMatchEnded(const struct FString& Match)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OnlineSubsystem.TurnBasedMatchInterface.OnMatchEnded"));
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystem.TurnBasedMatchInterface.OnMatchEnded");
 
 	UTurnBasedMatchInterface_OnMatchEnded_Params params;
 	params.Match = Match;

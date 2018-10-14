@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("BlueprintGeneratedClass BP_MatchStateOverlay.BP_MatchStateOverlay_C"));
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass BP_MatchStateOverlay.BP_MatchStateOverlay_C");
 		return ptr;
 	}
 

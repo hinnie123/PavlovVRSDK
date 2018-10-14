@@ -19,7 +19,7 @@ namespace SDK
 
 bool ULocationServices::STATIC_StopLocationServices()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function LocationServicesBPLibrary.LocationServices.StopLocationServices"));
+	static auto fn = UObject::FindObject<UFunction>("Function LocationServicesBPLibrary.LocationServices.StopLocationServices");
 
 	ULocationServices_StopLocationServices_Params params;
 
@@ -41,7 +41,7 @@ bool ULocationServices::STATIC_StopLocationServices()
 
 bool ULocationServices::STATIC_StartLocationServices()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function LocationServicesBPLibrary.LocationServices.StartLocationServices"));
+	static auto fn = UObject::FindObject<UFunction>("Function LocationServicesBPLibrary.LocationServices.StartLocationServices");
 
 	ULocationServices_StartLocationServices_Params params;
 
@@ -64,7 +64,7 @@ bool ULocationServices::STATIC_StartLocationServices()
 
 bool ULocationServices::STATIC_IsLocationAccuracyAvailable(ELocationAccuracy Accuracy)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function LocationServicesBPLibrary.LocationServices.IsLocationAccuracyAvailable"));
+	static auto fn = UObject::FindObject<UFunction>("Function LocationServicesBPLibrary.LocationServices.IsLocationAccuracyAvailable");
 
 	ULocationServices_IsLocationAccuracyAvailable_Params params;
 	params.Accuracy = Accuracy;
@@ -90,7 +90,7 @@ bool ULocationServices::STATIC_IsLocationAccuracyAvailable(ELocationAccuracy Acc
 
 bool ULocationServices::STATIC_InitLocationServices(ELocationAccuracy Accuracy, float UpdateFrequency, float MinDistanceFilter)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function LocationServicesBPLibrary.LocationServices.InitLocationServices"));
+	static auto fn = UObject::FindObject<UFunction>("Function LocationServicesBPLibrary.LocationServices.InitLocationServices");
 
 	ULocationServices_InitLocationServices_Params params;
 	params.Accuracy = Accuracy;
@@ -115,7 +115,7 @@ bool ULocationServices::STATIC_InitLocationServices(ELocationAccuracy Accuracy, 
 
 class ULocationServicesImpl* ULocationServices::STATIC_GetLocationServicesImpl()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function LocationServicesBPLibrary.LocationServices.GetLocationServicesImpl"));
+	static auto fn = UObject::FindObject<UFunction>("Function LocationServicesBPLibrary.LocationServices.GetLocationServicesImpl");
 
 	ULocationServices_GetLocationServicesImpl_Params params;
 
@@ -137,7 +137,7 @@ class ULocationServicesImpl* ULocationServices::STATIC_GetLocationServicesImpl()
 
 struct FLocationServicesData ULocationServices::STATIC_GetLastKnownLocation()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function LocationServicesBPLibrary.LocationServices.GetLastKnownLocation"));
+	static auto fn = UObject::FindObject<UFunction>("Function LocationServicesBPLibrary.LocationServices.GetLastKnownLocation");
 
 	ULocationServices_GetLastKnownLocation_Params params;
 
@@ -159,7 +159,7 @@ struct FLocationServicesData ULocationServices::STATIC_GetLastKnownLocation()
 
 bool ULocationServices::STATIC_AreLocationServicesEnabled()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function LocationServicesBPLibrary.LocationServices.AreLocationServicesEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function LocationServicesBPLibrary.LocationServices.AreLocationServicesEnabled");
 
 	ULocationServices_AreLocationServicesEnabled_Params params;
 

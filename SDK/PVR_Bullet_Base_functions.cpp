@@ -17,7 +17,7 @@ namespace SDK
 
 void ABullet_Base_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Bullet_Base.Bullet_Base_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Bullet_Base.Bullet_Base_C.UserConstructionScript");
 
 	ABullet_Base_C_UserConstructionScript_Params params;
 
@@ -36,7 +36,7 @@ void ABullet_Base_C::UserConstructionScript()
 
 void ABullet_Base_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Bullet_Base.Bullet_Base_C.ReceiveTick"));
+	static auto fn = UObject::FindObject<UFunction>("Function Bullet_Base.Bullet_Base_C.ReceiveTick");
 
 	ABullet_Base_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -54,7 +54,7 @@ void ABullet_Base_C::ReceiveTick(float* DeltaSeconds)
 
 void ABullet_Base_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Bullet_Base.Bullet_Base_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function Bullet_Base.Bullet_Base_C.ReceiveBeginPlay");
 
 	ABullet_Base_C_ReceiveBeginPlay_Params params;
 
@@ -73,7 +73,7 @@ void ABullet_Base_C::ReceiveBeginPlay()
 
 void ABullet_Base_C::BndEvt__ProjectileMovement_K2Node_ComponentBoundEvent_0_OnProjectileStopDelegate__DelegateSignature(const struct FHitResult& ImpactResult)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Bullet_Base.Bullet_Base_C.BndEvt__ProjectileMovement_K2Node_ComponentBoundEvent_0_OnProjectileStopDelegate__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function Bullet_Base.Bullet_Base_C.BndEvt__ProjectileMovement_K2Node_ComponentBoundEvent_0_OnProjectileStopDelegate__DelegateSignature");
 
 	ABullet_Base_C_BndEvt__ProjectileMovement_K2Node_ComponentBoundEvent_0_OnProjectileStopDelegate__DelegateSignature_Params params;
 	params.ImpactResult = ImpactResult;
@@ -94,7 +94,7 @@ void ABullet_Base_C::BndEvt__ProjectileMovement_K2Node_ComponentBoundEvent_0_OnP
 
 void ABullet_Base_C::BndEvt__ProjectileMovement_K2Node_ComponentBoundEvent_1_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Bullet_Base.Bullet_Base_C.BndEvt__ProjectileMovement_K2Node_ComponentBoundEvent_1_OnProjectileBounceDelegate__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function Bullet_Base.Bullet_Base_C.BndEvt__ProjectileMovement_K2Node_ComponentBoundEvent_1_OnProjectileBounceDelegate__DelegateSignature");
 
 	ABullet_Base_C_BndEvt__ProjectileMovement_K2Node_ComponentBoundEvent_1_OnProjectileBounceDelegate__DelegateSignature_Params params;
 	params.ImpactResult = ImpactResult;
@@ -115,7 +115,7 @@ void ABullet_Base_C::BndEvt__ProjectileMovement_K2Node_ComponentBoundEvent_1_OnP
 
 void ABullet_Base_C::ExecuteUbergraph_Bullet_Base(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Bullet_Base.Bullet_Base_C.ExecuteUbergraph_Bullet_Base"));
+	static auto fn = UObject::FindObject<UFunction>("Function Bullet_Base.Bullet_Base_C.ExecuteUbergraph_Bullet_Base");
 
 	ABullet_Base_C_ExecuteUbergraph_Bullet_Base_Params params;
 	params.EntryPoint = EntryPoint;

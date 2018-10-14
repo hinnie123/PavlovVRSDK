@@ -21,7 +21,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Vankrupt.VankruptGlobalStyle"));
+		static auto ptr = UObject::FindClass("Class Vankrupt.VankruptGlobalStyle");
 		return ptr;
 	}
 
@@ -37,7 +37,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Vankrupt.VankruptLobbyStyle"));
+		static auto ptr = UObject::FindClass("Class Vankrupt.VankruptLobbyStyle");
 		return ptr;
 	}
 
@@ -63,7 +63,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Vankrupt.VCollisionEffectComponent"));
+		static auto ptr = UObject::FindClass("Class Vankrupt.VCollisionEffectComponent");
 		return ptr;
 	}
 
@@ -84,7 +84,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Vankrupt.VDecalBSPProxy"));
+		static auto ptr = UObject::FindClass("Class Vankrupt.VDecalBSPProxy");
 		return ptr;
 	}
 
@@ -104,7 +104,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Vankrupt.VDecalComponent"));
+		static auto ptr = UObject::FindClass("Class Vankrupt.VDecalComponent");
 		return ptr;
 	}
 
@@ -123,7 +123,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Vankrupt.VGameInstance"));
+		static auto ptr = UObject::FindClass("Class Vankrupt.VGameInstance");
 		return ptr;
 	}
 
@@ -142,7 +142,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Vankrupt.VMap"));
+		static auto ptr = UObject::FindClass("Class Vankrupt.VMap");
 		return ptr;
 	}
 
@@ -165,7 +165,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Vankrupt.VGameOptions"));
+		static auto ptr = UObject::FindClass("Class Vankrupt.VGameOptions");
 		return ptr;
 	}
 
@@ -198,7 +198,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Vankrupt.VHealthComponent"));
+		static auto ptr = UObject::FindClass("Class Vankrupt.VHealthComponent");
 		return ptr;
 	}
 
@@ -224,7 +224,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Vankrupt.VHealthInterface"));
+		static auto ptr = UObject::FindClass("Class Vankrupt.VHealthInterface");
 		return ptr;
 	}
 
@@ -239,7 +239,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Vankrupt.VLobbyGameMode"));
+		static auto ptr = UObject::FindClass("Class Vankrupt.VLobbyGameMode");
 		return ptr;
 	}
 
@@ -258,7 +258,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Vankrupt.VMenu"));
+		static auto ptr = UObject::FindClass("Class Vankrupt.VMenu");
 		return ptr;
 	}
 
@@ -285,7 +285,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Vankrupt.VLobby"));
+		static auto ptr = UObject::FindClass("Class Vankrupt.VLobby");
 		return ptr;
 	}
 
@@ -314,7 +314,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Vankrupt.VSpawnManagerComponent"));
+		static auto ptr = UObject::FindClass("Class Vankrupt.VSpawnManagerComponent");
 		return ptr;
 	}
 
@@ -340,7 +340,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Vankrupt.VSpawnPoint"));
+		static auto ptr = UObject::FindClass("Class Vankrupt.VSpawnPoint");
 		return ptr;
 	}
 
@@ -357,7 +357,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Vankrupt.VStatics"));
+		static auto ptr = UObject::FindClass("Class Vankrupt.VStatics");
 		return ptr;
 	}
 

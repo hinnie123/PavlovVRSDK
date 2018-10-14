@@ -24,7 +24,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class HeadMountedDisplay.MotionControllerComponent"));
+		static auto ptr = UObject::FindClass("Class HeadMountedDisplay.MotionControllerComponent");
 		return ptr;
 	}
 
@@ -49,7 +49,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class HeadMountedDisplay.VRNotificationsComponent"));
+		static auto ptr = UObject::FindClass("Class HeadMountedDisplay.VRNotificationsComponent");
 		return ptr;
 	}
 

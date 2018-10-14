@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_PavlovController_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovController.BP_PavlovController_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovController.BP_PavlovController_C.UserConstructionScript");
 
 	ABP_PavlovController_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void ABP_PavlovController_C::UserConstructionScript()
 
 void ABP_PavlovController_C::BlinkTimeline__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovController.BP_PavlovController_C.BlinkTimeline__FinishedFunc"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovController.BP_PavlovController_C.BlinkTimeline__FinishedFunc");
 
 	ABP_PavlovController_C_BlinkTimeline__FinishedFunc_Params params;
 
@@ -51,7 +51,7 @@ void ABP_PavlovController_C::BlinkTimeline__FinishedFunc()
 
 void ABP_PavlovController_C::BlinkTimeline__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovController.BP_PavlovController_C.BlinkTimeline__UpdateFunc"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovController.BP_PavlovController_C.BlinkTimeline__UpdateFunc");
 
 	ABP_PavlovController_C_BlinkTimeline__UpdateFunc_Params params;
 
@@ -68,7 +68,7 @@ void ABP_PavlovController_C::BlinkTimeline__UpdateFunc()
 
 void ABP_PavlovController_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovController.BP_PavlovController_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovController.BP_PavlovController_C.ReceiveBeginPlay");
 
 	ABP_PavlovController_C_ReceiveBeginPlay_Params params;
 
@@ -85,7 +85,7 @@ void ABP_PavlovController_C::ReceiveBeginPlay()
 
 void ABP_PavlovController_C::MakeWatchBlink()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovController.BP_PavlovController_C.MakeWatchBlink"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovController.BP_PavlovController_C.MakeWatchBlink");
 
 	ABP_PavlovController_C_MakeWatchBlink_Params params;
 
@@ -104,7 +104,7 @@ void ABP_PavlovController_C::MakeWatchBlink()
 
 void ABP_PavlovController_C::ExecuteUbergraph_BP_PavlovController(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovController.BP_PavlovController_C.ExecuteUbergraph_BP_PavlovController"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovController.BP_PavlovController_C.ExecuteUbergraph_BP_PavlovController");
 
 	ABP_PavlovController_C_ExecuteUbergraph_BP_PavlovController_Params params;
 	params.EntryPoint = EntryPoint;

@@ -17,7 +17,7 @@ namespace SDK
 
 void AToolTip_Locomotion_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_Locomotion.ToolTip_Locomotion_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_Locomotion.ToolTip_Locomotion_C.UserConstructionScript");
 
 	AToolTip_Locomotion_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void AToolTip_Locomotion_C::UserConstructionScript()
 
 void AToolTip_Locomotion_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_Locomotion.ToolTip_Locomotion_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_Locomotion.ToolTip_Locomotion_C.ReceiveBeginPlay");
 
 	AToolTip_Locomotion_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +53,7 @@ void AToolTip_Locomotion_C::ReceiveBeginPlay()
 
 void AToolTip_Locomotion_C::ExecuteUbergraph_ToolTip_Locomotion(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_Locomotion.ToolTip_Locomotion_C.ExecuteUbergraph_ToolTip_Locomotion"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_Locomotion.ToolTip_Locomotion_C.ExecuteUbergraph_ToolTip_Locomotion");
 
 	AToolTip_Locomotion_C_ExecuteUbergraph_ToolTip_Locomotion_Params params;
 	params.EntryPoint = EntryPoint;

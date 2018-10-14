@@ -19,7 +19,7 @@ namespace SDK
 
 void UUI_Score_C::SetScore(float Score)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Score.UI_Score_C.SetScore"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Score.UI_Score_C.SetScore");
 
 	UUI_Score_C_SetScore_Params params;
 	params.Score = Score;
@@ -37,7 +37,7 @@ void UUI_Score_C::SetScore(float Score)
 
 void UUI_Score_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Score.UI_Score_C.Construct"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Score.UI_Score_C.Construct");
 
 	UUI_Score_C_Construct_Params params;
 
@@ -56,7 +56,7 @@ void UUI_Score_C::Construct()
 
 void UUI_Score_C::ExecuteUbergraph_UI_Score(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Score.UI_Score_C.ExecuteUbergraph_UI_Score"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Score.UI_Score_C.ExecuteUbergraph_UI_Score");
 
 	UUI_Score_C_ExecuteUbergraph_UI_Score_Params params;
 	params.EntryPoint = EntryPoint;

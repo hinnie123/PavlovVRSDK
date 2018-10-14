@@ -21,7 +21,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("BlueprintGeneratedClass DefuseTask.DefuseTask_C"));
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass DefuseTask.DefuseTask_C");
 		return ptr;
 	}
 

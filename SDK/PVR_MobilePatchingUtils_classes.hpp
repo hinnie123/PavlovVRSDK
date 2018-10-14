@@ -21,7 +21,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class MobilePatchingUtils.MobileInstalledContent"));
+		static auto ptr = UObject::FindClass("Class MobilePatchingUtils.MobileInstalledContent");
 		return ptr;
 	}
 
@@ -41,7 +41,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class MobilePatchingUtils.MobilePendingContent"));
+		static auto ptr = UObject::FindClass("Class MobilePatchingUtils.MobilePendingContent");
 		return ptr;
 	}
 
@@ -64,7 +64,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class MobilePatchingUtils.MobilePatchingLibrary"));
+		static auto ptr = UObject::FindClass("Class MobilePatchingUtils.MobilePatchingLibrary");
 		return ptr;
 	}
 

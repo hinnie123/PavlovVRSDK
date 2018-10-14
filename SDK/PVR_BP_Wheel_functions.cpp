@@ -20,7 +20,7 @@ namespace SDK
 
 void ABP_Wheel_C::EnableMenuFromGhost(class AVRPawn* self2, class AVRPawn* self3)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Wheel.BP_Wheel_C.EnableMenuFromGhost"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.EnableMenuFromGhost");
 
 	ABP_Wheel_C_EnableMenuFromGhost_Params params;
 	params.self2 = self2;
@@ -42,7 +42,7 @@ void ABP_Wheel_C::EnableMenuFromGhost(class AVRPawn* self2, class AVRPawn* self3
 
 void ABP_Wheel_C::HandleTkCommit(const struct FWheelSegment& WheelSegment, const struct FName& Selection)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Wheel.BP_Wheel_C.HandleTkCommit"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.HandleTkCommit");
 
 	ABP_Wheel_C_HandleTkCommit_Params params;
 	params.WheelSegment = WheelSegment;
@@ -61,7 +61,7 @@ void ABP_Wheel_C::HandleTkCommit(const struct FWheelSegment& WheelSegment, const
 
 void ABP_Wheel_C::SwitchToTKMenu()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Wheel.BP_Wheel_C.SwitchToTKMenu"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.SwitchToTKMenu");
 
 	ABP_Wheel_C_SwitchToTKMenu_Params params;
 
@@ -78,7 +78,7 @@ void ABP_Wheel_C::SwitchToTKMenu()
 
 void ABP_Wheel_C::SwitchToRootMenu()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Wheel.BP_Wheel_C.SwitchToRootMenu"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.SwitchToRootMenu");
 
 	ABP_Wheel_C_SwitchToRootMenu_Params params;
 
@@ -95,7 +95,7 @@ void ABP_Wheel_C::SwitchToRootMenu()
 
 void ABP_Wheel_C::CommitAndClose()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Wheel.BP_Wheel_C.CommitAndClose"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.CommitAndClose");
 
 	ABP_Wheel_C_CommitAndClose_Params params;
 
@@ -115,7 +115,7 @@ void ABP_Wheel_C::CommitAndClose()
 
 void ABP_Wheel_C::HandleBuyCommit(int A, const struct FWheelSegment& WheelSegment)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Wheel.BP_Wheel_C.HandleBuyCommit"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.HandleBuyCommit");
 
 	ABP_Wheel_C_HandleBuyCommit_Params params;
 	params.A = A;
@@ -136,7 +136,7 @@ void ABP_Wheel_C::HandleBuyCommit(int A, const struct FWheelSegment& WheelSegmen
 
 void ABP_Wheel_C::SetCenterLabel(const struct FText& CenterLabel)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Wheel.BP_Wheel_C.SetCenterLabel"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.SetCenterLabel");
 
 	ABP_Wheel_C_SetCenterLabel_Params params;
 	params.CenterLabel = CenterLabel;
@@ -157,7 +157,7 @@ void ABP_Wheel_C::SetCenterLabel(const struct FText& CenterLabel)
 
 void ABP_Wheel_C::GetBuySegment_List(TEnumAsByte<EBuyMenuMode> Index, TArray<struct FWheelSegment>* Segments)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Wheel.BP_Wheel_C.GetBuySegment List"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.GetBuySegment List");
 
 	ABP_Wheel_C_GetBuySegment_List_Params params;
 	params.Index = Index;
@@ -178,7 +178,7 @@ void ABP_Wheel_C::GetBuySegment_List(TEnumAsByte<EBuyMenuMode> Index, TArray<str
 
 void ABP_Wheel_C::SwitchToBuyMenu()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Wheel.BP_Wheel_C.SwitchToBuyMenu"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.SwitchToBuyMenu");
 
 	ABP_Wheel_C_SwitchToBuyMenu_Params params;
 
@@ -195,7 +195,7 @@ void ABP_Wheel_C::SwitchToBuyMenu()
 
 void ABP_Wheel_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Wheel.BP_Wheel_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.UserConstructionScript");
 
 	ABP_Wheel_C_UserConstructionScript_Params params;
 
@@ -212,7 +212,7 @@ void ABP_Wheel_C::UserConstructionScript()
 
 void ABP_Wheel_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Wheel.BP_Wheel_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.ReceiveBeginPlay");
 
 	ABP_Wheel_C_ReceiveBeginPlay_Params params;
 
@@ -231,7 +231,7 @@ void ABP_Wheel_C::ReceiveBeginPlay()
 
 void ABP_Wheel_C::OnBuyingChanged_Event_1(bool bBuying)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Wheel.BP_Wheel_C.OnBuyingChanged_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.OnBuyingChanged_Event_1");
 
 	ABP_Wheel_C_OnBuyingChanged_Event_1_Params params;
 	params.bBuying = bBuying;
@@ -249,7 +249,7 @@ void ABP_Wheel_C::OnBuyingChanged_Event_1(bool bBuying)
 
 void ABP_Wheel_C::UpdateBuyMenu()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Wheel.BP_Wheel_C.UpdateBuyMenu"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.UpdateBuyMenu");
 
 	ABP_Wheel_C_UpdateBuyMenu_Params params;
 
@@ -266,7 +266,7 @@ void ABP_Wheel_C::UpdateBuyMenu()
 
 void ABP_Wheel_C::OnEnabled()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Wheel.BP_Wheel_C.OnEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.OnEnabled");
 
 	ABP_Wheel_C_OnEnabled_Params params;
 
@@ -283,7 +283,7 @@ void ABP_Wheel_C::OnEnabled()
 
 void ABP_Wheel_C::CustomEvent_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Wheel.BP_Wheel_C.CustomEvent_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.CustomEvent_1");
 
 	ABP_Wheel_C_CustomEvent_1_Params params;
 
@@ -303,7 +303,7 @@ void ABP_Wheel_C::CustomEvent_1()
 
 void ABP_Wheel_C::OnCommit(int* Selection, struct FWheelSegment* Segment)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Wheel.BP_Wheel_C.OnCommit"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.OnCommit");
 
 	ABP_Wheel_C_OnCommit_Params params;
 	params.Selection = Selection;
@@ -324,7 +324,7 @@ void ABP_Wheel_C::OnCommit(int* Selection, struct FWheelSegment* Segment)
 
 void ABP_Wheel_C::ExecuteUbergraph_BP_Wheel(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Wheel.BP_Wheel_C.ExecuteUbergraph_BP_Wheel"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.ExecuteUbergraph_BP_Wheel");
 
 	ABP_Wheel_C_ExecuteUbergraph_BP_Wheel_Params params;
 	params.EntryPoint = EntryPoint;

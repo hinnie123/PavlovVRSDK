@@ -44,7 +44,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("BlueprintGeneratedClass BP_Sky.BP_Sky_C"));
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass BP_Sky.BP_Sky_C");
 		return ptr;
 	}
 

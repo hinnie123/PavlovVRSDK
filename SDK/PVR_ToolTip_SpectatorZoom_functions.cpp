@@ -17,7 +17,7 @@ namespace SDK
 
 void AToolTip_SpectatorZoom_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_SpectatorZoom.ToolTip_SpectatorZoom_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_SpectatorZoom.ToolTip_SpectatorZoom_C.UserConstructionScript");
 
 	AToolTip_SpectatorZoom_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void AToolTip_SpectatorZoom_C::UserConstructionScript()
 
 void AToolTip_SpectatorZoom_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_SpectatorZoom.ToolTip_SpectatorZoom_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_SpectatorZoom.ToolTip_SpectatorZoom_C.ReceiveBeginPlay");
 
 	AToolTip_SpectatorZoom_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +53,7 @@ void AToolTip_SpectatorZoom_C::ReceiveBeginPlay()
 
 void AToolTip_SpectatorZoom_C::CustomEvent_2(float Scale)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_SpectatorZoom.ToolTip_SpectatorZoom_C.CustomEvent_2"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_SpectatorZoom.ToolTip_SpectatorZoom_C.CustomEvent_2");
 
 	AToolTip_SpectatorZoom_C_CustomEvent_2_Params params;
 	params.Scale = Scale;
@@ -73,7 +73,7 @@ void AToolTip_SpectatorZoom_C::CustomEvent_2(float Scale)
 
 void AToolTip_SpectatorZoom_C::ExecuteUbergraph_ToolTip_SpectatorZoom(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_SpectatorZoom.ToolTip_SpectatorZoom_C.ExecuteUbergraph_ToolTip_SpectatorZoom"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_SpectatorZoom.ToolTip_SpectatorZoom_C.ExecuteUbergraph_ToolTip_SpectatorZoom");
 
 	AToolTip_SpectatorZoom_C_ExecuteUbergraph_ToolTip_SpectatorZoom_Params params;
 	params.EntryPoint = EntryPoint;

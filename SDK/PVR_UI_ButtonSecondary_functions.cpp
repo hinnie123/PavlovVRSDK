@@ -21,7 +21,7 @@ namespace SDK
 
 struct FEventReply UUI_ButtonSecondary_C::OnMouseButtonUp(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ButtonSecondary.UI_ButtonSecondary_C.OnMouseButtonUp"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ButtonSecondary.UI_ButtonSecondary_C.OnMouseButtonUp");
 
 	UUI_ButtonSecondary_C_OnMouseButtonUp_Params params;
 	params.MyGeometry = MyGeometry;
@@ -46,7 +46,7 @@ struct FEventReply UUI_ButtonSecondary_C::OnMouseButtonUp(struct FGeometry* MyGe
 
 struct FEventReply UUI_ButtonSecondary_C::OnMouseButtonDown(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ButtonSecondary.UI_ButtonSecondary_C.OnMouseButtonDown"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ButtonSecondary.UI_ButtonSecondary_C.OnMouseButtonDown");
 
 	UUI_ButtonSecondary_C_OnMouseButtonDown_Params params;
 	params.MyGeometry = MyGeometry;
@@ -67,7 +67,7 @@ struct FEventReply UUI_ButtonSecondary_C::OnMouseButtonDown(struct FGeometry* My
 
 void UUI_ButtonSecondary_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ButtonSecondary.UI_ButtonSecondary_C.Construct"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ButtonSecondary.UI_ButtonSecondary_C.Construct");
 
 	UUI_ButtonSecondary_C_Construct_Params params;
 
@@ -87,7 +87,7 @@ void UUI_ButtonSecondary_C::Construct()
 
 void UUI_ButtonSecondary_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ButtonSecondary.UI_ButtonSecondary_C.OnMouseEnter"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ButtonSecondary.UI_ButtonSecondary_C.OnMouseEnter");
 
 	UUI_ButtonSecondary_C_OnMouseEnter_Params params;
 	params.MyGeometry = MyGeometry;
@@ -108,7 +108,7 @@ void UUI_ButtonSecondary_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FP
 
 void UUI_ButtonSecondary_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ButtonSecondary.UI_ButtonSecondary_C.OnMouseLeave"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ButtonSecondary.UI_ButtonSecondary_C.OnMouseLeave");
 
 	UUI_ButtonSecondary_C_OnMouseLeave_Params params;
 	params.MouseEvent = MouseEvent;
@@ -126,7 +126,7 @@ void UUI_ButtonSecondary_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 
 void UUI_ButtonSecondary_C::OnButtonClicked_Event()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ButtonSecondary.UI_ButtonSecondary_C.OnButtonClicked_Event"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ButtonSecondary.UI_ButtonSecondary_C.OnButtonClicked_Event");
 
 	UUI_ButtonSecondary_C_OnButtonClicked_Event_Params params;
 
@@ -145,7 +145,7 @@ void UUI_ButtonSecondary_C::OnButtonClicked_Event()
 
 void UUI_ButtonSecondary_C::ExecuteUbergraph_UI_ButtonSecondary(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ButtonSecondary.UI_ButtonSecondary_C.ExecuteUbergraph_UI_ButtonSecondary"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ButtonSecondary.UI_ButtonSecondary_C.ExecuteUbergraph_UI_ButtonSecondary");
 
 	UUI_ButtonSecondary_C_ExecuteUbergraph_UI_ButtonSecondary_Params params;
 	params.EntryPoint = EntryPoint;
@@ -163,7 +163,7 @@ void UUI_ButtonSecondary_C::ExecuteUbergraph_UI_ButtonSecondary(int EntryPoint)
 
 void UUI_ButtonSecondary_C::OnButtonClicked__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ButtonSecondary.UI_ButtonSecondary_C.OnButtonClicked__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ButtonSecondary.UI_ButtonSecondary_C.OnButtonClicked__DelegateSignature");
 
 	UUI_ButtonSecondary_C_OnButtonClicked__DelegateSignature_Params params;
 

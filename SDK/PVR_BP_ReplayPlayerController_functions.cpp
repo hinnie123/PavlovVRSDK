@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_ReplayPlayerController_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ReplayPlayerController.BP_ReplayPlayerController_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_ReplayPlayerController.BP_ReplayPlayerController_C.UserConstructionScript");
 
 	ABP_ReplayPlayerController_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void ABP_ReplayPlayerController_C::UserConstructionScript()
 
 void ABP_ReplayPlayerController_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ReplayPlayerController.BP_ReplayPlayerController_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_ReplayPlayerController.BP_ReplayPlayerController_C.ReceiveBeginPlay");
 
 	ABP_ReplayPlayerController_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +53,7 @@ void ABP_ReplayPlayerController_C::ReceiveBeginPlay()
 
 void ABP_ReplayPlayerController_C::ExecuteUbergraph_BP_ReplayPlayerController(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ReplayPlayerController.BP_ReplayPlayerController_C.ExecuteUbergraph_BP_ReplayPlayerController"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_ReplayPlayerController.BP_ReplayPlayerController_C.ExecuteUbergraph_BP_ReplayPlayerController");
 
 	ABP_ReplayPlayerController_C_ExecuteUbergraph_BP_ReplayPlayerController_Params params;
 	params.EntryPoint = EntryPoint;

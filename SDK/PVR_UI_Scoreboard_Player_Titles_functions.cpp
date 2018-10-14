@@ -19,7 +19,7 @@ namespace SDK
 
 struct FLinearColor UUI_Scoreboard_Player_Titles_C::GetColorAndOpacity_2()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Scoreboard_Player_Titles.UI_Scoreboard_Player_Titles_C.GetColorAndOpacity_2"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Scoreboard_Player_Titles.UI_Scoreboard_Player_Titles_C.GetColorAndOpacity_2");
 
 	UUI_Scoreboard_Player_Titles_C_GetColorAndOpacity_2_Params params;
 
@@ -40,7 +40,7 @@ struct FLinearColor UUI_Scoreboard_Player_Titles_C::GetColorAndOpacity_2()
 
 struct FSlateColor UUI_Scoreboard_Player_Titles_C::GetColorAndOpacity_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Scoreboard_Player_Titles.UI_Scoreboard_Player_Titles_C.GetColorAndOpacity_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Scoreboard_Player_Titles.UI_Scoreboard_Player_Titles_C.GetColorAndOpacity_1");
 
 	UUI_Scoreboard_Player_Titles_C_GetColorAndOpacity_1_Params params;
 

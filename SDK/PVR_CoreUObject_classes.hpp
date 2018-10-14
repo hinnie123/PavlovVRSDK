@@ -69,7 +69,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.Object"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.Object");
 		return ptr;
 	}
 
@@ -91,7 +91,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.GCObjectReferencer"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.GCObjectReferencer");
 		return ptr;
 	}
 
@@ -107,7 +107,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.TextBuffer"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.TextBuffer");
 		return ptr;
 	}
 
@@ -123,7 +123,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.Field"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.Field");
 		return ptr;
 	}
 
@@ -143,7 +143,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.Struct"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.Struct");
 		return ptr;
 	}
 
@@ -159,7 +159,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.ScriptStruct"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.ScriptStruct");
 		return ptr;
 	}
 
@@ -175,7 +175,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.Package"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.Package");
 		return ptr;
 	}
 
@@ -197,7 +197,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.Class"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.Class");
 		return ptr;
 	}
 
@@ -229,7 +229,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.Function"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.Function");
 		return ptr;
 	}
 
@@ -244,7 +244,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.DelegateFunction"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.DelegateFunction");
 		return ptr;
 	}
 
@@ -260,7 +260,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.DynamicClass"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.DynamicClass");
 		return ptr;
 	}
 
@@ -276,7 +276,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.PackageMap"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.PackageMap");
 		return ptr;
 	}
 
@@ -292,7 +292,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.Enum"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.Enum");
 		return ptr;
 	}
 
@@ -308,7 +308,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.Property"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.Property");
 		return ptr;
 	}
 
@@ -324,7 +324,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.EnumProperty"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.EnumProperty");
 		return ptr;
 	}
 
@@ -339,7 +339,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.Interface"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.Interface");
 		return ptr;
 	}
 
@@ -355,7 +355,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.LinkerPlaceholderClass"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.LinkerPlaceholderClass");
 		return ptr;
 	}
 
@@ -371,7 +371,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.LinkerPlaceholderExportObject"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.LinkerPlaceholderExportObject");
 		return ptr;
 	}
 
@@ -387,7 +387,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.LinkerPlaceholderFunction"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.LinkerPlaceholderFunction");
 		return ptr;
 	}
 
@@ -403,7 +403,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.MetaData"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.MetaData");
 		return ptr;
 	}
 
@@ -419,7 +419,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.ObjectRedirector"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.ObjectRedirector");
 		return ptr;
 	}
 
@@ -435,7 +435,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.ArrayProperty"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.ArrayProperty");
 		return ptr;
 	}
 
@@ -451,7 +451,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.ObjectPropertyBase"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.ObjectPropertyBase");
 		return ptr;
 	}
 
@@ -466,7 +466,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.AssetObjectProperty"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.AssetObjectProperty");
 		return ptr;
 	}
 
@@ -482,7 +482,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.AssetClassProperty"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.AssetClassProperty");
 		return ptr;
 	}
 
@@ -498,7 +498,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.BoolProperty"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.BoolProperty");
 		return ptr;
 	}
 
@@ -513,7 +513,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.NumericProperty"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.NumericProperty");
 		return ptr;
 	}
 
@@ -529,7 +529,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.ByteProperty"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.ByteProperty");
 		return ptr;
 	}
 
@@ -544,7 +544,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.ObjectProperty"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.ObjectProperty");
 		return ptr;
 	}
 
@@ -560,7 +560,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.ClassProperty"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.ClassProperty");
 		return ptr;
 	}
 
@@ -576,7 +576,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.DelegateProperty"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.DelegateProperty");
 		return ptr;
 	}
 
@@ -591,7 +591,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.DoubleProperty"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.DoubleProperty");
 		return ptr;
 	}
 
@@ -606,7 +606,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.FloatProperty"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.FloatProperty");
 		return ptr;
 	}
 
@@ -621,7 +621,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.IntProperty"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.IntProperty");
 		return ptr;
 	}
 
@@ -636,7 +636,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.Int16Property"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.Int16Property");
 		return ptr;
 	}
 
@@ -651,7 +651,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.Int64Property"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.Int64Property");
 		return ptr;
 	}
 
@@ -666,7 +666,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.Int8Property"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.Int8Property");
 		return ptr;
 	}
 
@@ -682,7 +682,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.InterfaceProperty"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.InterfaceProperty");
 		return ptr;
 	}
 
@@ -697,7 +697,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.LazyObjectProperty"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.LazyObjectProperty");
 		return ptr;
 	}
 
@@ -713,7 +713,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.MapProperty"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.MapProperty");
 		return ptr;
 	}
 
@@ -729,7 +729,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.MulticastDelegateProperty"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.MulticastDelegateProperty");
 		return ptr;
 	}
 
@@ -744,7 +744,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.NameProperty"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.NameProperty");
 		return ptr;
 	}
 
@@ -760,7 +760,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.SetProperty"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.SetProperty");
 		return ptr;
 	}
 
@@ -775,7 +775,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.StrProperty"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.StrProperty");
 		return ptr;
 	}
 
@@ -791,7 +791,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.StructProperty"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.StructProperty");
 		return ptr;
 	}
 
@@ -806,7 +806,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.UInt16Property"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.UInt16Property");
 		return ptr;
 	}
 
@@ -821,7 +821,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.UInt32Property"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.UInt32Property");
 		return ptr;
 	}
 
@@ -836,7 +836,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.UInt64Property"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.UInt64Property");
 		return ptr;
 	}
 
@@ -851,7 +851,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.WeakObjectProperty"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.WeakObjectProperty");
 		return ptr;
 	}
 
@@ -866,7 +866,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CoreUObject.TextProperty"));
+		static auto ptr = UObject::FindClass("Class CoreUObject.TextProperty");
 		return ptr;
 	}
 

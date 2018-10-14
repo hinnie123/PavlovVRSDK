@@ -36,7 +36,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("BlueprintGeneratedClass SearchAndDestroyGameMode.SearchAndDestroyGameMode_C"));
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass SearchAndDestroyGameMode.SearchAndDestroyGameMode_C");
 		return ptr;
 	}
 

@@ -23,7 +23,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("BlueprintGeneratedClass ToolTip_SpectatorTeleMode.ToolTip_SpectatorTeleMode_C"));
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass ToolTip_SpectatorTeleMode.ToolTip_SpectatorTeleMode_C");
 		return ptr;
 	}
 

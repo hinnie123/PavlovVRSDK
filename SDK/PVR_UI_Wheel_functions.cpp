@@ -19,7 +19,7 @@ namespace SDK
 
 struct FLinearColor UUI_Wheel_C::Get_inner_ColorAndOpacity_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Wheel.UI_Wheel_C.Get_inner_ColorAndOpacity_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Wheel.UI_Wheel_C.Get_inner_ColorAndOpacity_1");
 
 	UUI_Wheel_C_Get_inner_ColorAndOpacity_1_Params params;
 
@@ -38,7 +38,7 @@ struct FLinearColor UUI_Wheel_C::Get_inner_ColorAndOpacity_1()
 
 void UUI_Wheel_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Wheel.UI_Wheel_C.Construct"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Wheel.UI_Wheel_C.Construct");
 
 	UUI_Wheel_C_Construct_Params params;
 
@@ -58,7 +58,7 @@ void UUI_Wheel_C::Construct()
 
 void UUI_Wheel_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Wheel.UI_Wheel_C.Tick"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Wheel.UI_Wheel_C.Tick");
 
 	UUI_Wheel_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -77,7 +77,7 @@ void UUI_Wheel_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 
 void UUI_Wheel_C::OnWheelUpdate()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Wheel.UI_Wheel_C.OnWheelUpdate"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Wheel.UI_Wheel_C.OnWheelUpdate");
 
 	UUI_Wheel_C_OnWheelUpdate_Params params;
 
@@ -96,7 +96,7 @@ void UUI_Wheel_C::OnWheelUpdate()
 
 void UUI_Wheel_C::ExecuteUbergraph_UI_Wheel(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Wheel.UI_Wheel_C.ExecuteUbergraph_UI_Wheel"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Wheel.UI_Wheel_C.ExecuteUbergraph_UI_Wheel");
 
 	UUI_Wheel_C_ExecuteUbergraph_UI_Wheel_Params params;
 	params.EntryPoint = EntryPoint;

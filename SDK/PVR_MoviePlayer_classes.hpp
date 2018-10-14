@@ -24,7 +24,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class MoviePlayer.MoviePlayerSettings"));
+		static auto ptr = UObject::FindClass("Class MoviePlayer.MoviePlayerSettings");
 		return ptr;
 	}
 

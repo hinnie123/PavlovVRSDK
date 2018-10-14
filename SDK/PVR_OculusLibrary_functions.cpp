@@ -17,7 +17,7 @@ namespace SDK
 
 void UOculusFunctionLibrary::STATIC_ShowLoadingSplashScreen()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusLibrary.OculusFunctionLibrary.ShowLoadingSplashScreen"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusLibrary.OculusFunctionLibrary.ShowLoadingSplashScreen");
 
 	UOculusFunctionLibrary_ShowLoadingSplashScreen_Params params;
 
@@ -37,7 +37,7 @@ void UOculusFunctionLibrary::STATIC_ShowLoadingSplashScreen()
 
 void UOculusFunctionLibrary::STATIC_ShowLoadingIcon(class UTexture2D* Texture)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusLibrary.OculusFunctionLibrary.ShowLoadingIcon"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusLibrary.OculusFunctionLibrary.ShowLoadingIcon");
 
 	UOculusFunctionLibrary_ShowLoadingIcon_Params params;
 	params.Texture = Texture;
@@ -58,7 +58,7 @@ void UOculusFunctionLibrary::STATIC_ShowLoadingIcon(class UTexture2D* Texture)
 
 void UOculusFunctionLibrary::STATIC_SetPositionScale3D(const struct FVector& PosScale3D)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusLibrary.OculusFunctionLibrary.SetPositionScale3D"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusLibrary.OculusFunctionLibrary.SetPositionScale3D");
 
 	UOculusFunctionLibrary_SetPositionScale3D_Params params;
 	params.PosScale3D = PosScale3D;
@@ -83,7 +83,7 @@ void UOculusFunctionLibrary::STATIC_SetPositionScale3D(const struct FVector& Pos
 
 void UOculusFunctionLibrary::STATIC_SetLoadingSplashParams(const struct FString& TexturePath, const struct FVector& DistanceInMeters, const struct FVector2D& SizeInMeters, const struct FVector& RotationAxis, float RotationDeltaInDeg)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusLibrary.OculusFunctionLibrary.SetLoadingSplashParams"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusLibrary.OculusFunctionLibrary.SetLoadingSplashParams");
 
 	UOculusFunctionLibrary_SetLoadingSplashParams_Params params;
 	params.TexturePath = TexturePath;
@@ -110,7 +110,7 @@ void UOculusFunctionLibrary::STATIC_SetLoadingSplashParams(const struct FString&
 
 void UOculusFunctionLibrary::STATIC_SetBaseRotationAndPositionOffset(const struct FRotator& BaseRot, const struct FVector& PosOffset, TEnumAsByte<EOrientPositionSelector> Options)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusLibrary.OculusFunctionLibrary.SetBaseRotationAndPositionOffset"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusLibrary.OculusFunctionLibrary.SetBaseRotationAndPositionOffset");
 
 	UOculusFunctionLibrary_SetBaseRotationAndPositionOffset_Params params;
 	params.BaseRot = BaseRot;
@@ -135,7 +135,7 @@ void UOculusFunctionLibrary::STATIC_SetBaseRotationAndPositionOffset(const struc
 
 void UOculusFunctionLibrary::STATIC_SetBaseRotationAndBaseOffsetInMeters(const struct FRotator& Rotation, const struct FVector& BaseOffsetInMeters, TEnumAsByte<EOrientPositionSelector> Options)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusLibrary.OculusFunctionLibrary.SetBaseRotationAndBaseOffsetInMeters"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusLibrary.OculusFunctionLibrary.SetBaseRotationAndBaseOffsetInMeters");
 
 	UOculusFunctionLibrary_SetBaseRotationAndBaseOffsetInMeters_Params params;
 	params.Rotation = Rotation;
@@ -158,7 +158,7 @@ void UOculusFunctionLibrary::STATIC_SetBaseRotationAndBaseOffsetInMeters(const s
 
 bool UOculusFunctionLibrary::STATIC_IsPlayerControllerFollowHmdEnabled()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusLibrary.OculusFunctionLibrary.IsPlayerControllerFollowHmdEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusLibrary.OculusFunctionLibrary.IsPlayerControllerFollowHmdEnabled");
 
 	UOculusFunctionLibrary_IsPlayerControllerFollowHmdEnabled_Params params;
 
@@ -180,7 +180,7 @@ bool UOculusFunctionLibrary::STATIC_IsPlayerControllerFollowHmdEnabled()
 
 bool UOculusFunctionLibrary::STATIC_IsLoadingIconEnabled()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusLibrary.OculusFunctionLibrary.IsLoadingIconEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusLibrary.OculusFunctionLibrary.IsLoadingIconEnabled");
 
 	UOculusFunctionLibrary_IsLoadingIconEnabled_Params params;
 
@@ -202,7 +202,7 @@ bool UOculusFunctionLibrary::STATIC_IsLoadingIconEnabled()
 
 bool UOculusFunctionLibrary::STATIC_IsAutoLoadingSplashScreenEnabled()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusLibrary.OculusFunctionLibrary.IsAutoLoadingSplashScreenEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusLibrary.OculusFunctionLibrary.IsAutoLoadingSplashScreenEnabled");
 
 	UOculusFunctionLibrary_IsAutoLoadingSplashScreenEnabled_Params params;
 
@@ -224,7 +224,7 @@ bool UOculusFunctionLibrary::STATIC_IsAutoLoadingSplashScreenEnabled()
 
 void UOculusFunctionLibrary::STATIC_HideLoadingSplashScreen(bool bClear)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusLibrary.OculusFunctionLibrary.HideLoadingSplashScreen"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusLibrary.OculusFunctionLibrary.HideLoadingSplashScreen");
 
 	UOculusFunctionLibrary_HideLoadingSplashScreen_Params params;
 	params.bClear = bClear;
@@ -243,7 +243,7 @@ void UOculusFunctionLibrary::STATIC_HideLoadingSplashScreen(bool bClear)
 
 void UOculusFunctionLibrary::STATIC_HideLoadingIcon()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusLibrary.OculusFunctionLibrary.HideLoadingIcon"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusLibrary.OculusFunctionLibrary.HideLoadingIcon");
 
 	UOculusFunctionLibrary_HideLoadingIcon_Params params;
 
@@ -264,7 +264,7 @@ void UOculusFunctionLibrary::STATIC_HideLoadingIcon()
 
 bool UOculusFunctionLibrary::STATIC_GetUserProfile(struct FHmdUserProfile* Profile)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusLibrary.OculusFunctionLibrary.GetUserProfile"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusLibrary.OculusFunctionLibrary.GetUserProfile");
 
 	UOculusFunctionLibrary_GetUserProfile_Params params;
 
@@ -293,7 +293,7 @@ bool UOculusFunctionLibrary::STATIC_GetUserProfile(struct FHmdUserProfile* Profi
 
 void UOculusFunctionLibrary::STATIC_GetRawSensorData(struct FVector* AngularAcceleration, struct FVector* LinearAcceleration, struct FVector* AngularVelocity, struct FVector* LinearVelocity, float* TimeInSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusLibrary.OculusFunctionLibrary.GetRawSensorData"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusLibrary.OculusFunctionLibrary.GetRawSensorData");
 
 	UOculusFunctionLibrary_GetRawSensorData_Params params;
 
@@ -329,7 +329,7 @@ void UOculusFunctionLibrary::STATIC_GetRawSensorData(struct FVector* AngularAcce
 
 void UOculusFunctionLibrary::STATIC_GetPose(bool bUseOrienationForPlayerCamera, bool bUsePositionForPlayerCamera, const struct FVector& PositionScale, struct FRotator* DeviceRotation, struct FVector* DevicePosition, struct FVector* NeckPosition)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusLibrary.OculusFunctionLibrary.GetPose"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusLibrary.OculusFunctionLibrary.GetPose");
 
 	UOculusFunctionLibrary_GetPose_Params params;
 	params.bUseOrienationForPlayerCamera = bUseOrienationForPlayerCamera;
@@ -360,7 +360,7 @@ void UOculusFunctionLibrary::STATIC_GetPose(bool bUseOrienationForPlayerCamera, 
 
 void UOculusFunctionLibrary::STATIC_GetPlayerCameraManagerFollowHmd(bool* bFollowHmdOrientation, bool* bFollowHmdPosition)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusLibrary.OculusFunctionLibrary.GetPlayerCameraManagerFollowHmd"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusLibrary.OculusFunctionLibrary.GetPlayerCameraManagerFollowHmd");
 
 	UOculusFunctionLibrary_GetPlayerCameraManagerFollowHmd_Params params;
 
@@ -389,7 +389,7 @@ void UOculusFunctionLibrary::STATIC_GetPlayerCameraManagerFollowHmd(bool* bFollo
 
 void UOculusFunctionLibrary::STATIC_GetLoadingSplashParams(struct FString* TexturePath, struct FVector* DistanceInMeters, struct FVector2D* SizeInMeters, struct FVector* RotationAxis, float* RotationDeltaInDeg)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusLibrary.OculusFunctionLibrary.GetLoadingSplashParams"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusLibrary.OculusFunctionLibrary.GetLoadingSplashParams");
 
 	UOculusFunctionLibrary_GetLoadingSplashParams_Params params;
 
@@ -421,7 +421,7 @@ void UOculusFunctionLibrary::STATIC_GetLoadingSplashParams(struct FString* Textu
 
 void UOculusFunctionLibrary::STATIC_GetBaseRotationAndPositionOffset(struct FRotator* OutRot, struct FVector* OutPosOffset)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusLibrary.OculusFunctionLibrary.GetBaseRotationAndPositionOffset"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusLibrary.OculusFunctionLibrary.GetBaseRotationAndPositionOffset");
 
 	UOculusFunctionLibrary_GetBaseRotationAndPositionOffset_Params params;
 
@@ -447,7 +447,7 @@ void UOculusFunctionLibrary::STATIC_GetBaseRotationAndPositionOffset(struct FRot
 
 void UOculusFunctionLibrary::STATIC_GetBaseRotationAndBaseOffsetInMeters(struct FRotator* OutRotation, struct FVector* OutBaseOffsetInMeters)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusLibrary.OculusFunctionLibrary.GetBaseRotationAndBaseOffsetInMeters"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusLibrary.OculusFunctionLibrary.GetBaseRotationAndBaseOffsetInMeters");
 
 	UOculusFunctionLibrary_GetBaseRotationAndBaseOffsetInMeters_Params params;
 
@@ -472,7 +472,7 @@ void UOculusFunctionLibrary::STATIC_GetBaseRotationAndBaseOffsetInMeters(struct 
 
 void UOculusFunctionLibrary::STATIC_EnablePlayerControllerFollowHmd(bool bEnable)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusLibrary.OculusFunctionLibrary.EnablePlayerControllerFollowHmd"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusLibrary.OculusFunctionLibrary.EnablePlayerControllerFollowHmd");
 
 	UOculusFunctionLibrary_EnablePlayerControllerFollowHmd_Params params;
 	params.bEnable = bEnable;
@@ -494,7 +494,7 @@ void UOculusFunctionLibrary::STATIC_EnablePlayerControllerFollowHmd(bool bEnable
 
 void UOculusFunctionLibrary::STATIC_EnablePlayerCameraManagerFollowHmd(bool bFollowHmdOrientation, bool bFollowHmdPosition)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusLibrary.OculusFunctionLibrary.EnablePlayerCameraManagerFollowHmd"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusLibrary.OculusFunctionLibrary.EnablePlayerCameraManagerFollowHmd");
 
 	UOculusFunctionLibrary_EnablePlayerCameraManagerFollowHmd_Params params;
 	params.bFollowHmdOrientation = bFollowHmdOrientation;
@@ -516,7 +516,7 @@ void UOculusFunctionLibrary::STATIC_EnablePlayerCameraManagerFollowHmd(bool bFol
 
 void UOculusFunctionLibrary::STATIC_EnableAutoLoadingSplashScreen(bool bAutoShowEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusLibrary.OculusFunctionLibrary.EnableAutoLoadingSplashScreen"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusLibrary.OculusFunctionLibrary.EnableAutoLoadingSplashScreen");
 
 	UOculusFunctionLibrary_EnableAutoLoadingSplashScreen_Params params;
 	params.bAutoShowEnabled = bAutoShowEnabled;
@@ -535,7 +535,7 @@ void UOculusFunctionLibrary::STATIC_EnableAutoLoadingSplashScreen(bool bAutoShow
 
 void UOculusFunctionLibrary::STATIC_ClearLoadingSplashScreens()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusLibrary.OculusFunctionLibrary.ClearLoadingSplashScreens"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusLibrary.OculusFunctionLibrary.ClearLoadingSplashScreens");
 
 	UOculusFunctionLibrary_ClearLoadingSplashScreens_Params params;
 
@@ -560,7 +560,7 @@ void UOculusFunctionLibrary::STATIC_ClearLoadingSplashScreens()
 
 void UOculusFunctionLibrary::STATIC_AddLoadingSplashScreen(class UTexture2D* Texture, const struct FVector& TranslationInMeters, const struct FRotator& Rotation, const struct FVector2D& SizeInMeters, const struct FRotator& DeltaRotation, bool bClearBeforeAdd)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusLibrary.OculusFunctionLibrary.AddLoadingSplashScreen"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusLibrary.OculusFunctionLibrary.AddLoadingSplashScreen");
 
 	UOculusFunctionLibrary_AddLoadingSplashScreen_Params params;
 	params.Texture = Texture;

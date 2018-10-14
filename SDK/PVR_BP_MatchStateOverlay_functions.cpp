@@ -21,7 +21,7 @@ namespace SDK
 
 void ABP_MatchStateOverlay_C::OffsetLayer(const struct FVector& Offset, class USceneComponent* Overlay, float Yaw)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MatchStateOverlay.BP_MatchStateOverlay_C.OffsetLayer"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_MatchStateOverlay.BP_MatchStateOverlay_C.OffsetLayer");
 
 	ABP_MatchStateOverlay_C_OffsetLayer_Params params;
 	params.Offset = Offset;
@@ -41,7 +41,7 @@ void ABP_MatchStateOverlay_C::OffsetLayer(const struct FVector& Offset, class US
 
 void ABP_MatchStateOverlay_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MatchStateOverlay.BP_MatchStateOverlay_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_MatchStateOverlay.BP_MatchStateOverlay_C.UserConstructionScript");
 
 	ABP_MatchStateOverlay_C_UserConstructionScript_Params params;
 

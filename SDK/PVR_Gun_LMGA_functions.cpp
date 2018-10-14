@@ -19,7 +19,7 @@ namespace SDK
 
 void AGun_LMGA_C::IsMagazineEmpty(bool* Empty)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_LMGA.Gun_LMGA_C.IsMagazineEmpty"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_LMGA.Gun_LMGA_C.IsMagazineEmpty");
 
 	AGun_LMGA_C_IsMagazineEmpty_Params params;
 
@@ -39,7 +39,7 @@ void AGun_LMGA_C::IsMagazineEmpty(bool* Empty)
 
 void AGun_LMGA_C::NewFunction_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_LMGA.Gun_LMGA_C.NewFunction_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_LMGA.Gun_LMGA_C.NewFunction_1");
 
 	AGun_LMGA_C_NewFunction_1_Params params;
 
@@ -56,7 +56,7 @@ void AGun_LMGA_C::NewFunction_1()
 
 void AGun_LMGA_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_LMGA.Gun_LMGA_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_LMGA.Gun_LMGA_C.UserConstructionScript");
 
 	AGun_LMGA_C_UserConstructionScript_Params params;
 
@@ -75,7 +75,7 @@ void AGun_LMGA_C::UserConstructionScript()
 
 void AGun_LMGA_C::BndEvt__DustCoverHandle_K2Node_ComponentBoundEvent_0_VRHandleOnRotationInputReceivedSignature__DelegateSignature(float InputValueDegrees)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_LMGA.Gun_LMGA_C.BndEvt__DustCoverHandle_K2Node_ComponentBoundEvent_0_VRHandleOnRotationInputReceivedSignature__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_LMGA.Gun_LMGA_C.BndEvt__DustCoverHandle_K2Node_ComponentBoundEvent_0_VRHandleOnRotationInputReceivedSignature__DelegateSignature");
 
 	AGun_LMGA_C_BndEvt__DustCoverHandle_K2Node_ComponentBoundEvent_0_VRHandleOnRotationInputReceivedSignature__DelegateSignature_Params params;
 	params.InputValueDegrees = InputValueDegrees;
@@ -93,7 +93,7 @@ void AGun_LMGA_C::BndEvt__DustCoverHandle_K2Node_ComponentBoundEvent_0_VRHandleO
 
 void AGun_LMGA_C::BndEvt__DustCoverHandle_K2Node_ComponentBoundEvent_0_VRHandleOnGrabSignature__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_LMGA.Gun_LMGA_C.BndEvt__DustCoverHandle_K2Node_ComponentBoundEvent_0_VRHandleOnGrabSignature__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_LMGA.Gun_LMGA_C.BndEvt__DustCoverHandle_K2Node_ComponentBoundEvent_0_VRHandleOnGrabSignature__DelegateSignature");
 
 	AGun_LMGA_C_BndEvt__DustCoverHandle_K2Node_ComponentBoundEvent_0_VRHandleOnGrabSignature__DelegateSignature_Params params;
 
@@ -110,7 +110,7 @@ void AGun_LMGA_C::BndEvt__DustCoverHandle_K2Node_ComponentBoundEvent_0_VRHandleO
 
 void AGun_LMGA_C::BndEvt__DustCoverHandle_K2Node_ComponentBoundEvent_1_VRHandleOnUngrabSignature__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_LMGA.Gun_LMGA_C.BndEvt__DustCoverHandle_K2Node_ComponentBoundEvent_1_VRHandleOnUngrabSignature__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_LMGA.Gun_LMGA_C.BndEvt__DustCoverHandle_K2Node_ComponentBoundEvent_1_VRHandleOnUngrabSignature__DelegateSignature");
 
 	AGun_LMGA_C_BndEvt__DustCoverHandle_K2Node_ComponentBoundEvent_1_VRHandleOnUngrabSignature__DelegateSignature_Params params;
 
@@ -129,7 +129,7 @@ void AGun_LMGA_C::BndEvt__DustCoverHandle_K2Node_ComponentBoundEvent_1_VRHandleO
 
 void AGun_LMGA_C::ServerReportDustCoverState(bool Open)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_LMGA.Gun_LMGA_C.ServerReportDustCoverState"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_LMGA.Gun_LMGA_C.ServerReportDustCoverState");
 
 	AGun_LMGA_C_ServerReportDustCoverState_Params params;
 	params.Open = Open;
@@ -147,7 +147,7 @@ void AGun_LMGA_C::ServerReportDustCoverState(bool Open)
 
 void AGun_LMGA_C::OnPostDustCoverStateChange()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_LMGA.Gun_LMGA_C.OnPostDustCoverStateChange"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_LMGA.Gun_LMGA_C.OnPostDustCoverStateChange");
 
 	AGun_LMGA_C_OnPostDustCoverStateChange_Params params;
 
@@ -164,7 +164,7 @@ void AGun_LMGA_C::OnPostDustCoverStateChange()
 
 void AGun_LMGA_C::OnDrop()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_LMGA.Gun_LMGA_C.OnDrop"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_LMGA.Gun_LMGA_C.OnDrop");
 
 	AGun_LMGA_C_OnDrop_Params params;
 
@@ -184,7 +184,7 @@ void AGun_LMGA_C::OnDrop()
 
 void AGun_LMGA_C::BndEvt__BulletBeltHandle_K2Node_ComponentBoundEvent_0_VRHandleOnVectorInputReceivedSignature__DelegateSignature(const struct FVector& Input, const struct FVector& InputDelta)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_LMGA.Gun_LMGA_C.BndEvt__BulletBeltHandle_K2Node_ComponentBoundEvent_0_VRHandleOnVectorInputReceivedSignature__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_LMGA.Gun_LMGA_C.BndEvt__BulletBeltHandle_K2Node_ComponentBoundEvent_0_VRHandleOnVectorInputReceivedSignature__DelegateSignature");
 
 	AGun_LMGA_C_BndEvt__BulletBeltHandle_K2Node_ComponentBoundEvent_0_VRHandleOnVectorInputReceivedSignature__DelegateSignature_Params params;
 	params.Input = Input;
@@ -203,7 +203,7 @@ void AGun_LMGA_C::BndEvt__BulletBeltHandle_K2Node_ComponentBoundEvent_0_VRHandle
 
 void AGun_LMGA_C::BndEvt__BulletBeltHandle_K2Node_ComponentBoundEvent_1_VRHandleOnGrabSignature__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_LMGA.Gun_LMGA_C.BndEvt__BulletBeltHandle_K2Node_ComponentBoundEvent_1_VRHandleOnGrabSignature__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_LMGA.Gun_LMGA_C.BndEvt__BulletBeltHandle_K2Node_ComponentBoundEvent_1_VRHandleOnGrabSignature__DelegateSignature");
 
 	AGun_LMGA_C_BndEvt__BulletBeltHandle_K2Node_ComponentBoundEvent_1_VRHandleOnGrabSignature__DelegateSignature_Params params;
 
@@ -220,7 +220,7 @@ void AGun_LMGA_C::BndEvt__BulletBeltHandle_K2Node_ComponentBoundEvent_1_VRHandle
 
 void AGun_LMGA_C::BndEvt__BulletBeltHandle_K2Node_ComponentBoundEvent_2_VRHandleOnUngrabSignature__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_LMGA.Gun_LMGA_C.BndEvt__BulletBeltHandle_K2Node_ComponentBoundEvent_2_VRHandleOnUngrabSignature__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_LMGA.Gun_LMGA_C.BndEvt__BulletBeltHandle_K2Node_ComponentBoundEvent_2_VRHandleOnUngrabSignature__DelegateSignature");
 
 	AGun_LMGA_C_BndEvt__BulletBeltHandle_K2Node_ComponentBoundEvent_2_VRHandleOnUngrabSignature__DelegateSignature_Params params;
 
@@ -239,7 +239,7 @@ void AGun_LMGA_C::BndEvt__BulletBeltHandle_K2Node_ComponentBoundEvent_2_VRHandle
 
 void AGun_LMGA_C::OnPick(class AVRItemController** ByController)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_LMGA.Gun_LMGA_C.OnPick"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_LMGA.Gun_LMGA_C.OnPick");
 
 	AGun_LMGA_C_OnPick_Params params;
 	params.ByController = ByController;
@@ -257,7 +257,7 @@ void AGun_LMGA_C::OnPick(class AVRItemController** ByController)
 
 void AGun_LMGA_C::OnUnload()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_LMGA.Gun_LMGA_C.OnUnload"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_LMGA.Gun_LMGA_C.OnUnload");
 
 	AGun_LMGA_C_OnUnload_Params params;
 
@@ -274,7 +274,7 @@ void AGun_LMGA_C::OnUnload()
 
 void AGun_LMGA_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_LMGA.Gun_LMGA_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_LMGA.Gun_LMGA_C.ReceiveBeginPlay");
 
 	AGun_LMGA_C_ReceiveBeginPlay_Params params;
 
@@ -293,7 +293,7 @@ void AGun_LMGA_C::ReceiveBeginPlay()
 
 void AGun_LMGA_C::OnMagazineChanged(bool* bHasMagazine)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_LMGA.Gun_LMGA_C.OnMagazineChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_LMGA.Gun_LMGA_C.OnMagazineChanged");
 
 	AGun_LMGA_C_OnMagazineChanged_Params params;
 	params.bHasMagazine = bHasMagazine;
@@ -313,7 +313,7 @@ void AGun_LMGA_C::OnMagazineChanged(bool* bHasMagazine)
 
 void AGun_LMGA_C::Physicalize(bool* bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_LMGA.Gun_LMGA_C.Physicalize"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_LMGA.Gun_LMGA_C.Physicalize");
 
 	AGun_LMGA_C_Physicalize_Params params;
 	params.bEnabled = bEnabled;
@@ -333,7 +333,7 @@ void AGun_LMGA_C::Physicalize(bool* bEnabled)
 
 void AGun_LMGA_C::ExecuteUbergraph_Gun_LMGA(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_LMGA.Gun_LMGA_C.ExecuteUbergraph_Gun_LMGA"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_LMGA.Gun_LMGA_C.ExecuteUbergraph_Gun_LMGA");
 
 	AGun_LMGA_C_ExecuteUbergraph_Gun_LMGA_Params params;
 	params.EntryPoint = EntryPoint;

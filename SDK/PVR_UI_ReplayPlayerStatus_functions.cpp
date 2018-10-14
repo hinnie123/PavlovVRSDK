@@ -19,7 +19,7 @@ namespace SDK
 
 struct FLinearColor UUI_ReplayPlayerStatus_C::Get_header_ColorAndOpacity_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ReplayPlayerStatus.UI_ReplayPlayerStatus_C.Get_header_ColorAndOpacity_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ReplayPlayerStatus.UI_ReplayPlayerStatus_C.Get_header_ColorAndOpacity_1");
 
 	UUI_ReplayPlayerStatus_C_Get_header_ColorAndOpacity_1_Params params;
 
@@ -40,7 +40,7 @@ struct FLinearColor UUI_ReplayPlayerStatus_C::Get_header_ColorAndOpacity_1()
 
 ESlateVisibility UUI_ReplayPlayerStatus_C::Get_Root_Visibility_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ReplayPlayerStatus.UI_ReplayPlayerStatus_C.Get_Root_Visibility_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ReplayPlayerStatus.UI_ReplayPlayerStatus_C.Get_Root_Visibility_1");
 
 	UUI_ReplayPlayerStatus_C_Get_Root_Visibility_1_Params params;
 
@@ -61,7 +61,7 @@ ESlateVisibility UUI_ReplayPlayerStatus_C::Get_Root_Visibility_1()
 
 struct FText UUI_ReplayPlayerStatus_C::Get_CashLabel_Text_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ReplayPlayerStatus.UI_ReplayPlayerStatus_C.Get_CashLabel_Text_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ReplayPlayerStatus.UI_ReplayPlayerStatus_C.Get_CashLabel_Text_1");
 
 	UUI_ReplayPlayerStatus_C_Get_CashLabel_Text_1_Params params;
 
@@ -83,7 +83,7 @@ struct FText UUI_ReplayPlayerStatus_C::Get_CashLabel_Text_1()
 
 void UUI_ReplayPlayerStatus_C::Initialize(bool bLeft, int TeamID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ReplayPlayerStatus.UI_ReplayPlayerStatus_C.Initialize"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ReplayPlayerStatus.UI_ReplayPlayerStatus_C.Initialize");
 
 	UUI_ReplayPlayerStatus_C_Initialize_Params params;
 	params.bLeft = bLeft;
@@ -102,7 +102,7 @@ void UUI_ReplayPlayerStatus_C::Initialize(bool bLeft, int TeamID)
 
 void UUI_ReplayPlayerStatus_C::UpdateEquipment()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ReplayPlayerStatus.UI_ReplayPlayerStatus_C.UpdateEquipment"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ReplayPlayerStatus.UI_ReplayPlayerStatus_C.UpdateEquipment");
 
 	UUI_ReplayPlayerStatus_C_UpdateEquipment_Params params;
 
@@ -119,7 +119,7 @@ void UUI_ReplayPlayerStatus_C::UpdateEquipment()
 
 void UUI_ReplayPlayerStatus_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ReplayPlayerStatus.UI_ReplayPlayerStatus_C.Construct"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ReplayPlayerStatus.UI_ReplayPlayerStatus_C.Construct");
 
 	UUI_ReplayPlayerStatus_C_Construct_Params params;
 
@@ -139,7 +139,7 @@ void UUI_ReplayPlayerStatus_C::Construct()
 
 void UUI_ReplayPlayerStatus_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ReplayPlayerStatus.UI_ReplayPlayerStatus_C.Tick"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ReplayPlayerStatus.UI_ReplayPlayerStatus_C.Tick");
 
 	UUI_ReplayPlayerStatus_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -160,7 +160,7 @@ void UUI_ReplayPlayerStatus_C::Tick(struct FGeometry* MyGeometry, float* InDelta
 
 void UUI_ReplayPlayerStatus_C::ExecuteUbergraph_UI_ReplayPlayerStatus(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ReplayPlayerStatus.UI_ReplayPlayerStatus_C.ExecuteUbergraph_UI_ReplayPlayerStatus"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ReplayPlayerStatus.UI_ReplayPlayerStatus_C.ExecuteUbergraph_UI_ReplayPlayerStatus");
 
 	UUI_ReplayPlayerStatus_C_ExecuteUbergraph_UI_ReplayPlayerStatus_Params params;
 	params.EntryPoint = EntryPoint;

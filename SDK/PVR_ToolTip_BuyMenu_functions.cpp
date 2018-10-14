@@ -17,7 +17,7 @@ namespace SDK
 
 void AToolTip_BuyMenu_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_BuyMenu.ToolTip_BuyMenu_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_BuyMenu.ToolTip_BuyMenu_C.UserConstructionScript");
 
 	AToolTip_BuyMenu_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void AToolTip_BuyMenu_C::UserConstructionScript()
 
 void AToolTip_BuyMenu_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_BuyMenu.ToolTip_BuyMenu_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_BuyMenu.ToolTip_BuyMenu_C.ReceiveBeginPlay");
 
 	AToolTip_BuyMenu_C_ReceiveBeginPlay_Params params;
 
@@ -51,7 +51,7 @@ void AToolTip_BuyMenu_C::ReceiveBeginPlay()
 
 void AToolTip_BuyMenu_C::CustomEvent_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_BuyMenu.ToolTip_BuyMenu_C.CustomEvent_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_BuyMenu.ToolTip_BuyMenu_C.CustomEvent_1");
 
 	AToolTip_BuyMenu_C_CustomEvent_1_Params params;
 
@@ -70,7 +70,7 @@ void AToolTip_BuyMenu_C::CustomEvent_1()
 
 void AToolTip_BuyMenu_C::ExecuteUbergraph_ToolTip_BuyMenu(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_BuyMenu.ToolTip_BuyMenu_C.ExecuteUbergraph_ToolTip_BuyMenu"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_BuyMenu.ToolTip_BuyMenu_C.ExecuteUbergraph_ToolTip_BuyMenu");
 
 	AToolTip_BuyMenu_C_ExecuteUbergraph_ToolTip_BuyMenu_Params params;
 	params.EntryPoint = EntryPoint;

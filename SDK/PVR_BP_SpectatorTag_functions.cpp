@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_SpectatorTag_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_SpectatorTag.BP_SpectatorTag_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_SpectatorTag.BP_SpectatorTag_C.UserConstructionScript");
 
 	ABP_SpectatorTag_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void ABP_SpectatorTag_C::UserConstructionScript()
 
 void ABP_SpectatorTag_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_SpectatorTag.BP_SpectatorTag_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_SpectatorTag.BP_SpectatorTag_C.ReceiveBeginPlay");
 
 	ABP_SpectatorTag_C_ReceiveBeginPlay_Params params;
 
@@ -51,7 +51,7 @@ void ABP_SpectatorTag_C::ReceiveBeginPlay()
 
 void ABP_SpectatorTag_C::OnFadeOut()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_SpectatorTag.BP_SpectatorTag_C.OnFadeOut"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_SpectatorTag.BP_SpectatorTag_C.OnFadeOut");
 
 	ABP_SpectatorTag_C_OnFadeOut_Params params;
 
@@ -70,7 +70,7 @@ void ABP_SpectatorTag_C::OnFadeOut()
 
 void ABP_SpectatorTag_C::ExecuteUbergraph_BP_SpectatorTag(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_SpectatorTag.BP_SpectatorTag_C.ExecuteUbergraph_BP_SpectatorTag"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_SpectatorTag.BP_SpectatorTag_C.ExecuteUbergraph_BP_SpectatorTag");
 
 	ABP_SpectatorTag_C_ExecuteUbergraph_BP_SpectatorTag_Params params;
 	params.EntryPoint = EntryPoint;

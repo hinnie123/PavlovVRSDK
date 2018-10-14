@@ -19,7 +19,7 @@ namespace SDK
 
 struct FSlateBrush UUI_LobbyMember_C::GetBrush_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_LobbyMember.UI_LobbyMember_C.GetBrush_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_LobbyMember.UI_LobbyMember_C.GetBrush_1");
 
 	UUI_LobbyMember_C_GetBrush_1_Params params;
 
@@ -40,7 +40,7 @@ struct FSlateBrush UUI_LobbyMember_C::GetBrush_1()
 
 ESlateVisibility UUI_LobbyMember_C::Get_KickButton_Visibility_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_LobbyMember.UI_LobbyMember_C.Get_KickButton_Visibility_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_LobbyMember.UI_LobbyMember_C.Get_KickButton_Visibility_1");
 
 	UUI_LobbyMember_C_Get_KickButton_Visibility_1_Params params;
 
@@ -61,7 +61,7 @@ ESlateVisibility UUI_LobbyMember_C::Get_KickButton_Visibility_1()
 
 ESlateVisibility UUI_LobbyMember_C::Get_ReadyOverlay_Visibility_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_LobbyMember.UI_LobbyMember_C.Get_ReadyOverlay_Visibility_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_LobbyMember.UI_LobbyMember_C.Get_ReadyOverlay_Visibility_1");
 
 	UUI_LobbyMember_C_Get_ReadyOverlay_Visibility_1_Params params;
 
@@ -84,7 +84,7 @@ ESlateVisibility UUI_LobbyMember_C::Get_ReadyOverlay_Visibility_1()
 
 struct FEventReply UUI_LobbyMember_C::OnMouseButtonDown(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_LobbyMember.UI_LobbyMember_C.OnMouseButtonDown"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_LobbyMember.UI_LobbyMember_C.OnMouseButtonDown");
 
 	UUI_LobbyMember_C_OnMouseButtonDown_Params params;
 	params.MyGeometry = MyGeometry;
@@ -107,7 +107,7 @@ struct FEventReply UUI_LobbyMember_C::OnMouseButtonDown(struct FGeometry* MyGeom
 
 ESlateVisibility UUI_LobbyMember_C::Get_OwnerIcon_Visibility_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_LobbyMember.UI_LobbyMember_C.Get_OwnerIcon_Visibility_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_LobbyMember.UI_LobbyMember_C.Get_OwnerIcon_Visibility_1");
 
 	UUI_LobbyMember_C_Get_OwnerIcon_Visibility_1_Params params;
 
@@ -129,7 +129,7 @@ ESlateVisibility UUI_LobbyMember_C::Get_OwnerIcon_Visibility_1()
 
 void UUI_LobbyMember_C::IsMemberTalking(int Index, bool* Talking)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_LobbyMember.UI_LobbyMember_C.IsMemberTalking"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_LobbyMember.UI_LobbyMember_C.IsMemberTalking");
 
 	UUI_LobbyMember_C_IsMemberTalking_Params params;
 	params.Index = Index;
@@ -153,7 +153,7 @@ void UUI_LobbyMember_C::IsMemberTalking(int Index, bool* Talking)
 
 struct FLinearColor UUI_LobbyMember_C::GetTeamColor(int inInt)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_LobbyMember.UI_LobbyMember_C.GetTeamColor"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_LobbyMember.UI_LobbyMember_C.GetTeamColor");
 
 	UUI_LobbyMember_C_GetTeamColor_Params params;
 	params.inInt = inInt;
@@ -175,7 +175,7 @@ struct FLinearColor UUI_LobbyMember_C::GetTeamColor(int inInt)
 
 struct FSlateBrush UUI_LobbyMember_C::Get_AvatarImage_Brush_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_LobbyMember.UI_LobbyMember_C.Get_AvatarImage_Brush_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_LobbyMember.UI_LobbyMember_C.Get_AvatarImage_Brush_1");
 
 	UUI_LobbyMember_C_Get_AvatarImage_Brush_1_Params params;
 
@@ -196,7 +196,7 @@ struct FSlateBrush UUI_LobbyMember_C::Get_AvatarImage_Brush_1()
 
 struct FLinearColor UUI_LobbyMember_C::GetColorAndOpacity_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_LobbyMember.UI_LobbyMember_C.GetColorAndOpacity_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_LobbyMember.UI_LobbyMember_C.GetColorAndOpacity_1");
 
 	UUI_LobbyMember_C_GetColorAndOpacity_1_Params params;
 
@@ -215,7 +215,7 @@ struct FLinearColor UUI_LobbyMember_C::GetColorAndOpacity_1()
 
 void UUI_LobbyMember_C::BndEvt__MuteButton_K2Node_ComponentBoundEvent_147_OnButtonClickedEvent__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_LobbyMember.UI_LobbyMember_C.BndEvt__MuteButton_K2Node_ComponentBoundEvent_147_OnButtonClickedEvent__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_LobbyMember.UI_LobbyMember_C.BndEvt__MuteButton_K2Node_ComponentBoundEvent_147_OnButtonClickedEvent__DelegateSignature");
 
 	UUI_LobbyMember_C_BndEvt__MuteButton_K2Node_ComponentBoundEvent_147_OnButtonClickedEvent__DelegateSignature_Params params;
 
@@ -232,7 +232,7 @@ void UUI_LobbyMember_C::BndEvt__MuteButton_K2Node_ComponentBoundEvent_147_OnButt
 
 void UUI_LobbyMember_C::BndEvt__KickButton_K2Node_ComponentBoundEvent_165_OnButtonClickedEvent__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_LobbyMember.UI_LobbyMember_C.BndEvt__KickButton_K2Node_ComponentBoundEvent_165_OnButtonClickedEvent__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_LobbyMember.UI_LobbyMember_C.BndEvt__KickButton_K2Node_ComponentBoundEvent_165_OnButtonClickedEvent__DelegateSignature");
 
 	UUI_LobbyMember_C_BndEvt__KickButton_K2Node_ComponentBoundEvent_165_OnButtonClickedEvent__DelegateSignature_Params params;
 
@@ -251,7 +251,7 @@ void UUI_LobbyMember_C::BndEvt__KickButton_K2Node_ComponentBoundEvent_165_OnButt
 
 void UUI_LobbyMember_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_LobbyMember.UI_LobbyMember_C.OnMouseLeave"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_LobbyMember.UI_LobbyMember_C.OnMouseLeave");
 
 	UUI_LobbyMember_C_OnMouseLeave_Params params;
 	params.MouseEvent = MouseEvent;
@@ -271,7 +271,7 @@ void UUI_LobbyMember_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 
 void UUI_LobbyMember_C::ExecuteUbergraph_UI_LobbyMember(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_LobbyMember.UI_LobbyMember_C.ExecuteUbergraph_UI_LobbyMember"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_LobbyMember.UI_LobbyMember_C.ExecuteUbergraph_UI_LobbyMember");
 
 	UUI_LobbyMember_C_ExecuteUbergraph_UI_LobbyMember_Params params;
 	params.EntryPoint = EntryPoint;

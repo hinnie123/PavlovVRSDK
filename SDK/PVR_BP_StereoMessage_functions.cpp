@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_StereoMessage_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_StereoMessage.BP_StereoMessage_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_StereoMessage.BP_StereoMessage_C.UserConstructionScript");
 
 	ABP_StereoMessage_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void ABP_StereoMessage_C::UserConstructionScript()
 
 void ABP_StereoMessage_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_StereoMessage.BP_StereoMessage_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_StereoMessage.BP_StereoMessage_C.ReceiveBeginPlay");
 
 	ABP_StereoMessage_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +53,7 @@ void ABP_StereoMessage_C::ReceiveBeginPlay()
 
 void ABP_StereoMessage_C::ExecuteUbergraph_BP_StereoMessage(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_StereoMessage.BP_StereoMessage_C.ExecuteUbergraph_BP_StereoMessage"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_StereoMessage.BP_StereoMessage_C.ExecuteUbergraph_BP_StereoMessage");
 
 	ABP_StereoMessage_C_ExecuteUbergraph_BP_StereoMessage_Params params;
 	params.EntryPoint = EntryPoint;

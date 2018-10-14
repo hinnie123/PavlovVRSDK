@@ -20,7 +20,7 @@ namespace SDK
 
 void UUI_Scoreboard_C::UpdatePlayers(TArray<class UUI_Scoreboard_Player_C*>* Players, TArray<class APavlovPlayerState*>* PlayerArray)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Scoreboard.UI_Scoreboard_C.UpdatePlayers"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Scoreboard.UI_Scoreboard_C.UpdatePlayers");
 
 	UUI_Scoreboard_C_UpdatePlayers_Params params;
 
@@ -45,7 +45,7 @@ void UUI_Scoreboard_C::UpdatePlayers(TArray<class UUI_Scoreboard_Player_C*>* Pla
 
 void UUI_Scoreboard_C::CreatePlayerWidgets(TArray<class UUI_Scoreboard_Player_C*> TargetArray, class UVerticalBox* List)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Scoreboard.UI_Scoreboard_C.CreatePlayerWidgets"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Scoreboard.UI_Scoreboard_C.CreatePlayerWidgets");
 
 	UUI_Scoreboard_C_CreatePlayerWidgets_Params params;
 	params.TargetArray = TargetArray;
@@ -67,7 +67,7 @@ void UUI_Scoreboard_C::CreatePlayerWidgets(TArray<class UUI_Scoreboard_Player_C*
 
 void UUI_Scoreboard_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Scoreboard.UI_Scoreboard_C.Tick"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Scoreboard.UI_Scoreboard_C.Tick");
 
 	UUI_Scoreboard_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -86,7 +86,7 @@ void UUI_Scoreboard_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 
 void UUI_Scoreboard_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Scoreboard.UI_Scoreboard_C.Construct"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Scoreboard.UI_Scoreboard_C.Construct");
 
 	UUI_Scoreboard_C_Construct_Params params;
 
@@ -105,7 +105,7 @@ void UUI_Scoreboard_C::Construct()
 
 void UUI_Scoreboard_C::ExecuteUbergraph_UI_Scoreboard(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Scoreboard.UI_Scoreboard_C.ExecuteUbergraph_UI_Scoreboard"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Scoreboard.UI_Scoreboard_C.ExecuteUbergraph_UI_Scoreboard");
 
 	UUI_Scoreboard_C_ExecuteUbergraph_UI_Scoreboard_Params params;
 	params.EntryPoint = EntryPoint;

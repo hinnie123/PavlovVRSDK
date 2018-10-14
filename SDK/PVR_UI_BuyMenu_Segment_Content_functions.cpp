@@ -19,7 +19,7 @@ namespace SDK
 
 struct FSlateColor UUI_BuyMenu_Segment_Content_C::Get_Cost_ColorAndOpacity_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_BuyMenu_Segment_Content.UI_BuyMenu_Segment_Content_C.Get_Cost_ColorAndOpacity_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_BuyMenu_Segment_Content.UI_BuyMenu_Segment_Content_C.Get_Cost_ColorAndOpacity_1");
 
 	UUI_BuyMenu_Segment_Content_C_Get_Cost_ColorAndOpacity_1_Params params;
 
@@ -40,7 +40,7 @@ struct FSlateColor UUI_BuyMenu_Segment_Content_C::Get_Cost_ColorAndOpacity_1()
 
 struct FText UUI_BuyMenu_Segment_Content_C::Get_Cost_Text_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_BuyMenu_Segment_Content.UI_BuyMenu_Segment_Content_C.Get_Cost_Text_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_BuyMenu_Segment_Content.UI_BuyMenu_Segment_Content_C.Get_Cost_Text_1");
 
 	UUI_BuyMenu_Segment_Content_C_Get_Cost_Text_1_Params params;
 
@@ -61,7 +61,7 @@ struct FText UUI_BuyMenu_Segment_Content_C::Get_Cost_Text_1()
 
 void UUI_BuyMenu_Segment_Content_C::OnUpdated(struct FWheelSegment* Segment)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_BuyMenu_Segment_Content.UI_BuyMenu_Segment_Content_C.OnUpdated"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_BuyMenu_Segment_Content.UI_BuyMenu_Segment_Content_C.OnUpdated");
 
 	UUI_BuyMenu_Segment_Content_C_OnUpdated_Params params;
 	params.Segment = Segment;
@@ -81,7 +81,7 @@ void UUI_BuyMenu_Segment_Content_C::OnUpdated(struct FWheelSegment* Segment)
 
 void UUI_BuyMenu_Segment_Content_C::ExecuteUbergraph_UI_BuyMenu_Segment_Content(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_BuyMenu_Segment_Content.UI_BuyMenu_Segment_Content_C.ExecuteUbergraph_UI_BuyMenu_Segment_Content"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_BuyMenu_Segment_Content.UI_BuyMenu_Segment_Content_C.ExecuteUbergraph_UI_BuyMenu_Segment_Content");
 
 	UUI_BuyMenu_Segment_Content_C_ExecuteUbergraph_UI_BuyMenu_Segment_Content_Params params;
 	params.EntryPoint = EntryPoint;

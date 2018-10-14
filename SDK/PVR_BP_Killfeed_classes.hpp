@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("BlueprintGeneratedClass BP_Killfeed.BP_Killfeed_C"));
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass BP_Killfeed.BP_Killfeed_C");
 		return ptr;
 	}
 

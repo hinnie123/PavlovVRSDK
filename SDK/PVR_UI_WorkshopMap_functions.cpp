@@ -19,7 +19,7 @@ namespace SDK
 
 void UUI_WorkshopMap_C::SetDownloadProgress(float Progress)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_WorkshopMap.UI_WorkshopMap_C.SetDownloadProgress"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_WorkshopMap.UI_WorkshopMap_C.SetDownloadProgress");
 
 	UUI_WorkshopMap_C_SetDownloadProgress_Params params;
 	params.Progress = Progress;
@@ -41,7 +41,7 @@ void UUI_WorkshopMap_C::SetDownloadProgress(float Progress)
 
 struct FEventReply UUI_WorkshopMap_C::OnMouseButtonDown(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_WorkshopMap.UI_WorkshopMap_C.OnMouseButtonDown"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_WorkshopMap.UI_WorkshopMap_C.OnMouseButtonDown");
 
 	UUI_WorkshopMap_C_OnMouseButtonDown_Params params;
 	params.MyGeometry = MyGeometry;
@@ -64,7 +64,7 @@ struct FEventReply UUI_WorkshopMap_C::OnMouseButtonDown(struct FGeometry* MyGeom
 
 void UUI_WorkshopMap_C::SetOfficial(bool Enabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_WorkshopMap.UI_WorkshopMap_C.SetOfficial"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_WorkshopMap.UI_WorkshopMap_C.SetOfficial");
 
 	UUI_WorkshopMap_C_SetOfficial_Params params;
 	params.Enabled = Enabled;
@@ -84,7 +84,7 @@ void UUI_WorkshopMap_C::SetOfficial(bool Enabled)
 
 void UUI_WorkshopMap_C::SetActive(bool NewActive)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_WorkshopMap.UI_WorkshopMap_C.SetActive"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_WorkshopMap.UI_WorkshopMap_C.SetActive");
 
 	UUI_WorkshopMap_C_SetActive_Params params;
 	params.NewActive = NewActive;
@@ -104,7 +104,7 @@ void UUI_WorkshopMap_C::SetActive(bool NewActive)
 
 void UUI_WorkshopMap_C::ExecuteUbergraph_UI_WorkshopMap(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_WorkshopMap.UI_WorkshopMap_C.ExecuteUbergraph_UI_WorkshopMap"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_WorkshopMap.UI_WorkshopMap_C.ExecuteUbergraph_UI_WorkshopMap");
 
 	UUI_WorkshopMap_C_ExecuteUbergraph_UI_WorkshopMap_Params params;
 	params.EntryPoint = EntryPoint;
@@ -124,7 +124,7 @@ void UUI_WorkshopMap_C::ExecuteUbergraph_UI_WorkshopMap(int EntryPoint)
 
 void UUI_WorkshopMap_C::OnClicked__DelegateSignature(class UUI_WorkshopMap_C* WorkshopMap)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_WorkshopMap.UI_WorkshopMap_C.OnClicked__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_WorkshopMap.UI_WorkshopMap_C.OnClicked__DelegateSignature");
 
 	UUI_WorkshopMap_C_OnClicked__DelegateSignature_Params params;
 	params.WorkshopMap = WorkshopMap;

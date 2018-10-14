@@ -23,7 +23,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class PhysXVehicles.VehicleAnimInstance"));
+		static auto ptr = UObject::FindClass("Class PhysXVehicles.VehicleAnimInstance");
 		return ptr;
 	}
 
@@ -42,7 +42,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class PhysXVehicles.WheeledVehicle"));
+		static auto ptr = UObject::FindClass("Class PhysXVehicles.WheeledVehicle");
 		return ptr;
 	}
 
@@ -61,7 +61,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class PhysXVehicles.TireConfig"));
+		static auto ptr = UObject::FindClass("Class PhysXVehicles.TireConfig");
 		return ptr;
 	}
 
@@ -113,7 +113,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class PhysXVehicles.VehicleWheel"));
+		static auto ptr = UObject::FindClass("Class PhysXVehicles.VehicleWheel");
 		return ptr;
 	}
 
@@ -192,7 +192,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class PhysXVehicles.WheeledVehicleMovementComponent"));
+		static auto ptr = UObject::FindClass("Class PhysXVehicles.WheeledVehicleMovementComponent");
 		return ptr;
 	}
 
@@ -230,7 +230,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class PhysXVehicles.SimpleWheeledVehicleMovementComponent"));
+		static auto ptr = UObject::FindClass("Class PhysXVehicles.SimpleWheeledVehicleMovementComponent");
 		return ptr;
 	}
 
@@ -256,7 +256,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class PhysXVehicles.WheeledVehicleMovementComponent4W"));
+		static auto ptr = UObject::FindClass("Class PhysXVehicles.WheeledVehicleMovementComponent4W");
 		return ptr;
 	}
 

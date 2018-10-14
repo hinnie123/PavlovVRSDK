@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_Killfeed_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Killfeed.BP_Killfeed_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Killfeed.BP_Killfeed_C.UserConstructionScript");
 
 	ABP_Killfeed_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void ABP_Killfeed_C::UserConstructionScript()
 
 void ABP_Killfeed_C::OnDisplayModeUpdated()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Killfeed.BP_Killfeed_C.OnDisplayModeUpdated"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Killfeed.BP_Killfeed_C.OnDisplayModeUpdated");
 
 	ABP_Killfeed_C_OnDisplayModeUpdated_Params params;
 
@@ -53,7 +53,7 @@ void ABP_Killfeed_C::OnDisplayModeUpdated()
 
 void ABP_Killfeed_C::ExecuteUbergraph_BP_Killfeed(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Killfeed.BP_Killfeed_C.ExecuteUbergraph_BP_Killfeed"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Killfeed.BP_Killfeed_C.ExecuteUbergraph_BP_Killfeed");
 
 	ABP_Killfeed_C_ExecuteUbergraph_BP_Killfeed_Params params;
 	params.EntryPoint = EntryPoint;

@@ -19,7 +19,7 @@ namespace SDK
 
 class UGeometryCacheComponent* AGeometryCacheActor::GetGeometryCacheComponent()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GeometryCache.GeometryCacheActor.GetGeometryCacheComponent"));
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCache.GeometryCacheActor.GetGeometryCacheComponent");
 
 	AGeometryCacheActor_GetGeometryCacheComponent_Params params;
 
@@ -39,7 +39,7 @@ class UGeometryCacheComponent* AGeometryCacheActor::GetGeometryCacheComponent()
 
 void UGeometryCacheComponent::Stop()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GeometryCache.GeometryCacheComponent.Stop"));
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCache.GeometryCacheComponent.Stop");
 
 	UGeometryCacheComponent_Stop_Params params;
 
@@ -59,7 +59,7 @@ void UGeometryCacheComponent::Stop()
 
 void UGeometryCacheComponent::SetPlaybackSpeed(float NewPlaybackSpeed)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GeometryCache.GeometryCacheComponent.SetPlaybackSpeed"));
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCache.GeometryCacheComponent.SetPlaybackSpeed");
 
 	UGeometryCacheComponent_SetPlaybackSpeed_Params params;
 	params.NewPlaybackSpeed = NewPlaybackSpeed;
@@ -80,7 +80,7 @@ void UGeometryCacheComponent::SetPlaybackSpeed(float NewPlaybackSpeed)
 
 void UGeometryCacheComponent::SetLooping(bool bNewLooping)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GeometryCache.GeometryCacheComponent.SetLooping"));
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCache.GeometryCacheComponent.SetLooping");
 
 	UGeometryCacheComponent_SetLooping_Params params;
 	params.bNewLooping = bNewLooping;
@@ -102,7 +102,7 @@ void UGeometryCacheComponent::SetLooping(bool bNewLooping)
 
 bool UGeometryCacheComponent::SetGeometryCache(class UGeometryCache* NewGeomCache)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GeometryCache.GeometryCacheComponent.SetGeometryCache"));
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCache.GeometryCacheComponent.SetGeometryCache");
 
 	UGeometryCacheComponent_SetGeometryCache_Params params;
 	params.NewGeomCache = NewGeomCache;
@@ -123,7 +123,7 @@ bool UGeometryCacheComponent::SetGeometryCache(class UGeometryCache* NewGeomCach
 
 void UGeometryCacheComponent::PlayReversedFromEnd()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GeometryCache.GeometryCacheComponent.PlayReversedFromEnd"));
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCache.GeometryCacheComponent.PlayReversedFromEnd");
 
 	UGeometryCacheComponent_PlayReversedFromEnd_Params params;
 
@@ -141,7 +141,7 @@ void UGeometryCacheComponent::PlayReversedFromEnd()
 
 void UGeometryCacheComponent::PlayReversed()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GeometryCache.GeometryCacheComponent.PlayReversed"));
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCache.GeometryCacheComponent.PlayReversed");
 
 	UGeometryCacheComponent_PlayReversed_Params params;
 
@@ -159,7 +159,7 @@ void UGeometryCacheComponent::PlayReversed()
 
 void UGeometryCacheComponent::PlayFromStart()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GeometryCache.GeometryCacheComponent.PlayFromStart"));
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCache.GeometryCacheComponent.PlayFromStart");
 
 	UGeometryCacheComponent_PlayFromStart_Params params;
 
@@ -177,7 +177,7 @@ void UGeometryCacheComponent::PlayFromStart()
 
 void UGeometryCacheComponent::Play()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GeometryCache.GeometryCacheComponent.Play"));
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCache.GeometryCacheComponent.Play");
 
 	UGeometryCacheComponent_Play_Params params;
 
@@ -195,7 +195,7 @@ void UGeometryCacheComponent::Play()
 
 void UGeometryCacheComponent::Pause()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GeometryCache.GeometryCacheComponent.Pause"));
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCache.GeometryCacheComponent.Pause");
 
 	UGeometryCacheComponent_Pause_Params params;
 
@@ -215,7 +215,7 @@ void UGeometryCacheComponent::Pause()
 
 bool UGeometryCacheComponent::IsPlayingReversed()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GeometryCache.GeometryCacheComponent.IsPlayingReversed"));
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCache.GeometryCacheComponent.IsPlayingReversed");
 
 	UGeometryCacheComponent_IsPlayingReversed_Params params;
 
@@ -237,7 +237,7 @@ bool UGeometryCacheComponent::IsPlayingReversed()
 
 bool UGeometryCacheComponent::IsPlaying()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GeometryCache.GeometryCacheComponent.IsPlaying"));
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCache.GeometryCacheComponent.IsPlaying");
 
 	UGeometryCacheComponent_IsPlaying_Params params;
 
@@ -259,7 +259,7 @@ bool UGeometryCacheComponent::IsPlaying()
 
 bool UGeometryCacheComponent::IsLooping()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GeometryCache.GeometryCacheComponent.IsLooping"));
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCache.GeometryCacheComponent.IsLooping");
 
 	UGeometryCacheComponent_IsLooping_Params params;
 
@@ -281,7 +281,7 @@ bool UGeometryCacheComponent::IsLooping()
 
 float UGeometryCacheComponent::GetPlaybackSpeed()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GeometryCache.GeometryCacheComponent.GetPlaybackSpeed"));
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCache.GeometryCacheComponent.GetPlaybackSpeed");
 
 	UGeometryCacheComponent_GetPlaybackSpeed_Params params;
 
@@ -304,7 +304,7 @@ float UGeometryCacheComponent::GetPlaybackSpeed()
 
 void UGeometryCacheTrack_FlipbookAnimation::AddMeshSample(const struct FGeometryCacheMeshData& MeshData, float SampleTime)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GeometryCache.GeometryCacheTrack_FlipbookAnimation.AddMeshSample"));
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCache.GeometryCacheTrack_FlipbookAnimation.AddMeshSample");
 
 	UGeometryCacheTrack_FlipbookAnimation_AddMeshSample_Params params;
 	params.MeshData = MeshData;
@@ -326,7 +326,7 @@ void UGeometryCacheTrack_FlipbookAnimation::AddMeshSample(const struct FGeometry
 
 void UGeometryCacheTrack_TransformAnimation::SetMesh(const struct FGeometryCacheMeshData& NewMeshData)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GeometryCache.GeometryCacheTrack_TransformAnimation.SetMesh"));
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCache.GeometryCacheTrack_TransformAnimation.SetMesh");
 
 	UGeometryCacheTrack_TransformAnimation_SetMesh_Params params;
 	params.NewMeshData = NewMeshData;
@@ -347,7 +347,7 @@ void UGeometryCacheTrack_TransformAnimation::SetMesh(const struct FGeometryCache
 
 void UGeometryCacheTrack_TransformGroupAnimation::SetMesh(const struct FGeometryCacheMeshData& NewMeshData)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GeometryCache.GeometryCacheTrack_TransformGroupAnimation.SetMesh"));
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCache.GeometryCacheTrack_TransformGroupAnimation.SetMesh");
 
 	UGeometryCacheTrack_TransformGroupAnimation_SetMesh_Params params;
 	params.NewMeshData = NewMeshData;

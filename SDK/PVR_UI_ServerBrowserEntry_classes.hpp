@@ -32,7 +32,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("WidgetBlueprintGeneratedClass UI_ServerBrowserEntry.UI_ServerBrowserEntry_C"));
+		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass UI_ServerBrowserEntry.UI_ServerBrowserEntry_C");
 		return ptr;
 	}
 

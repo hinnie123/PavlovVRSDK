@@ -21,7 +21,7 @@ namespace SDK
 
 void UCableComponent::SetAttachEndTo(class AActor* Actor, const struct FName& ComponentProperty, const struct FName& SocketName)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function CableComponent.CableComponent.SetAttachEndTo"));
+	static auto fn = UObject::FindObject<UFunction>("Function CableComponent.CableComponent.SetAttachEndTo");
 
 	UCableComponent_SetAttachEndTo_Params params;
 	params.Actor = Actor;
@@ -44,7 +44,7 @@ void UCableComponent::SetAttachEndTo(class AActor* Actor, const struct FName& Co
 
 void UCableComponent::GetCableParticleLocations(TArray<struct FVector>* Locations)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function CableComponent.CableComponent.GetCableParticleLocations"));
+	static auto fn = UObject::FindObject<UFunction>("Function CableComponent.CableComponent.GetCableParticleLocations");
 
 	UCableComponent_GetCableParticleLocations_Params params;
 
@@ -67,7 +67,7 @@ void UCableComponent::GetCableParticleLocations(TArray<struct FVector>* Location
 
 class USceneComponent* UCableComponent::GetAttachedComponent()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function CableComponent.CableComponent.GetAttachedComponent"));
+	static auto fn = UObject::FindObject<UFunction>("Function CableComponent.CableComponent.GetAttachedComponent");
 
 	UCableComponent_GetAttachedComponent_Params params;
 
@@ -89,7 +89,7 @@ class USceneComponent* UCableComponent::GetAttachedComponent()
 
 class AActor* UCableComponent::GetAttachedActor()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function CableComponent.CableComponent.GetAttachedActor"));
+	static auto fn = UObject::FindObject<UFunction>("Function CableComponent.CableComponent.GetAttachedActor");
 
 	UCableComponent_GetAttachedActor_Params params;
 

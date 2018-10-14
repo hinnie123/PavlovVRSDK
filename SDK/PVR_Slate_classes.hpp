@@ -21,7 +21,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Slate.ButtonWidgetStyle"));
+		static auto ptr = UObject::FindClass("Class Slate.ButtonWidgetStyle");
 		return ptr;
 	}
 
@@ -37,7 +37,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Slate.CheckBoxWidgetStyle"));
+		static auto ptr = UObject::FindClass("Class Slate.CheckBoxWidgetStyle");
 		return ptr;
 	}
 
@@ -53,7 +53,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Slate.ComboBoxWidgetStyle"));
+		static auto ptr = UObject::FindClass("Class Slate.ComboBoxWidgetStyle");
 		return ptr;
 	}
 
@@ -69,7 +69,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Slate.ComboButtonWidgetStyle"));
+		static auto ptr = UObject::FindClass("Class Slate.ComboButtonWidgetStyle");
 		return ptr;
 	}
 
@@ -85,7 +85,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Slate.EditableTextBoxWidgetStyle"));
+		static auto ptr = UObject::FindClass("Class Slate.EditableTextBoxWidgetStyle");
 		return ptr;
 	}
 
@@ -101,7 +101,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Slate.EditableTextWidgetStyle"));
+		static auto ptr = UObject::FindClass("Class Slate.EditableTextWidgetStyle");
 		return ptr;
 	}
 
@@ -117,7 +117,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Slate.ProgressWidgetStyle"));
+		static auto ptr = UObject::FindClass("Class Slate.ProgressWidgetStyle");
 		return ptr;
 	}
 
@@ -133,7 +133,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Slate.ScrollBarWidgetStyle"));
+		static auto ptr = UObject::FindClass("Class Slate.ScrollBarWidgetStyle");
 		return ptr;
 	}
 
@@ -149,7 +149,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Slate.ScrollBoxWidgetStyle"));
+		static auto ptr = UObject::FindClass("Class Slate.ScrollBoxWidgetStyle");
 		return ptr;
 	}
 
@@ -168,7 +168,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Slate.SlateSettings"));
+		static auto ptr = UObject::FindClass("Class Slate.SlateSettings");
 		return ptr;
 	}
 
@@ -184,7 +184,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Slate.SpinBoxWidgetStyle"));
+		static auto ptr = UObject::FindClass("Class Slate.SpinBoxWidgetStyle");
 		return ptr;
 	}
 
@@ -200,7 +200,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Slate.TextBlockWidgetStyle"));
+		static auto ptr = UObject::FindClass("Class Slate.TextBlockWidgetStyle");
 		return ptr;
 	}
 

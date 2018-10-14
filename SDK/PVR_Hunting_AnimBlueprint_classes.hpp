@@ -26,7 +26,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("AnimBlueprintGeneratedClass Hunting_AnimBlueprint.Hunting_AnimBlueprint_C"));
+		static auto ptr = UObject::FindClass("AnimBlueprintGeneratedClass Hunting_AnimBlueprint.Hunting_AnimBlueprint_C");
 		return ptr;
 	}
 

@@ -19,7 +19,7 @@ namespace SDK
 
 void UPlayerGenerator_C::DoItemGeneration(TArray<struct FVector>* ContextLocations)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PlayerGenerator.PlayerGenerator_C.DoItemGeneration"));
+	static auto fn = UObject::FindObject<UFunction>("Function PlayerGenerator.PlayerGenerator_C.DoItemGeneration");
 
 	UPlayerGenerator_C_DoItemGeneration_Params params;
 	params.ContextLocations = ContextLocations;

@@ -32,7 +32,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class UdpMessaging.UdpMessagingSettings"));
+		static auto ptr = UObject::FindClass("Class UdpMessaging.UdpMessagingSettings");
 		return ptr;
 	}
 

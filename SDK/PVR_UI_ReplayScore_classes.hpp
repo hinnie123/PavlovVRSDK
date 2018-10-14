@@ -32,7 +32,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("WidgetBlueprintGeneratedClass UI_ReplayScore.UI_ReplayScore_C"));
+		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass UI_ReplayScore.UI_ReplayScore_C");
 		return ptr;
 	}
 

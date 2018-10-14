@@ -19,7 +19,7 @@ namespace SDK
 
 void UUI_ServerFilter_C::GetSelection(struct FString* Selection)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerFilter.UI_ServerFilter_C.GetSelection"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerFilter.UI_ServerFilter_C.GetSelection");
 
 	UUI_ServerFilter_C_GetSelection_Params params;
 
@@ -41,7 +41,7 @@ void UUI_ServerFilter_C::GetSelection(struct FString* Selection)
 
 void UUI_ServerFilter_C::SetSelection(const struct FString& Value)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerFilter.UI_ServerFilter_C.SetSelection"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerFilter.UI_ServerFilter_C.SetSelection");
 
 	UUI_ServerFilter_C_SetSelection_Params params;
 	params.Value = Value;
@@ -61,7 +61,7 @@ void UUI_ServerFilter_C::SetSelection(const struct FString& Value)
 
 ESlateVisibility UUI_ServerFilter_C::Get_GameModeCombo_Visibility_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerFilter.UI_ServerFilter_C.Get_GameModeCombo_Visibility_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerFilter.UI_ServerFilter_C.Get_GameModeCombo_Visibility_1");
 
 	UUI_ServerFilter_C_Get_GameModeCombo_Visibility_1_Params params;
 
@@ -82,7 +82,7 @@ ESlateVisibility UUI_ServerFilter_C::Get_GameModeCombo_Visibility_1()
 
 ESlateVisibility UUI_ServerFilter_C::GetVisibility_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerFilter.UI_ServerFilter_C.GetVisibility_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerFilter.UI_ServerFilter_C.GetVisibility_1");
 
 	UUI_ServerFilter_C_GetVisibility_1_Params params;
 
@@ -101,7 +101,7 @@ ESlateVisibility UUI_ServerFilter_C::GetVisibility_1()
 
 void UUI_ServerFilter_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerFilter.UI_ServerFilter_C.Construct"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerFilter.UI_ServerFilter_C.Construct");
 
 	UUI_ServerFilter_C_Construct_Params params;
 
@@ -121,7 +121,7 @@ void UUI_ServerFilter_C::Construct()
 
 void UUI_ServerFilter_C::BndEvt__Combo_K2Node_ComponentBoundEvent_40_OnSelectionChangedEvent__DelegateSignature(const struct FString& SelectedItem, TEnumAsByte<ESelectInfo> SelectionType)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerFilter.UI_ServerFilter_C.BndEvt__Combo_K2Node_ComponentBoundEvent_40_OnSelectionChangedEvent__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerFilter.UI_ServerFilter_C.BndEvt__Combo_K2Node_ComponentBoundEvent_40_OnSelectionChangedEvent__DelegateSignature");
 
 	UUI_ServerFilter_C_BndEvt__Combo_K2Node_ComponentBoundEvent_40_OnSelectionChangedEvent__DelegateSignature_Params params;
 	params.SelectedItem = SelectedItem;
@@ -142,7 +142,7 @@ void UUI_ServerFilter_C::BndEvt__Combo_K2Node_ComponentBoundEvent_40_OnSelection
 
 void UUI_ServerFilter_C::ExecuteUbergraph_UI_ServerFilter(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerFilter.UI_ServerFilter_C.ExecuteUbergraph_UI_ServerFilter"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerFilter.UI_ServerFilter_C.ExecuteUbergraph_UI_ServerFilter");
 
 	UUI_ServerFilter_C_ExecuteUbergraph_UI_ServerFilter_Params params;
 	params.EntryPoint = EntryPoint;
@@ -162,7 +162,7 @@ void UUI_ServerFilter_C::ExecuteUbergraph_UI_ServerFilter(int EntryPoint)
 
 void UUI_ServerFilter_C::OnSelectionChanged__DelegateSignature(const struct FString& Selection)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerFilter.UI_ServerFilter_C.OnSelectionChanged__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerFilter.UI_ServerFilter_C.OnSelectionChanged__DelegateSignature");
 
 	UUI_ServerFilter_C_OnSelectionChanged__DelegateSignature_Params params;
 	params.Selection = Selection;

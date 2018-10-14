@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class AvfMediaFactory.AvfMediaSettings"));
+		static auto ptr = UObject::FindClass("Class AvfMediaFactory.AvfMediaSettings");
 		return ptr;
 	}
 

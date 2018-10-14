@@ -19,7 +19,7 @@ namespace SDK
 
 void AGun_AutoSniper_C::SetScopeCapture(bool Capture)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_AutoSniper.Gun_AutoSniper_C.SetScopeCapture"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_AutoSniper.Gun_AutoSniper_C.SetScopeCapture");
 
 	AGun_AutoSniper_C_SetScopeCapture_Params params;
 	params.Capture = Capture;
@@ -37,7 +37,7 @@ void AGun_AutoSniper_C::SetScopeCapture(bool Capture)
 
 void AGun_AutoSniper_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_AutoSniper.Gun_AutoSniper_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_AutoSniper.Gun_AutoSniper_C.UserConstructionScript");
 
 	AGun_AutoSniper_C_UserConstructionScript_Params params;
 
@@ -56,7 +56,7 @@ void AGun_AutoSniper_C::UserConstructionScript()
 
 void AGun_AutoSniper_C::OnPick(class AVRItemController** ByController)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_AutoSniper.Gun_AutoSniper_C.OnPick"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_AutoSniper.Gun_AutoSniper_C.OnPick");
 
 	AGun_AutoSniper_C_OnPick_Params params;
 	params.ByController = ByController;
@@ -74,7 +74,7 @@ void AGun_AutoSniper_C::OnPick(class AVRItemController** ByController)
 
 void AGun_AutoSniper_C::OnDrop()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_AutoSniper.Gun_AutoSniper_C.OnDrop"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_AutoSniper.Gun_AutoSniper_C.OnDrop");
 
 	AGun_AutoSniper_C_OnDrop_Params params;
 
@@ -93,7 +93,7 @@ void AGun_AutoSniper_C::OnDrop()
 
 void AGun_AutoSniper_C::OnUnderExploitChanged(bool* bUnderExploit)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_AutoSniper.Gun_AutoSniper_C.OnUnderExploitChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_AutoSniper.Gun_AutoSniper_C.OnUnderExploitChanged");
 
 	AGun_AutoSniper_C_OnUnderExploitChanged_Params params;
 	params.bUnderExploit = bUnderExploit;
@@ -113,7 +113,7 @@ void AGun_AutoSniper_C::OnUnderExploitChanged(bool* bUnderExploit)
 
 void AGun_AutoSniper_C::ExecuteUbergraph_Gun_AutoSniper(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_AutoSniper.Gun_AutoSniper_C.ExecuteUbergraph_Gun_AutoSniper"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_AutoSniper.Gun_AutoSniper_C.ExecuteUbergraph_Gun_AutoSniper");
 
 	AGun_AutoSniper_C_ExecuteUbergraph_Gun_AutoSniper_Params params;
 	params.EntryPoint = EntryPoint;

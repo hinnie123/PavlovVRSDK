@@ -25,7 +25,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("WidgetBlueprintGeneratedClass UI_PIN.UI_PIN_C"));
+		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass UI_PIN.UI_PIN_C");
 		return ptr;
 	}
 

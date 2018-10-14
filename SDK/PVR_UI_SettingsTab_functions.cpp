@@ -21,7 +21,7 @@ namespace SDK
 
 struct FEventReply UUI_SettingsTab_C::OnMouseButtonDown_1(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_SettingsTab.UI_SettingsTab_C.OnMouseButtonDown_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_SettingsTab.UI_SettingsTab_C.OnMouseButtonDown_1");
 
 	UUI_SettingsTab_C_OnMouseButtonDown_1_Params params;
 	params.MyGeometry = MyGeometry;
@@ -44,7 +44,7 @@ struct FEventReply UUI_SettingsTab_C::OnMouseButtonDown_1(const struct FGeometry
 
 struct FSlateBrush UUI_SettingsTab_C::GetBrush_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_SettingsTab.UI_SettingsTab_C.GetBrush_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_SettingsTab.UI_SettingsTab_C.GetBrush_1");
 
 	UUI_SettingsTab_C_GetBrush_1_Params params;
 
@@ -63,7 +63,7 @@ struct FSlateBrush UUI_SettingsTab_C::GetBrush_1()
 
 void UUI_SettingsTab_C::OnClicked__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_SettingsTab.UI_SettingsTab_C.OnClicked__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_SettingsTab.UI_SettingsTab_C.OnClicked__DelegateSignature");
 
 	UUI_SettingsTab_C_OnClicked__DelegateSignature_Params params;
 

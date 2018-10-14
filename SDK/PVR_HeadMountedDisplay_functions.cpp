@@ -19,7 +19,7 @@ namespace SDK
 
 bool UMotionControllerComponent::IsTracked()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionControllerComponent.IsTracked"));
+	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionControllerComponent.IsTracked");
 
 	UMotionControllerComponent_IsTracked_Params params;
 
@@ -39,7 +39,7 @@ bool UMotionControllerComponent::IsTracked()
 
 void UVRNotificationsComponent::VRNotificationsDelegate__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("DelegateFunction HeadMountedDisplay.VRNotificationsComponent.VRNotificationsDelegate__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction HeadMountedDisplay.VRNotificationsComponent.VRNotificationsDelegate__DelegateSignature");
 
 	UVRNotificationsComponent_VRNotificationsDelegate__DelegateSignature_Params params;
 

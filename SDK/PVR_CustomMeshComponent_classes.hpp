@@ -21,7 +21,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CustomMeshComponent.CustomMeshComponent"));
+		static auto ptr = UObject::FindClass("Class CustomMeshComponent.CustomMeshComponent");
 		return ptr;
 	}
 

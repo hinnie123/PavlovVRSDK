@@ -17,7 +17,7 @@ namespace SDK
 
 void AMagazine_Sawedoff_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Magazine_Sawedoff.Magazine_Sawedoff_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Magazine_Sawedoff.Magazine_Sawedoff_C.UserConstructionScript");
 
 	AMagazine_Sawedoff_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void AMagazine_Sawedoff_C::UserConstructionScript()
 
 void AMagazine_Sawedoff_C::OnBulletsChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Magazine_Sawedoff.Magazine_Sawedoff_C.OnBulletsChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function Magazine_Sawedoff.Magazine_Sawedoff_C.OnBulletsChanged");
 
 	AMagazine_Sawedoff_C_OnBulletsChanged_Params params;
 
@@ -51,7 +51,7 @@ void AMagazine_Sawedoff_C::OnBulletsChanged()
 
 void AMagazine_Sawedoff_C::OnLoadedIntoGun()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Magazine_Sawedoff.Magazine_Sawedoff_C.OnLoadedIntoGun"));
+	static auto fn = UObject::FindObject<UFunction>("Function Magazine_Sawedoff.Magazine_Sawedoff_C.OnLoadedIntoGun");
 
 	AMagazine_Sawedoff_C_OnLoadedIntoGun_Params params;
 
@@ -68,7 +68,7 @@ void AMagazine_Sawedoff_C::OnLoadedIntoGun()
 
 void AMagazine_Sawedoff_C::OnReleasedFromGun()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Magazine_Sawedoff.Magazine_Sawedoff_C.OnReleasedFromGun"));
+	static auto fn = UObject::FindObject<UFunction>("Function Magazine_Sawedoff.Magazine_Sawedoff_C.OnReleasedFromGun");
 
 	AMagazine_Sawedoff_C_OnReleasedFromGun_Params params;
 
@@ -87,7 +87,7 @@ void AMagazine_Sawedoff_C::OnReleasedFromGun()
 
 void AMagazine_Sawedoff_C::ExecuteUbergraph_Magazine_Sawedoff(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Magazine_Sawedoff.Magazine_Sawedoff_C.ExecuteUbergraph_Magazine_Sawedoff"));
+	static auto fn = UObject::FindObject<UFunction>("Function Magazine_Sawedoff.Magazine_Sawedoff_C.ExecuteUbergraph_Magazine_Sawedoff");
 
 	AMagazine_Sawedoff_C_ExecuteUbergraph_Magazine_Sawedoff_Params params;
 	params.EntryPoint = EntryPoint;

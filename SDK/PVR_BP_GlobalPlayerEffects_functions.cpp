@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_GlobalPlayerEffects_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_GlobalPlayerEffects.BP_GlobalPlayerEffects_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_GlobalPlayerEffects.BP_GlobalPlayerEffects_C.UserConstructionScript");
 
 	ABP_GlobalPlayerEffects_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void ABP_GlobalPlayerEffects_C::UserConstructionScript()
 
 void ABP_GlobalPlayerEffects_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_GlobalPlayerEffects.BP_GlobalPlayerEffects_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_GlobalPlayerEffects.BP_GlobalPlayerEffects_C.ReceiveBeginPlay");
 
 	ABP_GlobalPlayerEffects_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +53,7 @@ void ABP_GlobalPlayerEffects_C::ReceiveBeginPlay()
 
 void ABP_GlobalPlayerEffects_C::ExecuteUbergraph_BP_GlobalPlayerEffects(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_GlobalPlayerEffects.BP_GlobalPlayerEffects_C.ExecuteUbergraph_BP_GlobalPlayerEffects"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_GlobalPlayerEffects.BP_GlobalPlayerEffects_C.ExecuteUbergraph_BP_GlobalPlayerEffects");
 
 	ABP_GlobalPlayerEffects_C_ExecuteUbergraph_BP_GlobalPlayerEffects_Params params;
 	params.EntryPoint = EntryPoint;

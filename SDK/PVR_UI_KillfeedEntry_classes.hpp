@@ -31,7 +31,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("WidgetBlueprintGeneratedClass UI_KillfeedEntry.UI_KillfeedEntry_C"));
+		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass UI_KillfeedEntry.UI_KillfeedEntry_C");
 		return ptr;
 	}
 

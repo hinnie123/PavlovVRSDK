@@ -21,7 +21,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class SlateCore.FontBulkData"));
+		static auto ptr = UObject::FindClass("Class SlateCore.FontBulkData");
 		return ptr;
 	}
 
@@ -36,7 +36,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class SlateCore.FontFaceInterface"));
+		static auto ptr = UObject::FindClass("Class SlateCore.FontFaceInterface");
 		return ptr;
 	}
 
@@ -51,7 +51,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class SlateCore.FontProviderInterface"));
+		static auto ptr = UObject::FindClass("Class SlateCore.FontProviderInterface");
 		return ptr;
 	}
 
@@ -66,7 +66,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class SlateCore.SlateTypes"));
+		static auto ptr = UObject::FindClass("Class SlateCore.SlateTypes");
 		return ptr;
 	}
 
@@ -81,7 +81,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class SlateCore.SlateWidgetStyleContainerInterface"));
+		static auto ptr = UObject::FindClass("Class SlateCore.SlateWidgetStyleContainerInterface");
 		return ptr;
 	}
 
@@ -97,7 +97,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class SlateCore.SlateWidgetStyleContainerBase"));
+		static auto ptr = UObject::FindClass("Class SlateCore.SlateWidgetStyleContainerBase");
 		return ptr;
 	}
 
@@ -113,7 +113,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class SlateCore.SlateWidgetStyleAsset"));
+		static auto ptr = UObject::FindClass("Class SlateCore.SlateWidgetStyleAsset");
 		return ptr;
 	}
 

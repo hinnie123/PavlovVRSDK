@@ -21,7 +21,7 @@ namespace SDK
 
 bool UDefuseTask_C::CanDefuse(class ABomb* Bomb, class AActor* Pawn)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function DefuseTask.DefuseTask_C.CanDefuse"));
+	static auto fn = UObject::FindObject<UFunction>("Function DefuseTask.DefuseTask_C.CanDefuse");
 
 	UDefuseTask_C_CanDefuse_Params params;
 	params.Bomb = Bomb;
@@ -45,7 +45,7 @@ bool UDefuseTask_C::CanDefuse(class ABomb* Bomb, class AActor* Pawn)
 
 void UDefuseTask_C::ReceiveExecuteAI(class AAIController** OwnerController, class APawn** ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function DefuseTask.DefuseTask_C.ReceiveExecuteAI"));
+	static auto fn = UObject::FindObject<UFunction>("Function DefuseTask.DefuseTask_C.ReceiveExecuteAI");
 
 	UDefuseTask_C_ReceiveExecuteAI_Params params;
 	params.OwnerController = OwnerController;
@@ -66,7 +66,7 @@ void UDefuseTask_C::ReceiveExecuteAI(class AAIController** OwnerController, clas
 
 void UDefuseTask_C::ExecuteUbergraph_DefuseTask(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function DefuseTask.DefuseTask_C.ExecuteUbergraph_DefuseTask"));
+	static auto fn = UObject::FindObject<UFunction>("Function DefuseTask.DefuseTask_C.ExecuteUbergraph_DefuseTask");
 
 	UDefuseTask_C_ExecuteUbergraph_DefuseTask_Params params;
 	params.EntryPoint = EntryPoint;

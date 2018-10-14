@@ -17,7 +17,7 @@ namespace SDK
 
 void AMagazine_Base_C::UpdateMesh()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Magazine_Base.Magazine_Base_C.UpdateMesh"));
+	static auto fn = UObject::FindObject<UFunction>("Function Magazine_Base.Magazine_Base_C.UpdateMesh");
 
 	AMagazine_Base_C_UpdateMesh_Params params;
 
@@ -34,7 +34,7 @@ void AMagazine_Base_C::UpdateMesh()
 
 void AMagazine_Base_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Magazine_Base.Magazine_Base_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Magazine_Base.Magazine_Base_C.UserConstructionScript");
 
 	AMagazine_Base_C_UserConstructionScript_Params params;
 
@@ -53,7 +53,7 @@ void AMagazine_Base_C::UserConstructionScript()
 
 void AMagazine_Base_C::Physicalize(bool* bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Magazine_Base.Magazine_Base_C.Physicalize"));
+	static auto fn = UObject::FindObject<UFunction>("Function Magazine_Base.Magazine_Base_C.Physicalize");
 
 	AMagazine_Base_C_Physicalize_Params params;
 	params.bEnabled = bEnabled;
@@ -71,7 +71,7 @@ void AMagazine_Base_C::Physicalize(bool* bEnabled)
 
 void AMagazine_Base_C::OnReleasedFromGun()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Magazine_Base.Magazine_Base_C.OnReleasedFromGun"));
+	static auto fn = UObject::FindObject<UFunction>("Function Magazine_Base.Magazine_Base_C.OnReleasedFromGun");
 
 	AMagazine_Base_C_OnReleasedFromGun_Params params;
 
@@ -88,7 +88,7 @@ void AMagazine_Base_C::OnReleasedFromGun()
 
 void AMagazine_Base_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Magazine_Base.Magazine_Base_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function Magazine_Base.Magazine_Base_C.ReceiveBeginPlay");
 
 	AMagazine_Base_C_ReceiveBeginPlay_Params params;
 
@@ -107,7 +107,7 @@ void AMagazine_Base_C::ReceiveBeginPlay()
 
 void AMagazine_Base_C::Used(bool* bJustPicked)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Magazine_Base.Magazine_Base_C.Used"));
+	static auto fn = UObject::FindObject<UFunction>("Function Magazine_Base.Magazine_Base_C.Used");
 
 	AMagazine_Base_C_Used_Params params;
 	params.bJustPicked = bJustPicked;
@@ -125,7 +125,7 @@ void AMagazine_Base_C::Used(bool* bJustPicked)
 
 void AMagazine_Base_C::OnBulletsChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Magazine_Base.Magazine_Base_C.OnBulletsChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function Magazine_Base.Magazine_Base_C.OnBulletsChanged");
 
 	AMagazine_Base_C_OnBulletsChanged_Params params;
 
@@ -144,7 +144,7 @@ void AMagazine_Base_C::OnBulletsChanged()
 
 void AMagazine_Base_C::ExecuteUbergraph_Magazine_Base(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Magazine_Base.Magazine_Base_C.ExecuteUbergraph_Magazine_Base"));
+	static auto fn = UObject::FindObject<UFunction>("Function Magazine_Base.Magazine_Base_C.ExecuteUbergraph_Magazine_Base");
 
 	AMagazine_Base_C_ExecuteUbergraph_Magazine_Base_Params params;
 	params.EntryPoint = EntryPoint;

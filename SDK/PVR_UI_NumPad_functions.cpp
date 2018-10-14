@@ -17,7 +17,7 @@ namespace SDK
 
 void UUI_NumPad_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_NumPad.UI_NumPad_C.Construct"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_NumPad.UI_NumPad_C.Construct");
 
 	UUI_NumPad_C_Construct_Params params;
 
@@ -36,7 +36,7 @@ void UUI_NumPad_C::Construct()
 
 void UUI_NumPad_C::OnKeyClicked(int Value)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_NumPad.UI_NumPad_C.OnKeyClicked"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_NumPad.UI_NumPad_C.OnKeyClicked");
 
 	UUI_NumPad_C_OnKeyClicked_Params params;
 	params.Value = Value;
@@ -56,7 +56,7 @@ void UUI_NumPad_C::OnKeyClicked(int Value)
 
 void UUI_NumPad_C::ExecuteUbergraph_UI_NumPad(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_NumPad.UI_NumPad_C.ExecuteUbergraph_UI_NumPad"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_NumPad.UI_NumPad_C.ExecuteUbergraph_UI_NumPad");
 
 	UUI_NumPad_C_ExecuteUbergraph_UI_NumPad_Params params;
 	params.EntryPoint = EntryPoint;
@@ -76,7 +76,7 @@ void UUI_NumPad_C::ExecuteUbergraph_UI_NumPad(int EntryPoint)
 
 void UUI_NumPad_C::OnDigit__DelegateSignature(int Digit)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_NumPad.UI_NumPad_C.OnDigit__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_NumPad.UI_NumPad_C.OnDigit__DelegateSignature");
 
 	UUI_NumPad_C_OnDigit__DelegateSignature_Params params;
 	params.Digit = Digit;
@@ -94,7 +94,7 @@ void UUI_NumPad_C::OnDigit__DelegateSignature(int Digit)
 
 void UUI_NumPad_C::OnConfirm__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_NumPad.UI_NumPad_C.OnConfirm__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_NumPad.UI_NumPad_C.OnConfirm__DelegateSignature");
 
 	UUI_NumPad_C_OnConfirm__DelegateSignature_Params params;
 
@@ -111,7 +111,7 @@ void UUI_NumPad_C::OnConfirm__DelegateSignature()
 
 void UUI_NumPad_C::OnErase__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_NumPad.UI_NumPad_C.OnErase__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_NumPad.UI_NumPad_C.OnErase__DelegateSignature");
 
 	UUI_NumPad_C_OnErase__DelegateSignature_Params params;
 

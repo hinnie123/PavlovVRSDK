@@ -19,7 +19,7 @@ namespace SDK
 
 void ABP_PavlovGhost_C::SetVRScale(float Scale)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovGhost.BP_PavlovGhost_C.SetVRScale"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovGhost.BP_PavlovGhost_C.SetVRScale");
 
 	ABP_PavlovGhost_C_SetVRScale_Params params;
 	params.Scale = Scale;
@@ -37,7 +37,7 @@ void ABP_PavlovGhost_C::SetVRScale(float Scale)
 
 void ABP_PavlovGhost_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovGhost.BP_PavlovGhost_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovGhost.BP_PavlovGhost_C.UserConstructionScript");
 
 	ABP_PavlovGhost_C_UserConstructionScript_Params params;
 
@@ -54,7 +54,7 @@ void ABP_PavlovGhost_C::UserConstructionScript()
 
 void ABP_PavlovGhost_C::GhostViewFadeOut__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovGhost.BP_PavlovGhost_C.GhostViewFadeOut__FinishedFunc"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovGhost.BP_PavlovGhost_C.GhostViewFadeOut__FinishedFunc");
 
 	ABP_PavlovGhost_C_GhostViewFadeOut__FinishedFunc_Params params;
 
@@ -71,7 +71,7 @@ void ABP_PavlovGhost_C::GhostViewFadeOut__FinishedFunc()
 
 void ABP_PavlovGhost_C::GhostViewFadeOut__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovGhost.BP_PavlovGhost_C.GhostViewFadeOut__UpdateFunc"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovGhost.BP_PavlovGhost_C.GhostViewFadeOut__UpdateFunc");
 
 	ABP_PavlovGhost_C_GhostViewFadeOut__UpdateFunc_Params params;
 
@@ -88,7 +88,7 @@ void ABP_PavlovGhost_C::GhostViewFadeOut__UpdateFunc()
 
 void ABP_PavlovGhost_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovGhost.BP_PavlovGhost_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovGhost.BP_PavlovGhost_C.ReceiveBeginPlay");
 
 	ABP_PavlovGhost_C_ReceiveBeginPlay_Params params;
 
@@ -105,7 +105,7 @@ void ABP_PavlovGhost_C::ReceiveBeginPlay()
 
 void ABP_PavlovGhost_C::OnTraveledToSpectatorRoom()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovGhost.BP_PavlovGhost_C.OnTraveledToSpectatorRoom"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovGhost.BP_PavlovGhost_C.OnTraveledToSpectatorRoom");
 
 	ABP_PavlovGhost_C_OnTraveledToSpectatorRoom_Params params;
 
@@ -124,7 +124,7 @@ void ABP_PavlovGhost_C::OnTraveledToSpectatorRoom()
 
 void ABP_PavlovGhost_C::OnDestroyed_Event_1(class AActor* DestroyedActor)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovGhost.BP_PavlovGhost_C.OnDestroyed_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovGhost.BP_PavlovGhost_C.OnDestroyed_Event_1");
 
 	ABP_PavlovGhost_C_OnDestroyed_Event_1_Params params;
 	params.DestroyedActor = DestroyedActor;
@@ -144,7 +144,7 @@ void ABP_PavlovGhost_C::OnDestroyed_Event_1(class AActor* DestroyedActor)
 
 void ABP_PavlovGhost_C::BndEvt__Spectator_K2Node_ComponentBoundEvent_0_VROnSpectatorScaleSignature__DelegateSignature(float Scale)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovGhost.BP_PavlovGhost_C.BndEvt__Spectator_K2Node_ComponentBoundEvent_0_VROnSpectatorScaleSignature__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovGhost.BP_PavlovGhost_C.BndEvt__Spectator_K2Node_ComponentBoundEvent_0_VROnSpectatorScaleSignature__DelegateSignature");
 
 	ABP_PavlovGhost_C_BndEvt__Spectator_K2Node_ComponentBoundEvent_0_VROnSpectatorScaleSignature__DelegateSignature_Params params;
 	params.Scale = Scale;
@@ -162,7 +162,7 @@ void ABP_PavlovGhost_C::BndEvt__Spectator_K2Node_ComponentBoundEvent_0_VROnSpect
 
 void ABP_PavlovGhost_C::OnGraceTimeEnded()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovGhost.BP_PavlovGhost_C.OnGraceTimeEnded"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovGhost.BP_PavlovGhost_C.OnGraceTimeEnded");
 
 	ABP_PavlovGhost_C_OnGraceTimeEnded_Params params;
 
@@ -181,7 +181,7 @@ void ABP_PavlovGhost_C::OnGraceTimeEnded()
 
 void ABP_PavlovGhost_C::OnTeamIdChanged(int* TeamID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovGhost.BP_PavlovGhost_C.OnTeamIdChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovGhost.BP_PavlovGhost_C.OnTeamIdChanged");
 
 	ABP_PavlovGhost_C_OnTeamIdChanged_Params params;
 	params.TeamID = TeamID;
@@ -199,7 +199,7 @@ void ABP_PavlovGhost_C::OnTeamIdChanged(int* TeamID)
 
 void ABP_PavlovGhost_C::OnPreTeleport()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovGhost.BP_PavlovGhost_C.OnPreTeleport"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovGhost.BP_PavlovGhost_C.OnPreTeleport");
 
 	ABP_PavlovGhost_C_OnPreTeleport_Params params;
 
@@ -216,7 +216,7 @@ void ABP_PavlovGhost_C::OnPreTeleport()
 
 void ABP_PavlovGhost_C::OnTeleport()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovGhost.BP_PavlovGhost_C.OnTeleport"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovGhost.BP_PavlovGhost_C.OnTeleport");
 
 	ABP_PavlovGhost_C_OnTeleport_Params params;
 
@@ -235,7 +235,7 @@ void ABP_PavlovGhost_C::OnTeleport()
 
 void ABP_PavlovGhost_C::ExecuteUbergraph_BP_PavlovGhost(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovGhost.BP_PavlovGhost_C.ExecuteUbergraph_BP_PavlovGhost"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovGhost.BP_PavlovGhost_C.ExecuteUbergraph_BP_PavlovGhost");
 
 	ABP_PavlovGhost_C_ExecuteUbergraph_BP_PavlovGhost_Params params;
 	params.EntryPoint = EntryPoint;

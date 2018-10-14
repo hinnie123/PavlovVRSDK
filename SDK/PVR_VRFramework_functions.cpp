@@ -20,7 +20,7 @@ namespace SDK
 
 void UVRGunState::SetChamberState(EVRGunChamberState NewState, int Index)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGunState.SetChamberState"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGunState.SetChamberState");
 
 	UVRGunState_SetChamberState_Params params;
 	params.NewState = NewState;
@@ -43,7 +43,7 @@ void UVRGunState::SetChamberState(EVRGunChamberState NewState, int Index)
 
 bool UVRGunState::IsChamberLoaded(int Index)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGunState.IsChamberLoaded"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGunState.IsChamberLoaded");
 
 	UVRGunState_IsChamberLoaded_Params params;
 	params.Index = Index;
@@ -66,7 +66,7 @@ bool UVRGunState::IsChamberLoaded(int Index)
 
 bool UVRGunState::IsAnyChamberLoaded()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGunState.IsAnyChamberLoaded"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGunState.IsAnyChamberLoaded");
 
 	UVRGunState_IsAnyChamberLoaded_Params params;
 
@@ -88,7 +88,7 @@ bool UVRGunState::IsAnyChamberLoaded()
 
 int UVRGunState::GetMagazineBulletCount()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGunState.GetMagazineBulletCount"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGunState.GetMagazineBulletCount");
 
 	UVRGunState_GetMagazineBulletCount_Params params;
 
@@ -111,7 +111,7 @@ int UVRGunState::GetMagazineBulletCount()
 
 EVRGunChamberState UVRGunState::GetChamberState(int Index)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGunState.GetChamberState"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGunState.GetChamberState");
 
 	UVRGunState_GetChamberState_Params params;
 	params.Index = Index;
@@ -135,7 +135,7 @@ EVRGunChamberState UVRGunState::GetChamberState(int Index)
 
 unsigned char UVRGunState::GetBulletCount(bool bEmptyShellsToo)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGunState.GetBulletCount"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGunState.GetBulletCount");
 
 	UVRGunState_GetBulletCount_Params params;
 	params.bEmptyShellsToo = bEmptyShellsToo;
@@ -158,7 +158,7 @@ unsigned char UVRGunState::GetBulletCount(bool bEmptyShellsToo)
 
 void AVRItem::Used(bool bJustPicked)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItem.Used"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItem.Used");
 
 	AVRItem_Used_Params params;
 	params.bJustPicked = bJustPicked;
@@ -177,7 +177,7 @@ void AVRItem::Used(bool bJustPicked)
 
 void AVRItem::Use()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItem.Use"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItem.Use");
 
 	AVRItem_Use_Params params;
 
@@ -195,7 +195,7 @@ void AVRItem::Use()
 
 void AVRItem::ShouldSelfDestroy()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItem.ShouldSelfDestroy"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItem.ShouldSelfDestroy");
 
 	AVRItem_ShouldSelfDestroy_Params params;
 
@@ -213,7 +213,7 @@ void AVRItem::ShouldSelfDestroy()
 
 void AVRItem::ShouldNotSelfDestroy()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItem.ShouldNotSelfDestroy"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItem.ShouldNotSelfDestroy");
 
 	AVRItem_ShouldNotSelfDestroy_Params params;
 
@@ -234,7 +234,7 @@ void AVRItem::ShouldNotSelfDestroy()
 
 void AVRItem::SetController(class AVRItemController* NewController, bool bNetUpdate)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItem.SetController"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItem.SetController");
 
 	AVRItem_SetController_Params params;
 	params.NewController = NewController;
@@ -258,7 +258,7 @@ void AVRItem::SetController(class AVRItemController* NewController, bool bNetUpd
 
 void AVRItem::SetAttachParent(class AVRItem* Item, bool bNetUpdate, unsigned char Slot)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItem.SetAttachParent"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItem.SetAttachParent");
 
 	AVRItem_SetAttachParent_Params params;
 	params.Item = Item;
@@ -279,7 +279,7 @@ void AVRItem::SetAttachParent(class AVRItem* Item, bool bNetUpdate, unsigned cha
 
 void AVRItem::SelfDestroy()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItem.SelfDestroy"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItem.SelfDestroy");
 
 	AVRItem_SelfDestroy_Params params;
 
@@ -299,7 +299,7 @@ void AVRItem::SelfDestroy()
 
 void AVRItem::Physicalize(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItem.Physicalize"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItem.Physicalize");
 
 	AVRItem_Physicalize_Params params;
 	params.bEnabled = bEnabled;
@@ -318,7 +318,7 @@ void AVRItem::Physicalize(bool bEnabled)
 
 void AVRItem::OnRep_Parent()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItem.OnRep_Parent"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItem.OnRep_Parent");
 
 	AVRItem_OnRep_Parent_Params params;
 
@@ -336,7 +336,7 @@ void AVRItem::OnRep_Parent()
 
 void AVRItem::OnRep_ItemState()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItem.OnRep_ItemState"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItem.OnRep_ItemState");
 
 	AVRItem_OnRep_ItemState_Params params;
 
@@ -354,7 +354,7 @@ void AVRItem::OnRep_ItemState()
 
 void AVRItem::OnRep_Controller()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItem.OnRep_Controller"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItem.OnRep_Controller");
 
 	AVRItem_OnRep_Controller_Params params;
 
@@ -372,7 +372,7 @@ void AVRItem::OnRep_Controller()
 
 void AVRItem::OnPredictionTimeout()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItem.OnPredictionTimeout"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItem.OnPredictionTimeout");
 
 	AVRItem_OnPredictionTimeout_Params params;
 
@@ -390,7 +390,7 @@ void AVRItem::OnPredictionTimeout()
 
 void AVRItem::OnPredictionCorrect()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItem.OnPredictionCorrect"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItem.OnPredictionCorrect");
 
 	AVRItem_OnPredictionCorrect_Params params;
 
@@ -410,7 +410,7 @@ void AVRItem::OnPredictionCorrect()
 
 void AVRItem::OnPick(class AVRItemController* ByController)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItem.OnPick"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItem.OnPick");
 
 	AVRItem_OnPick_Params params;
 	params.ByController = ByController;
@@ -432,7 +432,7 @@ void AVRItem::OnPick(class AVRItemController* ByController)
 
 void AVRItem::OnPhysicsWake(class UPrimitiveComponent* SleepingComponent, const struct FName& BoneName)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItem.OnPhysicsWake"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItem.OnPhysicsWake");
 
 	AVRItem_OnPhysicsWake_Params params;
 	params.SleepingComponent = SleepingComponent;
@@ -455,7 +455,7 @@ void AVRItem::OnPhysicsWake(class UPrimitiveComponent* SleepingComponent, const 
 
 void AVRItem::OnPhysicsSleep(class UPrimitiveComponent* SleepingComponent, const struct FName& BoneName)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItem.OnPhysicsSleep"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItem.OnPhysicsSleep");
 
 	AVRItem_OnPhysicsSleep_Params params;
 	params.SleepingComponent = SleepingComponent;
@@ -475,7 +475,7 @@ void AVRItem::OnPhysicsSleep(class UPrimitiveComponent* SleepingComponent, const
 
 void AVRItem::OnDrop()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItem.OnDrop"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItem.OnDrop");
 
 	AVRItem_OnDrop_Params params;
 
@@ -497,7 +497,7 @@ void AVRItem::OnDrop()
 
 void AVRItem::MulticastUpdateState(class AVRItemController* RequestedController, class AVRItem* RequestedParent, unsigned char RequestedParentSlot)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItem.MulticastUpdateState"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItem.MulticastUpdateState");
 
 	AVRItem_MulticastUpdateState_Params params;
 	params.RequestedController = RequestedController;
@@ -518,7 +518,7 @@ void AVRItem::MulticastUpdateState(class AVRItemController* RequestedController,
 
 void AVRItem::MulticastStateSanityCheck()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItem.MulticastStateSanityCheck"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItem.MulticastStateSanityCheck");
 
 	AVRItem_MulticastStateSanityCheck_Params params;
 
@@ -536,7 +536,7 @@ void AVRItem::MulticastStateSanityCheck()
 
 void AVRItem::MakeDormant()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItem.MakeDormant"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItem.MakeDormant");
 
 	AVRItem_MakeDormant_Params params;
 
@@ -556,7 +556,7 @@ void AVRItem::MakeDormant()
 
 bool AVRItem::IsBlocked()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItem.IsBlocked"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItem.IsBlocked");
 
 	AVRItem_IsBlocked_Params params;
 
@@ -576,7 +576,7 @@ bool AVRItem::IsBlocked()
 
 void AVRItem::DestroyNow()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItem.DestroyNow"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItem.DestroyNow");
 
 	AVRItem_DestroyNow_Params params;
 
@@ -594,7 +594,7 @@ void AVRItem::DestroyNow()
 
 void AVRItem::Cycle()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItem.Cycle"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItem.Cycle");
 
 	AVRItem_Cycle_Params params;
 
@@ -614,7 +614,7 @@ void AVRItem::Cycle()
 
 void AVRBullet::OnProjectileStop(const struct FHitResult& ImpactResult)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRBullet.OnProjectileStop"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRBullet.OnProjectileStop");
 
 	AVRBullet_OnProjectileStop_Params params;
 	params.ImpactResult = ImpactResult;
@@ -635,7 +635,7 @@ void AVRBullet::OnProjectileStop(const struct FHitResult& ImpactResult)
 
 void AVRBullet::OnImpact(const struct FHitResult& Hit)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRBullet.OnImpact"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRBullet.OnImpact");
 
 	AVRBullet_OnImpact_Params params;
 	params.Hit = Hit;
@@ -661,7 +661,7 @@ void AVRBullet::OnImpact(const struct FHitResult& Hit)
 
 void AVRBullet::OnBuzzingOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRBullet.OnBuzzingOverlap"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRBullet.OnBuzzingOverlap");
 
 	AVRBullet_OnBuzzingOverlap_Params params;
 	params.OverlappedComponent = OverlappedComponent;
@@ -685,7 +685,7 @@ void AVRBullet::OnBuzzingOverlap(class UPrimitiveComponent* OverlappedComponent,
 
 void AVRBullet::ApplyImpactForce()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRBullet.ApplyImpactForce"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRBullet.ApplyImpactForce");
 
 	AVRBullet_ApplyImpactForce_Params params;
 
@@ -707,7 +707,7 @@ void AVRBullet::ApplyImpactForce()
 
 void AVRPawn::Teleport(const struct FVector& WorldLocation, const struct FRotator& WorldRotation, EVRTeleportSpace Space)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.Teleport"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.Teleport");
 
 	AVRPawn_Teleport_Params params;
 	params.WorldLocation = WorldLocation;
@@ -730,7 +730,7 @@ void AVRPawn::Teleport(const struct FVector& WorldLocation, const struct FRotato
 
 void AVRPawn::SetFakePlayer(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.SetFakePlayer"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.SetFakePlayer");
 
 	AVRPawn_SetFakePlayer_Params params;
 	params.bEnabled = bEnabled;
@@ -751,7 +751,7 @@ void AVRPawn::SetFakePlayer(bool bEnabled)
 
 void AVRPawn::SetAllPockets(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.SetAllPockets"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.SetAllPockets");
 
 	AVRPawn_SetAllPockets_Params params;
 	params.bEnabled = bEnabled;
@@ -772,7 +772,7 @@ void AVRPawn::SetAllPockets(bool bEnabled)
 
 void AVRPawn::ServerUpdate(const struct FVRNetSnapshot& Snapshot)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.ServerUpdate"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.ServerUpdate");
 
 	AVRPawn_ServerUpdate_Params params;
 	params.Snapshot = Snapshot;
@@ -794,7 +794,7 @@ void AVRPawn::ServerUpdate(const struct FVRNetSnapshot& Snapshot)
 
 void AVRPawn::ServerTeleport(const struct FVector& WorldLocation, const struct FRotator& WorldRotation)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.ServerTeleport"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.ServerTeleport");
 
 	AVRPawn_ServerTeleport_Params params;
 	params.WorldLocation = WorldLocation;
@@ -816,7 +816,7 @@ void AVRPawn::ServerTeleport(const struct FVector& WorldLocation, const struct F
 
 void AVRPawn::ServerRotate(float Yaw)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.ServerRotate"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.ServerRotate");
 
 	AVRPawn_ServerRotate_Params params;
 	params.Yaw = Yaw;
@@ -835,7 +835,7 @@ void AVRPawn::ServerRotate(float Yaw)
 
 void AVRPawn::ReCenter()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.ReCenter"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.ReCenter");
 
 	AVRPawn_ReCenter_Params params;
 
@@ -853,7 +853,7 @@ void AVRPawn::ReCenter()
 
 void AVRPawn::ProjectToFloor()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.ProjectToFloor"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.ProjectToFloor");
 
 	AVRPawn_ProjectToFloor_Params params;
 
@@ -871,7 +871,7 @@ void AVRPawn::ProjectToFloor()
 
 void AVRPawn::OnTeleport()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.OnTeleport"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.OnTeleport");
 
 	AVRPawn_OnTeleport_Params params;
 
@@ -888,7 +888,7 @@ void AVRPawn::OnTeleport()
 
 void AVRPawn::OnRep_RightController()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.OnRep_RightController"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.OnRep_RightController");
 
 	AVRPawn_OnRep_RightController_Params params;
 
@@ -906,7 +906,7 @@ void AVRPawn::OnRep_RightController()
 
 void AVRPawn::OnRep_LeftController()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.OnRep_LeftController"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.OnRep_LeftController");
 
 	AVRPawn_OnRep_LeftController_Params params;
 
@@ -924,7 +924,7 @@ void AVRPawn::OnRep_LeftController()
 
 void AVRPawn::OnRep_LatestSnapshot()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.OnRep_LatestSnapshot"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.OnRep_LatestSnapshot");
 
 	AVRPawn_OnRep_LatestSnapshot_Params params;
 
@@ -942,7 +942,7 @@ void AVRPawn::OnRep_LatestSnapshot()
 
 void AVRPawn::OnRep_InventoryLogic()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.OnRep_InventoryLogic"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.OnRep_InventoryLogic");
 
 	AVRPawn_OnRep_InventoryLogic_Params params;
 
@@ -960,7 +960,7 @@ void AVRPawn::OnRep_InventoryLogic()
 
 void AVRPawn::OnPreTeleport()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.OnPreTeleport"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.OnPreTeleport");
 
 	AVRPawn_OnPreTeleport_Params params;
 
@@ -977,7 +977,7 @@ void AVRPawn::OnPreTeleport()
 
 void AVRPawn::OnEndMove()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.OnEndMove"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.OnEndMove");
 
 	AVRPawn_OnEndMove_Params params;
 
@@ -995,7 +995,7 @@ void AVRPawn::OnEndMove()
 
 void AVRPawn::OnBeginMove()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.OnBeginMove"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.OnBeginMove");
 
 	AVRPawn_OnBeginMove_Params params;
 
@@ -1015,7 +1015,7 @@ void AVRPawn::OnBeginMove()
 
 void AVRPawn::MulticastRotated(float Yaw)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.MulticastRotated"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.MulticastRotated");
 
 	AVRPawn_MulticastRotated_Params params;
 	params.Yaw = Yaw;
@@ -1036,7 +1036,7 @@ void AVRPawn::MulticastRotated(float Yaw)
 
 bool AVRPawn::IsProne()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.IsProne"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.IsProne");
 
 	AVRPawn_IsProne_Params params;
 
@@ -1058,7 +1058,7 @@ bool AVRPawn::IsProne()
 
 bool AVRPawn::IsMoving()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.IsMoving"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.IsMoving");
 
 	AVRPawn_IsMoving_Params params;
 
@@ -1080,7 +1080,7 @@ bool AVRPawn::IsMoving()
 
 bool AVRPawn::IsFakePlayer()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.IsFakePlayer"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.IsFakePlayer");
 
 	AVRPawn_IsFakePlayer_Params params;
 
@@ -1102,7 +1102,7 @@ bool AVRPawn::IsFakePlayer()
 
 bool AVRPawn::IsCrouching()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.IsCrouching"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.IsCrouching");
 
 	AVRPawn_IsCrouching_Params params;
 
@@ -1124,7 +1124,7 @@ bool AVRPawn::IsCrouching()
 
 class UVRPlayerEmulatorComponent* AVRPawn::GetPlayerEmulator()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.GetPlayerEmulator"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.GetPlayerEmulator");
 
 	AVRPawn_GetPlayerEmulator_Params params;
 
@@ -1146,7 +1146,7 @@ class UVRPlayerEmulatorComponent* AVRPawn::GetPlayerEmulator()
 
 class USceneComponent* AVRPawn::GetPivot()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.GetPivot"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.GetPivot");
 
 	AVRPawn_GetPivot_Params params;
 
@@ -1168,7 +1168,7 @@ class USceneComponent* AVRPawn::GetPivot()
 
 float AVRPawn::GetMovingSpeed()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.GetMovingSpeed"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.GetMovingSpeed");
 
 	AVRPawn_GetMovingSpeed_Params params;
 
@@ -1190,7 +1190,7 @@ float AVRPawn::GetMovingSpeed()
 
 float AVRPawn::GetMovingRatio()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.GetMovingRatio"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.GetMovingRatio");
 
 	AVRPawn_GetMovingRatio_Params params;
 
@@ -1212,7 +1212,7 @@ float AVRPawn::GetMovingRatio()
 
 struct FRotator AVRPawn::GetHeadRotation()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.GetHeadRotation"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.GetHeadRotation");
 
 	AVRPawn_GetHeadRotation_Params params;
 
@@ -1234,7 +1234,7 @@ struct FRotator AVRPawn::GetHeadRotation()
 
 struct FVector AVRPawn::GetHeadLocation()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.GetHeadLocation"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.GetHeadLocation");
 
 	AVRPawn_GetHeadLocation_Params params;
 
@@ -1256,7 +1256,7 @@ struct FVector AVRPawn::GetHeadLocation()
 
 class UCameraComponent* AVRPawn::GetHeadCamera()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.GetHeadCamera"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.GetHeadCamera");
 
 	AVRPawn_GetHeadCamera_Params params;
 
@@ -1278,7 +1278,7 @@ class UCameraComponent* AVRPawn::GetHeadCamera()
 
 struct FVector AVRPawn::GetGroundLocation()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.GetGroundLocation"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.GetGroundLocation");
 
 	AVRPawn_GetGroundLocation_Params params;
 
@@ -1300,7 +1300,7 @@ struct FVector AVRPawn::GetGroundLocation()
 
 float AVRPawn::GetCrouchRatio()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.GetCrouchRatio"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.GetCrouchRatio");
 
 	AVRPawn_GetCrouchRatio_Params params;
 
@@ -1322,7 +1322,7 @@ float AVRPawn::GetCrouchRatio()
 
 float AVRPawn::GetAvatarScale()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.GetAvatarScale"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.GetAvatarScale");
 
 	AVRPawn_GetAvatarScale_Params params;
 
@@ -1344,7 +1344,7 @@ float AVRPawn::GetAvatarScale()
 
 class UVRAvatarComponent* AVRPawn::GetAvatarComponent()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.GetAvatarComponent"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.GetAvatarComponent");
 
 	AVRPawn_GetAvatarComponent_Params params;
 
@@ -1367,7 +1367,7 @@ class UVRAvatarComponent* AVRPawn::GetAvatarComponent()
 
 void AVRPawn::ClientBulletPassby(class USoundCue* BuzzingSound, const struct FVector& Location)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.ClientBulletPassby"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.ClientBulletPassby");
 
 	AVRPawn_ClientBulletPassby_Params params;
 	params.BuzzingSound = BuzzingSound;
@@ -1387,7 +1387,7 @@ void AVRPawn::ClientBulletPassby(class USoundCue* BuzzingSound, const struct FVe
 
 void AVRPawn::CheckAndSwapHands()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.CheckAndSwapHands"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.CheckAndSwapHands");
 
 	AVRPawn_CheckAndSwapHands_Params params;
 
@@ -1407,7 +1407,7 @@ void AVRPawn::CheckAndSwapHands()
 
 bool AVRPawn::CanTeleport()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPawn.CanTeleport"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPawn.CanTeleport");
 
 	AVRPawn_CanTeleport_Params params;
 
@@ -1427,7 +1427,7 @@ bool AVRPawn::CanTeleport()
 
 void AVRGun::UngrabChargingHandle()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.UngrabChargingHandle"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.UngrabChargingHandle");
 
 	AVRGun_UngrabChargingHandle_Params params;
 
@@ -1447,7 +1447,7 @@ void AVRGun::UngrabChargingHandle()
 
 void AVRGun::ServerUpdateState(TArray<unsigned char> RawState)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.ServerUpdateState"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.ServerUpdateState");
 
 	AVRGun_ServerUpdateState_Params params;
 	params.RawState = RawState;
@@ -1468,7 +1468,7 @@ void AVRGun::ServerUpdateState(TArray<unsigned char> RawState)
 
 void AVRGun::ServerTrigger(bool bPulled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.ServerTrigger"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.ServerTrigger");
 
 	AVRGun_ServerTrigger_Params params;
 	params.bPulled = bPulled;
@@ -1487,7 +1487,7 @@ void AVRGun::ServerTrigger(bool bPulled)
 
 void AVRGun::ServerReleaseMagazine()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.ServerReleaseMagazine"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.ServerReleaseMagazine");
 
 	AVRGun_ServerReleaseMagazine_Params params;
 
@@ -1505,7 +1505,7 @@ void AVRGun::ServerReleaseMagazine()
 
 void AVRGun::ServerReleaseBolt()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.ServerReleaseBolt"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.ServerReleaseBolt");
 
 	AVRGun_ServerReleaseBolt_Params params;
 
@@ -1525,7 +1525,7 @@ void AVRGun::ServerReleaseBolt()
 
 void AVRGun::ServerLoadMagazine(class AVRMagazine* NewMagazine)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.ServerLoadMagazine"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.ServerLoadMagazine");
 
 	AVRGun_ServerLoadMagazine_Params params;
 	params.NewMagazine = NewMagazine;
@@ -1544,7 +1544,7 @@ void AVRGun::ServerLoadMagazine(class AVRMagazine* NewMagazine)
 
 void AVRGun::ServerLoadChamber()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.ServerLoadChamber"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.ServerLoadChamber");
 
 	AVRGun_ServerLoadChamber_Params params;
 
@@ -1562,7 +1562,7 @@ void AVRGun::ServerLoadChamber()
 
 void AVRGun::ServerCycleFireMode()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.ServerCycleFireMode"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.ServerCycleFireMode");
 
 	AVRGun_ServerCycleFireMode_Params params;
 
@@ -1580,7 +1580,7 @@ void AVRGun::ServerCycleFireMode()
 
 void AVRGun::ServerCock()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.ServerCock"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.ServerCock");
 
 	AVRGun_ServerCock_Params params;
 
@@ -1598,7 +1598,7 @@ void AVRGun::ServerCock()
 
 void AVRGun::SendStateToClientOwner()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.SendStateToClientOwner"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.SendStateToClientOwner");
 
 	AVRGun_SendStateToClientOwner_Params params;
 
@@ -1616,7 +1616,7 @@ void AVRGun::SendStateToClientOwner()
 
 void AVRGun::ReleaseTrigger()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.ReleaseTrigger"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.ReleaseTrigger");
 
 	AVRGun_ReleaseTrigger_Params params;
 
@@ -1634,7 +1634,7 @@ void AVRGun::ReleaseTrigger()
 
 void AVRGun::ReleaseMagazine()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.ReleaseMagazine"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.ReleaseMagazine");
 
 	AVRGun_ReleaseMagazine_Params params;
 
@@ -1652,7 +1652,7 @@ void AVRGun::ReleaseMagazine()
 
 void AVRGun::ReleaseBolt()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.ReleaseBolt"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.ReleaseBolt");
 
 	AVRGun_ReleaseBolt_Params params;
 
@@ -1670,7 +1670,7 @@ void AVRGun::ReleaseBolt()
 
 void AVRGun::QuickReloadImpl()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.QuickReloadImpl"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.QuickReloadImpl");
 
 	AVRGun_QuickReloadImpl_Params params;
 
@@ -1688,7 +1688,7 @@ void AVRGun::QuickReloadImpl()
 
 void AVRGun::QuickReload()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.QuickReload"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.QuickReload");
 
 	AVRGun_QuickReload_Params params;
 
@@ -1706,7 +1706,7 @@ void AVRGun::QuickReload()
 
 void AVRGun::PullTrigger()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.PullTrigger"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.PullTrigger");
 
 	AVRGun_PullTrigger_Params params;
 
@@ -1724,7 +1724,7 @@ void AVRGun::PullTrigger()
 
 void AVRGun::OnUnload()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.OnUnload"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.OnUnload");
 
 	AVRGun_OnUnload_Params params;
 
@@ -1742,7 +1742,7 @@ void AVRGun::OnUnload()
 
 void AVRGun::OnSnapTriggerReset()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.OnSnapTriggerReset"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.OnSnapTriggerReset");
 
 	AVRGun_OnSnapTriggerReset_Params params;
 
@@ -1762,7 +1762,7 @@ void AVRGun::OnSnapTriggerReset()
 
 void AVRGun::OnRoundEjected(bool bLive)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.OnRoundEjected"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.OnRoundEjected");
 
 	AVRGun_OnRoundEjected_Params params;
 	params.bLive = bLive;
@@ -1781,7 +1781,7 @@ void AVRGun::OnRoundEjected(bool bLive)
 
 void AVRGun::OnRep_StateProxy()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.OnRep_StateProxy"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.OnRep_StateProxy");
 
 	AVRGun_OnRep_StateProxy_Params params;
 
@@ -1799,7 +1799,7 @@ void AVRGun::OnRep_StateProxy()
 
 void AVRGun::OnRep_Magazine()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.OnRep_Magazine"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.OnRep_Magazine");
 
 	AVRGun_OnRep_Magazine_Params params;
 
@@ -1819,7 +1819,7 @@ void AVRGun::OnRep_Magazine()
 
 void AVRGun::OnMagazinePicked(class AVRItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.OnMagazinePicked"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.OnMagazinePicked");
 
 	AVRGun_OnMagazinePicked_Params params;
 	params.Item = Item;
@@ -1840,7 +1840,7 @@ void AVRGun::OnMagazinePicked(class AVRItem* Item)
 
 void AVRGun::OnMagazineChanged(bool bHasMagazine)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.OnMagazineChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.OnMagazineChanged");
 
 	AVRGun_OnMagazineChanged_Params params;
 	params.bHasMagazine = bHasMagazine;
@@ -1859,7 +1859,7 @@ void AVRGun::OnMagazineChanged(bool bHasMagazine)
 
 void AVRGun::OnChargingHandleGrab()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.OnChargingHandleGrab"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.OnChargingHandleGrab");
 
 	AVRGun_OnChargingHandleGrab_Params params;
 
@@ -1877,7 +1877,7 @@ void AVRGun::OnChargingHandleGrab()
 
 void AVRGun::OnChamberLoaded()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.OnChamberLoaded"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.OnChamberLoaded");
 
 	AVRGun_OnChamberLoaded_Params params;
 
@@ -1897,7 +1897,7 @@ void AVRGun::OnChamberLoaded()
 
 void AVRGun::MulticastOnStateUpdated(TArray<unsigned char> RawState)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.MulticastOnStateUpdated"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.MulticastOnStateUpdated");
 
 	AVRGun_MulticastOnStateUpdated_Params params;
 	params.RawState = RawState;
@@ -1918,7 +1918,7 @@ void AVRGun::MulticastOnStateUpdated(TArray<unsigned char> RawState)
 
 void AVRGun::MulticastOnMagazineReleased(class AVRMagazine* ReleasedMagazine)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.MulticastOnMagazineReleased"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.MulticastOnMagazineReleased");
 
 	AVRGun_MulticastOnMagazineReleased_Params params;
 	params.ReleasedMagazine = ReleasedMagazine;
@@ -1937,7 +1937,7 @@ void AVRGun::MulticastOnMagazineReleased(class AVRMagazine* ReleasedMagazine)
 
 void AVRGun::MulticastOnDryFire()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.MulticastOnDryFire"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.MulticastOnDryFire");
 
 	AVRGun_MulticastOnDryFire_Params params;
 
@@ -1957,7 +1957,7 @@ void AVRGun::MulticastOnDryFire()
 
 void AVRGun::MulticastOnCock(bool bPullBack)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.MulticastOnCock"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.MulticastOnCock");
 
 	AVRGun_MulticastOnCock_Params params;
 	params.bPullBack = bPullBack;
@@ -1976,7 +1976,7 @@ void AVRGun::MulticastOnCock(bool bPullBack)
 
 void AVRGun::MulticastOnChamberLoaded()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.MulticastOnChamberLoaded"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.MulticastOnChamberLoaded");
 
 	AVRGun_MulticastOnChamberLoaded_Params params;
 
@@ -1994,7 +1994,7 @@ void AVRGun::MulticastOnChamberLoaded()
 
 void AVRGun::MulticastOnBoltRelease()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.MulticastOnBoltRelease"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.MulticastOnBoltRelease");
 
 	AVRGun_MulticastOnBoltRelease_Params params;
 
@@ -2012,7 +2012,7 @@ void AVRGun::MulticastOnBoltRelease()
 
 void AVRGun::MulticastFire()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.MulticastFire"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.MulticastFire");
 
 	AVRGun_MulticastFire_Params params;
 
@@ -2033,7 +2033,7 @@ void AVRGun::MulticastFire()
 
 void AVRGun::LoadMagazine(class AVRMagazine* NewMagazine, bool bForce)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.LoadMagazine"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.LoadMagazine");
 
 	AVRGun_LoadMagazine_Params params;
 	params.NewMagazine = NewMagazine;
@@ -2053,7 +2053,7 @@ void AVRGun::LoadMagazine(class AVRMagazine* NewMagazine, bool bForce)
 
 void AVRGun::LoadChamber()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.LoadChamber"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.LoadChamber");
 
 	AVRGun_LoadChamber_Params params;
 
@@ -2073,7 +2073,7 @@ void AVRGun::LoadChamber()
 
 bool AVRGun::IsOwnedLocally()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.IsOwnedLocally"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.IsOwnedLocally");
 
 	AVRGun_IsOwnedLocally_Params params;
 
@@ -2095,7 +2095,7 @@ bool AVRGun::IsOwnedLocally()
 
 bool AVRGun::IsOwnedByPrimaryPlayer()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.IsOwnedByPrimaryPlayer"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.IsOwnedByPrimaryPlayer");
 
 	AVRGun_IsOwnedByPrimaryPlayer_Params params;
 
@@ -2117,7 +2117,7 @@ bool AVRGun::IsOwnedByPrimaryPlayer()
 
 bool AVRGun::IsLoaded()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.IsLoaded"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.IsLoaded");
 
 	AVRGun_IsLoaded_Params params;
 
@@ -2139,7 +2139,7 @@ bool AVRGun::IsLoaded()
 
 bool AVRGun::HasMagazine()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.HasMagazine"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.HasMagazine");
 
 	AVRGun_HasMagazine_Params params;
 
@@ -2161,7 +2161,7 @@ bool AVRGun::HasMagazine()
 
 float AVRGun::GetSlideTime()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.GetSlideTime"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.GetSlideTime");
 
 	AVRGun_GetSlideTime_Params params;
 
@@ -2183,7 +2183,7 @@ float AVRGun::GetSlideTime()
 
 float AVRGun::GetRecoilTime()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.GetRecoilTime"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.GetRecoilTime");
 
 	AVRGun_GetRecoilTime_Params params;
 
@@ -2205,7 +2205,7 @@ float AVRGun::GetRecoilTime()
 
 struct FVector AVRGun::GetMuzzleLocalOffset()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.GetMuzzleLocalOffset"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.GetMuzzleLocalOffset");
 
 	AVRGun_GetMuzzleLocalOffset_Params params;
 
@@ -2227,7 +2227,7 @@ struct FVector AVRGun::GetMuzzleLocalOffset()
 
 class UVRHandleComponent* AVRGun::GetChargingHandle()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.GetChargingHandle"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.GetChargingHandle");
 
 	AVRGun_GetChargingHandle_Params params;
 
@@ -2247,7 +2247,7 @@ class UVRHandleComponent* AVRGun::GetChargingHandle()
 
 void AVRGun::ForceGunStateUpdate()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.ForceGunStateUpdate"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.ForceGunStateUpdate");
 
 	AVRGun_ForceGunStateUpdate_Params params;
 
@@ -2265,7 +2265,7 @@ void AVRGun::ForceGunStateUpdate()
 
 void AVRGun::Fired()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.Fired"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.Fired");
 
 	AVRGun_Fired_Params params;
 
@@ -2283,7 +2283,7 @@ void AVRGun::Fired()
 
 void AVRGun::CycleFireMode()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.CycleFireMode"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.CycleFireMode");
 
 	AVRGun_CycleFireMode_Params params;
 
@@ -2303,7 +2303,7 @@ void AVRGun::CycleFireMode()
 
 void AVRGun::Cock(float Ratio)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.Cock"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.Cock");
 
 	AVRGun_Cock_Params params;
 	params.Ratio = Ratio;
@@ -2324,7 +2324,7 @@ void AVRGun::Cock(float Ratio)
 
 void AVRGun::ClientUpdateState(TArray<unsigned char> RawState)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.ClientUpdateState"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.ClientUpdateState");
 
 	AVRGun_ClientUpdateState_Params params;
 	params.RawState = RawState;
@@ -2345,7 +2345,7 @@ void AVRGun::ClientUpdateState(TArray<unsigned char> RawState)
 
 bool AVRGun::CanLoadChamber()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.CanLoadChamber"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.CanLoadChamber");
 
 	AVRGun_CanLoadChamber_Params params;
 
@@ -2367,7 +2367,7 @@ bool AVRGun::CanLoadChamber()
 
 void AVRGun::AttachMagazine(class AVRMagazine* MagazineToAttach)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGun.AttachMagazine"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGun.AttachMagazine");
 
 	AVRGun_AttachMagazine_Params params;
 	params.MagazineToAttach = MagazineToAttach;
@@ -2386,7 +2386,7 @@ void AVRGun::AttachMagazine(class AVRMagazine* MagazineToAttach)
 
 void AVRInventory::ReAttachChildren()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRInventory.ReAttachChildren"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRInventory.ReAttachChildren");
 
 	AVRInventory_ReAttachChildren_Params params;
 
@@ -2404,7 +2404,7 @@ void AVRInventory::ReAttachChildren()
 
 void AVRInventory::OnRotationChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRInventory.OnRotationChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRInventory.OnRotationChanged");
 
 	AVRInventory_OnRotationChanged_Params params;
 
@@ -2427,7 +2427,7 @@ void AVRInventory::OnRotationChanged()
 
 bool AVRInventory::OnQuickSlotAction(class AVRItemController* Controller, EVRQuickSlotType Type, bool bState)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRInventory.OnQuickSlotAction"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRInventory.OnQuickSlotAction");
 
 	AVRInventory_OnQuickSlotAction_Params params;
 	params.Controller = Controller;
@@ -2452,7 +2452,7 @@ bool AVRInventory::OnQuickSlotAction(class AVRItemController* Controller, EVRQui
 
 class UPrimitiveComponent* AVRInventory::GetVestVolume()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRInventory.GetVestVolume"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRInventory.GetVestVolume");
 
 	AVRInventory_GetVestVolume_Params params;
 
@@ -2475,7 +2475,7 @@ class UPrimitiveComponent* AVRInventory::GetVestVolume()
 
 class UPrimitiveComponent* AVRInventory::GetQuickSlotVolume(EVRQuickSlotType Type)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRInventory.GetQuickSlotVolume"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRInventory.GetQuickSlotVolume");
 
 	AVRInventory_GetQuickSlotVolume_Params params;
 	params.Type = Type;
@@ -2498,7 +2498,7 @@ class UPrimitiveComponent* AVRInventory::GetQuickSlotVolume(EVRQuickSlotType Typ
 
 class AVRPawn* AVRInventory::GetPawn()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRInventory.GetPawn"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRInventory.GetPawn");
 
 	AVRInventory_GetPawn_Params params;
 
@@ -2520,7 +2520,7 @@ class AVRPawn* AVRInventory::GetPawn()
 
 class AVRInventoryLogic* AVRInventory::GetLogic()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRInventory.GetLogic"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRInventory.GetLogic");
 
 	AVRInventory_GetLogic_Params params;
 
@@ -2540,7 +2540,7 @@ class AVRInventoryLogic* AVRInventory::GetLogic()
 
 void AVRController::UnGrab()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.UnGrab"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.UnGrab");
 
 	AVRController_UnGrab_Params params;
 
@@ -2560,7 +2560,7 @@ void AVRController::UnGrab()
 
 void AVRController::TriggerChanged(bool bNewTrigger)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.TriggerChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.TriggerChanged");
 
 	AVRController_TriggerChanged_Params params;
 	params.bNewTrigger = bNewTrigger;
@@ -2579,7 +2579,7 @@ void AVRController::TriggerChanged(bool bNewTrigger)
 
 void AVRController::Teleport()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.Teleport"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.Teleport");
 
 	AVRController_Teleport_Params params;
 
@@ -2600,7 +2600,7 @@ void AVRController::Teleport()
 
 void AVRController::SetPlayArea(class AVRPlayArea* NewPlayArea, bool bTeleport)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.SetPlayArea"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.SetPlayArea");
 
 	AVRController_SetPlayArea_Params params;
 	params.NewPlayArea = NewPlayArea;
@@ -2623,7 +2623,7 @@ void AVRController::SetPlayArea(class AVRPlayArea* NewPlayArea, bool bTeleport)
 
 void AVRController::SetHapticValues(float Amplitude, float Frequency)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.SetHapticValues"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.SetHapticValues");
 
 	AVRController_SetHapticValues_Params params;
 	params.Amplitude = Amplitude;
@@ -2643,7 +2643,7 @@ void AVRController::SetHapticValues(float Amplitude, float Frequency)
 
 void AVRController::PrepareTeleport()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.PrepareTeleport"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.PrepareTeleport");
 
 	AVRController_PrepareTeleport_Params params;
 
@@ -2663,7 +2663,7 @@ void AVRController::PrepareTeleport()
 
 void AVRController::PlayHapticEffect(class UHapticFeedbackEffect_Base* HapticEffect)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.PlayHapticEffect"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.PlayHapticEffect");
 
 	AVRController_PlayHapticEffect_Params params;
 	params.HapticEffect = HapticEffect;
@@ -2684,7 +2684,7 @@ void AVRController::PlayHapticEffect(class UHapticFeedbackEffect_Base* HapticEff
 
 void AVRController::PlayHaptic(EVRHapticType Type)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.PlayHaptic"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.PlayHaptic");
 
 	AVRController_PlayHaptic_Params params;
 	params.Type = Type;
@@ -2703,7 +2703,7 @@ void AVRController::PlayHaptic(EVRHapticType Type)
 
 void AVRController::OnRep_HandType()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.OnRep_HandType"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.OnRep_HandType");
 
 	AVRController_OnRep_HandType_Params params;
 
@@ -2723,7 +2723,7 @@ void AVRController::OnRep_HandType()
 
 void AVRController::OnModeChanged(EVRControllerMode From)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.OnModeChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.OnModeChanged");
 
 	AVRController_OnModeChanged_Params params;
 	params.From = From;
@@ -2744,7 +2744,7 @@ void AVRController::OnModeChanged(EVRControllerMode From)
 
 void AVRController::OnInvalidTeleportOverlap(class AActor* Actor)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.OnInvalidTeleportOverlap"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.OnInvalidTeleportOverlap");
 
 	AVRController_OnInvalidTeleportOverlap_Params params;
 	params.Actor = Actor;
@@ -2763,7 +2763,7 @@ void AVRController::OnInvalidTeleportOverlap(class AActor* Actor)
 
 void AVRController::OnImminentTeleport()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.OnImminentTeleport"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.OnImminentTeleport");
 
 	AVRController_OnImminentTeleport_Params params;
 
@@ -2785,7 +2785,7 @@ void AVRController::OnImminentTeleport()
 
 void AVRController::OnGrabVolumeEndOverlapOld(class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.OnGrabVolumeEndOverlapOld"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.OnGrabVolumeEndOverlapOld");
 
 	AVRController_OnGrabVolumeEndOverlapOld_Params params;
 	params.OtherActor = OtherActor;
@@ -2811,7 +2811,7 @@ void AVRController::OnGrabVolumeEndOverlapOld(class AActor* OtherActor, class UP
 
 void AVRController::OnGrabVolumeEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.OnGrabVolumeEndOverlap"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.OnGrabVolumeEndOverlap");
 
 	AVRController_OnGrabVolumeEndOverlap_Params params;
 	params.OverlappedComponent = OverlappedComponent;
@@ -2839,7 +2839,7 @@ void AVRController::OnGrabVolumeEndOverlap(class UPrimitiveComponent* Overlapped
 
 void AVRController::OnGrabVolumeBeginOverlapOld(class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.OnGrabVolumeBeginOverlapOld"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.OnGrabVolumeBeginOverlapOld");
 
 	AVRController_OnGrabVolumeBeginOverlapOld_Params params;
 	params.OtherActor = OtherActor;
@@ -2869,7 +2869,7 @@ void AVRController::OnGrabVolumeBeginOverlapOld(class AActor* OtherActor, class 
 
 void AVRController::OnGrabVolumeBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.OnGrabVolumeBeginOverlap"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.OnGrabVolumeBeginOverlap");
 
 	AVRController_OnGrabVolumeBeginOverlap_Params params;
 	params.OverlappedComponent = OverlappedComponent;
@@ -2895,7 +2895,7 @@ void AVRController::OnGrabVolumeBeginOverlap(class UPrimitiveComponent* Overlapp
 
 void AVRController::OnGrabEndOverlap(class UPrimitiveComponent* Component)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.OnGrabEndOverlap"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.OnGrabEndOverlap");
 
 	AVRController_OnGrabEndOverlap_Params params;
 	params.Component = Component;
@@ -2916,7 +2916,7 @@ void AVRController::OnGrabEndOverlap(class UPrimitiveComponent* Component)
 
 void AVRController::OnGrabBeginOverlap(class UPrimitiveComponent* Component)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.OnGrabBeginOverlap"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.OnGrabBeginOverlap");
 
 	AVRController_OnGrabBeginOverlap_Params params;
 	params.Component = Component;
@@ -2937,7 +2937,7 @@ void AVRController::OnGrabBeginOverlap(class UPrimitiveComponent* Component)
 
 void AVRController::GripChanged(bool bNewGrip)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.GripChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.GripChanged");
 
 	AVRController_GripChanged_Params params;
 	params.bNewGrip = bNewGrip;
@@ -2959,7 +2959,7 @@ void AVRController::GripChanged(bool bNewGrip)
 
 void AVRController::GrabManual(class UPrimitiveComponent* Component, bool bByGrip)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.GrabManual"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.GrabManual");
 
 	AVRController_GrabManual_Params params;
 	params.Component = Component;
@@ -2981,7 +2981,7 @@ void AVRController::GrabManual(class UPrimitiveComponent* Component, bool bByGri
 
 void AVRController::Grab(bool bByGrip)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.Grab"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.Grab");
 
 	AVRController_Grab_Params params;
 	params.bByGrip = bByGrip;
@@ -3002,7 +3002,7 @@ void AVRController::Grab(bool bByGrip)
 
 class APlayerController* AVRController::GetPawnController()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.GetPawnController"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.GetPawnController");
 
 	AVRController_GetPawnController_Params params;
 
@@ -3024,7 +3024,7 @@ class APlayerController* AVRController::GetPawnController()
 
 class AVRPawn* AVRController::GetPawn()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.GetPawn"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.GetPawn");
 
 	AVRController_GetPawn_Params params;
 
@@ -3046,7 +3046,7 @@ class AVRPawn* AVRController::GetPawn()
 
 EControllerHand AVRController::GetHandType()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.GetHandType"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.GetHandType");
 
 	AVRController_GetHandType_Params params;
 
@@ -3068,7 +3068,7 @@ EControllerHand AVRController::GetHandType()
 
 class UPrimitiveComponent* AVRController::GetGrabVolume()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.GetGrabVolume"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.GetGrabVolume");
 
 	AVRController_GetGrabVolume_Params params;
 
@@ -3088,7 +3088,7 @@ class UPrimitiveComponent* AVRController::GetGrabVolume()
 
 void AVRController::GenericHaptic()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.GenericHaptic"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.GenericHaptic");
 
 	AVRController_GenericHaptic_Params params;
 
@@ -3108,7 +3108,7 @@ void AVRController::GenericHaptic()
 
 void AVRController::EmulateTrigger(bool bPressed)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.EmulateTrigger"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.EmulateTrigger");
 
 	AVRController_EmulateTrigger_Params params;
 	params.bPressed = bPressed;
@@ -3129,7 +3129,7 @@ void AVRController::EmulateTrigger(bool bPressed)
 
 void AVRController::EmulateMenu(bool bPressed)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.EmulateMenu"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.EmulateMenu");
 
 	AVRController_EmulateMenu_Params params;
 	params.bPressed = bPressed;
@@ -3150,7 +3150,7 @@ void AVRController::EmulateMenu(bool bPressed)
 
 void AVRController::EmulateGrip(bool bPressed)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.EmulateGrip"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.EmulateGrip");
 
 	AVRController_EmulateGrip_Params params;
 	params.bPressed = bPressed;
@@ -3171,7 +3171,7 @@ void AVRController::EmulateGrip(bool bPressed)
 
 bool AVRController::CouldGrab()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.CouldGrab"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.CouldGrab");
 
 	AVRController_CouldGrab_Params params;
 
@@ -3193,7 +3193,7 @@ bool AVRController::CouldGrab()
 
 void AVRController::ChangeMode(EVRControllerMode To)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRController.ChangeMode"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRController.ChangeMode");
 
 	AVRController_ChangeMode_Params params;
 	params.To = To;
@@ -3214,7 +3214,7 @@ void AVRController::ChangeMode(EVRControllerMode To)
 
 void AVRItemController::ServerReportStateChange(const struct FVRItemControllerState& NewState)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItemController.ServerReportStateChange"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItemController.ServerReportStateChange");
 
 	AVRItemController_ServerReportStateChange_Params params;
 	params.NewState = NewState;
@@ -3235,7 +3235,7 @@ void AVRItemController::ServerReportStateChange(const struct FVRItemControllerSt
 
 void AVRItemController::ServerPickManual(class AVRItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItemController.ServerPickManual"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItemController.ServerPickManual");
 
 	AVRItemController_ServerPickManual_Params params;
 	params.Item = Item;
@@ -3259,7 +3259,7 @@ void AVRItemController::ServerPickManual(class AVRItem* Item)
 
 void AVRItemController::ServerDrop(class AVRItem* PickupToDrop, const struct FVector& DesiredThrowLocation, const struct FVector& DesiredThrowVelocity, const struct FRotator& DesiredThrowRotation)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItemController.ServerDrop"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItemController.ServerDrop");
 
 	AVRItemController_ServerDrop_Params params;
 	params.PickupToDrop = PickupToDrop;
@@ -3283,7 +3283,7 @@ void AVRItemController::ServerDrop(class AVRItem* PickupToDrop, const struct FVe
 
 void AVRItemController::ReportPickupDrop(class AVRItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItemController.ReportPickupDrop"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItemController.ReportPickupDrop");
 
 	AVRItemController_ReportPickupDrop_Params params;
 	params.Item = Item;
@@ -3304,7 +3304,7 @@ void AVRItemController::ReportPickupDrop(class AVRItem* Item)
 
 void AVRItemController::PredictedPickManual(class AVRItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItemController.PredictedPickManual"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItemController.PredictedPickManual");
 
 	AVRItemController_PredictedPickManual_Params params;
 	params.Item = Item;
@@ -3325,7 +3325,7 @@ void AVRItemController::PredictedPickManual(class AVRItem* Item)
 
 void AVRItemController::PickManual(class AVRItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItemController.PickManual"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItemController.PickManual");
 
 	AVRItemController_PickManual_Params params;
 	params.Item = Item;
@@ -3344,7 +3344,7 @@ void AVRItemController::PickManual(class AVRItem* Item)
 
 void AVRItemController::Pick()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItemController.Pick"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItemController.Pick");
 
 	AVRItemController_Pick_Params params;
 
@@ -3364,7 +3364,7 @@ void AVRItemController::Pick()
 
 void AVRItemController::OnStateChanged(const struct FVRItemControllerState& OldState)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItemController.OnStateChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItemController.OnStateChanged");
 
 	AVRItemController_OnStateChanged_Params params;
 	params.OldState = OldState;
@@ -3383,7 +3383,7 @@ void AVRItemController::OnStateChanged(const struct FVRItemControllerState& OldS
 
 void AVRItemController::OnRep_State()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItemController.OnRep_State"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItemController.OnRep_State");
 
 	AVRItemController_OnRep_State_Params params;
 
@@ -3403,7 +3403,7 @@ void AVRItemController::OnRep_State()
 
 void AVRItemController::OnPickupDestroyed(class AActor* DestroyedActor)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItemController.OnPickupDestroyed"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItemController.OnPickupDestroyed");
 
 	AVRItemController_OnPickupDestroyed_Params params;
 	params.DestroyedActor = DestroyedActor;
@@ -3422,7 +3422,7 @@ void AVRItemController::OnPickupDestroyed(class AActor* DestroyedActor)
 
 void AVRItemController::OnDropTimer()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItemController.OnDropTimer"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItemController.OnDropTimer");
 
 	AVRItemController_OnDropTimer_Params params;
 
@@ -3442,7 +3442,7 @@ void AVRItemController::OnDropTimer()
 
 void AVRItemController::MulticastChangeState(const struct FVRItemControllerState& NewState)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItemController.MulticastChangeState"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItemController.MulticastChangeState");
 
 	AVRItemController_MulticastChangeState_Params params;
 	params.NewState = NewState;
@@ -3463,7 +3463,7 @@ void AVRItemController::MulticastChangeState(const struct FVRItemControllerState
 
 bool AVRItemController::IsLocallyOwned()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItemController.IsLocallyOwned"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItemController.IsLocallyOwned");
 
 	AVRItemController_IsLocallyOwned_Params params;
 
@@ -3483,7 +3483,7 @@ bool AVRItemController::IsLocallyOwned()
 
 void AVRItemController::Drop()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRItemController.Drop"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRItemController.Drop");
 
 	AVRItemController_Drop_Params params;
 
@@ -3504,7 +3504,7 @@ void AVRItemController::Drop()
 
 class AVRBulletManager* AVRBulletManager::STATIC_Get(class UObject* WorldContextObject)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRBulletManager.Get"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRBulletManager.Get");
 
 	AVRBulletManager_Get_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -3528,7 +3528,7 @@ class AVRBulletManager* AVRBulletManager::STATIC_Get(class UObject* WorldContext
 
 bool UVRBulletPenetrationInterface::IsThinSurface(class UPrimitiveComponent* Component)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRBulletPenetrationInterface.IsThinSurface"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRBulletPenetrationInterface.IsThinSurface");
 
 	UVRBulletPenetrationInterface_IsThinSurface_Params params;
 	params.Component = Component;
@@ -3549,7 +3549,7 @@ bool UVRBulletPenetrationInterface::IsThinSurface(class UPrimitiveComponent* Com
 
 void AVRMenu::Close()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRMenu.Close"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRMenu.Close");
 
 	AVRMenu_Close_Params params;
 
@@ -3569,7 +3569,7 @@ void AVRMenu::Close()
 
 struct FVector AVRHand::GetShoulderLocation()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRHand.GetShoulderLocation"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRHand.GetShoulderLocation");
 
 	AVRHand_GetShoulderLocation_Params params;
 
@@ -3591,7 +3591,7 @@ struct FVector AVRHand::GetShoulderLocation()
 
 bool UVRGrabInterface::UseSoftGrabConstraint()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGrabInterface.UseSoftGrabConstraint"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGrabInterface.UseSoftGrabConstraint");
 
 	UVRGrabInterface_UseSoftGrabConstraint_Params params;
 
@@ -3613,7 +3613,7 @@ bool UVRGrabInterface::UseSoftGrabConstraint()
 
 void UVRGrabInterface::UnGrabbed(class AVRController* Controller)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGrabInterface.UnGrabbed"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGrabInterface.UnGrabbed");
 
 	UVRGrabInterface_UnGrabbed_Params params;
 	params.Controller = Controller;
@@ -3634,7 +3634,7 @@ void UVRGrabInterface::UnGrabbed(class AVRController* Controller)
 
 void UVRGrabInterface::Grabbed(class AVRController* Controller)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRGrabInterface.Grabbed"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRGrabInterface.Grabbed");
 
 	UVRGrabInterface_Grabbed_Params params;
 	params.Controller = Controller;
@@ -3656,7 +3656,7 @@ void UVRGrabInterface::Grabbed(class AVRController* Controller)
 
 void UVRDynamicHelperComponent::OnWake(class UPrimitiveComponent* WakingComponent, const struct FName& BoneName)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRDynamicHelperComponent.OnWake"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRDynamicHelperComponent.OnWake");
 
 	UVRDynamicHelperComponent_OnWake_Params params;
 	params.WakingComponent = WakingComponent;
@@ -3679,7 +3679,7 @@ void UVRDynamicHelperComponent::OnWake(class UPrimitiveComponent* WakingComponen
 
 void UVRDynamicHelperComponent::OnSleep(class UPrimitiveComponent* SleepingComponent, const struct FName& BoneName)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRDynamicHelperComponent.OnSleep"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRDynamicHelperComponent.OnSleep");
 
 	UVRDynamicHelperComponent_OnSleep_Params params;
 	params.SleepingComponent = SleepingComponent;
@@ -3701,7 +3701,7 @@ void UVRDynamicHelperComponent::OnSleep(class UPrimitiveComponent* SleepingCompo
 
 bool UVRHandleComponent::IsGrabbed()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRHandleComponent.IsGrabbed"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRHandleComponent.IsGrabbed");
 
 	UVRHandleComponent_IsGrabbed_Params params;
 
@@ -3723,7 +3723,7 @@ bool UVRHandleComponent::IsGrabbed()
 
 class AVRController* UVRHandleComponent::GetGrabbedBy()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRHandleComponent.GetGrabbedBy"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRHandleComponent.GetGrabbedBy");
 
 	UVRHandleComponent_GetGrabbedBy_Params params;
 
@@ -3746,7 +3746,7 @@ class AVRController* UVRHandleComponent::GetGrabbedBy()
 
 void AVRInventoryLogic::ServerPut(unsigned char Slot, class AVRItemController* ByController)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRInventoryLogic.ServerPut"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRInventoryLogic.ServerPut");
 
 	AVRInventoryLogic_ServerPut_Params params;
 	params.Slot = Slot;
@@ -3769,7 +3769,7 @@ void AVRInventoryLogic::ServerPut(unsigned char Slot, class AVRItemController* B
 
 void AVRInventoryLogic::ServerGet(unsigned char Slot, class AVRItemController* ByController)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRInventoryLogic.ServerGet"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRInventoryLogic.ServerGet");
 
 	AVRInventoryLogic_ServerGet_Params params;
 	params.Slot = Slot;
@@ -3789,7 +3789,7 @@ void AVRInventoryLogic::ServerGet(unsigned char Slot, class AVRItemController* B
 
 void AVRInventoryLogic::ReAttachChildren()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRInventoryLogic.ReAttachChildren"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRInventoryLogic.ReAttachChildren");
 
 	AVRInventoryLogic_ReAttachChildren_Params params;
 
@@ -3809,7 +3809,7 @@ void AVRInventoryLogic::ReAttachChildren()
 
 class AVRPawn* AVRInventoryLogic::GetPawn()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRInventoryLogic.GetPawn"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRInventoryLogic.GetPawn");
 
 	AVRInventoryLogic_GetPawn_Params params;
 
@@ -3829,7 +3829,7 @@ class AVRPawn* AVRInventoryLogic::GetPawn()
 
 void AVRMagazine::ServerObliterate()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRMagazine.ServerObliterate"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRMagazine.ServerObliterate");
 
 	AVRMagazine_ServerObliterate_Params params;
 
@@ -3849,7 +3849,7 @@ void AVRMagazine::ServerObliterate()
 
 void AVRMagazine::ServerMerge(class AVRMagazine* Magazine)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRMagazine.ServerMerge"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRMagazine.ServerMerge");
 
 	AVRMagazine_ServerMerge_Params params;
 	params.Magazine = Magazine;
@@ -3868,7 +3868,7 @@ void AVRMagazine::ServerMerge(class AVRMagazine* Magazine)
 
 void AVRMagazine::OnRep_Gun()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRMagazine.OnRep_Gun"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRMagazine.OnRep_Gun");
 
 	AVRMagazine_OnRep_Gun_Params params;
 
@@ -3886,7 +3886,7 @@ void AVRMagazine::OnRep_Gun()
 
 void AVRMagazine::OnRep_Bullets()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRMagazine.OnRep_Bullets"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRMagazine.OnRep_Bullets");
 
 	AVRMagazine_OnRep_Bullets_Params params;
 
@@ -3904,7 +3904,7 @@ void AVRMagazine::OnRep_Bullets()
 
 void AVRMagazine::OnReleasedFromGun()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRMagazine.OnReleasedFromGun"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRMagazine.OnReleasedFromGun");
 
 	AVRMagazine_OnReleasedFromGun_Params params;
 
@@ -3922,7 +3922,7 @@ void AVRMagazine::OnReleasedFromGun()
 
 void AVRMagazine::OnLoadedIntoGun()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRMagazine.OnLoadedIntoGun"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRMagazine.OnLoadedIntoGun");
 
 	AVRMagazine_OnLoadedIntoGun_Params params;
 
@@ -3940,7 +3940,7 @@ void AVRMagazine::OnLoadedIntoGun()
 
 void AVRMagazine::OnBulletsChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRMagazine.OnBulletsChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRMagazine.OnBulletsChanged");
 
 	AVRMagazine_OnBulletsChanged_Params params;
 
@@ -3960,7 +3960,7 @@ void AVRMagazine::OnBulletsChanged()
 
 void AVRMagazine::Merge(class AVRMagazine* Magazine)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRMagazine.Merge"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRMagazine.Merge");
 
 	AVRMagazine_Merge_Params params;
 	params.Magazine = Magazine;
@@ -3979,7 +3979,7 @@ void AVRMagazine::Merge(class AVRMagazine* Magazine)
 
 void AVRMagazine::MakeReinsertable()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRMagazine.MakeReinsertable"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRMagazine.MakeReinsertable");
 
 	AVRMagazine_MakeReinsertable_Params params;
 
@@ -3999,7 +3999,7 @@ void AVRMagazine::MakeReinsertable()
 
 bool AVRMagazine::IsFull()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRMagazine.IsFull"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRMagazine.IsFull");
 
 	AVRMagazine_IsFull_Params params;
 
@@ -4019,7 +4019,7 @@ bool AVRMagazine::IsFull()
 
 void AVRLadder::CreateVolume()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRLadder.CreateVolume"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRLadder.CreateVolume");
 
 	AVRLadder_CreateVolume_Params params;
 
@@ -4042,7 +4042,7 @@ void AVRLadder::CreateVolume()
 
 void UVRMagazineSlotComponent::OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRMagazineSlotComponent.OnEndOverlap"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRMagazineSlotComponent.OnEndOverlap");
 
 	UVRMagazineSlotComponent_OnEndOverlap_Params params;
 	params.OverlappedComponent = OverlappedComponent;
@@ -4071,7 +4071,7 @@ void UVRMagazineSlotComponent::OnEndOverlap(class UPrimitiveComponent* Overlappe
 
 void UVRMagazineSlotComponent::OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRMagazineSlotComponent.OnBeginOverlap"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRMagazineSlotComponent.OnBeginOverlap");
 
 	UVRMagazineSlotComponent_OnBeginOverlap_Params params;
 	params.OverlappedComponent = OverlappedComponent;
@@ -4095,7 +4095,7 @@ void UVRMagazineSlotComponent::OnBeginOverlap(class UPrimitiveComponent* Overlap
 
 void UVRMovementComponent::SyncTime()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRMovementComponent.SyncTime"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRMovementComponent.SyncTime");
 
 	UVRMovementComponent_SyncTime_Params params;
 
@@ -4113,7 +4113,7 @@ void UVRMovementComponent::SyncTime()
 
 void UVRMovementComponent::ServerSyncTime()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRMovementComponent.ServerSyncTime"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRMovementComponent.ServerSyncTime");
 
 	UVRMovementComponent_ServerSyncTime_Params params;
 
@@ -4133,7 +4133,7 @@ void UVRMovementComponent::ServerSyncTime()
 
 void UVRMovementComponent::ServerReportMovement(const struct FVRMovementSnapshot& M0)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRMovementComponent.ServerReportMovement"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRMovementComponent.ServerReportMovement");
 
 	UVRMovementComponent_ServerReportMovement_Params params;
 	params.M0 = M0;
@@ -4154,7 +4154,7 @@ void UVRMovementComponent::ServerReportMovement(const struct FVRMovementSnapshot
 
 void UVRMovementComponent::ServerMoveTo(const struct FVector& Location)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRMovementComponent.ServerMoveTo"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRMovementComponent.ServerMoveTo");
 
 	UVRMovementComponent_ServerMoveTo_Params params;
 	params.Location = Location;
@@ -4173,7 +4173,7 @@ void UVRMovementComponent::ServerMoveTo(const struct FVector& Location)
 
 void UVRMovementComponent::OnRep_MovementSnapshot()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRMovementComponent.OnRep_MovementSnapshot"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRMovementComponent.OnRep_MovementSnapshot");
 
 	UVRMovementComponent_OnRep_MovementSnapshot_Params params;
 
@@ -4194,7 +4194,7 @@ void UVRMovementComponent::OnRep_MovementSnapshot()
 
 void UVRMovementComponent::OnPawnEndOverlap(class AActor* OverlappedActor, class AActor* OtherActor)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRMovementComponent.OnPawnEndOverlap"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRMovementComponent.OnPawnEndOverlap");
 
 	UVRMovementComponent_OnPawnEndOverlap_Params params;
 	params.OverlappedActor = OverlappedActor;
@@ -4217,7 +4217,7 @@ void UVRMovementComponent::OnPawnEndOverlap(class AActor* OverlappedActor, class
 
 void UVRMovementComponent::OnPawnBeginOverlap(class AActor* OverlappedActor, class AActor* OtherActor)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRMovementComponent.OnPawnBeginOverlap"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRMovementComponent.OnPawnBeginOverlap");
 
 	UVRMovementComponent_OnPawnBeginOverlap_Params params;
 	params.OverlappedActor = OverlappedActor;
@@ -4239,7 +4239,7 @@ void UVRMovementComponent::OnPawnBeginOverlap(class AActor* OverlappedActor, cla
 
 void UVRMovementComponent::MulticastMoveTo(const struct FVector& Location)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRMovementComponent.MulticastMoveTo"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRMovementComponent.MulticastMoveTo");
 
 	UVRMovementComponent_MulticastMoveTo_Params params;
 	params.Location = Location;
@@ -4260,7 +4260,7 @@ void UVRMovementComponent::MulticastMoveTo(const struct FVector& Location)
 
 void UVRMovementComponent::MoveTo(const struct FVector& Location)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRMovementComponent.MoveTo"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRMovementComponent.MoveTo");
 
 	UVRMovementComponent_MoveTo_Params params;
 	params.Location = Location;
@@ -4281,7 +4281,7 @@ void UVRMovementComponent::MoveTo(const struct FVector& Location)
 
 TEnumAsByte<EPhysicalSurface> UVRMovementComponent::GetGroundSurface()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRMovementComponent.GetGroundSurface"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRMovementComponent.GetGroundSurface");
 
 	UVRMovementComponent_GetGroundSurface_Params params;
 
@@ -4303,7 +4303,7 @@ TEnumAsByte<EPhysicalSurface> UVRMovementComponent::GetGroundSurface()
 
 void UVRMovementComponent::ClientSyncTime(float ServerTimeSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRMovementComponent.ClientSyncTime"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRMovementComponent.ClientSyncTime");
 
 	UVRMovementComponent_ClientSyncTime_Params params;
 	params.ServerTimeSeconds = ServerTimeSeconds;
@@ -4326,7 +4326,7 @@ void UVRMovementComponent::ClientSyncTime(float ServerTimeSeconds)
 
 void UVRPlayerEmulatorComponent::SetAimRotation(const struct FVector& WorldLocation, float AngleDeviation, bool bEnableAim)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPlayerEmulatorComponent.SetAimRotation"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPlayerEmulatorComponent.SetAimRotation");
 
 	UVRPlayerEmulatorComponent_SetAimRotation_Params params;
 	params.WorldLocation = WorldLocation;
@@ -4352,7 +4352,7 @@ void UVRPlayerEmulatorComponent::SetAimRotation(const struct FVector& WorldLocat
 
 void UVRPocketComponent::OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPocketComponent.OnEndOverlap"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPocketComponent.OnEndOverlap");
 
 	UVRPocketComponent_OnEndOverlap_Params params;
 	params.OverlappedComponent = OverlappedComponent;
@@ -4381,7 +4381,7 @@ void UVRPocketComponent::OnEndOverlap(class UPrimitiveComponent* OverlappedCompo
 
 void UVRPocketComponent::OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPocketComponent.OnBeginOverlap"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPocketComponent.OnBeginOverlap");
 
 	UVRPocketComponent_OnBeginOverlap_Params params;
 	params.OverlappedComponent = OverlappedComponent;
@@ -4407,7 +4407,7 @@ void UVRPocketComponent::OnBeginOverlap(class UPrimitiveComponent* OverlappedCom
 
 void UVRPocketComponent::MulticastUnpocketize(class AVRItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRPocketComponent.MulticastUnpocketize"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRPocketComponent.MulticastUnpocketize");
 
 	UVRPocketComponent_MulticastUnpocketize_Params params;
 	params.Item = Item;
@@ -4428,7 +4428,7 @@ void UVRPocketComponent::MulticastUnpocketize(class AVRItem* Item)
 
 void UVRSpectatorComponent::SetTwoPointGrabEnabled(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRSpectatorComponent.SetTwoPointGrabEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRSpectatorComponent.SetTwoPointGrabEnabled");
 
 	UVRSpectatorComponent_SetTwoPointGrabEnabled_Params params;
 	params.bEnabled = bEnabled;
@@ -4450,7 +4450,7 @@ void UVRSpectatorComponent::SetTwoPointGrabEnabled(bool bEnabled)
 
 void UVRSpectatorComponent::SetMotionControllers(class UMotionControllerComponent* LeftController, class UMotionControllerComponent* RightController)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRSpectatorComponent.SetMotionControllers"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRSpectatorComponent.SetMotionControllers");
 
 	UVRSpectatorComponent_SetMotionControllers_Params params;
 	params.LeftController = LeftController;
@@ -4473,7 +4473,7 @@ void UVRSpectatorComponent::SetMotionControllers(class UMotionControllerComponen
 
 void UVRStatics::STATIC_SaveVRSettings(class UObject* WorldContextObject, const struct FVRSettings& Settings)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRStatics.SaveVRSettings"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRStatics.SaveVRSettings");
 
 	UVRStatics_SaveVRSettings_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -4496,7 +4496,7 @@ void UVRStatics::STATIC_SaveVRSettings(class UObject* WorldContextObject, const 
 
 struct FVRSettings UVRStatics::STATIC_LoadVRSettings(class UObject* WorldContextObject)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRStatics.LoadVRSettings"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRStatics.LoadVRSettings");
 
 	UVRStatics_LoadVRSettings_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -4519,7 +4519,7 @@ struct FVRSettings UVRStatics::STATIC_LoadVRSettings(class UObject* WorldContext
 
 bool UVRStatics::STATIC_IsOculusTouch()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRStatics.IsOculusTouch"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRStatics.IsOculusTouch");
 
 	UVRStatics_IsOculusTouch_Params params;
 
@@ -4544,7 +4544,7 @@ bool UVRStatics::STATIC_IsOculusTouch()
 
 struct FTransform UVRStatics::STATIC_GetContraintRefFrame(class UObject* WorldContextObject, class UPhysicsConstraintComponent* ConstraintComponent, TEnumAsByte<EConstraintFrame> Frame)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRStatics.GetContraintRefFrame"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRStatics.GetContraintRefFrame");
 
 	UVRStatics_GetContraintRefFrame_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -4570,7 +4570,7 @@ struct FTransform UVRStatics::STATIC_GetContraintRefFrame(class UObject* WorldCo
 
 void UVRStatics::STATIC_ApplyVRSettings(class UObject* WorldContextObject, const struct FVRSettings& Settings)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRStatics.ApplyVRSettings"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRStatics.ApplyVRSettings");
 
 	UVRStatics_ApplyVRSettings_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -4594,7 +4594,7 @@ void UVRStatics::STATIC_ApplyVRSettings(class UObject* WorldContextObject, const
 
 void UVRStatics::STATIC_ApplyAndSaveSingleVRSettingFromString(class UObject* WorldContextObject, const struct FName& Key, const struct FString& String)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRStatics.ApplyAndSaveSingleVRSettingFromString"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRStatics.ApplyAndSaveSingleVRSettingFromString");
 
 	UVRStatics_ApplyAndSaveSingleVRSettingFromString_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -4620,7 +4620,7 @@ void UVRStatics::STATIC_ApplyAndSaveSingleVRSettingFromString(class UObject* Wor
 
 void UVRStatics::STATIC_AddContraintRefFrameOffset(class UObject* WorldContextObject, const struct FVector& Offset, class UPhysicsConstraintComponent* ConstraintComponent, TEnumAsByte<EConstraintFrame> Frame)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function VRFramework.VRStatics.AddContraintRefFrameOffset"));
+	static auto fn = UObject::FindObject<UFunction>("Function VRFramework.VRStatics.AddContraintRefFrameOffset");
 
 	UVRStatics_AddContraintRefFrameOffset_Params params;
 	params.WorldContextObject = WorldContextObject;

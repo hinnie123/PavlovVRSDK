@@ -20,7 +20,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class InputCore.InputCoreTypes"));
+		static auto ptr = UObject::FindClass("Class InputCore.InputCoreTypes");
 		return ptr;
 	}
 

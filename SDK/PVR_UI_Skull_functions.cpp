@@ -19,7 +19,7 @@ namespace SDK
 
 ESlateVisibility UUI_Skull_C::GetVisibility_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Skull.UI_Skull_C.GetVisibility_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Skull.UI_Skull_C.GetVisibility_1");
 
 	UUI_Skull_C_GetVisibility_1_Params params;
 
@@ -40,7 +40,7 @@ ESlateVisibility UUI_Skull_C::GetVisibility_1()
 
 struct FSlateBrush UUI_Skull_C::Get_Avatar_Brush_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Skull.UI_Skull_C.Get_Avatar_Brush_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Skull.UI_Skull_C.Get_Avatar_Brush_1");
 
 	UUI_Skull_C_Get_Avatar_Brush_1_Params params;
 
@@ -61,7 +61,7 @@ struct FSlateBrush UUI_Skull_C::Get_Avatar_Brush_1()
 
 struct FText UUI_Skull_C::Get_PlayerName_Text_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Skull.UI_Skull_C.Get_PlayerName_Text_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Skull.UI_Skull_C.Get_PlayerName_Text_1");
 
 	UUI_Skull_C_Get_PlayerName_Text_1_Params params;
 
@@ -82,7 +82,7 @@ struct FText UUI_Skull_C::Get_PlayerName_Text_1()
 
 struct FLinearColor UUI_Skull_C::GetColorAndOpacity_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Skull.UI_Skull_C.GetColorAndOpacity_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Skull.UI_Skull_C.GetColorAndOpacity_1");
 
 	UUI_Skull_C_GetColorAndOpacity_1_Params params;
 
@@ -103,7 +103,7 @@ struct FLinearColor UUI_Skull_C::GetColorAndOpacity_1()
 
 struct FSlateBrush UUI_Skull_C::GetBrush_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Skull.UI_Skull_C.GetBrush_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Skull.UI_Skull_C.GetBrush_1");
 
 	UUI_Skull_C_GetBrush_1_Params params;
 
@@ -124,7 +124,7 @@ struct FSlateBrush UUI_Skull_C::GetBrush_1()
 
 void UUI_Skull_C::SetPlayerState(class APavlovPlayerState* PlayerState)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Skull.UI_Skull_C.SetPlayerState"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Skull.UI_Skull_C.SetPlayerState");
 
 	UUI_Skull_C_SetPlayerState_Params params;
 	params.PlayerState = PlayerState;
@@ -142,7 +142,7 @@ void UUI_Skull_C::SetPlayerState(class APavlovPlayerState* PlayerState)
 
 void UUI_Skull_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Skull.UI_Skull_C.Construct"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Skull.UI_Skull_C.Construct");
 
 	UUI_Skull_C_Construct_Params params;
 
@@ -159,7 +159,7 @@ void UUI_Skull_C::Construct()
 
 void UUI_Skull_C::UpdateInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Skull.UI_Skull_C.UpdateInfo"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Skull.UI_Skull_C.UpdateInfo");
 
 	UUI_Skull_C_UpdateInfo_Params params;
 
@@ -176,7 +176,7 @@ void UUI_Skull_C::UpdateInfo()
 
 void UUI_Skull_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Skull.UI_Skull_C.Destruct"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Skull.UI_Skull_C.Destruct");
 
 	UUI_Skull_C_Destruct_Params params;
 
@@ -195,7 +195,7 @@ void UUI_Skull_C::Destruct()
 
 void UUI_Skull_C::ExecuteUbergraph_UI_Skull(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Skull.UI_Skull_C.ExecuteUbergraph_UI_Skull"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Skull.UI_Skull_C.ExecuteUbergraph_UI_Skull");
 
 	UUI_Skull_C_ExecuteUbergraph_UI_Skull_Params params;
 	params.EntryPoint = EntryPoint;

@@ -19,7 +19,7 @@ namespace SDK
 
 struct FSlateBrush UUI_EquipmentIcon_C::GetBrush_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_EquipmentIcon.UI_EquipmentIcon_C.GetBrush_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_EquipmentIcon.UI_EquipmentIcon_C.GetBrush_1");
 
 	UUI_EquipmentIcon_C_GetBrush_1_Params params;
 

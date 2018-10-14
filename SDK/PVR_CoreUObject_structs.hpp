@@ -172,8 +172,7 @@ enum class EPixelFormat : uint8_t
 	PF_ASTC_12x12                  = 54,
 	PF_BC6H                        = 55,
 	PF_BC7                         = 56,
-	PF_R8_UINT                     = 57,
-	PF_MAX                         = 58
+	PF_R8_UINT                     = 57
 };
 
 

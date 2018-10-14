@@ -19,7 +19,7 @@ namespace SDK
 
 struct FSlateBrush UUI_Stereo_RoundEnd_C::Get_FG_Brush_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Stereo_RoundEnd.UI_Stereo_RoundEnd_C.Get_FG_Brush_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Stereo_RoundEnd.UI_Stereo_RoundEnd_C.Get_FG_Brush_1");
 
 	UUI_Stereo_RoundEnd_C_Get_FG_Brush_1_Params params;
 
@@ -40,7 +40,7 @@ struct FSlateBrush UUI_Stereo_RoundEnd_C::Get_FG_Brush_1()
 
 void UUI_Stereo_RoundEnd_C::IsWinner(bool* Winner)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Stereo_RoundEnd.UI_Stereo_RoundEnd_C.IsWinner"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Stereo_RoundEnd.UI_Stereo_RoundEnd_C.IsWinner");
 
 	UUI_Stereo_RoundEnd_C_IsWinner_Params params;
 
@@ -62,7 +62,7 @@ void UUI_Stereo_RoundEnd_C::IsWinner(bool* Winner)
 
 struct FSlateBrush UUI_Stereo_RoundEnd_C::Get_bg_Brush_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Stereo_RoundEnd.UI_Stereo_RoundEnd_C.Get_bg_Brush_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Stereo_RoundEnd.UI_Stereo_RoundEnd_C.Get_bg_Brush_1");
 
 	UUI_Stereo_RoundEnd_C_Get_bg_Brush_1_Params params;
 
@@ -81,7 +81,7 @@ struct FSlateBrush UUI_Stereo_RoundEnd_C::Get_bg_Brush_1()
 
 void UUI_Stereo_RoundEnd_C::CustomEvent_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Stereo_RoundEnd.UI_Stereo_RoundEnd_C.CustomEvent_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Stereo_RoundEnd.UI_Stereo_RoundEnd_C.CustomEvent_1");
 
 	UUI_Stereo_RoundEnd_C_CustomEvent_1_Params params;
 
@@ -98,7 +98,7 @@ void UUI_Stereo_RoundEnd_C::CustomEvent_1()
 
 void UUI_Stereo_RoundEnd_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Stereo_RoundEnd.UI_Stereo_RoundEnd_C.Construct"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Stereo_RoundEnd.UI_Stereo_RoundEnd_C.Construct");
 
 	UUI_Stereo_RoundEnd_C_Construct_Params params;
 
@@ -117,7 +117,7 @@ void UUI_Stereo_RoundEnd_C::Construct()
 
 void UUI_Stereo_RoundEnd_C::ExecuteUbergraph_UI_Stereo_RoundEnd(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Stereo_RoundEnd.UI_Stereo_RoundEnd_C.ExecuteUbergraph_UI_Stereo_RoundEnd"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Stereo_RoundEnd.UI_Stereo_RoundEnd_C.ExecuteUbergraph_UI_Stereo_RoundEnd");
 
 	UUI_Stereo_RoundEnd_C_ExecuteUbergraph_UI_Stereo_RoundEnd_Params params;
 	params.EntryPoint = EntryPoint;

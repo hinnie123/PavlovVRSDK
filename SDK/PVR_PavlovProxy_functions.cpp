@@ -17,7 +17,7 @@ namespace SDK
 
 void APavlov_GameLogic::OnRoundEnd()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PavlovProxy.Pavlov_GameLogic.OnRoundEnd"));
+	static auto fn = UObject::FindObject<UFunction>("Function PavlovProxy.Pavlov_GameLogic.OnRoundEnd");
 
 	APavlov_GameLogic_OnRoundEnd_Params params;
 
@@ -34,7 +34,7 @@ void APavlov_GameLogic::OnRoundEnd()
 
 void APavlov_GameLogic::OnRoundBegin()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PavlovProxy.Pavlov_GameLogic.OnRoundBegin"));
+	static auto fn = UObject::FindObject<UFunction>("Function PavlovProxy.Pavlov_GameLogic.OnRoundBegin");
 
 	APavlov_GameLogic_OnRoundBegin_Params params;
 
@@ -53,7 +53,7 @@ void APavlov_GameLogic::OnRoundBegin()
 
 void APavlov_GameLogic::MulticastOnRoundStateChanged(bool bStarting)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PavlovProxy.Pavlov_GameLogic.MulticastOnRoundStateChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function PavlovProxy.Pavlov_GameLogic.MulticastOnRoundStateChanged");
 
 	APavlov_GameLogic_MulticastOnRoundStateChanged_Params params;
 	params.bStarting = bStarting;
@@ -75,7 +75,7 @@ void APavlov_GameLogic::MulticastOnRoundStateChanged(bool bStarting)
 
 EPavlovGameModeType APavlov_GameLogic::STATIC_GetPavlovGameModeType(class UObject* WorldContextObject)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PavlovProxy.Pavlov_GameLogic.GetPavlovGameModeType"));
+	static auto fn = UObject::FindObject<UFunction>("Function PavlovProxy.Pavlov_GameLogic.GetPavlovGameModeType");
 
 	APavlov_GameLogic_GetPavlovGameModeType_Params params;
 	params.WorldContextObject = WorldContextObject;

@@ -21,7 +21,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("BlueprintGeneratedClass BP_RoundStart.BP_RoundStart_C"));
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass BP_RoundStart.BP_RoundStart_C");
 		return ptr;
 	}
 

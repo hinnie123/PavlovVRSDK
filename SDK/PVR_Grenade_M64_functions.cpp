@@ -17,7 +17,7 @@ namespace SDK
 
 void AGrenade_M64_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Grenade_M64.Grenade_M64_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Grenade_M64.Grenade_M64_C.UserConstructionScript");
 
 	AGrenade_M64_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void AGrenade_M64_C::UserConstructionScript()
 
 void AGrenade_M64_C::OnDetonation()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Grenade_M64.Grenade_M64_C.OnDetonation"));
+	static auto fn = UObject::FindObject<UFunction>("Function Grenade_M64.Grenade_M64_C.OnDetonation");
 
 	AGrenade_M64_C_OnDetonation_Params params;
 
@@ -53,7 +53,7 @@ void AGrenade_M64_C::OnDetonation()
 
 void AGrenade_M64_C::ExecuteUbergraph_Grenade_M64(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Grenade_M64.Grenade_M64_C.ExecuteUbergraph_Grenade_M64"));
+	static auto fn = UObject::FindObject<UFunction>("Function Grenade_M64.Grenade_M64_C.ExecuteUbergraph_Grenade_M64");
 
 	AGrenade_M64_C_ExecuteUbergraph_Grenade_M64_Params params;
 	params.EntryPoint = EntryPoint;

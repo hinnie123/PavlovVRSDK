@@ -17,7 +17,7 @@ namespace SDK
 
 void AToolTip_TwoHand_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_TwoHand.ToolTip_TwoHand_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_TwoHand.ToolTip_TwoHand_C.UserConstructionScript");
 
 	AToolTip_TwoHand_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void AToolTip_TwoHand_C::UserConstructionScript()
 
 void AToolTip_TwoHand_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_TwoHand.ToolTip_TwoHand_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_TwoHand.ToolTip_TwoHand_C.ReceiveBeginPlay");
 
 	AToolTip_TwoHand_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +53,7 @@ void AToolTip_TwoHand_C::ReceiveBeginPlay()
 
 void AToolTip_TwoHand_C::OnDestroyed_Event_1(class AActor* DestroyedActor)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_TwoHand.ToolTip_TwoHand_C.OnDestroyed_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_TwoHand.ToolTip_TwoHand_C.OnDestroyed_Event_1");
 
 	AToolTip_TwoHand_C_OnDestroyed_Event_1_Params params;
 	params.DestroyedActor = DestroyedActor;
@@ -71,7 +71,7 @@ void AToolTip_TwoHand_C::OnDestroyed_Event_1(class AActor* DestroyedActor)
 
 void AToolTip_TwoHand_C::CustomEvent_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_TwoHand.ToolTip_TwoHand_C.CustomEvent_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_TwoHand.ToolTip_TwoHand_C.CustomEvent_1");
 
 	AToolTip_TwoHand_C_CustomEvent_1_Params params;
 
@@ -90,7 +90,7 @@ void AToolTip_TwoHand_C::CustomEvent_1()
 
 void AToolTip_TwoHand_C::ExecuteUbergraph_ToolTip_TwoHand(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_TwoHand.ToolTip_TwoHand_C.ExecuteUbergraph_ToolTip_TwoHand"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_TwoHand.ToolTip_TwoHand_C.ExecuteUbergraph_ToolTip_TwoHand");
 
 	AToolTip_TwoHand_C_ExecuteUbergraph_ToolTip_TwoHand_Params params;
 	params.EntryPoint = EntryPoint;

@@ -20,7 +20,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class MovieSceneCapture.MovieSceneCaptureInterface"));
+		static auto ptr = UObject::FindClass("Class MovieSceneCapture.MovieSceneCaptureInterface");
 		return ptr;
 	}
 
@@ -35,7 +35,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class MovieSceneCapture.MovieSceneCaptureProtocolSettings"));
+		static auto ptr = UObject::FindClass("Class MovieSceneCapture.MovieSceneCaptureProtocolSettings");
 		return ptr;
 	}
 
@@ -60,7 +60,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class MovieSceneCapture.MovieSceneCapture"));
+		static auto ptr = UObject::FindClass("Class MovieSceneCapture.MovieSceneCapture");
 		return ptr;
 	}
 
@@ -75,7 +75,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class MovieSceneCapture.AutomatedLevelSequenceCapture"));
+		static auto ptr = UObject::FindClass("Class MovieSceneCapture.AutomatedLevelSequenceCapture");
 		return ptr;
 	}
 
@@ -93,7 +93,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class MovieSceneCapture.LevelCapture"));
+		static auto ptr = UObject::FindClass("Class MovieSceneCapture.LevelCapture");
 		return ptr;
 	}
 
@@ -108,7 +108,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class MovieSceneCapture.MovieSceneCaptureEnvironment"));
+		static auto ptr = UObject::FindClass("Class MovieSceneCapture.MovieSceneCaptureEnvironment");
 		return ptr;
 	}
 
@@ -127,7 +127,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class MovieSceneCapture.FrameGrabberProtocolSettings"));
+		static auto ptr = UObject::FindClass("Class MovieSceneCapture.FrameGrabberProtocolSettings");
 		return ptr;
 	}
 
@@ -142,7 +142,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class MovieSceneCapture.BmpImageCaptureSettings"));
+		static auto ptr = UObject::FindClass("Class MovieSceneCapture.BmpImageCaptureSettings");
 		return ptr;
 	}
 
@@ -159,7 +159,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class MovieSceneCapture.ImageCaptureSettings"));
+		static auto ptr = UObject::FindClass("Class MovieSceneCapture.ImageCaptureSettings");
 		return ptr;
 	}
 
@@ -181,7 +181,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class MovieSceneCapture.CompositionGraphCaptureSettings"));
+		static auto ptr = UObject::FindClass("Class MovieSceneCapture.CompositionGraphCaptureSettings");
 		return ptr;
 	}
 
@@ -200,7 +200,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class MovieSceneCapture.VideoCaptureSettings"));
+		static auto ptr = UObject::FindClass("Class MovieSceneCapture.VideoCaptureSettings");
 		return ptr;
 	}
 

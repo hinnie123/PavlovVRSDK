@@ -17,7 +17,7 @@ namespace SDK
 
 void USteamVRChaperoneComponent::SteamVRChaperoneEvent__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("DelegateFunction SteamVR.SteamVRChaperoneComponent.SteamVRChaperoneEvent__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction SteamVR.SteamVRChaperoneComponent.SteamVRChaperoneEvent__DelegateSignature");
 
 	USteamVRChaperoneComponent_SteamVRChaperoneEvent__DelegateSignature_Params params;
 
@@ -36,7 +36,7 @@ void USteamVRChaperoneComponent::SteamVRChaperoneEvent__DelegateSignature()
 
 TArray<struct FVector> USteamVRChaperoneComponent::GetBounds()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SteamVR.SteamVRChaperoneComponent.GetBounds"));
+	static auto fn = UObject::FindObject<UFunction>("Function SteamVR.SteamVRChaperoneComponent.GetBounds");
 
 	USteamVRChaperoneComponent_GetBounds_Params params;
 
@@ -59,7 +59,7 @@ TArray<struct FVector> USteamVRChaperoneComponent::GetBounds()
 
 void USteamVRFunctionLibrary::STATIC_GetValidTrackedDeviceIds(ESteamVRTrackedDeviceType DeviceType, TArray<int>* OutTrackedDeviceIds)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SteamVR.SteamVRFunctionLibrary.GetValidTrackedDeviceIds"));
+	static auto fn = UObject::FindObject<UFunction>("Function SteamVR.SteamVRFunctionLibrary.GetValidTrackedDeviceIds");
 
 	USteamVRFunctionLibrary_GetValidTrackedDeviceIds_Params params;
 	params.DeviceType = DeviceType;
@@ -86,7 +86,7 @@ void USteamVRFunctionLibrary::STATIC_GetValidTrackedDeviceIds(ESteamVRTrackedDev
 
 bool USteamVRFunctionLibrary::STATIC_GetTrackedDevicePositionAndOrientation(int DeviceID, struct FVector* OutPosition, struct FRotator* OutOrientation)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SteamVR.SteamVRFunctionLibrary.GetTrackedDevicePositionAndOrientation"));
+	static auto fn = UObject::FindObject<UFunction>("Function SteamVR.SteamVRFunctionLibrary.GetTrackedDevicePositionAndOrientation");
 
 	USteamVRFunctionLibrary_GetTrackedDevicePositionAndOrientation_Params params;
 	params.DeviceID = DeviceID;
@@ -118,7 +118,7 @@ bool USteamVRFunctionLibrary::STATIC_GetTrackedDevicePositionAndOrientation(int 
 
 bool USteamVRFunctionLibrary::STATIC_GetHandPositionAndOrientation(int ControllerIndex, EControllerHand Hand, struct FVector* OutPosition, struct FRotator* OutOrientation)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SteamVR.SteamVRFunctionLibrary.GetHandPositionAndOrientation"));
+	static auto fn = UObject::FindObject<UFunction>("Function SteamVR.SteamVRFunctionLibrary.GetHandPositionAndOrientation");
 
 	USteamVRFunctionLibrary_GetHandPositionAndOrientation_Params params;
 	params.ControllerIndex = ControllerIndex;

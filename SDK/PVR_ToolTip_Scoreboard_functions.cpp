@@ -17,7 +17,7 @@ namespace SDK
 
 void AToolTip_Scoreboard_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_Scoreboard.ToolTip_Scoreboard_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_Scoreboard.ToolTip_Scoreboard_C.UserConstructionScript");
 
 	AToolTip_Scoreboard_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void AToolTip_Scoreboard_C::UserConstructionScript()
 
 void AToolTip_Scoreboard_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_Scoreboard.ToolTip_Scoreboard_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_Scoreboard.ToolTip_Scoreboard_C.ReceiveBeginPlay");
 
 	AToolTip_Scoreboard_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +53,7 @@ void AToolTip_Scoreboard_C::ReceiveBeginPlay()
 
 void AToolTip_Scoreboard_C::OnDestroyed_Event_1(class AActor* DestroyedActor)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_Scoreboard.ToolTip_Scoreboard_C.OnDestroyed_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_Scoreboard.ToolTip_Scoreboard_C.OnDestroyed_Event_1");
 
 	AToolTip_Scoreboard_C_OnDestroyed_Event_1_Params params;
 	params.DestroyedActor = DestroyedActor;
@@ -71,7 +71,7 @@ void AToolTip_Scoreboard_C::OnDestroyed_Event_1(class AActor* DestroyedActor)
 
 void AToolTip_Scoreboard_C::CustomEvent_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_Scoreboard.ToolTip_Scoreboard_C.CustomEvent_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_Scoreboard.ToolTip_Scoreboard_C.CustomEvent_1");
 
 	AToolTip_Scoreboard_C_CustomEvent_1_Params params;
 
@@ -90,7 +90,7 @@ void AToolTip_Scoreboard_C::CustomEvent_1()
 
 void AToolTip_Scoreboard_C::ExecuteUbergraph_ToolTip_Scoreboard(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_Scoreboard.ToolTip_Scoreboard_C.ExecuteUbergraph_ToolTip_Scoreboard"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_Scoreboard.ToolTip_Scoreboard_C.ExecuteUbergraph_ToolTip_Scoreboard");
 
 	AToolTip_Scoreboard_C_ExecuteUbergraph_ToolTip_Scoreboard_Params params;
 	params.EntryPoint = EntryPoint;

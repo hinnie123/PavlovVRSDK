@@ -21,7 +21,7 @@ namespace SDK
 
 bool UMobileInstalledContent::Mount(int PakOrder, const struct FString& MountPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MobilePatchingUtils.MobileInstalledContent.Mount"));
+	static auto fn = UObject::FindObject<UFunction>("Function MobilePatchingUtils.MobileInstalledContent.Mount");
 
 	UMobileInstalledContent_Mount_Params params;
 	params.PakOrder = PakOrder;
@@ -45,7 +45,7 @@ bool UMobileInstalledContent::Mount(int PakOrder, const struct FString& MountPoi
 
 float UMobileInstalledContent::GetInstalledContentSize()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MobilePatchingUtils.MobileInstalledContent.GetInstalledContentSize"));
+	static auto fn = UObject::FindObject<UFunction>("Function MobilePatchingUtils.MobileInstalledContent.GetInstalledContentSize");
 
 	UMobileInstalledContent_GetInstalledContentSize_Params params;
 
@@ -67,7 +67,7 @@ float UMobileInstalledContent::GetInstalledContentSize()
 
 float UMobileInstalledContent::GetDiskFreeSpace()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MobilePatchingUtils.MobileInstalledContent.GetDiskFreeSpace"));
+	static auto fn = UObject::FindObject<UFunction>("Function MobilePatchingUtils.MobileInstalledContent.GetDiskFreeSpace");
 
 	UMobileInstalledContent_GetDiskFreeSpace_Params params;
 
@@ -90,7 +90,7 @@ float UMobileInstalledContent::GetDiskFreeSpace()
 
 void UMobilePendingContent::StartInstall(const struct FScriptDelegate& OnSucceeded, const struct FScriptDelegate& OnFailed)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MobilePatchingUtils.MobilePendingContent.StartInstall"));
+	static auto fn = UObject::FindObject<UFunction>("Function MobilePatchingUtils.MobilePendingContent.StartInstall");
 
 	UMobilePendingContent_StartInstall_Params params;
 	params.OnSucceeded = OnSucceeded;
@@ -112,7 +112,7 @@ void UMobilePendingContent::StartInstall(const struct FScriptDelegate& OnSucceed
 
 float UMobilePendingContent::GetTotalDownloadedSize()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MobilePatchingUtils.MobilePendingContent.GetTotalDownloadedSize"));
+	static auto fn = UObject::FindObject<UFunction>("Function MobilePatchingUtils.MobilePendingContent.GetTotalDownloadedSize");
 
 	UMobilePendingContent_GetTotalDownloadedSize_Params params;
 
@@ -134,7 +134,7 @@ float UMobilePendingContent::GetTotalDownloadedSize()
 
 float UMobilePendingContent::GetRequiredDiskSpace()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MobilePatchingUtils.MobilePendingContent.GetRequiredDiskSpace"));
+	static auto fn = UObject::FindObject<UFunction>("Function MobilePatchingUtils.MobilePendingContent.GetRequiredDiskSpace");
 
 	UMobilePendingContent_GetRequiredDiskSpace_Params params;
 
@@ -156,7 +156,7 @@ float UMobilePendingContent::GetRequiredDiskSpace()
 
 float UMobilePendingContent::GetInstallProgress()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MobilePatchingUtils.MobilePendingContent.GetInstallProgress"));
+	static auto fn = UObject::FindObject<UFunction>("Function MobilePatchingUtils.MobilePendingContent.GetInstallProgress");
 
 	UMobilePendingContent_GetInstallProgress_Params params;
 
@@ -178,7 +178,7 @@ float UMobilePendingContent::GetInstallProgress()
 
 struct FText UMobilePendingContent::GetDownloadStatusText()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MobilePatchingUtils.MobilePendingContent.GetDownloadStatusText"));
+	static auto fn = UObject::FindObject<UFunction>("Function MobilePatchingUtils.MobilePendingContent.GetDownloadStatusText");
 
 	UMobilePendingContent_GetDownloadStatusText_Params params;
 
@@ -200,7 +200,7 @@ struct FText UMobilePendingContent::GetDownloadStatusText()
 
 float UMobilePendingContent::GetDownloadSpeed()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MobilePatchingUtils.MobilePendingContent.GetDownloadSpeed"));
+	static auto fn = UObject::FindObject<UFunction>("Function MobilePatchingUtils.MobilePendingContent.GetDownloadSpeed");
 
 	UMobilePendingContent_GetDownloadSpeed_Params params;
 
@@ -222,7 +222,7 @@ float UMobilePendingContent::GetDownloadSpeed()
 
 float UMobilePendingContent::GetDownloadSize()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MobilePatchingUtils.MobilePendingContent.GetDownloadSize"));
+	static auto fn = UObject::FindObject<UFunction>("Function MobilePatchingUtils.MobilePendingContent.GetDownloadSize");
 
 	UMobilePendingContent_GetDownloadSize_Params params;
 
@@ -248,7 +248,7 @@ float UMobilePendingContent::GetDownloadSize()
 
 void UMobilePatchingLibrary::STATIC_RequestContent(const struct FString& RemoteManifestURL, const struct FString& CloudURL, const struct FString& InstallDirectory, const struct FScriptDelegate& OnSucceeded, const struct FScriptDelegate& OnFailed)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MobilePatchingUtils.MobilePatchingLibrary.RequestContent"));
+	static auto fn = UObject::FindObject<UFunction>("Function MobilePatchingUtils.MobilePatchingLibrary.RequestContent");
 
 	UMobilePatchingLibrary_RequestContent_Params params;
 	params.RemoteManifestURL = RemoteManifestURL;
@@ -273,7 +273,7 @@ void UMobilePatchingLibrary::STATIC_RequestContent(const struct FString& RemoteM
 
 bool UMobilePatchingLibrary::STATIC_HasActiveWiFiConnection()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MobilePatchingUtils.MobilePatchingLibrary.HasActiveWiFiConnection"));
+	static auto fn = UObject::FindObject<UFunction>("Function MobilePatchingUtils.MobilePatchingLibrary.HasActiveWiFiConnection");
 
 	UMobilePatchingLibrary_HasActiveWiFiConnection_Params params;
 
@@ -295,7 +295,7 @@ bool UMobilePatchingLibrary::STATIC_HasActiveWiFiConnection()
 
 TArray<struct FString> UMobilePatchingLibrary::STATIC_GetSupportedPlatformNames()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MobilePatchingUtils.MobilePatchingLibrary.GetSupportedPlatformNames"));
+	static auto fn = UObject::FindObject<UFunction>("Function MobilePatchingUtils.MobilePatchingLibrary.GetSupportedPlatformNames");
 
 	UMobilePatchingLibrary_GetSupportedPlatformNames_Params params;
 
@@ -318,7 +318,7 @@ TArray<struct FString> UMobilePatchingLibrary::STATIC_GetSupportedPlatformNames(
 
 class UMobileInstalledContent* UMobilePatchingLibrary::STATIC_GetInstalledContent(const struct FString& InstallDirectory)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MobilePatchingUtils.MobilePatchingLibrary.GetInstalledContent"));
+	static auto fn = UObject::FindObject<UFunction>("Function MobilePatchingUtils.MobilePatchingLibrary.GetInstalledContent");
 
 	UMobilePatchingLibrary_GetInstalledContent_Params params;
 	params.InstallDirectory = InstallDirectory;
@@ -341,7 +341,7 @@ class UMobileInstalledContent* UMobilePatchingLibrary::STATIC_GetInstalledConten
 
 struct FString UMobilePatchingLibrary::STATIC_GetActiveDeviceProfileName()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MobilePatchingUtils.MobilePatchingLibrary.GetActiveDeviceProfileName"));
+	static auto fn = UObject::FindObject<UFunction>("Function MobilePatchingUtils.MobilePatchingLibrary.GetActiveDeviceProfileName");
 
 	UMobilePatchingLibrary_GetActiveDeviceProfileName_Params params;
 

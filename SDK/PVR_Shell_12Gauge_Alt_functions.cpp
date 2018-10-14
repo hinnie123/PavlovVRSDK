@@ -19,7 +19,7 @@ namespace SDK
 
 struct FVector AShell_12Gauge_Alt_C::GetImpulseVector()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Shell_12Gauge_Alt.Shell_12Gauge_Alt_C.GetImpulseVector"));
+	static auto fn = UObject::FindObject<UFunction>("Function Shell_12Gauge_Alt.Shell_12Gauge_Alt_C.GetImpulseVector");
 
 	AShell_12Gauge_Alt_C_GetImpulseVector_Params params;
 
@@ -38,7 +38,7 @@ struct FVector AShell_12Gauge_Alt_C::GetImpulseVector()
 
 void AShell_12Gauge_Alt_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Shell_12Gauge_Alt.Shell_12Gauge_Alt_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Shell_12Gauge_Alt.Shell_12Gauge_Alt_C.UserConstructionScript");
 
 	AShell_12Gauge_Alt_C_UserConstructionScript_Params params;
 
@@ -55,7 +55,7 @@ void AShell_12Gauge_Alt_C::UserConstructionScript()
 
 void AShell_12Gauge_Alt_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Shell_12Gauge_Alt.Shell_12Gauge_Alt_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function Shell_12Gauge_Alt.Shell_12Gauge_Alt_C.ReceiveBeginPlay");
 
 	AShell_12Gauge_Alt_C_ReceiveBeginPlay_Params params;
 
@@ -74,7 +74,7 @@ void AShell_12Gauge_Alt_C::ReceiveBeginPlay()
 
 void AShell_12Gauge_Alt_C::ExecuteUbergraph_Shell_12Gauge_Alt(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Shell_12Gauge_Alt.Shell_12Gauge_Alt_C.ExecuteUbergraph_Shell_12Gauge_Alt"));
+	static auto fn = UObject::FindObject<UFunction>("Function Shell_12Gauge_Alt.Shell_12Gauge_Alt_C.ExecuteUbergraph_Shell_12Gauge_Alt");
 
 	AShell_12Gauge_Alt_C_ExecuteUbergraph_Shell_12Gauge_Alt_Params params;
 	params.EntryPoint = EntryPoint;

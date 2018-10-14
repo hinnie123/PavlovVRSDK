@@ -20,7 +20,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class LocationServicesBPLibrary.LocationServices"));
+		static auto ptr = UObject::FindClass("Class LocationServicesBPLibrary.LocationServices");
 		return ptr;
 	}
 
@@ -44,7 +44,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class LocationServicesBPLibrary.LocationServicesImpl"));
+		static auto ptr = UObject::FindClass("Class LocationServicesBPLibrary.LocationServicesImpl");
 		return ptr;
 	}
 

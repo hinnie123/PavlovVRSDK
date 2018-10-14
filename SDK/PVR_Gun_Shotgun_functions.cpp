@@ -17,7 +17,7 @@ namespace SDK
 
 void AGun_Shotgun_C::UnlockPump()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Shotgun.Gun_Shotgun_C.UnlockPump"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Shotgun.Gun_Shotgun_C.UnlockPump");
 
 	AGun_Shotgun_C_UnlockPump_Params params;
 
@@ -36,7 +36,7 @@ void AGun_Shotgun_C::UnlockPump()
 
 void AGun_Shotgun_C::LockPump(float LockRatio)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Shotgun.Gun_Shotgun_C.LockPump"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Shotgun.Gun_Shotgun_C.LockPump");
 
 	AGun_Shotgun_C_LockPump_Params params;
 	params.LockRatio = LockRatio;
@@ -56,7 +56,7 @@ void AGun_Shotgun_C::LockPump(float LockRatio)
 
 void AGun_Shotgun_C::ShouldPumpByTrigger(bool* Enabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Shotgun.Gun_Shotgun_C.ShouldPumpByTrigger"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Shotgun.Gun_Shotgun_C.ShouldPumpByTrigger");
 
 	AGun_Shotgun_C_ShouldPumpByTrigger_Params params;
 
@@ -78,7 +78,7 @@ void AGun_Shotgun_C::ShouldPumpByTrigger(bool* Enabled)
 
 void AGun_Shotgun_C::ToggleReloadHandle(bool Enabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Shotgun.Gun_Shotgun_C.ToggleReloadHandle"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Shotgun.Gun_Shotgun_C.ToggleReloadHandle");
 
 	AGun_Shotgun_C_ToggleReloadHandle_Params params;
 	params.Enabled = Enabled;
@@ -98,7 +98,7 @@ void AGun_Shotgun_C::ToggleReloadHandle(bool Enabled)
 
 void AGun_Shotgun_C::PlayPumpHaptic(class UHapticFeedbackEffect_Base* HapticEffect)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Shotgun.Gun_Shotgun_C.PlayPumpHaptic"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Shotgun.Gun_Shotgun_C.PlayPumpHaptic");
 
 	AGun_Shotgun_C_PlayPumpHaptic_Params params;
 	params.HapticEffect = HapticEffect;
@@ -116,7 +116,7 @@ void AGun_Shotgun_C::PlayPumpHaptic(class UHapticFeedbackEffect_Base* HapticEffe
 
 void AGun_Shotgun_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Shotgun.Gun_Shotgun_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Shotgun.Gun_Shotgun_C.UserConstructionScript");
 
 	AGun_Shotgun_C_UserConstructionScript_Params params;
 
@@ -133,7 +133,7 @@ void AGun_Shotgun_C::UserConstructionScript()
 
 void AGun_Shotgun_C::BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnGrabSignature__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Shotgun.Gun_Shotgun_C.BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnGrabSignature__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Shotgun.Gun_Shotgun_C.BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnGrabSignature__DelegateSignature");
 
 	AGun_Shotgun_C_BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnGrabSignature__DelegateSignature_Params params;
 
@@ -150,7 +150,7 @@ void AGun_Shotgun_C::BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleO
 
 void AGun_Shotgun_C::BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_1_VRHandleOnUngrabSignature__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Shotgun.Gun_Shotgun_C.BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_1_VRHandleOnUngrabSignature__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Shotgun.Gun_Shotgun_C.BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_1_VRHandleOnUngrabSignature__DelegateSignature");
 
 	AGun_Shotgun_C_BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_1_VRHandleOnUngrabSignature__DelegateSignature_Params params;
 
@@ -167,7 +167,7 @@ void AGun_Shotgun_C::BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_1_VRHandleO
 
 void AGun_Shotgun_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Shotgun.Gun_Shotgun_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Shotgun.Gun_Shotgun_C.ReceiveBeginPlay");
 
 	AGun_Shotgun_C_ReceiveBeginPlay_Params params;
 
@@ -186,7 +186,7 @@ void AGun_Shotgun_C::ReceiveBeginPlay()
 
 void AGun_Shotgun_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Shotgun.Gun_Shotgun_C.ReceiveTick"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Shotgun.Gun_Shotgun_C.ReceiveTick");
 
 	AGun_Shotgun_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -206,7 +206,7 @@ void AGun_Shotgun_C::ReceiveTick(float* DeltaSeconds)
 
 void AGun_Shotgun_C::OnPumpDelta(float Delta)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Shotgun.Gun_Shotgun_C.OnPumpDelta"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Shotgun.Gun_Shotgun_C.OnPumpDelta");
 
 	AGun_Shotgun_C_OnPumpDelta_Params params;
 	params.Delta = Delta;
@@ -226,7 +226,7 @@ void AGun_Shotgun_C::OnPumpDelta(float Delta)
 
 void AGun_Shotgun_C::OnTwoHandGripChanged(bool* bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Shotgun.Gun_Shotgun_C.OnTwoHandGripChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Shotgun.Gun_Shotgun_C.OnTwoHandGripChanged");
 
 	AGun_Shotgun_C_OnTwoHandGripChanged_Params params;
 	params.bEnabled = bEnabled;
@@ -244,7 +244,7 @@ void AGun_Shotgun_C::OnTwoHandGripChanged(bool* bEnabled)
 
 void AGun_Shotgun_C::OnActionChanged_Event_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Shotgun.Gun_Shotgun_C.OnActionChanged_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Shotgun.Gun_Shotgun_C.OnActionChanged_Event_1");
 
 	AGun_Shotgun_C_OnActionChanged_Event_1_Params params;
 
@@ -261,7 +261,7 @@ void AGun_Shotgun_C::OnActionChanged_Event_1()
 
 void AGun_Shotgun_C::OnOpenAction_Event_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Shotgun.Gun_Shotgun_C.OnOpenAction_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Shotgun.Gun_Shotgun_C.OnOpenAction_Event_1");
 
 	AGun_Shotgun_C_OnOpenAction_Event_1_Params params;
 
@@ -278,7 +278,7 @@ void AGun_Shotgun_C::OnOpenAction_Event_1()
 
 void AGun_Shotgun_C::CustomEvent_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Shotgun.Gun_Shotgun_C.CustomEvent_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Shotgun.Gun_Shotgun_C.CustomEvent_1");
 
 	AGun_Shotgun_C_CustomEvent_1_Params params;
 
@@ -297,7 +297,7 @@ void AGun_Shotgun_C::CustomEvent_1()
 
 void AGun_Shotgun_C::ExecuteUbergraph_Gun_Shotgun(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Shotgun.Gun_Shotgun_C.ExecuteUbergraph_Gun_Shotgun"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Shotgun.Gun_Shotgun_C.ExecuteUbergraph_Gun_Shotgun");
 
 	AGun_Shotgun_C_ExecuteUbergraph_Gun_Shotgun_Params params;
 	params.EntryPoint = EntryPoint;

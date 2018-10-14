@@ -21,7 +21,7 @@ namespace SDK
 
 void USuppresionSourceContext_C::ProvideLocationsSet(class UObject** QuerierObject, class AActor** QuerierActor, TArray<struct FVector>* ResultingLocationSet)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SuppresionSourceContext.SuppresionSourceContext_C.ProvideLocationsSet"));
+	static auto fn = UObject::FindObject<UFunction>("Function SuppresionSourceContext.SuppresionSourceContext_C.ProvideLocationsSet");
 
 	USuppresionSourceContext_C_ProvideLocationsSet_Params params;
 	params.QuerierObject = QuerierObject;

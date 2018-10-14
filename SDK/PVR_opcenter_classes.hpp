@@ -26,7 +26,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("BlueprintGeneratedClass opcenter.opcenter_C"));
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass opcenter.opcenter_C");
 		return ptr;
 	}
 

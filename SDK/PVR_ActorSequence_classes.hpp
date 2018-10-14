@@ -21,7 +21,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class ActorSequence.ActorSequence"));
+		static auto ptr = UObject::FindClass("Class ActorSequence.ActorSequence");
 		return ptr;
 	}
 
@@ -41,7 +41,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class ActorSequence.ActorSequenceComponent"));
+		static auto ptr = UObject::FindClass("Class ActorSequence.ActorSequenceComponent");
 		return ptr;
 	}
 
@@ -56,7 +56,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class ActorSequence.ActorSequencePlayer"));
+		static auto ptr = UObject::FindClass("Class ActorSequence.ActorSequencePlayer");
 		return ptr;
 	}
 

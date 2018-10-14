@@ -19,7 +19,7 @@ namespace SDK
 
 class AWheeledVehicle* UVehicleAnimInstance::GetVehicle()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.VehicleAnimInstance.GetVehicle"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.VehicleAnimInstance.GetVehicle");
 
 	UVehicleAnimInstance_GetVehicle_Params params;
 
@@ -41,7 +41,7 @@ class AWheeledVehicle* UVehicleAnimInstance::GetVehicle()
 
 float UVehicleWheel::GetSuspensionOffset()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.VehicleWheel.GetSuspensionOffset"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.VehicleWheel.GetSuspensionOffset");
 
 	UVehicleWheel_GetSuspensionOffset_Params params;
 
@@ -63,7 +63,7 @@ float UVehicleWheel::GetSuspensionOffset()
 
 float UVehicleWheel::GetSteerAngle()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.VehicleWheel.GetSteerAngle"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.VehicleWheel.GetSteerAngle");
 
 	UVehicleWheel_GetSteerAngle_Params params;
 
@@ -85,7 +85,7 @@ float UVehicleWheel::GetSteerAngle()
 
 float UVehicleWheel::GetRotationAngle()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.VehicleWheel.GetRotationAngle"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.VehicleWheel.GetRotationAngle");
 
 	UVehicleWheel_GetRotationAngle_Params params;
 
@@ -107,7 +107,7 @@ float UVehicleWheel::GetRotationAngle()
 
 void UWheeledVehicleMovementComponent::SetUseAutoGears(bool bUseAuto)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetUseAutoGears"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetUseAutoGears");
 
 	UWheeledVehicleMovementComponent_SetUseAutoGears_Params params;
 	params.bUseAuto = bUseAuto;
@@ -128,7 +128,7 @@ void UWheeledVehicleMovementComponent::SetUseAutoGears(bool bUseAuto)
 
 void UWheeledVehicleMovementComponent::SetThrottleInput(float Throttle)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetThrottleInput"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetThrottleInput");
 
 	UWheeledVehicleMovementComponent_SetThrottleInput_Params params;
 	params.Throttle = Throttle;
@@ -150,7 +150,7 @@ void UWheeledVehicleMovementComponent::SetThrottleInput(float Throttle)
 
 void UWheeledVehicleMovementComponent::SetTargetGear(int GearNum, bool bImmediate)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetTargetGear"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetTargetGear");
 
 	UWheeledVehicleMovementComponent_SetTargetGear_Params params;
 	params.GearNum = GearNum;
@@ -172,7 +172,7 @@ void UWheeledVehicleMovementComponent::SetTargetGear(int GearNum, bool bImmediat
 
 void UWheeledVehicleMovementComponent::SetSteeringInput(float Steering)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetSteeringInput"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetSteeringInput");
 
 	UWheeledVehicleMovementComponent_SetSteeringInput_Params params;
 	params.Steering = Steering;
@@ -193,7 +193,7 @@ void UWheeledVehicleMovementComponent::SetSteeringInput(float Steering)
 
 void UWheeledVehicleMovementComponent::SetHandbrakeInput(bool bNewHandbrake)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetHandbrakeInput"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetHandbrakeInput");
 
 	UWheeledVehicleMovementComponent_SetHandbrakeInput_Params params;
 	params.bNewHandbrake = bNewHandbrake;
@@ -214,7 +214,7 @@ void UWheeledVehicleMovementComponent::SetHandbrakeInput(bool bNewHandbrake)
 
 void UWheeledVehicleMovementComponent::SetGroupsToIgnoreMask(const struct FNavAvoidanceMask& GroupMask)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnoreMask"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnoreMask");
 
 	UWheeledVehicleMovementComponent_SetGroupsToIgnoreMask_Params params;
 	params.GroupMask = GroupMask;
@@ -235,7 +235,7 @@ void UWheeledVehicleMovementComponent::SetGroupsToIgnoreMask(const struct FNavAv
 
 void UWheeledVehicleMovementComponent::SetGroupsToIgnore(int GroupFlags)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnore"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnore");
 
 	UWheeledVehicleMovementComponent_SetGroupsToIgnore_Params params;
 	params.GroupFlags = GroupFlags;
@@ -256,7 +256,7 @@ void UWheeledVehicleMovementComponent::SetGroupsToIgnore(int GroupFlags)
 
 void UWheeledVehicleMovementComponent::SetGroupsToAvoidMask(const struct FNavAvoidanceMask& GroupMask)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoidMask"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoidMask");
 
 	UWheeledVehicleMovementComponent_SetGroupsToAvoidMask_Params params;
 	params.GroupMask = GroupMask;
@@ -277,7 +277,7 @@ void UWheeledVehicleMovementComponent::SetGroupsToAvoidMask(const struct FNavAvo
 
 void UWheeledVehicleMovementComponent::SetGroupsToAvoid(int GroupFlags)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoid"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoid");
 
 	UWheeledVehicleMovementComponent_SetGroupsToAvoid_Params params;
 	params.GroupFlags = GroupFlags;
@@ -298,7 +298,7 @@ void UWheeledVehicleMovementComponent::SetGroupsToAvoid(int GroupFlags)
 
 void UWheeledVehicleMovementComponent::SetGearUp(bool bNewGearUp)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetGearUp"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetGearUp");
 
 	UWheeledVehicleMovementComponent_SetGearUp_Params params;
 	params.bNewGearUp = bNewGearUp;
@@ -319,7 +319,7 @@ void UWheeledVehicleMovementComponent::SetGearUp(bool bNewGearUp)
 
 void UWheeledVehicleMovementComponent::SetGearDown(bool bNewGearDown)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetGearDown"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetGearDown");
 
 	UWheeledVehicleMovementComponent_SetGearDown_Params params;
 	params.bNewGearDown = bNewGearDown;
@@ -340,7 +340,7 @@ void UWheeledVehicleMovementComponent::SetGearDown(bool bNewGearDown)
 
 void UWheeledVehicleMovementComponent::SetBrakeInput(float Brake)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetBrakeInput"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetBrakeInput");
 
 	UWheeledVehicleMovementComponent_SetBrakeInput_Params params;
 	params.Brake = Brake;
@@ -361,7 +361,7 @@ void UWheeledVehicleMovementComponent::SetBrakeInput(float Brake)
 
 void UWheeledVehicleMovementComponent::SetAvoidanceGroupMask(const struct FNavAvoidanceMask& GroupMask)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroupMask"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroupMask");
 
 	UWheeledVehicleMovementComponent_SetAvoidanceGroupMask_Params params;
 	params.GroupMask = GroupMask;
@@ -382,7 +382,7 @@ void UWheeledVehicleMovementComponent::SetAvoidanceGroupMask(const struct FNavAv
 
 void UWheeledVehicleMovementComponent::SetAvoidanceGroup(int GroupFlags)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroup"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroup");
 
 	UWheeledVehicleMovementComponent_SetAvoidanceGroup_Params params;
 	params.GroupFlags = GroupFlags;
@@ -403,7 +403,7 @@ void UWheeledVehicleMovementComponent::SetAvoidanceGroup(int GroupFlags)
 
 void UWheeledVehicleMovementComponent::SetAvoidanceEnabled(bool bEnable)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceEnabled");
 
 	UWheeledVehicleMovementComponent_SetAvoidanceEnabled_Params params;
 	params.bEnable = bEnable;
@@ -428,7 +428,7 @@ void UWheeledVehicleMovementComponent::SetAvoidanceEnabled(bool bEnable)
 
 void UWheeledVehicleMovementComponent::ServerUpdateState(float InSteeringInput, float InThrottleInput, float InBrakeInput, float InHandbrakeInput, int CurrentGear)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.ServerUpdateState"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.ServerUpdateState");
 
 	UWheeledVehicleMovementComponent_ServerUpdateState_Params params;
 	params.InSteeringInput = InSteeringInput;
@@ -453,7 +453,7 @@ void UWheeledVehicleMovementComponent::ServerUpdateState(float InSteeringInput, 
 
 bool UWheeledVehicleMovementComponent::GetUseAutoGears()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.GetUseAutoGears"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.GetUseAutoGears");
 
 	UWheeledVehicleMovementComponent_GetUseAutoGears_Params params;
 
@@ -475,7 +475,7 @@ bool UWheeledVehicleMovementComponent::GetUseAutoGears()
 
 int UWheeledVehicleMovementComponent::GetTargetGear()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.GetTargetGear"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.GetTargetGear");
 
 	UWheeledVehicleMovementComponent_GetTargetGear_Params params;
 
@@ -497,7 +497,7 @@ int UWheeledVehicleMovementComponent::GetTargetGear()
 
 float UWheeledVehicleMovementComponent::GetForwardSpeed()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.GetForwardSpeed"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.GetForwardSpeed");
 
 	UWheeledVehicleMovementComponent_GetForwardSpeed_Params params;
 
@@ -519,7 +519,7 @@ float UWheeledVehicleMovementComponent::GetForwardSpeed()
 
 float UWheeledVehicleMovementComponent::GetEngineRotationSpeed()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.GetEngineRotationSpeed"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.GetEngineRotationSpeed");
 
 	UWheeledVehicleMovementComponent_GetEngineRotationSpeed_Params params;
 
@@ -541,7 +541,7 @@ float UWheeledVehicleMovementComponent::GetEngineRotationSpeed()
 
 float UWheeledVehicleMovementComponent::GetEngineMaxRotationSpeed()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.GetEngineMaxRotationSpeed"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.GetEngineMaxRotationSpeed");
 
 	UWheeledVehicleMovementComponent_GetEngineMaxRotationSpeed_Params params;
 
@@ -563,7 +563,7 @@ float UWheeledVehicleMovementComponent::GetEngineMaxRotationSpeed()
 
 int UWheeledVehicleMovementComponent::GetCurrentGear()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.GetCurrentGear"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.GetCurrentGear");
 
 	UWheeledVehicleMovementComponent_GetCurrentGear_Params params;
 
@@ -586,7 +586,7 @@ int UWheeledVehicleMovementComponent::GetCurrentGear()
 
 void USimpleWheeledVehicleMovementComponent::SetSteerAngle(float SteerAngle, int WheelIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.SimpleWheeledVehicleMovementComponent.SetSteerAngle"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.SimpleWheeledVehicleMovementComponent.SetSteerAngle");
 
 	USimpleWheeledVehicleMovementComponent_SetSteerAngle_Params params;
 	params.SteerAngle = SteerAngle;
@@ -609,7 +609,7 @@ void USimpleWheeledVehicleMovementComponent::SetSteerAngle(float SteerAngle, int
 
 void USimpleWheeledVehicleMovementComponent::SetDriveTorque(float DriveTorque, int WheelIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.SimpleWheeledVehicleMovementComponent.SetDriveTorque"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.SimpleWheeledVehicleMovementComponent.SetDriveTorque");
 
 	USimpleWheeledVehicleMovementComponent_SetDriveTorque_Params params;
 	params.DriveTorque = DriveTorque;
@@ -632,7 +632,7 @@ void USimpleWheeledVehicleMovementComponent::SetDriveTorque(float DriveTorque, i
 
 void USimpleWheeledVehicleMovementComponent::SetBrakeTorque(float BrakeTorque, int WheelIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.SimpleWheeledVehicleMovementComponent.SetBrakeTorque"));
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.SimpleWheeledVehicleMovementComponent.SetBrakeTorque");
 
 	USimpleWheeledVehicleMovementComponent_SetBrakeTorque_Params params;
 	params.BrakeTorque = BrakeTorque;

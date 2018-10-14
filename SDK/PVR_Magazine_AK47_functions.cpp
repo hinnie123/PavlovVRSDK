@@ -17,7 +17,7 @@ namespace SDK
 
 void AMagazine_AK47_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Magazine_AK47.Magazine_AK47_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Magazine_AK47.Magazine_AK47_C.UserConstructionScript");
 
 	AMagazine_AK47_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void AMagazine_AK47_C::UserConstructionScript()
 
 void AMagazine_AK47_C::OnReleasedFromGun()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Magazine_AK47.Magazine_AK47_C.OnReleasedFromGun"));
+	static auto fn = UObject::FindObject<UFunction>("Function Magazine_AK47.Magazine_AK47_C.OnReleasedFromGun");
 
 	AMagazine_AK47_C_OnReleasedFromGun_Params params;
 
@@ -53,7 +53,7 @@ void AMagazine_AK47_C::OnReleasedFromGun()
 
 void AMagazine_AK47_C::ExecuteUbergraph_Magazine_AK47(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Magazine_AK47.Magazine_AK47_C.ExecuteUbergraph_Magazine_AK47"));
+	static auto fn = UObject::FindObject<UFunction>("Function Magazine_AK47.Magazine_AK47_C.ExecuteUbergraph_Magazine_AK47");
 
 	AMagazine_AK47_C_ExecuteUbergraph_Magazine_AK47_Params params;
 	params.EntryPoint = EntryPoint;

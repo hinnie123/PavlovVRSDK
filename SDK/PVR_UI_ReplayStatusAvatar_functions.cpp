@@ -19,7 +19,7 @@ namespace SDK
 
 struct FSlateBrush UUI_ReplayStatusAvatar_C::Get_Avatar_Brush_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ReplayStatusAvatar.UI_ReplayStatusAvatar_C.Get_Avatar_Brush_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ReplayStatusAvatar.UI_ReplayStatusAvatar_C.Get_Avatar_Brush_1");
 
 	UUI_ReplayStatusAvatar_C_Get_Avatar_Brush_1_Params params;
 
@@ -40,7 +40,7 @@ struct FSlateBrush UUI_ReplayStatusAvatar_C::Get_Avatar_Brush_1()
 
 ESlateVisibility UUI_ReplayStatusAvatar_C::GetVisibility_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ReplayStatusAvatar.UI_ReplayStatusAvatar_C.GetVisibility_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ReplayStatusAvatar.UI_ReplayStatusAvatar_C.GetVisibility_1");
 
 	UUI_ReplayStatusAvatar_C_GetVisibility_1_Params params;
 
@@ -61,7 +61,7 @@ ESlateVisibility UUI_ReplayStatusAvatar_C::GetVisibility_1()
 
 ESlateVisibility UUI_ReplayStatusAvatar_C::Get_Avatar_Visibility_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ReplayStatusAvatar.UI_ReplayStatusAvatar_C.Get_Avatar_Visibility_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ReplayStatusAvatar.UI_ReplayStatusAvatar_C.Get_Avatar_Visibility_1");
 
 	UUI_ReplayStatusAvatar_C_Get_Avatar_Visibility_1_Params params;
 

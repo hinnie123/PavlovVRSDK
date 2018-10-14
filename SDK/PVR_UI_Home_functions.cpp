@@ -19,7 +19,7 @@ namespace SDK
 
 void UUI_Home_C::SetRegion(EOnlineRegion Region)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Home.UI_Home_C.SetRegion"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Home.UI_Home_C.SetRegion");
 
 	UUI_Home_C_SetRegion_Params params;
 	params.Region = Region;
@@ -37,7 +37,7 @@ void UUI_Home_C::SetRegion(EOnlineRegion Region)
 
 void UUI_Home_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Home.UI_Home_C.Construct"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Home.UI_Home_C.Construct");
 
 	UUI_Home_C_Construct_Params params;
 
@@ -54,7 +54,7 @@ void UUI_Home_C::Construct()
 
 void UUI_Home_C::BndEvt__UI_Button_37_K2Node_ComponentBoundEvent_5_OnButtonClicked__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Home.UI_Home_C.BndEvt__UI_Button_37_K2Node_ComponentBoundEvent_5_OnButtonClicked__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Home.UI_Home_C.BndEvt__UI_Button_37_K2Node_ComponentBoundEvent_5_OnButtonClicked__DelegateSignature");
 
 	UUI_Home_C_BndEvt__UI_Button_37_K2Node_ComponentBoundEvent_5_OnButtonClicked__DelegateSignature_Params params;
 
@@ -71,7 +71,7 @@ void UUI_Home_C::BndEvt__UI_Button_37_K2Node_ComponentBoundEvent_5_OnButtonClick
 
 void UUI_Home_C::BndEvt__UI_ButtonSecondary_95_K2Node_ComponentBoundEvent_94_OnButtonClicked__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Home.UI_Home_C.BndEvt__UI_ButtonSecondary_95_K2Node_ComponentBoundEvent_94_OnButtonClicked__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Home.UI_Home_C.BndEvt__UI_ButtonSecondary_95_K2Node_ComponentBoundEvent_94_OnButtonClicked__DelegateSignature");
 
 	UUI_Home_C_BndEvt__UI_ButtonSecondary_95_K2Node_ComponentBoundEvent_94_OnButtonClicked__DelegateSignature_Params params;
 
@@ -88,7 +88,7 @@ void UUI_Home_C::BndEvt__UI_ButtonSecondary_95_K2Node_ComponentBoundEvent_94_OnB
 
 void UUI_Home_C::BndEvt__CancelQuickMatch_K2Node_ComponentBoundEvent_169_OnButtonClicked__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Home.UI_Home_C.BndEvt__CancelQuickMatch_K2Node_ComponentBoundEvent_169_OnButtonClicked__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Home.UI_Home_C.BndEvt__CancelQuickMatch_K2Node_ComponentBoundEvent_169_OnButtonClicked__DelegateSignature");
 
 	UUI_Home_C_BndEvt__CancelQuickMatch_K2Node_ComponentBoundEvent_169_OnButtonClicked__DelegateSignature_Params params;
 
@@ -105,7 +105,7 @@ void UUI_Home_C::BndEvt__CancelQuickMatch_K2Node_ComponentBoundEvent_169_OnButto
 
 void UUI_Home_C::QuickMatchStarted()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Home.UI_Home_C.QuickMatchStarted"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Home.UI_Home_C.QuickMatchStarted");
 
 	UUI_Home_C_QuickMatchStarted_Params params;
 
@@ -125,7 +125,7 @@ void UUI_Home_C::QuickMatchStarted()
 
 void UUI_Home_C::OnQuickMatchCompleted(bool Succeeded, const struct FText& FailReason)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Home.UI_Home_C.OnQuickMatchCompleted"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Home.UI_Home_C.OnQuickMatchCompleted");
 
 	UUI_Home_C_OnQuickMatchCompleted_Params params;
 	params.Succeeded = Succeeded;
@@ -144,7 +144,7 @@ void UUI_Home_C::OnQuickMatchCompleted(bool Succeeded, const struct FText& FailR
 
 void UUI_Home_C::BndEvt__QuickMatchPendingOk_K2Node_ComponentBoundEvent_135_OnButtonClicked__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Home.UI_Home_C.BndEvt__QuickMatchPendingOk_K2Node_ComponentBoundEvent_135_OnButtonClicked__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Home.UI_Home_C.BndEvt__QuickMatchPendingOk_K2Node_ComponentBoundEvent_135_OnButtonClicked__DelegateSignature");
 
 	UUI_Home_C_BndEvt__QuickMatchPendingOk_K2Node_ComponentBoundEvent_135_OnButtonClicked__DelegateSignature_Params params;
 
@@ -161,7 +161,7 @@ void UUI_Home_C::BndEvt__QuickMatchPendingOk_K2Node_ComponentBoundEvent_135_OnBu
 
 void UUI_Home_C::BndEvt__LobbyButton_K2Node_ComponentBoundEvent_12_OnButtonClicked__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Home.UI_Home_C.BndEvt__LobbyButton_K2Node_ComponentBoundEvent_12_OnButtonClicked__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Home.UI_Home_C.BndEvt__LobbyButton_K2Node_ComponentBoundEvent_12_OnButtonClicked__DelegateSignature");
 
 	UUI_Home_C_BndEvt__LobbyButton_K2Node_ComponentBoundEvent_12_OnButtonClicked__DelegateSignature_Params params;
 
@@ -180,7 +180,7 @@ void UUI_Home_C::BndEvt__LobbyButton_K2Node_ComponentBoundEvent_12_OnButtonClick
 
 void UUI_Home_C::BndEvt__europeCheckbox_K2Node_ComponentBoundEvent_75_OnCheckStateChanged__DelegateSignature(bool Checked)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Home.UI_Home_C.BndEvt__europeCheckbox_K2Node_ComponentBoundEvent_75_OnCheckStateChanged__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Home.UI_Home_C.BndEvt__europeCheckbox_K2Node_ComponentBoundEvent_75_OnCheckStateChanged__DelegateSignature");
 
 	UUI_Home_C_BndEvt__europeCheckbox_K2Node_ComponentBoundEvent_75_OnCheckStateChanged__DelegateSignature_Params params;
 	params.Checked = Checked;
@@ -200,7 +200,7 @@ void UUI_Home_C::BndEvt__europeCheckbox_K2Node_ComponentBoundEvent_75_OnCheckSta
 
 void UUI_Home_C::BndEvt__americaCheckbox_K2Node_ComponentBoundEvent_82_OnCheckStateChanged__DelegateSignature(bool Checked)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Home.UI_Home_C.BndEvt__americaCheckbox_K2Node_ComponentBoundEvent_82_OnCheckStateChanged__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Home.UI_Home_C.BndEvt__americaCheckbox_K2Node_ComponentBoundEvent_82_OnCheckStateChanged__DelegateSignature");
 
 	UUI_Home_C_BndEvt__americaCheckbox_K2Node_ComponentBoundEvent_82_OnCheckStateChanged__DelegateSignature_Params params;
 	params.Checked = Checked;
@@ -220,7 +220,7 @@ void UUI_Home_C::BndEvt__americaCheckbox_K2Node_ComponentBoundEvent_82_OnCheckSt
 
 void UUI_Home_C::OnLeftLobby_Event_1(ESteamLobbyChatMemberStateChange StateChange)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Home.UI_Home_C.OnLeftLobby_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Home.UI_Home_C.OnLeftLobby_Event_1");
 
 	UUI_Home_C_OnLeftLobby_Event_1_Params params;
 	params.StateChange = StateChange;
@@ -240,7 +240,7 @@ void UUI_Home_C::OnLeftLobby_Event_1(ESteamLobbyChatMemberStateChange StateChang
 
 void UUI_Home_C::BndEvt__asiaCheckbox_K2Node_ComponentBoundEvent_37_OnCheckStateChanged__DelegateSignature(bool Checked)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Home.UI_Home_C.BndEvt__asiaCheckbox_K2Node_ComponentBoundEvent_37_OnCheckStateChanged__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Home.UI_Home_C.BndEvt__asiaCheckbox_K2Node_ComponentBoundEvent_37_OnCheckStateChanged__DelegateSignature");
 
 	UUI_Home_C_BndEvt__asiaCheckbox_K2Node_ComponentBoundEvent_37_OnCheckStateChanged__DelegateSignature_Params params;
 	params.Checked = Checked;
@@ -260,7 +260,7 @@ void UUI_Home_C::BndEvt__asiaCheckbox_K2Node_ComponentBoundEvent_37_OnCheckState
 
 void UUI_Home_C::BndEvt__ServerBrowser_K2Node_ComponentBoundEvent_64_OnJoinServer__DelegateSignature(const struct FPavlovServerInfo& ServerInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Home.UI_Home_C.BndEvt__ServerBrowser_K2Node_ComponentBoundEvent_64_OnJoinServer__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Home.UI_Home_C.BndEvt__ServerBrowser_K2Node_ComponentBoundEvent_64_OnJoinServer__DelegateSignature");
 
 	UUI_Home_C_BndEvt__ServerBrowser_K2Node_ComponentBoundEvent_64_OnJoinServer__DelegateSignature_Params params;
 	params.ServerInfo = ServerInfo;
@@ -280,7 +280,7 @@ void UUI_Home_C::BndEvt__ServerBrowser_K2Node_ComponentBoundEvent_64_OnJoinServe
 
 void UUI_Home_C::ExecuteUbergraph_UI_Home(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Home.UI_Home_C.ExecuteUbergraph_UI_Home"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Home.UI_Home_C.ExecuteUbergraph_UI_Home");
 
 	UUI_Home_C_ExecuteUbergraph_UI_Home_Params params;
 	params.EntryPoint = EntryPoint;
@@ -300,7 +300,7 @@ void UUI_Home_C::ExecuteUbergraph_UI_Home(int EntryPoint)
 
 void UUI_Home_C::OnJoinServer__DelegateSignature(const struct FPavlovServerInfo& ServerInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Home.UI_Home_C.OnJoinServer__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Home.UI_Home_C.OnJoinServer__DelegateSignature");
 
 	UUI_Home_C_OnJoinServer__DelegateSignature_Params params;
 	params.ServerInfo = ServerInfo;
@@ -318,7 +318,7 @@ void UUI_Home_C::OnJoinServer__DelegateSignature(const struct FPavlovServerInfo&
 
 void UUI_Home_C::OnCancelQuickMatch__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Home.UI_Home_C.OnCancelQuickMatch__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Home.UI_Home_C.OnCancelQuickMatch__DelegateSignature");
 
 	UUI_Home_C_OnCancelQuickMatch__DelegateSignature_Params params;
 
@@ -335,7 +335,7 @@ void UUI_Home_C::OnCancelQuickMatch__DelegateSignature()
 
 void UUI_Home_C::QuickMatch__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Home.UI_Home_C.QuickMatch__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Home.UI_Home_C.QuickMatch__DelegateSignature");
 
 	UUI_Home_C_QuickMatch__DelegateSignature_Params params;
 
@@ -352,7 +352,7 @@ void UUI_Home_C::QuickMatch__DelegateSignature()
 
 void UUI_Home_C::OpenSettings__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Home.UI_Home_C.OpenSettings__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Home.UI_Home_C.OpenSettings__DelegateSignature");
 
 	UUI_Home_C_OpenSettings__DelegateSignature_Params params;
 

@@ -24,7 +24,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("WidgetBlueprintGeneratedClass UI_Stereo_MatchEnd.UI_Stereo_MatchEnd_C"));
+		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass UI_Stereo_MatchEnd.UI_Stereo_MatchEnd_C");
 		return ptr;
 	}
 

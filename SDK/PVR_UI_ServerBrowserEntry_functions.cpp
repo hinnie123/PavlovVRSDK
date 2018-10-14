@@ -17,7 +17,7 @@ namespace SDK
 
 void UUI_ServerBrowserEntry_C::BndEvt__JoinButton_K2Node_ComponentBoundEvent_16_OnButtonClicked__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerBrowserEntry.UI_ServerBrowserEntry_C.BndEvt__JoinButton_K2Node_ComponentBoundEvent_16_OnButtonClicked__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerBrowserEntry.UI_ServerBrowserEntry_C.BndEvt__JoinButton_K2Node_ComponentBoundEvent_16_OnButtonClicked__DelegateSignature");
 
 	UUI_ServerBrowserEntry_C_BndEvt__JoinButton_K2Node_ComponentBoundEvent_16_OnButtonClicked__DelegateSignature_Params params;
 
@@ -36,7 +36,7 @@ void UUI_ServerBrowserEntry_C::BndEvt__JoinButton_K2Node_ComponentBoundEvent_16_
 
 void UUI_ServerBrowserEntry_C::Update(const struct FPavlovServerInfo& ServerInfoA)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerBrowserEntry.UI_ServerBrowserEntry_C.Update"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerBrowserEntry.UI_ServerBrowserEntry_C.Update");
 
 	UUI_ServerBrowserEntry_C_Update_Params params;
 	params.ServerInfoA = ServerInfoA;
@@ -56,7 +56,7 @@ void UUI_ServerBrowserEntry_C::Update(const struct FPavlovServerInfo& ServerInfo
 
 void UUI_ServerBrowserEntry_C::ExecuteUbergraph_UI_ServerBrowserEntry(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerBrowserEntry.UI_ServerBrowserEntry_C.ExecuteUbergraph_UI_ServerBrowserEntry"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerBrowserEntry.UI_ServerBrowserEntry_C.ExecuteUbergraph_UI_ServerBrowserEntry");
 
 	UUI_ServerBrowserEntry_C_ExecuteUbergraph_UI_ServerBrowserEntry_Params params;
 	params.EntryPoint = EntryPoint;
@@ -76,7 +76,7 @@ void UUI_ServerBrowserEntry_C::ExecuteUbergraph_UI_ServerBrowserEntry(int EntryP
 
 void UUI_ServerBrowserEntry_C::OnJoinClicked__DelegateSignature(const struct FPavlovServerInfo& Server)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerBrowserEntry.UI_ServerBrowserEntry_C.OnJoinClicked__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerBrowserEntry.UI_ServerBrowserEntry_C.OnJoinClicked__DelegateSignature");
 
 	UUI_ServerBrowserEntry_C_OnJoinClicked__DelegateSignature_Params params;
 	params.Server = Server;

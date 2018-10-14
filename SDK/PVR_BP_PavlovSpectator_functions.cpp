@@ -21,7 +21,7 @@ namespace SDK
 
 void ABP_PavlovSpectator_C::IsPawnRelevant(class APavlovPawn* Pawn, float* Distance, bool* Relevant)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.IsPawnRelevant"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.IsPawnRelevant");
 
 	ABP_PavlovSpectator_C_IsPawnRelevant_Params params;
 	params.Pawn = Pawn;
@@ -46,7 +46,7 @@ void ABP_PavlovSpectator_C::IsPawnRelevant(class APavlovPawn* Pawn, float* Dista
 
 void ABP_PavlovSpectator_C::SetCameraMode(bool FirstPersonMode)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.SetCameraMode"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.SetCameraMode");
 
 	ABP_PavlovSpectator_C_SetCameraMode_Params params;
 	params.FirstPersonMode = FirstPersonMode;
@@ -64,7 +64,7 @@ void ABP_PavlovSpectator_C::SetCameraMode(bool FirstPersonMode)
 
 void ABP_PavlovSpectator_C::ToggleXRay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.ToggleXRay"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.ToggleXRay");
 
 	ABP_PavlovSpectator_C_ToggleXRay_Params params;
 
@@ -81,7 +81,7 @@ void ABP_PavlovSpectator_C::ToggleXRay()
 
 void ABP_PavlovSpectator_C::TogglePlayerNames()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.TogglePlayerNames"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.TogglePlayerNames");
 
 	ABP_PavlovSpectator_C_TogglePlayerNames_Params params;
 
@@ -101,7 +101,7 @@ void ABP_PavlovSpectator_C::TogglePlayerNames()
 
 void ABP_PavlovSpectator_C::CanBeSpectated(class APlayerState* PlayerState, bool* yes)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.CanBeSpectated"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.CanBeSpectated");
 
 	ABP_PavlovSpectator_C_CanBeSpectated_Params params;
 	params.PlayerState = PlayerState;
@@ -122,7 +122,7 @@ void ABP_PavlovSpectator_C::CanBeSpectated(class APlayerState* PlayerState, bool
 
 void ABP_PavlovSpectator_C::SpecRelevantPawn()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.SpecRelevantPawn"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.SpecRelevantPawn");
 
 	ABP_PavlovSpectator_C_SpecRelevantPawn_Params params;
 
@@ -141,7 +141,7 @@ void ABP_PavlovSpectator_C::SpecRelevantPawn()
 
 void ABP_PavlovSpectator_C::SpecPawn(class APavlovPawn* Pawn)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.SpecPawn"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.SpecPawn");
 
 	ABP_PavlovSpectator_C_SpecPawn_Params params;
 	params.Pawn = Pawn;
@@ -159,7 +159,7 @@ void ABP_PavlovSpectator_C::SpecPawn(class APavlovPawn* Pawn)
 
 void ABP_PavlovSpectator_C::SpecNextPlayer()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.SpecNextPlayer"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.SpecNextPlayer");
 
 	ABP_PavlovSpectator_C_SpecNextPlayer_Params params;
 
@@ -178,7 +178,7 @@ void ABP_PavlovSpectator_C::SpecNextPlayer()
 
 void ABP_PavlovSpectator_C::SetSpectatorTransform(const struct FTransform& T)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.SetSpectatorTransform"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.SetSpectatorTransform");
 
 	ABP_PavlovSpectator_C_SetSpectatorTransform_Params params;
 	params.T = T;
@@ -196,7 +196,7 @@ void ABP_PavlovSpectator_C::SetSpectatorTransform(const struct FTransform& T)
 
 void ABP_PavlovSpectator_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.UserConstructionScript");
 
 	ABP_PavlovSpectator_C_UserConstructionScript_Params params;
 
@@ -215,7 +215,7 @@ void ABP_PavlovSpectator_C::UserConstructionScript()
 
 void ABP_PavlovSpectator_C::InpActEvt_Tab_K2Node_InputKeyEvent_60(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_Tab_K2Node_InputKeyEvent_60"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_Tab_K2Node_InputKeyEvent_60");
 
 	ABP_PavlovSpectator_C_InpActEvt_Tab_K2Node_InputKeyEvent_60_Params params;
 	params.Key = Key;
@@ -235,7 +235,7 @@ void ABP_PavlovSpectator_C::InpActEvt_Tab_K2Node_InputKeyEvent_60(const struct F
 
 void ABP_PavlovSpectator_C::InpActEvt_Tab_K2Node_InputKeyEvent_59(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_Tab_K2Node_InputKeyEvent_59"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_Tab_K2Node_InputKeyEvent_59");
 
 	ABP_PavlovSpectator_C_InpActEvt_Tab_K2Node_InputKeyEvent_59_Params params;
 	params.Key = Key;
@@ -255,7 +255,7 @@ void ABP_PavlovSpectator_C::InpActEvt_Tab_K2Node_InputKeyEvent_59(const struct F
 
 void ABP_PavlovSpectator_C::InpActEvt_C_K2Node_InputKeyEvent_58(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_C_K2Node_InputKeyEvent_58"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_C_K2Node_InputKeyEvent_58");
 
 	ABP_PavlovSpectator_C_InpActEvt_C_K2Node_InputKeyEvent_58_Params params;
 	params.Key = Key;
@@ -275,7 +275,7 @@ void ABP_PavlovSpectator_C::InpActEvt_C_K2Node_InputKeyEvent_58(const struct FKe
 
 void ABP_PavlovSpectator_C::InpActEvt_M_K2Node_InputKeyEvent_57(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_M_K2Node_InputKeyEvent_57"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_M_K2Node_InputKeyEvent_57");
 
 	ABP_PavlovSpectator_C_InpActEvt_M_K2Node_InputKeyEvent_57_Params params;
 	params.Key = Key;
@@ -295,7 +295,7 @@ void ABP_PavlovSpectator_C::InpActEvt_M_K2Node_InputKeyEvent_57(const struct FKe
 
 void ABP_PavlovSpectator_C::InpActEvt_One_K2Node_InputKeyEvent_56(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_One_K2Node_InputKeyEvent_56"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_One_K2Node_InputKeyEvent_56");
 
 	ABP_PavlovSpectator_C_InpActEvt_One_K2Node_InputKeyEvent_56_Params params;
 	params.Key = Key;
@@ -315,7 +315,7 @@ void ABP_PavlovSpectator_C::InpActEvt_One_K2Node_InputKeyEvent_56(const struct F
 
 void ABP_PavlovSpectator_C::InpActEvt_Two_K2Node_InputKeyEvent_55(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_Two_K2Node_InputKeyEvent_55"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_Two_K2Node_InputKeyEvent_55");
 
 	ABP_PavlovSpectator_C_InpActEvt_Two_K2Node_InputKeyEvent_55_Params params;
 	params.Key = Key;
@@ -335,7 +335,7 @@ void ABP_PavlovSpectator_C::InpActEvt_Two_K2Node_InputKeyEvent_55(const struct F
 
 void ABP_PavlovSpectator_C::InpActEvt_T_K2Node_InputKeyEvent_54(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_T_K2Node_InputKeyEvent_54"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_T_K2Node_InputKeyEvent_54");
 
 	ABP_PavlovSpectator_C_InpActEvt_T_K2Node_InputKeyEvent_54_Params params;
 	params.Key = Key;
@@ -355,7 +355,7 @@ void ABP_PavlovSpectator_C::InpActEvt_T_K2Node_InputKeyEvent_54(const struct FKe
 
 void ABP_PavlovSpectator_C::InpActEvt_X_K2Node_InputKeyEvent_53(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_X_K2Node_InputKeyEvent_53"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_X_K2Node_InputKeyEvent_53");
 
 	ABP_PavlovSpectator_C_InpActEvt_X_K2Node_InputKeyEvent_53_Params params;
 	params.Key = Key;
@@ -375,7 +375,7 @@ void ABP_PavlovSpectator_C::InpActEvt_X_K2Node_InputKeyEvent_53(const struct FKe
 
 void ABP_PavlovSpectator_C::InpActEvt_I_K2Node_InputKeyEvent_52(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_I_K2Node_InputKeyEvent_52"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_I_K2Node_InputKeyEvent_52");
 
 	ABP_PavlovSpectator_C_InpActEvt_I_K2Node_InputKeyEvent_52_Params params;
 	params.Key = Key;
@@ -395,7 +395,7 @@ void ABP_PavlovSpectator_C::InpActEvt_I_K2Node_InputKeyEvent_52(const struct FKe
 
 void ABP_PavlovSpectator_C::InpActEvt_L_K2Node_InputKeyEvent_51(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_L_K2Node_InputKeyEvent_51"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_L_K2Node_InputKeyEvent_51");
 
 	ABP_PavlovSpectator_C_InpActEvt_L_K2Node_InputKeyEvent_51_Params params;
 	params.Key = Key;
@@ -415,7 +415,7 @@ void ABP_PavlovSpectator_C::InpActEvt_L_K2Node_InputKeyEvent_51(const struct FKe
 
 void ABP_PavlovSpectator_C::InpActEvt_G_K2Node_InputKeyEvent_50(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_G_K2Node_InputKeyEvent_50"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_G_K2Node_InputKeyEvent_50");
 
 	ABP_PavlovSpectator_C_InpActEvt_G_K2Node_InputKeyEvent_50_Params params;
 	params.Key = Key;
@@ -435,7 +435,7 @@ void ABP_PavlovSpectator_C::InpActEvt_G_K2Node_InputKeyEvent_50(const struct FKe
 
 void ABP_PavlovSpectator_C::InpActEvt_G_K2Node_InputKeyEvent_49(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_G_K2Node_InputKeyEvent_49"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_G_K2Node_InputKeyEvent_49");
 
 	ABP_PavlovSpectator_C_InpActEvt_G_K2Node_InputKeyEvent_49_Params params;
 	params.Key = Key;
@@ -455,7 +455,7 @@ void ABP_PavlovSpectator_C::InpActEvt_G_K2Node_InputKeyEvent_49(const struct FKe
 
 void ABP_PavlovSpectator_C::InpActEvt_F1_K2Node_InputKeyEvent_48(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_F1_K2Node_InputKeyEvent_48"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_F1_K2Node_InputKeyEvent_48");
 
 	ABP_PavlovSpectator_C_InpActEvt_F1_K2Node_InputKeyEvent_48_Params params;
 	params.Key = Key;
@@ -475,7 +475,7 @@ void ABP_PavlovSpectator_C::InpActEvt_F1_K2Node_InputKeyEvent_48(const struct FK
 
 void ABP_PavlovSpectator_C::InpActEvt_F2_K2Node_InputKeyEvent_47(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_F2_K2Node_InputKeyEvent_47"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_F2_K2Node_InputKeyEvent_47");
 
 	ABP_PavlovSpectator_C_InpActEvt_F2_K2Node_InputKeyEvent_47_Params params;
 	params.Key = Key;
@@ -495,7 +495,7 @@ void ABP_PavlovSpectator_C::InpActEvt_F2_K2Node_InputKeyEvent_47(const struct FK
 
 void ABP_PavlovSpectator_C::InpActEvt_F3_K2Node_InputKeyEvent_46(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_F3_K2Node_InputKeyEvent_46"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_F3_K2Node_InputKeyEvent_46");
 
 	ABP_PavlovSpectator_C_InpActEvt_F3_K2Node_InputKeyEvent_46_Params params;
 	params.Key = Key;
@@ -515,7 +515,7 @@ void ABP_PavlovSpectator_C::InpActEvt_F3_K2Node_InputKeyEvent_46(const struct FK
 
 void ABP_PavlovSpectator_C::InpActEvt_F4_K2Node_InputKeyEvent_45(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_F4_K2Node_InputKeyEvent_45"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_F4_K2Node_InputKeyEvent_45");
 
 	ABP_PavlovSpectator_C_InpActEvt_F4_K2Node_InputKeyEvent_45_Params params;
 	params.Key = Key;
@@ -535,7 +535,7 @@ void ABP_PavlovSpectator_C::InpActEvt_F4_K2Node_InputKeyEvent_45(const struct FK
 
 void ABP_PavlovSpectator_C::InpActEvt_LeftShift_K2Node_InputKeyEvent_44(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_LeftShift_K2Node_InputKeyEvent_44"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_LeftShift_K2Node_InputKeyEvent_44");
 
 	ABP_PavlovSpectator_C_InpActEvt_LeftShift_K2Node_InputKeyEvent_44_Params params;
 	params.Key = Key;
@@ -555,7 +555,7 @@ void ABP_PavlovSpectator_C::InpActEvt_LeftShift_K2Node_InputKeyEvent_44(const st
 
 void ABP_PavlovSpectator_C::InpActEvt_LeftShift_K2Node_InputKeyEvent_43(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_LeftShift_K2Node_InputKeyEvent_43"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_LeftShift_K2Node_InputKeyEvent_43");
 
 	ABP_PavlovSpectator_C_InpActEvt_LeftShift_K2Node_InputKeyEvent_43_Params params;
 	params.Key = Key;
@@ -575,7 +575,7 @@ void ABP_PavlovSpectator_C::InpActEvt_LeftShift_K2Node_InputKeyEvent_43(const st
 
 void ABP_PavlovSpectator_C::InpActEvt_LeftControl_K2Node_InputKeyEvent_42(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_LeftControl_K2Node_InputKeyEvent_42"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_LeftControl_K2Node_InputKeyEvent_42");
 
 	ABP_PavlovSpectator_C_InpActEvt_LeftControl_K2Node_InputKeyEvent_42_Params params;
 	params.Key = Key;
@@ -595,7 +595,7 @@ void ABP_PavlovSpectator_C::InpActEvt_LeftControl_K2Node_InputKeyEvent_42(const 
 
 void ABP_PavlovSpectator_C::InpActEvt_LeftControl_K2Node_InputKeyEvent_41(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_LeftControl_K2Node_InputKeyEvent_41"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_LeftControl_K2Node_InputKeyEvent_41");
 
 	ABP_PavlovSpectator_C_InpActEvt_LeftControl_K2Node_InputKeyEvent_41_Params params;
 	params.Key = Key;
@@ -615,7 +615,7 @@ void ABP_PavlovSpectator_C::InpActEvt_LeftControl_K2Node_InputKeyEvent_41(const 
 
 void ABP_PavlovSpectator_C::InpActEvt_SpaceBar_K2Node_InputKeyEvent_40(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_SpaceBar_K2Node_InputKeyEvent_40"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_SpaceBar_K2Node_InputKeyEvent_40");
 
 	ABP_PavlovSpectator_C_InpActEvt_SpaceBar_K2Node_InputKeyEvent_40_Params params;
 	params.Key = Key;
@@ -635,7 +635,7 @@ void ABP_PavlovSpectator_C::InpActEvt_SpaceBar_K2Node_InputKeyEvent_40(const str
 
 void ABP_PavlovSpectator_C::InpActEvt_Three_K2Node_InputKeyEvent_39(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_Three_K2Node_InputKeyEvent_39"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_Three_K2Node_InputKeyEvent_39");
 
 	ABP_PavlovSpectator_C_InpActEvt_Three_K2Node_InputKeyEvent_39_Params params;
 	params.Key = Key;
@@ -655,7 +655,7 @@ void ABP_PavlovSpectator_C::InpActEvt_Three_K2Node_InputKeyEvent_39(const struct
 
 void ABP_PavlovSpectator_C::InpActEvt_F5_K2Node_InputKeyEvent_38(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_F5_K2Node_InputKeyEvent_38"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_F5_K2Node_InputKeyEvent_38");
 
 	ABP_PavlovSpectator_C_InpActEvt_F5_K2Node_InputKeyEvent_38_Params params;
 	params.Key = Key;
@@ -675,7 +675,7 @@ void ABP_PavlovSpectator_C::InpActEvt_F5_K2Node_InputKeyEvent_38(const struct FK
 
 void ABP_PavlovSpectator_C::InpActEvt_F6_K2Node_InputKeyEvent_37(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_F6_K2Node_InputKeyEvent_37"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_F6_K2Node_InputKeyEvent_37");
 
 	ABP_PavlovSpectator_C_InpActEvt_F6_K2Node_InputKeyEvent_37_Params params;
 	params.Key = Key;
@@ -695,7 +695,7 @@ void ABP_PavlovSpectator_C::InpActEvt_F6_K2Node_InputKeyEvent_37(const struct FK
 
 void ABP_PavlovSpectator_C::InpActEvt_F7_K2Node_InputKeyEvent_36(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_F7_K2Node_InputKeyEvent_36"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_F7_K2Node_InputKeyEvent_36");
 
 	ABP_PavlovSpectator_C_InpActEvt_F7_K2Node_InputKeyEvent_36_Params params;
 	params.Key = Key;
@@ -715,7 +715,7 @@ void ABP_PavlovSpectator_C::InpActEvt_F7_K2Node_InputKeyEvent_36(const struct FK
 
 void ABP_PavlovSpectator_C::InpActEvt_F8_K2Node_InputKeyEvent_35(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_F8_K2Node_InputKeyEvent_35"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_F8_K2Node_InputKeyEvent_35");
 
 	ABP_PavlovSpectator_C_InpActEvt_F8_K2Node_InputKeyEvent_35_Params params;
 	params.Key = Key;
@@ -735,7 +735,7 @@ void ABP_PavlovSpectator_C::InpActEvt_F8_K2Node_InputKeyEvent_35(const struct FK
 
 void ABP_PavlovSpectator_C::InpActEvt_Escape_K2Node_InputKeyEvent_34(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_Escape_K2Node_InputKeyEvent_34"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_Escape_K2Node_InputKeyEvent_34");
 
 	ABP_PavlovSpectator_C_InpActEvt_Escape_K2Node_InputKeyEvent_34_Params params;
 	params.Key = Key;
@@ -755,7 +755,7 @@ void ABP_PavlovSpectator_C::InpActEvt_Escape_K2Node_InputKeyEvent_34(const struc
 
 void ABP_PavlovSpectator_C::InpActEvt_Z_K2Node_InputKeyEvent_33(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_Z_K2Node_InputKeyEvent_33"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_Z_K2Node_InputKeyEvent_33");
 
 	ABP_PavlovSpectator_C_InpActEvt_Z_K2Node_InputKeyEvent_33_Params params;
 	params.Key = Key;
@@ -775,7 +775,7 @@ void ABP_PavlovSpectator_C::InpActEvt_Z_K2Node_InputKeyEvent_33(const struct FKe
 
 void ABP_PavlovSpectator_C::InpActEvt_V_K2Node_InputKeyEvent_32(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_V_K2Node_InputKeyEvent_32"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_V_K2Node_InputKeyEvent_32");
 
 	ABP_PavlovSpectator_C_InpActEvt_V_K2Node_InputKeyEvent_32_Params params;
 	params.Key = Key;
@@ -795,7 +795,7 @@ void ABP_PavlovSpectator_C::InpActEvt_V_K2Node_InputKeyEvent_32(const struct FKe
 
 void ABP_PavlovSpectator_C::InpActEvt_Zero_K2Node_InputKeyEvent_31(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_Zero_K2Node_InputKeyEvent_31"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpActEvt_Zero_K2Node_InputKeyEvent_31");
 
 	ABP_PavlovSpectator_C_InpActEvt_Zero_K2Node_InputKeyEvent_31_Params params;
 	params.Key = Key;
@@ -815,7 +815,7 @@ void ABP_PavlovSpectator_C::InpActEvt_Zero_K2Node_InputKeyEvent_31(const struct 
 
 void ABP_PavlovSpectator_C::ReceivePossessed(class AController** NewController)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.ReceivePossessed"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.ReceivePossessed");
 
 	ABP_PavlovSpectator_C_ReceivePossessed_Params params;
 	params.NewController = NewController;
@@ -835,7 +835,7 @@ void ABP_PavlovSpectator_C::ReceivePossessed(class AController** NewController)
 
 void ABP_PavlovSpectator_C::ReceiveUnpossessed(class AController** OldController)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.ReceiveUnpossessed"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.ReceiveUnpossessed");
 
 	ABP_PavlovSpectator_C_ReceiveUnpossessed_Params params;
 	params.OldController = OldController;
@@ -855,7 +855,7 @@ void ABP_PavlovSpectator_C::ReceiveUnpossessed(class AController** OldController
 
 void ABP_PavlovSpectator_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.ReceiveTick"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.ReceiveTick");
 
 	ABP_PavlovSpectator_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -873,7 +873,7 @@ void ABP_PavlovSpectator_C::ReceiveTick(float* DeltaSeconds)
 
 void ABP_PavlovSpectator_C::CycleNextPlayer()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.CycleNextPlayer"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.CycleNextPlayer");
 
 	ABP_PavlovSpectator_C_CycleNextPlayer_Params params;
 
@@ -893,7 +893,7 @@ void ABP_PavlovSpectator_C::CycleNextPlayer()
 
 void ABP_PavlovSpectator_C::OnDemoPlaybackError(TEnumAsByte<EDemoPlayFailure>* FailureType, struct FString* ErrorString)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.OnDemoPlaybackError"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.OnDemoPlaybackError");
 
 	ABP_PavlovSpectator_C_OnDemoPlaybackError_Params params;
 	params.FailureType = FailureType;
@@ -914,7 +914,7 @@ void ABP_PavlovSpectator_C::OnDemoPlaybackError(TEnumAsByte<EDemoPlayFailure>* F
 
 void ABP_PavlovSpectator_C::OnScrubChanged(bool* bScrubing)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.OnScrubChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.OnScrubChanged");
 
 	ABP_PavlovSpectator_C_OnScrubChanged_Params params;
 	params.bScrubing = bScrubing;
@@ -934,7 +934,7 @@ void ABP_PavlovSpectator_C::OnScrubChanged(bool* bScrubing)
 
 void ABP_PavlovSpectator_C::InpAxisKeyEvt_MouseX_K2Node_InputAxisKeyEvent_1(float AxisValue)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpAxisKeyEvt_MouseX_K2Node_InputAxisKeyEvent_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpAxisKeyEvt_MouseX_K2Node_InputAxisKeyEvent_1");
 
 	ABP_PavlovSpectator_C_InpAxisKeyEvt_MouseX_K2Node_InputAxisKeyEvent_1_Params params;
 	params.AxisValue = AxisValue;
@@ -954,7 +954,7 @@ void ABP_PavlovSpectator_C::InpAxisKeyEvt_MouseX_K2Node_InputAxisKeyEvent_1(floa
 
 void ABP_PavlovSpectator_C::InpAxisKeyEvt_MouseY_K2Node_InputAxisKeyEvent_3(float AxisValue)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpAxisKeyEvt_MouseY_K2Node_InputAxisKeyEvent_3"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpAxisKeyEvt_MouseY_K2Node_InputAxisKeyEvent_3");
 
 	ABP_PavlovSpectator_C_InpAxisKeyEvt_MouseY_K2Node_InputAxisKeyEvent_3_Params params;
 	params.AxisValue = AxisValue;
@@ -974,7 +974,7 @@ void ABP_PavlovSpectator_C::InpAxisKeyEvt_MouseY_K2Node_InputAxisKeyEvent_3(floa
 
 void ABP_PavlovSpectator_C::InpAxisEvt_MoveForward_K2Node_InputAxisEvent_1(float AxisValue)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpAxisEvt_MoveForward_K2Node_InputAxisEvent_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpAxisEvt_MoveForward_K2Node_InputAxisEvent_1");
 
 	ABP_PavlovSpectator_C_InpAxisEvt_MoveForward_K2Node_InputAxisEvent_1_Params params;
 	params.AxisValue = AxisValue;
@@ -994,7 +994,7 @@ void ABP_PavlovSpectator_C::InpAxisEvt_MoveForward_K2Node_InputAxisEvent_1(float
 
 void ABP_PavlovSpectator_C::InpAxisEvt_MoveRight_K2Node_InputAxisEvent_5(float AxisValue)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpAxisEvt_MoveRight_K2Node_InputAxisEvent_5"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpAxisEvt_MoveRight_K2Node_InputAxisEvent_5");
 
 	ABP_PavlovSpectator_C_InpAxisEvt_MoveRight_K2Node_InputAxisEvent_5_Params params;
 	params.AxisValue = AxisValue;
@@ -1014,7 +1014,7 @@ void ABP_PavlovSpectator_C::InpAxisEvt_MoveRight_K2Node_InputAxisEvent_5(float A
 
 void ABP_PavlovSpectator_C::InpAxisEvt_MoveUp_K2Node_InputAxisEvent_7(float AxisValue)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpAxisEvt_MoveUp_K2Node_InputAxisEvent_7"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.InpAxisEvt_MoveUp_K2Node_InputAxisEvent_7");
 
 	ABP_PavlovSpectator_C_InpAxisEvt_MoveUp_K2Node_InputAxisEvent_7_Params params;
 	params.AxisValue = AxisValue;
@@ -1034,7 +1034,7 @@ void ABP_PavlovSpectator_C::InpAxisEvt_MoveUp_K2Node_InputAxisEvent_7(float Axis
 
 void ABP_PavlovSpectator_C::CustomEvent_1(float Ratio)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.CustomEvent_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.CustomEvent_1");
 
 	ABP_PavlovSpectator_C_CustomEvent_1_Params params;
 	params.Ratio = Ratio;
@@ -1057,7 +1057,7 @@ void ABP_PavlovSpectator_C::CustomEvent_1(float Ratio)
 
 void ABP_PavlovSpectator_C::CustomEvent_2(class APavlovPawn* Pawn, class APavlovPlayerState* PlayerState, int Index, int TeamID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.CustomEvent_2"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.CustomEvent_2");
 
 	ABP_PavlovSpectator_C_CustomEvent_2_Params params;
 	params.Pawn = Pawn;
@@ -1081,7 +1081,7 @@ void ABP_PavlovSpectator_C::CustomEvent_2(class APavlovPawn* Pawn, class APavlov
 
 void ABP_PavlovSpectator_C::CustomEvent_3(int Index, int TeamID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.CustomEvent_3"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.CustomEvent_3");
 
 	ABP_PavlovSpectator_C_CustomEvent_3_Params params;
 	params.Index = Index;
@@ -1102,7 +1102,7 @@ void ABP_PavlovSpectator_C::CustomEvent_3(int Index, int TeamID)
 
 void ABP_PavlovSpectator_C::ExecuteUbergraph_BP_PavlovSpectator(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovSpectator.BP_PavlovSpectator_C.ExecuteUbergraph_BP_PavlovSpectator"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovSpectator.BP_PavlovSpectator_C.ExecuteUbergraph_BP_PavlovSpectator");
 
 	ABP_PavlovSpectator_C_ExecuteUbergraph_BP_PavlovSpectator_Params params;
 	params.EntryPoint = EntryPoint;

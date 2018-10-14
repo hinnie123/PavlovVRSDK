@@ -23,7 +23,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class SteamVR.SteamVRChaperoneComponent"));
+		static auto ptr = UObject::FindClass("Class SteamVR.SteamVRChaperoneComponent");
 		return ptr;
 	}
 
@@ -41,7 +41,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class SteamVR.SteamVRFunctionLibrary"));
+		static auto ptr = UObject::FindClass("Class SteamVR.SteamVRFunctionLibrary");
 		return ptr;
 	}
 

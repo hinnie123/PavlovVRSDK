@@ -19,7 +19,7 @@ namespace SDK
 
 struct FLinearColor UUI_Moderation_Player_C::GetColorAndOpacity_4()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Moderation_Player.UI_Moderation_Player_C.GetColorAndOpacity_4"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Moderation_Player.UI_Moderation_Player_C.GetColorAndOpacity_4");
 
 	UUI_Moderation_Player_C_GetColorAndOpacity_4_Params params;
 
@@ -42,7 +42,7 @@ struct FLinearColor UUI_Moderation_Player_C::GetColorAndOpacity_4()
 
 struct FEventReply UUI_Moderation_Player_C::OnMouseButtonDown(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Moderation_Player.UI_Moderation_Player_C.OnMouseButtonDown"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Moderation_Player.UI_Moderation_Player_C.OnMouseButtonDown");
 
 	UUI_Moderation_Player_C_OnMouseButtonDown_Params params;
 	params.MyGeometry = MyGeometry;
@@ -65,7 +65,7 @@ struct FEventReply UUI_Moderation_Player_C::OnMouseButtonDown(struct FGeometry* 
 
 ESlateVisibility UUI_Moderation_Player_C::GetVisibility_2()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Moderation_Player.UI_Moderation_Player_C.GetVisibility_2"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Moderation_Player.UI_Moderation_Player_C.GetVisibility_2");
 
 	UUI_Moderation_Player_C_GetVisibility_2_Params params;
 
@@ -86,7 +86,7 @@ ESlateVisibility UUI_Moderation_Player_C::GetVisibility_2()
 
 ESlateVisibility UUI_Moderation_Player_C::GetVisibility_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Moderation_Player.UI_Moderation_Player_C.GetVisibility_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Moderation_Player.UI_Moderation_Player_C.GetVisibility_1");
 
 	UUI_Moderation_Player_C_GetVisibility_1_Params params;
 
@@ -107,7 +107,7 @@ ESlateVisibility UUI_Moderation_Player_C::GetVisibility_1()
 
 struct FSlateBrush UUI_Moderation_Player_C::GetBrush_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Moderation_Player.UI_Moderation_Player_C.GetBrush_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Moderation_Player.UI_Moderation_Player_C.GetBrush_1");
 
 	UUI_Moderation_Player_C_GetBrush_1_Params params;
 
@@ -128,7 +128,7 @@ struct FSlateBrush UUI_Moderation_Player_C::GetBrush_1()
 
 struct FLinearColor UUI_Moderation_Player_C::GetColorAndOpacity_3()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Moderation_Player.UI_Moderation_Player_C.GetColorAndOpacity_3"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Moderation_Player.UI_Moderation_Player_C.GetColorAndOpacity_3");
 
 	UUI_Moderation_Player_C_GetColorAndOpacity_3_Params params;
 
@@ -149,7 +149,7 @@ struct FLinearColor UUI_Moderation_Player_C::GetColorAndOpacity_3()
 
 struct FLinearColor UUI_Moderation_Player_C::GetColorAndOpacity_2()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Moderation_Player.UI_Moderation_Player_C.GetColorAndOpacity_2"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Moderation_Player.UI_Moderation_Player_C.GetColorAndOpacity_2");
 
 	UUI_Moderation_Player_C_GetColorAndOpacity_2_Params params;
 
@@ -170,7 +170,7 @@ struct FLinearColor UUI_Moderation_Player_C::GetColorAndOpacity_2()
 
 struct FSlateColor UUI_Moderation_Player_C::GetColorAndOpacity_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Moderation_Player.UI_Moderation_Player_C.GetColorAndOpacity_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Moderation_Player.UI_Moderation_Player_C.GetColorAndOpacity_1");
 
 	UUI_Moderation_Player_C_GetColorAndOpacity_1_Params params;
 
@@ -191,7 +191,7 @@ struct FSlateColor UUI_Moderation_Player_C::GetColorAndOpacity_1()
 
 void UUI_Moderation_Player_C::BndEvt__CheckBox_108_K2Node_ComponentBoundEvent_58_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Moderation_Player.UI_Moderation_Player_C.BndEvt__CheckBox_108_K2Node_ComponentBoundEvent_58_OnCheckBoxComponentStateChanged__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Moderation_Player.UI_Moderation_Player_C.BndEvt__CheckBox_108_K2Node_ComponentBoundEvent_58_OnCheckBoxComponentStateChanged__DelegateSignature");
 
 	UUI_Moderation_Player_C_BndEvt__CheckBox_108_K2Node_ComponentBoundEvent_58_OnCheckBoxComponentStateChanged__DelegateSignature_Params params;
 	params.bIsChecked = bIsChecked;
@@ -211,7 +211,7 @@ void UUI_Moderation_Player_C::BndEvt__CheckBox_108_K2Node_ComponentBoundEvent_58
 
 void UUI_Moderation_Player_C::ExecuteUbergraph_UI_Moderation_Player(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Moderation_Player.UI_Moderation_Player_C.ExecuteUbergraph_UI_Moderation_Player"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Moderation_Player.UI_Moderation_Player_C.ExecuteUbergraph_UI_Moderation_Player");
 
 	UUI_Moderation_Player_C_ExecuteUbergraph_UI_Moderation_Player_Params params;
 	params.EntryPoint = EntryPoint;
@@ -232,7 +232,7 @@ void UUI_Moderation_Player_C::ExecuteUbergraph_UI_Moderation_Player(int EntryPoi
 
 void UUI_Moderation_Player_C::OnSelectionChanged__DelegateSignature(bool Selected, const struct FString& ID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Moderation_Player.UI_Moderation_Player_C.OnSelectionChanged__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Moderation_Player.UI_Moderation_Player_C.OnSelectionChanged__DelegateSignature");
 
 	UUI_Moderation_Player_C_OnSelectionChanged__DelegateSignature_Params params;
 	params.Selected = Selected;
@@ -254,7 +254,7 @@ void UUI_Moderation_Player_C::OnSelectionChanged__DelegateSignature(bool Selecte
 
 void UUI_Moderation_Player_C::OnMuteChanged__DelegateSignature(bool Mute, const struct FString& ID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Moderation_Player.UI_Moderation_Player_C.OnMuteChanged__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Moderation_Player.UI_Moderation_Player_C.OnMuteChanged__DelegateSignature");
 
 	UUI_Moderation_Player_C_OnMuteChanged__DelegateSignature_Params params;
 	params.Mute = Mute;

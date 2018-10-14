@@ -17,7 +17,7 @@ namespace SDK
 
 void AToolTip_Grab_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_Grab.ToolTip_Grab_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_Grab.ToolTip_Grab_C.UserConstructionScript");
 
 	AToolTip_Grab_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void AToolTip_Grab_C::UserConstructionScript()
 
 void AToolTip_Grab_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_Grab.ToolTip_Grab_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_Grab.ToolTip_Grab_C.ReceiveBeginPlay");
 
 	AToolTip_Grab_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +53,7 @@ void AToolTip_Grab_C::ReceiveBeginPlay()
 
 void AToolTip_Grab_C::OnDestroyed_Event_1(class AActor* DestroyedActor)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_Grab.ToolTip_Grab_C.OnDestroyed_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_Grab.ToolTip_Grab_C.OnDestroyed_Event_1");
 
 	AToolTip_Grab_C_OnDestroyed_Event_1_Params params;
 	params.DestroyedActor = DestroyedActor;
@@ -71,7 +71,7 @@ void AToolTip_Grab_C::OnDestroyed_Event_1(class AActor* DestroyedActor)
 
 void AToolTip_Grab_C::CustomEvent_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_Grab.ToolTip_Grab_C.CustomEvent_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_Grab.ToolTip_Grab_C.CustomEvent_1");
 
 	AToolTip_Grab_C_CustomEvent_1_Params params;
 
@@ -90,7 +90,7 @@ void AToolTip_Grab_C::CustomEvent_1()
 
 void AToolTip_Grab_C::ExecuteUbergraph_ToolTip_Grab(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_Grab.ToolTip_Grab_C.ExecuteUbergraph_ToolTip_Grab"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_Grab.ToolTip_Grab_C.ExecuteUbergraph_ToolTip_Grab");
 
 	AToolTip_Grab_C_ExecuteUbergraph_ToolTip_Grab_Params params;
 	params.EntryPoint = EntryPoint;

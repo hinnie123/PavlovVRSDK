@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("WidgetBlueprintGeneratedClass UI_Spinner.UI_Spinner_C"));
+		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass UI_Spinner.UI_Spinner_C");
 		return ptr;
 	}
 

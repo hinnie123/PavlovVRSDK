@@ -20,7 +20,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Steamworks.SteamworksGameMode"));
+		static auto ptr = UObject::FindClass("Class Steamworks.SteamworksGameMode");
 		return ptr;
 	}
 
@@ -44,7 +44,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Steamworks.SteamLobby"));
+		static auto ptr = UObject::FindClass("Class Steamworks.SteamLobby");
 		return ptr;
 	}
 
@@ -73,7 +73,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Steamworks.SteamworksLocalPlayer"));
+		static auto ptr = UObject::FindClass("Class Steamworks.SteamworksLocalPlayer");
 		return ptr;
 	}
 
@@ -102,7 +102,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Steamworks.SteamVoiceComponent"));
+		static auto ptr = UObject::FindClass("Class Steamworks.SteamVoiceComponent");
 		return ptr;
 	}
 
@@ -129,7 +129,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Steamworks.SteamItem"));
+		static auto ptr = UObject::FindClass("Class Steamworks.SteamItem");
 		return ptr;
 	}
 
@@ -147,7 +147,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Steamworks.SteamRadio"));
+		static auto ptr = UObject::FindClass("Class Steamworks.SteamRadio");
 		return ptr;
 	}
 
@@ -165,7 +165,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Steamworks.SteamworksGameSession"));
+		static auto ptr = UObject::FindClass("Class Steamworks.SteamworksGameSession");
 		return ptr;
 	}
 
@@ -200,7 +200,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Steamworks.SteamworksManager"));
+		static auto ptr = UObject::FindClass("Class Steamworks.SteamworksManager");
 		return ptr;
 	}
 
@@ -237,7 +237,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Steamworks.SteamworksStatics"));
+		static auto ptr = UObject::FindClass("Class Steamworks.SteamworksStatics");
 		return ptr;
 	}
 

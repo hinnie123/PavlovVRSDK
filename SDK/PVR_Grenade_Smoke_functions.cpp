@@ -17,7 +17,7 @@ namespace SDK
 
 void AGrenade_Smoke_C::OnRep_bSmokeActive()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Grenade_Smoke.Grenade_Smoke_C.OnRep_bSmokeActive"));
+	static auto fn = UObject::FindObject<UFunction>("Function Grenade_Smoke.Grenade_Smoke_C.OnRep_bSmokeActive");
 
 	AGrenade_Smoke_C_OnRep_bSmokeActive_Params params;
 
@@ -34,7 +34,7 @@ void AGrenade_Smoke_C::OnRep_bSmokeActive()
 
 void AGrenade_Smoke_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Grenade_Smoke.Grenade_Smoke_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Grenade_Smoke.Grenade_Smoke_C.UserConstructionScript");
 
 	AGrenade_Smoke_C_UserConstructionScript_Params params;
 
@@ -51,7 +51,7 @@ void AGrenade_Smoke_C::UserConstructionScript()
 
 void AGrenade_Smoke_C::StartSmoke()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Grenade_Smoke.Grenade_Smoke_C.StartSmoke"));
+	static auto fn = UObject::FindObject<UFunction>("Function Grenade_Smoke.Grenade_Smoke_C.StartSmoke");
 
 	AGrenade_Smoke_C_StartSmoke_Params params;
 
@@ -70,7 +70,7 @@ void AGrenade_Smoke_C::StartSmoke()
 
 void AGrenade_Smoke_C::SpawnSingleParticle(const struct FVector& LocalOffset)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Grenade_Smoke.Grenade_Smoke_C.SpawnSingleParticle"));
+	static auto fn = UObject::FindObject<UFunction>("Function Grenade_Smoke.Grenade_Smoke_C.SpawnSingleParticle");
 
 	AGrenade_Smoke_C_SpawnSingleParticle_Params params;
 	params.LocalOffset = LocalOffset;
@@ -88,7 +88,7 @@ void AGrenade_Smoke_C::SpawnSingleParticle(const struct FVector& LocalOffset)
 
 void AGrenade_Smoke_C::OnDetonation()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Grenade_Smoke.Grenade_Smoke_C.OnDetonation"));
+	static auto fn = UObject::FindObject<UFunction>("Function Grenade_Smoke.Grenade_Smoke_C.OnDetonation");
 
 	AGrenade_Smoke_C_OnDetonation_Params params;
 
@@ -105,7 +105,7 @@ void AGrenade_Smoke_C::OnDetonation()
 
 void AGrenade_Smoke_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Grenade_Smoke.Grenade_Smoke_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function Grenade_Smoke.Grenade_Smoke_C.ReceiveBeginPlay");
 
 	AGrenade_Smoke_C_ReceiveBeginPlay_Params params;
 
@@ -124,7 +124,7 @@ void AGrenade_Smoke_C::ReceiveBeginPlay()
 
 void AGrenade_Smoke_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Grenade_Smoke.Grenade_Smoke_C.ReceiveTick"));
+	static auto fn = UObject::FindObject<UFunction>("Function Grenade_Smoke.Grenade_Smoke_C.ReceiveTick");
 
 	AGrenade_Smoke_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -144,7 +144,7 @@ void AGrenade_Smoke_C::ReceiveTick(float* DeltaSeconds)
 
 void AGrenade_Smoke_C::ExecuteUbergraph_Grenade_Smoke(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Grenade_Smoke.Grenade_Smoke_C.ExecuteUbergraph_Grenade_Smoke"));
+	static auto fn = UObject::FindObject<UFunction>("Function Grenade_Smoke.Grenade_Smoke_C.ExecuteUbergraph_Grenade_Smoke");
 
 	AGrenade_Smoke_C_ExecuteUbergraph_Grenade_Smoke_Params params;
 	params.EntryPoint = EntryPoint;

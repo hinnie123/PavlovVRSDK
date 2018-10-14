@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("BlueprintGeneratedClass BotPoseService.BotPoseService_C"));
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass BotPoseService.BotPoseService_C");
 		return ptr;
 	}
 

@@ -17,7 +17,7 @@ namespace SDK
 
 void AToolTip_Sprint_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_Sprint.ToolTip_Sprint_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_Sprint.ToolTip_Sprint_C.UserConstructionScript");
 
 	AToolTip_Sprint_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void AToolTip_Sprint_C::UserConstructionScript()
 
 void AToolTip_Sprint_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_Sprint.ToolTip_Sprint_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_Sprint.ToolTip_Sprint_C.ReceiveBeginPlay");
 
 	AToolTip_Sprint_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +53,7 @@ void AToolTip_Sprint_C::ReceiveBeginPlay()
 
 void AToolTip_Sprint_C::OnDestroyed_Event_1(class AActor* DestroyedActor)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_Sprint.ToolTip_Sprint_C.OnDestroyed_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_Sprint.ToolTip_Sprint_C.OnDestroyed_Event_1");
 
 	AToolTip_Sprint_C_OnDestroyed_Event_1_Params params;
 	params.DestroyedActor = DestroyedActor;
@@ -71,7 +71,7 @@ void AToolTip_Sprint_C::OnDestroyed_Event_1(class AActor* DestroyedActor)
 
 void AToolTip_Sprint_C::CustomEvent_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_Sprint.ToolTip_Sprint_C.CustomEvent_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_Sprint.ToolTip_Sprint_C.CustomEvent_1");
 
 	AToolTip_Sprint_C_CustomEvent_1_Params params;
 
@@ -90,7 +90,7 @@ void AToolTip_Sprint_C::CustomEvent_1()
 
 void AToolTip_Sprint_C::ExecuteUbergraph_ToolTip_Sprint(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_Sprint.ToolTip_Sprint_C.ExecuteUbergraph_ToolTip_Sprint"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_Sprint.ToolTip_Sprint_C.ExecuteUbergraph_ToolTip_Sprint");
 
 	AToolTip_Sprint_C_ExecuteUbergraph_ToolTip_Sprint_Params params;
 	params.EntryPoint = EntryPoint;

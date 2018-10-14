@@ -20,7 +20,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Landscape.ControlPointMeshComponent"));
+		static auto ptr = UObject::FindClass("Class Landscape.ControlPointMeshComponent");
 		return ptr;
 	}
 
@@ -71,7 +71,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Landscape.LandscapeComponent"));
+		static auto ptr = UObject::FindClass("Class Landscape.LandscapeComponent");
 		return ptr;
 	}
 
@@ -86,7 +86,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Landscape.LandscapeGizmoActor"));
+		static auto ptr = UObject::FindClass("Class Landscape.LandscapeGizmoActor");
 		return ptr;
 	}
 
@@ -102,7 +102,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Landscape.LandscapeGizmoActiveActor"));
+		static auto ptr = UObject::FindClass("Class Landscape.LandscapeGizmoActiveActor");
 		return ptr;
 	}
 
@@ -117,7 +117,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Landscape.LandscapeGizmoRenderComponent"));
+		static auto ptr = UObject::FindClass("Class Landscape.LandscapeGizmoRenderComponent");
 		return ptr;
 	}
 
@@ -141,7 +141,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Landscape.LandscapeGrassType"));
+		static auto ptr = UObject::FindClass("Class Landscape.LandscapeGrassType");
 		return ptr;
 	}
 
@@ -170,7 +170,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Landscape.LandscapeHeightfieldCollisionComponent"));
+		static auto ptr = UObject::FindClass("Class Landscape.LandscapeHeightfieldCollisionComponent");
 		return ptr;
 	}
 
@@ -186,7 +186,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Landscape.LandscapeMeshCollisionComponent"));
+		static auto ptr = UObject::FindClass("Class Landscape.LandscapeMeshCollisionComponent");
 		return ptr;
 	}
 
@@ -210,7 +210,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Landscape.LandscapeInfo"));
+		static auto ptr = UObject::FindClass("Class Landscape.LandscapeInfo");
 		return ptr;
 	}
 
@@ -226,7 +226,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Landscape.LandscapeInfoMap"));
+		static auto ptr = UObject::FindClass("Class Landscape.LandscapeInfoMap");
 		return ptr;
 	}
 
@@ -246,7 +246,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Landscape.LandscapeLayerInfoObject"));
+		static auto ptr = UObject::FindClass("Class Landscape.LandscapeLayerInfoObject");
 		return ptr;
 	}
 
@@ -264,7 +264,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Landscape.LandscapeMaterialInstanceConstant"));
+		static auto ptr = UObject::FindClass("Class Landscape.LandscapeMaterialInstanceConstant");
 		return ptr;
 	}
 
@@ -280,7 +280,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Landscape.LandscapeMeshProxyActor"));
+		static auto ptr = UObject::FindClass("Class Landscape.LandscapeMeshProxyActor");
 		return ptr;
 	}
 
@@ -299,7 +299,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Landscape.LandscapeMeshProxyComponent"));
+		static auto ptr = UObject::FindClass("Class Landscape.LandscapeMeshProxyComponent");
 		return ptr;
 	}
 
@@ -357,7 +357,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Landscape.LandscapeProxy"));
+		static auto ptr = UObject::FindClass("Class Landscape.LandscapeProxy");
 		return ptr;
 	}
 
@@ -375,7 +375,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Landscape.Landscape"));
+		static auto ptr = UObject::FindClass("Class Landscape.Landscape");
 		return ptr;
 	}
 
@@ -391,7 +391,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Landscape.LandscapeStreamingProxy"));
+		static auto ptr = UObject::FindClass("Class Landscape.LandscapeStreamingProxy");
 		return ptr;
 	}
 
@@ -410,7 +410,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Landscape.LandscapeSplinesComponent"));
+		static auto ptr = UObject::FindClass("Class Landscape.LandscapeSplinesComponent");
 		return ptr;
 	}
 
@@ -431,7 +431,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Landscape.LandscapeSplineSegment"));
+		static auto ptr = UObject::FindClass("Class Landscape.LandscapeSplineSegment");
 		return ptr;
 	}
 
@@ -457,7 +457,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Landscape.LandscapeSplineControlPoint"));
+		static auto ptr = UObject::FindClass("Class Landscape.LandscapeSplineControlPoint");
 		return ptr;
 	}
 
@@ -473,7 +473,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Landscape.MaterialExpressionLandscapeGrassOutput"));
+		static auto ptr = UObject::FindClass("Class Landscape.MaterialExpressionLandscapeGrassOutput");
 		return ptr;
 	}
 
@@ -490,7 +490,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Landscape.MaterialExpressionLandscapeLayerBlend"));
+		static auto ptr = UObject::FindClass("Class Landscape.MaterialExpressionLandscapeLayerBlend");
 		return ptr;
 	}
 
@@ -513,7 +513,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Landscape.MaterialExpressionLandscapeLayerCoords"));
+		static auto ptr = UObject::FindClass("Class Landscape.MaterialExpressionLandscapeLayerCoords");
 		return ptr;
 	}
 
@@ -532,7 +532,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Landscape.MaterialExpressionLandscapeLayerSample"));
+		static auto ptr = UObject::FindClass("Class Landscape.MaterialExpressionLandscapeLayerSample");
 		return ptr;
 	}
 
@@ -554,7 +554,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Landscape.MaterialExpressionLandscapeLayerSwitch"));
+		static auto ptr = UObject::FindClass("Class Landscape.MaterialExpressionLandscapeLayerSwitch");
 		return ptr;
 	}
 
@@ -575,7 +575,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Landscape.MaterialExpressionLandscapeLayerWeight"));
+		static auto ptr = UObject::FindClass("Class Landscape.MaterialExpressionLandscapeLayerWeight");
 		return ptr;
 	}
 
@@ -591,7 +591,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Landscape.MaterialExpressionLandscapeVisibilityMask"));
+		static auto ptr = UObject::FindClass("Class Landscape.MaterialExpressionLandscapeVisibilityMask");
 		return ptr;
 	}
 

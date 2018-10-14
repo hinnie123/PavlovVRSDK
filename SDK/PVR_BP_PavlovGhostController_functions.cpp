@@ -19,7 +19,7 @@ namespace SDK
 
 void ABP_PavlovGhostController_C::SetVRScale(float Scale)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovGhostController.BP_PavlovGhostController_C.SetVRScale"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovGhostController.BP_PavlovGhostController_C.SetVRScale");
 
 	ABP_PavlovGhostController_C_SetVRScale_Params params;
 	params.Scale = Scale;
@@ -37,7 +37,7 @@ void ABP_PavlovGhostController_C::SetVRScale(float Scale)
 
 void ABP_PavlovGhostController_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovGhostController.BP_PavlovGhostController_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovGhostController.BP_PavlovGhostController_C.UserConstructionScript");
 
 	ABP_PavlovGhostController_C_UserConstructionScript_Params params;
 
@@ -54,7 +54,7 @@ void ABP_PavlovGhostController_C::UserConstructionScript()
 
 void ABP_PavlovGhostController_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovGhostController.BP_PavlovGhostController_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovGhostController.BP_PavlovGhostController_C.ReceiveBeginPlay");
 
 	ABP_PavlovGhostController_C_ReceiveBeginPlay_Params params;
 
@@ -73,7 +73,7 @@ void ABP_PavlovGhostController_C::ReceiveBeginPlay()
 
 void ABP_PavlovGhostController_C::GripChanged(bool* bNewGrip)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovGhostController.BP_PavlovGhostController_C.GripChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovGhostController.BP_PavlovGhostController_C.GripChanged");
 
 	ABP_PavlovGhostController_C_GripChanged_Params params;
 	params.bNewGrip = bNewGrip;
@@ -93,7 +93,7 @@ void ABP_PavlovGhostController_C::GripChanged(bool* bNewGrip)
 
 void ABP_PavlovGhostController_C::OnPointModeChanged(EGhostPointMode* OldPointMode)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovGhostController.BP_PavlovGhostController_C.OnPointModeChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovGhostController.BP_PavlovGhostController_C.OnPointModeChanged");
 
 	ABP_PavlovGhostController_C_OnPointModeChanged_Params params;
 	params.OldPointMode = OldPointMode;
@@ -113,7 +113,7 @@ void ABP_PavlovGhostController_C::OnPointModeChanged(EGhostPointMode* OldPointMo
 
 void ABP_PavlovGhostController_C::ExecuteUbergraph_BP_PavlovGhostController(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovGhostController.BP_PavlovGhostController_C.ExecuteUbergraph_BP_PavlovGhostController"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovGhostController.BP_PavlovGhostController_C.ExecuteUbergraph_BP_PavlovGhostController");
 
 	ABP_PavlovGhostController_C_ExecuteUbergraph_BP_PavlovGhostController_Params params;
 	params.EntryPoint = EntryPoint;

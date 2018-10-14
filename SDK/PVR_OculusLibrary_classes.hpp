@@ -20,7 +20,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class OculusLibrary.OculusFunctionLibrary"));
+		static auto ptr = UObject::FindClass("Class OculusLibrary.OculusFunctionLibrary");
 		return ptr;
 	}
 

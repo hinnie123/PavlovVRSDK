@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_BloodSplat_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_BloodSplat.BP_BloodSplat_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_BloodSplat.BP_BloodSplat_C.UserConstructionScript");
 
 	ABP_BloodSplat_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void ABP_BloodSplat_C::UserConstructionScript()
 
 void ABP_BloodSplat_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_BloodSplat.BP_BloodSplat_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_BloodSplat.BP_BloodSplat_C.ReceiveBeginPlay");
 
 	ABP_BloodSplat_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +53,7 @@ void ABP_BloodSplat_C::ReceiveBeginPlay()
 
 void ABP_BloodSplat_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_BloodSplat.BP_BloodSplat_C.ReceiveTick"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_BloodSplat.BP_BloodSplat_C.ReceiveTick");
 
 	ABP_BloodSplat_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -73,7 +73,7 @@ void ABP_BloodSplat_C::ReceiveTick(float* DeltaSeconds)
 
 void ABP_BloodSplat_C::ExecuteUbergraph_BP_BloodSplat(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_BloodSplat.BP_BloodSplat_C.ExecuteUbergraph_BP_BloodSplat"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_BloodSplat.BP_BloodSplat_C.ExecuteUbergraph_BP_BloodSplat");
 
 	ABP_BloodSplat_C_ExecuteUbergraph_BP_BloodSplat_Params params;
 	params.EntryPoint = EntryPoint;

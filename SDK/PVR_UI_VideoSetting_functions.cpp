@@ -19,7 +19,7 @@ namespace SDK
 
 float UUI_VideoSetting_C::Get_SliderWidget_Value_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_VideoSetting.UI_VideoSetting_C.Get_SliderWidget_Value_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_VideoSetting.UI_VideoSetting_C.Get_SliderWidget_Value_1");
 
 	UUI_VideoSetting_C_Get_SliderWidget_Value_1_Params params;
 
@@ -40,7 +40,7 @@ float UUI_VideoSetting_C::Get_SliderWidget_Value_1()
 
 ESlateVisibility UUI_VideoSetting_C::Get_SettingButton_Visibility_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_VideoSetting.UI_VideoSetting_C.Get_SettingButton_Visibility_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_VideoSetting.UI_VideoSetting_C.Get_SettingButton_Visibility_1");
 
 	UUI_VideoSetting_C_Get_SettingButton_Visibility_1_Params params;
 
@@ -61,7 +61,7 @@ ESlateVisibility UUI_VideoSetting_C::Get_SettingButton_Visibility_1()
 
 ESlateVisibility UUI_VideoSetting_C::Get_SliderWidget_Visibility_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_VideoSetting.UI_VideoSetting_C.Get_SliderWidget_Visibility_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_VideoSetting.UI_VideoSetting_C.Get_SliderWidget_Visibility_1");
 
 	UUI_VideoSetting_C_Get_SliderWidget_Visibility_1_Params params;
 
@@ -82,7 +82,7 @@ ESlateVisibility UUI_VideoSetting_C::Get_SliderWidget_Visibility_1()
 
 void UUI_VideoSetting_C::SetValue(int Value)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_VideoSetting.UI_VideoSetting_C.SetValue"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_VideoSetting.UI_VideoSetting_C.SetValue");
 
 	UUI_VideoSetting_C_SetValue_Params params;
 	params.Value = Value;
@@ -102,7 +102,7 @@ void UUI_VideoSetting_C::SetValue(int Value)
 
 void UUI_VideoSetting_C::GetValue(int* Value)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_VideoSetting.UI_VideoSetting_C.GetValue"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_VideoSetting.UI_VideoSetting_C.GetValue");
 
 	UUI_VideoSetting_C_GetValue_Params params;
 
@@ -124,7 +124,7 @@ void UUI_VideoSetting_C::GetValue(int* Value)
 
 struct FSlateBrush UUI_VideoSetting_C::GetBrush_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_VideoSetting.UI_VideoSetting_C.GetBrush_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_VideoSetting.UI_VideoSetting_C.GetBrush_1");
 
 	UUI_VideoSetting_C_GetBrush_1_Params params;
 
@@ -143,7 +143,7 @@ struct FSlateBrush UUI_VideoSetting_C::GetBrush_1()
 
 void UUI_VideoSetting_C::BndEvt__SettingButton_K2Node_ComponentBoundEvent_0_OnValudChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_VideoSetting.UI_VideoSetting_C.BndEvt__SettingButton_K2Node_ComponentBoundEvent_0_OnValudChanged__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_VideoSetting.UI_VideoSetting_C.BndEvt__SettingButton_K2Node_ComponentBoundEvent_0_OnValudChanged__DelegateSignature");
 
 	UUI_VideoSetting_C_BndEvt__SettingButton_K2Node_ComponentBoundEvent_0_OnValudChanged__DelegateSignature_Params params;
 
@@ -162,7 +162,7 @@ void UUI_VideoSetting_C::BndEvt__SettingButton_K2Node_ComponentBoundEvent_0_OnVa
 
 void UUI_VideoSetting_C::BndEvt__SliderWidget_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature(float Value)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_VideoSetting.UI_VideoSetting_C.BndEvt__SliderWidget_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_VideoSetting.UI_VideoSetting_C.BndEvt__SliderWidget_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature");
 
 	UUI_VideoSetting_C_BndEvt__SliderWidget_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature_Params params;
 	params.Value = Value;
@@ -182,7 +182,7 @@ void UUI_VideoSetting_C::BndEvt__SliderWidget_K2Node_ComponentBoundEvent_1_OnFlo
 
 void UUI_VideoSetting_C::ExecuteUbergraph_UI_VideoSetting(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_VideoSetting.UI_VideoSetting_C.ExecuteUbergraph_UI_VideoSetting"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_VideoSetting.UI_VideoSetting_C.ExecuteUbergraph_UI_VideoSetting");
 
 	UUI_VideoSetting_C_ExecuteUbergraph_UI_VideoSetting_Params params;
 	params.EntryPoint = EntryPoint;
@@ -200,7 +200,7 @@ void UUI_VideoSetting_C::ExecuteUbergraph_UI_VideoSetting(int EntryPoint)
 
 void UUI_VideoSetting_C::OnValueChaged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_VideoSetting.UI_VideoSetting_C.OnValueChaged__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_VideoSetting.UI_VideoSetting_C.OnValueChaged__DelegateSignature");
 
 	UUI_VideoSetting_C_OnValueChaged__DelegateSignature_Params params;
 

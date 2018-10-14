@@ -17,7 +17,7 @@ namespace SDK
 
 void AToolTip_MainMenu_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_MainMenu.ToolTip_MainMenu_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_MainMenu.ToolTip_MainMenu_C.UserConstructionScript");
 
 	AToolTip_MainMenu_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void AToolTip_MainMenu_C::UserConstructionScript()
 
 void AToolTip_MainMenu_C::CustomEvent_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_MainMenu.ToolTip_MainMenu_C.CustomEvent_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_MainMenu.ToolTip_MainMenu_C.CustomEvent_1");
 
 	AToolTip_MainMenu_C_CustomEvent_1_Params params;
 
@@ -51,7 +51,7 @@ void AToolTip_MainMenu_C::CustomEvent_1()
 
 void AToolTip_MainMenu_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_MainMenu.ToolTip_MainMenu_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_MainMenu.ToolTip_MainMenu_C.ReceiveBeginPlay");
 
 	AToolTip_MainMenu_C_ReceiveBeginPlay_Params params;
 
@@ -70,7 +70,7 @@ void AToolTip_MainMenu_C::ReceiveBeginPlay()
 
 void AToolTip_MainMenu_C::ExecuteUbergraph_ToolTip_MainMenu(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_MainMenu.ToolTip_MainMenu_C.ExecuteUbergraph_ToolTip_MainMenu"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_MainMenu.ToolTip_MainMenu_C.ExecuteUbergraph_ToolTip_MainMenu");
 
 	AToolTip_MainMenu_C_ExecuteUbergraph_ToolTip_MainMenu_Params params;
 	params.EntryPoint = EntryPoint;

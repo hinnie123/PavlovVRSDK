@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_RoundStart_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_RoundStart.BP_RoundStart_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_RoundStart.BP_RoundStart_C.UserConstructionScript");
 
 	ABP_RoundStart_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void ABP_RoundStart_C::UserConstructionScript()
 
 void ABP_RoundStart_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_RoundStart.BP_RoundStart_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_RoundStart.BP_RoundStart_C.ReceiveBeginPlay");
 
 	ABP_RoundStart_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +53,7 @@ void ABP_RoundStart_C::ReceiveBeginPlay()
 
 void ABP_RoundStart_C::ExecuteUbergraph_BP_RoundStart(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_RoundStart.BP_RoundStart_C.ExecuteUbergraph_BP_RoundStart"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_RoundStart.BP_RoundStart_C.ExecuteUbergraph_BP_RoundStart");
 
 	ABP_RoundStart_C_ExecuteUbergraph_BP_RoundStart_Params params;
 	params.EntryPoint = EntryPoint;

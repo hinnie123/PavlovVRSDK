@@ -21,7 +21,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CableComponent.CableActor"));
+		static auto ptr = UObject::FindClass("Class CableComponent.CableActor");
 		return ptr;
 	}
 
@@ -56,7 +56,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CableComponent.CableComponent"));
+		static auto ptr = UObject::FindClass("Class CableComponent.CableComponent");
 		return ptr;
 	}
 

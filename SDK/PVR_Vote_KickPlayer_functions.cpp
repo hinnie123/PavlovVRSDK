@@ -19,7 +19,7 @@ namespace SDK
 
 void AVote_KickPlayer_C::CreateContentWidget(class UUserWidget** Content)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vote_KickPlayer.Vote_KickPlayer_C.CreateContentWidget"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vote_KickPlayer.Vote_KickPlayer_C.CreateContentWidget");
 
 	AVote_KickPlayer_C_CreateContentWidget_Params params;
 
@@ -39,7 +39,7 @@ void AVote_KickPlayer_C::CreateContentWidget(class UUserWidget** Content)
 
 void AVote_KickPlayer_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vote_KickPlayer.Vote_KickPlayer_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vote_KickPlayer.Vote_KickPlayer_C.UserConstructionScript");
 
 	AVote_KickPlayer_C_UserConstructionScript_Params params;
 
@@ -58,7 +58,7 @@ void AVote_KickPlayer_C::UserConstructionScript()
 
 void AVote_KickPlayer_C::OnVoteEnded(bool* bSucceeded)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vote_KickPlayer.Vote_KickPlayer_C.OnVoteEnded"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vote_KickPlayer.Vote_KickPlayer_C.OnVoteEnded");
 
 	AVote_KickPlayer_C_OnVoteEnded_Params params;
 	params.bSucceeded = bSucceeded;
@@ -78,7 +78,7 @@ void AVote_KickPlayer_C::OnVoteEnded(bool* bSucceeded)
 
 void AVote_KickPlayer_C::ExecuteUbergraph_Vote_KickPlayer(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vote_KickPlayer.Vote_KickPlayer_C.ExecuteUbergraph_Vote_KickPlayer"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vote_KickPlayer.Vote_KickPlayer_C.ExecuteUbergraph_Vote_KickPlayer");
 
 	AVote_KickPlayer_C_ExecuteUbergraph_Vote_KickPlayer_Params params;
 	params.EntryPoint = EntryPoint;

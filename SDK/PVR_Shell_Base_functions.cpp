@@ -19,7 +19,7 @@ namespace SDK
 
 struct FVector AShell_Base_C::GetImpulseVector()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Shell_Base.Shell_Base_C.GetImpulseVector"));
+	static auto fn = UObject::FindObject<UFunction>("Function Shell_Base.Shell_Base_C.GetImpulseVector");
 
 	AShell_Base_C_GetImpulseVector_Params params;
 
@@ -38,7 +38,7 @@ struct FVector AShell_Base_C::GetImpulseVector()
 
 void AShell_Base_C::SetAsLive()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Shell_Base.Shell_Base_C.SetAsLive"));
+	static auto fn = UObject::FindObject<UFunction>("Function Shell_Base.Shell_Base_C.SetAsLive");
 
 	AShell_Base_C_SetAsLive_Params params;
 
@@ -55,7 +55,7 @@ void AShell_Base_C::SetAsLive()
 
 void AShell_Base_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Shell_Base.Shell_Base_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Shell_Base.Shell_Base_C.UserConstructionScript");
 
 	AShell_Base_C_UserConstructionScript_Params params;
 
@@ -72,7 +72,7 @@ void AShell_Base_C::UserConstructionScript()
 
 void AShell_Base_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Shell_Base.Shell_Base_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function Shell_Base.Shell_Base_C.ReceiveBeginPlay");
 
 	AShell_Base_C_ReceiveBeginPlay_Params params;
 
@@ -95,7 +95,7 @@ void AShell_Base_C::ReceiveBeginPlay()
 
 void AShell_Base_C::BndEvt__Mesh_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Shell_Base.Shell_Base_C.BndEvt__Mesh_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function Shell_Base.Shell_Base_C.BndEvt__Mesh_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature");
 
 	AShell_Base_C_BndEvt__Mesh_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature_Params params;
 	params.HitComponent = HitComponent;
@@ -119,7 +119,7 @@ void AShell_Base_C::BndEvt__Mesh_K2Node_ComponentBoundEvent_1_ComponentHitSignat
 
 void AShell_Base_C::ExecuteUbergraph_Shell_Base(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Shell_Base.Shell_Base_C.ExecuteUbergraph_Shell_Base"));
+	static auto fn = UObject::FindObject<UFunction>("Function Shell_Base.Shell_Base_C.ExecuteUbergraph_Shell_Base");
 
 	AShell_Base_C_ExecuteUbergraph_Shell_Base_Params params;
 	params.EntryPoint = EntryPoint;

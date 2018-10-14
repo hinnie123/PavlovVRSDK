@@ -21,7 +21,7 @@ namespace SDK
 
 struct FEventReply UUI_NumPad_Button_C::OnMouseButtonDown(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_NumPad_Button.UI_NumPad_Button_C.OnMouseButtonDown"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_NumPad_Button.UI_NumPad_Button_C.OnMouseButtonDown");
 
 	UUI_NumPad_Button_C_OnMouseButtonDown_Params params;
 	params.MyGeometry = MyGeometry;
@@ -45,7 +45,7 @@ struct FEventReply UUI_NumPad_Button_C::OnMouseButtonDown(struct FGeometry* MyGe
 
 void UUI_NumPad_Button_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_NumPad_Button.UI_NumPad_Button_C.OnMouseEnter"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_NumPad_Button.UI_NumPad_Button_C.OnMouseEnter");
 
 	UUI_NumPad_Button_C_OnMouseEnter_Params params;
 	params.MyGeometry = MyGeometry;
@@ -66,7 +66,7 @@ void UUI_NumPad_Button_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPoi
 
 void UUI_NumPad_Button_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_NumPad_Button.UI_NumPad_Button_C.OnMouseLeave"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_NumPad_Button.UI_NumPad_Button_C.OnMouseLeave");
 
 	UUI_NumPad_Button_C_OnMouseLeave_Params params;
 	params.MouseEvent = MouseEvent;
@@ -84,7 +84,7 @@ void UUI_NumPad_Button_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 
 void UUI_NumPad_Button_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_NumPad_Button.UI_NumPad_Button_C.Construct"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_NumPad_Button.UI_NumPad_Button_C.Construct");
 
 	UUI_NumPad_Button_C_Construct_Params params;
 
@@ -103,7 +103,7 @@ void UUI_NumPad_Button_C::Construct()
 
 void UUI_NumPad_Button_C::ExecuteUbergraph_UI_NumPad_Button(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_NumPad_Button.UI_NumPad_Button_C.ExecuteUbergraph_UI_NumPad_Button"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_NumPad_Button.UI_NumPad_Button_C.ExecuteUbergraph_UI_NumPad_Button");
 
 	UUI_NumPad_Button_C_ExecuteUbergraph_UI_NumPad_Button_Params params;
 	params.EntryPoint = EntryPoint;
@@ -123,7 +123,7 @@ void UUI_NumPad_Button_C::ExecuteUbergraph_UI_NumPad_Button(int EntryPoint)
 
 void UUI_NumPad_Button_C::OnClick__DelegateSignature(int Value)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_NumPad_Button.UI_NumPad_Button_C.OnClick__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_NumPad_Button.UI_NumPad_Button_C.OnClick__DelegateSignature");
 
 	UUI_NumPad_Button_C_OnClick__DelegateSignature_Params params;
 	params.Value = Value;

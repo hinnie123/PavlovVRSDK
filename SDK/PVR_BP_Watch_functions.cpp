@@ -19,7 +19,7 @@ namespace SDK
 
 void UBP_Watch_C::OnKillConfirmationPush(class APavlovPlayerState** Victim)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Watch.BP_Watch_C.OnKillConfirmationPush"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Watch.BP_Watch_C.OnKillConfirmationPush");
 
 	UBP_Watch_C_OnKillConfirmationPush_Params params;
 	params.Victim = Victim;
@@ -39,7 +39,7 @@ void UBP_Watch_C::OnKillConfirmationPush(class APavlovPlayerState** Victim)
 
 void UBP_Watch_C::ExecuteUbergraph_BP_Watch(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Watch.BP_Watch_C.ExecuteUbergraph_BP_Watch"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Watch.BP_Watch_C.ExecuteUbergraph_BP_Watch");
 
 	UBP_Watch_C_ExecuteUbergraph_BP_Watch_Params params;
 	params.EntryPoint = EntryPoint;

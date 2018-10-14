@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_GlassPanel_C::OnRep_Broken()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_GlassPanel.BP_GlassPanel_C.OnRep_Broken"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_GlassPanel.BP_GlassPanel_C.OnRep_Broken");
 
 	ABP_GlassPanel_C_OnRep_Broken_Params params;
 
@@ -34,7 +34,7 @@ void ABP_GlassPanel_C::OnRep_Broken()
 
 void ABP_GlassPanel_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_GlassPanel.BP_GlassPanel_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_GlassPanel.BP_GlassPanel_C.UserConstructionScript");
 
 	ABP_GlassPanel_C_UserConstructionScript_Params params;
 
@@ -57,7 +57,7 @@ void ABP_GlassPanel_C::UserConstructionScript()
 
 void ABP_GlassPanel_C::BndEvt__Collision_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_GlassPanel.BP_GlassPanel_C.BndEvt__Collision_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_GlassPanel.BP_GlassPanel_C.BndEvt__Collision_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature");
 
 	ABP_GlassPanel_C_BndEvt__Collision_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature_Params params;
 	params.HitComponent = HitComponent;
@@ -79,7 +79,7 @@ void ABP_GlassPanel_C::BndEvt__Collision_K2Node_ComponentBoundEvent_0_ComponentH
 
 void ABP_GlassPanel_C::UpdateState()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_GlassPanel.BP_GlassPanel_C.UpdateState"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_GlassPanel.BP_GlassPanel_C.UpdateState");
 
 	ABP_GlassPanel_C_UpdateState_Params params;
 
@@ -96,7 +96,7 @@ void ABP_GlassPanel_C::UpdateState()
 
 void ABP_GlassPanel_C::PlayHitSound()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_GlassPanel.BP_GlassPanel_C.PlayHitSound"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_GlassPanel.BP_GlassPanel_C.PlayHitSound");
 
 	ABP_GlassPanel_C_PlayHitSound_Params params;
 
@@ -116,7 +116,7 @@ void ABP_GlassPanel_C::PlayHitSound()
 
 void ABP_GlassPanel_C::OnShatter(struct FVector* Normal, struct FVector* Location)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_GlassPanel.BP_GlassPanel_C.OnShatter"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_GlassPanel.BP_GlassPanel_C.OnShatter");
 
 	ABP_GlassPanel_C_OnShatter_Params params;
 	params.Normal = Normal;
@@ -137,7 +137,7 @@ void ABP_GlassPanel_C::OnShatter(struct FVector* Normal, struct FVector* Locatio
 
 void ABP_GlassPanel_C::ExecuteUbergraph_BP_GlassPanel(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_GlassPanel.BP_GlassPanel_C.ExecuteUbergraph_BP_GlassPanel"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_GlassPanel.BP_GlassPanel_C.ExecuteUbergraph_BP_GlassPanel");
 
 	ABP_GlassPanel_C_ExecuteUbergraph_BP_GlassPanel_Params params;
 	params.EntryPoint = EntryPoint;

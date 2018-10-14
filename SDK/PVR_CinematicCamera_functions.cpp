@@ -19,7 +19,7 @@ namespace SDK
 
 class UCineCameraComponent* ACineCameraActor::GetCineCameraComponent()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function CinematicCamera.CineCameraActor.GetCineCameraComponent"));
+	static auto fn = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraActor.GetCineCameraComponent");
 
 	ACineCameraActor_GetCineCameraComponent_Params params;
 
@@ -41,7 +41,7 @@ class UCineCameraComponent* ACineCameraActor::GetCineCameraComponent()
 
 float UCineCameraComponent::GetVerticalFieldOfView()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function CinematicCamera.CineCameraComponent.GetVerticalFieldOfView"));
+	static auto fn = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraComponent.GetVerticalFieldOfView");
 
 	UCineCameraComponent_GetVerticalFieldOfView_Params params;
 
@@ -63,7 +63,7 @@ float UCineCameraComponent::GetVerticalFieldOfView()
 
 float UCineCameraComponent::GetHorizontalFieldOfView()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function CinematicCamera.CineCameraComponent.GetHorizontalFieldOfView"));
+	static auto fn = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraComponent.GetHorizontalFieldOfView");
 
 	UCineCameraComponent_GetHorizontalFieldOfView_Params params;
 

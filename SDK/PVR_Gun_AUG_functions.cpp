@@ -19,7 +19,7 @@ namespace SDK
 
 void AGun_AUG_C::SetScopeCapture(bool Enabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_AUG.Gun_AUG_C.SetScopeCapture"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_AUG.Gun_AUG_C.SetScopeCapture");
 
 	AGun_AUG_C_SetScopeCapture_Params params;
 	params.Enabled = Enabled;
@@ -37,7 +37,7 @@ void AGun_AUG_C::SetScopeCapture(bool Enabled)
 
 void AGun_AUG_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_AUG.Gun_AUG_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_AUG.Gun_AUG_C.UserConstructionScript");
 
 	AGun_AUG_C_UserConstructionScript_Params params;
 
@@ -56,7 +56,7 @@ void AGun_AUG_C::UserConstructionScript()
 
 void AGun_AUG_C::OnPick(class AVRItemController** ByController)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_AUG.Gun_AUG_C.OnPick"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_AUG.Gun_AUG_C.OnPick");
 
 	AGun_AUG_C_OnPick_Params params;
 	params.ByController = ByController;
@@ -74,7 +74,7 @@ void AGun_AUG_C::OnPick(class AVRItemController** ByController)
 
 void AGun_AUG_C::OnDrop()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_AUG.Gun_AUG_C.OnDrop"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_AUG.Gun_AUG_C.OnDrop");
 
 	AGun_AUG_C_OnDrop_Params params;
 
@@ -93,7 +93,7 @@ void AGun_AUG_C::OnDrop()
 
 void AGun_AUG_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_AUG.Gun_AUG_C.ReceiveTick"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_AUG.Gun_AUG_C.ReceiveTick");
 
 	AGun_AUG_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -113,7 +113,7 @@ void AGun_AUG_C::ReceiveTick(float* DeltaSeconds)
 
 void AGun_AUG_C::ExecuteUbergraph_Gun_AUG(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_AUG.Gun_AUG_C.ExecuteUbergraph_Gun_AUG"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_AUG.Gun_AUG_C.ExecuteUbergraph_Gun_AUG");
 
 	AGun_AUG_C_ExecuteUbergraph_Gun_AUG_Params params;
 	params.EntryPoint = EntryPoint;

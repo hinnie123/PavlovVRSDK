@@ -21,7 +21,7 @@ namespace SDK
 
 bool URoundTime_C::PerformConditionCheckAI(class AAIController** OwnerController, class APawn** ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function RoundTime.RoundTime_C.PerformConditionCheckAI"));
+	static auto fn = UObject::FindObject<UFunction>("Function RoundTime.RoundTime_C.PerformConditionCheckAI");
 
 	URoundTime_C_PerformConditionCheckAI_Params params;
 	params.OwnerController = OwnerController;

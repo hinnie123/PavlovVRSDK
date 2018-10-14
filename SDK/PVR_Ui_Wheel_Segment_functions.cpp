@@ -19,7 +19,7 @@ namespace SDK
 
 void UUi_Wheel_Segment_C::Update(const struct FWheelSegment& SegmentData)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Ui_Wheel_Segment.Ui_Wheel_Segment_C.Update"));
+	static auto fn = UObject::FindObject<UFunction>("Function Ui_Wheel_Segment.Ui_Wheel_Segment_C.Update");
 
 	UUi_Wheel_Segment_C_Update_Params params;
 	params.SegmentData = SegmentData;
@@ -39,7 +39,7 @@ void UUi_Wheel_Segment_C::Update(const struct FWheelSegment& SegmentData)
 
 struct FLinearColor UUi_Wheel_Segment_C::Get_Background_ColorAndOpacity_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Ui_Wheel_Segment.Ui_Wheel_Segment_C.Get_Background_ColorAndOpacity_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function Ui_Wheel_Segment.Ui_Wheel_Segment_C.Get_Background_ColorAndOpacity_1");
 
 	UUi_Wheel_Segment_C_Get_Background_ColorAndOpacity_1_Params params;
 
@@ -60,7 +60,7 @@ struct FLinearColor UUi_Wheel_Segment_C::Get_Background_ColorAndOpacity_1()
 
 void UUi_Wheel_Segment_C::SetRadialAngle(float Angle)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Ui_Wheel_Segment.Ui_Wheel_Segment_C.SetRadialAngle"));
+	static auto fn = UObject::FindObject<UFunction>("Function Ui_Wheel_Segment.Ui_Wheel_Segment_C.SetRadialAngle");
 
 	UUi_Wheel_Segment_C_SetRadialAngle_Params params;
 	params.Angle = Angle;
@@ -81,7 +81,7 @@ void UUi_Wheel_Segment_C::SetRadialAngle(float Angle)
 
 void UUi_Wheel_Segment_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Ui_Wheel_Segment.Ui_Wheel_Segment_C.Tick"));
+	static auto fn = UObject::FindObject<UFunction>("Function Ui_Wheel_Segment.Ui_Wheel_Segment_C.Tick");
 
 	UUi_Wheel_Segment_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -102,7 +102,7 @@ void UUi_Wheel_Segment_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 
 void UUi_Wheel_Segment_C::ExecuteUbergraph_Ui_Wheel_Segment(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Ui_Wheel_Segment.Ui_Wheel_Segment_C.ExecuteUbergraph_Ui_Wheel_Segment"));
+	static auto fn = UObject::FindObject<UFunction>("Function Ui_Wheel_Segment.Ui_Wheel_Segment_C.ExecuteUbergraph_Ui_Wheel_Segment");
 
 	UUi_Wheel_Segment_C_ExecuteUbergraph_Ui_Wheel_Segment_Params params;
 	params.EntryPoint = EntryPoint;

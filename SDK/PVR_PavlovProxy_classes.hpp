@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class PavlovProxy.Pavlov_BombSpot"));
+		static auto ptr = UObject::FindClass("Class PavlovProxy.Pavlov_BombSpot");
 		return ptr;
 	}
 
@@ -37,7 +37,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class PavlovProxy.Pavlov_CosmeticActor"));
+		static auto ptr = UObject::FindClass("Class PavlovProxy.Pavlov_CosmeticActor");
 		return ptr;
 	}
 
@@ -52,7 +52,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class PavlovProxy.Pavlov_Destructible"));
+		static auto ptr = UObject::FindClass("Class PavlovProxy.Pavlov_Destructible");
 		return ptr;
 	}
 
@@ -78,7 +78,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class PavlovProxy.Pavlov_Map"));
+		static auto ptr = UObject::FindClass("Class PavlovProxy.Pavlov_Map");
 		return ptr;
 	}
 
@@ -96,7 +96,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class PavlovProxy.Pavlov_GameLogic"));
+		static auto ptr = UObject::FindClass("Class PavlovProxy.Pavlov_GameLogic");
 		return ptr;
 	}
 
@@ -116,7 +116,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class PavlovProxy.Pavlov_KillVolume"));
+		static auto ptr = UObject::FindClass("Class PavlovProxy.Pavlov_KillVolume");
 		return ptr;
 	}
 
@@ -134,7 +134,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class PavlovProxy.Pavlov_Ladder"));
+		static auto ptr = UObject::FindClass("Class PavlovProxy.Pavlov_Ladder");
 		return ptr;
 	}
 
@@ -154,7 +154,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class PavlovProxy.Pavlov_Spawn"));
+		static auto ptr = UObject::FindClass("Class PavlovProxy.Pavlov_Spawn");
 		return ptr;
 	}
 
@@ -169,7 +169,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class PavlovProxy.Pavlov_Waypoint"));
+		static auto ptr = UObject::FindClass("Class PavlovProxy.Pavlov_Waypoint");
 		return ptr;
 	}
 

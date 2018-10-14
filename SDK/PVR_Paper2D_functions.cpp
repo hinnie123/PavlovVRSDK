@@ -20,7 +20,7 @@ namespace SDK
 
 bool UPaperFlipbook::IsValidKeyFrameIndex(int Index)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbook.IsValidKeyFrameIndex"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbook.IsValidKeyFrameIndex");
 
 	UPaperFlipbook_IsValidKeyFrameIndex_Params params;
 	params.Index = Index;
@@ -43,7 +43,7 @@ bool UPaperFlipbook::IsValidKeyFrameIndex(int Index)
 
 float UPaperFlipbook::GetTotalDuration()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbook.GetTotalDuration"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbook.GetTotalDuration");
 
 	UPaperFlipbook_GetTotalDuration_Params params;
 
@@ -67,7 +67,7 @@ float UPaperFlipbook::GetTotalDuration()
 
 class UPaperSprite* UPaperFlipbook::GetSpriteAtTime(float Time, bool bClampToEnds)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbook.GetSpriteAtTime"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbook.GetSpriteAtTime");
 
 	UPaperFlipbook_GetSpriteAtTime_Params params;
 	params.Time = Time;
@@ -92,7 +92,7 @@ class UPaperSprite* UPaperFlipbook::GetSpriteAtTime(float Time, bool bClampToEnd
 
 class UPaperSprite* UPaperFlipbook::GetSpriteAtFrame(int FrameIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbook.GetSpriteAtFrame"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbook.GetSpriteAtFrame");
 
 	UPaperFlipbook_GetSpriteAtFrame_Params params;
 	params.FrameIndex = FrameIndex;
@@ -115,7 +115,7 @@ class UPaperSprite* UPaperFlipbook::GetSpriteAtFrame(int FrameIndex)
 
 int UPaperFlipbook::GetNumKeyFrames()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbook.GetNumKeyFrames"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbook.GetNumKeyFrames");
 
 	UPaperFlipbook_GetNumKeyFrames_Params params;
 
@@ -137,7 +137,7 @@ int UPaperFlipbook::GetNumKeyFrames()
 
 int UPaperFlipbook::GetNumFrames()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbook.GetNumFrames"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbook.GetNumFrames");
 
 	UPaperFlipbook_GetNumFrames_Params params;
 
@@ -161,7 +161,7 @@ int UPaperFlipbook::GetNumFrames()
 
 int UPaperFlipbook::GetKeyFrameIndexAtTime(float Time, bool bClampToEnds)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbook.GetKeyFrameIndexAtTime"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbook.GetKeyFrameIndexAtTime");
 
 	UPaperFlipbook_GetKeyFrameIndexAtTime_Params params;
 	params.Time = Time;
@@ -183,7 +183,7 @@ int UPaperFlipbook::GetKeyFrameIndexAtTime(float Time, bool bClampToEnds)
 
 void UPaperFlipbookComponent::Stop()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbookComponent.Stop"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbookComponent.Stop");
 
 	UPaperFlipbookComponent_Stop_Params params;
 
@@ -203,7 +203,7 @@ void UPaperFlipbookComponent::Stop()
 
 void UPaperFlipbookComponent::SetSpriteColor(const struct FLinearColor& NewColor)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbookComponent.SetSpriteColor"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbookComponent.SetSpriteColor");
 
 	UPaperFlipbookComponent_SetSpriteColor_Params params;
 	params.NewColor = NewColor;
@@ -224,7 +224,7 @@ void UPaperFlipbookComponent::SetSpriteColor(const struct FLinearColor& NewColor
 
 void UPaperFlipbookComponent::SetPlayRate(float NewRate)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbookComponent.SetPlayRate"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbookComponent.SetPlayRate");
 
 	UPaperFlipbookComponent_SetPlayRate_Params params;
 	params.NewRate = NewRate;
@@ -246,7 +246,7 @@ void UPaperFlipbookComponent::SetPlayRate(float NewRate)
 
 void UPaperFlipbookComponent::SetPlaybackPositionInFrames(int NewFramePosition, bool bFireEvents)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbookComponent.SetPlaybackPositionInFrames"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbookComponent.SetPlaybackPositionInFrames");
 
 	UPaperFlipbookComponent_SetPlaybackPositionInFrames_Params params;
 	params.NewFramePosition = NewFramePosition;
@@ -269,7 +269,7 @@ void UPaperFlipbookComponent::SetPlaybackPositionInFrames(int NewFramePosition, 
 
 void UPaperFlipbookComponent::SetPlaybackPosition(float NewPosition, bool bFireEvents)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbookComponent.SetPlaybackPosition"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbookComponent.SetPlaybackPosition");
 
 	UPaperFlipbookComponent_SetPlaybackPosition_Params params;
 	params.NewPosition = NewPosition;
@@ -291,7 +291,7 @@ void UPaperFlipbookComponent::SetPlaybackPosition(float NewPosition, bool bFireE
 
 void UPaperFlipbookComponent::SetNewTime(float NewTime)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbookComponent.SetNewTime"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbookComponent.SetNewTime");
 
 	UPaperFlipbookComponent_SetNewTime_Params params;
 	params.NewTime = NewTime;
@@ -312,7 +312,7 @@ void UPaperFlipbookComponent::SetNewTime(float NewTime)
 
 void UPaperFlipbookComponent::SetLooping(bool bNewLooping)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbookComponent.SetLooping"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbookComponent.SetLooping");
 
 	UPaperFlipbookComponent_SetLooping_Params params;
 	params.bNewLooping = bNewLooping;
@@ -334,7 +334,7 @@ void UPaperFlipbookComponent::SetLooping(bool bNewLooping)
 
 bool UPaperFlipbookComponent::SetFlipbook(class UPaperFlipbook* NewFlipbook)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbookComponent.SetFlipbook"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbookComponent.SetFlipbook");
 
 	UPaperFlipbookComponent_SetFlipbook_Params params;
 	params.NewFlipbook = NewFlipbook;
@@ -355,7 +355,7 @@ bool UPaperFlipbookComponent::SetFlipbook(class UPaperFlipbook* NewFlipbook)
 
 void UPaperFlipbookComponent::ReverseFromEnd()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbookComponent.ReverseFromEnd"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbookComponent.ReverseFromEnd");
 
 	UPaperFlipbookComponent_ReverseFromEnd_Params params;
 
@@ -373,7 +373,7 @@ void UPaperFlipbookComponent::ReverseFromEnd()
 
 void UPaperFlipbookComponent::Reverse()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbookComponent.Reverse"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbookComponent.Reverse");
 
 	UPaperFlipbookComponent_Reverse_Params params;
 
@@ -391,7 +391,7 @@ void UPaperFlipbookComponent::Reverse()
 
 void UPaperFlipbookComponent::PlayFromStart()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbookComponent.PlayFromStart"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbookComponent.PlayFromStart");
 
 	UPaperFlipbookComponent_PlayFromStart_Params params;
 
@@ -409,7 +409,7 @@ void UPaperFlipbookComponent::PlayFromStart()
 
 void UPaperFlipbookComponent::Play()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbookComponent.Play"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbookComponent.Play");
 
 	UPaperFlipbookComponent_Play_Params params;
 
@@ -429,7 +429,7 @@ void UPaperFlipbookComponent::Play()
 
 void UPaperFlipbookComponent::OnRep_SourceFlipbook(class UPaperFlipbook* OldFlipbook)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbookComponent.OnRep_SourceFlipbook"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbookComponent.OnRep_SourceFlipbook");
 
 	UPaperFlipbookComponent_OnRep_SourceFlipbook_Params params;
 	params.OldFlipbook = OldFlipbook;
@@ -450,7 +450,7 @@ void UPaperFlipbookComponent::OnRep_SourceFlipbook(class UPaperFlipbook* OldFlip
 
 bool UPaperFlipbookComponent::IsReversing()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbookComponent.IsReversing"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbookComponent.IsReversing");
 
 	UPaperFlipbookComponent_IsReversing_Params params;
 
@@ -472,7 +472,7 @@ bool UPaperFlipbookComponent::IsReversing()
 
 bool UPaperFlipbookComponent::IsPlaying()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbookComponent.IsPlaying"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbookComponent.IsPlaying");
 
 	UPaperFlipbookComponent_IsPlaying_Params params;
 
@@ -494,7 +494,7 @@ bool UPaperFlipbookComponent::IsPlaying()
 
 bool UPaperFlipbookComponent::IsLooping()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbookComponent.IsLooping"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbookComponent.IsLooping");
 
 	UPaperFlipbookComponent_IsLooping_Params params;
 
@@ -516,7 +516,7 @@ bool UPaperFlipbookComponent::IsLooping()
 
 class UMaterialInterface* UPaperFlipbookComponent::GetSpriteMaterial()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbookComponent.GetSpriteMaterial"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbookComponent.GetSpriteMaterial");
 
 	UPaperFlipbookComponent_GetSpriteMaterial_Params params;
 
@@ -538,7 +538,7 @@ class UMaterialInterface* UPaperFlipbookComponent::GetSpriteMaterial()
 
 float UPaperFlipbookComponent::GetPlayRate()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbookComponent.GetPlayRate"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbookComponent.GetPlayRate");
 
 	UPaperFlipbookComponent_GetPlayRate_Params params;
 
@@ -560,7 +560,7 @@ float UPaperFlipbookComponent::GetPlayRate()
 
 int UPaperFlipbookComponent::GetPlaybackPositionInFrames()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbookComponent.GetPlaybackPositionInFrames"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbookComponent.GetPlaybackPositionInFrames");
 
 	UPaperFlipbookComponent_GetPlaybackPositionInFrames_Params params;
 
@@ -582,7 +582,7 @@ int UPaperFlipbookComponent::GetPlaybackPositionInFrames()
 
 float UPaperFlipbookComponent::GetPlaybackPosition()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbookComponent.GetPlaybackPosition"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbookComponent.GetPlaybackPosition");
 
 	UPaperFlipbookComponent_GetPlaybackPosition_Params params;
 
@@ -604,7 +604,7 @@ float UPaperFlipbookComponent::GetPlaybackPosition()
 
 int UPaperFlipbookComponent::GetFlipbookLengthInFrames()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbookComponent.GetFlipbookLengthInFrames"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbookComponent.GetFlipbookLengthInFrames");
 
 	UPaperFlipbookComponent_GetFlipbookLengthInFrames_Params params;
 
@@ -626,7 +626,7 @@ int UPaperFlipbookComponent::GetFlipbookLengthInFrames()
 
 float UPaperFlipbookComponent::GetFlipbookLength()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbookComponent.GetFlipbookLength"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbookComponent.GetFlipbookLength");
 
 	UPaperFlipbookComponent_GetFlipbookLength_Params params;
 
@@ -648,7 +648,7 @@ float UPaperFlipbookComponent::GetFlipbookLength()
 
 float UPaperFlipbookComponent::GetFlipbookFramerate()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbookComponent.GetFlipbookFramerate"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbookComponent.GetFlipbookFramerate");
 
 	UPaperFlipbookComponent_GetFlipbookFramerate_Params params;
 
@@ -670,7 +670,7 @@ float UPaperFlipbookComponent::GetFlipbookFramerate()
 
 class UPaperFlipbook* UPaperFlipbookComponent::GetFlipbook()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperFlipbookComponent.GetFlipbook"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperFlipbookComponent.GetFlipbook");
 
 	UPaperFlipbookComponent_GetFlipbook_Params params;
 
@@ -697,7 +697,7 @@ class UPaperFlipbook* UPaperFlipbookComponent::GetFlipbook()
 
 bool UPaperGroupedSpriteComponent::UpdateInstanceTransform(int InstanceIndex, const struct FTransform& NewInstanceTransform, bool bWorldSpace, bool bMarkRenderStateDirty, bool bTeleport)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperGroupedSpriteComponent.UpdateInstanceTransform"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperGroupedSpriteComponent.UpdateInstanceTransform");
 
 	UPaperGroupedSpriteComponent_UpdateInstanceTransform_Params params;
 	params.InstanceIndex = InstanceIndex;
@@ -727,7 +727,7 @@ bool UPaperGroupedSpriteComponent::UpdateInstanceTransform(int InstanceIndex, co
 
 bool UPaperGroupedSpriteComponent::UpdateInstanceColor(int InstanceIndex, const struct FLinearColor& NewInstanceColor, bool bMarkRenderStateDirty)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperGroupedSpriteComponent.UpdateInstanceColor"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperGroupedSpriteComponent.UpdateInstanceColor");
 
 	UPaperGroupedSpriteComponent_UpdateInstanceColor_Params params;
 	params.InstanceIndex = InstanceIndex;
@@ -752,7 +752,7 @@ bool UPaperGroupedSpriteComponent::UpdateInstanceColor(int InstanceIndex, const 
 
 void UPaperGroupedSpriteComponent::SortInstancesAlongAxis(const struct FVector& WorldSpaceSortAxis)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperGroupedSpriteComponent.SortInstancesAlongAxis"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperGroupedSpriteComponent.SortInstancesAlongAxis");
 
 	UPaperGroupedSpriteComponent_SortInstancesAlongAxis_Params params;
 	params.WorldSpaceSortAxis = WorldSpaceSortAxis;
@@ -774,7 +774,7 @@ void UPaperGroupedSpriteComponent::SortInstancesAlongAxis(const struct FVector& 
 
 bool UPaperGroupedSpriteComponent::RemoveInstance(int InstanceIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperGroupedSpriteComponent.RemoveInstance"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperGroupedSpriteComponent.RemoveInstance");
 
 	UPaperGroupedSpriteComponent_RemoveInstance_Params params;
 	params.InstanceIndex = InstanceIndex;
@@ -800,7 +800,7 @@ bool UPaperGroupedSpriteComponent::RemoveInstance(int InstanceIndex)
 
 bool UPaperGroupedSpriteComponent::GetInstanceTransform(int InstanceIndex, bool bWorldSpace, struct FTransform* OutInstanceTransform)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperGroupedSpriteComponent.GetInstanceTransform"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperGroupedSpriteComponent.GetInstanceTransform");
 
 	UPaperGroupedSpriteComponent_GetInstanceTransform_Params params;
 	params.InstanceIndex = InstanceIndex;
@@ -827,7 +827,7 @@ bool UPaperGroupedSpriteComponent::GetInstanceTransform(int InstanceIndex, bool 
 
 int UPaperGroupedSpriteComponent::GetInstanceCount()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperGroupedSpriteComponent.GetInstanceCount"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperGroupedSpriteComponent.GetInstanceCount");
 
 	UPaperGroupedSpriteComponent_GetInstanceCount_Params params;
 
@@ -847,7 +847,7 @@ int UPaperGroupedSpriteComponent::GetInstanceCount()
 
 void UPaperGroupedSpriteComponent::ClearInstances()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperGroupedSpriteComponent.ClearInstances"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperGroupedSpriteComponent.ClearInstances");
 
 	UPaperGroupedSpriteComponent_ClearInstances_Params params;
 
@@ -871,7 +871,7 @@ void UPaperGroupedSpriteComponent::ClearInstances()
 
 int UPaperGroupedSpriteComponent::AddInstance(const struct FTransform& Transform, class UPaperSprite* Sprite, bool bWorldSpace, const struct FLinearColor& Color)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperGroupedSpriteComponent.AddInstance"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperGroupedSpriteComponent.AddInstance");
 
 	UPaperGroupedSpriteComponent_AddInstance_Params params;
 	params.Transform = Transform;
@@ -897,7 +897,7 @@ int UPaperGroupedSpriteComponent::AddInstance(const struct FTransform& Transform
 
 void UPaperSpriteComponent::SetSpriteColor(const struct FLinearColor& NewColor)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperSpriteComponent.SetSpriteColor"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperSpriteComponent.SetSpriteColor");
 
 	UPaperSpriteComponent_SetSpriteColor_Params params;
 	params.NewColor = NewColor;
@@ -919,7 +919,7 @@ void UPaperSpriteComponent::SetSpriteColor(const struct FLinearColor& NewColor)
 
 bool UPaperSpriteComponent::SetSprite(class UPaperSprite* NewSprite)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperSpriteComponent.SetSprite"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperSpriteComponent.SetSprite");
 
 	UPaperSpriteComponent_SetSprite_Params params;
 	params.NewSprite = NewSprite;
@@ -942,7 +942,7 @@ bool UPaperSpriteComponent::SetSprite(class UPaperSprite* NewSprite)
 
 class UPaperSprite* UPaperSpriteComponent::GetSprite()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperSpriteComponent.GetSprite"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperSpriteComponent.GetSprite");
 
 	UPaperSpriteComponent_GetSprite_Params params;
 
@@ -964,7 +964,7 @@ class UPaperSprite* UPaperSpriteComponent::GetSprite()
 
 void UPaperTerrainComponent::SetTerrainColor(const struct FLinearColor& NewColor)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperTerrainComponent.SetTerrainColor"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperTerrainComponent.SetTerrainColor");
 
 	UPaperTerrainComponent_SetTerrainColor_Params params;
 	params.NewColor = NewColor;
@@ -985,7 +985,7 @@ void UPaperTerrainComponent::SetTerrainColor(const struct FLinearColor& NewColor
 
 void UPaperTileMapComponent::SetTileMapColor(const struct FLinearColor& NewColor)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperTileMapComponent.SetTileMapColor"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperTileMapComponent.SetTileMapColor");
 
 	UPaperTileMapComponent_SetTileMapColor_Params params;
 	params.NewColor = NewColor;
@@ -1007,7 +1007,7 @@ void UPaperTileMapComponent::SetTileMapColor(const struct FLinearColor& NewColor
 
 bool UPaperTileMapComponent::SetTileMap(class UPaperTileMap* NewTileMap)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperTileMapComponent.SetTileMap"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperTileMapComponent.SetTileMap");
 
 	UPaperTileMapComponent_SetTileMap_Params params;
 	params.NewTileMap = NewTileMap;
@@ -1033,7 +1033,7 @@ bool UPaperTileMapComponent::SetTileMap(class UPaperTileMap* NewTileMap)
 
 void UPaperTileMapComponent::SetTile(int X, int Y, int Layer, const struct FPaperTileInfo& NewValue)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperTileMapComponent.SetTile"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperTileMapComponent.SetTile");
 
 	UPaperTileMapComponent_SetTile_Params params;
 	params.X = X;
@@ -1058,7 +1058,7 @@ void UPaperTileMapComponent::SetTile(int X, int Y, int Layer, const struct FPape
 
 void UPaperTileMapComponent::SetLayerColor(const struct FLinearColor& NewColor, int Layer)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperTileMapComponent.SetLayerColor"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperTileMapComponent.SetLayerColor");
 
 	UPaperTileMapComponent_SetLayerColor_Params params;
 	params.NewColor = NewColor;
@@ -1086,7 +1086,7 @@ void UPaperTileMapComponent::SetLayerColor(const struct FLinearColor& NewColor, 
 
 void UPaperTileMapComponent::SetLayerCollision(int Layer, bool bHasCollision, bool bOverrideThickness, float CustomThickness, bool bOverrideOffset, float CustomOffset, bool bRebuildCollision)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperTileMapComponent.SetLayerCollision"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperTileMapComponent.SetLayerCollision");
 
 	UPaperTileMapComponent_SetLayerCollision_Params params;
 	params.Layer = Layer;
@@ -1114,7 +1114,7 @@ void UPaperTileMapComponent::SetLayerCollision(int Layer, bool bHasCollision, bo
 
 void UPaperTileMapComponent::SetDefaultCollisionThickness(float Thickness, bool bRebuildCollision)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperTileMapComponent.SetDefaultCollisionThickness"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperTileMapComponent.SetDefaultCollisionThickness");
 
 	UPaperTileMapComponent_SetDefaultCollisionThickness_Params params;
 	params.Thickness = Thickness;
@@ -1137,7 +1137,7 @@ void UPaperTileMapComponent::SetDefaultCollisionThickness(float Thickness, bool 
 
 void UPaperTileMapComponent::ResizeMap(int NewWidthInTiles, int NewHeightInTiles)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperTileMapComponent.ResizeMap"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperTileMapComponent.ResizeMap");
 
 	UPaperTileMapComponent_ResizeMap_Params params;
 	params.NewWidthInTiles = NewWidthInTiles;
@@ -1157,7 +1157,7 @@ void UPaperTileMapComponent::ResizeMap(int NewWidthInTiles, int NewHeightInTiles
 
 void UPaperTileMapComponent::RebuildCollision()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperTileMapComponent.RebuildCollision"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperTileMapComponent.RebuildCollision");
 
 	UPaperTileMapComponent_RebuildCollision_Params params;
 
@@ -1177,7 +1177,7 @@ void UPaperTileMapComponent::RebuildCollision()
 
 bool UPaperTileMapComponent::OwnsTileMap()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperTileMapComponent.OwnsTileMap"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperTileMapComponent.OwnsTileMap");
 
 	UPaperTileMapComponent_OwnsTileMap_Params params;
 
@@ -1197,7 +1197,7 @@ bool UPaperTileMapComponent::OwnsTileMap()
 
 void UPaperTileMapComponent::MakeTileMapEditable()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperTileMapComponent.MakeTileMapEditable"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperTileMapComponent.MakeTileMapEditable");
 
 	UPaperTileMapComponent_MakeTileMapEditable_Params params;
 
@@ -1221,7 +1221,7 @@ void UPaperTileMapComponent::MakeTileMapEditable()
 
 void UPaperTileMapComponent::GetTilePolygon(int TileX, int TileY, int LayerIndex, bool bWorldSpace, TArray<struct FVector>* Points)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperTileMapComponent.GetTilePolygon"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperTileMapComponent.GetTilePolygon");
 
 	UPaperTileMapComponent_GetTilePolygon_Params params;
 	params.TileX = TileX;
@@ -1248,7 +1248,7 @@ void UPaperTileMapComponent::GetTilePolygon(int TileX, int TileY, int LayerIndex
 
 struct FLinearColor UPaperTileMapComponent::GetTileMapColor()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperTileMapComponent.GetTileMapColor"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperTileMapComponent.GetTileMapColor");
 
 	UPaperTileMapComponent_GetTileMapColor_Params params;
 
@@ -1274,7 +1274,7 @@ struct FLinearColor UPaperTileMapComponent::GetTileMapColor()
 
 struct FVector UPaperTileMapComponent::GetTileCornerPosition(int TileX, int TileY, int LayerIndex, bool bWorldSpace)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperTileMapComponent.GetTileCornerPosition"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperTileMapComponent.GetTileCornerPosition");
 
 	UPaperTileMapComponent_GetTileCornerPosition_Params params;
 	params.TileX = TileX;
@@ -1304,7 +1304,7 @@ struct FVector UPaperTileMapComponent::GetTileCornerPosition(int TileX, int Tile
 
 struct FVector UPaperTileMapComponent::GetTileCenterPosition(int TileX, int TileY, int LayerIndex, bool bWorldSpace)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperTileMapComponent.GetTileCenterPosition"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperTileMapComponent.GetTileCenterPosition");
 
 	UPaperTileMapComponent_GetTileCenterPosition_Params params;
 	params.TileX = TileX;
@@ -1333,7 +1333,7 @@ struct FVector UPaperTileMapComponent::GetTileCenterPosition(int TileX, int Tile
 
 struct FPaperTileInfo UPaperTileMapComponent::GetTile(int X, int Y, int Layer)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperTileMapComponent.GetTile"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperTileMapComponent.GetTile");
 
 	UPaperTileMapComponent_GetTile_Params params;
 	params.X = X;
@@ -1360,7 +1360,7 @@ struct FPaperTileInfo UPaperTileMapComponent::GetTile(int X, int Y, int Layer)
 
 void UPaperTileMapComponent::GetMapSize(int* MapWidth, int* MapHeight, int* NumLayers)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperTileMapComponent.GetMapSize"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperTileMapComponent.GetMapSize");
 
 	UPaperTileMapComponent_GetMapSize_Params params;
 
@@ -1388,7 +1388,7 @@ void UPaperTileMapComponent::GetMapSize(int* MapWidth, int* MapHeight, int* NumL
 
 struct FLinearColor UPaperTileMapComponent::GetLayerColor(int Layer)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperTileMapComponent.GetLayerColor"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperTileMapComponent.GetLayerColor");
 
 	UPaperTileMapComponent_GetLayerColor_Params params;
 	params.Layer = Layer;
@@ -1416,7 +1416,7 @@ struct FLinearColor UPaperTileMapComponent::GetLayerColor(int Layer)
 
 void UPaperTileMapComponent::CreateNewTileMap(int MapWidth, int MapHeight, int TileWidth, int TileHeight, float PixelsPerUnrealUnit, bool bCreateLayer)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperTileMapComponent.CreateNewTileMap"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperTileMapComponent.CreateNewTileMap");
 
 	UPaperTileMapComponent_CreateNewTileMap_Params params;
 	params.MapWidth = MapWidth;
@@ -1442,7 +1442,7 @@ void UPaperTileMapComponent::CreateNewTileMap(int MapWidth, int MapHeight, int T
 
 class UPaperTileLayer* UPaperTileMapComponent::AddNewLayer()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.PaperTileMapComponent.AddNewLayer"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperTileMapComponent.AddNewLayer");
 
 	UPaperTileMapComponent_AddNewLayer_Params params;
 
@@ -1469,7 +1469,7 @@ class UPaperTileLayer* UPaperTileMapComponent::AddNewLayer()
 
 struct FPaperTileInfo UTileMapBlueprintLibrary::STATIC_MakeTile(int TileIndex, class UPaperTileSet* TileSet, bool bFlipH, bool bFlipV, bool bFlipD)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.TileMapBlueprintLibrary.MakeTile"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.TileMapBlueprintLibrary.MakeTile");
 
 	UTileMapBlueprintLibrary_MakeTile_Params params;
 	params.TileIndex = TileIndex;
@@ -1497,7 +1497,7 @@ struct FPaperTileInfo UTileMapBlueprintLibrary::STATIC_MakeTile(int TileIndex, c
 
 struct FName UTileMapBlueprintLibrary::STATIC_GetTileUserData(const struct FPaperTileInfo& Tile)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.TileMapBlueprintLibrary.GetTileUserData"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.TileMapBlueprintLibrary.GetTileUserData");
 
 	UTileMapBlueprintLibrary_GetTileUserData_Params params;
 	params.Tile = Tile;
@@ -1521,7 +1521,7 @@ struct FName UTileMapBlueprintLibrary::STATIC_GetTileUserData(const struct FPape
 
 struct FTransform UTileMapBlueprintLibrary::STATIC_GetTileTransform(const struct FPaperTileInfo& Tile)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.TileMapBlueprintLibrary.GetTileTransform"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.TileMapBlueprintLibrary.GetTileTransform");
 
 	UTileMapBlueprintLibrary_GetTileTransform_Params params;
 	params.Tile = Tile;
@@ -1549,7 +1549,7 @@ struct FTransform UTileMapBlueprintLibrary::STATIC_GetTileTransform(const struct
 
 void UTileMapBlueprintLibrary::STATIC_BreakTile(const struct FPaperTileInfo& Tile, int* TileIndex, class UPaperTileSet** TileSet, bool* bFlipH, bool* bFlipV, bool* bFlipD)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Paper2D.TileMapBlueprintLibrary.BreakTile"));
+	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.TileMapBlueprintLibrary.BreakTile");
 
 	UTileMapBlueprintLibrary_BreakTile_Params params;
 	params.Tile = Tile;

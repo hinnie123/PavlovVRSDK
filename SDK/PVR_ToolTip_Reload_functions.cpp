@@ -17,7 +17,7 @@ namespace SDK
 
 void AToolTip_Reload_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_Reload.ToolTip_Reload_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_Reload.ToolTip_Reload_C.UserConstructionScript");
 
 	AToolTip_Reload_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void AToolTip_Reload_C::UserConstructionScript()
 
 void AToolTip_Reload_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_Reload.ToolTip_Reload_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_Reload.ToolTip_Reload_C.ReceiveBeginPlay");
 
 	AToolTip_Reload_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +53,7 @@ void AToolTip_Reload_C::ReceiveBeginPlay()
 
 void AToolTip_Reload_C::OnDestroyed_Event_1(class AActor* DestroyedActor)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_Reload.ToolTip_Reload_C.OnDestroyed_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_Reload.ToolTip_Reload_C.OnDestroyed_Event_1");
 
 	AToolTip_Reload_C_OnDestroyed_Event_1_Params params;
 	params.DestroyedActor = DestroyedActor;
@@ -71,7 +71,7 @@ void AToolTip_Reload_C::OnDestroyed_Event_1(class AActor* DestroyedActor)
 
 void AToolTip_Reload_C::CustomEvent_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_Reload.ToolTip_Reload_C.CustomEvent_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_Reload.ToolTip_Reload_C.CustomEvent_1");
 
 	AToolTip_Reload_C_CustomEvent_1_Params params;
 
@@ -90,7 +90,7 @@ void AToolTip_Reload_C::CustomEvent_1()
 
 void AToolTip_Reload_C::ExecuteUbergraph_ToolTip_Reload(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_Reload.ToolTip_Reload_C.ExecuteUbergraph_ToolTip_Reload"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_Reload.ToolTip_Reload_C.ExecuteUbergraph_ToolTip_Reload");
 
 	AToolTip_Reload_C_ExecuteUbergraph_ToolTip_Reload_Params params;
 	params.EntryPoint = EntryPoint;

@@ -19,7 +19,7 @@ namespace SDK
 
 void UUI_WheelSegment_Content_C::OnUpdated(const struct FWheelSegment& Segment)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_WheelSegment_Content.UI_WheelSegment_Content_C.OnUpdated"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_WheelSegment_Content.UI_WheelSegment_Content_C.OnUpdated");
 
 	UUI_WheelSegment_Content_C_OnUpdated_Params params;
 	params.Segment = Segment;
@@ -39,7 +39,7 @@ void UUI_WheelSegment_Content_C::OnUpdated(const struct FWheelSegment& Segment)
 
 void UUI_WheelSegment_Content_C::ExecuteUbergraph_UI_WheelSegment_Content(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_WheelSegment_Content.UI_WheelSegment_Content_C.ExecuteUbergraph_UI_WheelSegment_Content"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_WheelSegment_Content.UI_WheelSegment_Content_C.ExecuteUbergraph_UI_WheelSegment_Content");
 
 	UUI_WheelSegment_Content_C_ExecuteUbergraph_UI_WheelSegment_Content_Params params;
 	params.EntryPoint = EntryPoint;

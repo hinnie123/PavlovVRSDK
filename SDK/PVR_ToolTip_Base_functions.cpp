@@ -17,7 +17,7 @@ namespace SDK
 
 void AToolTip_Base_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_Base.ToolTip_Base_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_Base.ToolTip_Base_C.UserConstructionScript");
 
 	AToolTip_Base_C_UserConstructionScript_Params params;
 

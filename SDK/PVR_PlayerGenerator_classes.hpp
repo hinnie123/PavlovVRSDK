@@ -20,7 +20,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("BlueprintGeneratedClass PlayerGenerator.PlayerGenerator_C"));
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass PlayerGenerator.PlayerGenerator_C");
 		return ptr;
 	}
 

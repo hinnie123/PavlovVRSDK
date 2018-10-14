@@ -21,7 +21,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class HTML5Networking.WebSocketConnection"));
+		static auto ptr = UObject::FindClass("Class HTML5Networking.WebSocketConnection");
 		return ptr;
 	}
 
@@ -38,7 +38,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class HTML5Networking.WebSocketNetDriver"));
+		static auto ptr = UObject::FindClass("Class HTML5Networking.WebSocketNetDriver");
 		return ptr;
 	}
 

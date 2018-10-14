@@ -17,7 +17,7 @@ namespace SDK
 
 void UUI_ToolTip_Controller_C::Update()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ToolTip_Controller.UI_ToolTip_Controller_C.Update"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ToolTip_Controller.UI_ToolTip_Controller_C.Update");
 
 	UUI_ToolTip_Controller_C_Update_Params params;
 
@@ -34,7 +34,7 @@ void UUI_ToolTip_Controller_C::Update()
 
 void UUI_ToolTip_Controller_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ToolTip_Controller.UI_ToolTip_Controller_C.Construct"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ToolTip_Controller.UI_ToolTip_Controller_C.Construct");
 
 	UUI_ToolTip_Controller_C_Construct_Params params;
 
@@ -53,7 +53,7 @@ void UUI_ToolTip_Controller_C::Construct()
 
 void UUI_ToolTip_Controller_C::ExecuteUbergraph_UI_ToolTip_Controller(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ToolTip_Controller.UI_ToolTip_Controller_C.ExecuteUbergraph_UI_ToolTip_Controller"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ToolTip_Controller.UI_ToolTip_Controller_C.ExecuteUbergraph_UI_ToolTip_Controller");
 
 	UUI_ToolTip_Controller_C_ExecuteUbergraph_UI_ToolTip_Controller_Params params;
 	params.EntryPoint = EntryPoint;

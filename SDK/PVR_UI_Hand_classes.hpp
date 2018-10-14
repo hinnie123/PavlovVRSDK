@@ -23,7 +23,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("WidgetBlueprintGeneratedClass UI_Hand.UI_Hand_C"));
+		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass UI_Hand.UI_Hand_C");
 		return ptr;
 	}
 

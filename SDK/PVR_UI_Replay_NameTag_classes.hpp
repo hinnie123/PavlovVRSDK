@@ -26,7 +26,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("WidgetBlueprintGeneratedClass UI_Replay_NameTag.UI_Replay_NameTag_C"));
+		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass UI_Replay_NameTag.UI_Replay_NameTag_C");
 		return ptr;
 	}
 

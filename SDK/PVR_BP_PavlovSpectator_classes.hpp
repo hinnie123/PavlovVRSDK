@@ -35,7 +35,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("BlueprintGeneratedClass BP_PavlovSpectator.BP_PavlovSpectator_C"));
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass BP_PavlovSpectator.BP_PavlovSpectator_C");
 		return ptr;
 	}
 

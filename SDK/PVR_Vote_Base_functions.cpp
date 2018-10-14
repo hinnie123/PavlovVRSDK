@@ -19,7 +19,7 @@ namespace SDK
 
 void AVote_Base_C::CreateContentWidget(class UUserWidget** Content)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vote_Base.Vote_Base_C.CreateContentWidget"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vote_Base.Vote_Base_C.CreateContentWidget");
 
 	AVote_Base_C_CreateContentWidget_Params params;
 
@@ -39,7 +39,7 @@ void AVote_Base_C::CreateContentWidget(class UUserWidget** Content)
 
 void AVote_Base_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vote_Base.Vote_Base_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vote_Base.Vote_Base_C.UserConstructionScript");
 
 	AVote_Base_C_UserConstructionScript_Params params;
 
@@ -56,7 +56,7 @@ void AVote_Base_C::UserConstructionScript()
 
 void AVote_Base_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vote_Base.Vote_Base_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vote_Base.Vote_Base_C.ReceiveBeginPlay");
 
 	AVote_Base_C_ReceiveBeginPlay_Params params;
 
@@ -75,7 +75,7 @@ void AVote_Base_C::ReceiveBeginPlay()
 
 void AVote_Base_C::OnVoteEnded(bool* bSucceeded)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vote_Base.Vote_Base_C.OnVoteEnded"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vote_Base.Vote_Base_C.OnVoteEnded");
 
 	AVote_Base_C_OnVoteEnded_Params params;
 	params.bSucceeded = bSucceeded;
@@ -95,7 +95,7 @@ void AVote_Base_C::OnVoteEnded(bool* bSucceeded)
 
 void AVote_Base_C::ExecuteUbergraph_Vote_Base(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vote_Base.Vote_Base_C.ExecuteUbergraph_Vote_Base"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vote_Base.Vote_Base_C.ExecuteUbergraph_Vote_Base");
 
 	AVote_Base_C_ExecuteUbergraph_Vote_Base_Params params;
 	params.EntryPoint = EntryPoint;

@@ -17,7 +17,7 @@ namespace SDK
 
 void APliers_Basic_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pliers_Basic.Pliers_Basic_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pliers_Basic.Pliers_Basic_C.UserConstructionScript");
 
 	APliers_Basic_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void APliers_Basic_C::UserConstructionScript()
 
 void APliers_Basic_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pliers_Basic.Pliers_Basic_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pliers_Basic.Pliers_Basic_C.ReceiveBeginPlay");
 
 	APliers_Basic_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +53,7 @@ void APliers_Basic_C::ReceiveBeginPlay()
 
 void APliers_Basic_C::Physicalize(bool* bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pliers_Basic.Pliers_Basic_C.Physicalize"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pliers_Basic.Pliers_Basic_C.Physicalize");
 
 	APliers_Basic_C_Physicalize_Params params;
 	params.bEnabled = bEnabled;
@@ -73,7 +73,7 @@ void APliers_Basic_C::Physicalize(bool* bEnabled)
 
 void APliers_Basic_C::ExecuteUbergraph_Pliers_Basic(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pliers_Basic.Pliers_Basic_C.ExecuteUbergraph_Pliers_Basic"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pliers_Basic.Pliers_Basic_C.ExecuteUbergraph_Pliers_Basic");
 
 	APliers_Basic_C_ExecuteUbergraph_Pliers_Basic_Params params;
 	params.EntryPoint = EntryPoint;

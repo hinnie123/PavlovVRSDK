@@ -32,7 +32,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("BlueprintGeneratedClass WaypointMoveTo.WaypointMoveTo_C"));
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass WaypointMoveTo.WaypointMoveTo_C");
 		return ptr;
 	}
 

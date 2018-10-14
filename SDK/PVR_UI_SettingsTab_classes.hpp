@@ -25,7 +25,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("WidgetBlueprintGeneratedClass UI_SettingsTab.UI_SettingsTab_C"));
+		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass UI_SettingsTab.UI_SettingsTab_C");
 		return ptr;
 	}
 

@@ -17,7 +17,7 @@ namespace SDK
 
 void ABaseGameMode_C::EndRound()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BaseGameMode.BaseGameMode_C.EndRound"));
+	static auto fn = UObject::FindObject<UFunction>("Function BaseGameMode.BaseGameMode_C.EndRound");
 
 	ABaseGameMode_C_EndRound_Params params;
 
@@ -38,7 +38,7 @@ void ABaseGameMode_C::EndRound()
 
 class APawn* ABaseGameMode_C::SpawnDefaultPawnFor(class AController** NewPlayer, class AActor** StartSpot)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BaseGameMode.BaseGameMode_C.SpawnDefaultPawnFor"));
+	static auto fn = UObject::FindObject<UFunction>("Function BaseGameMode.BaseGameMode_C.SpawnDefaultPawnFor");
 
 	ABaseGameMode_C_SpawnDefaultPawnFor_Params params;
 	params.NewPlayer = NewPlayer;
@@ -59,7 +59,7 @@ class APawn* ABaseGameMode_C::SpawnDefaultPawnFor(class AController** NewPlayer,
 
 void ABaseGameMode_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BaseGameMode.BaseGameMode_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function BaseGameMode.BaseGameMode_C.UserConstructionScript");
 
 	ABaseGameMode_C_UserConstructionScript_Params params;
 
@@ -79,7 +79,7 @@ void ABaseGameMode_C::UserConstructionScript()
 
 void ABaseGameMode_C::OnRoundStateChanged(EPavlovRoundState* OldState, EPavlovRoundState* NewState)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BaseGameMode.BaseGameMode_C.OnRoundStateChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function BaseGameMode.BaseGameMode_C.OnRoundStateChanged");
 
 	ABaseGameMode_C_OnRoundStateChanged_Params params;
 	params.OldState = OldState;
@@ -100,7 +100,7 @@ void ABaseGameMode_C::OnRoundStateChanged(EPavlovRoundState* OldState, EPavlovRo
 
 void ABaseGameMode_C::K2_OnSetMatchState(struct FName* NewState)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BaseGameMode.BaseGameMode_C.K2_OnSetMatchState"));
+	static auto fn = UObject::FindObject<UFunction>("Function BaseGameMode.BaseGameMode_C.K2_OnSetMatchState");
 
 	ABaseGameMode_C_K2_OnSetMatchState_Params params;
 	params.NewState = NewState;
@@ -122,7 +122,7 @@ void ABaseGameMode_C::K2_OnSetMatchState(struct FName* NewState)
 
 void ABaseGameMode_C::OnPlayerSpawned(class APavlovPlayerState** PlayerState, class AController** Controller, class APavlovPawn** Pawn)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BaseGameMode.BaseGameMode_C.OnPlayerSpawned"));
+	static auto fn = UObject::FindObject<UFunction>("Function BaseGameMode.BaseGameMode_C.OnPlayerSpawned");
 
 	ABaseGameMode_C_OnPlayerSpawned_Params params;
 	params.PlayerState = PlayerState;
@@ -142,7 +142,7 @@ void ABaseGameMode_C::OnPlayerSpawned(class APavlovPlayerState** PlayerState, cl
 
 void ABaseGameMode_C::OnWaitingToStart()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BaseGameMode.BaseGameMode_C.OnWaitingToStart"));
+	static auto fn = UObject::FindObject<UFunction>("Function BaseGameMode.BaseGameMode_C.OnWaitingToStart");
 
 	ABaseGameMode_C_OnWaitingToStart_Params params;
 
@@ -159,7 +159,7 @@ void ABaseGameMode_C::OnWaitingToStart()
 
 void ABaseGameMode_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BaseGameMode.BaseGameMode_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function BaseGameMode.BaseGameMode_C.ReceiveBeginPlay");
 
 	ABaseGameMode_C_ReceiveBeginPlay_Params params;
 
@@ -176,7 +176,7 @@ void ABaseGameMode_C::ReceiveBeginPlay()
 
 void ABaseGameMode_C::CheckForPlayers()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BaseGameMode.BaseGameMode_C.CheckForPlayers"));
+	static auto fn = UObject::FindObject<UFunction>("Function BaseGameMode.BaseGameMode_C.CheckForPlayers");
 
 	ABaseGameMode_C_CheckForPlayers_Params params;
 
@@ -195,7 +195,7 @@ void ABaseGameMode_C::CheckForPlayers()
 
 void ABaseGameMode_C::K2_OnLogout(class AController** ExitingController)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BaseGameMode.BaseGameMode_C.K2_OnLogout"));
+	static auto fn = UObject::FindObject<UFunction>("Function BaseGameMode.BaseGameMode_C.K2_OnLogout");
 
 	ABaseGameMode_C_K2_OnLogout_Params params;
 	params.ExitingController = ExitingController;
@@ -215,7 +215,7 @@ void ABaseGameMode_C::K2_OnLogout(class AController** ExitingController)
 
 void ABaseGameMode_C::ExecuteUbergraph_BaseGameMode(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BaseGameMode.BaseGameMode_C.ExecuteUbergraph_BaseGameMode"));
+	static auto fn = UObject::FindObject<UFunction>("Function BaseGameMode.BaseGameMode_C.ExecuteUbergraph_BaseGameMode");
 
 	ABaseGameMode_C_ExecuteUbergraph_BaseGameMode_Params params;
 	params.EntryPoint = EntryPoint;

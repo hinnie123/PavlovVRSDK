@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_ExplotionDecal_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ExplotioNDecal.BP_ExplotionDecal_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_ExplotioNDecal.BP_ExplotionDecal_C.UserConstructionScript");
 
 	ABP_ExplotionDecal_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void ABP_ExplotionDecal_C::UserConstructionScript()
 
 void ABP_ExplotionDecal_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ExplotioNDecal.BP_ExplotionDecal_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_ExplotioNDecal.BP_ExplotionDecal_C.ReceiveBeginPlay");
 
 	ABP_ExplotionDecal_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +53,7 @@ void ABP_ExplotionDecal_C::ReceiveBeginPlay()
 
 void ABP_ExplotionDecal_C::ExecuteUbergraph_BP_ExplotionDecal(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ExplotioNDecal.BP_ExplotionDecal_C.ExecuteUbergraph_BP_ExplotionDecal"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_ExplotioNDecal.BP_ExplotionDecal_C.ExecuteUbergraph_BP_ExplotionDecal");
 
 	ABP_ExplotionDecal_C_ExecuteUbergraph_BP_ExplotionDecal_Params params;
 	params.EntryPoint = EntryPoint;

@@ -20,7 +20,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class PacketHandler.HandlerComponentFactory"));
+		static auto ptr = UObject::FindClass("Class PacketHandler.HandlerComponentFactory");
 		return ptr;
 	}
 

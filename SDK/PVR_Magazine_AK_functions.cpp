@@ -17,7 +17,7 @@ namespace SDK
 
 void AMagazine_AK_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Magazine_AK.Magazine_AK_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Magazine_AK.Magazine_AK_C.UserConstructionScript");
 
 	AMagazine_AK_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void AMagazine_AK_C::UserConstructionScript()
 
 void AMagazine_AK_C::OnReleasedFromGun()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Magazine_AK.Magazine_AK_C.OnReleasedFromGun"));
+	static auto fn = UObject::FindObject<UFunction>("Function Magazine_AK.Magazine_AK_C.OnReleasedFromGun");
 
 	AMagazine_AK_C_OnReleasedFromGun_Params params;
 
@@ -53,7 +53,7 @@ void AMagazine_AK_C::OnReleasedFromGun()
 
 void AMagazine_AK_C::ExecuteUbergraph_Magazine_AK(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Magazine_AK.Magazine_AK_C.ExecuteUbergraph_Magazine_AK"));
+	static auto fn = UObject::FindObject<UFunction>("Function Magazine_AK.Magazine_AK_C.ExecuteUbergraph_Magazine_AK");
 
 	AMagazine_AK_C_ExecuteUbergraph_Magazine_AK_Params params;
 	params.EntryPoint = EntryPoint;

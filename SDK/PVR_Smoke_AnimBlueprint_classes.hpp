@@ -34,7 +34,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("AnimBlueprintGeneratedClass Smoke_AnimBlueprint.Smoke_AnimBlueprint_C"));
+		static auto ptr = UObject::FindClass("AnimBlueprintGeneratedClass Smoke_AnimBlueprint.Smoke_AnimBlueprint_C");
 		return ptr;
 	}
 

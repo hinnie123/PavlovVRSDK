@@ -37,7 +37,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("BlueprintGeneratedClass BP_QuantumClouds.BP_QuantumClouds_C"));
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass BP_QuantumClouds.BP_QuantumClouds_C");
 		return ptr;
 	}
 

@@ -28,7 +28,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("WidgetBlueprintGeneratedClass UI_NumPad_Button.UI_NumPad_Button_C"));
+		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass UI_NumPad_Button.UI_NumPad_Button_C");
 		return ptr;
 	}
 

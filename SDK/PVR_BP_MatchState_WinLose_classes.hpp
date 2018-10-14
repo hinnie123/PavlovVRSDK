@@ -21,7 +21,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("BlueprintGeneratedClass BP_MatchState_WinLose.BP_MatchState_WinLose_C"));
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass BP_MatchState_WinLose.BP_MatchState_WinLose_C");
 		return ptr;
 	}
 

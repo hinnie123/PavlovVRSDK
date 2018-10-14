@@ -17,7 +17,7 @@ namespace SDK
 
 void UUI_Stereo_MatchEnd_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Stereo_MatchEnd.UI_Stereo_MatchEnd_C.Construct"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Stereo_MatchEnd.UI_Stereo_MatchEnd_C.Construct");
 
 	UUI_Stereo_MatchEnd_C_Construct_Params params;
 
@@ -36,7 +36,7 @@ void UUI_Stereo_MatchEnd_C::Construct()
 
 void UUI_Stereo_MatchEnd_C::ExecuteUbergraph_UI_Stereo_MatchEnd(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Stereo_MatchEnd.UI_Stereo_MatchEnd_C.ExecuteUbergraph_UI_Stereo_MatchEnd"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Stereo_MatchEnd.UI_Stereo_MatchEnd_C.ExecuteUbergraph_UI_Stereo_MatchEnd");
 
 	UUI_Stereo_MatchEnd_C_ExecuteUbergraph_UI_Stereo_MatchEnd_Params params;
 	params.EntryPoint = EntryPoint;

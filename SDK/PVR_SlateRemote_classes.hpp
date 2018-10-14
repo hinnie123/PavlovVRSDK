@@ -24,7 +24,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class SlateRemote.SlateRemoteSettings"));
+		static auto ptr = UObject::FindClass("Class SlateRemote.SlateRemoteSettings");
 		return ptr;
 	}
 

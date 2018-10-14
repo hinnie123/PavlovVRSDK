@@ -19,7 +19,7 @@ namespace SDK
 
 ESlateVisibility UUI_Stereo_Vote_Generic_C::Get_VotesHList_Visibility_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Stereo_Vote_Generic.UI_Stereo_Vote_Generic_C.Get_VotesHList_Visibility_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Stereo_Vote_Generic.UI_Stereo_Vote_Generic_C.Get_VotesHList_Visibility_1");
 
 	UUI_Stereo_Vote_Generic_C_Get_VotesHList_Visibility_1_Params params;
 
@@ -40,7 +40,7 @@ ESlateVisibility UUI_Stereo_Vote_Generic_C::Get_VotesHList_Visibility_1()
 
 struct FSlateBrush UUI_Stereo_Vote_Generic_C::Get_bg_Brush_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Stereo_Vote_Generic.UI_Stereo_Vote_Generic_C.Get_bg_Brush_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Stereo_Vote_Generic.UI_Stereo_Vote_Generic_C.Get_bg_Brush_1");
 
 	UUI_Stereo_Vote_Generic_C_Get_bg_Brush_1_Params params;
 
@@ -59,7 +59,7 @@ struct FSlateBrush UUI_Stereo_Vote_Generic_C::Get_bg_Brush_1()
 
 void UUI_Stereo_Vote_Generic_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Stereo_Vote_Generic.UI_Stereo_Vote_Generic_C.Construct"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Stereo_Vote_Generic.UI_Stereo_Vote_Generic_C.Construct");
 
 	UUI_Stereo_Vote_Generic_C_Construct_Params params;
 
@@ -79,7 +79,7 @@ void UUI_Stereo_Vote_Generic_C::Construct()
 
 void UUI_Stereo_Vote_Generic_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Stereo_Vote_Generic.UI_Stereo_Vote_Generic_C.Tick"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Stereo_Vote_Generic.UI_Stereo_Vote_Generic_C.Tick");
 
 	UUI_Stereo_Vote_Generic_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -100,7 +100,7 @@ void UUI_Stereo_Vote_Generic_C::Tick(struct FGeometry* MyGeometry, float* InDelt
 
 void UUI_Stereo_Vote_Generic_C::ExecuteUbergraph_UI_Stereo_Vote_Generic(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Stereo_Vote_Generic.UI_Stereo_Vote_Generic_C.ExecuteUbergraph_UI_Stereo_Vote_Generic"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Stereo_Vote_Generic.UI_Stereo_Vote_Generic_C.ExecuteUbergraph_UI_Stereo_Vote_Generic");
 
 	UUI_Stereo_Vote_Generic_C_ExecuteUbergraph_UI_Stereo_Vote_Generic_Params params;
 	params.EntryPoint = EntryPoint;

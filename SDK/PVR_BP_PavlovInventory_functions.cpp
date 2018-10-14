@@ -19,7 +19,7 @@ namespace SDK
 
 class UPrimitiveComponent* ABP_PavlovInventory_C::GetVestVolume()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovInventory.BP_PavlovInventory_C.GetVestVolume"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovInventory.BP_PavlovInventory_C.GetVestVolume");
 
 	ABP_PavlovInventory_C_GetVestVolume_Params params;
 
@@ -41,7 +41,7 @@ class UPrimitiveComponent* ABP_PavlovInventory_C::GetVestVolume()
 
 class UPrimitiveComponent* ABP_PavlovInventory_C::GetQuickSlotVolume(EVRQuickSlotType* Type)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovInventory.BP_PavlovInventory_C.GetQuickSlotVolume"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovInventory.BP_PavlovInventory_C.GetQuickSlotVolume");
 
 	ABP_PavlovInventory_C_GetQuickSlotVolume_Params params;
 	params.Type = Type;
@@ -61,7 +61,7 @@ class UPrimitiveComponent* ABP_PavlovInventory_C::GetQuickSlotVolume(EVRQuickSlo
 
 void ABP_PavlovInventory_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovInventory.BP_PavlovInventory_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovInventory.BP_PavlovInventory_C.UserConstructionScript");
 
 	ABP_PavlovInventory_C_UserConstructionScript_Params params;
 
@@ -78,7 +78,7 @@ void ABP_PavlovInventory_C::UserConstructionScript()
 
 void ABP_PavlovInventory_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovInventory.BP_PavlovInventory_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovInventory.BP_PavlovInventory_C.ReceiveBeginPlay");
 
 	ABP_PavlovInventory_C_ReceiveBeginPlay_Params params;
 
@@ -95,7 +95,7 @@ void ABP_PavlovInventory_C::ReceiveBeginPlay()
 
 void ABP_PavlovInventory_C::OnRotationChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovInventory.BP_PavlovInventory_C.OnRotationChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovInventory.BP_PavlovInventory_C.OnRotationChanged");
 
 	ABP_PavlovInventory_C_OnRotationChanged_Params params;
 
@@ -119,7 +119,7 @@ void ABP_PavlovInventory_C::OnRotationChanged()
 
 void ABP_PavlovInventory_C::BndEvt__QuickSlot_Left_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovInventory.BP_PavlovInventory_C.BndEvt__QuickSlot_Left_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovInventory.BP_PavlovInventory_C.BndEvt__QuickSlot_Left_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
 
 	ABP_PavlovInventory_C_BndEvt__QuickSlot_Left_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature_Params params;
 	params.OverlappedComponent = OverlappedComponent;
@@ -149,7 +149,7 @@ void ABP_PavlovInventory_C::BndEvt__QuickSlot_Left_K2Node_ComponentBoundEvent_0_
 
 void ABP_PavlovInventory_C::BndEvt__QuickSlot_Back_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovInventory.BP_PavlovInventory_C.BndEvt__QuickSlot_Back_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovInventory.BP_PavlovInventory_C.BndEvt__QuickSlot_Back_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature");
 
 	ABP_PavlovInventory_C_BndEvt__QuickSlot_Back_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature_Params params;
 	params.OverlappedComponent = OverlappedComponent;
@@ -179,7 +179,7 @@ void ABP_PavlovInventory_C::BndEvt__QuickSlot_Back_K2Node_ComponentBoundEvent_1_
 
 void ABP_PavlovInventory_C::BndEvt__QuickSlot_Right_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovInventory.BP_PavlovInventory_C.BndEvt__QuickSlot_Right_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovInventory.BP_PavlovInventory_C.BndEvt__QuickSlot_Right_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature");
 
 	ABP_PavlovInventory_C_BndEvt__QuickSlot_Right_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature_Params params;
 	params.OverlappedComponent = OverlappedComponent;
@@ -204,7 +204,7 @@ void ABP_PavlovInventory_C::BndEvt__QuickSlot_Right_K2Node_ComponentBoundEvent_2
 
 void ABP_PavlovInventory_C::ExecuteUbergraph_BP_PavlovInventory(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovInventory.BP_PavlovInventory_C.ExecuteUbergraph_BP_PavlovInventory"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovInventory.BP_PavlovInventory_C.ExecuteUbergraph_BP_PavlovInventory");
 
 	ABP_PavlovInventory_C_ExecuteUbergraph_BP_PavlovInventory_Params params;
 	params.EntryPoint = EntryPoint;

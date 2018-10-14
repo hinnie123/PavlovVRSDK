@@ -21,7 +21,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("BlueprintGeneratedClass BP_Watch.BP_Watch_C"));
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass BP_Watch.BP_Watch_C");
 		return ptr;
 	}
 

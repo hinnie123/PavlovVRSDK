@@ -19,7 +19,7 @@ namespace SDK
 
 struct FLinearColor UUI_Replay_NameTag_C::GetColorAndOpacity_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Replay_NameTag.UI_Replay_NameTag_C.GetColorAndOpacity_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Replay_NameTag.UI_Replay_NameTag_C.GetColorAndOpacity_1");
 
 	UUI_Replay_NameTag_C_GetColorAndOpacity_1_Params params;
 
@@ -40,7 +40,7 @@ struct FLinearColor UUI_Replay_NameTag_C::GetColorAndOpacity_1()
 
 struct FSlateBrush UUI_Replay_NameTag_C::GetBrush_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Replay_NameTag.UI_Replay_NameTag_C.GetBrush_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Replay_NameTag.UI_Replay_NameTag_C.GetBrush_1");
 
 	UUI_Replay_NameTag_C_GetBrush_1_Params params;
 
@@ -61,7 +61,7 @@ struct FSlateBrush UUI_Replay_NameTag_C::GetBrush_1()
 
 struct FSlateColor UUI_Replay_NameTag_C::Get_playerName_ColorAndOpacity_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Replay_NameTag.UI_Replay_NameTag_C.Get_playerName_ColorAndOpacity_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Replay_NameTag.UI_Replay_NameTag_C.Get_playerName_ColorAndOpacity_1");
 
 	UUI_Replay_NameTag_C_Get_playerName_ColorAndOpacity_1_Params params;
 
@@ -82,7 +82,7 @@ struct FSlateColor UUI_Replay_NameTag_C::Get_playerName_ColorAndOpacity_1()
 
 void UUI_Replay_NameTag_C::SetPlayerState(class APavlovPlayerState* PlayerState)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Replay_NameTag.UI_Replay_NameTag_C.SetPlayerState"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Replay_NameTag.UI_Replay_NameTag_C.SetPlayerState");
 
 	UUI_Replay_NameTag_C_SetPlayerState_Params params;
 	params.PlayerState = PlayerState;
@@ -103,7 +103,7 @@ void UUI_Replay_NameTag_C::SetPlayerState(class APavlovPlayerState* PlayerState)
 
 void UUI_Replay_NameTag_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Replay_NameTag.UI_Replay_NameTag_C.Tick"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Replay_NameTag.UI_Replay_NameTag_C.Tick");
 
 	UUI_Replay_NameTag_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -124,7 +124,7 @@ void UUI_Replay_NameTag_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime
 
 void UUI_Replay_NameTag_C::ExecuteUbergraph_UI_Replay_NameTag(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Replay_NameTag.UI_Replay_NameTag_C.ExecuteUbergraph_UI_Replay_NameTag"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Replay_NameTag.UI_Replay_NameTag_C.ExecuteUbergraph_UI_Replay_NameTag");
 
 	UUI_Replay_NameTag_C_ExecuteUbergraph_UI_Replay_NameTag_Params params;
 	params.EntryPoint = EntryPoint;

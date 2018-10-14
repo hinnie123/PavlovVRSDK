@@ -19,7 +19,7 @@ namespace SDK
 
 struct FText UUI_VideoSetting_Button_C::GetText_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_VideoSetting_Button.UI_VideoSetting_Button_C.GetText_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_VideoSetting_Button.UI_VideoSetting_Button_C.GetText_1");
 
 	UUI_VideoSetting_Button_C_GetText_1_Params params;
 
@@ -38,7 +38,7 @@ struct FText UUI_VideoSetting_Button_C::GetText_1()
 
 void UUI_VideoSetting_Button_C::Prev()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_VideoSetting_Button.UI_VideoSetting_Button_C.Prev"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_VideoSetting_Button.UI_VideoSetting_Button_C.Prev");
 
 	UUI_VideoSetting_Button_C_Prev_Params params;
 
@@ -55,7 +55,7 @@ void UUI_VideoSetting_Button_C::Prev()
 
 void UUI_VideoSetting_Button_C::Next()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_VideoSetting_Button.UI_VideoSetting_Button_C.Next"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_VideoSetting_Button.UI_VideoSetting_Button_C.Next");
 
 	UUI_VideoSetting_Button_C_Next_Params params;
 
@@ -76,7 +76,7 @@ void UUI_VideoSetting_Button_C::Next()
 
 struct FEventReply UUI_VideoSetting_Button_C::OnMouseButtonDown(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_VideoSetting_Button.UI_VideoSetting_Button_C.OnMouseButtonDown"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_VideoSetting_Button.UI_VideoSetting_Button_C.OnMouseButtonDown");
 
 	UUI_VideoSetting_Button_C_OnMouseButtonDown_Params params;
 	params.MyGeometry = MyGeometry;
@@ -99,7 +99,7 @@ struct FEventReply UUI_VideoSetting_Button_C::OnMouseButtonDown(struct FGeometry
 
 struct FSlateBrush UUI_VideoSetting_Button_C::GetBrush_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_VideoSetting_Button.UI_VideoSetting_Button_C.GetBrush_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_VideoSetting_Button.UI_VideoSetting_Button_C.GetBrush_1");
 
 	UUI_VideoSetting_Button_C_GetBrush_1_Params params;
 
@@ -118,7 +118,7 @@ struct FSlateBrush UUI_VideoSetting_Button_C::GetBrush_1()
 
 void UUI_VideoSetting_Button_C::OnValudChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_VideoSetting_Button.UI_VideoSetting_Button_C.OnValudChanged__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_VideoSetting_Button.UI_VideoSetting_Button_C.OnValudChanged__DelegateSignature");
 
 	UUI_VideoSetting_Button_C_OnValudChanged__DelegateSignature_Params params;
 

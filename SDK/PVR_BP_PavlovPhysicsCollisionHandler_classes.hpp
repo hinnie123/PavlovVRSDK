@@ -20,7 +20,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("BlueprintGeneratedClass BP_PavlovPhysicsCollisionHandler.BP_PavlovPhysicsCollisionHandler_C"));
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass BP_PavlovPhysicsCollisionHandler.BP_PavlovPhysicsCollisionHandler_C");
 		return ptr;
 	}
 

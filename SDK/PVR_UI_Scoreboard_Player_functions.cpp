@@ -19,7 +19,7 @@ namespace SDK
 
 ESlateVisibility UUI_Scoreboard_Player_C::GetVisibility_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Scoreboard_Player.UI_Scoreboard_Player_C.GetVisibility_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Scoreboard_Player.UI_Scoreboard_Player_C.GetVisibility_1");
 
 	UUI_Scoreboard_Player_C_GetVisibility_1_Params params;
 
@@ -40,7 +40,7 @@ ESlateVisibility UUI_Scoreboard_Player_C::GetVisibility_1()
 
 struct FSlateBrush UUI_Scoreboard_Player_C::GetBrush_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Scoreboard_Player.UI_Scoreboard_Player_C.GetBrush_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Scoreboard_Player.UI_Scoreboard_Player_C.GetBrush_1");
 
 	UUI_Scoreboard_Player_C_GetBrush_1_Params params;
 
@@ -61,7 +61,7 @@ struct FSlateBrush UUI_Scoreboard_Player_C::GetBrush_1()
 
 struct FLinearColor UUI_Scoreboard_Player_C::GetColorAndOpacity_3()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Scoreboard_Player.UI_Scoreboard_Player_C.GetColorAndOpacity_3"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Scoreboard_Player.UI_Scoreboard_Player_C.GetColorAndOpacity_3");
 
 	UUI_Scoreboard_Player_C_GetColorAndOpacity_3_Params params;
 
@@ -82,7 +82,7 @@ struct FLinearColor UUI_Scoreboard_Player_C::GetColorAndOpacity_3()
 
 struct FLinearColor UUI_Scoreboard_Player_C::GetColorAndOpacity_2()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Scoreboard_Player.UI_Scoreboard_Player_C.GetColorAndOpacity_2"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Scoreboard_Player.UI_Scoreboard_Player_C.GetColorAndOpacity_2");
 
 	UUI_Scoreboard_Player_C_GetColorAndOpacity_2_Params params;
 
@@ -103,7 +103,7 @@ struct FLinearColor UUI_Scoreboard_Player_C::GetColorAndOpacity_2()
 
 struct FSlateColor UUI_Scoreboard_Player_C::GetColorAndOpacity_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Scoreboard_Player.UI_Scoreboard_Player_C.GetColorAndOpacity_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Scoreboard_Player.UI_Scoreboard_Player_C.GetColorAndOpacity_1");
 
 	UUI_Scoreboard_Player_C_GetColorAndOpacity_1_Params params;
 

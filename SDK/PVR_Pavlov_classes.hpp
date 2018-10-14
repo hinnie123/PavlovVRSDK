@@ -25,7 +25,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.ActionGunState"));
+		static auto ptr = UObject::FindClass("Class Pavlov.ActionGunState");
 		return ptr;
 	}
 
@@ -44,7 +44,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.RifleGunState"));
+		static auto ptr = UObject::FindClass("Class Pavlov.RifleGunState");
 		return ptr;
 	}
 
@@ -66,7 +66,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.AirplaneRoyale"));
+		static auto ptr = UObject::FindClass("Class Pavlov.AirplaneRoyale");
 		return ptr;
 	}
 
@@ -92,7 +92,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.AmmoPouchComponent"));
+		static auto ptr = UObject::FindClass("Class Pavlov.AmmoPouchComponent");
 		return ptr;
 	}
 
@@ -107,7 +107,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.BeltFedGunState"));
+		static auto ptr = UObject::FindClass("Class Pavlov.BeltFedGunState");
 		return ptr;
 	}
 
@@ -131,7 +131,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.BloodSplat"));
+		static auto ptr = UObject::FindClass("Class Pavlov.BloodSplat");
 		return ptr;
 	}
 
@@ -183,7 +183,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.Bomb"));
+		static auto ptr = UObject::FindClass("Class Pavlov.Bomb");
 		return ptr;
 	}
 
@@ -238,7 +238,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.BombAnimInstance"));
+		static auto ptr = UObject::FindClass("Class Pavlov.BombAnimInstance");
 		return ptr;
 	}
 
@@ -261,7 +261,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.BombPlantSpot"));
+		static auto ptr = UObject::FindClass("Class Pavlov.BombPlantSpot");
 		return ptr;
 	}
 
@@ -290,7 +290,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.Bullet"));
+		static auto ptr = UObject::FindClass("Class Pavlov.Bullet");
 		return ptr;
 	}
 
@@ -311,7 +311,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.BulletHoleManager"));
+		static auto ptr = UObject::FindClass("Class Pavlov.BulletHoleManager");
 		return ptr;
 	}
 
@@ -326,7 +326,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.BuyZone"));
+		static auto ptr = UObject::FindClass("Class Pavlov.BuyZone");
 		return ptr;
 	}
 
@@ -362,7 +362,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.ChamberComponent"));
+		static auto ptr = UObject::FindClass("Class Pavlov.ChamberComponent");
 		return ptr;
 	}
 
@@ -387,7 +387,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.DamageTrackerComponent"));
+		static auto ptr = UObject::FindClass("Class Pavlov.DamageTrackerComponent");
 		return ptr;
 	}
 
@@ -406,7 +406,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.DamageType_Explotion"));
+		static auto ptr = UObject::FindClass("Class Pavlov.DamageType_Explotion");
 		return ptr;
 	}
 
@@ -450,7 +450,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.Grenade"));
+		static auto ptr = UObject::FindClass("Class Pavlov.Grenade");
 		return ptr;
 	}
 
@@ -480,7 +480,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.DamageType_Knife"));
+		static auto ptr = UObject::FindClass("Class Pavlov.DamageType_Knife");
 		return ptr;
 	}
 
@@ -510,7 +510,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.Knife"));
+		static auto ptr = UObject::FindClass("Class Pavlov.Knife");
 		return ptr;
 	}
 
@@ -532,7 +532,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.DecorationSkeletalMeshComponent"));
+		static auto ptr = UObject::FindClass("Class Pavlov.DecorationSkeletalMeshComponent");
 		return ptr;
 	}
 
@@ -547,7 +547,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.Destructible"));
+		static auto ptr = UObject::FindClass("Class Pavlov.Destructible");
 		return ptr;
 	}
 
@@ -568,7 +568,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.DoubleBarrelGunState"));
+		static auto ptr = UObject::FindClass("Class Pavlov.DoubleBarrelGunState");
 		return ptr;
 	}
 
@@ -585,7 +585,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.FallDamageType"));
+		static auto ptr = UObject::FindClass("Class Pavlov.FallDamageType");
 		return ptr;
 	}
 
@@ -625,7 +625,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.PavlovMovementComponent"));
+		static auto ptr = UObject::FindClass("Class Pavlov.PavlovMovementComponent");
 		return ptr;
 	}
 
@@ -644,7 +644,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.FootstepAnimNotify"));
+		static auto ptr = UObject::FindClass("Class Pavlov.FootstepAnimNotify");
 		return ptr;
 	}
 
@@ -661,7 +661,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.GestureComponent"));
+		static auto ptr = UObject::FindClass("Class Pavlov.GestureComponent");
 		return ptr;
 	}
 
@@ -690,7 +690,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.KillCam"));
+		static auto ptr = UObject::FindClass("Class Pavlov.KillCam");
 		return ptr;
 	}
 
@@ -718,7 +718,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.GhostPawn"));
+		static auto ptr = UObject::FindClass("Class Pavlov.GhostPawn");
 		return ptr;
 	}
 
@@ -761,7 +761,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.GlobalPlayerEffects"));
+		static auto ptr = UObject::FindClass("Class Pavlov.GlobalPlayerEffects");
 		return ptr;
 	}
 
@@ -786,7 +786,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.GrenadeAnimInstance"));
+		static auto ptr = UObject::FindClass("Class Pavlov.GrenadeAnimInstance");
 		return ptr;
 	}
 
@@ -806,7 +806,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.GrenadeTrailProxy"));
+		static auto ptr = UObject::FindClass("Class Pavlov.GrenadeTrailProxy");
 		return ptr;
 	}
 
@@ -869,7 +869,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.Gun"));
+		static auto ptr = UObject::FindClass("Class Pavlov.Gun");
 		return ptr;
 	}
 
@@ -904,7 +904,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.HitBoxProxyComponent"));
+		static auto ptr = UObject::FindClass("Class Pavlov.HitBoxProxyComponent");
 		return ptr;
 	}
 
@@ -930,7 +930,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.HolsterComponent"));
+		static auto ptr = UObject::FindClass("Class Pavlov.HolsterComponent");
 		return ptr;
 	}
 
@@ -961,7 +961,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.MainMenu"));
+		static auto ptr = UObject::FindClass("Class Pavlov.MainMenu");
 		return ptr;
 	}
 
@@ -976,7 +976,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.MuzzleExploitBlocker"));
+		static auto ptr = UObject::FindClass("Class Pavlov.MuzzleExploitBlocker");
 		return ptr;
 	}
 
@@ -1011,7 +1011,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.PavlovAIController"));
+		static auto ptr = UObject::FindClass("Class Pavlov.PavlovAIController");
 		return ptr;
 	}
 
@@ -1049,7 +1049,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.PavlovAvatarAnimInstance"));
+		static auto ptr = UObject::FindClass("Class Pavlov.PavlovAvatarAnimInstance");
 		return ptr;
 	}
 
@@ -1100,7 +1100,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.PavlovGameUserSettings"));
+		static auto ptr = UObject::FindClass("Class Pavlov.PavlovGameUserSettings");
 		return ptr;
 	}
 
@@ -1274,7 +1274,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.PavlovPawn"));
+		static auto ptr = UObject::FindClass("Class Pavlov.PavlovPawn");
 		return ptr;
 	}
 
@@ -1358,7 +1358,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.PavlovGameState"));
+		static auto ptr = UObject::FindClass("Class Pavlov.PavlovGameState");
 		return ptr;
 	}
 
@@ -1438,7 +1438,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.PavlovGameMode"));
+		static auto ptr = UObject::FindClass("Class Pavlov.PavlovGameMode");
 		return ptr;
 	}
 
@@ -1513,7 +1513,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.PavlovLobby"));
+		static auto ptr = UObject::FindClass("Class Pavlov.PavlovLobby");
 		return ptr;
 	}
 
@@ -1587,7 +1587,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.PavlovGameInstance"));
+		static auto ptr = UObject::FindClass("Class Pavlov.PavlovGameInstance");
 		return ptr;
 	}
 
@@ -1641,7 +1641,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.PavlovHUD"));
+		static auto ptr = UObject::FindClass("Class Pavlov.PavlovHUD");
 		return ptr;
 	}
 
@@ -1659,7 +1659,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.PavlovInventory"));
+		static auto ptr = UObject::FindClass("Class Pavlov.PavlovInventory");
 		return ptr;
 	}
 
@@ -1716,7 +1716,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.PavlovItemController"));
+		static auto ptr = UObject::FindClass("Class Pavlov.PavlovItemController");
 		return ptr;
 	}
 
@@ -1746,7 +1746,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.GhostItemController"));
+		static auto ptr = UObject::FindClass("Class Pavlov.GhostItemController");
 		return ptr;
 	}
 
@@ -1764,7 +1764,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.PavlovLevelScriptActor"));
+		static auto ptr = UObject::FindClass("Class Pavlov.PavlovLevelScriptActor");
 		return ptr;
 	}
 
@@ -1779,7 +1779,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.PavlovLocalPlayer"));
+		static auto ptr = UObject::FindClass("Class Pavlov.PavlovLocalPlayer");
 		return ptr;
 	}
 
@@ -1794,7 +1794,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.PavlovPhysicsCollisionHandler"));
+		static auto ptr = UObject::FindClass("Class Pavlov.PavlovPhysicsCollisionHandler");
 		return ptr;
 	}
 
@@ -1809,7 +1809,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.PavlovPlayerCameraManager"));
+		static auto ptr = UObject::FindClass("Class Pavlov.PavlovPlayerCameraManager");
 		return ptr;
 	}
 
@@ -1842,7 +1842,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.PavlovPlayerController"));
+		static auto ptr = UObject::FindClass("Class Pavlov.PavlovPlayerController");
 		return ptr;
 	}
 
@@ -1922,7 +1922,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.PavlovPlayerState"));
+		static auto ptr = UObject::FindClass("Class Pavlov.PavlovPlayerState");
 		return ptr;
 	}
 
@@ -1943,7 +1943,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.PavlovSpectatorPawn"));
+		static auto ptr = UObject::FindClass("Class Pavlov.PavlovSpectatorPawn");
 		return ptr;
 	}
 
@@ -1967,7 +1967,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.PavlovStatics"));
+		static auto ptr = UObject::FindClass("Class Pavlov.PavlovStatics");
 		return ptr;
 	}
 
@@ -2004,7 +2004,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.PavlovVehicleAnimInstance"));
+		static auto ptr = UObject::FindClass("Class Pavlov.PavlovVehicleAnimInstance");
 		return ptr;
 	}
 
@@ -2019,7 +2019,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.PavlovVoiceComponent"));
+		static auto ptr = UObject::FindClass("Class Pavlov.PavlovVoiceComponent");
 		return ptr;
 	}
 
@@ -2043,7 +2043,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.PavlovWheeledVehicle"));
+		static auto ptr = UObject::FindClass("Class Pavlov.PavlovWheeledVehicle");
 		return ptr;
 	}
 
@@ -2061,7 +2061,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.PivotComponent"));
+		static auto ptr = UObject::FindClass("Class Pavlov.PivotComponent");
 		return ptr;
 	}
 
@@ -2077,7 +2077,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.PlayerCycler"));
+		static auto ptr = UObject::FindClass("Class Pavlov.PlayerCycler");
 		return ptr;
 	}
 
@@ -2103,7 +2103,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.PlayerSpawnPoint"));
+		static auto ptr = UObject::FindClass("Class Pavlov.PlayerSpawnPoint");
 		return ptr;
 	}
 
@@ -2129,7 +2129,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.Pliers"));
+		static auto ptr = UObject::FindClass("Class Pavlov.Pliers");
 		return ptr;
 	}
 
@@ -2151,7 +2151,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.RadioToggleComponent"));
+		static auto ptr = UObject::FindClass("Class Pavlov.RadioToggleComponent");
 		return ptr;
 	}
 
@@ -2171,7 +2171,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.Rat"));
+		static auto ptr = UObject::FindClass("Class Pavlov.Rat");
 		return ptr;
 	}
 
@@ -2193,7 +2193,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.RatAIController"));
+		static auto ptr = UObject::FindClass("Class Pavlov.RatAIController");
 		return ptr;
 	}
 
@@ -2220,7 +2220,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.RatAnimInstance"));
+		static auto ptr = UObject::FindClass("Class Pavlov.RatAnimInstance");
 		return ptr;
 	}
 
@@ -2239,7 +2239,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.ReplayManager"));
+		static auto ptr = UObject::FindClass("Class Pavlov.ReplayManager");
 		return ptr;
 	}
 
@@ -2258,7 +2258,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.ReplayPawn"));
+		static auto ptr = UObject::FindClass("Class Pavlov.ReplayPawn");
 		return ptr;
 	}
 
@@ -2273,7 +2273,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.ReplayPlayerController"));
+		static auto ptr = UObject::FindClass("Class Pavlov.ReplayPlayerController");
 		return ptr;
 	}
 
@@ -2291,7 +2291,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.RevolverGunState"));
+		static auto ptr = UObject::FindClass("Class Pavlov.RevolverGunState");
 		return ptr;
 	}
 
@@ -2316,7 +2316,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.SkinAsset"));
+		static auto ptr = UObject::FindClass("Class Pavlov.SkinAsset");
 		return ptr;
 	}
 
@@ -2333,7 +2333,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.SkinComponent"));
+		static auto ptr = UObject::FindClass("Class Pavlov.SkinComponent");
 		return ptr;
 	}
 
@@ -2369,7 +2369,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.SpectatorTag"));
+		static auto ptr = UObject::FindClass("Class Pavlov.SpectatorTag");
 		return ptr;
 	}
 
@@ -2387,7 +2387,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.SpectatorTV"));
+		static auto ptr = UObject::FindClass("Class Pavlov.SpectatorTV");
 		return ptr;
 	}
 
@@ -2412,7 +2412,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.SpectatorTVCamera"));
+		static auto ptr = UObject::FindClass("Class Pavlov.SpectatorTVCamera");
 		return ptr;
 	}
 
@@ -2445,7 +2445,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.StereoOverlay"));
+		static auto ptr = UObject::FindClass("Class Pavlov.StereoOverlay");
 		return ptr;
 	}
 
@@ -2468,7 +2468,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.Killfeed"));
+		static auto ptr = UObject::FindClass("Class Pavlov.Killfeed");
 		return ptr;
 	}
 
@@ -2487,7 +2487,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.PostMatchSummary"));
+		static auto ptr = UObject::FindClass("Class Pavlov.PostMatchSummary");
 		return ptr;
 	}
 
@@ -2503,7 +2503,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.StereoMessage"));
+		static auto ptr = UObject::FindClass("Class Pavlov.StereoMessage");
 		return ptr;
 	}
 
@@ -2540,7 +2540,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.Vote"));
+		static auto ptr = UObject::FindClass("Class Pavlov.Vote");
 		return ptr;
 	}
 
@@ -2558,7 +2558,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.TextureWidgetComponent"));
+		static auto ptr = UObject::FindClass("Class Pavlov.TextureWidgetComponent");
 		return ptr;
 	}
 
@@ -2585,7 +2585,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.Watch"));
+		static auto ptr = UObject::FindClass("Class Pavlov.Watch");
 		return ptr;
 	}
 
@@ -2621,7 +2621,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.ToolTip"));
+		static auto ptr = UObject::FindClass("Class Pavlov.ToolTip");
 		return ptr;
 	}
 
@@ -2645,7 +2645,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.TrailComponent"));
+		static auto ptr = UObject::FindClass("Class Pavlov.TrailComponent");
 		return ptr;
 	}
 
@@ -2664,7 +2664,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.Tutorial"));
+		static auto ptr = UObject::FindClass("Class Pavlov.Tutorial");
 		return ptr;
 	}
 
@@ -2686,7 +2686,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.TwoHandGripComponent"));
+		static auto ptr = UObject::FindClass("Class Pavlov.TwoHandGripComponent");
 		return ptr;
 	}
 
@@ -2720,7 +2720,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.UberWheel"));
+		static auto ptr = UObject::FindClass("Class Pavlov.UberWheel");
 		return ptr;
 	}
 
@@ -2746,7 +2746,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.Waypoint"));
+		static auto ptr = UObject::FindClass("Class Pavlov.Waypoint");
 		return ptr;
 	}
 
@@ -2783,7 +2783,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.Workshop"));
+		static auto ptr = UObject::FindClass("Class Pavlov.Workshop");
 		return ptr;
 	}
 
@@ -2827,7 +2827,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.Zombie"));
+		static auto ptr = UObject::FindClass("Class Pavlov.Zombie");
 		return ptr;
 	}
 
@@ -2849,7 +2849,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.ZombieAIController"));
+		static auto ptr = UObject::FindClass("Class Pavlov.ZombieAIController");
 		return ptr;
 	}
 
@@ -2872,7 +2872,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.ZombieAnimInstance"));
+		static auto ptr = UObject::FindClass("Class Pavlov.ZombieAnimInstance");
 		return ptr;
 	}
 
@@ -2888,7 +2888,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.ZombieSkeletalMeshComponent"));
+		static auto ptr = UObject::FindClass("Class Pavlov.ZombieSkeletalMeshComponent");
 		return ptr;
 	}
 
@@ -2918,7 +2918,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Pavlov.ZombieWound"));
+		static auto ptr = UObject::FindClass("Class Pavlov.ZombieWound");
 		return ptr;
 	}
 

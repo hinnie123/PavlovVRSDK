@@ -26,7 +26,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("WidgetBlueprintGeneratedClass UI_KillerCam_KillerInfo.UI_KillerCam_KillerInfo_C"));
+		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass UI_KillerCam_KillerInfo.UI_KillerCam_KillerInfo_C");
 		return ptr;
 	}
 

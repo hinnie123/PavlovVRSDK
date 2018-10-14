@@ -21,7 +21,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("BlueprintGeneratedClass BP_ReplayPlayerController.BP_ReplayPlayerController_C"));
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass BP_ReplayPlayerController.BP_ReplayPlayerController_C");
 		return ptr;
 	}
 

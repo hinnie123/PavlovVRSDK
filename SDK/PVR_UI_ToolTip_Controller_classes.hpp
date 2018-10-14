@@ -27,7 +27,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("WidgetBlueprintGeneratedClass UI_ToolTip_Controller.UI_ToolTip_Controller_C"));
+		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass UI_ToolTip_Controller.UI_ToolTip_Controller_C");
 		return ptr;
 	}
 

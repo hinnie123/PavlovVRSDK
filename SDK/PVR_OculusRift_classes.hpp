@@ -23,7 +23,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class OculusRift.OculusRiftBoundaryComponent"));
+		static auto ptr = UObject::FindClass("Class OculusRift.OculusRiftBoundaryComponent");
 		return ptr;
 	}
 
@@ -57,7 +57,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class OculusRift.SceneCubemapCapturer"));
+		static auto ptr = UObject::FindClass("Class OculusRift.SceneCubemapCapturer");
 		return ptr;
 	}
 

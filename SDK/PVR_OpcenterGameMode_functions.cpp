@@ -17,7 +17,7 @@ namespace SDK
 
 void AOpcenterGameMode_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OpcenterGameMode.OpcenterGameMode_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function OpcenterGameMode.OpcenterGameMode_C.UserConstructionScript");
 
 	AOpcenterGameMode_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void AOpcenterGameMode_C::UserConstructionScript()
 
 void AOpcenterGameMode_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OpcenterGameMode.OpcenterGameMode_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function OpcenterGameMode.OpcenterGameMode_C.ReceiveBeginPlay");
 
 	AOpcenterGameMode_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +53,7 @@ void AOpcenterGameMode_C::ReceiveBeginPlay()
 
 void AOpcenterGameMode_C::ExecuteUbergraph_OpcenterGameMode(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OpcenterGameMode.OpcenterGameMode_C.ExecuteUbergraph_OpcenterGameMode"));
+	static auto fn = UObject::FindObject<UFunction>("Function OpcenterGameMode.OpcenterGameMode_C.ExecuteUbergraph_OpcenterGameMode");
 
 	AOpcenterGameMode_C_ExecuteUbergraph_OpcenterGameMode_Params params;
 	params.EntryPoint = EntryPoint;

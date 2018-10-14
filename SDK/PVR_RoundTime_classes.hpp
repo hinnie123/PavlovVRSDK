@@ -23,7 +23,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("BlueprintGeneratedClass RoundTime.RoundTime_C"));
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass RoundTime.RoundTime_C");
 		return ptr;
 	}
 

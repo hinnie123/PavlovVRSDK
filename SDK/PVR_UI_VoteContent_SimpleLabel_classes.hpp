@@ -21,7 +21,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("WidgetBlueprintGeneratedClass UI_VoteContent_SimpleLabel.UI_VoteContent_SimpleLabel_C"));
+		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass UI_VoteContent_SimpleLabel.UI_VoteContent_SimpleLabel_C");
 		return ptr;
 	}
 

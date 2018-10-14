@@ -23,7 +23,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("WidgetBlueprintGeneratedClass UI_VoteCheckbox.UI_VoteCheckbox_C"));
+		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass UI_VoteCheckbox.UI_VoteCheckbox_C");
 		return ptr;
 	}
 

@@ -30,7 +30,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("BlueprintGeneratedClass BaseGameMode.BaseGameMode_C"));
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass BaseGameMode.BaseGameMode_C");
 		return ptr;
 	}
 

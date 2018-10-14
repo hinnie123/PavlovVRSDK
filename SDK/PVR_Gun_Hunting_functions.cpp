@@ -19,7 +19,7 @@ namespace SDK
 
 void AGun_Hunting_C::UpdateChamber(bool Index)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Hunting.Gun_Hunting_C.UpdateChamber"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Hunting.Gun_Hunting_C.UpdateChamber");
 
 	AGun_Hunting_C_UpdateChamber_Params params;
 	params.Index = Index;
@@ -39,7 +39,7 @@ void AGun_Hunting_C::UpdateChamber(bool Index)
 
 void AGun_Hunting_C::SetScopeCapture(bool Enabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Hunting.Gun_Hunting_C.SetScopeCapture"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Hunting.Gun_Hunting_C.SetScopeCapture");
 
 	AGun_Hunting_C_SetScopeCapture_Params params;
 	params.Enabled = Enabled;
@@ -57,7 +57,7 @@ void AGun_Hunting_C::SetScopeCapture(bool Enabled)
 
 void AGun_Hunting_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Hunting.Gun_Hunting_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Hunting.Gun_Hunting_C.UserConstructionScript");
 
 	AGun_Hunting_C_UserConstructionScript_Params params;
 
@@ -76,7 +76,7 @@ void AGun_Hunting_C::UserConstructionScript()
 
 void AGun_Hunting_C::OnPick(class AVRItemController** ByController)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Hunting.Gun_Hunting_C.OnPick"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Hunting.Gun_Hunting_C.OnPick");
 
 	AGun_Hunting_C_OnPick_Params params;
 	params.ByController = ByController;
@@ -94,7 +94,7 @@ void AGun_Hunting_C::OnPick(class AVRItemController** ByController)
 
 void AGun_Hunting_C::OnDrop()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Hunting.Gun_Hunting_C.OnDrop"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Hunting.Gun_Hunting_C.OnDrop");
 
 	AGun_Hunting_C_OnDrop_Params params;
 
@@ -111,7 +111,7 @@ void AGun_Hunting_C::OnDrop()
 
 void AGun_Hunting_C::BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnGrabSignature__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Hunting.Gun_Hunting_C.BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnGrabSignature__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Hunting.Gun_Hunting_C.BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnGrabSignature__DelegateSignature");
 
 	AGun_Hunting_C_BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnGrabSignature__DelegateSignature_Params params;
 
@@ -130,7 +130,7 @@ void AGun_Hunting_C::BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleO
 
 void AGun_Hunting_C::OnUnderExploitChanged(bool* bUnderExploit)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Hunting.Gun_Hunting_C.OnUnderExploitChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Hunting.Gun_Hunting_C.OnUnderExploitChanged");
 
 	AGun_Hunting_C_OnUnderExploitChanged_Params params;
 	params.bUnderExploit = bUnderExploit;
@@ -151,7 +151,7 @@ void AGun_Hunting_C::OnUnderExploitChanged(bool* bUnderExploit)
 
 void AGun_Hunting_C::BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnVectorInputReceivedSignature__DelegateSignature(const struct FVector& Input, const struct FVector& InputDelta)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Hunting.Gun_Hunting_C.BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnVectorInputReceivedSignature__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Hunting.Gun_Hunting_C.BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnVectorInputReceivedSignature__DelegateSignature");
 
 	AGun_Hunting_C_BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnVectorInputReceivedSignature__DelegateSignature_Params params;
 	params.Input = Input;
@@ -170,7 +170,7 @@ void AGun_Hunting_C::BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleO
 
 void AGun_Hunting_C::BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnUngrabSignature__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Hunting.Gun_Hunting_C.BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnUngrabSignature__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Hunting.Gun_Hunting_C.BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnUngrabSignature__DelegateSignature");
 
 	AGun_Hunting_C_BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnUngrabSignature__DelegateSignature_Params params;
 
@@ -187,7 +187,7 @@ void AGun_Hunting_C::BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleO
 
 void AGun_Hunting_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Hunting.Gun_Hunting_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Hunting.Gun_Hunting_C.ReceiveBeginPlay");
 
 	AGun_Hunting_C_ReceiveBeginPlay_Params params;
 
@@ -208,7 +208,7 @@ void AGun_Hunting_C::ReceiveBeginPlay()
 
 void AGun_Hunting_C::OnChamberStateChanged_Event_1(int ChamberIndex, EVRGunChamberState OldState, EVRGunChamberState NewState)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Hunting.Gun_Hunting_C.OnChamberStateChanged_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Hunting.Gun_Hunting_C.OnChamberStateChanged_Event_1");
 
 	AGun_Hunting_C_OnChamberStateChanged_Event_1_Params params;
 	params.ChamberIndex = ChamberIndex;
@@ -230,7 +230,7 @@ void AGun_Hunting_C::OnChamberStateChanged_Event_1(int ChamberIndex, EVRGunChamb
 
 void AGun_Hunting_C::ExecuteUbergraph_Gun_Hunting(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Hunting.Gun_Hunting_C.ExecuteUbergraph_Gun_Hunting"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Hunting.Gun_Hunting_C.ExecuteUbergraph_Gun_Hunting");
 
 	AGun_Hunting_C_ExecuteUbergraph_Gun_Hunting_Params params;
 	params.EntryPoint = EntryPoint;

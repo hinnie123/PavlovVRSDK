@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_OpcenterLogo_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_OpcenterLogo.BP_OpcenterLogo_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_OpcenterLogo.BP_OpcenterLogo_C.UserConstructionScript");
 
 	ABP_OpcenterLogo_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void ABP_OpcenterLogo_C::UserConstructionScript()
 
 void ABP_OpcenterLogo_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_OpcenterLogo.BP_OpcenterLogo_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_OpcenterLogo.BP_OpcenterLogo_C.ReceiveBeginPlay");
 
 	ABP_OpcenterLogo_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +53,7 @@ void ABP_OpcenterLogo_C::ReceiveBeginPlay()
 
 void ABP_OpcenterLogo_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_OpcenterLogo.BP_OpcenterLogo_C.ReceiveTick"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_OpcenterLogo.BP_OpcenterLogo_C.ReceiveTick");
 
 	ABP_OpcenterLogo_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -73,7 +73,7 @@ void ABP_OpcenterLogo_C::ReceiveTick(float* DeltaSeconds)
 
 void ABP_OpcenterLogo_C::ExecuteUbergraph_BP_OpcenterLogo(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_OpcenterLogo.BP_OpcenterLogo_C.ExecuteUbergraph_BP_OpcenterLogo"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_OpcenterLogo.BP_OpcenterLogo_C.ExecuteUbergraph_BP_OpcenterLogo");
 
 	ABP_OpcenterLogo_C_ExecuteUbergraph_BP_OpcenterLogo_Params params;
 	params.EntryPoint = EntryPoint;

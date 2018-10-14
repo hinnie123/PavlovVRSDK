@@ -19,7 +19,7 @@ namespace SDK
 
 void USteamLobby::SetVoiceChat(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamLobby.SetVoiceChat"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamLobby.SetVoiceChat");
 
 	USteamLobby_SetVoiceChat_Params params;
 	params.bEnabled = bEnabled;
@@ -41,7 +41,7 @@ void USteamLobby::SetVoiceChat(bool bEnabled)
 
 void USteamLobby::SetMemberData(const struct FString& Key, const struct FString& Value)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamLobby.SetMemberData"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamLobby.SetMemberData");
 
 	USteamLobby_SetMemberData_Params params;
 	params.Key = Key;
@@ -63,7 +63,7 @@ void USteamLobby::SetMemberData(const struct FString& Key, const struct FString&
 
 void USteamLobby::SetLobbyType(TEnumAsByte<ESteamLobbyType> Type)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamLobby.SetLobbyType"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamLobby.SetLobbyType");
 
 	USteamLobby_SetLobbyType_Params params;
 	params.Type = Type;
@@ -84,7 +84,7 @@ void USteamLobby::SetLobbyType(TEnumAsByte<ESteamLobbyType> Type)
 
 void USteamLobby::SetLobbyMemberLimit(int MemberLimit)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamLobby.SetLobbyMemberLimit"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamLobby.SetLobbyMemberLimit");
 
 	USteamLobby_SetLobbyMemberLimit_Params params;
 	params.MemberLimit = MemberLimit;
@@ -106,7 +106,7 @@ void USteamLobby::SetLobbyMemberLimit(int MemberLimit)
 
 void USteamLobby::SetLobbyData(const struct FString& Key, const struct FString& Value)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamLobby.SetLobbyData"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamLobby.SetLobbyData");
 
 	USteamLobby_SetLobbyData_Params params;
 	params.Key = Key;
@@ -128,7 +128,7 @@ void USteamLobby::SetLobbyData(const struct FString& Key, const struct FString& 
 
 bool USteamLobby::IsVoiceChatEnabled()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamLobby.IsVoiceChatEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamLobby.IsVoiceChatEnabled");
 
 	USteamLobby_IsVoiceChatEnabled_Params params;
 
@@ -151,7 +151,7 @@ bool USteamLobby::IsVoiceChatEnabled()
 
 bool USteamLobby::IsMemberTalking(int Index)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamLobby.IsMemberTalking"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamLobby.IsMemberTalking");
 
 	USteamLobby_IsMemberTalking_Params params;
 	params.Index = Index;
@@ -174,7 +174,7 @@ bool USteamLobby::IsMemberTalking(int Index)
 
 bool USteamLobby::IsLocalUserOwner()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamLobby.IsLocalUserOwner"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamLobby.IsLocalUserOwner");
 
 	USteamLobby_IsLocalUserOwner_Params params;
 
@@ -194,7 +194,7 @@ bool USteamLobby::IsLocalUserOwner()
 
 void USteamLobby::InviteFriends()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamLobby.InviteFriends"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamLobby.InviteFriends");
 
 	USteamLobby_InviteFriends_Params params;
 
@@ -214,7 +214,7 @@ void USteamLobby::InviteFriends()
 
 int USteamLobby::GetNumLobbyMembers()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamLobby.GetNumLobbyMembers"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamLobby.GetNumLobbyMembers");
 
 	USteamLobby_GetNumLobbyMembers_Params params;
 
@@ -238,7 +238,7 @@ int USteamLobby::GetNumLobbyMembers()
 
 struct FString USteamLobby::GetMemberData(int Index, const struct FString& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamLobby.GetMemberData"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamLobby.GetMemberData");
 
 	USteamLobby_GetMemberData_Params params;
 	params.Index = Index;
@@ -262,7 +262,7 @@ struct FString USteamLobby::GetMemberData(int Index, const struct FString& Key)
 
 int USteamLobby::GetLobbyMemberLimit()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamLobby.GetLobbyMemberLimit"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamLobby.GetLobbyMemberLimit");
 
 	USteamLobby_GetLobbyMemberLimit_Params params;
 
@@ -285,7 +285,7 @@ int USteamLobby::GetLobbyMemberLimit()
 
 struct FString USteamLobby::GetLobbyData(const struct FString& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamLobby.GetLobbyData"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamLobby.GetLobbyData");
 
 	USteamLobby_GetLobbyData_Params params;
 	params.Key = Key;
@@ -308,7 +308,7 @@ struct FString USteamLobby::GetLobbyData(const struct FString& Key)
 
 void USteamVoiceComponent::ToggleRadio(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamVoiceComponent.ToggleRadio"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamVoiceComponent.ToggleRadio");
 
 	USteamVoiceComponent_ToggleRadio_Params params;
 	params.bEnabled = bEnabled;
@@ -327,7 +327,7 @@ void USteamVoiceComponent::ToggleRadio(bool bEnabled)
 
 void USteamVoiceComponent::Talk()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamVoiceComponent.Talk"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamVoiceComponent.Talk");
 
 	USteamVoiceComponent_Talk_Params params;
 
@@ -345,7 +345,7 @@ void USteamVoiceComponent::Talk()
 
 void USteamVoiceComponent::ShutUp()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamVoiceComponent.ShutUp"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamVoiceComponent.ShutUp");
 
 	USteamVoiceComponent_ShutUp_Params params;
 
@@ -365,7 +365,7 @@ void USteamVoiceComponent::ShutUp()
 
 void USteamVoiceComponent::SetRadio(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamVoiceComponent.SetRadio"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamVoiceComponent.SetRadio");
 
 	USteamVoiceComponent_SetRadio_Params params;
 	params.bEnabled = bEnabled;
@@ -386,7 +386,7 @@ void USteamVoiceComponent::SetRadio(bool bEnabled)
 
 void USteamVoiceComponent::ServerToggleRadio(bool bToggled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamVoiceComponent.ServerToggleRadio"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamVoiceComponent.ServerToggleRadio");
 
 	USteamVoiceComponent_ServerToggleRadio_Params params;
 	params.bToggled = bToggled;
@@ -407,7 +407,7 @@ void USteamVoiceComponent::ServerToggleRadio(bool bToggled)
 
 void USteamVoiceComponent::ServerOnVoice(const struct FSteamworksVoicePacket& VoicePacket)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamVoiceComponent.ServerOnVoice"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamVoiceComponent.ServerOnVoice");
 
 	USteamVoiceComponent_ServerOnVoice_Params params;
 	params.VoicePacket = VoicePacket;
@@ -426,7 +426,7 @@ void USteamVoiceComponent::ServerOnVoice(const struct FSteamworksVoicePacket& Vo
 
 void USteamVoiceComponent::OnVoiceFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamVoiceComponent.OnVoiceFinished"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamVoiceComponent.OnVoiceFinished");
 
 	USteamVoiceComponent_OnVoiceFinished_Params params;
 
@@ -444,7 +444,7 @@ void USteamVoiceComponent::OnVoiceFinished()
 
 void USteamVoiceComponent::OnRep_TalkingInRadio()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamVoiceComponent.OnRep_TalkingInRadio"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamVoiceComponent.OnRep_TalkingInRadio");
 
 	USteamVoiceComponent_OnRep_TalkingInRadio_Params params;
 
@@ -464,7 +464,7 @@ void USteamVoiceComponent::OnRep_TalkingInRadio()
 
 void USteamVoiceComponent::MulticastOnVoice(const struct FSteamworksVoicePacket& VoicePacket)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamVoiceComponent.MulticastOnVoice"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamVoiceComponent.MulticastOnVoice");
 
 	USteamVoiceComponent_MulticastOnVoice_Params params;
 	params.VoicePacket = VoicePacket;
@@ -485,7 +485,7 @@ void USteamVoiceComponent::MulticastOnVoice(const struct FSteamworksVoicePacket&
 
 bool USteamVoiceComponent::IsTalking()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamVoiceComponent.IsTalking"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamVoiceComponent.IsTalking");
 
 	USteamVoiceComponent_IsTalking_Params params;
 
@@ -507,7 +507,7 @@ bool USteamVoiceComponent::IsTalking()
 
 struct FName USteamItem::GetType()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamItem.GetType"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamItem.GetType");
 
 	USteamItem_GetType_Params params;
 
@@ -529,7 +529,7 @@ struct FName USteamItem::GetType()
 
 void ASteamRadio::InitializePlaybackChannels(class USoundCue* ChannelCue)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamRadio.InitializePlaybackChannels"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamRadio.InitializePlaybackChannels");
 
 	ASteamRadio_InitializePlaybackChannels_Params params;
 	params.ChannelCue = ChannelCue;
@@ -550,7 +550,7 @@ void ASteamRadio::InitializePlaybackChannels(class USoundCue* ChannelCue)
 
 void USteamworksManager::SetVoiceRecording(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamworksManager.SetVoiceRecording"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksManager.SetVoiceRecording");
 
 	USteamworksManager_SetVoiceRecording_Params params;
 	params.bEnabled = bEnabled;
@@ -571,7 +571,7 @@ void USteamworksManager::SetVoiceRecording(bool bEnabled)
 
 void USteamworksManager::RequestLobbyList(bool bWithData)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamworksManager.RequestLobbyList"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksManager.RequestLobbyList");
 
 	USteamworksManager_RequestLobbyList_Params params;
 	params.bWithData = bWithData;
@@ -592,7 +592,7 @@ void USteamworksManager::RequestLobbyList(bool bWithData)
 
 void USteamworksManager::OnPublicIpAddressResolved(const struct FString& IpAddress)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamworksManager.OnPublicIpAddressResolved"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksManager.OnPublicIpAddressResolved");
 
 	USteamworksManager_OnPublicIpAddressResolved_Params params;
 	params.IpAddress = IpAddress;
@@ -611,7 +611,7 @@ void USteamworksManager::OnPublicIpAddressResolved(const struct FString& IpAddre
 
 void USteamworksManager::LeaveLobby()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamworksManager.LeaveLobby"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksManager.LeaveLobby");
 
 	USteamworksManager_LeaveLobby_Params params;
 
@@ -631,7 +631,7 @@ void USteamworksManager::LeaveLobby()
 
 void USteamworksManager::JoinLobby(const struct FSteamLobbyInfo& LobbyInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamworksManager.JoinLobby"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksManager.JoinLobby");
 
 	USteamworksManager_JoinLobby_Params params;
 	params.LobbyInfo = LobbyInfo;
@@ -652,7 +652,7 @@ void USteamworksManager::JoinLobby(const struct FSteamLobbyInfo& LobbyInfo)
 
 bool USteamworksManager::IsRecordingVoice()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamworksManager.IsRecordingVoice"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksManager.IsRecordingVoice");
 
 	USteamworksManager_IsRecordingVoice_Params params;
 
@@ -675,7 +675,7 @@ bool USteamworksManager::IsRecordingVoice()
 
 bool USteamworksManager::HasInstanceOf(int DefinitionId)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamworksManager.HasInstanceOf"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksManager.HasInstanceOf");
 
 	USteamworksManager_HasInstanceOf_Params params;
 	params.DefinitionId = DefinitionId;
@@ -699,7 +699,7 @@ bool USteamworksManager::HasInstanceOf(int DefinitionId)
 
 struct FString USteamworksManager::GetPlayerNameByStringId(const struct FString& StringId)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamworksManager.GetPlayerNameByStringId"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksManager.GetPlayerNameByStringId");
 
 	USteamworksManager_GetPlayerNameByStringId_Params params;
 	params.StringId = StringId;
@@ -722,7 +722,7 @@ struct FString USteamworksManager::GetPlayerNameByStringId(const struct FString&
 
 class USteamLobby* USteamworksManager::GetLobbyInstance()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamworksManager.GetLobbyInstance"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksManager.GetLobbyInstance");
 
 	USteamworksManager_GetLobbyInstance_Params params;
 
@@ -746,7 +746,7 @@ class USteamLobby* USteamworksManager::GetLobbyInstance()
 
 class UTexture2D* USteamworksManager::GetAvatarByStringId(const struct FString& StringId, class UTexture2D* FailoverTexture)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamworksManager.GetAvatarByStringId"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksManager.GetAvatarByStringId");
 
 	USteamworksManager_GetAvatarByStringId_Params params;
 	params.StringId = StringId;
@@ -772,7 +772,7 @@ class UTexture2D* USteamworksManager::GetAvatarByStringId(const struct FString& 
 
 class UTexture2D* USteamworksManager::GetAvatar(class APlayerState* PlayerState, class UTexture2D* FailoverTexture)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamworksManager.GetAvatar"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksManager.GetAvatar");
 
 	USteamworksManager_GetAvatar_Params params;
 	params.PlayerState = PlayerState;
@@ -794,7 +794,7 @@ class UTexture2D* USteamworksManager::GetAvatar(class APlayerState* PlayerState,
 
 void USteamworksManager::GetAuthSessionTicket()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamworksManager.GetAuthSessionTicket"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksManager.GetAuthSessionTicket");
 
 	USteamworksManager_GetAuthSessionTicket_Params params;
 
@@ -812,7 +812,7 @@ void USteamworksManager::GetAuthSessionTicket()
 
 void USteamworksManager::GetAllInventoryItems()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamworksManager.GetAllInventoryItems"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksManager.GetAllInventoryItems");
 
 	USteamworksManager_GetAllInventoryItems_Params params;
 
@@ -833,7 +833,7 @@ void USteamworksManager::GetAllInventoryItems()
 
 class USteamworksManager* USteamworksManager::STATIC_Get(class UObject* WorldContextObject)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamworksManager.Get"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksManager.Get");
 
 	USteamworksManager_Get_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -857,7 +857,7 @@ class USteamworksManager* USteamworksManager::STATIC_Get(class UObject* WorldCon
 
 void USteamworksManager::CreateLobby(int LobbyMemberLimit, bool bPublic)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamworksManager.CreateLobby"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksManager.CreateLobby");
 
 	USteamworksManager_CreateLobby_Params params;
 	params.LobbyMemberLimit = LobbyMemberLimit;
@@ -877,7 +877,7 @@ void USteamworksManager::CreateLobby(int LobbyMemberLimit, bool bPublic)
 
 void USteamworksManager::CancelAuthTicket()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamworksManager.CancelAuthTicket"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksManager.CancelAuthTicket");
 
 	USteamworksManager_CancelAuthTicket_Params params;
 
@@ -899,7 +899,7 @@ void USteamworksManager::CancelAuthTicket()
 
 void USteamworksManager::AddRequestLobbyListStringFilter(const struct FString& KeyToMatch, const struct FString& ValueToMatch, ESteamLobbyComparison ComparisonType)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamworksManager.AddRequestLobbyListStringFilter"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksManager.AddRequestLobbyListStringFilter");
 
 	USteamworksManager_AddRequestLobbyListStringFilter_Params params;
 	params.KeyToMatch = KeyToMatch;
@@ -924,7 +924,7 @@ void USteamworksManager::AddRequestLobbyListStringFilter(const struct FString& K
 
 void USteamworksManager::AddRequestLobbyListNumericalFilter(const struct FString& KeyToMatch, int ValueToMatch, ESteamLobbyComparison ComparisonType)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamworksManager.AddRequestLobbyListNumericalFilter"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksManager.AddRequestLobbyListNumericalFilter");
 
 	USteamworksManager_AddRequestLobbyListNumericalFilter_Params params;
 	params.KeyToMatch = KeyToMatch;
@@ -948,7 +948,7 @@ void USteamworksManager::AddRequestLobbyListNumericalFilter(const struct FString
 
 void USteamworksManager::AddRequestLobbyListNearValueFilter(const struct FString& KeyToMatch, int ValueToBeCloseTo)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamworksManager.AddRequestLobbyListNearValueFilter"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksManager.AddRequestLobbyListNearValueFilter");
 
 	USteamworksManager_AddRequestLobbyListNearValueFilter_Params params;
 	params.KeyToMatch = KeyToMatch;
@@ -970,7 +970,7 @@ void USteamworksManager::AddRequestLobbyListNearValueFilter(const struct FString
 
 void USteamworksManager::AddRequestLobbyListFilterSlotsAvailable(int SlotsAvailable)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamworksManager.AddRequestLobbyListFilterSlotsAvailable"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksManager.AddRequestLobbyListFilterSlotsAvailable");
 
 	USteamworksManager_AddRequestLobbyListFilterSlotsAvailable_Params params;
 	params.SlotsAvailable = SlotsAvailable;
@@ -991,7 +991,7 @@ void USteamworksManager::AddRequestLobbyListFilterSlotsAvailable(int SlotsAvaila
 
 void USteamworksManager::AddRequestLobbyListDistanceFilter(ESteamLobbyDistanceFilter DistanceFilter)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamworksManager.AddRequestLobbyListDistanceFilter"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksManager.AddRequestLobbyListDistanceFilter");
 
 	USteamworksManager_AddRequestLobbyListDistanceFilter_Params params;
 	params.DistanceFilter = DistanceFilter;
@@ -1013,7 +1013,7 @@ void USteamworksManager::AddRequestLobbyListDistanceFilter(ESteamLobbyDistanceFi
 
 struct FString USteamworksStatics::STATIC_GetLocalSteamId(class UObject* WorldContextObject)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamworksStatics.GetLocalSteamId"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksStatics.GetLocalSteamId");
 
 	USteamworksStatics_GetLocalSteamId_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -1036,7 +1036,7 @@ struct FString USteamworksStatics::STATIC_GetLocalSteamId(class UObject* WorldCo
 
 void USteamworksStatics::STATIC_FindLobbies(class UObject* WorldContextObject)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamworksStatics.FindLobbies"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksStatics.FindLobbies");
 
 	USteamworksStatics_FindLobbies_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -1057,7 +1057,7 @@ void USteamworksStatics::STATIC_FindLobbies(class UObject* WorldContextObject)
 
 void USteamworksStatics::STATIC_CreateLobby(class UObject* WorldContextObject)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Steamworks.SteamworksStatics.CreateLobby"));
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksStatics.CreateLobby");
 
 	USteamworksStatics_CreateLobby_Params params;
 	params.WorldContextObject = WorldContextObject;

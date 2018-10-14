@@ -19,7 +19,7 @@ namespace SDK
 
 void AGun_AWP_C::SetScopeCapture(bool Enabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_AWP.Gun_AWP_C.SetScopeCapture"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_AWP.Gun_AWP_C.SetScopeCapture");
 
 	AGun_AWP_C_SetScopeCapture_Params params;
 	params.Enabled = Enabled;
@@ -37,7 +37,7 @@ void AGun_AWP_C::SetScopeCapture(bool Enabled)
 
 void AGun_AWP_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_AWP.Gun_AWP_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_AWP.Gun_AWP_C.UserConstructionScript");
 
 	AGun_AWP_C_UserConstructionScript_Params params;
 
@@ -56,7 +56,7 @@ void AGun_AWP_C::UserConstructionScript()
 
 void AGun_AWP_C::OnPick(class AVRItemController** ByController)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_AWP.Gun_AWP_C.OnPick"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_AWP.Gun_AWP_C.OnPick");
 
 	AGun_AWP_C_OnPick_Params params;
 	params.ByController = ByController;
@@ -74,7 +74,7 @@ void AGun_AWP_C::OnPick(class AVRItemController** ByController)
 
 void AGun_AWP_C::OnDrop()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_AWP.Gun_AWP_C.OnDrop"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_AWP.Gun_AWP_C.OnDrop");
 
 	AGun_AWP_C_OnDrop_Params params;
 
@@ -91,7 +91,7 @@ void AGun_AWP_C::OnDrop()
 
 void AGun_AWP_C::BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnGrabSignature__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_AWP.Gun_AWP_C.BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnGrabSignature__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_AWP.Gun_AWP_C.BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnGrabSignature__DelegateSignature");
 
 	AGun_AWP_C_BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnGrabSignature__DelegateSignature_Params params;
 
@@ -110,7 +110,7 @@ void AGun_AWP_C::BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnGra
 
 void AGun_AWP_C::OnUnderExploitChanged(bool* bUnderExploit)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_AWP.Gun_AWP_C.OnUnderExploitChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_AWP.Gun_AWP_C.OnUnderExploitChanged");
 
 	AGun_AWP_C_OnUnderExploitChanged_Params params;
 	params.bUnderExploit = bUnderExploit;
@@ -131,7 +131,7 @@ void AGun_AWP_C::OnUnderExploitChanged(bool* bUnderExploit)
 
 void AGun_AWP_C::BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnVectorInputReceivedSignature__DelegateSignature(const struct FVector& Input, const struct FVector& InputDelta)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_AWP.Gun_AWP_C.BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnVectorInputReceivedSignature__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_AWP.Gun_AWP_C.BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnVectorInputReceivedSignature__DelegateSignature");
 
 	AGun_AWP_C_BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnVectorInputReceivedSignature__DelegateSignature_Params params;
 	params.Input = Input;
@@ -150,7 +150,7 @@ void AGun_AWP_C::BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnVec
 
 void AGun_AWP_C::BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnUngrabSignature__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_AWP.Gun_AWP_C.BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnUngrabSignature__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_AWP.Gun_AWP_C.BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnUngrabSignature__DelegateSignature");
 
 	AGun_AWP_C_BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnUngrabSignature__DelegateSignature_Params params;
 
@@ -167,7 +167,7 @@ void AGun_AWP_C::BndEvt__ReloadHandle_K2Node_ComponentBoundEvent_0_VRHandleOnUng
 
 void AGun_AWP_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_AWP.Gun_AWP_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_AWP.Gun_AWP_C.ReceiveBeginPlay");
 
 	AGun_AWP_C_ReceiveBeginPlay_Params params;
 
@@ -188,7 +188,7 @@ void AGun_AWP_C::ReceiveBeginPlay()
 
 void AGun_AWP_C::OnChamberStateChanged_Event_1(int ChamberIndex, EVRGunChamberState OldState, EVRGunChamberState NewState)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_AWP.Gun_AWP_C.OnChamberStateChanged_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_AWP.Gun_AWP_C.OnChamberStateChanged_Event_1");
 
 	AGun_AWP_C_OnChamberStateChanged_Event_1_Params params;
 	params.ChamberIndex = ChamberIndex;
@@ -210,7 +210,7 @@ void AGun_AWP_C::OnChamberStateChanged_Event_1(int ChamberIndex, EVRGunChamberSt
 
 void AGun_AWP_C::ExecuteUbergraph_Gun_AWP(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_AWP.Gun_AWP_C.ExecuteUbergraph_Gun_AWP"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_AWP.Gun_AWP_C.ExecuteUbergraph_Gun_AWP");
 
 	AGun_AWP_C_ExecuteUbergraph_Gun_AWP_Params params;
 	params.EntryPoint = EntryPoint;

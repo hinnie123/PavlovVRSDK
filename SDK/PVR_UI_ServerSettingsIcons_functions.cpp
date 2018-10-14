@@ -19,7 +19,7 @@ namespace SDK
 
 void UUI_ServerSettingsIcons_C::UpdateIcons(const struct FServerSettings& ServerSettings)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerSettingsIcons.UI_ServerSettingsIcons_C.UpdateIcons"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerSettingsIcons.UI_ServerSettingsIcons_C.UpdateIcons");
 
 	UUI_ServerSettingsIcons_C_UpdateIcons_Params params;
 	params.ServerSettings = ServerSettings;
@@ -37,7 +37,7 @@ void UUI_ServerSettingsIcons_C::UpdateIcons(const struct FServerSettings& Server
 
 void UUI_ServerSettingsIcons_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerSettingsIcons.UI_ServerSettingsIcons_C.Construct"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerSettingsIcons.UI_ServerSettingsIcons_C.Construct");
 
 	UUI_ServerSettingsIcons_C_Construct_Params params;
 
@@ -56,7 +56,7 @@ void UUI_ServerSettingsIcons_C::Construct()
 
 void UUI_ServerSettingsIcons_C::ExecuteUbergraph_UI_ServerSettingsIcons(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerSettingsIcons.UI_ServerSettingsIcons_C.ExecuteUbergraph_UI_ServerSettingsIcons"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerSettingsIcons.UI_ServerSettingsIcons_C.ExecuteUbergraph_UI_ServerSettingsIcons");
 
 	UUI_ServerSettingsIcons_C_ExecuteUbergraph_UI_ServerSettingsIcons_Params params;
 	params.EntryPoint = EntryPoint;

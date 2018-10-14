@@ -17,7 +17,7 @@ namespace SDK
 
 void UVCollisionEffectComponent::ResetCooldown()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VCollisionEffectComponent.ResetCooldown"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VCollisionEffectComponent.ResetCooldown");
 
 	UVCollisionEffectComponent_ResetCooldown_Params params;
 
@@ -40,7 +40,7 @@ void UVCollisionEffectComponent::ResetCooldown()
 
 void UVCollisionEffectComponent::OnActorHit(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VCollisionEffectComponent.OnActorHit"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VCollisionEffectComponent.OnActorHit");
 
 	UVCollisionEffectComponent_OnActorHit_Params params;
 	params.SelfActor = SelfActor;
@@ -62,7 +62,7 @@ void UVCollisionEffectComponent::OnActorHit(class AActor* SelfActor, class AActo
 
 void UVDecalComponent::Project()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VDecalComponent.Project"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VDecalComponent.Project");
 
 	UVDecalComponent_Project_Params params;
 
@@ -80,7 +80,7 @@ void UVDecalComponent::Project()
 
 void UVDecalComponent::CheckTaskCompletion()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VDecalComponent.CheckTaskCompletion"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VDecalComponent.CheckTaskCompletion");
 
 	UVDecalComponent_CheckTaskCompletion_Params params;
 
@@ -98,7 +98,7 @@ void UVDecalComponent::CheckTaskCompletion()
 
 void UVHealthComponent::Revive()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VHealthComponent.Revive"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VHealthComponent.Revive");
 
 	UVHealthComponent_Revive_Params params;
 
@@ -126,7 +126,7 @@ void UVHealthComponent::Revive()
 
 void UVHealthComponent::OnTakePointDamage(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, const struct FVector& HitLocation, class UPrimitiveComponent* HitComponent, const struct FName& BoneName, const struct FVector& ShotFromDirection, class UDamageType* DamageType, class AActor* DamageCauser)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VHealthComponent.OnTakePointDamage"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VHealthComponent.OnTakePointDamage");
 
 	UVHealthComponent_OnTakePointDamage_Params params;
 	params.DamagedActor = DamagedActor;
@@ -159,7 +159,7 @@ void UVHealthComponent::OnTakePointDamage(class AActor* DamagedActor, float Dama
 
 void UVHealthComponent::OnTakeAnyDamage(class AActor* DamagedActor, float Damage, class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VHealthComponent.OnTakeAnyDamage"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VHealthComponent.OnTakeAnyDamage");
 
 	UVHealthComponent_OnTakeAnyDamage_Params params;
 	params.DamagedActor = DamagedActor;
@@ -182,7 +182,7 @@ void UVHealthComponent::OnTakeAnyDamage(class AActor* DamagedActor, float Damage
 
 void UVHealthComponent::OnRep_Dead()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VHealthComponent.OnRep_Dead"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VHealthComponent.OnRep_Dead");
 
 	UVHealthComponent_OnRep_Dead_Params params;
 
@@ -200,7 +200,7 @@ void UVHealthComponent::OnRep_Dead()
 
 void UVHealthComponent::MulticastOnRevived()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VHealthComponent.MulticastOnRevived"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VHealthComponent.MulticastOnRevived");
 
 	UVHealthComponent_MulticastOnRevived_Params params;
 
@@ -220,7 +220,7 @@ void UVHealthComponent::MulticastOnRevived()
 
 void UVHealthComponent::MulticastOnKilledWithData(const struct FVKillData& Data)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VHealthComponent.MulticastOnKilledWithData"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VHealthComponent.MulticastOnKilledWithData");
 
 	UVHealthComponent_MulticastOnKilledWithData_Params params;
 	params.Data = Data;
@@ -239,7 +239,7 @@ void UVHealthComponent::MulticastOnKilledWithData(const struct FVKillData& Data)
 
 void UVHealthComponent::MulticastOnKilled()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VHealthComponent.MulticastOnKilled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VHealthComponent.MulticastOnKilled");
 
 	UVHealthComponent_MulticastOnKilled_Params params;
 
@@ -259,7 +259,7 @@ void UVHealthComponent::MulticastOnKilled()
 
 void UVHealthComponent::MulticastOnHitEffect(EVHitEffect Effect)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VHealthComponent.MulticastOnHitEffect"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VHealthComponent.MulticastOnHitEffect");
 
 	UVHealthComponent_MulticastOnHitEffect_Params params;
 	params.Effect = Effect;
@@ -278,7 +278,7 @@ void UVHealthComponent::MulticastOnHitEffect(EVHitEffect Effect)
 
 void UVHealthComponent::Kill()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VHealthComponent.Kill"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VHealthComponent.Kill");
 
 	UVHealthComponent_Kill_Params params;
 
@@ -296,7 +296,7 @@ void UVHealthComponent::Kill()
 
 void UVHealthComponent::ApplyKillImpulse()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VHealthComponent.ApplyKillImpulse"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VHealthComponent.ApplyKillImpulse");
 
 	UVHealthComponent_ApplyKillImpulse_Params params;
 
@@ -314,7 +314,7 @@ void UVHealthComponent::ApplyKillImpulse()
 
 void AVMenu::Show()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VMenu.Show"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VMenu.Show");
 
 	AVMenu_Show_Params params;
 
@@ -334,7 +334,7 @@ void AVMenu::Show()
 
 void AVMenu::SetVisibility(bool bVisible)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VMenu.SetVisibility"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VMenu.SetVisibility");
 
 	AVMenu_SetVisibility_Params params;
 	params.bVisible = bVisible;
@@ -353,7 +353,7 @@ void AVMenu::SetVisibility(bool bVisible)
 
 void AVMenu::Hide()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VMenu.Hide"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VMenu.Hide");
 
 	AVMenu_Hide_Params params;
 
@@ -371,7 +371,7 @@ void AVMenu::Hide()
 
 void AVLobby::StartGameImpl()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VLobby.StartGameImpl"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VLobby.StartGameImpl");
 
 	AVLobby_StartGameImpl_Params params;
 
@@ -391,7 +391,7 @@ void AVLobby::StartGameImpl()
 
 void AVLobby::OnLeaveLobbyPrompt(int Result)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VLobby.OnLeaveLobbyPrompt"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VLobby.OnLeaveLobbyPrompt");
 
 	AVLobby_OnLeaveLobbyPrompt_Params params;
 	params.Result = Result;
@@ -410,7 +410,7 @@ void AVLobby::OnLeaveLobbyPrompt(int Result)
 
 void AVLobby::OnGoBack()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VLobby.OnGoBack"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VLobby.OnGoBack");
 
 	AVLobby_OnGoBack_Params params;
 
@@ -427,7 +427,7 @@ void AVLobby::OnGoBack()
 
 void AVLobby::MulticastOnLeavingLobby()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VLobby.MulticastOnLeavingLobby"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VLobby.MulticastOnLeavingLobby");
 
 	AVLobby_MulticastOnLeavingLobby_Params params;
 
@@ -445,7 +445,7 @@ void AVLobby::MulticastOnLeavingLobby()
 
 void AVLobby::MulticastOnGameStart()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VLobby.MulticastOnGameStart"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VLobby.MulticastOnGameStart");
 
 	AVLobby_MulticastOnGameStart_Params params;
 
@@ -463,7 +463,7 @@ void AVLobby::MulticastOnGameStart()
 
 void AVLobby::LeaveLobbyImpl()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VLobby.LeaveLobbyImpl"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VLobby.LeaveLobbyImpl");
 
 	AVLobby_LeaveLobbyImpl_Params params;
 
@@ -485,7 +485,7 @@ void AVLobby::LeaveLobbyImpl()
 
 class ACharacter* UVSpawnManagerComponent::SpawnRandomly(class UClass* CharacterClass, const struct FVSpawnParams& Params)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VSpawnManagerComponent.SpawnRandomly"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VSpawnManagerComponent.SpawnRandomly");
 
 	UVSpawnManagerComponent_SpawnRandomly_Params params;
 	params.CharacterClass = CharacterClass;
@@ -512,7 +512,7 @@ class ACharacter* UVSpawnManagerComponent::SpawnRandomly(class UClass* Character
 
 class ACharacter* UVSpawnManagerComponent::SpawnAt(const struct FTransform& Transform, class UClass* CharacterClass, const struct FVSpawnParams& Params)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VSpawnManagerComponent.SpawnAt"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VSpawnManagerComponent.SpawnAt");
 
 	UVSpawnManagerComponent_SpawnAt_Params params;
 	params.Transform = Transform;
@@ -539,7 +539,7 @@ class ACharacter* UVSpawnManagerComponent::SpawnAt(const struct FTransform& Tran
 
 class ACharacter* UVSpawnManagerComponent::Spawn(class UClass* CharacterClass, const struct FVSpawnParams& Params)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VSpawnManagerComponent.Spawn"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VSpawnManagerComponent.Spawn");
 
 	UVSpawnManagerComponent_Spawn_Params params;
 	params.CharacterClass = CharacterClass;
@@ -566,7 +566,7 @@ class ACharacter* UVSpawnManagerComponent::Spawn(class UClass* CharacterClass, c
 
 struct FTransform UVSpawnManagerComponent::GetSpawnTransform(int AgentId, bool bOccluded, bool bClosest)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VSpawnManagerComponent.GetSpawnTransform"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VSpawnManagerComponent.GetSpawnTransform");
 
 	UVSpawnManagerComponent_GetSpawnTransform_Params params;
 	params.AgentId = AgentId;
@@ -591,7 +591,7 @@ struct FTransform UVSpawnManagerComponent::GetSpawnTransform(int AgentId, bool b
 
 struct FTransform UVSpawnManagerComponent::GetRandomSpawnTransform()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VSpawnManagerComponent.GetRandomSpawnTransform"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VSpawnManagerComponent.GetRandomSpawnTransform");
 
 	UVSpawnManagerComponent_GetRandomSpawnTransform_Params params;
 
@@ -614,7 +614,7 @@ struct FTransform UVSpawnManagerComponent::GetRandomSpawnTransform()
 
 bool AVSpawnPoint::IsOccluded(int PlayerIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VSpawnPoint.IsOccluded"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VSpawnPoint.IsOccluded");
 
 	AVSpawnPoint_IsOccluded_Params params;
 	params.PlayerIndex = PlayerIndex;
@@ -639,7 +639,7 @@ bool AVSpawnPoint::IsOccluded(int PlayerIndex)
 
 void UVStatics::STATIC_RetrieveNews(class UObject* WorldContextObject, const struct FString& URL, const struct FScriptDelegate& Delegate)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VStatics.RetrieveNews"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VStatics.RetrieveNews");
 
 	UVStatics_RetrieveNews_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -662,7 +662,7 @@ void UVStatics::STATIC_RetrieveNews(class UObject* WorldContextObject, const str
 
 void UVStatics::STATIC_LeaveGame(class UObject* WorldContextObject)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VStatics.LeaveGame"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VStatics.LeaveGame");
 
 	UVStatics_LeaveGame_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -684,7 +684,7 @@ void UVStatics::STATIC_LeaveGame(class UObject* WorldContextObject)
 
 bool UVStatics::STATIC_IsPlayingOnline(class UObject* WorldContextObject)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VStatics.IsPlayingOnline"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VStatics.IsPlayingOnline");
 
 	UVStatics_IsPlayingOnline_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -709,7 +709,7 @@ bool UVStatics::STATIC_IsPlayingOnline(class UObject* WorldContextObject)
 
 struct FString UVStatics::STATIC_FormatTime(class UObject* WorldContextObject, int Seconds)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vankrupt.VStatics.FormatTime"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vankrupt.VStatics.FormatTime");
 
 	UVStatics_FormatTime_Params params;
 	params.WorldContextObject = WorldContextObject;

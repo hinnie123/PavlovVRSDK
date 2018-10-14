@@ -17,7 +17,7 @@ namespace SDK
 
 void AGun_Revolver_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Revolver.Gun_Revolver_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Revolver.Gun_Revolver_C.UserConstructionScript");
 
 	AGun_Revolver_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void AGun_Revolver_C::UserConstructionScript()
 
 void AGun_Revolver_C::OnMagBoltRelease_Event_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Revolver.Gun_Revolver_C.OnMagBoltRelease_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Revolver.Gun_Revolver_C.OnMagBoltRelease_Event_1");
 
 	AGun_Revolver_C_OnMagBoltRelease_Event_1_Params params;
 
@@ -51,7 +51,7 @@ void AGun_Revolver_C::OnMagBoltRelease_Event_1()
 
 void AGun_Revolver_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Revolver.Gun_Revolver_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Revolver.Gun_Revolver_C.ReceiveBeginPlay");
 
 	AGun_Revolver_C_ReceiveBeginPlay_Params params;
 
@@ -70,7 +70,7 @@ void AGun_Revolver_C::ReceiveBeginPlay()
 
 void AGun_Revolver_C::OnRevolverCylinderChanged_Event_1(bool bOpen)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Revolver.Gun_Revolver_C.OnRevolverCylinderChanged_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Revolver.Gun_Revolver_C.OnRevolverCylinderChanged_Event_1");
 
 	AGun_Revolver_C_OnRevolverCylinderChanged_Event_1_Params params;
 	params.bOpen = bOpen;
@@ -90,7 +90,7 @@ void AGun_Revolver_C::OnRevolverCylinderChanged_Event_1(bool bOpen)
 
 void AGun_Revolver_C::OnGesturePerformedDelegate(const struct FName& Name)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Revolver.Gun_Revolver_C.OnGesturePerformedDelegate"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Revolver.Gun_Revolver_C.OnGesturePerformedDelegate");
 
 	AGun_Revolver_C_OnGesturePerformedDelegate_Params params;
 	params.Name = Name;
@@ -108,7 +108,7 @@ void AGun_Revolver_C::OnGesturePerformedDelegate(const struct FName& Name)
 
 void AGun_Revolver_C::SetupRemoval()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Revolver.Gun_Revolver_C.SetupRemoval"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Revolver.Gun_Revolver_C.SetupRemoval");
 
 	AGun_Revolver_C_SetupRemoval_Params params;
 
@@ -125,7 +125,7 @@ void AGun_Revolver_C::SetupRemoval()
 
 void AGun_Revolver_C::OnDrop()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Revolver.Gun_Revolver_C.OnDrop"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Revolver.Gun_Revolver_C.OnDrop");
 
 	AGun_Revolver_C_OnDrop_Params params;
 
@@ -142,7 +142,7 @@ void AGun_Revolver_C::OnDrop()
 
 void AGun_Revolver_C::OnSnapTriggerReset()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Revolver.Gun_Revolver_C.OnSnapTriggerReset"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Revolver.Gun_Revolver_C.OnSnapTriggerReset");
 
 	AGun_Revolver_C_OnSnapTriggerReset_Params params;
 
@@ -159,7 +159,7 @@ void AGun_Revolver_C::OnSnapTriggerReset()
 
 void AGun_Revolver_C::OnSpawnUnloaded()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Revolver.Gun_Revolver_C.OnSpawnUnloaded"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Revolver.Gun_Revolver_C.OnSpawnUnloaded");
 
 	AGun_Revolver_C_OnSpawnUnloaded_Params params;
 
@@ -176,7 +176,7 @@ void AGun_Revolver_C::OnSpawnUnloaded()
 
 void AGun_Revolver_C::SetupClose()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Revolver.Gun_Revolver_C.SetupClose"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Revolver.Gun_Revolver_C.SetupClose");
 
 	AGun_Revolver_C_SetupClose_Params params;
 
@@ -195,7 +195,7 @@ void AGun_Revolver_C::SetupClose()
 
 void AGun_Revolver_C::ExecuteUbergraph_Gun_Revolver(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Revolver.Gun_Revolver_C.ExecuteUbergraph_Gun_Revolver"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Revolver.Gun_Revolver_C.ExecuteUbergraph_Gun_Revolver");
 
 	AGun_Revolver_C_ExecuteUbergraph_Gun_Revolver_Params params;
 	params.EntryPoint = EntryPoint;

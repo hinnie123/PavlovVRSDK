@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_FlyingHelmet_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_FlyingHelmet.BP_FlyingHelmet_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_FlyingHelmet.BP_FlyingHelmet_C.UserConstructionScript");
 
 	ABP_FlyingHelmet_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void ABP_FlyingHelmet_C::UserConstructionScript()
 
 void ABP_FlyingHelmet_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_FlyingHelmet.BP_FlyingHelmet_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_FlyingHelmet.BP_FlyingHelmet_C.ReceiveBeginPlay");
 
 	ABP_FlyingHelmet_C_ReceiveBeginPlay_Params params;
 
@@ -57,7 +57,7 @@ void ABP_FlyingHelmet_C::ReceiveBeginPlay()
 
 void ABP_FlyingHelmet_C::BndEvt__Mesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_FlyingHelmet.BP_FlyingHelmet_C.BndEvt__Mesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_FlyingHelmet.BP_FlyingHelmet_C.BndEvt__Mesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature");
 
 	ABP_FlyingHelmet_C_BndEvt__Mesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature_Params params;
 	params.HitComponent = HitComponent;
@@ -81,7 +81,7 @@ void ABP_FlyingHelmet_C::BndEvt__Mesh_K2Node_ComponentBoundEvent_0_ComponentHitS
 
 void ABP_FlyingHelmet_C::ExecuteUbergraph_BP_FlyingHelmet(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_FlyingHelmet.BP_FlyingHelmet_C.ExecuteUbergraph_BP_FlyingHelmet"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_FlyingHelmet.BP_FlyingHelmet_C.ExecuteUbergraph_BP_FlyingHelmet");
 
 	ABP_FlyingHelmet_C_ExecuteUbergraph_BP_FlyingHelmet_Params params;
 	params.EntryPoint = EntryPoint;

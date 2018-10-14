@@ -34,7 +34,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CinematicCamera.CameraRig_Crane"));
+		static auto ptr = UObject::FindClass("Class CinematicCamera.CameraRig_Crane");
 		return ptr;
 	}
 
@@ -58,7 +58,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CinematicCamera.CameraRig_Rail"));
+		static auto ptr = UObject::FindClass("Class CinematicCamera.CameraRig_Rail");
 		return ptr;
 	}
 
@@ -75,7 +75,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CinematicCamera.CineCameraActor"));
+		static auto ptr = UObject::FindClass("Class CinematicCamera.CineCameraActor");
 		return ptr;
 	}
 
@@ -105,7 +105,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class CinematicCamera.CineCameraComponent"));
+		static auto ptr = UObject::FindClass("Class CinematicCamera.CineCameraComponent");
 		return ptr;
 	}
 

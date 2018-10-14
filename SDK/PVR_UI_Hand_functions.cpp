@@ -19,7 +19,7 @@ namespace SDK
 
 void UUI_Hand_C::SetScoreboard(bool Enabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Hand.UI_Hand_C.SetScoreboard"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Hand.UI_Hand_C.SetScoreboard");
 
 	UUI_Hand_C_SetScoreboard_Params params;
 	params.Enabled = Enabled;

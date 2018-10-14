@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_Sky_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Sky.BP_Sky_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Sky.BP_Sky_C.UserConstructionScript");
 
 	ABP_Sky_C_UserConstructionScript_Params params;
 
@@ -36,7 +36,7 @@ void ABP_Sky_C::UserConstructionScript()
 
 void ABP_Sky_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Sky.BP_Sky_C.ReceiveTick"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Sky.BP_Sky_C.ReceiveTick");
 
 	ABP_Sky_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -56,7 +56,7 @@ void ABP_Sky_C::ReceiveTick(float* DeltaSeconds)
 
 void ABP_Sky_C::ExecuteUbergraph_BP_Sky(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Sky.BP_Sky_C.ExecuteUbergraph_BP_Sky"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Sky.BP_Sky_C.ExecuteUbergraph_BP_Sky");
 
 	ABP_Sky_C_ExecuteUbergraph_BP_Sky_Params params;
 	params.EntryPoint = EntryPoint;

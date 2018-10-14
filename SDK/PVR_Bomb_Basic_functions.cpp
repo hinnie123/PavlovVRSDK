@@ -17,7 +17,7 @@ namespace SDK
 
 void ABomb_Basic_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Bomb_Basic.Bomb_Basic_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Bomb_Basic.Bomb_Basic_C.UserConstructionScript");
 
 	ABomb_Basic_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void ABomb_Basic_C::UserConstructionScript()
 
 void ABomb_Basic_C::OnBeep()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Bomb_Basic.Bomb_Basic_C.OnBeep"));
+	static auto fn = UObject::FindObject<UFunction>("Function Bomb_Basic.Bomb_Basic_C.OnBeep");
 
 	ABomb_Basic_C_OnBeep_Params params;
 
@@ -51,7 +51,7 @@ void ABomb_Basic_C::OnBeep()
 
 void ABomb_Basic_C::OnPlanted()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Bomb_Basic.Bomb_Basic_C.OnPlanted"));
+	static auto fn = UObject::FindObject<UFunction>("Function Bomb_Basic.Bomb_Basic_C.OnPlanted");
 
 	ABomb_Basic_C_OnPlanted_Params params;
 
@@ -70,7 +70,7 @@ void ABomb_Basic_C::OnPlanted()
 
 void ABomb_Basic_C::Physicalize(bool* bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Bomb_Basic.Bomb_Basic_C.Physicalize"));
+	static auto fn = UObject::FindObject<UFunction>("Function Bomb_Basic.Bomb_Basic_C.Physicalize");
 
 	ABomb_Basic_C_Physicalize_Params params;
 	params.bEnabled = bEnabled;
@@ -88,7 +88,7 @@ void ABomb_Basic_C::Physicalize(bool* bEnabled)
 
 void ABomb_Basic_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Bomb_Basic.Bomb_Basic_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function Bomb_Basic.Bomb_Basic_C.ReceiveBeginPlay");
 
 	ABomb_Basic_C_ReceiveBeginPlay_Params params;
 
@@ -107,7 +107,7 @@ void ABomb_Basic_C::ReceiveBeginPlay()
 
 void ABomb_Basic_C::OnPlayerOcclusionChange(bool* bNewOccluded)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Bomb_Basic.Bomb_Basic_C.OnPlayerOcclusionChange"));
+	static auto fn = UObject::FindObject<UFunction>("Function Bomb_Basic.Bomb_Basic_C.OnPlayerOcclusionChange");
 
 	ABomb_Basic_C_OnPlayerOcclusionChange_Params params;
 	params.bNewOccluded = bNewOccluded;
@@ -127,7 +127,7 @@ void ABomb_Basic_C::OnPlayerOcclusionChange(bool* bNewOccluded)
 
 void ABomb_Basic_C::ExecuteUbergraph_Bomb_Basic(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Bomb_Basic.Bomb_Basic_C.ExecuteUbergraph_Bomb_Basic"));
+	static auto fn = UObject::FindObject<UFunction>("Function Bomb_Basic.Bomb_Basic_C.ExecuteUbergraph_Bomb_Basic");
 
 	ABomb_Basic_C_ExecuteUbergraph_Bomb_Basic_Params params;
 	params.EntryPoint = EntryPoint;

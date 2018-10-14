@@ -17,7 +17,7 @@ namespace SDK
 
 void UUI_PIN_C::UpdateLabel()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PIN.UI_PIN_C.UpdateLabel"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_PIN.UI_PIN_C.UpdateLabel");
 
 	UUI_PIN_C_UpdateLabel_Params params;
 
@@ -34,7 +34,7 @@ void UUI_PIN_C::UpdateLabel()
 
 void UUI_PIN_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PIN.UI_PIN_C.Construct"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_PIN.UI_PIN_C.Construct");
 
 	UUI_PIN_C_Construct_Params params;
 
@@ -51,7 +51,7 @@ void UUI_PIN_C::Construct()
 
 void UUI_PIN_C::BndEvt__NumPad_K2Node_ComponentBoundEvent_0_OnConfirm__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PIN.UI_PIN_C.BndEvt__NumPad_K2Node_ComponentBoundEvent_0_OnConfirm__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_PIN.UI_PIN_C.BndEvt__NumPad_K2Node_ComponentBoundEvent_0_OnConfirm__DelegateSignature");
 
 	UUI_PIN_C_BndEvt__NumPad_K2Node_ComponentBoundEvent_0_OnConfirm__DelegateSignature_Params params;
 
@@ -68,7 +68,7 @@ void UUI_PIN_C::BndEvt__NumPad_K2Node_ComponentBoundEvent_0_OnConfirm__DelegateS
 
 void UUI_PIN_C::BndEvt__NumPad_K2Node_ComponentBoundEvent_1_OnErase__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PIN.UI_PIN_C.BndEvt__NumPad_K2Node_ComponentBoundEvent_1_OnErase__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_PIN.UI_PIN_C.BndEvt__NumPad_K2Node_ComponentBoundEvent_1_OnErase__DelegateSignature");
 
 	UUI_PIN_C_BndEvt__NumPad_K2Node_ComponentBoundEvent_1_OnErase__DelegateSignature_Params params;
 
@@ -87,7 +87,7 @@ void UUI_PIN_C::BndEvt__NumPad_K2Node_ComponentBoundEvent_1_OnErase__DelegateSig
 
 void UUI_PIN_C::BndEvt__NumPad_K2Node_ComponentBoundEvent_2_OnDigit__DelegateSignature(int Digit)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PIN.UI_PIN_C.BndEvt__NumPad_K2Node_ComponentBoundEvent_2_OnDigit__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_PIN.UI_PIN_C.BndEvt__NumPad_K2Node_ComponentBoundEvent_2_OnDigit__DelegateSignature");
 
 	UUI_PIN_C_BndEvt__NumPad_K2Node_ComponentBoundEvent_2_OnDigit__DelegateSignature_Params params;
 	params.Digit = Digit;
@@ -107,7 +107,7 @@ void UUI_PIN_C::BndEvt__NumPad_K2Node_ComponentBoundEvent_2_OnDigit__DelegateSig
 
 void UUI_PIN_C::ExecuteUbergraph_UI_PIN(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PIN.UI_PIN_C.ExecuteUbergraph_UI_PIN"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_PIN.UI_PIN_C.ExecuteUbergraph_UI_PIN");
 
 	UUI_PIN_C_ExecuteUbergraph_UI_PIN_Params params;
 	params.EntryPoint = EntryPoint;
@@ -127,7 +127,7 @@ void UUI_PIN_C::ExecuteUbergraph_UI_PIN(int EntryPoint)
 
 void UUI_PIN_C::OnConfirm__DelegateSignature(const struct FString& PinString)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PIN.UI_PIN_C.OnConfirm__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_PIN.UI_PIN_C.OnConfirm__DelegateSignature");
 
 	UUI_PIN_C_OnConfirm__DelegateSignature_Params params;
 	params.PinString = PinString;

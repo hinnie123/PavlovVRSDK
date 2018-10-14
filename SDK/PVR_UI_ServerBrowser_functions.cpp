@@ -17,7 +17,7 @@ namespace SDK
 
 void UUI_ServerBrowser_C::UpdatePageLabel()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerBrowser.UI_ServerBrowser_C.UpdatePageLabel"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerBrowser.UI_ServerBrowser_C.UpdatePageLabel");
 
 	UUI_ServerBrowser_C_UpdatePageLabel_Params params;
 
@@ -37,7 +37,7 @@ void UUI_ServerBrowser_C::UpdatePageLabel()
 
 void UUI_ServerBrowser_C::GetMapFromLabel(const struct FString& Label, struct FString* Map)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerBrowser.UI_ServerBrowser_C.GetMapFromLabel"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerBrowser.UI_ServerBrowser_C.GetMapFromLabel");
 
 	UUI_ServerBrowser_C_GetMapFromLabel_Params params;
 	params.Label = Label;
@@ -61,7 +61,7 @@ void UUI_ServerBrowser_C::GetMapFromLabel(const struct FString& Label, struct FS
 
 struct FString UUI_ServerBrowser_C::GetGameModeFromLabel(const struct FString& Value)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerBrowser.UI_ServerBrowser_C.GetGameModeFromLabel"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerBrowser.UI_ServerBrowser_C.GetGameModeFromLabel");
 
 	UUI_ServerBrowser_C_GetGameModeFromLabel_Params params;
 	params.Value = Value;
@@ -81,7 +81,7 @@ struct FString UUI_ServerBrowser_C::GetGameModeFromLabel(const struct FString& V
 
 void UUI_ServerBrowser_C::RefreshList()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerBrowser.UI_ServerBrowser_C.RefreshList"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerBrowser.UI_ServerBrowser_C.RefreshList");
 
 	UUI_ServerBrowser_C_RefreshList_Params params;
 
@@ -98,7 +98,7 @@ void UUI_ServerBrowser_C::RefreshList()
 
 void UUI_ServerBrowser_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerBrowser.UI_ServerBrowser_C.Construct"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerBrowser.UI_ServerBrowser_C.Construct");
 
 	UUI_ServerBrowser_C_Construct_Params params;
 
@@ -115,7 +115,7 @@ void UUI_ServerBrowser_C::Construct()
 
 void UUI_ServerBrowser_C::OnServerListUpdated_Event()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerBrowser.UI_ServerBrowser_C.OnServerListUpdated_Event"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerBrowser.UI_ServerBrowser_C.OnServerListUpdated_Event");
 
 	UUI_ServerBrowser_C_OnServerListUpdated_Event_Params params;
 
@@ -134,7 +134,7 @@ void UUI_ServerBrowser_C::OnServerListUpdated_Event()
 
 void UUI_ServerBrowser_C::BndEvt__UI_ServerFilter_C_0_K2Node_ComponentBoundEvent_3_OnSelectionChanged__DelegateSignature(const struct FString& Selection)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerBrowser.UI_ServerBrowser_C.BndEvt__UI_ServerFilter_C_0_K2Node_ComponentBoundEvent_3_OnSelectionChanged__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerBrowser.UI_ServerBrowser_C.BndEvt__UI_ServerFilter_C_0_K2Node_ComponentBoundEvent_3_OnSelectionChanged__DelegateSignature");
 
 	UUI_ServerBrowser_C_BndEvt__UI_ServerFilter_C_0_K2Node_ComponentBoundEvent_3_OnSelectionChanged__DelegateSignature_Params params;
 	params.Selection = Selection;
@@ -154,7 +154,7 @@ void UUI_ServerBrowser_C::BndEvt__UI_ServerFilter_C_0_K2Node_ComponentBoundEvent
 
 void UUI_ServerBrowser_C::BndEvt__FriendsFiltercombo_K2Node_ComponentBoundEvent_14_OnSelectionChanged__DelegateSignature(const struct FString& Selection)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerBrowser.UI_ServerBrowser_C.BndEvt__FriendsFiltercombo_K2Node_ComponentBoundEvent_14_OnSelectionChanged__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerBrowser.UI_ServerBrowser_C.BndEvt__FriendsFiltercombo_K2Node_ComponentBoundEvent_14_OnSelectionChanged__DelegateSignature");
 
 	UUI_ServerBrowser_C_BndEvt__FriendsFiltercombo_K2Node_ComponentBoundEvent_14_OnSelectionChanged__DelegateSignature_Params params;
 	params.Selection = Selection;
@@ -174,7 +174,7 @@ void UUI_ServerBrowser_C::BndEvt__FriendsFiltercombo_K2Node_ComponentBoundEvent_
 
 void UUI_ServerBrowser_C::BndEvt__GameModeFilterCombo_K2Node_ComponentBoundEvent_17_OnSelectionChanged__DelegateSignature(const struct FString& Selection)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerBrowser.UI_ServerBrowser_C.BndEvt__GameModeFilterCombo_K2Node_ComponentBoundEvent_17_OnSelectionChanged__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerBrowser.UI_ServerBrowser_C.BndEvt__GameModeFilterCombo_K2Node_ComponentBoundEvent_17_OnSelectionChanged__DelegateSignature");
 
 	UUI_ServerBrowser_C_BndEvt__GameModeFilterCombo_K2Node_ComponentBoundEvent_17_OnSelectionChanged__DelegateSignature_Params params;
 	params.Selection = Selection;
@@ -192,7 +192,7 @@ void UUI_ServerBrowser_C::BndEvt__GameModeFilterCombo_K2Node_ComponentBoundEvent
 
 void UUI_ServerBrowser_C::BndEvt__RefreshButton_K2Node_ComponentBoundEvent_41_OnButtonClicked__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerBrowser.UI_ServerBrowser_C.BndEvt__RefreshButton_K2Node_ComponentBoundEvent_41_OnButtonClicked__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerBrowser.UI_ServerBrowser_C.BndEvt__RefreshButton_K2Node_ComponentBoundEvent_41_OnButtonClicked__DelegateSignature");
 
 	UUI_ServerBrowser_C_BndEvt__RefreshButton_K2Node_ComponentBoundEvent_41_OnButtonClicked__DelegateSignature_Params params;
 
@@ -211,7 +211,7 @@ void UUI_ServerBrowser_C::BndEvt__RefreshButton_K2Node_ComponentBoundEvent_41_On
 
 void UUI_ServerBrowser_C::OnEntryJoinServer(const struct FPavlovServerInfo& Server)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerBrowser.UI_ServerBrowser_C.OnEntryJoinServer"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerBrowser.UI_ServerBrowser_C.OnEntryJoinServer");
 
 	UUI_ServerBrowser_C_OnEntryJoinServer_Params params;
 	params.Server = Server;
@@ -229,7 +229,7 @@ void UUI_ServerBrowser_C::OnEntryJoinServer(const struct FPavlovServerInfo& Serv
 
 void UUI_ServerBrowser_C::BndEvt__PreviousBtn_K2Node_ComponentBoundEvent_62_OnButtonClickedEvent__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerBrowser.UI_ServerBrowser_C.BndEvt__PreviousBtn_K2Node_ComponentBoundEvent_62_OnButtonClickedEvent__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerBrowser.UI_ServerBrowser_C.BndEvt__PreviousBtn_K2Node_ComponentBoundEvent_62_OnButtonClickedEvent__DelegateSignature");
 
 	UUI_ServerBrowser_C_BndEvt__PreviousBtn_K2Node_ComponentBoundEvent_62_OnButtonClickedEvent__DelegateSignature_Params params;
 
@@ -246,7 +246,7 @@ void UUI_ServerBrowser_C::BndEvt__PreviousBtn_K2Node_ComponentBoundEvent_62_OnBu
 
 void UUI_ServerBrowser_C::BndEvt__Button_1_K2Node_ComponentBoundEvent_346_OnButtonClickedEvent__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerBrowser.UI_ServerBrowser_C.BndEvt__Button_1_K2Node_ComponentBoundEvent_346_OnButtonClickedEvent__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerBrowser.UI_ServerBrowser_C.BndEvt__Button_1_K2Node_ComponentBoundEvent_346_OnButtonClickedEvent__DelegateSignature");
 
 	UUI_ServerBrowser_C_BndEvt__Button_1_K2Node_ComponentBoundEvent_346_OnButtonClickedEvent__DelegateSignature_Params params;
 
@@ -265,7 +265,7 @@ void UUI_ServerBrowser_C::BndEvt__Button_1_K2Node_ComponentBoundEvent_346_OnButt
 
 void UUI_ServerBrowser_C::ExecuteUbergraph_UI_ServerBrowser(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerBrowser.UI_ServerBrowser_C.ExecuteUbergraph_UI_ServerBrowser"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerBrowser.UI_ServerBrowser_C.ExecuteUbergraph_UI_ServerBrowser");
 
 	UUI_ServerBrowser_C_ExecuteUbergraph_UI_ServerBrowser_Params params;
 	params.EntryPoint = EntryPoint;
@@ -285,7 +285,7 @@ void UUI_ServerBrowser_C::ExecuteUbergraph_UI_ServerBrowser(int EntryPoint)
 
 void UUI_ServerBrowser_C::OnJoinServer__DelegateSignature(const struct FPavlovServerInfo& ServerInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerBrowser.UI_ServerBrowser_C.OnJoinServer__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerBrowser.UI_ServerBrowser_C.OnJoinServer__DelegateSignature");
 
 	UUI_ServerBrowser_C_OnJoinServer__DelegateSignature_Params params;
 	params.ServerInfo = ServerInfo;

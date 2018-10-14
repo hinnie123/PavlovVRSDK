@@ -19,7 +19,7 @@ namespace SDK
 
 struct FText UUI_Workshop_C::Get_PageLabel_Text_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.Get_PageLabel_Text_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.Get_PageLabel_Text_1");
 
 	UUI_Workshop_C_Get_PageLabel_Text_1_Params params;
 
@@ -43,7 +43,7 @@ struct FText UUI_Workshop_C::Get_PageLabel_Text_1()
 
 void UUI_Workshop_C::GetPageRange(int Length, int PageIndex, int* FirxtIndex, int* LastIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.GetPageRange"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.GetPageRange");
 
 	UUI_Workshop_C_GetPageRange_Params params;
 	params.Length = Length;
@@ -70,7 +70,7 @@ void UUI_Workshop_C::GetPageRange(int Length, int PageIndex, int* FirxtIndex, in
 
 void UUI_Workshop_C::SetVote(EWorkshopVoteType VoteType, bool Visible)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.SetVote"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.SetVote");
 
 	UUI_Workshop_C_SetVote_Params params;
 	params.VoteType = VoteType;
@@ -91,7 +91,7 @@ void UUI_Workshop_C::SetVote(EWorkshopVoteType VoteType, bool Visible)
 
 void UUI_Workshop_C::SetMapList(const struct FString& ItemToFind)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.SetMapList"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.SetMapList");
 
 	UUI_Workshop_C_SetMapList_Params params;
 	params.ItemToFind = ItemToFind;
@@ -111,7 +111,7 @@ void UUI_Workshop_C::SetMapList(const struct FString& ItemToFind)
 
 void UUI_Workshop_C::SetProgressToMap(float Progress)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.SetProgressToMap"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.SetProgressToMap");
 
 	UUI_Workshop_C_SetProgressToMap_Params params;
 	params.Progress = Progress;
@@ -132,7 +132,7 @@ void UUI_Workshop_C::SetProgressToMap(float Progress)
 
 void UUI_Workshop_C::GetMapInList(const struct FName& ID, class UUI_WorkshopMap_C** Map)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.GetMapInList"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.GetMapInList");
 
 	UUI_Workshop_C_GetMapInList_Params params;
 	params.ID = ID;
@@ -153,7 +153,7 @@ void UUI_Workshop_C::GetMapInList(const struct FName& ID, class UUI_WorkshopMap_
 
 void UUI_Workshop_C::ClearMaps()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.ClearMaps"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.ClearMaps");
 
 	UUI_Workshop_C_ClearMaps_Params params;
 
@@ -170,7 +170,7 @@ void UUI_Workshop_C::ClearMaps()
 
 void UUI_Workshop_C::UpdateProperties()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.UpdateProperties"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.UpdateProperties");
 
 	UUI_Workshop_C_UpdateProperties_Params params;
 
@@ -187,7 +187,7 @@ void UUI_Workshop_C::UpdateProperties()
 
 void UUI_Workshop_C::UpdateWorkshopMapList()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.UpdateWorkshopMapList"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.UpdateWorkshopMapList");
 
 	UUI_Workshop_C_UpdateWorkshopMapList_Params params;
 
@@ -206,7 +206,7 @@ void UUI_Workshop_C::UpdateWorkshopMapList()
 
 void UUI_Workshop_C::Select(const struct FName& MapId)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.Select"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.Select");
 
 	UUI_Workshop_C_Select_Params params;
 	params.MapId = MapId;
@@ -224,7 +224,7 @@ void UUI_Workshop_C::Select(const struct FName& MapId)
 
 void UUI_Workshop_C::UpdateInstalledMapList()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.UpdateInstalledMapList"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.UpdateInstalledMapList");
 
 	UUI_Workshop_C_UpdateInstalledMapList_Params params;
 
@@ -241,7 +241,7 @@ void UUI_Workshop_C::UpdateInstalledMapList()
 
 void UUI_Workshop_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.Construct"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.Construct");
 
 	UUI_Workshop_C_Construct_Params params;
 
@@ -260,7 +260,7 @@ void UUI_Workshop_C::Construct()
 
 void UUI_Workshop_C::OnMapClicked(class UUI_WorkshopMap_C* Map)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.OnMapClicked"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.OnMapClicked");
 
 	UUI_Workshop_C_OnMapClicked_Params params;
 	params.Map = Map;
@@ -278,7 +278,7 @@ void UUI_Workshop_C::OnMapClicked(class UUI_WorkshopMap_C* Map)
 
 void UUI_Workshop_C::BndEvt__SelectBtn_K2Node_ComponentBoundEvent_19_OnButtonClicked__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.BndEvt__SelectBtn_K2Node_ComponentBoundEvent_19_OnButtonClicked__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.BndEvt__SelectBtn_K2Node_ComponentBoundEvent_19_OnButtonClicked__DelegateSignature");
 
 	UUI_Workshop_C_BndEvt__SelectBtn_K2Node_ComponentBoundEvent_19_OnButtonClicked__DelegateSignature_Params params;
 
@@ -295,7 +295,7 @@ void UUI_Workshop_C::BndEvt__SelectBtn_K2Node_ComponentBoundEvent_19_OnButtonCli
 
 void UUI_Workshop_C::BndEvt__CancelBtn_K2Node_ComponentBoundEvent_21_OnButtonClicked__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.BndEvt__CancelBtn_K2Node_ComponentBoundEvent_21_OnButtonClicked__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.BndEvt__CancelBtn_K2Node_ComponentBoundEvent_21_OnButtonClicked__DelegateSignature");
 
 	UUI_Workshop_C_BndEvt__CancelBtn_K2Node_ComponentBoundEvent_21_OnButtonClicked__DelegateSignature_Params params;
 
@@ -315,7 +315,7 @@ void UUI_Workshop_C::BndEvt__CancelBtn_K2Node_ComponentBoundEvent_21_OnButtonCli
 
 void UUI_Workshop_C::OnSubscriptionChanged(const struct FName& ID, bool bSubscribed)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.OnSubscriptionChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.OnSubscriptionChanged");
 
 	UUI_Workshop_C_OnSubscriptionChanged_Params params;
 	params.ID = ID;
@@ -336,7 +336,7 @@ void UUI_Workshop_C::OnSubscriptionChanged(const struct FName& ID, bool bSubscri
 
 void UUI_Workshop_C::BndEvt__UI_WorkshopCombo_K2Node_ComponentBoundEvent_60_OnSelectionChanged__DelegateSignature(const struct FString& Selection)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.BndEvt__UI_WorkshopCombo_K2Node_ComponentBoundEvent_60_OnSelectionChanged__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.BndEvt__UI_WorkshopCombo_K2Node_ComponentBoundEvent_60_OnSelectionChanged__DelegateSignature");
 
 	UUI_Workshop_C_BndEvt__UI_WorkshopCombo_K2Node_ComponentBoundEvent_60_OnSelectionChanged__DelegateSignature_Params params;
 	params.Selection = Selection;
@@ -354,7 +354,7 @@ void UUI_Workshop_C::BndEvt__UI_WorkshopCombo_K2Node_ComponentBoundEvent_60_OnSe
 
 void UUI_Workshop_C::OnCustomMapQueryCompleted_Event_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.OnCustomMapQueryCompleted_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.OnCustomMapQueryCompleted_Event_1");
 
 	UUI_Workshop_C_OnCustomMapQueryCompleted_Event_1_Params params;
 
@@ -371,7 +371,7 @@ void UUI_Workshop_C::OnCustomMapQueryCompleted_Event_1()
 
 void UUI_Workshop_C::BndEvt__UnSubButton_K2Node_ComponentBoundEvent_77_OnButtonClickedEvent__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.BndEvt__UnSubButton_K2Node_ComponentBoundEvent_77_OnButtonClickedEvent__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.BndEvt__UnSubButton_K2Node_ComponentBoundEvent_77_OnButtonClickedEvent__DelegateSignature");
 
 	UUI_Workshop_C_BndEvt__UnSubButton_K2Node_ComponentBoundEvent_77_OnButtonClickedEvent__DelegateSignature_Params params;
 
@@ -388,7 +388,7 @@ void UUI_Workshop_C::BndEvt__UnSubButton_K2Node_ComponentBoundEvent_77_OnButtonC
 
 void UUI_Workshop_C::BndEvt__SubButton_K2Node_ComponentBoundEvent_98_OnButtonClickedEvent__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.BndEvt__SubButton_K2Node_ComponentBoundEvent_98_OnButtonClickedEvent__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.BndEvt__SubButton_K2Node_ComponentBoundEvent_98_OnButtonClickedEvent__DelegateSignature");
 
 	UUI_Workshop_C_BndEvt__SubButton_K2Node_ComponentBoundEvent_98_OnButtonClickedEvent__DelegateSignature_Params params;
 
@@ -405,7 +405,7 @@ void UUI_Workshop_C::BndEvt__SubButton_K2Node_ComponentBoundEvent_98_OnButtonCli
 
 void UUI_Workshop_C::OnDownloadBegin_Event_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.OnDownloadBegin_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.OnDownloadBegin_Event_1");
 
 	UUI_Workshop_C_OnDownloadBegin_Event_1_Params params;
 
@@ -424,7 +424,7 @@ void UUI_Workshop_C::OnDownloadBegin_Event_1()
 
 void UUI_Workshop_C::OnDownloadProgress_Event_1(float Progress)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.OnDownloadProgress_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.OnDownloadProgress_Event_1");
 
 	UUI_Workshop_C_OnDownloadProgress_Event_1_Params params;
 	params.Progress = Progress;
@@ -445,7 +445,7 @@ void UUI_Workshop_C::OnDownloadProgress_Event_1(float Progress)
 
 void UUI_Workshop_C::OnCustomMapDownloadCompleted_Event_1(bool bSucceed, const struct FString& ID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.OnCustomMapDownloadCompleted_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.OnCustomMapDownloadCompleted_Event_1");
 
 	UUI_Workshop_C_OnCustomMapDownloadCompleted_Event_1_Params params;
 	params.bSucceed = bSucceed;
@@ -467,7 +467,7 @@ void UUI_Workshop_C::OnCustomMapDownloadCompleted_Event_1(bool bSucceed, const s
 
 void UUI_Workshop_C::OnPreviewLoaded_Event_1(const struct FName& ID, class UTexture2D* Texture)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.OnPreviewLoaded_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.OnPreviewLoaded_Event_1");
 
 	UUI_Workshop_C_OnPreviewLoaded_Event_1_Params params;
 	params.ID = ID;
@@ -486,7 +486,7 @@ void UUI_Workshop_C::OnPreviewLoaded_Event_1(const struct FName& ID, class UText
 
 void UUI_Workshop_C::BndEvt__VoteUpBtn_K2Node_ComponentBoundEvent_220_OnButtonClickedEvent__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.BndEvt__VoteUpBtn_K2Node_ComponentBoundEvent_220_OnButtonClickedEvent__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.BndEvt__VoteUpBtn_K2Node_ComponentBoundEvent_220_OnButtonClickedEvent__DelegateSignature");
 
 	UUI_Workshop_C_BndEvt__VoteUpBtn_K2Node_ComponentBoundEvent_220_OnButtonClickedEvent__DelegateSignature_Params params;
 
@@ -503,7 +503,7 @@ void UUI_Workshop_C::BndEvt__VoteUpBtn_K2Node_ComponentBoundEvent_220_OnButtonCl
 
 void UUI_Workshop_C::BndEvt__VoteDownBtn_K2Node_ComponentBoundEvent_243_OnButtonClickedEvent__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.BndEvt__VoteDownBtn_K2Node_ComponentBoundEvent_243_OnButtonClickedEvent__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.BndEvt__VoteDownBtn_K2Node_ComponentBoundEvent_243_OnButtonClickedEvent__DelegateSignature");
 
 	UUI_Workshop_C_BndEvt__VoteDownBtn_K2Node_ComponentBoundEvent_243_OnButtonClickedEvent__DelegateSignature_Params params;
 
@@ -523,7 +523,7 @@ void UUI_Workshop_C::BndEvt__VoteDownBtn_K2Node_ComponentBoundEvent_243_OnButton
 
 void UUI_Workshop_C::OnRequestUserVote_Event_1(const struct FName& ID, EWorkshopVoteType VoteType)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.OnRequestUserVote_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.OnRequestUserVote_Event_1");
 
 	UUI_Workshop_C_OnRequestUserVote_Event_1_Params params;
 	params.ID = ID;
@@ -542,7 +542,7 @@ void UUI_Workshop_C::OnRequestUserVote_Event_1(const struct FName& ID, EWorkshop
 
 void UUI_Workshop_C::BndEvt__PageNext_K2Node_ComponentBoundEvent_98_OnButtonClickedEvent__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.BndEvt__PageNext_K2Node_ComponentBoundEvent_98_OnButtonClickedEvent__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.BndEvt__PageNext_K2Node_ComponentBoundEvent_98_OnButtonClickedEvent__DelegateSignature");
 
 	UUI_Workshop_C_BndEvt__PageNext_K2Node_ComponentBoundEvent_98_OnButtonClickedEvent__DelegateSignature_Params params;
 
@@ -559,7 +559,7 @@ void UUI_Workshop_C::BndEvt__PageNext_K2Node_ComponentBoundEvent_98_OnButtonClic
 
 void UUI_Workshop_C::BndEvt__PagePrev_K2Node_ComponentBoundEvent_124_OnButtonClickedEvent__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.BndEvt__PagePrev_K2Node_ComponentBoundEvent_124_OnButtonClickedEvent__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.BndEvt__PagePrev_K2Node_ComponentBoundEvent_124_OnButtonClickedEvent__DelegateSignature");
 
 	UUI_Workshop_C_BndEvt__PagePrev_K2Node_ComponentBoundEvent_124_OnButtonClickedEvent__DelegateSignature_Params params;
 
@@ -576,7 +576,7 @@ void UUI_Workshop_C::BndEvt__PagePrev_K2Node_ComponentBoundEvent_124_OnButtonCli
 
 void UUI_Workshop_C::OnGetMapListAdvancedResult_Event_2()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.OnGetMapListAdvancedResult_Event_2"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.OnGetMapListAdvancedResult_Event_2");
 
 	UUI_Workshop_C_OnGetMapListAdvancedResult_Event_2_Params params;
 
@@ -595,7 +595,7 @@ void UUI_Workshop_C::OnGetMapListAdvancedResult_Event_2()
 
 void UUI_Workshop_C::ExecuteUbergraph_UI_Workshop(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.ExecuteUbergraph_UI_Workshop"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.ExecuteUbergraph_UI_Workshop");
 
 	UUI_Workshop_C_ExecuteUbergraph_UI_Workshop_Params params;
 	params.EntryPoint = EntryPoint;
@@ -616,7 +616,7 @@ void UUI_Workshop_C::ExecuteUbergraph_UI_Workshop(int EntryPoint)
 
 void UUI_Workshop_C::OnCommit__DelegateSignature(const struct FName& MapUniqueId, bool Canceled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Workshop.UI_Workshop_C.OnCommit__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.OnCommit__DelegateSignature");
 
 	UUI_Workshop_C_OnCommit__DelegateSignature_Params params;
 	params.MapUniqueId = MapUniqueId;

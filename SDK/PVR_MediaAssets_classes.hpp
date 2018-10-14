@@ -21,7 +21,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class MediaAssets.MediaOverlays"));
+		static auto ptr = UObject::FindClass("Class MediaAssets.MediaOverlays");
 		return ptr;
 	}
 
@@ -59,7 +59,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class MediaAssets.MediaPlayer"));
+		static auto ptr = UObject::FindClass("Class MediaAssets.MediaPlayer");
 		return ptr;
 	}
 
@@ -119,7 +119,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class MediaAssets.MediaPlaylist"));
+		static auto ptr = UObject::FindClass("Class MediaAssets.MediaPlaylist");
 		return ptr;
 	}
 
@@ -149,7 +149,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class MediaAssets.MediaSoundWave"));
+		static auto ptr = UObject::FindClass("Class MediaAssets.MediaSoundWave");
 		return ptr;
 	}
 
@@ -165,7 +165,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class MediaAssets.MediaSource"));
+		static auto ptr = UObject::FindClass("Class MediaAssets.MediaSource");
 		return ptr;
 	}
 
@@ -181,7 +181,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class MediaAssets.BaseMediaSource"));
+		static auto ptr = UObject::FindClass("Class MediaAssets.BaseMediaSource");
 		return ptr;
 	}
 
@@ -199,7 +199,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class MediaAssets.FileMediaSource"));
+		static auto ptr = UObject::FindClass("Class MediaAssets.FileMediaSource");
 		return ptr;
 	}
 
@@ -217,7 +217,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class MediaAssets.StreamMediaSource"));
+		static auto ptr = UObject::FindClass("Class MediaAssets.StreamMediaSource");
 		return ptr;
 	}
 
@@ -233,7 +233,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class MediaAssets.PlatformMediaSource"));
+		static auto ptr = UObject::FindClass("Class MediaAssets.PlatformMediaSource");
 		return ptr;
 	}
 
@@ -249,7 +249,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class MediaAssets.MediaSubtitles"));
+		static auto ptr = UObject::FindClass("Class MediaAssets.MediaSubtitles");
 		return ptr;
 	}
 
@@ -273,7 +273,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class MediaAssets.MediaTexture"));
+		static auto ptr = UObject::FindClass("Class MediaAssets.MediaTexture");
 		return ptr;
 	}
 

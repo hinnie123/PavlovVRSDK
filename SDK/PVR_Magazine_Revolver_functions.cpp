@@ -17,7 +17,7 @@ namespace SDK
 
 void AMagazine_Revolver_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Magazine_Revolver.Magazine_Revolver_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Magazine_Revolver.Magazine_Revolver_C.UserConstructionScript");
 
 	AMagazine_Revolver_C_UserConstructionScript_Params params;
 

@@ -39,7 +39,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("WidgetBlueprintGeneratedClass UI_LobbyMember.UI_LobbyMember_C"));
+		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass UI_LobbyMember.UI_LobbyMember_C");
 		return ptr;
 	}
 

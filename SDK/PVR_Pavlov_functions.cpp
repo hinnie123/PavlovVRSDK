@@ -19,7 +19,7 @@ namespace SDK
 
 void UActionGunState::SetAction(float NewValue)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.ActionGunState.SetAction"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.ActionGunState.SetAction");
 
 	UActionGunState_SetAction_Params params;
 	params.NewValue = NewValue;
@@ -38,7 +38,7 @@ void UActionGunState::SetAction(float NewValue)
 
 void UActionGunState::OpenAction()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.ActionGunState.OpenAction"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.ActionGunState.OpenAction");
 
 	UActionGunState_OpenAction_Params params;
 
@@ -56,7 +56,7 @@ void UActionGunState::OpenAction()
 
 void UActionGunState::CloseAction()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.ActionGunState.CloseAction"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.ActionGunState.CloseAction");
 
 	UActionGunState_CloseAction_Params params;
 
@@ -74,7 +74,7 @@ void UActionGunState::CloseAction()
 
 void AAirplaneRoyale::StartTravel()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.AirplaneRoyale.StartTravel"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.AirplaneRoyale.StartTravel");
 
 	AAirplaneRoyale_StartTravel_Params params;
 
@@ -94,7 +94,7 @@ void AAirplaneRoyale::StartTravel()
 
 void AAirplaneRoyale::SetAsBase(class APavlovPawn* Pawn)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.AirplaneRoyale.SetAsBase"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.AirplaneRoyale.SetAsBase");
 
 	AAirplaneRoyale_SetAsBase_Params params;
 	params.Pawn = Pawn;
@@ -113,7 +113,7 @@ void AAirplaneRoyale::SetAsBase(class APavlovPawn* Pawn)
 
 void AAirplaneRoyale::OnRep_Traveled()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.AirplaneRoyale.OnRep_Traveled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.AirplaneRoyale.OnRep_Traveled");
 
 	AAirplaneRoyale_OnRep_Traveled_Params params;
 
@@ -133,7 +133,7 @@ void AAirplaneRoyale::OnRep_Traveled()
 
 void AAirplaneRoyale::ClearBase(class APavlovPawn* Pawn)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.AirplaneRoyale.ClearBase"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.AirplaneRoyale.ClearBase");
 
 	AAirplaneRoyale_ClearBase_Params params;
 	params.Pawn = Pawn;
@@ -155,7 +155,7 @@ void AAirplaneRoyale::ClearBase(class APavlovPawn* Pawn)
 
 void ABomb::PlantAt(class ABombPlantSpot* Spot, bool bForce)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Bomb.PlantAt"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Bomb.PlantAt");
 
 	ABomb_PlantAt_Params params;
 	params.Spot = Spot;
@@ -177,7 +177,7 @@ void ABomb::PlantAt(class ABombPlantSpot* Spot, bool bForce)
 
 void ABomb::OnPlayerOcclusionChange(bool bNewOccluded)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Bomb.OnPlayerOcclusionChange"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Bomb.OnPlayerOcclusionChange");
 
 	ABomb_OnPlayerOcclusionChange_Params params;
 	params.bNewOccluded = bNewOccluded;
@@ -196,7 +196,7 @@ void ABomb::OnPlayerOcclusionChange(bool bNewOccluded)
 
 void ABomb::OnPlanted()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Bomb.OnPlanted"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Bomb.OnPlanted");
 
 	ABomb_OnPlanted_Params params;
 
@@ -214,7 +214,7 @@ void ABomb::OnPlanted()
 
 void ABomb::OnGrace()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Bomb.OnGrace"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Bomb.OnGrace");
 
 	ABomb_OnGrace_Params params;
 
@@ -232,7 +232,7 @@ void ABomb::OnGrace()
 
 void ABomb::OnDetonation()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Bomb.OnDetonation"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Bomb.OnDetonation");
 
 	ABomb_OnDetonation_Params params;
 
@@ -250,7 +250,7 @@ void ABomb::OnDetonation()
 
 void ABomb::OnDefuse()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Bomb.OnDefuse"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Bomb.OnDefuse");
 
 	ABomb_OnDefuse_Params params;
 
@@ -270,7 +270,7 @@ void ABomb::OnDefuse()
 
 void ABomb::OnButtonPressed(int Index)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Bomb.OnButtonPressed"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Bomb.OnButtonPressed");
 
 	ABomb_OnButtonPressed_Params params;
 	params.Index = Index;
@@ -289,7 +289,7 @@ void ABomb::OnButtonPressed(int Index)
 
 void ABomb::OnBeep()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Bomb.OnBeep"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Bomb.OnBeep");
 
 	ABomb_OnBeep_Params params;
 
@@ -309,7 +309,7 @@ void ABomb::OnBeep()
 
 void ABomb::MulticastOnPlantAt(class ABombPlantSpot* Spot)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Bomb.MulticastOnPlantAt"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Bomb.MulticastOnPlantAt");
 
 	ABomb_MulticastOnPlantAt_Params params;
 	params.Spot = Spot;
@@ -328,7 +328,7 @@ void ABomb::MulticastOnPlantAt(class ABombPlantSpot* Spot)
 
 void ABomb::MulticastOnGrace()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Bomb.MulticastOnGrace"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Bomb.MulticastOnGrace");
 
 	ABomb_MulticastOnGrace_Params params;
 
@@ -348,7 +348,7 @@ void ABomb::MulticastOnGrace()
 
 void ABomb::MulticastOnEnterCode(bool bSucceed)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Bomb.MulticastOnEnterCode"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Bomb.MulticastOnEnterCode");
 
 	ABomb_MulticastOnEnterCode_Params params;
 	params.bSucceed = bSucceed;
@@ -367,7 +367,7 @@ void ABomb::MulticastOnEnterCode(bool bSucceed)
 
 void ABomb::MulticastOnDetonation()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Bomb.MulticastOnDetonation"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Bomb.MulticastOnDetonation");
 
 	ABomb_MulticastOnDetonation_Params params;
 
@@ -385,7 +385,7 @@ void ABomb::MulticastOnDetonation()
 
 void ABomb::MulticastOnDefuse()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Bomb.MulticastOnDefuse"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Bomb.MulticastOnDefuse");
 
 	ABomb_MulticastOnDefuse_Params params;
 
@@ -403,7 +403,7 @@ void ABomb::MulticastOnDefuse()
 
 void ABomb::MulticastOnBeep()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Bomb.MulticastOnBeep"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Bomb.MulticastOnBeep");
 
 	ABomb_MulticastOnBeep_Params params;
 
@@ -424,7 +424,7 @@ void ABomb::MulticastOnBeep()
 
 bool ABomb::IsWireCut(int Index)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Bomb.IsWireCut"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Bomb.IsWireCut");
 
 	ABomb_IsWireCut_Params params;
 	params.Index = Index;
@@ -448,7 +448,7 @@ bool ABomb::IsWireCut(int Index)
 
 bool ABomb::IsButtonPressed(int Index)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Bomb.IsButtonPressed"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Bomb.IsButtonPressed");
 
 	ABomb_IsButtonPressed_Params params;
 	params.Index = Index;
@@ -472,7 +472,7 @@ bool ABomb::IsButtonPressed(int Index)
 
 struct FVector ABomb::GetWireLocation(int Index)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Bomb.GetWireLocation"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Bomb.GetWireLocation");
 
 	ABomb_GetWireLocation_Params params;
 	params.Index = Index;
@@ -496,7 +496,7 @@ struct FVector ABomb::GetWireLocation(int Index)
 
 int ABomb::GetClosestValidWireIndex(const struct FVector& Location)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Bomb.GetClosestValidWireIndex"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Bomb.GetClosestValidWireIndex");
 
 	ABomb_GetClosestValidWireIndex_Params params;
 	params.Location = Location;
@@ -517,7 +517,7 @@ int ABomb::GetClosestValidWireIndex(const struct FVector& Location)
 
 void ABomb::ExpireCode()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Bomb.ExpireCode"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Bomb.ExpireCode");
 
 	ABomb_ExpireCode_Params params;
 
@@ -538,7 +538,7 @@ void ABomb::ExpireCode()
 
 void ABomb::EnterDigit(int Digit, class AController* Presser)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Bomb.EnterDigit"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Bomb.EnterDigit");
 
 	ABomb_EnterDigit_Params params;
 	params.Digit = Digit;
@@ -558,7 +558,7 @@ void ABomb::EnterDigit(int Digit, class AController* Presser)
 
 void ABomb::Detonate()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Bomb.Detonate"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Bomb.Detonate");
 
 	ABomb_Detonate_Params params;
 
@@ -578,7 +578,7 @@ void ABomb::Detonate()
 
 void ABomb::Defuse(class AController* Defuser)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Bomb.Defuse"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Bomb.Defuse");
 
 	ABomb_Defuse_Params params;
 	params.Defuser = Defuser;
@@ -600,7 +600,7 @@ void ABomb::Defuse(class AController* Defuser)
 
 void ABomb::CutWire(int Index, class AController* Defuser)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Bomb.CutWire"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Bomb.CutWire");
 
 	ABomb_CutWire_Params params;
 	params.Index = Index;
@@ -620,7 +620,7 @@ void ABomb::CutWire(int Index, class AController* Defuser)
 
 void ABombPlantSpot::UpdateEnabledState()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.BombPlantSpot.UpdateEnabledState"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.BombPlantSpot.UpdateEnabledState");
 
 	ABombPlantSpot_UpdateEnabledState_Params params;
 
@@ -640,7 +640,7 @@ void ABombPlantSpot::UpdateEnabledState()
 
 void ABombPlantSpot::SetSpotEnabled(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.BombPlantSpot.SetSpotEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.BombPlantSpot.SetSpotEnabled");
 
 	ABombPlantSpot_SetSpotEnabled_Params params;
 	params.bEnabled = bEnabled;
@@ -659,7 +659,7 @@ void ABombPlantSpot::SetSpotEnabled(bool bEnabled)
 
 void ABombPlantSpot::ResetSpot()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.BombPlantSpot.ResetSpot"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.BombPlantSpot.ResetSpot");
 
 	ABombPlantSpot_ResetSpot_Params params;
 
@@ -677,7 +677,7 @@ void ABombPlantSpot::ResetSpot()
 
 void ABombPlantSpot::OnRep_PlantedHere()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.BombPlantSpot.OnRep_PlantedHere"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.BombPlantSpot.OnRep_PlantedHere");
 
 	ABombPlantSpot_OnRep_PlantedHere_Params params;
 
@@ -697,7 +697,7 @@ void ABombPlantSpot::OnRep_PlantedHere()
 
 void ABombPlantSpot::MulticastOnPlantStateChanged(bool bPlanted)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.BombPlantSpot.MulticastOnPlantStateChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.BombPlantSpot.MulticastOnPlantStateChanged");
 
 	ABombPlantSpot_MulticastOnPlantStateChanged_Params params;
 	params.bPlanted = bPlanted;
@@ -716,7 +716,7 @@ void ABombPlantSpot::MulticastOnPlantStateChanged(bool bPlanted)
 
 void UChamberComponent::ResetChamber()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.ChamberComponent.ResetChamber"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.ChamberComponent.ResetChamber");
 
 	UChamberComponent_ResetChamber_Params params;
 
@@ -741,7 +741,7 @@ void UChamberComponent::ResetChamber()
 
 void UChamberComponent::OnOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.ChamberComponent.OnOverlap"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.ChamberComponent.OnOverlap");
 
 	UChamberComponent_OnOverlap_Params params;
 	params.OverlappedComponent = OverlappedComponent;
@@ -769,7 +769,7 @@ void UChamberComponent::OnOverlap(class UPrimitiveComponent* OverlappedComponent
 
 void UChamberComponent::OnChamberStateChanged(int Index, EVRGunChamberState OldState, EVRGunChamberState NewState)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.ChamberComponent.OnChamberStateChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.ChamberComponent.OnChamberStateChanged");
 
 	UChamberComponent_OnChamberStateChanged_Params params;
 	params.Index = Index;
@@ -790,7 +790,7 @@ void UChamberComponent::OnChamberStateChanged(int Index, EVRGunChamberState OldS
 
 void UChamberComponent::DestroyConstrainedMesh()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.ChamberComponent.DestroyConstrainedMesh"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.ChamberComponent.DestroyConstrainedMesh");
 
 	UChamberComponent_DestroyConstrainedMesh_Params params;
 
@@ -808,7 +808,7 @@ void UChamberComponent::DestroyConstrainedMesh()
 
 void UChamberComponent::DebugDraw()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.ChamberComponent.DebugDraw"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.ChamberComponent.DebugDraw");
 
 	UChamberComponent_DebugDraw_Params params;
 
@@ -826,7 +826,7 @@ void UChamberComponent::DebugDraw()
 
 void UChamberComponent::CheckConstraintBreakThreshold()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.ChamberComponent.CheckConstraintBreakThreshold"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.ChamberComponent.CheckConstraintBreakThreshold");
 
 	UChamberComponent_CheckConstraintBreakThreshold_Params params;
 
@@ -844,7 +844,7 @@ void UChamberComponent::CheckConstraintBreakThreshold()
 
 void UChamberComponent::BreakCheck()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.ChamberComponent.BreakCheck"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.ChamberComponent.BreakCheck");
 
 	UChamberComponent_BreakCheck_Params params;
 
@@ -862,7 +862,7 @@ void UChamberComponent::BreakCheck()
 
 void UChamberComponent::AllowRemoval()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.ChamberComponent.AllowRemoval"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.ChamberComponent.AllowRemoval");
 
 	UChamberComponent_AllowRemoval_Params params;
 
@@ -880,7 +880,7 @@ void UChamberComponent::AllowRemoval()
 
 void UDamageTrackerComponent::ResetTracking()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.DamageTrackerComponent.ResetTracking"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.DamageTrackerComponent.ResetTracking");
 
 	UDamageTrackerComponent_ResetTracking_Params params;
 
@@ -901,7 +901,7 @@ void UDamageTrackerComponent::ResetTracking()
 
 bool UDamageTrackerComponent::GetLastHit(struct FDamageTrackInfo* LastHit)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.DamageTrackerComponent.GetLastHit"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.DamageTrackerComponent.GetLastHit");
 
 	UDamageTrackerComponent_GetLastHit_Params params;
 
@@ -926,7 +926,7 @@ bool UDamageTrackerComponent::GetLastHit(struct FDamageTrackInfo* LastHit)
 
 void UDamageTrackerComponent::GatherAssists(TArray<struct FDamageTrackInfo>* Assists)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.DamageTrackerComponent.GatherAssists"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.DamageTrackerComponent.GatherAssists");
 
 	UDamageTrackerComponent_GatherAssists_Params params;
 
@@ -947,7 +947,7 @@ void UDamageTrackerComponent::GatherAssists(TArray<struct FDamageTrackInfo>* Ass
 
 void AGrenade::ServerRemoveSafetyPin()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Grenade.ServerRemoveSafetyPin"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Grenade.ServerRemoveSafetyPin");
 
 	AGrenade_ServerRemoveSafetyPin_Params params;
 
@@ -965,7 +965,7 @@ void AGrenade::ServerRemoveSafetyPin()
 
 void AGrenade::ServerReleaseSafetyLever()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Grenade.ServerReleaseSafetyLever"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Grenade.ServerReleaseSafetyLever");
 
 	AGrenade_ServerReleaseSafetyLever_Params params;
 
@@ -983,7 +983,7 @@ void AGrenade::ServerReleaseSafetyLever()
 
 void AGrenade::RemoveSafetyPin()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Grenade.RemoveSafetyPin"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Grenade.RemoveSafetyPin");
 
 	AGrenade_RemoveSafetyPin_Params params;
 
@@ -1001,7 +1001,7 @@ void AGrenade::RemoveSafetyPin()
 
 void AGrenade::ReleaseSafetyLever()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Grenade.ReleaseSafetyLever"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Grenade.ReleaseSafetyLever");
 
 	AGrenade_ReleaseSafetyLever_Params params;
 
@@ -1021,7 +1021,7 @@ void AGrenade::ReleaseSafetyLever()
 
 void AGrenade::PullSafetyPin(float Ratio)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Grenade.PullSafetyPin"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Grenade.PullSafetyPin");
 
 	AGrenade_PullSafetyPin_Params params;
 	params.Ratio = Ratio;
@@ -1040,7 +1040,7 @@ void AGrenade::PullSafetyPin(float Ratio)
 
 void AGrenade::OnRep_ProjectileActive()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Grenade.OnRep_ProjectileActive"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Grenade.OnRep_ProjectileActive");
 
 	AGrenade_OnRep_ProjectileActive_Params params;
 
@@ -1060,7 +1060,7 @@ void AGrenade::OnRep_ProjectileActive()
 
 void AGrenade::OnProjectileStop(const struct FHitResult& ImpactResult)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Grenade.OnProjectileStop"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Grenade.OnProjectileStop");
 
 	AGrenade_OnProjectileStop_Params params;
 	params.ImpactResult = ImpactResult;
@@ -1082,7 +1082,7 @@ void AGrenade::OnProjectileStop(const struct FHitResult& ImpactResult)
 
 void AGrenade::OnProjectileBounce(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Grenade.OnProjectileBounce"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Grenade.OnProjectileBounce");
 
 	AGrenade_OnProjectileBounce_Params params;
 	params.ImpactResult = ImpactResult;
@@ -1102,7 +1102,7 @@ void AGrenade::OnProjectileBounce(const struct FHitResult& ImpactResult, const s
 
 void AGrenade::OnDetonation()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Grenade.OnDetonation"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Grenade.OnDetonation");
 
 	AGrenade_OnDetonation_Params params;
 
@@ -1124,7 +1124,7 @@ void AGrenade::OnDetonation()
 
 void AGrenade::MulticastThrow(const struct FVector& Location, const struct FRotator& Rotation, const struct FVector& Velocity)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Grenade.MulticastThrow"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Grenade.MulticastThrow");
 
 	AGrenade_MulticastThrow_Params params;
 	params.Location = Location;
@@ -1145,7 +1145,7 @@ void AGrenade::MulticastThrow(const struct FVector& Location, const struct FRota
 
 void AGrenade::MulticastOnSafetyPinRemoved()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Grenade.MulticastOnSafetyPinRemoved"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Grenade.MulticastOnSafetyPinRemoved");
 
 	AGrenade_MulticastOnSafetyPinRemoved_Params params;
 
@@ -1163,7 +1163,7 @@ void AGrenade::MulticastOnSafetyPinRemoved()
 
 void AGrenade::MulticastOnReleaseSafetyLever()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Grenade.MulticastOnReleaseSafetyLever"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Grenade.MulticastOnReleaseSafetyLever");
 
 	AGrenade_MulticastOnReleaseSafetyLever_Params params;
 
@@ -1181,7 +1181,7 @@ void AGrenade::MulticastOnReleaseSafetyLever()
 
 void AGrenade::MulticastOnDetonation()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Grenade.MulticastOnDetonation"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Grenade.MulticastOnDetonation");
 
 	AGrenade_MulticastOnDetonation_Params params;
 
@@ -1199,7 +1199,7 @@ void AGrenade::MulticastOnDetonation()
 
 void AGrenade::Detonate()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Grenade.Detonate"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Grenade.Detonate");
 
 	AGrenade_Detonate_Params params;
 
@@ -1219,7 +1219,7 @@ void AGrenade::Detonate()
 
 void AKnife::SetBloody(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Knife.SetBloody"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Knife.SetBloody");
 
 	AKnife_SetBloody_Params params;
 	params.bEnabled = bEnabled;
@@ -1238,7 +1238,7 @@ void AKnife::SetBloody(bool bEnabled)
 
 void AKnife::OnRep_Bloody()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Knife.OnRep_Bloody"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Knife.OnRep_Bloody");
 
 	AKnife_OnRep_Bloody_Params params;
 
@@ -1261,7 +1261,7 @@ void AKnife::OnRep_Bloody()
 
 void AKnife::OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Knife.OnEndOverlap"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Knife.OnEndOverlap");
 
 	AKnife_OnEndOverlap_Params params;
 	params.OverlappedComponent = OverlappedComponent;
@@ -1285,7 +1285,7 @@ void AKnife::OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class 
 
 void AKnife::OnBloodyChanged(bool bNewBloody)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Knife.OnBloodyChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Knife.OnBloodyChanged");
 
 	AKnife_OnBloodyChanged_Params params;
 	params.bNewBloody = bNewBloody;
@@ -1310,7 +1310,7 @@ void AKnife::OnBloodyChanged(bool bNewBloody)
 
 void AKnife::OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Knife.OnBeginOverlap"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Knife.OnBeginOverlap");
 
 	AKnife_OnBeginOverlap_Params params;
 	params.OverlappedComponent = OverlappedComponent;
@@ -1334,7 +1334,7 @@ void AKnife::OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, clas
 
 void AKnife::EnableTicking()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Knife.EnableTicking"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Knife.EnableTicking");
 
 	AKnife_EnableTicking_Params params;
 
@@ -1355,7 +1355,7 @@ void AKnife::EnableTicking()
 
 void ADestructible::OnShatter(const struct FVector& Normal, const struct FVector& Location)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Destructible.OnShatter"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Destructible.OnShatter");
 
 	ADestructible_OnShatter_Params params;
 	params.Normal = Normal;
@@ -1377,7 +1377,7 @@ void ADestructible::OnShatter(const struct FVector& Normal, const struct FVector
 
 void ADestructible::MulticastOnShatter(const struct FVector_NetQuantizeNormal& Normal, const struct FVector_NetQuantize& Location)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Destructible.MulticastOnShatter"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Destructible.MulticastOnShatter");
 
 	ADestructible_MulticastOnShatter_Params params;
 	params.Normal = Normal;
@@ -1399,7 +1399,7 @@ void ADestructible::MulticastOnShatter(const struct FVector_NetQuantizeNormal& N
 
 void UDoubleBarrelGunState::SetBarrel(bool bOpen)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.DoubleBarrelGunState.SetBarrel"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.DoubleBarrelGunState.SetBarrel");
 
 	UDoubleBarrelGunState_SetBarrel_Params params;
 	params.bOpen = bOpen;
@@ -1418,7 +1418,7 @@ void UDoubleBarrelGunState::SetBarrel(bool bOpen)
 
 void UPavlovMovementComponent::ServerDeployParachute()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovMovementComponent.ServerDeployParachute"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovMovementComponent.ServerDeployParachute");
 
 	UPavlovMovementComponent_ServerDeployParachute_Params params;
 
@@ -1436,7 +1436,7 @@ void UPavlovMovementComponent::ServerDeployParachute()
 
 void UPavlovMovementComponent::OnRep_PrachuteState()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovMovementComponent.OnRep_PrachuteState"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovMovementComponent.OnRep_PrachuteState");
 
 	UPavlovMovementComponent_OnRep_PrachuteState_Params params;
 
@@ -1454,7 +1454,7 @@ void UPavlovMovementComponent::OnRep_PrachuteState()
 
 void UPavlovMovementComponent::MulticastOnParachuteDeployed()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovMovementComponent.MulticastOnParachuteDeployed"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovMovementComponent.MulticastOnParachuteDeployed");
 
 	UPavlovMovementComponent_MulticastOnParachuteDeployed_Params params;
 
@@ -1474,7 +1474,7 @@ void UPavlovMovementComponent::MulticastOnParachuteDeployed()
 
 void UGestureComponent::RegisterGesture(const struct FGestureSetup& Setup)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.GestureComponent.RegisterGesture"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GestureComponent.RegisterGesture");
 
 	UGestureComponent_RegisterGesture_Params params;
 	params.Setup = Setup;
@@ -1493,7 +1493,7 @@ void UGestureComponent::RegisterGesture(const struct FGestureSetup& Setup)
 
 void AGhostPawn::SpawnTags()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.GhostPawn.SpawnTags"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostPawn.SpawnTags");
 
 	AGhostPawn_SpawnTags_Params params;
 
@@ -1511,7 +1511,7 @@ void AGhostPawn::SpawnTags()
 
 void AGhostPawn::OnTraveledToSpectatorRoom()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.GhostPawn.OnTraveledToSpectatorRoom"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostPawn.OnTraveledToSpectatorRoom");
 
 	AGhostPawn_OnTraveledToSpectatorRoom_Params params;
 
@@ -1530,7 +1530,7 @@ void AGhostPawn::OnTraveledToSpectatorRoom()
 
 void AGhostPawn::OnTeamIdChanged(int TeamID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.GhostPawn.OnTeamIdChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostPawn.OnTeamIdChanged");
 
 	AGhostPawn_OnTeamIdChanged_Params params;
 	params.TeamID = TeamID;
@@ -1548,7 +1548,7 @@ void AGhostPawn::OnTeamIdChanged(int TeamID)
 
 void AGhostPawn::OnGraceTimeEnded()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.GhostPawn.OnGraceTimeEnded"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostPawn.OnGraceTimeEnded");
 
 	AGhostPawn_OnGraceTimeEnded_Params params;
 
@@ -1565,7 +1565,7 @@ void AGhostPawn::OnGraceTimeEnded()
 
 void AGhostPawn::EndGraceTime()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.GhostPawn.EndGraceTime"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostPawn.EndGraceTime");
 
 	AGhostPawn_EndGraceTime_Params params;
 
@@ -1583,7 +1583,7 @@ void AGhostPawn::EndGraceTime()
 
 void AGhostPawn::ClientTravelToSpectatorRoom()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.GhostPawn.ClientTravelToSpectatorRoom"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostPawn.ClientTravelToSpectatorRoom");
 
 	AGhostPawn_ClientTravelToSpectatorRoom_Params params;
 
@@ -1603,7 +1603,7 @@ void AGhostPawn::ClientTravelToSpectatorRoom()
 
 void AGhostPawn::ClientSpawnKillCam(const struct FKillInfo& KillInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.GhostPawn.ClientSpawnKillCam"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostPawn.ClientSpawnKillCam");
 
 	AGhostPawn_ClientSpawnKillCam_Params params;
 	params.KillInfo = KillInfo;
@@ -1622,7 +1622,7 @@ void AGhostPawn::ClientSpawnKillCam(const struct FKillInfo& KillInfo)
 
 void AGhostPawn::ClearTags()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.GhostPawn.ClearTags"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostPawn.ClearTags");
 
 	AGhostPawn_ClearTags_Params params;
 
@@ -1642,7 +1642,7 @@ void AGhostPawn::ClearTags()
 
 void AGlobalPlayerEffects::SwitchState(EPlayerEffectState NewState)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.GlobalPlayerEffects.SwitchState"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GlobalPlayerEffects.SwitchState");
 
 	AGlobalPlayerEffects_SwitchState_Params params;
 	params.NewState = NewState;
@@ -1663,7 +1663,7 @@ void AGlobalPlayerEffects::SwitchState(EPlayerEffectState NewState)
 
 void AGlobalPlayerEffects::InstigateFlash(float Duration)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.GlobalPlayerEffects.InstigateFlash"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GlobalPlayerEffects.InstigateFlash");
 
 	AGlobalPlayerEffects_InstigateFlash_Params params;
 	params.Duration = Duration;
@@ -1682,7 +1682,7 @@ void AGlobalPlayerEffects::InstigateFlash(float Duration)
 
 void AGun::RecoilDrop()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Gun.RecoilDrop"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Gun.RecoilDrop");
 
 	AGun_RecoilDrop_Params params;
 
@@ -1701,7 +1701,7 @@ void AGun::RecoilDrop()
 
 void AGun::OnUnderExploitChanged(bool bUnderExploit)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Gun.OnUnderExploitChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Gun.OnUnderExploitChanged");
 
 	AGun_OnUnderExploitChanged_Params params;
 	params.bUnderExploit = bUnderExploit;
@@ -1721,7 +1721,7 @@ void AGun::OnUnderExploitChanged(bool bUnderExploit)
 
 void AGun::OnTwoHandGripChanged(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Gun.OnTwoHandGripChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Gun.OnTwoHandGripChanged");
 
 	AGun_OnTwoHandGripChanged_Params params;
 	params.bEnabled = bEnabled;
@@ -1739,7 +1739,7 @@ void AGun::OnTwoHandGripChanged(bool bEnabled)
 
 void AGun::OnSpawnUnloaded()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Gun.OnSpawnUnloaded"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Gun.OnSpawnUnloaded");
 
 	AGun_OnSpawnUnloaded_Params params;
 
@@ -1756,7 +1756,7 @@ void AGun::OnSpawnUnloaded()
 
 void AGun::OnSliderUngrabbed()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Gun.OnSliderUngrabbed"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Gun.OnSliderUngrabbed");
 
 	AGun_OnSliderUngrabbed_Params params;
 
@@ -1777,7 +1777,7 @@ void AGun::OnSliderUngrabbed()
 
 void AGun::OnSliderInputReceived(const struct FVector& Input, const struct FVector& InputDelta)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Gun.OnSliderInputReceived"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Gun.OnSliderInputReceived");
 
 	AGun_OnSliderInputReceived_Params params;
 	params.Input = Input;
@@ -1797,7 +1797,7 @@ void AGun::OnSliderInputReceived(const struct FVector& Input, const struct FVect
 
 void AGun::OnSliderGrabbed()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Gun.OnSliderGrabbed"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Gun.OnSliderGrabbed");
 
 	AGun_OnSliderGrabbed_Params params;
 
@@ -1815,7 +1815,7 @@ void AGun::OnSliderGrabbed()
 
 void AGun::OnRecoilDropCooldown()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Gun.OnRecoilDropCooldown"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Gun.OnRecoilDropCooldown");
 
 	AGun_OnRecoilDropCooldown_Params params;
 
@@ -1833,7 +1833,7 @@ void AGun::OnRecoilDropCooldown()
 
 void AGun::MulticastOnRecoilDrop()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Gun.MulticastOnRecoilDrop"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Gun.MulticastOnRecoilDrop");
 
 	AGun_MulticastOnRecoilDrop_Params params;
 
@@ -1854,7 +1854,7 @@ void AGun::MulticastOnRecoilDrop()
 
 bool AGun::IsBeingGrippedBy(class APavlovItemController* ByController)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Gun.IsBeingGrippedBy"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Gun.IsBeingGrippedBy");
 
 	AGun_IsBeingGrippedBy_Params params;
 	params.ByController = ByController;
@@ -1877,7 +1877,7 @@ bool AGun::IsBeingGrippedBy(class APavlovItemController* ByController)
 
 bool AGun::IsBeingGripped()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Gun.IsBeingGripped"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Gun.IsBeingGripped");
 
 	AGun_IsBeingGripped_Params params;
 
@@ -1904,7 +1904,7 @@ bool AGun::IsBeingGripped()
 
 void UHitBoxProxyComponent::OnBulletOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.HitBoxProxyComponent.OnBulletOverlap"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.HitBoxProxyComponent.OnBulletOverlap");
 
 	UHitBoxProxyComponent_OnBulletOverlap_Params params;
 	params.OverlappedComponent = OverlappedComponent;
@@ -1930,7 +1930,7 @@ void UHitBoxProxyComponent::OnBulletOverlap(class UPrimitiveComponent* Overlappe
 
 void UHolsterComponent::TakeItem(class APavlovItemController* Controller)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.HolsterComponent.TakeItem"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.HolsterComponent.TakeItem");
 
 	UHolsterComponent_TakeItem_Params params;
 	params.Controller = Controller;
@@ -1951,7 +1951,7 @@ void UHolsterComponent::TakeItem(class APavlovItemController* Controller)
 
 void UHolsterComponent::ServerTakeItem(class APavlovItemController* Controller)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.HolsterComponent.ServerTakeItem"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.HolsterComponent.ServerTakeItem");
 
 	UHolsterComponent_ServerTakeItem_Params params;
 	params.Controller = Controller;
@@ -1972,7 +1972,7 @@ void UHolsterComponent::ServerTakeItem(class APavlovItemController* Controller)
 
 void UHolsterComponent::ServerHolster(class AVRItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.HolsterComponent.ServerHolster"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.HolsterComponent.ServerHolster");
 
 	UHolsterComponent_ServerHolster_Params params;
 	params.Item = Item;
@@ -1991,7 +1991,7 @@ void UHolsterComponent::ServerHolster(class AVRItem* Item)
 
 void UHolsterComponent::OnRep_HolsteredItem()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.HolsterComponent.OnRep_HolsteredItem"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.HolsterComponent.OnRep_HolsteredItem");
 
 	UHolsterComponent_OnRep_HolsteredItem_Params params;
 
@@ -2011,7 +2011,7 @@ void UHolsterComponent::OnRep_HolsteredItem()
 
 void UHolsterComponent::MulticastOnItemHolstered(class AVRItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.HolsterComponent.MulticastOnItemHolstered"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.HolsterComponent.MulticastOnItemHolstered");
 
 	UHolsterComponent_MulticastOnItemHolstered_Params params;
 	params.Item = Item;
@@ -2032,7 +2032,7 @@ void UHolsterComponent::MulticastOnItemHolstered(class AVRItem* Item)
 
 void UHolsterComponent::MulticastOnDrop(class AVRItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.HolsterComponent.MulticastOnDrop"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.HolsterComponent.MulticastOnDrop");
 
 	UHolsterComponent_MulticastOnDrop_Params params;
 	params.Item = Item;
@@ -2051,7 +2051,7 @@ void UHolsterComponent::MulticastOnDrop(class AVRItem* Item)
 
 void UHolsterComponent::Mirror()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.HolsterComponent.Mirror"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.HolsterComponent.Mirror");
 
 	UHolsterComponent_Mirror_Params params;
 
@@ -2071,7 +2071,7 @@ void UHolsterComponent::Mirror()
 
 void UHolsterComponent::Holster(class AVRItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.HolsterComponent.Holster"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.HolsterComponent.Holster");
 
 	UHolsterComponent_Holster_Params params;
 	params.Item = Item;
@@ -2090,7 +2090,7 @@ void UHolsterComponent::Holster(class AVRItem* Item)
 
 void UHolsterComponent::Drop()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.HolsterComponent.Drop"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.HolsterComponent.Drop");
 
 	UHolsterComponent_Drop_Params params;
 
@@ -2108,7 +2108,7 @@ void UHolsterComponent::Drop()
 
 void UHolsterComponent::AttachItemLocally()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.HolsterComponent.AttachItemLocally"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.HolsterComponent.AttachItemLocally");
 
 	UHolsterComponent_AttachItemLocally_Params params;
 
@@ -2128,7 +2128,7 @@ void UHolsterComponent::AttachItemLocally()
 
 void APavlovAIController::SetTargetPawn(class APavlovPawn* TargetPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovAIController.SetTargetPawn"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovAIController.SetTargetPawn");
 
 	APavlovAIController_SetTargetPawn_Params params;
 	params.TargetPawn = TargetPawn;
@@ -2154,7 +2154,7 @@ void APavlovAIController::SetTargetPawn(class APavlovPawn* TargetPawn)
 
 void APavlovAIController::OnPawnCollisionBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovAIController.OnPawnCollisionBeginOverlap"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovAIController.OnPawnCollisionBeginOverlap");
 
 	APavlovAIController_OnPawnCollisionBeginOverlap_Params params;
 	params.OverlappedComponent = OverlappedComponent;
@@ -2180,7 +2180,7 @@ void APavlovAIController::OnPawnCollisionBeginOverlap(class UPrimitiveComponent*
 
 bool APavlovAIController::IsSuppressed()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovAIController.IsSuppressed"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovAIController.IsSuppressed");
 
 	APavlovAIController_IsSuppressed_Params params;
 
@@ -2202,7 +2202,7 @@ bool APavlovAIController::IsSuppressed()
 
 class APavlovPawn* APavlovAIController::GetTargetPawn()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovAIController.GetTargetPawn"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovAIController.GetTargetPawn");
 
 	APavlovAIController_GetTargetPawn_Params params;
 
@@ -2224,7 +2224,7 @@ class APavlovPawn* APavlovAIController::GetTargetPawn()
 
 bool UPavlovGameUserSettings::UseOOBLocomotion()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.UseOOBLocomotion"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.UseOOBLocomotion");
 
 	UPavlovGameUserSettings_UseOOBLocomotion_Params params;
 
@@ -2246,7 +2246,7 @@ bool UPavlovGameUserSettings::UseOOBLocomotion()
 
 bool UPavlovGameUserSettings::ShouldSwapControllers()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.ShouldSwapControllers"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.ShouldSwapControllers");
 
 	UPavlovGameUserSettings_ShouldSwapControllers_Params params;
 
@@ -2269,7 +2269,7 @@ bool UPavlovGameUserSettings::ShouldSwapControllers()
 
 void UPavlovGameUserSettings::SetVirtualStock(class UObject* WorldContextObject, bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SetVirtualStock"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetVirtualStock");
 
 	UPavlovGameUserSettings_SetVirtualStock_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -2291,7 +2291,7 @@ void UPavlovGameUserSettings::SetVirtualStock(class UObject* WorldContextObject,
 
 void UPavlovGameUserSettings::SetTwoHandToggle(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SetTwoHandToggle"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetTwoHandToggle");
 
 	UPavlovGameUserSettings_SetTwoHandToggle_Params params;
 	params.bEnabled = bEnabled;
@@ -2312,7 +2312,7 @@ void UPavlovGameUserSettings::SetTwoHandToggle(bool bEnabled)
 
 void UPavlovGameUserSettings::SetTouchpadInverted(bool bInverted)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SetTouchpadInverted"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetTouchpadInverted");
 
 	UPavlovGameUserSettings_SetTouchpadInverted_Params params;
 	params.bInverted = bInverted;
@@ -2333,7 +2333,7 @@ void UPavlovGameUserSettings::SetTouchpadInverted(bool bInverted)
 
 void UPavlovGameUserSettings::SetSwapControllers(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SetSwapControllers"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetSwapControllers");
 
 	UPavlovGameUserSettings_SetSwapControllers_Params params;
 	params.bEnabled = bEnabled;
@@ -2354,7 +2354,7 @@ void UPavlovGameUserSettings::SetSwapControllers(bool bEnabled)
 
 void UPavlovGameUserSettings::SetSnapTurnDisabled(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SetSnapTurnDisabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetSnapTurnDisabled");
 
 	UPavlovGameUserSettings_SetSnapTurnDisabled_Params params;
 	params.bEnabled = bEnabled;
@@ -2375,7 +2375,7 @@ void UPavlovGameUserSettings::SetSnapTurnDisabled(bool bEnabled)
 
 void UPavlovGameUserSettings::SetSnapTurn(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SetSnapTurn"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetSnapTurn");
 
 	UPavlovGameUserSettings_SetSnapTurn_Params params;
 	params.bEnabled = bEnabled;
@@ -2396,7 +2396,7 @@ void UPavlovGameUserSettings::SetSnapTurn(bool bEnabled)
 
 void UPavlovGameUserSettings::SetSmoothTurnRate(float Rate)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SetSmoothTurnRate"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetSmoothTurnRate");
 
 	UPavlovGameUserSettings_SetSmoothTurnRate_Params params;
 	params.Rate = Rate;
@@ -2417,7 +2417,7 @@ void UPavlovGameUserSettings::SetSmoothTurnRate(float Rate)
 
 void UPavlovGameUserSettings::SetSmoothTurn(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SetSmoothTurn"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetSmoothTurn");
 
 	UPavlovGameUserSettings_SetSmoothTurn_Params params;
 	params.bEnabled = bEnabled;
@@ -2438,7 +2438,7 @@ void UPavlovGameUserSettings::SetSmoothTurn(bool bEnabled)
 
 void UPavlovGameUserSettings::SetResolutionQuality(float Quality)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SetResolutionQuality"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetResolutionQuality");
 
 	UPavlovGameUserSettings_SetResolutionQuality_Params params;
 	params.Quality = Quality;
@@ -2459,7 +2459,7 @@ void UPavlovGameUserSettings::SetResolutionQuality(float Quality)
 
 void UPavlovGameUserSettings::SetPrimaryRegion(EOnlineRegion Region)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SetPrimaryRegion"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetPrimaryRegion");
 
 	UPavlovGameUserSettings_SetPrimaryRegion_Params params;
 	params.Region = Region;
@@ -2480,7 +2480,7 @@ void UPavlovGameUserSettings::SetPrimaryRegion(EOnlineRegion Region)
 
 void UPavlovGameUserSettings::SetPlayerRightHanded(bool bRightHanded)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SetPlayerRightHanded"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetPlayerRightHanded");
 
 	UPavlovGameUserSettings_SetPlayerRightHanded_Params params;
 	params.bRightHanded = bRightHanded;
@@ -2501,7 +2501,7 @@ void UPavlovGameUserSettings::SetPlayerRightHanded(bool bRightHanded)
 
 void UPavlovGameUserSettings::SetPlayerHeight(float Height)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SetPlayerHeight"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetPlayerHeight");
 
 	UPavlovGameUserSettings_SetPlayerHeight_Params params;
 	params.Height = Height;
@@ -2522,7 +2522,7 @@ void UPavlovGameUserSettings::SetPlayerHeight(float Height)
 
 void UPavlovGameUserSettings::SetOOBLocomotion(bool bUse)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SetOOBLocomotion"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetOOBLocomotion");
 
 	UPavlovGameUserSettings_SetOOBLocomotion_Params params;
 	params.bUse = bUse;
@@ -2543,7 +2543,7 @@ void UPavlovGameUserSettings::SetOOBLocomotion(bool bUse)
 
 void UPavlovGameUserSettings::SetOffHandAction(ECustomAction Action)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SetOffHandAction"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetOffHandAction");
 
 	UPavlovGameUserSettings_SetOffHandAction_Params params;
 	params.Action = Action;
@@ -2564,7 +2564,7 @@ void UPavlovGameUserSettings::SetOffHandAction(ECustomAction Action)
 
 void UPavlovGameUserSettings::SetMountFriendly(bool bFriendly)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SetMountFriendly"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetMountFriendly");
 
 	UPavlovGameUserSettings_SetMountFriendly_Params params;
 	params.bFriendly = bFriendly;
@@ -2585,7 +2585,7 @@ void UPavlovGameUserSettings::SetMountFriendly(bool bFriendly)
 
 void UPavlovGameUserSettings::SetMainHandAction(ECustomAction Action)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SetMainHandAction"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetMainHandAction");
 
 	UPavlovGameUserSettings_SetMainHandAction_Params params;
 	params.Action = Action;
@@ -2606,7 +2606,7 @@ void UPavlovGameUserSettings::SetMainHandAction(ECustomAction Action)
 
 void UPavlovGameUserSettings::SetLockInventory(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SetLockInventory"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetLockInventory");
 
 	UPavlovGameUserSettings_SetLockInventory_Params params;
 	params.bEnabled = bEnabled;
@@ -2627,7 +2627,7 @@ void UPavlovGameUserSettings::SetLockInventory(bool bEnabled)
 
 void UPavlovGameUserSettings::SetLiteFootStepHaptics(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SetLiteFootStepHaptics"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetLiteFootStepHaptics");
 
 	UPavlovGameUserSettings_SetLiteFootStepHaptics_Params params;
 	params.bEnabled = bEnabled;
@@ -2648,7 +2648,7 @@ void UPavlovGameUserSettings::SetLiteFootStepHaptics(bool bEnabled)
 
 void UPavlovGameUserSettings::SetLegacyGrip(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SetLegacyGrip"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetLegacyGrip");
 
 	UPavlovGameUserSettings_SetLegacyGrip_Params params;
 	params.bEnabled = bEnabled;
@@ -2669,7 +2669,7 @@ void UPavlovGameUserSettings::SetLegacyGrip(bool bEnabled)
 
 void UPavlovGameUserSettings::SetLeftEyeRendering(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SetLeftEyeRendering"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetLeftEyeRendering");
 
 	UPavlovGameUserSettings_SetLeftEyeRendering_Params params;
 	params.bEnabled = bEnabled;
@@ -2690,7 +2690,7 @@ void UPavlovGameUserSettings::SetLeftEyeRendering(bool bEnabled)
 
 void UPavlovGameUserSettings::SetHeadLocomotion(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SetHeadLocomotion"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetHeadLocomotion");
 
 	UPavlovGameUserSettings_SetHeadLocomotion_Params params;
 	params.bEnabled = bEnabled;
@@ -2711,7 +2711,7 @@ void UPavlovGameUserSettings::SetHeadLocomotion(bool bEnabled)
 
 void UPavlovGameUserSettings::SetGripMode(EGripMode NewGripMode)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SetGripMode"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetGripMode");
 
 	UPavlovGameUserSettings_SetGripMode_Params params;
 	params.NewGripMode = NewGripMode;
@@ -2732,7 +2732,7 @@ void UPavlovGameUserSettings::SetGripMode(EGripMode NewGripMode)
 
 void UPavlovGameUserSettings::SetFreeSpectatingEnabled(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SetFreeSpectatingEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetFreeSpectatingEnabled");
 
 	UPavlovGameUserSettings_SetFreeSpectatingEnabled_Params params;
 	params.bEnabled = bEnabled;
@@ -2753,7 +2753,7 @@ void UPavlovGameUserSettings::SetFreeSpectatingEnabled(bool bEnabled)
 
 void UPavlovGameUserSettings::SetAutoUngrip(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SetAutoUngrip"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetAutoUngrip");
 
 	UPavlovGameUserSettings_SetAutoUngrip_Params params;
 	params.bEnabled = bEnabled;
@@ -2774,7 +2774,7 @@ void UPavlovGameUserSettings::SetAutoUngrip(bool bEnabled)
 
 void UPavlovGameUserSettings::SetAutoSwapHandsEnabled(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SetAutoSwapHandsEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetAutoSwapHandsEnabled");
 
 	UPavlovGameUserSettings_SetAutoSwapHandsEnabled_Params params;
 	params.bEnabled = bEnabled;
@@ -2795,7 +2795,7 @@ void UPavlovGameUserSettings::SetAutoSwapHandsEnabled(bool bEnabled)
 
 void UPavlovGameUserSettings::SetAutoSprint(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SetAutoSprint"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetAutoSprint");
 
 	UPavlovGameUserSettings_SetAutoSprint_Params params;
 	params.bEnabled = bEnabled;
@@ -2817,7 +2817,7 @@ void UPavlovGameUserSettings::SetAutoSprint(bool bEnabled)
 
 void UPavlovGameUserSettings::SetArmKillfeedEnabled(class UObject* WorldContextObject, bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SetArmKillfeedEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetArmKillfeedEnabled");
 
 	UPavlovGameUserSettings_SetArmKillfeedEnabled_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -2837,7 +2837,7 @@ void UPavlovGameUserSettings::SetArmKillfeedEnabled(class UObject* WorldContextO
 
 void UPavlovGameUserSettings::SendAnalyticEvents()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SendAnalyticEvents"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SendAnalyticEvents");
 
 	UPavlovGameUserSettings_SendAnalyticEvents_Params params;
 
@@ -2859,7 +2859,7 @@ void UPavlovGameUserSettings::SendAnalyticEvents()
 
 void UPavlovGameUserSettings::SaveSpectatorView(class UObject* WorldContextObject, int Index, const struct FTransform& Transform)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.SaveSpectatorView"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SaveSpectatorView");
 
 	UPavlovGameUserSettings_SaveSpectatorView_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -2880,7 +2880,7 @@ void UPavlovGameUserSettings::SaveSpectatorView(class UObject* WorldContextObjec
 
 void UPavlovGameUserSettings::MarkAsCalibrated()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.MarkAsCalibrated"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.MarkAsCalibrated");
 
 	UPavlovGameUserSettings_MarkAsCalibrated_Params params;
 
@@ -2900,7 +2900,7 @@ void UPavlovGameUserSettings::MarkAsCalibrated()
 
 bool UPavlovGameUserSettings::IsTwoHandToggleEnabled()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.IsTwoHandToggleEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.IsTwoHandToggleEnabled");
 
 	UPavlovGameUserSettings_IsTwoHandToggleEnabled_Params params;
 
@@ -2922,7 +2922,7 @@ bool UPavlovGameUserSettings::IsTwoHandToggleEnabled()
 
 bool UPavlovGameUserSettings::IsTouchpadInverted()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.IsTouchpadInverted"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.IsTouchpadInverted");
 
 	UPavlovGameUserSettings_IsTouchpadInverted_Params params;
 
@@ -2944,7 +2944,7 @@ bool UPavlovGameUserSettings::IsTouchpadInverted()
 
 bool UPavlovGameUserSettings::IsSnapTurnEnabled()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.IsSnapTurnEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.IsSnapTurnEnabled");
 
 	UPavlovGameUserSettings_IsSnapTurnEnabled_Params params;
 
@@ -2966,7 +2966,7 @@ bool UPavlovGameUserSettings::IsSnapTurnEnabled()
 
 bool UPavlovGameUserSettings::IsSnapTurnDisabled()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.IsSnapTurnDisabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.IsSnapTurnDisabled");
 
 	UPavlovGameUserSettings_IsSnapTurnDisabled_Params params;
 
@@ -2988,7 +2988,7 @@ bool UPavlovGameUserSettings::IsSnapTurnDisabled()
 
 bool UPavlovGameUserSettings::IsSmoothTurnEnabled()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.IsSmoothTurnEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.IsSmoothTurnEnabled");
 
 	UPavlovGameUserSettings_IsSmoothTurnEnabled_Params params;
 
@@ -3010,7 +3010,7 @@ bool UPavlovGameUserSettings::IsSmoothTurnEnabled()
 
 bool UPavlovGameUserSettings::IsPostProcessDisabled()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.IsPostProcessDisabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.IsPostProcessDisabled");
 
 	UPavlovGameUserSettings_IsPostProcessDisabled_Params params;
 
@@ -3032,7 +3032,7 @@ bool UPavlovGameUserSettings::IsPostProcessDisabled()
 
 bool UPavlovGameUserSettings::IsPlayerRightHanded()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.IsPlayerRightHanded"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.IsPlayerRightHanded");
 
 	UPavlovGameUserSettings_IsPlayerRightHanded_Params params;
 
@@ -3054,7 +3054,7 @@ bool UPavlovGameUserSettings::IsPlayerRightHanded()
 
 bool UPavlovGameUserSettings::IsMountFriendly()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.IsMountFriendly"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.IsMountFriendly");
 
 	UPavlovGameUserSettings_IsMountFriendly_Params params;
 
@@ -3076,7 +3076,7 @@ bool UPavlovGameUserSettings::IsMountFriendly()
 
 bool UPavlovGameUserSettings::IsLiteFootStepHapticsEnabled()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.IsLiteFootStepHapticsEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.IsLiteFootStepHapticsEnabled");
 
 	UPavlovGameUserSettings_IsLiteFootStepHapticsEnabled_Params params;
 
@@ -3098,7 +3098,7 @@ bool UPavlovGameUserSettings::IsLiteFootStepHapticsEnabled()
 
 bool UPavlovGameUserSettings::IsLeftEyeRendering()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.IsLeftEyeRendering"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.IsLeftEyeRendering");
 
 	UPavlovGameUserSettings_IsLeftEyeRendering_Params params;
 
@@ -3120,7 +3120,7 @@ bool UPavlovGameUserSettings::IsLeftEyeRendering()
 
 bool UPavlovGameUserSettings::IsHeadLocomotionEnabled()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.IsHeadLocomotionEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.IsHeadLocomotionEnabled");
 
 	UPavlovGameUserSettings_IsHeadLocomotionEnabled_Params params;
 
@@ -3142,7 +3142,7 @@ bool UPavlovGameUserSettings::IsHeadLocomotionEnabled()
 
 bool UPavlovGameUserSettings::IsFreeSpectatingEnabled()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.IsFreeSpectatingEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.IsFreeSpectatingEnabled");
 
 	UPavlovGameUserSettings_IsFreeSpectatingEnabled_Params params;
 
@@ -3164,7 +3164,7 @@ bool UPavlovGameUserSettings::IsFreeSpectatingEnabled()
 
 bool UPavlovGameUserSettings::IsCalibrated()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.IsCalibrated"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.IsCalibrated");
 
 	UPavlovGameUserSettings_IsCalibrated_Params params;
 
@@ -3186,7 +3186,7 @@ bool UPavlovGameUserSettings::IsCalibrated()
 
 bool UPavlovGameUserSettings::IsAutoUngripEnabled()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.IsAutoUngripEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.IsAutoUngripEnabled");
 
 	UPavlovGameUserSettings_IsAutoUngripEnabled_Params params;
 
@@ -3208,7 +3208,7 @@ bool UPavlovGameUserSettings::IsAutoUngripEnabled()
 
 bool UPavlovGameUserSettings::IsAutoSwapHandsEnabled()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.IsAutoSwapHandsEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.IsAutoSwapHandsEnabled");
 
 	UPavlovGameUserSettings_IsAutoSwapHandsEnabled_Params params;
 
@@ -3230,7 +3230,7 @@ bool UPavlovGameUserSettings::IsAutoSwapHandsEnabled()
 
 bool UPavlovGameUserSettings::IsAutoSprintEnabled()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.IsAutoSprintEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.IsAutoSprintEnabled");
 
 	UPavlovGameUserSettings_IsAutoSprintEnabled_Params params;
 
@@ -3252,7 +3252,7 @@ bool UPavlovGameUserSettings::IsAutoSprintEnabled()
 
 bool UPavlovGameUserSettings::IsArmKillfeedEnabled()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.IsArmKillfeedEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.IsArmKillfeedEnabled");
 
 	UPavlovGameUserSettings_IsArmKillfeedEnabled_Params params;
 
@@ -3274,7 +3274,7 @@ bool UPavlovGameUserSettings::IsArmKillfeedEnabled()
 
 bool UPavlovGameUserSettings::HasLegacyGrip()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.HasLegacyGrip"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.HasLegacyGrip");
 
 	UPavlovGameUserSettings_HasLegacyGrip_Params params;
 
@@ -3296,7 +3296,7 @@ bool UPavlovGameUserSettings::HasLegacyGrip()
 
 bool UPavlovGameUserSettings::GetVirtualStock()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.GetVirtualStock"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.GetVirtualStock");
 
 	UPavlovGameUserSettings_GetVirtualStock_Params params;
 
@@ -3320,7 +3320,7 @@ bool UPavlovGameUserSettings::GetVirtualStock()
 
 struct FTransform UPavlovGameUserSettings::GetSpectatorView(class UObject* WorldContextObject, int Index)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.GetSpectatorView"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.GetSpectatorView");
 
 	UPavlovGameUserSettings_GetSpectatorView_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -3344,7 +3344,7 @@ struct FTransform UPavlovGameUserSettings::GetSpectatorView(class UObject* World
 
 float UPavlovGameUserSettings::GetSmoothTurnRate()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.GetSmoothTurnRate"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.GetSmoothTurnRate");
 
 	UPavlovGameUserSettings_GetSmoothTurnRate_Params params;
 
@@ -3366,7 +3366,7 @@ float UPavlovGameUserSettings::GetSmoothTurnRate()
 
 EOnlineRegion UPavlovGameUserSettings::GetPrimaryRegion()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.GetPrimaryRegion"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.GetPrimaryRegion");
 
 	UPavlovGameUserSettings_GetPrimaryRegion_Params params;
 
@@ -3388,7 +3388,7 @@ EOnlineRegion UPavlovGameUserSettings::GetPrimaryRegion()
 
 float UPavlovGameUserSettings::GetPlayerHeight()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.GetPlayerHeight"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.GetPlayerHeight");
 
 	UPavlovGameUserSettings_GetPlayerHeight_Params params;
 
@@ -3410,7 +3410,7 @@ float UPavlovGameUserSettings::GetPlayerHeight()
 
 ECustomAction UPavlovGameUserSettings::GetOffHandAction()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.GetOffHandAction"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.GetOffHandAction");
 
 	UPavlovGameUserSettings_GetOffHandAction_Params params;
 
@@ -3432,7 +3432,7 @@ ECustomAction UPavlovGameUserSettings::GetOffHandAction()
 
 ECustomAction UPavlovGameUserSettings::GetMainHandAction()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.GetMainHandAction"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.GetMainHandAction");
 
 	UPavlovGameUserSettings_GetMainHandAction_Params params;
 
@@ -3454,7 +3454,7 @@ ECustomAction UPavlovGameUserSettings::GetMainHandAction()
 
 bool UPavlovGameUserSettings::GetLockInventory()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.GetLockInventory"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.GetLockInventory");
 
 	UPavlovGameUserSettings_GetLockInventory_Params params;
 
@@ -3476,7 +3476,7 @@ bool UPavlovGameUserSettings::GetLockInventory()
 
 EGripMode UPavlovGameUserSettings::GetGripMode()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.GetGripMode"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.GetGripMode");
 
 	UPavlovGameUserSettings_GetGripMode_Params params;
 
@@ -3498,7 +3498,7 @@ EGripMode UPavlovGameUserSettings::GetGripMode()
 
 void UPavlovGameUserSettings::ForceNoPostProcessing(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameUserSettings.ForceNoPostProcessing"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.ForceNoPostProcessing");
 
 	UPavlovGameUserSettings_ForceNoPostProcessing_Params params;
 	params.bEnabled = bEnabled;
@@ -3519,7 +3519,7 @@ void UPavlovGameUserSettings::ForceNoPostProcessing(bool bEnabled)
 
 void APavlovPawn::WearKevlar(bool bWithHelmet)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.WearKevlar"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.WearKevlar");
 
 	APavlovPawn_WearKevlar_Params params;
 	params.bWithHelmet = bWithHelmet;
@@ -3538,7 +3538,7 @@ void APavlovPawn::WearKevlar(bool bWithHelmet)
 
 void APavlovPawn::UpdateLocomotion()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.UpdateLocomotion"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.UpdateLocomotion");
 
 	APavlovPawn_UpdateLocomotion_Params params;
 
@@ -3566,7 +3566,7 @@ void APavlovPawn::UpdateLocomotion()
 
 void APavlovPawn::TakePointDamage(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, const struct FVector& HitLocation, class UPrimitiveComponent* HitComponent, const struct FName& BoneName, const struct FVector& ShotFromDirection, class UDamageType* DamageType, class AActor* DamageCauser)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.TakePointDamage"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.TakePointDamage");
 
 	APavlovPawn_TakePointDamage_Params params;
 	params.DamagedActor = DamagedActor;
@@ -3595,7 +3595,7 @@ void APavlovPawn::TakePointDamage(class AActor* DamagedActor, float Damage, clas
 
 void APavlovPawn::SetupWatch(class UWatch* WatchComp)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.SetupWatch"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.SetupWatch");
 
 	APavlovPawn_SetupWatch_Params params;
 	params.WatchComp = WatchComp;
@@ -3615,7 +3615,7 @@ void APavlovPawn::SetupWatch(class UWatch* WatchComp)
 
 void APavlovPawn::SetTeamId(int NewTeamId)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.SetTeamId"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.SetTeamId");
 
 	APavlovPawn_SetTeamId_Params params;
 	params.NewTeamId = NewTeamId;
@@ -3636,7 +3636,7 @@ void APavlovPawn::SetTeamId(int NewTeamId)
 
 void APavlovPawn::ServerReportFallDamage(float Damage)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.ServerReportFallDamage"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.ServerReportFallDamage");
 
 	APavlovPawn_ServerReportFallDamage_Params params;
 	params.Damage = Damage;
@@ -3657,7 +3657,7 @@ void APavlovPawn::ServerReportFallDamage(float Damage)
 
 void APavlovPawn::ServerGiveMagazine(bool bOffHand)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.ServerGiveMagazine"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.ServerGiveMagazine");
 
 	APavlovPawn_ServerGiveMagazine_Params params;
 	params.bOffHand = bOffHand;
@@ -3679,7 +3679,7 @@ void APavlovPawn::ServerGiveMagazine(bool bOffHand)
 
 void APavlovPawn::ServerGive(const struct FName& EquipmentName, const struct FName& Skin)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.ServerGive"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.ServerGive");
 
 	APavlovPawn_ServerGive_Params params;
 	params.EquipmentName = EquipmentName;
@@ -3699,7 +3699,7 @@ void APavlovPawn::ServerGive(const struct FName& EquipmentName, const struct FNa
 
 void APavlovPawn::ServerDeployParachute()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.ServerDeployParachute"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.ServerDeployParachute");
 
 	APavlovPawn_ServerDeployParachute_Params params;
 
@@ -3720,7 +3720,7 @@ void APavlovPawn::ServerDeployParachute()
 
 void APavlovPawn::OnVoiceChanged(bool bTalking, bool bLocal)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.OnVoiceChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnVoiceChanged");
 
 	APavlovPawn_OnVoiceChanged_Params params;
 	params.bTalking = bTalking;
@@ -3740,7 +3740,7 @@ void APavlovPawn::OnVoiceChanged(bool bTalking, bool bLocal)
 
 void APavlovPawn::OnTeamIdChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.OnTeamIdChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnTeamIdChanged");
 
 	APavlovPawn_OnTeamIdChanged_Params params;
 
@@ -3760,7 +3760,7 @@ void APavlovPawn::OnTeamIdChanged()
 
 void APavlovPawn::OnRevive(class AActor* OwnerActor)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.OnRevive"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnRevive");
 
 	APavlovPawn_OnRevive_Params params;
 	params.OwnerActor = OwnerActor;
@@ -3779,7 +3779,7 @@ void APavlovPawn::OnRevive(class AActor* OwnerActor)
 
 void APavlovPawn::OnRep_TeamId()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.OnRep_TeamId"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnRep_TeamId");
 
 	APavlovPawn_OnRep_TeamId_Params params;
 
@@ -3797,7 +3797,7 @@ void APavlovPawn::OnRep_TeamId()
 
 void APavlovPawn::OnRep_HelmetArmour()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.OnRep_HelmetArmour"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnRep_HelmetArmour");
 
 	APavlovPawn_OnRep_HelmetArmour_Params params;
 
@@ -3815,7 +3815,7 @@ void APavlovPawn::OnRep_HelmetArmour()
 
 void APavlovPawn::OnRep_Armour()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.OnRep_Armour"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnRep_Armour");
 
 	APavlovPawn_OnRep_Armour_Params params;
 
@@ -3835,7 +3835,7 @@ void APavlovPawn::OnRep_Armour()
 
 void APavlovPawn::OnKill(class AActor* OwnerActor)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.OnKill"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnKill");
 
 	APavlovPawn_OnKill_Params params;
 	params.OwnerActor = OwnerActor;
@@ -3856,7 +3856,7 @@ void APavlovPawn::OnKill(class AActor* OwnerActor)
 
 void APavlovPawn::OnImpactDamage(const struct FImpactDamage& ImpactDamage)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.OnImpactDamage"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnImpactDamage");
 
 	APavlovPawn_OnImpactDamage_Params params;
 	params.ImpactDamage = ImpactDamage;
@@ -3876,7 +3876,7 @@ void APavlovPawn::OnImpactDamage(const struct FImpactDamage& ImpactDamage)
 
 void APavlovPawn::OnCameraClipChanged(bool bClipping)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.OnCameraClipChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnCameraClipChanged");
 
 	APavlovPawn_OnCameraClipChanged_Params params;
 	params.bClipping = bClipping;
@@ -3897,7 +3897,7 @@ void APavlovPawn::OnCameraClipChanged(bool bClipping)
 
 void APavlovPawn::MulticastTeleportTo(const struct FVector& DestLocation, const struct FRotator& DestRotation)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.MulticastTeleportTo"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastTeleportTo");
 
 	APavlovPawn_MulticastTeleportTo_Params params;
 	params.DestLocation = DestLocation;
@@ -3917,7 +3917,7 @@ void APavlovPawn::MulticastTeleportTo(const struct FVector& DestLocation, const 
 
 void APavlovPawn::MulticastOnWearArmour()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.MulticastOnWearArmour"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnWearArmour");
 
 	APavlovPawn_MulticastOnWearArmour_Params params;
 
@@ -3935,7 +3935,7 @@ void APavlovPawn::MulticastOnWearArmour()
 
 void APavlovPawn::MulticastOnReset()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.MulticastOnReset"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnReset");
 
 	APavlovPawn_MulticastOnReset_Params params;
 
@@ -3955,7 +3955,7 @@ void APavlovPawn::MulticastOnReset()
 
 void APavlovPawn::MulticastOnRadialDeath(const struct FVector_NetQuantize& Origin)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.MulticastOnRadialDeath"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnRadialDeath");
 
 	APavlovPawn_MulticastOnRadialDeath_Params params;
 	params.Origin = Origin;
@@ -3976,7 +3976,7 @@ void APavlovPawn::MulticastOnRadialDeath(const struct FVector_NetQuantize& Origi
 
 void APavlovPawn::MulticastOnImpactDamage(const struct FImpactDamage& ImpactDamage)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.MulticastOnImpactDamage"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnImpactDamage");
 
 	APavlovPawn_MulticastOnImpactDamage_Params params;
 	params.ImpactDamage = ImpactDamage;
@@ -3995,7 +3995,7 @@ void APavlovPawn::MulticastOnImpactDamage(const struct FImpactDamage& ImpactDama
 
 void APavlovPawn::MulticastOnHitSlow()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.MulticastOnHitSlow"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnHitSlow");
 
 	APavlovPawn_MulticastOnHitSlow_Params params;
 
@@ -4018,7 +4018,7 @@ void APavlovPawn::MulticastOnHitSlow()
 
 void APavlovPawn::MulticastOnHit(const struct FVector_NetQuantize& Location, const struct FVector_NetQuantizeNormal& Normal, class APlayerState* Shooter, bool bOnArmor)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.MulticastOnHit"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnHit");
 
 	APavlovPawn_MulticastOnHit_Params params;
 	params.Location = Location;
@@ -4043,7 +4043,7 @@ void APavlovPawn::MulticastOnHit(const struct FVector_NetQuantize& Location, con
 
 void APavlovPawn::MulticastOnHelmetHit(const struct FVector_NetQuantize& Location, const struct FVector_NetQuantizeNormal& Direction)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.MulticastOnHelmetHit"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnHelmetHit");
 
 	APavlovPawn_MulticastOnHelmetHit_Params params;
 	params.Location = Location;
@@ -4063,7 +4063,7 @@ void APavlovPawn::MulticastOnHelmetHit(const struct FVector_NetQuantize& Locatio
 
 void APavlovPawn::MulticastOnHelmetBlownoff()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.MulticastOnHelmetBlownoff"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnHelmetBlownoff");
 
 	APavlovPawn_MulticastOnHelmetBlownoff_Params params;
 
@@ -4081,7 +4081,7 @@ void APavlovPawn::MulticastOnHelmetBlownoff()
 
 void APavlovPawn::MulticastOnHeadshot()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.MulticastOnHeadshot"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnHeadshot");
 
 	APavlovPawn_MulticastOnHeadshot_Params params;
 
@@ -4101,7 +4101,7 @@ void APavlovPawn::MulticastOnHeadshot()
 
 void APavlovPawn::MulticastAdjustAvatarScale(float PlayerHeight)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.MulticastAdjustAvatarScale"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastAdjustAvatarScale");
 
 	APavlovPawn_MulticastAdjustAvatarScale_Params params;
 	params.PlayerHeight = PlayerHeight;
@@ -4122,7 +4122,7 @@ void APavlovPawn::MulticastAdjustAvatarScale(float PlayerHeight)
 
 void APavlovPawn::LoadEquipment(const struct FEquipmentDefinition& Definition)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.LoadEquipment"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.LoadEquipment");
 
 	APavlovPawn_LoadEquipment_Params params;
 	params.Definition = Definition;
@@ -4143,7 +4143,7 @@ void APavlovPawn::LoadEquipment(const struct FEquipmentDefinition& Definition)
 
 bool APavlovPawn::IsSprinting()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.IsSprinting"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.IsSprinting");
 
 	APavlovPawn_IsSprinting_Params params;
 
@@ -4165,7 +4165,7 @@ bool APavlovPawn::IsSprinting()
 
 bool APavlovPawn::IsDead()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.IsDead"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.IsDead");
 
 	APavlovPawn_IsDead_Params params;
 
@@ -4187,7 +4187,7 @@ bool APavlovPawn::IsDead()
 
 bool APavlovPawn::IsCameraClipping()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.IsCameraClipping"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.IsCameraClipping");
 
 	APavlovPawn_IsCameraClipping_Params params;
 
@@ -4209,7 +4209,7 @@ bool APavlovPawn::IsCameraClipping()
 
 void APavlovPawn::GiveBomb(class ABomb* Bomb)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.GiveBomb"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GiveBomb");
 
 	APavlovPawn_GiveBomb_Params params;
 	params.Bomb = Bomb;
@@ -4233,7 +4233,7 @@ void APavlovPawn::GiveBomb(class ABomb* Bomb)
 
 void APavlovPawn::Give(const struct FName& EquipmentName, const struct FName& Skin, bool bWithAmmo, bool bByBuyMenu)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.Give"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.Give");
 
 	APavlovPawn_Give_Params params;
 	params.EquipmentName = EquipmentName;
@@ -4257,7 +4257,7 @@ void APavlovPawn::Give(const struct FName& EquipmentName, const struct FName& Sk
 
 class UHolsterComponent* APavlovPawn::GetSideWeaponHolster()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.GetSideWeaponHolster"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetSideWeaponHolster");
 
 	APavlovPawn_GetSideWeaponHolster_Params params;
 
@@ -4278,7 +4278,7 @@ class UHolsterComponent* APavlovPawn::GetSideWeaponHolster()
 
 class APavlovItemController* APavlovPawn::GetNonDominantController()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.GetNonDominantController"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetNonDominantController");
 
 	APavlovPawn_GetNonDominantController_Params params;
 
@@ -4300,7 +4300,7 @@ class APavlovItemController* APavlovPawn::GetNonDominantController()
 
 class UHolsterComponent* APavlovPawn::GetMainWeaponHolster()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.GetMainWeaponHolster"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetMainWeaponHolster");
 
 	APavlovPawn_GetMainWeaponHolster_Params params;
 
@@ -4321,7 +4321,7 @@ class UHolsterComponent* APavlovPawn::GetMainWeaponHolster()
 
 class UHolsterComponent* APavlovPawn::GetKnifeHolster()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.GetKnifeHolster"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetKnifeHolster");
 
 	APavlovPawn_GetKnifeHolster_Params params;
 
@@ -4342,7 +4342,7 @@ class UHolsterComponent* APavlovPawn::GetKnifeHolster()
 
 float APavlovPawn::GetHealth()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.GetHealth"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetHealth");
 
 	APavlovPawn_GetHealth_Params params;
 
@@ -4364,7 +4364,7 @@ float APavlovPawn::GetHealth()
 
 TArray<class UHolsterComponent*> APavlovPawn::GetGrenadeHolsters()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.GetGrenadeHolsters"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetGrenadeHolsters");
 
 	APavlovPawn_GetGrenadeHolsters_Params params;
 
@@ -4387,7 +4387,7 @@ TArray<class UHolsterComponent*> APavlovPawn::GetGrenadeHolsters()
 
 bool APavlovPawn::GetEquipmentByName(const struct FName& EquipmentName, struct FEquipmentDefinition* Definition)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.GetEquipmentByName"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetEquipmentByName");
 
 	APavlovPawn_GetEquipmentByName_Params params;
 	params.EquipmentName = EquipmentName;
@@ -4412,7 +4412,7 @@ bool APavlovPawn::GetEquipmentByName(const struct FName& EquipmentName, struct F
 
 class APavlovItemController* APavlovPawn::GetDominantController()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.GetDominantController"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetDominantController");
 
 	APavlovPawn_GetDominantController_Params params;
 
@@ -4434,7 +4434,7 @@ class APavlovItemController* APavlovPawn::GetDominantController()
 
 class UHolsterComponent* APavlovPawn::GetBombHolster()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.GetBombHolster"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetBombHolster");
 
 	APavlovPawn_GetBombHolster_Params params;
 
@@ -4455,7 +4455,7 @@ class UHolsterComponent* APavlovPawn::GetBombHolster()
 
 class UVRPocketComponent* APavlovPawn::GetAmmoPocket()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.GetAmmoPocket"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetAmmoPocket");
 
 	APavlovPawn_GetAmmoPocket_Params params;
 
@@ -4474,7 +4474,7 @@ class UVRPocketComponent* APavlovPawn::GetAmmoPocket()
 
 void APavlovPawn::DropEquipment()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.DropEquipment"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.DropEquipment");
 
 	APavlovPawn_DropEquipment_Params params;
 
@@ -4492,7 +4492,7 @@ void APavlovPawn::DropEquipment()
 
 void APavlovPawn::ClientClearSoundMix()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.ClientClearSoundMix"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.ClientClearSoundMix");
 
 	APavlovPawn_ClientClearSoundMix_Params params;
 
@@ -4510,7 +4510,7 @@ void APavlovPawn::ClientClearSoundMix()
 
 void APavlovPawn::BlowHelmetOff()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.BlowHelmetOff"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.BlowHelmetOff");
 
 	APavlovPawn_BlowHelmetOff_Params params;
 
@@ -4527,7 +4527,7 @@ void APavlovPawn::BlowHelmetOff()
 
 void APavlovPawn::AddHitSlow()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.AddHitSlow"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.AddHitSlow");
 
 	APavlovPawn_AddHitSlow_Params params;
 
@@ -4545,7 +4545,7 @@ void APavlovPawn::AddHitSlow()
 
 void APavlovPawn::ActivateCameraClip()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPawn.ActivateCameraClip"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.ActivateCameraClip");
 
 	APavlovPawn_ActivateCameraClip_Params params;
 
@@ -4565,7 +4565,7 @@ void APavlovPawn::ActivateCameraClip()
 
 void APavlovGameState::MulticastOnKillfeedEntry(const struct FKillfeedEntry& NewEntry)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameState.MulticastOnKillfeedEntry"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.MulticastOnKillfeedEntry");
 
 	APavlovGameState_MulticastOnKillfeedEntry_Params params;
 	params.NewEntry = NewEntry;
@@ -4587,7 +4587,7 @@ void APavlovGameState::MulticastOnKillfeedEntry(const struct FKillfeedEntry& New
 
 int APavlovGameState::GetTeamScore(int TeamID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameState.GetTeamScore"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetTeamScore");
 
 	APavlovGameState_GetTeamScore_Params params;
 	params.TeamID = TeamID;
@@ -4611,7 +4611,7 @@ int APavlovGameState::GetTeamScore(int TeamID)
 
 void APavlovGameState::GetTeamArray(int TeamID, TArray<class APavlovPlayerState*>* TeamArray)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameState.GetTeamArray"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetTeamArray");
 
 	APavlovGameState_GetTeamArray_Params params;
 	params.TeamID = TeamID;
@@ -4636,7 +4636,7 @@ void APavlovGameState::GetTeamArray(int TeamID, TArray<class APavlovPlayerState*
 
 void APavlovGameState::GetSortedPlayerArray(int FilterByTeamId, TArray<class APavlovPlayerState*>* SortedPlayerArray)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameState.GetSortedPlayerArray"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetSortedPlayerArray");
 
 	APavlovGameState_GetSortedPlayerArray_Params params;
 	params.FilterByTeamId = FilterByTeamId;
@@ -4661,7 +4661,7 @@ void APavlovGameState::GetSortedPlayerArray(int FilterByTeamId, TArray<class APa
 
 struct FString APavlovGameState::GetPlayerStringId(class APavlovPlayerState* PlayerState)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameState.GetPlayerStringId"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetPlayerStringId");
 
 	APavlovGameState_GetPlayerStringId_Params params;
 	params.PlayerState = PlayerState;
@@ -4685,7 +4685,7 @@ struct FString APavlovGameState::GetPlayerStringId(class APavlovPlayerState* Pla
 
 class APavlovPlayerState* APavlovGameState::GetPlayerStateByStringId(const struct FString& StringId)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameState.GetPlayerStateByStringId"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetPlayerStateByStringId");
 
 	APavlovGameState_GetPlayerStateByStringId_Params params;
 	params.StringId = StringId;
@@ -4710,7 +4710,7 @@ class APavlovPlayerState* APavlovGameState::GetPlayerStateByStringId(const struc
 
 class APavlovPlayerState* APavlovGameState::GetPlayerByScore(int Index, int TeamID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameState.GetPlayerByScore"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetPlayerByScore");
 
 	APavlovGameState_GetPlayerByScore_Params params;
 	params.Index = Index;
@@ -4734,7 +4734,7 @@ class APavlovPlayerState* APavlovGameState::GetPlayerByScore(int Index, int Team
 
 EMatchResult APavlovGameState::GetMatchResult()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameState.GetMatchResult"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetMatchResult");
 
 	APavlovGameState_GetMatchResult_Params params;
 
@@ -4757,7 +4757,7 @@ EMatchResult APavlovGameState::GetMatchResult()
 
 struct FName APavlovGameState::GetEquipmentNameByClass(class UClass* ItemClass)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameState.GetEquipmentNameByClass"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetEquipmentNameByClass");
 
 	APavlovGameState_GetEquipmentNameByClass_Params params;
 	params.ItemClass = ItemClass;
@@ -4782,7 +4782,7 @@ struct FName APavlovGameState::GetEquipmentNameByClass(class UClass* ItemClass)
 
 struct FEquipmentData APavlovGameState::GetEquipmentDataByClass(class UClass* ItemClass, bool* bSuccess)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameState.GetEquipmentDataByClass"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetEquipmentDataByClass");
 
 	APavlovGameState_GetEquipmentDataByClass_Params params;
 	params.ItemClass = ItemClass;
@@ -4810,7 +4810,7 @@ struct FEquipmentData APavlovGameState::GetEquipmentDataByClass(class UClass* It
 
 struct FEquipmentData APavlovGameState::GetEquipmentData(const struct FName& EquipmentName, bool* bSuccess)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameState.GetEquipmentData"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetEquipmentData");
 
 	APavlovGameState_GetEquipmentData_Params params;
 	params.EquipmentName = EquipmentName;
@@ -4837,7 +4837,7 @@ struct FEquipmentData APavlovGameState::GetEquipmentData(const struct FName& Equ
 
 int APavlovGameState::GetEquipmentCost(const struct FName& EquipmentName)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameState.GetEquipmentCost"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetEquipmentCost");
 
 	APavlovGameState_GetEquipmentCost_Params params;
 	params.EquipmentName = EquipmentName;
@@ -4860,7 +4860,7 @@ int APavlovGameState::GetEquipmentCost(const struct FName& EquipmentName)
 
 void APavlovGameState::DisplayMatchStateOverlay(class UClass* OverlayClass)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameState.DisplayMatchStateOverlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.DisplayMatchStateOverlay");
 
 	APavlovGameState_DisplayMatchStateOverlay_Params params;
 	params.OverlayClass = OverlayClass;
@@ -4879,7 +4879,7 @@ void APavlovGameState::DisplayMatchStateOverlay(class UClass* OverlayClass)
 
 void APavlovGameMode::TerminateGameSession()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.TerminateGameSession"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.TerminateGameSession");
 
 	APavlovGameMode_TerminateGameSession_Params params;
 
@@ -4899,7 +4899,7 @@ void APavlovGameMode::TerminateGameSession()
 
 void APavlovGameMode::SwitchTeam(class AController* Controller)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.SwitchTeam"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SwitchTeam");
 
 	APavlovGameMode_SwitchTeam_Params params;
 	params.Controller = Controller;
@@ -4920,7 +4920,7 @@ void APavlovGameMode::SwitchTeam(class AController* Controller)
 
 void APavlovGameMode::Suicide(class AController* Controller)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.Suicide"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.Suicide");
 
 	APavlovGameMode_Suicide_Params params;
 	params.Controller = Controller;
@@ -4939,7 +4939,7 @@ void APavlovGameMode::Suicide(class AController* Controller)
 
 void APavlovGameMode::StopReplayRecording()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.StopReplayRecording"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.StopReplayRecording");
 
 	APavlovGameMode_StopReplayRecording_Params params;
 
@@ -4957,7 +4957,7 @@ void APavlovGameMode::StopReplayRecording()
 
 void APavlovGameMode::StartReplayRecording()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.StartReplayRecording"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.StartReplayRecording");
 
 	APavlovGameMode_StartReplayRecording_Params params;
 
@@ -4977,7 +4977,7 @@ void APavlovGameMode::StartReplayRecording()
 
 void APavlovGameMode::SpawnPlayer(class AController* Controller)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.SpawnPlayer"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SpawnPlayer");
 
 	APavlovGameMode_SpawnPlayer_Params params;
 	params.Controller = Controller;
@@ -4996,7 +4996,7 @@ void APavlovGameMode::SpawnPlayer(class AController* Controller)
 
 void APavlovGameMode::SpawnAndPossesPawns()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.SpawnAndPossesPawns"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SpawnAndPossesPawns");
 
 	APavlovGameMode_SpawnAndPossesPawns_Params params;
 
@@ -5014,7 +5014,7 @@ void APavlovGameMode::SpawnAndPossesPawns()
 
 void APavlovGameMode::ShuffleTeams()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.ShuffleTeams"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.ShuffleTeams");
 
 	APavlovGameMode_ShuffleTeams_Params params;
 
@@ -5035,7 +5035,7 @@ void APavlovGameMode::ShuffleTeams()
 
 void APavlovGameMode::SetTeamCash(int TeamID, int CashAmmount)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.SetTeamCash"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SetTeamCash");
 
 	APavlovGameMode_SetTeamCash_Params params;
 	params.TeamID = TeamID;
@@ -5057,7 +5057,7 @@ void APavlovGameMode::SetTeamCash(int TeamID, int CashAmmount)
 
 void APavlovGameMode::SetRoundState(EPavlovRoundState State)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.SetRoundState"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SetRoundState");
 
 	APavlovGameMode_SetRoundState_Params params;
 	params.State = State;
@@ -5078,7 +5078,7 @@ void APavlovGameMode::SetRoundState(EPavlovRoundState State)
 
 void APavlovGameMode::SetPawnsInvulnerable(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.SetPawnsInvulnerable"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SetPawnsInvulnerable");
 
 	APavlovGameMode_SetPawnsInvulnerable_Params params;
 	params.bEnabled = bEnabled;
@@ -5099,7 +5099,7 @@ void APavlovGameMode::SetPawnsInvulnerable(bool bEnabled)
 
 void APavlovGameMode::SetMovement(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.SetMovement"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SetMovement");
 
 	APavlovGameMode_SetMovement_Params params;
 	params.bEnabled = bEnabled;
@@ -5120,7 +5120,7 @@ void APavlovGameMode::SetMovement(bool bEnabled)
 
 void APavlovGameMode::SetEveryoneCash(int CashAmmount)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.SetEveryoneCash"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SetEveryoneCash");
 
 	APavlovGameMode_SetEveryoneCash_Params params;
 	params.CashAmmount = CashAmmount;
@@ -5141,7 +5141,7 @@ void APavlovGameMode::SetEveryoneCash(int CashAmmount)
 
 void APavlovGameMode::SetAttackingTeam(int TeamID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.SetAttackingTeam"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SetAttackingTeam");
 
 	APavlovGameMode_SetAttackingTeam_Params params;
 	params.TeamID = TeamID;
@@ -5160,7 +5160,7 @@ void APavlovGameMode::SetAttackingTeam(int TeamID)
 
 void APavlovGameMode::RotateMap()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.RotateMap"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.RotateMap");
 
 	APavlovGameMode_RotateMap_Params params;
 
@@ -5178,7 +5178,7 @@ void APavlovGameMode::RotateMap()
 
 void APavlovGameMode::ResetScore()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.ResetScore"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.ResetScore");
 
 	APavlovGameMode_ResetScore_Params params;
 
@@ -5198,7 +5198,7 @@ void APavlovGameMode::ResetScore()
 
 void APavlovGameMode::PunishTeamKiller(class APavlovPlayerState* TeamKiller)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.PunishTeamKiller"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.PunishTeamKiller");
 
 	APavlovGameMode_PunishTeamKiller_Params params;
 	params.TeamKiller = TeamKiller;
@@ -5217,7 +5217,7 @@ void APavlovGameMode::PunishTeamKiller(class APavlovPlayerState* TeamKiller)
 
 void APavlovGameMode::PostRoundCleanUp()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.PostRoundCleanUp"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.PostRoundCleanUp");
 
 	APavlovGameMode_PostRoundCleanUp_Params params;
 
@@ -5235,7 +5235,7 @@ void APavlovGameMode::PostRoundCleanUp()
 
 void APavlovGameMode::PerformServerTravel()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.PerformServerTravel"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.PerformServerTravel");
 
 	APavlovGameMode_PerformServerTravel_Params params;
 
@@ -5257,7 +5257,7 @@ void APavlovGameMode::PerformServerTravel()
 
 void APavlovGameMode::OnSteamTicketValidation(const struct FString& SteamUserId, ESteamAuthResponse Response, const struct FString& OwnerSteamUserId)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.OnSteamTicketValidation"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.OnSteamTicketValidation");
 
 	APavlovGameMode_OnSteamTicketValidation_Params params;
 	params.SteamUserId = SteamUserId;
@@ -5281,7 +5281,7 @@ void APavlovGameMode::OnSteamTicketValidation(const struct FString& SteamUserId,
 
 void APavlovGameMode::OnRoundStateChanged(EPavlovRoundState OldState, EPavlovRoundState NewState)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.OnRoundStateChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.OnRoundStateChanged");
 
 	APavlovGameMode_OnRoundStateChanged_Params params;
 	params.OldState = OldState;
@@ -5305,7 +5305,7 @@ void APavlovGameMode::OnRoundStateChanged(EPavlovRoundState OldState, EPavlovRou
 
 void APavlovGameMode::OnPlayerSpawned(class APavlovPlayerState* PlayerState, class AController* Controller, class APavlovPawn* Pawn)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.OnPlayerSpawned"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.OnPlayerSpawned");
 
 	APavlovGameMode_OnPlayerSpawned_Params params;
 	params.PlayerState = PlayerState;
@@ -5330,7 +5330,7 @@ void APavlovGameMode::OnPlayerSpawned(class APavlovPlayerState* PlayerState, cla
 
 void APavlovGameMode::OnPlayerKilled(class APavlovPlayerState* PlayerState, class AController* Controller, class APavlovPawn* Pawn)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.OnPlayerKilled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.OnPlayerKilled");
 
 	APavlovGameMode_OnPlayerKilled_Params params;
 	params.PlayerState = PlayerState;
@@ -5353,7 +5353,7 @@ void APavlovGameMode::OnPlayerKilled(class APavlovPlayerState* PlayerState, clas
 
 void APavlovGameMode::OnPawnKilled(class AActor* OwnerActor)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.OnPawnKilled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.OnPawnKilled");
 
 	APavlovGameMode_OnPawnKilled_Params params;
 	params.OwnerActor = OwnerActor;
@@ -5375,7 +5375,7 @@ void APavlovGameMode::OnPawnKilled(class AActor* OwnerActor)
 
 void APavlovGameMode::OnKillVolumeOverlap(class AActor* OverlappedActor, class AActor* OtherActor)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.OnKillVolumeOverlap"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.OnKillVolumeOverlap");
 
 	APavlovGameMode_OnKillVolumeOverlap_Params params;
 	params.OverlappedActor = OverlappedActor;
@@ -5395,7 +5395,7 @@ void APavlovGameMode::OnKillVolumeOverlap(class AActor* OverlappedActor, class A
 
 void APavlovGameMode::MakeNavmeshStatic()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.MakeNavmeshStatic"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.MakeNavmeshStatic");
 
 	APavlovGameMode_MakeNavmeshStatic_Params params;
 
@@ -5417,7 +5417,7 @@ void APavlovGameMode::MakeNavmeshStatic()
 
 void APavlovGameMode::KickByStringId(const struct FString& ID, const struct FText& KickReason, bool bBan)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.KickByStringId"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.KickByStringId");
 
 	APavlovGameMode_KickByStringId_Params params;
 	params.ID = ID;
@@ -5441,7 +5441,7 @@ void APavlovGameMode::KickByStringId(const struct FString& ID, const struct FTex
 
 bool APavlovGameMode::IsTeamDead(int TeamID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.IsTeamDead"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.IsTeamDead");
 
 	APavlovGameMode_IsTeamDead_Params params;
 	params.TeamID = TeamID;
@@ -5465,7 +5465,7 @@ bool APavlovGameMode::IsTeamDead(int TeamID)
 
 void APavlovGameMode::IncrementTeamScore(int TeamID, int Score)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.IncrementTeamScore"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.IncrementTeamScore");
 
 	APavlovGameMode_IncrementTeamScore_Params params;
 	params.TeamID = TeamID;
@@ -5488,7 +5488,7 @@ void APavlovGameMode::IncrementTeamScore(int TeamID, int Score)
 
 void APavlovGameMode::IncrementPlayerScore(class APlayerState* PlayerState, int Score)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.IncrementPlayerScore"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.IncrementPlayerScore");
 
 	APavlovGameMode_IncrementPlayerScore_Params params;
 	params.PlayerState = PlayerState;
@@ -5511,7 +5511,7 @@ void APavlovGameMode::IncrementPlayerScore(class APlayerState* PlayerState, int 
 
 void APavlovGameMode::GiveTeamCash(int TeamID, int CashAmmount)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.GiveTeamCash"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.GiveTeamCash");
 
 	APavlovGameMode_GiveTeamCash_Params params;
 	params.TeamID = TeamID;
@@ -5536,7 +5536,7 @@ void APavlovGameMode::GiveTeamCash(int TeamID, int CashAmmount)
 
 void APavlovGameMode::GiveItem(class APavlovPawn* Pawn, class UClass* ItemClass, float BlockDuration, bool bLoaded)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.GiveItem"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.GiveItem");
 
 	APavlovGameMode_GiveItem_Params params;
 	params.Pawn = Pawn;
@@ -5560,7 +5560,7 @@ void APavlovGameMode::GiveItem(class APavlovPawn* Pawn, class UClass* ItemClass,
 
 void APavlovGameMode::GiveEveryoneCash(int CashAmmount)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.GiveEveryoneCash"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.GiveEveryoneCash");
 
 	APavlovGameMode_GiveEveryoneCash_Params params;
 	params.CashAmmount = CashAmmount;
@@ -5583,7 +5583,7 @@ void APavlovGameMode::GiveEveryoneCash(int CashAmmount)
 
 void APavlovGameMode::GetTeamStatus(int TeamID, int* Num, int* Casualties)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.GetTeamStatus"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.GetTeamStatus");
 
 	APavlovGameMode_GetTeamStatus_Params params;
 	params.TeamID = TeamID;
@@ -5610,7 +5610,7 @@ void APavlovGameMode::GetTeamStatus(int TeamID, int* Num, int* Casualties)
 
 int APavlovGameMode::GetTeamRealPlayerCount(int TeamID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.GetTeamRealPlayerCount"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.GetTeamRealPlayerCount");
 
 	APavlovGameMode_GetTeamRealPlayerCount_Params params;
 	params.TeamID = TeamID;
@@ -5633,7 +5633,7 @@ int APavlovGameMode::GetTeamRealPlayerCount(int TeamID)
 
 int APavlovGameMode::GetRealPlayerCount()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.GetRealPlayerCount"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.GetRealPlayerCount");
 
 	APavlovGameMode_GetRealPlayerCount_Params params;
 
@@ -5657,7 +5657,7 @@ int APavlovGameMode::GetRealPlayerCount()
 
 class AController* APavlovGameMode::GetRandomController(int TeamFilter, bool bRealPlayer)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.GetRandomController"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.GetRandomController");
 
 	APavlovGameMode_GetRandomController_Params params;
 	params.TeamFilter = TeamFilter;
@@ -5679,7 +5679,7 @@ class AController* APavlovGameMode::GetRandomController(int TeamFilter, bool bRe
 
 void APavlovGameMode::CreateDedicatedServerSession()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.CreateDedicatedServerSession"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.CreateDedicatedServerSession");
 
 	APavlovGameMode_CreateDedicatedServerSession_Params params;
 
@@ -5697,7 +5697,7 @@ void APavlovGameMode::CreateDedicatedServerSession()
 
 void APavlovGameMode::CleanUpItems()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.CleanUpItems"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.CleanUpItems");
 
 	APavlovGameMode_CleanUpItems_Params params;
 
@@ -5717,7 +5717,7 @@ void APavlovGameMode::CleanUpItems()
 
 bool APavlovGameMode::CanChangeScore()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.CanChangeScore"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.CanChangeScore");
 
 	APavlovGameMode_CanChangeScore_Params params;
 
@@ -5739,7 +5739,7 @@ bool APavlovGameMode::CanChangeScore()
 
 void APavlovGameMode::AddExtraRoundTime(float ExtraTime)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.AddExtraRoundTime"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.AddExtraRoundTime");
 
 	APavlovGameMode_AddExtraRoundTime_Params params;
 	params.ExtraTime = ExtraTime;
@@ -5760,7 +5760,7 @@ void APavlovGameMode::AddExtraRoundTime(float ExtraTime)
 
 void APavlovGameMode::AddAssist(class APavlovPlayerState* PlayerState)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameMode.AddAssist"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.AddAssist");
 
 	APavlovGameMode_AddAssist_Params params;
 	params.PlayerState = PlayerState;
@@ -5779,7 +5779,7 @@ void APavlovGameMode::AddAssist(class APavlovPlayerState* PlayerState)
 
 void UPavlovLobby::Start()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovLobby.Start"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovLobby.Start");
 
 	UPavlovLobby_Start_Params params;
 
@@ -5799,7 +5799,7 @@ void UPavlovLobby::Start()
 
 void UPavlovLobby::SetWantToStart(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovLobby.SetWantToStart"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovLobby.SetWantToStart");
 
 	UPavlovLobby_SetWantToStart_Params params;
 	params.bEnabled = bEnabled;
@@ -5820,7 +5820,7 @@ void UPavlovLobby::SetWantToStart(bool bEnabled)
 
 void UPavlovLobby::SetServerSettings(const struct FServerSettings& NewServerSettings)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovLobby.SetServerSettings"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovLobby.SetServerSettings");
 
 	UPavlovLobby_SetServerSettings_Params params;
 	params.NewServerSettings = NewServerSettings;
@@ -5841,7 +5841,7 @@ void UPavlovLobby::SetServerSettings(const struct FServerSettings& NewServerSett
 
 void UPavlovLobby::SetPin(const struct FString& Pin)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovLobby.SetPin"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovLobby.SetPin");
 
 	UPavlovLobby_SetPin_Params params;
 	params.Pin = Pin;
@@ -5862,7 +5862,7 @@ void UPavlovLobby::SetPin(const struct FString& Pin)
 
 void UPavlovLobby::SetMap(const struct FString& MapName)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovLobby.SetMap"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovLobby.SetMap");
 
 	UPavlovLobby_SetMap_Params params;
 	params.MapName = MapName;
@@ -5883,7 +5883,7 @@ void UPavlovLobby::SetMap(const struct FString& MapName)
 
 void UPavlovLobby::SetHostingType(EServerHostingType NewHostingType)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovLobby.SetHostingType"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovLobby.SetHostingType");
 
 	UPavlovLobby_SetHostingType_Params params;
 	params.NewHostingType = NewHostingType;
@@ -5904,7 +5904,7 @@ void UPavlovLobby::SetHostingType(EServerHostingType NewHostingType)
 
 void UPavlovLobby::SetGameMode(const struct FString& NewGameMode)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovLobby.SetGameMode"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovLobby.SetGameMode");
 
 	UPavlovLobby_SetGameMode_Params params;
 	params.NewGameMode = NewGameMode;
@@ -5925,7 +5925,7 @@ void UPavlovLobby::SetGameMode(const struct FString& NewGameMode)
 
 void UPavlovLobby::SetFriendsOnly(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovLobby.SetFriendsOnly"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovLobby.SetFriendsOnly");
 
 	UPavlovLobby_SetFriendsOnly_Params params;
 	params.bEnabled = bEnabled;
@@ -5946,7 +5946,7 @@ void UPavlovLobby::SetFriendsOnly(bool bEnabled)
 
 void UPavlovLobby::SetFillWithBots(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovLobby.SetFillWithBots"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovLobby.SetFillWithBots");
 
 	UPavlovLobby_SetFillWithBots_Params params;
 	params.bEnabled = bEnabled;
@@ -5967,7 +5967,7 @@ void UPavlovLobby::SetFillWithBots(bool bEnabled)
 
 void UPavlovLobby::SetCompetitiveMode(int CompMode)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovLobby.SetCompetitiveMode"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovLobby.SetCompetitiveMode");
 
 	UPavlovLobby_SetCompetitiveMode_Params params;
 	params.CompMode = CompMode;
@@ -5988,7 +5988,7 @@ void UPavlovLobby::SetCompetitiveMode(int CompMode)
 
 void UPavlovLobby::RequestTeam(int TeamID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovLobby.RequestTeam"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovLobby.RequestTeam");
 
 	UPavlovLobby_RequestTeam_Params params;
 	params.TeamID = TeamID;
@@ -6010,7 +6010,7 @@ void UPavlovLobby::RequestTeam(int TeamID)
 
 void UPavlovLobby::MuteMember(int Index, bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovLobby.MuteMember"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovLobby.MuteMember");
 
 	UPavlovLobby_MuteMember_Params params;
 	params.Index = Index;
@@ -6032,7 +6032,7 @@ void UPavlovLobby::MuteMember(int Index, bool bEnabled)
 
 void UPavlovLobby::KickAndBan(int MemberIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovLobby.KickAndBan"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovLobby.KickAndBan");
 
 	UPavlovLobby_KickAndBan_Params params;
 	params.MemberIndex = MemberIndex;
@@ -6053,7 +6053,7 @@ void UPavlovLobby::KickAndBan(int MemberIndex)
 
 void UPavlovLobby::Kick(int MemberIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovLobby.Kick"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovLobby.Kick");
 
 	UPavlovLobby_Kick_Params params;
 	params.MemberIndex = MemberIndex;
@@ -6074,7 +6074,7 @@ void UPavlovLobby::Kick(int MemberIndex)
 
 bool UPavlovLobby::IsPinProtected()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovLobby.IsPinProtected"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovLobby.IsPinProtected");
 
 	UPavlovLobby_IsPinProtected_Params params;
 
@@ -6097,7 +6097,7 @@ bool UPavlovLobby::IsPinProtected()
 
 bool UPavlovLobby::IsMemberMuted(int Index)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovLobby.IsMemberMuted"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovLobby.IsMemberMuted");
 
 	UPavlovLobby_IsMemberMuted_Params params;
 	params.Index = Index;
@@ -6120,7 +6120,7 @@ bool UPavlovLobby::IsMemberMuted(int Index)
 
 bool UPavlovLobby::IsFriendsOnly()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovLobby.IsFriendsOnly"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovLobby.IsFriendsOnly");
 
 	UPavlovLobby_IsFriendsOnly_Params params;
 
@@ -6142,7 +6142,7 @@ bool UPavlovLobby::IsFriendsOnly()
 
 struct FString UPavlovLobby::GetRegion()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovLobby.GetRegion"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovLobby.GetRegion");
 
 	UPavlovLobby_GetRegion_Params params;
 
@@ -6164,7 +6164,7 @@ struct FString UPavlovLobby::GetRegion()
 
 struct FString UPavlovLobby::GetPin()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovLobby.GetPin"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovLobby.GetPin");
 
 	UPavlovLobby_GetPin_Params params;
 
@@ -6187,7 +6187,7 @@ struct FString UPavlovLobby::GetPin()
 
 int UPavlovLobby::GetMemberTeam(int Index)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovLobby.GetMemberTeam"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovLobby.GetMemberTeam");
 
 	UPavlovLobby_GetMemberTeam_Params params;
 	params.Index = Index;
@@ -6210,7 +6210,7 @@ int UPavlovLobby::GetMemberTeam(int Index)
 
 int UPavlovLobby::GetLocalUserIndex()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovLobby.GetLocalUserIndex"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovLobby.GetLocalUserIndex");
 
 	UPavlovLobby_GetLocalUserIndex_Params params;
 
@@ -6233,7 +6233,7 @@ int UPavlovLobby::GetLocalUserIndex()
 
 bool UPavlovLobby::DoesMemberWantsToStart(int Index)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovLobby.DoesMemberWantsToStart"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovLobby.DoesMemberWantsToStart");
 
 	UPavlovLobby_DoesMemberWantsToStart_Params params;
 	params.Index = Index;
@@ -6259,7 +6259,7 @@ bool UPavlovLobby::DoesMemberWantsToStart(int Index)
 
 void UPavlovGameInstance::UpdateServerList(const struct FString& Map, const struct FString& GameMode, bool bFriendsOnly, bool bPrivateOnly)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.UpdateServerList"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.UpdateServerList");
 
 	UPavlovGameInstance_UpdateServerList_Params params;
 	params.Map = Map;
@@ -6284,7 +6284,7 @@ void UPavlovGameInstance::UpdateServerList(const struct FString& Map, const stru
 
 void UPavlovGameInstance::SetMuted(class APavlovPlayerState* PlayerState, bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.SetMuted"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.SetMuted");
 
 	UPavlovGameInstance_SetMuted_Params params;
 	params.PlayerState = PlayerState;
@@ -6306,7 +6306,7 @@ void UPavlovGameInstance::SetMuted(class APavlovPlayerState* PlayerState, bool b
 
 void UPavlovGameInstance::SetMatchmakingState(EMatchmakingState NewState)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.SetMatchmakingState"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.SetMatchmakingState");
 
 	UPavlovGameInstance_SetMatchmakingState_Params params;
 	params.NewState = NewState;
@@ -6325,7 +6325,7 @@ void UPavlovGameInstance::SetMatchmakingState(EMatchmakingState NewState)
 
 void UPavlovGameInstance::RetrieveMasterServerSessionId()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.RetrieveMasterServerSessionId"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.RetrieveMasterServerSessionId");
 
 	UPavlovGameInstance_RetrieveMasterServerSessionId_Params params;
 
@@ -6343,7 +6343,7 @@ void UPavlovGameInstance::RetrieveMasterServerSessionId()
 
 void UPavlovGameInstance::ResetTutorial()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.ResetTutorial"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.ResetTutorial");
 
 	UPavlovGameInstance_ResetTutorial_Params params;
 
@@ -6361,7 +6361,7 @@ void UPavlovGameInstance::ResetTutorial()
 
 void UPavlovGameInstance::ReportServerState()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.ReportServerState"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.ReportServerState");
 
 	UPavlovGameInstance_ReportServerState_Params params;
 
@@ -6379,7 +6379,7 @@ void UPavlovGameInstance::ReportServerState()
 
 void UPavlovGameInstance::QuickMatch()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.QuickMatch"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.QuickMatch");
 
 	UPavlovGameInstance_QuickMatch_Params params;
 
@@ -6397,7 +6397,7 @@ void UPavlovGameInstance::QuickMatch()
 
 void UPavlovGameInstance::QueryForGameSession()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.QueryForGameSession"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.QueryForGameSession");
 
 	UPavlovGameInstance_QueryForGameSession_Params params;
 
@@ -6415,7 +6415,7 @@ void UPavlovGameInstance::QueryForGameSession()
 
 void UPavlovGameInstance::OpenMap_Implementation()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.OpenMap_Implementation"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OpenMap_Implementation");
 
 	UPavlovGameInstance_OpenMap_Implementation_Params params;
 
@@ -6436,7 +6436,7 @@ void UPavlovGameInstance::OpenMap_Implementation()
 
 void UPavlovGameInstance::OpenMap(const struct FString& Map, const struct FString& Options)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.OpenMap"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OpenMap");
 
 	UPavlovGameInstance_OpenMap_Params params;
 	params.Map = Map;
@@ -6456,7 +6456,7 @@ void UPavlovGameInstance::OpenMap(const struct FString& Map, const struct FStrin
 
 void UPavlovGameInstance::OnWorkshopSpecificQuery()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.OnWorkshopSpecificQuery"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnWorkshopSpecificQuery");
 
 	UPavlovGameInstance_OnWorkshopSpecificQuery_Params params;
 
@@ -6474,7 +6474,7 @@ void UPavlovGameInstance::OnWorkshopSpecificQuery()
 
 void UPavlovGameInstance::OnSteamLobbyListUpdated()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.OnSteamLobbyListUpdated"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnSteamLobbyListUpdated");
 
 	UPavlovGameInstance_OnSteamLobbyListUpdated_Params params;
 
@@ -6495,7 +6495,7 @@ void UPavlovGameInstance::OnSteamLobbyListUpdated()
 
 void UPavlovGameInstance::OnServerMapDownloaded(bool bSucceed, const struct FString& ID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.OnServerMapDownloaded"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnServerMapDownloaded");
 
 	UPavlovGameInstance_OnServerMapDownloaded_Params params;
 	params.bSucceed = bSucceed;
@@ -6520,7 +6520,7 @@ void UPavlovGameInstance::OnServerMapDownloaded(bool bSucceed, const struct FStr
 
 void UPavlovGameInstance::OnNetworkFailure(class UWorld* World, class UNetDriver* NetDriver, TEnumAsByte<ENetworkFailure> FailureType, const struct FString& ErrorString)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.OnNetworkFailure"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnNetworkFailure");
 
 	UPavlovGameInstance_OnNetworkFailure_Params params;
 	params.World = World;
@@ -6544,7 +6544,7 @@ void UPavlovGameInstance::OnNetworkFailure(class UWorld* World, class UNetDriver
 
 void UPavlovGameInstance::OnLeftLobby(ESteamLobbyChatMemberStateChange StateChange)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.OnLeftLobby"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnLeftLobby");
 
 	UPavlovGameInstance_OnLeftLobby_Params params;
 	params.StateChange = StateChange;
@@ -6566,7 +6566,7 @@ void UPavlovGameInstance::OnLeftLobby(ESteamLobbyChatMemberStateChange StateChan
 
 void UPavlovGameInstance::OnLadderOverlap(class AActor* OverlappedActor, class AActor* OtherActor)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.OnLadderOverlap"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnLadderOverlap");
 
 	UPavlovGameInstance_OnLadderOverlap_Params params;
 	params.OverlappedActor = OverlappedActor;
@@ -6588,7 +6588,7 @@ void UPavlovGameInstance::OnLadderOverlap(class AActor* OverlappedActor, class A
 
 void UPavlovGameInstance::OnEnterLobby(bool bFailed)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.OnEnterLobby"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnEnterLobby");
 
 	UPavlovGameInstance_OnEnterLobby_Params params;
 	params.bFailed = bFailed;
@@ -6610,7 +6610,7 @@ void UPavlovGameInstance::OnEnterLobby(bool bFailed)
 
 void UPavlovGameInstance::OnClientMapDownloaded(bool bSucceed, const struct FString& ID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.OnClientMapDownloaded"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnClientMapDownloaded");
 
 	UPavlovGameInstance_OnClientMapDownloaded_Params params;
 	params.bSucceed = bSucceed;
@@ -6633,7 +6633,7 @@ void UPavlovGameInstance::OnClientMapDownloaded(bool bSucceed, const struct FStr
 
 void UPavlovGameInstance::OnAuthSessionTicketResponse(bool bSucceed, const struct FString& HexAuthTicket)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.OnAuthSessionTicketResponse"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnAuthSessionTicketResponse");
 
 	UPavlovGameInstance_OnAuthSessionTicketResponse_Params params;
 	params.bSucceed = bSucceed;
@@ -6655,7 +6655,7 @@ void UPavlovGameInstance::OnAuthSessionTicketResponse(bool bSucceed, const struc
 
 void UPavlovGameInstance::JoinServer(const struct FPavlovServerInfo& ServerInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.JoinServer"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.JoinServer");
 
 	UPavlovGameInstance_JoinServer_Params params;
 	params.ServerInfo = ServerInfo;
@@ -6678,7 +6678,7 @@ void UPavlovGameInstance::JoinServer(const struct FPavlovServerInfo& ServerInfo)
 
 bool UPavlovGameInstance::JoinPinProtectedServer(const struct FPavlovServerInfo& ServerInfo, const struct FString& Pin)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.JoinPinProtectedServer"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.JoinPinProtectedServer");
 
 	UPavlovGameInstance_JoinPinProtectedServer_Params params;
 	params.ServerInfo = ServerInfo;
@@ -6703,7 +6703,7 @@ bool UPavlovGameInstance::JoinPinProtectedServer(const struct FPavlovServerInfo&
 
 bool UPavlovGameInstance::IsMuted(class APavlovPlayerState* PlayerState)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.IsMuted"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.IsMuted");
 
 	UPavlovGameInstance_IsMuted_Params params;
 	params.PlayerState = PlayerState;
@@ -6724,7 +6724,7 @@ bool UPavlovGameInstance::IsMuted(class APavlovPlayerState* PlayerState)
 
 void UPavlovGameInstance::InitClientProxies()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.InitClientProxies"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.InitClientProxies");
 
 	UPavlovGameInstance_InitClientProxies_Params params;
 
@@ -6744,7 +6744,7 @@ void UPavlovGameInstance::InitClientProxies()
 
 bool UPavlovGameInstance::HasGameSession()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.HasGameSession"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.HasGameSession");
 
 	UPavlovGameInstance_HasGameSession_Params params;
 
@@ -6766,7 +6766,7 @@ bool UPavlovGameInstance::HasGameSession()
 
 class UTutorial* UPavlovGameInstance::GetTutorial()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.GetTutorial"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.GetTutorial");
 
 	UPavlovGameInstance_GetTutorial_Params params;
 
@@ -6788,7 +6788,7 @@ class UTutorial* UPavlovGameInstance::GetTutorial()
 
 EOnlineRegion UPavlovGameInstance::GetOnlineRegion()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.GetOnlineRegion"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.GetOnlineRegion");
 
 	UPavlovGameInstance_GetOnlineRegion_Params params;
 
@@ -6810,7 +6810,7 @@ EOnlineRegion UPavlovGameInstance::GetOnlineRegion()
 
 float UPavlovGameInstance::GetOculusScale()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.GetOculusScale"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.GetOculusScale");
 
 	UPavlovGameInstance_GetOculusScale_Params params;
 
@@ -6832,7 +6832,7 @@ float UPavlovGameInstance::GetOculusScale()
 
 void UPavlovGameInstance::GetMapListAdvanced(const struct FPavlov_MapCompatibility& Compatibility)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.GetMapListAdvanced"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.GetMapListAdvanced");
 
 	UPavlovGameInstance_GetMapListAdvanced_Params params;
 	params.Compatibility = Compatibility;
@@ -6854,7 +6854,7 @@ void UPavlovGameInstance::GetMapListAdvanced(const struct FPavlov_MapCompatibili
 
 TArray<class UPavlov_Map*> UPavlovGameInstance::GetMapList(const struct FPavlov_MapCompatibility& Compatibility)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.GetMapList"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.GetMapList");
 
 	UPavlovGameInstance_GetMapList_Params params;
 	params.Compatibility = Compatibility;
@@ -6878,7 +6878,7 @@ TArray<class UPavlov_Map*> UPavlovGameInstance::GetMapList(const struct FPavlov_
 
 class UPavlov_Map* UPavlovGameInstance::GetMap(const struct FString& UniqueId)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.GetMap"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.GetMap");
 
 	UPavlovGameInstance_GetMap_Params params;
 	params.UniqueId = UniqueId;
@@ -6899,7 +6899,7 @@ class UPavlov_Map* UPavlovGameInstance::GetMap(const struct FString& UniqueId)
 
 void UPavlovGameInstance::DisplayNetworkFailureMessage()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.DisplayNetworkFailureMessage"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.DisplayNetworkFailureMessage");
 
 	UPavlovGameInstance_DisplayNetworkFailureMessage_Params params;
 
@@ -6917,7 +6917,7 @@ void UPavlovGameInstance::DisplayNetworkFailureMessage()
 
 void UPavlovGameInstance::DisplayMessageImpl()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.DisplayMessageImpl"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.DisplayMessageImpl");
 
 	UPavlovGameInstance_DisplayMessageImpl_Params params;
 
@@ -6938,7 +6938,7 @@ void UPavlovGameInstance::DisplayMessageImpl()
 
 void UPavlovGameInstance::DisplayMessage(const struct FString& Message, bool bDeferredDelay)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.DisplayMessage"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.DisplayMessage");
 
 	UPavlovGameInstance_DisplayMessage_Params params;
 	params.Message = Message;
@@ -6958,7 +6958,7 @@ void UPavlovGameInstance::DisplayMessage(const struct FString& Message, bool bDe
 
 void UPavlovGameInstance::CreateLobby()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.CreateLobby"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.CreateLobby");
 
 	UPavlovGameInstance_CreateLobby_Params params;
 
@@ -6976,7 +6976,7 @@ void UPavlovGameInstance::CreateLobby()
 
 void UPavlovGameInstance::CreateGameSession()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.CreateGameSession"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.CreateGameSession");
 
 	UPavlovGameInstance_CreateGameSession_Params params;
 
@@ -6994,7 +6994,7 @@ void UPavlovGameInstance::CreateGameSession()
 
 void UPavlovGameInstance::CheckPlacementStatus()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.CheckPlacementStatus"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.CheckPlacementStatus");
 
 	UPavlovGameInstance_CheckPlacementStatus_Params params;
 
@@ -7012,7 +7012,7 @@ void UPavlovGameInstance::CheckPlacementStatus()
 
 void UPavlovGameInstance::CancelServerFind()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.CancelServerFind"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.CancelServerFind");
 
 	UPavlovGameInstance_CancelServerFind_Params params;
 
@@ -7030,7 +7030,7 @@ void UPavlovGameInstance::CancelServerFind()
 
 void UPavlovGameInstance::CancelQuickmatch()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovGameInstance.CancelQuickmatch"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.CancelQuickmatch");
 
 	UPavlovGameInstance_CancelQuickmatch_Params params;
 
@@ -7048,7 +7048,7 @@ void UPavlovGameInstance::CancelQuickmatch()
 
 void APavlovItemController::UpdateUIState()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovItemController.UpdateUIState"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.UpdateUIState");
 
 	APavlovItemController_UpdateUIState_Params params;
 
@@ -7068,7 +7068,7 @@ void APavlovItemController::UpdateUIState()
 
 void APavlovItemController::SetWheelEnabled(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovItemController.SetWheelEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.SetWheelEnabled");
 
 	APavlovItemController_SetWheelEnabled_Params params;
 	params.bEnabled = bEnabled;
@@ -7089,7 +7089,7 @@ void APavlovItemController::SetWheelEnabled(bool bEnabled)
 
 void APavlovItemController::SetMenu(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovItemController.SetMenu"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.SetMenu");
 
 	APavlovItemController_SetMenu_Params params;
 	params.bEnabled = bEnabled;
@@ -7110,7 +7110,7 @@ void APavlovItemController::SetMenu(bool bEnabled)
 
 void APavlovItemController::SetKillfeed(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovItemController.SetKillfeed"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.SetKillfeed");
 
 	APavlovItemController_SetKillfeed_Params params;
 	params.bEnabled = bEnabled;
@@ -7131,7 +7131,7 @@ void APavlovItemController::SetKillfeed(bool bEnabled)
 
 void APavlovItemController::OnSelectionPicked(class AVRItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovItemController.OnSelectionPicked"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.OnSelectionPicked");
 
 	APavlovItemController_OnSelectionPicked_Params params;
 	params.Item = Item;
@@ -7152,7 +7152,7 @@ void APavlovItemController::OnSelectionPicked(class AVRItem* Item)
 
 bool APavlovItemController::IsTwoHandReloadEnabled()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovItemController.IsTwoHandReloadEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.IsTwoHandReloadEnabled");
 
 	APavlovItemController_IsTwoHandReloadEnabled_Params params;
 
@@ -7174,7 +7174,7 @@ bool APavlovItemController::IsTwoHandReloadEnabled()
 
 bool APavlovItemController::IsTwoHandGripEnabled()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovItemController.IsTwoHandGripEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.IsTwoHandGripEnabled");
 
 	APavlovItemController_IsTwoHandGripEnabled_Params params;
 
@@ -7196,7 +7196,7 @@ bool APavlovItemController::IsTwoHandGripEnabled()
 
 bool APavlovItemController::IsMenuActive()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovItemController.IsMenuActive"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.IsMenuActive");
 
 	APavlovItemController_IsMenuActive_Params params;
 
@@ -7218,7 +7218,7 @@ bool APavlovItemController::IsMenuActive()
 
 class APavlovItemController* APavlovItemController::GetOppositeHandController()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovItemController.GetOppositeHandController"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.GetOppositeHandController");
 
 	APavlovItemController_GetOppositeHandController_Params params;
 
@@ -7240,7 +7240,7 @@ class APavlovItemController* APavlovItemController::GetOppositeHandController()
 
 struct FVector APavlovItemController::GetFingerPointLocation()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovItemController.GetFingerPointLocation"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.GetFingerPointLocation");
 
 	APavlovItemController_GetFingerPointLocation_Params params;
 
@@ -7260,7 +7260,7 @@ struct FVector APavlovItemController::GetFingerPointLocation()
 
 void APavlovItemController::ForceTwoHandGrip()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovItemController.ForceTwoHandGrip"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.ForceTwoHandGrip");
 
 	APavlovItemController_ForceTwoHandGrip_Params params;
 
@@ -7278,7 +7278,7 @@ void APavlovItemController::ForceTwoHandGrip()
 
 void APavlovItemController::ClearWheelInstance()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovItemController.ClearWheelInstance"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.ClearWheelInstance");
 
 	APavlovItemController_ClearWheelInstance_Params params;
 
@@ -7298,7 +7298,7 @@ void APavlovItemController::ClearWheelInstance()
 
 void AGhostItemController::OnPointModeChanged(EGhostPointMode OldPointMode)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.GhostItemController.OnPointModeChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostItemController.OnPointModeChanged");
 
 	AGhostItemController_OnPointModeChanged_Params params;
 	params.OldPointMode = OldPointMode;
@@ -7318,7 +7318,7 @@ void AGhostItemController::OnPointModeChanged(EGhostPointMode OldPointMode)
 
 void AGhostItemController::ChangePointMode(EGhostPointMode NewPointMode)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.GhostItemController.ChangePointMode"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostItemController.ChangePointMode");
 
 	AGhostItemController_ChangePointMode_Params params;
 	params.NewPointMode = NewPointMode;
@@ -7337,7 +7337,7 @@ void AGhostItemController::ChangePointMode(EGhostPointMode NewPointMode)
 
 void APavlovPlayerController::UnBoardVehicle()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.UnBoardVehicle"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.UnBoardVehicle");
 
 	APavlovPlayerController_UnBoardVehicle_Params params;
 
@@ -7355,7 +7355,7 @@ void APavlovPlayerController::UnBoardVehicle()
 
 void APavlovPlayerController::TryRestoreEquipmentBySnapshot()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.TryRestoreEquipmentBySnapshot"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.TryRestoreEquipmentBySnapshot");
 
 	APavlovPlayerController_TryRestoreEquipmentBySnapshot_Params params;
 
@@ -7373,7 +7373,7 @@ void APavlovPlayerController::TryRestoreEquipmentBySnapshot()
 
 void APavlovPlayerController::TestTeamKill()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.TestTeamKill"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.TestTeamKill");
 
 	APavlovPlayerController_TestTeamKill_Params params;
 
@@ -7391,7 +7391,7 @@ void APavlovPlayerController::TestTeamKill()
 
 void APavlovPlayerController::TakeEquipmentSnapshot()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.TakeEquipmentSnapshot"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.TakeEquipmentSnapshot");
 
 	APavlovPlayerController_TakeEquipmentSnapshot_Params params;
 
@@ -7409,7 +7409,7 @@ void APavlovPlayerController::TakeEquipmentSnapshot()
 
 void APavlovPlayerController::SwitchToSpectator()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.SwitchToSpectator"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.SwitchToSpectator");
 
 	APavlovPlayerController_SwitchToSpectator_Params params;
 
@@ -7427,7 +7427,7 @@ void APavlovPlayerController::SwitchToSpectator()
 
 void APavlovPlayerController::SwitchTeam()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.SwitchTeam"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.SwitchTeam");
 
 	APavlovPlayerController_SwitchTeam_Params params;
 
@@ -7445,7 +7445,7 @@ void APavlovPlayerController::SwitchTeam()
 
 void APavlovPlayerController::SwapControllers()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.SwapControllers"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.SwapControllers");
 
 	APavlovPlayerController_SwapControllers_Params params;
 
@@ -7463,7 +7463,7 @@ void APavlovPlayerController::SwapControllers()
 
 void APavlovPlayerController::Suicide()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.Suicide"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.Suicide");
 
 	APavlovPlayerController_Suicide_Params params;
 
@@ -7483,7 +7483,7 @@ void APavlovPlayerController::Suicide()
 
 void APavlovPlayerController::SetServerTickRate(int Rate)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.SetServerTickRate"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.SetServerTickRate");
 
 	APavlovPlayerController_SetServerTickRate_Params params;
 	params.Rate = Rate;
@@ -7504,7 +7504,7 @@ void APavlovPlayerController::SetServerTickRate(int Rate)
 
 void APavlovPlayerController::SetHeadMountedDisplayScale(float Scale)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.SetHeadMountedDisplayScale"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.SetHeadMountedDisplayScale");
 
 	APavlovPlayerController_SetHeadMountedDisplayScale_Params params;
 	params.Scale = Scale;
@@ -7526,7 +7526,7 @@ void APavlovPlayerController::SetHeadMountedDisplayScale(float Scale)
 
 void APavlovPlayerController::SetBuyingEnabled(float ForDuration, float BuyZoneMaxDistance)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.SetBuyingEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.SetBuyingEnabled");
 
 	APavlovPlayerController_SetBuyingEnabled_Params params;
 	params.ForDuration = ForDuration;
@@ -7549,7 +7549,7 @@ void APavlovPlayerController::SetBuyingEnabled(float ForDuration, float BuyZoneM
 
 void APavlovPlayerController::ServerVote(class AVote* Vote, bool bYes)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.ServerVote"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ServerVote");
 
 	APavlovPlayerController_ServerVote_Params params;
 	params.Vote = Vote;
@@ -7569,7 +7569,7 @@ void APavlovPlayerController::ServerVote(class AVote* Vote, bool bYes)
 
 void APavlovPlayerController::ServerUnBoardVehicle()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.ServerUnBoardVehicle"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ServerUnBoardVehicle");
 
 	APavlovPlayerController_ServerUnBoardVehicle_Params params;
 
@@ -7587,7 +7587,7 @@ void APavlovPlayerController::ServerUnBoardVehicle()
 
 void APavlovPlayerController::ServerTestTeamKill()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.ServerTestTeamKill"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ServerTestTeamKill");
 
 	APavlovPlayerController_ServerTestTeamKill_Params params;
 
@@ -7605,7 +7605,7 @@ void APavlovPlayerController::ServerTestTeamKill()
 
 void APavlovPlayerController::ServerSwitchTeam()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.ServerSwitchTeam"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ServerSwitchTeam");
 
 	APavlovPlayerController_ServerSwitchTeam_Params params;
 
@@ -7623,7 +7623,7 @@ void APavlovPlayerController::ServerSwitchTeam()
 
 void APavlovPlayerController::ServerSuicide()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.ServerSuicide"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ServerSuicide");
 
 	APavlovPlayerController_ServerSuicide_Params params;
 
@@ -7643,7 +7643,7 @@ void APavlovPlayerController::ServerSuicide()
 
 void APavlovPlayerController::ServerSetServerTickRate(int Rate)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.ServerSetServerTickRate"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ServerSetServerTickRate");
 
 	APavlovPlayerController_ServerSetServerTickRate_Params params;
 	params.Rate = Rate;
@@ -7664,7 +7664,7 @@ void APavlovPlayerController::ServerSetServerTickRate(int Rate)
 
 void APavlovPlayerController::ServerReportZombieBulletHit(const struct FClientZombieBulletHit& Hit)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.ServerReportZombieBulletHit"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ServerReportZombieBulletHit");
 
 	APavlovPlayerController_ServerReportZombieBulletHit_Params params;
 	params.Hit = Hit;
@@ -7685,7 +7685,7 @@ void APavlovPlayerController::ServerReportZombieBulletHit(const struct FClientZo
 
 void APavlovPlayerController::ServerReportVirtualStockChange(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.ServerReportVirtualStockChange"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ServerReportVirtualStockChange");
 
 	APavlovPlayerController_ServerReportVirtualStockChange_Params params;
 	params.bEnabled = bEnabled;
@@ -7708,7 +7708,7 @@ void APavlovPlayerController::ServerReportVirtualStockChange(bool bEnabled)
 
 void APavlovPlayerController::ServerReportTrigger(class AGun* Gun, bool bTrigger, TArray<unsigned char> GunState)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.ServerReportTrigger"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ServerReportTrigger");
 
 	APavlovPlayerController_ServerReportTrigger_Params params;
 	params.Gun = Gun;
@@ -7733,7 +7733,7 @@ void APavlovPlayerController::ServerReportTrigger(class AGun* Gun, bool bTrigger
 
 void APavlovPlayerController::ServerReportShatter(class ADestructible* Destructible, const struct FVector_NetQuantizeNormal& Normal, const struct FVector_NetQuantize& Location)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.ServerReportShatter"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ServerReportShatter");
 
 	APavlovPlayerController_ServerReportShatter_Params params;
 	params.Destructible = Destructible;
@@ -7756,7 +7756,7 @@ void APavlovPlayerController::ServerReportShatter(class ADestructible* Destructi
 
 void APavlovPlayerController::ServerReportBulletHit(const struct FClientBulletHit& Hit)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.ServerReportBulletHit"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ServerReportBulletHit");
 
 	APavlovPlayerController_ServerReportBulletHit_Params params;
 	params.Hit = Hit;
@@ -7779,7 +7779,7 @@ void APavlovPlayerController::ServerReportBulletHit(const struct FClientBulletHi
 
 void APavlovPlayerController::ServerInstigateVote(class UClass* VoteClass, const struct FString& Param1, int Param2)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.ServerInstigateVote"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ServerInstigateVote");
 
 	APavlovPlayerController_ServerInstigateVote_Params params;
 	params.VoteClass = VoteClass;
@@ -7803,7 +7803,7 @@ void APavlovPlayerController::ServerInstigateVote(class UClass* VoteClass, const
 
 void APavlovPlayerController::ServerEnterDigit(class ABomb* Bomb, int Index)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.ServerEnterDigit"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ServerEnterDigit");
 
 	APavlovPlayerController_ServerEnterDigit_Params params;
 	params.Bomb = Bomb;
@@ -7825,7 +7825,7 @@ void APavlovPlayerController::ServerEnterDigit(class ABomb* Bomb, int Index)
 
 void APavlovPlayerController::ServerBuy(const struct FName& EquipmentName)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.ServerBuy"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ServerBuy");
 
 	APavlovPlayerController_ServerBuy_Params params;
 	params.EquipmentName = EquipmentName;
@@ -7847,7 +7847,7 @@ void APavlovPlayerController::ServerBuy(const struct FName& EquipmentName)
 
 void APavlovPlayerController::ServerBoardVehicle(class APavlovWheeledVehicle* Vehicle, int Seat)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.ServerBoardVehicle"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ServerBoardVehicle");
 
 	APavlovPlayerController_ServerBoardVehicle_Params params;
 	params.Vehicle = Vehicle;
@@ -7869,7 +7869,7 @@ void APavlovPlayerController::ServerBoardVehicle(class APavlovWheeledVehicle* Ve
 
 void APavlovPlayerController::ServerAuthenticate(const struct FString& HexTicket)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.ServerAuthenticate"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ServerAuthenticate");
 
 	APavlovPlayerController_ServerAuthenticate_Params params;
 	params.HexTicket = HexTicket;
@@ -7888,7 +7888,7 @@ void APavlovPlayerController::ServerAuthenticate(const struct FString& HexTicket
 
 void APavlovPlayerController::ServerAbstainToVote()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.ServerAbstainToVote"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ServerAbstainToVote");
 
 	APavlovPlayerController_ServerAbstainToVote_Params params;
 
@@ -7906,7 +7906,7 @@ void APavlovPlayerController::ServerAbstainToVote()
 
 void APavlovPlayerController::PunishTeamKiller()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.PunishTeamKiller"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.PunishTeamKiller");
 
 	APavlovPlayerController_PunishTeamKiller_Params params;
 
@@ -7924,7 +7924,7 @@ void APavlovPlayerController::PunishTeamKiller()
 
 void APavlovPlayerController::OnAuthTimedout()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.OnAuthTimedout"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.OnAuthTimedout");
 
 	APavlovPlayerController_OnAuthTimedout_Params params;
 
@@ -7945,7 +7945,7 @@ void APavlovPlayerController::OnAuthTimedout()
 
 void APavlovPlayerController::OnAuthTicketReceived(bool bSucceed, const struct FString& HexAuthTicket)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.OnAuthTicketReceived"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.OnAuthTicketReceived");
 
 	APavlovPlayerController_OnAuthTicketReceived_Params params;
 	params.bSucceed = bSucceed;
@@ -7968,7 +7968,7 @@ void APavlovPlayerController::OnAuthTicketReceived(bool bSucceed, const struct F
 
 void APavlovPlayerController::MulticastDebugPoint(const struct FVector& Location, const struct FString& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.MulticastDebugPoint"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.MulticastDebugPoint");
 
 	APavlovPlayerController_MulticastDebugPoint_Params params;
 	params.Location = Location;
@@ -7988,7 +7988,7 @@ void APavlovPlayerController::MulticastDebugPoint(const struct FVector& Location
 
 void APavlovPlayerController::ForgiveTeamKiller()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.ForgiveTeamKiller"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ForgiveTeamKiller");
 
 	APavlovPlayerController_ForgiveTeamKiller_Params params;
 
@@ -8009,7 +8009,7 @@ void APavlovPlayerController::ForgiveTeamKiller()
 
 void APavlovPlayerController::ClientVoiceChat(class USteamVoiceComponent* VoiceComponent, const struct FSteamworksVoicePacket& VoicePacket)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.ClientVoiceChat"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ClientVoiceChat");
 
 	APavlovPlayerController_ClientVoiceChat_Params params;
 	params.VoiceComponent = VoiceComponent;
@@ -8031,7 +8031,7 @@ void APavlovPlayerController::ClientVoiceChat(class USteamVoiceComponent* VoiceC
 
 void APavlovPlayerController::ClientSetBuying(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.ClientSetBuying"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ClientSetBuying");
 
 	APavlovPlayerController_ClientSetBuying_Params params;
 	params.bEnabled = bEnabled;
@@ -8050,7 +8050,7 @@ void APavlovPlayerController::ClientSetBuying(bool bEnabled)
 
 void APavlovPlayerController::ClientReportMatchEnd()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.ClientReportMatchEnd"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ClientReportMatchEnd");
 
 	APavlovPlayerController_ClientReportMatchEnd_Params params;
 
@@ -8068,7 +8068,7 @@ void APavlovPlayerController::ClientReportMatchEnd()
 
 void APavlovPlayerController::ClientPlayKillPing()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.ClientPlayKillPing"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ClientPlayKillPing");
 
 	APavlovPlayerController_ClientPlayKillPing_Params params;
 
@@ -8088,7 +8088,7 @@ void APavlovPlayerController::ClientPlayKillPing()
 
 void APavlovPlayerController::ClientOnTeamKilled(class APavlovPlayerState* CulpritTeamKiller)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.ClientOnTeamKilled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ClientOnTeamKilled");
 
 	APavlovPlayerController_ClientOnTeamKilled_Params params;
 	params.CulpritTeamKiller = CulpritTeamKiller;
@@ -8109,7 +8109,7 @@ void APavlovPlayerController::ClientOnTeamKilled(class APavlovPlayerState* Culpr
 
 void APavlovPlayerController::ClientInstigateFlash(float Seconds)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.ClientInstigateFlash"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ClientInstigateFlash");
 
 	APavlovPlayerController_ClientInstigateFlash_Params params;
 	params.Seconds = Seconds;
@@ -8130,7 +8130,7 @@ void APavlovPlayerController::ClientInstigateFlash(float Seconds)
 
 void APavlovPlayerController::ClientDisplayMessage(const struct FString& Message)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.ClientDisplayMessage"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ClientDisplayMessage");
 
 	APavlovPlayerController_ClientDisplayMessage_Params params;
 	params.Message = Message;
@@ -8149,7 +8149,7 @@ void APavlovPlayerController::ClientDisplayMessage(const struct FString& Message
 
 void APavlovPlayerController::ClientAuthenticate()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.ClientAuthenticate"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ClientAuthenticate");
 
 	APavlovPlayerController_ClientAuthenticate_Params params;
 
@@ -8169,7 +8169,7 @@ void APavlovPlayerController::ClientAuthenticate()
 
 void APavlovPlayerController::Buy(const struct FName& EquipmentName)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.Buy"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.Buy");
 
 	APavlovPlayerController_Buy_Params params;
 	params.EquipmentName = EquipmentName;
@@ -8191,7 +8191,7 @@ void APavlovPlayerController::Buy(const struct FName& EquipmentName)
 
 void APavlovPlayerController::BoardVehicle(class APavlovWheeledVehicle* Vehicle, int Seat)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerController.BoardVehicle"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.BoardVehicle");
 
 	APavlovPlayerController_BoardVehicle_Params params;
 	params.Vehicle = Vehicle;
@@ -8211,7 +8211,7 @@ void APavlovPlayerController::BoardVehicle(class APavlovWheeledVehicle* Vehicle,
 
 void APavlovPlayerState::Reset()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovPlayerState.Reset"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerState.Reset");
 
 	APavlovPlayerState_Reset_Params params;
 
@@ -8229,7 +8229,7 @@ void APavlovPlayerState::Reset()
 
 void APavlovSpectatorPawn::ScrubToLive()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovSpectatorPawn.ScrubToLive"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovSpectatorPawn.ScrubToLive");
 
 	APavlovSpectatorPawn_ScrubToLive_Params params;
 
@@ -8249,7 +8249,7 @@ void APavlovSpectatorPawn::ScrubToLive()
 
 void APavlovSpectatorPawn::ScrubRelative(float Seconds)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovSpectatorPawn.ScrubRelative"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovSpectatorPawn.ScrubRelative");
 
 	APavlovSpectatorPawn_ScrubRelative_Params params;
 	params.Seconds = Seconds;
@@ -8270,7 +8270,7 @@ void APavlovSpectatorPawn::ScrubRelative(float Seconds)
 
 void APavlovSpectatorPawn::ScrubNormalized(float NormalizedTime)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovSpectatorPawn.ScrubNormalized"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovSpectatorPawn.ScrubNormalized");
 
 	APavlovSpectatorPawn_ScrubNormalized_Params params;
 	params.NormalizedTime = NormalizedTime;
@@ -8291,7 +8291,7 @@ void APavlovSpectatorPawn::ScrubNormalized(float NormalizedTime)
 
 void APavlovSpectatorPawn::Scrub(float Time)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovSpectatorPawn.Scrub"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovSpectatorPawn.Scrub");
 
 	APavlovSpectatorPawn_Scrub_Params params;
 	params.Time = Time;
@@ -8312,7 +8312,7 @@ void APavlovSpectatorPawn::Scrub(float Time)
 
 void APavlovSpectatorPawn::OnScrubChanged(bool bScrubing)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovSpectatorPawn.OnScrubChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovSpectatorPawn.OnScrubChanged");
 
 	APavlovSpectatorPawn_OnScrubChanged_Params params;
 	params.bScrubing = bScrubing;
@@ -8332,7 +8332,7 @@ void APavlovSpectatorPawn::OnScrubChanged(bool bScrubing)
 
 void APavlovSpectatorPawn::OnGotoTime(bool bWasSuccessful)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovSpectatorPawn.OnGotoTime"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovSpectatorPawn.OnGotoTime");
 
 	APavlovSpectatorPawn_OnGotoTime_Params params;
 	params.bWasSuccessful = bWasSuccessful;
@@ -8354,7 +8354,7 @@ void APavlovSpectatorPawn::OnGotoTime(bool bWasSuccessful)
 
 void APavlovSpectatorPawn::OnDemoPlaybackError(TEnumAsByte<EDemoPlayFailure> FailureType, const struct FString& ErrorString)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovSpectatorPawn.OnDemoPlaybackError"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovSpectatorPawn.OnDemoPlaybackError");
 
 	APavlovSpectatorPawn_OnDemoPlaybackError_Params params;
 	params.FailureType = FailureType;
@@ -8375,7 +8375,7 @@ void APavlovSpectatorPawn::OnDemoPlaybackError(TEnumAsByte<EDemoPlayFailure> Fai
 
 float APavlovSpectatorPawn::GetNormalizedScrubTime()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovSpectatorPawn.GetNormalizedScrubTime"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovSpectatorPawn.GetNormalizedScrubTime");
 
 	APavlovSpectatorPawn_GetNormalizedScrubTime_Params params;
 
@@ -8397,7 +8397,7 @@ float APavlovSpectatorPawn::GetNormalizedScrubTime()
 
 void UPavlovStatics::STATIC_SwapHands(class UObject* WorldContextObject)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovStatics.SwapHands"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.SwapHands");
 
 	UPavlovStatics_SwapHands_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -8419,7 +8419,7 @@ void UPavlovStatics::STATIC_SwapHands(class UObject* WorldContextObject)
 
 void UPavlovStatics::STATIC_SpawnLocalSound2DByPawn(class APawn* Pawn, class USoundBase* Sound)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovStatics.SpawnLocalSound2DByPawn"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.SpawnLocalSound2DByPawn");
 
 	UPavlovStatics_SpawnLocalSound2DByPawn_Params params;
 	params.Pawn = Pawn;
@@ -8442,7 +8442,7 @@ void UPavlovStatics::STATIC_SpawnLocalSound2DByPawn(class APawn* Pawn, class USo
 
 void UPavlovStatics::STATIC_SpawnLocalSound2D(class APlayerController* Controller, class USoundBase* Sound)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovStatics.SpawnLocalSound2D"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.SpawnLocalSound2D");
 
 	UPavlovStatics_SpawnLocalSound2D_Params params;
 	params.Controller = Controller;
@@ -8465,7 +8465,7 @@ void UPavlovStatics::STATIC_SpawnLocalSound2D(class APlayerController* Controlle
 
 void UPavlovStatics::STATIC_SetPlayerEffectsDisabled(class UObject* WorldContextObject, bool bDisabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovStatics.SetPlayerEffectsDisabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.SetPlayerEffectsDisabled");
 
 	UPavlovStatics_SetPlayerEffectsDisabled_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -8488,7 +8488,7 @@ void UPavlovStatics::STATIC_SetPlayerEffectsDisabled(class UObject* WorldContext
 
 bool UPavlovStatics::STATIC_IsReplay(class UObject* WorldContextObject)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovStatics.IsReplay"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.IsReplay");
 
 	UPavlovStatics_IsReplay_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -8512,7 +8512,7 @@ bool UPavlovStatics::STATIC_IsReplay(class UObject* WorldContextObject)
 
 bool UPavlovStatics::STATIC_IsPlayingOnlineGame(class UObject* WorldContextObject)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovStatics.IsPlayingOnlineGame"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.IsPlayingOnlineGame");
 
 	UPavlovStatics_IsPlayingOnlineGame_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -8535,7 +8535,7 @@ bool UPavlovStatics::STATIC_IsPlayingOnlineGame(class UObject* WorldContextObjec
 
 bool UPavlovStatics::STATIC_IsOculusTouch()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovStatics.IsOculusTouch"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.IsOculusTouch");
 
 	UPavlovStatics_IsOculusTouch_Params params;
 
@@ -8558,7 +8558,7 @@ bool UPavlovStatics::STATIC_IsOculusTouch()
 
 bool UPavlovStatics::STATIC_IsBombDropped(class UObject* WorldContextObject)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovStatics.IsBombDropped"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.IsBombDropped");
 
 	UPavlovStatics_IsBombDropped_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -8582,7 +8582,7 @@ bool UPavlovStatics::STATIC_IsBombDropped(class UObject* WorldContextObject)
 
 class UWorkshop* UPavlovStatics::STATIC_GetWorkshop(class UObject* WorldContextObject)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovStatics.GetWorkshop"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.GetWorkshop");
 
 	UPavlovStatics_GetWorkshop_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -8606,7 +8606,7 @@ class UWorkshop* UPavlovStatics::STATIC_GetWorkshop(class UObject* WorldContextO
 
 class UTutorial* UPavlovStatics::STATIC_GetTutorial(class UObject* WorldContextObject)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovStatics.GetTutorial"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.GetTutorial");
 
 	UPavlovStatics_GetTutorial_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -8630,7 +8630,7 @@ class UTutorial* UPavlovStatics::STATIC_GetTutorial(class UObject* WorldContextO
 
 class ASpectatorTVCamera* UPavlovStatics::STATIC_GetSpectatorTVCamera(class UObject* WorldContextObject)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovStatics.GetSpectatorTVCamera"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.GetSpectatorTVCamera");
 
 	UPavlovStatics_GetSpectatorTVCamera_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -8655,7 +8655,7 @@ class ASpectatorTVCamera* UPavlovStatics::STATIC_GetSpectatorTVCamera(class UObj
 
 void UPavlovStatics::STATIC_GetPlayerEquipment(class APlayerState* PlayerState, struct FName* Primary, TArray<struct FName>* Secondary)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovStatics.GetPlayerEquipment"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.GetPlayerEquipment");
 
 	UPavlovStatics_GetPlayerEquipment_Params params;
 	params.PlayerState = PlayerState;
@@ -8682,7 +8682,7 @@ void UPavlovStatics::STATIC_GetPlayerEquipment(class APlayerState* PlayerState, 
 
 class AGlobalPlayerEffects* UPavlovStatics::STATIC_GetPlayerEffects(class UObject* WorldContextObject)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovStatics.GetPlayerEffects"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.GetPlayerEffects");
 
 	UPavlovStatics_GetPlayerEffects_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -8707,7 +8707,7 @@ class AGlobalPlayerEffects* UPavlovStatics::STATIC_GetPlayerEffects(class UObjec
 
 class APavlovPawn* UPavlovStatics::STATIC_GetPawnByPlayerState(class UObject* WorldContextObject, class APlayerState* PlayerState)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovStatics.GetPawnByPlayerState"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.GetPawnByPlayerState");
 
 	UPavlovStatics_GetPawnByPlayerState_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -8732,7 +8732,7 @@ class APavlovPawn* UPavlovStatics::STATIC_GetPawnByPlayerState(class UObject* Wo
 
 class UPavlovLobby* UPavlovStatics::STATIC_GetPavlovLobby(class UObject* WorldContextObject)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovStatics.GetPavlovLobby"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.GetPavlovLobby");
 
 	UPavlovStatics_GetPavlovLobby_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -8755,7 +8755,7 @@ class UPavlovLobby* UPavlovStatics::STATIC_GetPavlovLobby(class UObject* WorldCo
 
 class UPavlovGameUserSettings* UPavlovStatics::STATIC_GetPavlovGameUserSettings()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovStatics.GetPavlovGameUserSettings"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.GetPavlovGameUserSettings");
 
 	UPavlovStatics_GetPavlovGameUserSettings_Params params;
 
@@ -8778,7 +8778,7 @@ class UPavlovGameUserSettings* UPavlovStatics::STATIC_GetPavlovGameUserSettings(
 
 class APavlovPlayerState* UPavlovStatics::STATIC_GetLocalPlayerState(class UObject* WorldContextObject)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovStatics.GetLocalPlayerState"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.GetLocalPlayerState");
 
 	UPavlovStatics_GetLocalPlayerState_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -8802,7 +8802,7 @@ class APavlovPlayerState* UPavlovStatics::STATIC_GetLocalPlayerState(class UObje
 
 struct FTransform UPavlovStatics::STATIC_GetLocalPlayerCameraTransform(class UObject* WorldContextObject)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovStatics.GetLocalPlayerCameraTransform"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.GetLocalPlayerCameraTransform");
 
 	UPavlovStatics_GetLocalPlayerCameraTransform_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -8826,7 +8826,7 @@ struct FTransform UPavlovStatics::STATIC_GetLocalPlayerCameraTransform(class UOb
 
 class ABomb* UPavlovStatics::STATIC_GetBombInstance(class UObject* WorldContextObject)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovStatics.GetBombInstance"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.GetBombInstance");
 
 	UPavlovStatics_GetBombInstance_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -8851,7 +8851,7 @@ class ABomb* UPavlovStatics::STATIC_GetBombInstance(class UObject* WorldContextO
 
 class ABombPlantSpot* UPavlovStatics::STATIC_FindClosestBombPlantSpot(class UObject* WorldContextObject, const struct FVector& RefLocation)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovStatics.FindClosestBombPlantSpot"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.FindClosestBombPlantSpot");
 
 	UPavlovStatics_FindClosestBombPlantSpot_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -8878,7 +8878,7 @@ class ABombPlantSpot* UPavlovStatics::STATIC_FindClosestBombPlantSpot(class UObj
 
 bool UPavlovStatics::STATIC_ArePawnsHostile(class UObject* WorldContextObject, class APawn* A, class APawn* B)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovStatics.ArePawnsHostile"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.ArePawnsHostile");
 
 	UPavlovStatics_ArePawnsHostile_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -8903,7 +8903,7 @@ bool UPavlovStatics::STATIC_ArePawnsHostile(class UObject* WorldContextObject, c
 
 void APavlovWheeledVehicle::SetSteeringInput(float Input)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PavlovWheeledVehicle.SetSteeringInput"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovWheeledVehicle.SetSteeringInput");
 
 	APavlovWheeledVehicle_SetSteeringInput_Params params;
 	params.Input = Input;
@@ -8925,7 +8925,7 @@ void APavlovWheeledVehicle::SetSteeringInput(float Input)
 
 void UPlayerCycler::GetNext(class APavlovPlayerState** PlayerState, class APavlovPawn** Pawn)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.PlayerCycler.GetNext"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PlayerCycler.GetNext");
 
 	UPlayerCycler_GetNext_Params params;
 
@@ -8951,7 +8951,7 @@ void UPlayerCycler::GetNext(class APavlovPlayerState** PlayerState, class APavlo
 
 void APliers::ServerReportCut(class ABomb* Bomb, int WireIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Pliers.ServerReportCut"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Pliers.ServerReportCut");
 
 	APliers_ServerReportCut_Params params;
 	params.Bomb = Bomb;
@@ -8971,7 +8971,7 @@ void APliers::ServerReportCut(class ABomb* Bomb, int WireIndex)
 
 void APliers::MulticastOnCut()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Pliers.MulticastOnCut"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Pliers.MulticastOnCut");
 
 	APliers_MulticastOnCut_Params params;
 
@@ -8991,7 +8991,7 @@ void APliers::MulticastOnCut()
 
 void ARat::OnRevive(class AActor* ActorOwner)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Rat.OnRevive"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Rat.OnRevive");
 
 	ARat_OnRevive_Params params;
 	params.ActorOwner = ActorOwner;
@@ -9012,7 +9012,7 @@ void ARat::OnRevive(class AActor* ActorOwner)
 
 void ARat::OnKill(class AActor* ActorOwner)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Rat.OnKill"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Rat.OnKill");
 
 	ARat_OnKill_Params params;
 	params.ActorOwner = ActorOwner;
@@ -9031,7 +9031,7 @@ void ARat::OnKill(class AActor* ActorOwner)
 
 void ARat::ApplyImpact()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Rat.ApplyImpact"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Rat.ApplyImpact");
 
 	ARat_ApplyImpact_Params params;
 
@@ -9051,7 +9051,7 @@ void ARat::ApplyImpact()
 
 void UReplayManager::PlayReplay(const struct FString& ReplayId)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.ReplayManager.PlayReplay"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.ReplayManager.PlayReplay");
 
 	UReplayManager_PlayReplay_Params params;
 	params.ReplayId = ReplayId;
@@ -9073,7 +9073,7 @@ void UReplayManager::PlayReplay(const struct FString& ReplayId)
 
 void UReplayManager::OnCustomMapDownloaded(bool bSucceed, const struct FString& ID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.ReplayManager.OnCustomMapDownloaded"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.ReplayManager.OnCustomMapDownloaded");
 
 	UReplayManager_OnCustomMapDownloaded_Params params;
 	params.bSucceed = bSucceed;
@@ -9096,7 +9096,7 @@ void UReplayManager::OnCustomMapDownloaded(bool bSucceed, const struct FString& 
 
 void UReplayManager::Find(const struct FString& GameMode, bool bCompetitive)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.ReplayManager.Find"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.ReplayManager.Find");
 
 	UReplayManager_Find_Params params;
 	params.GameMode = GameMode;
@@ -9118,7 +9118,7 @@ void UReplayManager::Find(const struct FString& GameMode, bool bCompetitive)
 
 void URevolverGunState::SetCylinder(bool bOpen)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.RevolverGunState.SetCylinder"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.RevolverGunState.SetCylinder");
 
 	URevolverGunState_SetCylinder_Params params;
 	params.bOpen = bOpen;
@@ -9139,7 +9139,7 @@ void URevolverGunState::SetCylinder(bool bOpen)
 
 void USkinComponent::RequestSkin(class USkinAsset* RequestedSkin)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.SkinComponent.RequestSkin"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.SkinComponent.RequestSkin");
 
 	USkinComponent_RequestSkin_Params params;
 	params.RequestedSkin = RequestedSkin;
@@ -9158,7 +9158,7 @@ void USkinComponent::RequestSkin(class USkinAsset* RequestedSkin)
 
 void USkinComponent::OnRep_Skin()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.SkinComponent.OnRep_Skin"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.SkinComponent.OnRep_Skin");
 
 	USkinComponent_OnRep_Skin_Params params;
 
@@ -9176,7 +9176,7 @@ void USkinComponent::OnRep_Skin()
 
 void ASpectatorTag::OnFadeOut()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.SpectatorTag.OnFadeOut"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.SpectatorTag.OnFadeOut");
 
 	ASpectatorTag_OnFadeOut_Params params;
 
@@ -9195,7 +9195,7 @@ void ASpectatorTag::OnFadeOut()
 
 class APavlovPlayerState* ASpectatorTag::GetPlayerState()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.SpectatorTag.GetPlayerState"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.SpectatorTag.GetPlayerState");
 
 	ASpectatorTag_GetPlayerState_Params params;
 
@@ -9215,7 +9215,7 @@ class APavlovPlayerState* ASpectatorTag::GetPlayerState()
 
 void ASpectatorTVCamera::OnAttachedToFocusedPawn()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.SpectatorTVCamera.OnAttachedToFocusedPawn"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.SpectatorTVCamera.OnAttachedToFocusedPawn");
 
 	ASpectatorTVCamera_OnAttachedToFocusedPawn_Params params;
 
@@ -9234,7 +9234,7 @@ void ASpectatorTVCamera::OnAttachedToFocusedPawn()
 
 class USceneCaptureComponent2D* ASpectatorTVCamera::GetSceneCapture()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.SpectatorTVCamera.GetSceneCapture"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.SpectatorTVCamera.GetSceneCapture");
 
 	ASpectatorTVCamera_GetSceneCapture_Params params;
 
@@ -9253,7 +9253,7 @@ class USceneCaptureComponent2D* ASpectatorTVCamera::GetSceneCapture()
 
 void ASpectatorTVCamera::Cycle()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.SpectatorTVCamera.Cycle"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.SpectatorTVCamera.Cycle");
 
 	ASpectatorTVCamera_Cycle_Params params;
 
@@ -9273,7 +9273,7 @@ void ASpectatorTVCamera::Cycle()
 
 void ASpectatorTVCamera::AddYawInput(float Value)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.SpectatorTVCamera.AddYawInput"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.SpectatorTVCamera.AddYawInput");
 
 	ASpectatorTVCamera_AddYawInput_Params params;
 	params.Value = Value;
@@ -9292,7 +9292,7 @@ void ASpectatorTVCamera::AddYawInput(float Value)
 
 void AKillfeed::Show()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Killfeed.Show"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Killfeed.Show");
 
 	AKillfeed_Show_Params params;
 
@@ -9310,7 +9310,7 @@ void AKillfeed::Show()
 
 void AKillfeed::OnDisplayModeUpdated()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Killfeed.OnDisplayModeUpdated"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Killfeed.OnDisplayModeUpdated");
 
 	AKillfeed_OnDisplayModeUpdated_Params params;
 
@@ -9327,7 +9327,7 @@ void AKillfeed::OnDisplayModeUpdated()
 
 void AKillfeed::Hide()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Killfeed.Hide"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Killfeed.Hide");
 
 	AKillfeed_Hide_Params params;
 
@@ -9347,7 +9347,7 @@ void AKillfeed::Hide()
 
 void AVote::OnVoteEnded(bool bSucceeded)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Vote.OnVoteEnded"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Vote.OnVoteEnded");
 
 	AVote_OnVoteEnded_Params params;
 	params.bSucceeded = bSucceeded;
@@ -9368,7 +9368,7 @@ void AVote::OnVoteEnded(bool bSucceeded)
 
 void AVote::MulticastOnVoteEnded(bool bSucceeded)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Vote.MulticastOnVoteEnded"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Vote.MulticastOnVoteEnded");
 
 	AVote_MulticastOnVoteEnded_Params params;
 	params.bSucceeded = bSucceeded;
@@ -9389,7 +9389,7 @@ void AVote::MulticastOnVoteEnded(bool bSucceeded)
 
 void UWatch::OnKillfeedEntry(const struct FKillfeedEntry& NewEntry)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Watch.OnKillfeedEntry"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Watch.OnKillfeedEntry");
 
 	UWatch_OnKillfeedEntry_Params params;
 	params.NewEntry = NewEntry;
@@ -9410,7 +9410,7 @@ void UWatch::OnKillfeedEntry(const struct FKillfeedEntry& NewEntry)
 
 void UWatch::OnKillConfirmationPush(class APavlovPlayerState* Victim)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Watch.OnKillConfirmationPush"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Watch.OnKillConfirmationPush");
 
 	UWatch_OnKillConfirmationPush_Params params;
 	params.Victim = Victim;
@@ -9430,7 +9430,7 @@ void UWatch::OnKillConfirmationPush(class APavlovPlayerState* Victim)
 
 class USceneComponent* UWatch::GetWatchAttachComponent()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Watch.GetWatchAttachComponent"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Watch.GetWatchAttachComponent");
 
 	UWatch_GetWatchAttachComponent_Params params;
 
@@ -9452,7 +9452,7 @@ class USceneComponent* UWatch::GetWatchAttachComponent()
 
 float AToolTip::GetFadeScalar()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.ToolTip.GetFadeScalar"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.ToolTip.GetFadeScalar");
 
 	AToolTip_GetFadeScalar_Params params;
 
@@ -9474,7 +9474,7 @@ float AToolTip::GetFadeScalar()
 
 void UTutorial::TerminateToolTip(const struct FName& ID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Tutorial.TerminateToolTip"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Tutorial.TerminateToolTip");
 
 	UTutorial_TerminateToolTip_Params params;
 	params.ID = ID;
@@ -9497,7 +9497,7 @@ void UTutorial::TerminateToolTip(const struct FName& ID)
 
 void UTutorial::ShowToolTip(const struct FName& ID, class UObject* Context, const struct FVector& ContextLocation)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Tutorial.ShowToolTip"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Tutorial.ShowToolTip");
 
 	UTutorial_ShowToolTip_Params params;
 	params.ID = ID;
@@ -9518,7 +9518,7 @@ void UTutorial::ShowToolTip(const struct FName& ID, class UObject* Context, cons
 
 void UTutorial::Reset()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Tutorial.Reset"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Tutorial.Reset");
 
 	UTutorial_Reset_Params params;
 
@@ -9538,7 +9538,7 @@ void UTutorial::Reset()
 
 void UTutorial::MarkToolTipAsComplete(const struct FName& ID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Tutorial.MarkToolTipAsComplete"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Tutorial.MarkToolTipAsComplete");
 
 	UTutorial_MarkToolTipAsComplete_Params params;
 	params.ID = ID;
@@ -9560,7 +9560,7 @@ void UTutorial::MarkToolTipAsComplete(const struct FName& ID)
 
 bool UTutorial::IsToolTipCompleted(const struct FName& ID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Tutorial.IsToolTipCompleted"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Tutorial.IsToolTipCompleted");
 
 	UTutorial_IsToolTipCompleted_Params params;
 	params.ID = ID;
@@ -9583,7 +9583,7 @@ bool UTutorial::IsToolTipCompleted(const struct FName& ID)
 
 int UTutorial::GetToolTipInstanceCount()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Tutorial.GetToolTipInstanceCount"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Tutorial.GetToolTipInstanceCount");
 
 	UTutorial_GetToolTipInstanceCount_Params params;
 
@@ -9605,7 +9605,7 @@ int UTutorial::GetToolTipInstanceCount()
 
 void AUberWheel::UpdateSegments(TArray<struct FWheelSegment> NewSegments)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.UberWheel.UpdateSegments"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.UberWheel.UpdateSegments");
 
 	AUberWheel_UpdateSegments_Params params;
 	params.NewSegments = NewSegments;
@@ -9626,7 +9626,7 @@ void AUberWheel::UpdateSegments(TArray<struct FWheelSegment> NewSegments)
 
 void AUberWheel::SetEnabled(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.UberWheel.SetEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.UberWheel.SetEnabled");
 
 	AUberWheel_SetEnabled_Params params;
 	params.bEnabled = bEnabled;
@@ -9649,7 +9649,7 @@ void AUberWheel::SetEnabled(bool bEnabled)
 
 void AUberWheel::OnUpdateSegment(class UUserWidget* Instance, class UUserWidget* ContentInstance, struct FWheelSegment* Segment)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.UberWheel.OnUpdateSegment"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.UberWheel.OnUpdateSegment");
 
 	AUberWheel_OnUpdateSegment_Params params;
 	params.Instance = Instance;
@@ -9672,7 +9672,7 @@ void AUberWheel::OnUpdateSegment(class UUserWidget* Instance, class UUserWidget*
 
 void AUberWheel::OnEnabled()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.UberWheel.OnEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.UberWheel.OnEnabled");
 
 	AUberWheel_OnEnabled_Params params;
 
@@ -9692,7 +9692,7 @@ void AUberWheel::OnEnabled()
 
 void AUberWheel::OnCommit(int Selection, const struct FWheelSegment& Segment)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.UberWheel.OnCommit"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.UberWheel.OnCommit");
 
 	AUberWheel_OnCommit_Params params;
 	params.Selection = Selection;
@@ -9713,7 +9713,7 @@ void AUberWheel::OnCommit(int Selection, const struct FWheelSegment& Segment)
 
 bool AUberWheel::IsEnabled()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.UberWheel.IsEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.UberWheel.IsEnabled");
 
 	AUberWheel_IsEnabled_Params params;
 
@@ -9737,7 +9737,7 @@ bool AUberWheel::IsEnabled()
 
 class AWaypoint* AWaypoint::GetNextWaypointTo(class AWaypoint* TargetWaypoint, int Seed)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Waypoint.GetNextWaypointTo"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Waypoint.GetNextWaypointTo");
 
 	AWaypoint_GetNextWaypointTo_Params params;
 	params.TargetWaypoint = TargetWaypoint;
@@ -9765,7 +9765,7 @@ class AWaypoint* AWaypoint::GetNextWaypointTo(class AWaypoint* TargetWaypoint, i
 
 class AWaypoint* AWaypoint::STATIC_GetClosestWaypoint(class UObject* WorldContextObject, const struct FVector& Location, bool bOnlyLeaf, bool bUseNavMesh)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Waypoint.GetClosestWaypoint"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Waypoint.GetClosestWaypoint");
 
 	AWaypoint_GetClosestWaypoint_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -9792,7 +9792,7 @@ class AWaypoint* AWaypoint::STATIC_GetClosestWaypoint(class UObject* WorldContex
 
 void UWorkshop::Vote(const struct FName& ID, bool bUp)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Workshop.Vote"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Workshop.Vote");
 
 	UWorkshop_Vote_Params params;
 	params.ID = ID;
@@ -9814,7 +9814,7 @@ void UWorkshop::Vote(const struct FName& ID, bool bUp)
 
 void UWorkshop::Unsubscribe(const struct FName& ID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Workshop.Unsubscribe"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Workshop.Unsubscribe");
 
 	UWorkshop_Unsubscribe_Params params;
 	params.ID = ID;
@@ -9835,7 +9835,7 @@ void UWorkshop::Unsubscribe(const struct FName& ID)
 
 void UWorkshop::SubscribeTo(const struct FName& ID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Workshop.SubscribeTo"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Workshop.SubscribeTo");
 
 	UWorkshop_SubscribeTo_Params params;
 	params.ID = ID;
@@ -9856,7 +9856,7 @@ void UWorkshop::SubscribeTo(const struct FName& ID)
 
 void UWorkshop::RequestUserVote(const struct FName& ID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Workshop.RequestUserVote"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Workshop.RequestUserVote");
 
 	UWorkshop_RequestUserVote_Params params;
 	params.ID = ID;
@@ -9877,7 +9877,7 @@ void UWorkshop::RequestUserVote(const struct FName& ID)
 
 void UWorkshop::QueryForSpecificCustomMaps(TArray<struct FName> UniqueIds)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Workshop.QueryForSpecificCustomMaps"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Workshop.QueryForSpecificCustomMaps");
 
 	UWorkshop_QueryForSpecificCustomMaps_Params params;
 	params.UniqueIds = UniqueIds;
@@ -9898,7 +9898,7 @@ void UWorkshop::QueryForSpecificCustomMaps(TArray<struct FName> UniqueIds)
 
 void UWorkshop::QueryForCustomMaps(EWorkshopQueryType QueryType)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Workshop.QueryForCustomMaps"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Workshop.QueryForCustomMaps");
 
 	UWorkshop_QueryForCustomMaps_Params params;
 	params.QueryType = QueryType;
@@ -9919,7 +9919,7 @@ void UWorkshop::QueryForCustomMaps(EWorkshopQueryType QueryType)
 
 int UWorkshop::QueryDownloadProgress()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Workshop.QueryDownloadProgress"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Workshop.QueryDownloadProgress");
 
 	UWorkshop_QueryDownloadProgress_Params params;
 
@@ -9942,7 +9942,7 @@ int UWorkshop::QueryDownloadProgress()
 
 void UWorkshop::OnCustomMapDownloaded(bool bSucceed, const struct FString& ID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Workshop.OnCustomMapDownloaded"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Workshop.OnCustomMapDownloaded");
 
 	UWorkshop_OnCustomMapDownloaded_Params params;
 	params.bSucceed = bSucceed;
@@ -9962,7 +9962,7 @@ void UWorkshop::OnCustomMapDownloaded(bool bSucceed, const struct FString& ID)
 
 void UWorkshop::OnAfterMount()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Workshop.OnAfterMount"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Workshop.OnAfterMount");
 
 	UWorkshop_OnAfterMount_Params params;
 
@@ -9983,7 +9983,7 @@ void UWorkshop::OnAfterMount()
 
 bool UWorkshop::IsSubscribedTo(const struct FName& ID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Workshop.IsSubscribedTo"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Workshop.IsSubscribedTo");
 
 	UWorkshop_IsSubscribedTo_Params params;
 	params.ID = ID;
@@ -10007,7 +10007,7 @@ bool UWorkshop::IsSubscribedTo(const struct FName& ID)
 
 bool UWorkshop::IsCustomMapId(const struct FString& CustomMapId)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Workshop.IsCustomMapId"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Workshop.IsCustomMapId");
 
 	UWorkshop_IsCustomMapId_Params params;
 	params.CustomMapId = CustomMapId;
@@ -10031,7 +10031,7 @@ bool UWorkshop::IsCustomMapId(const struct FString& CustomMapId)
 
 class UTexture2D* UWorkshop::GetPreviewTexture(const struct FName& ID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Workshop.GetPreviewTexture"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Workshop.GetPreviewTexture");
 
 	UWorkshop_GetPreviewTexture_Params params;
 	params.ID = ID;
@@ -10054,7 +10054,7 @@ class UTexture2D* UWorkshop::GetPreviewTexture(const struct FName& ID)
 
 struct FName UWorkshop::GetCurrentDownloadId()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Workshop.GetCurrentDownloadId"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Workshop.GetCurrentDownloadId");
 
 	UWorkshop_GetCurrentDownloadId_Params params;
 
@@ -10074,7 +10074,7 @@ struct FName UWorkshop::GetCurrentDownloadId()
 
 void UWorkshop::DownloadTest()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Workshop.DownloadTest"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Workshop.DownloadTest");
 
 	UWorkshop_DownloadTest_Params params;
 
@@ -10094,7 +10094,7 @@ void UWorkshop::DownloadTest()
 
 void UWorkshop::DownloadCustomMap(const struct FString& ID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Workshop.DownloadCustomMap"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Workshop.DownloadCustomMap");
 
 	UWorkshop_DownloadCustomMap_Params params;
 	params.ID = ID;
@@ -10113,7 +10113,7 @@ void UWorkshop::DownloadCustomMap(const struct FString& ID)
 
 void UWorkshop::CheckForDownload()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Workshop.CheckForDownload"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Workshop.CheckForDownload");
 
 	UWorkshop_CheckForDownload_Params params;
 
@@ -10131,7 +10131,7 @@ void UWorkshop::CheckForDownload()
 
 void AZombie::Revive()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Zombie.Revive"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Zombie.Revive");
 
 	AZombie_Revive_Params params;
 
@@ -10149,7 +10149,7 @@ void AZombie::Revive()
 
 void AZombie::OnRep_Health()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Zombie.OnRep_Health"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Zombie.OnRep_Health");
 
 	AZombie_OnRep_Health_Params params;
 
@@ -10167,7 +10167,7 @@ void AZombie::OnRep_Health()
 
 void AZombie::OnRep_Dead()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Zombie.OnRep_Dead"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Zombie.OnRep_Dead");
 
 	AZombie_OnRep_Dead_Params params;
 
@@ -10185,7 +10185,7 @@ void AZombie::OnRep_Dead()
 
 void AZombie::Kill()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Zombie.Kill"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Zombie.Kill");
 
 	AZombie_Kill_Params params;
 
@@ -10205,7 +10205,7 @@ void AZombie::Kill()
 
 bool AZombie::IsDead()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Zombie.IsDead"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Zombie.IsDead");
 
 	AZombie_IsDead_Params params;
 
@@ -10230,7 +10230,7 @@ bool AZombie::IsDead()
 
 void AZombie::AddWound(EZombieWoundType Type, const struct FName& RefBone, const struct FVector& Location, float Scale)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Pavlov.Zombie.AddWound"));
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Zombie.AddWound");
 
 	AZombie_AddWound_Params params;
 	params.Type = Type;

@@ -19,7 +19,7 @@ namespace SDK
 
 struct FSlateColor UUI_ReplayInfo_C::GetColorAndOpacity_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ReplayInfo.UI_ReplayInfo_C.GetColorAndOpacity_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ReplayInfo.UI_ReplayInfo_C.GetColorAndOpacity_1");
 
 	UUI_ReplayInfo_C_GetColorAndOpacity_1_Params params;
 
@@ -40,7 +40,7 @@ struct FSlateColor UUI_ReplayInfo_C::GetColorAndOpacity_1()
 
 struct FText UUI_ReplayInfo_C::GetText_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ReplayInfo.UI_ReplayInfo_C.GetText_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ReplayInfo.UI_ReplayInfo_C.GetText_1");
 
 	UUI_ReplayInfo_C_GetText_1_Params params;
 
@@ -61,7 +61,7 @@ struct FText UUI_ReplayInfo_C::GetText_1()
 
 struct FText UUI_ReplayInfo_C::Get_dateLabel_Text_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ReplayInfo.UI_ReplayInfo_C.Get_dateLabel_Text_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ReplayInfo.UI_ReplayInfo_C.Get_dateLabel_Text_1");
 
 	UUI_ReplayInfo_C_Get_dateLabel_Text_1_Params params;
 
@@ -80,7 +80,7 @@ struct FText UUI_ReplayInfo_C::Get_dateLabel_Text_1()
 
 void UUI_ReplayInfo_C::UpdateUsers()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ReplayInfo.UI_ReplayInfo_C.UpdateUsers"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ReplayInfo.UI_ReplayInfo_C.UpdateUsers");
 
 	UUI_ReplayInfo_C_UpdateUsers_Params params;
 
@@ -97,7 +97,7 @@ void UUI_ReplayInfo_C::UpdateUsers()
 
 void UUI_ReplayInfo_C::BndEvt__LoadBtn_K2Node_ComponentBoundEvent_35_OnButtonClickedEvent__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ReplayInfo.UI_ReplayInfo_C.BndEvt__LoadBtn_K2Node_ComponentBoundEvent_35_OnButtonClickedEvent__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ReplayInfo.UI_ReplayInfo_C.BndEvt__LoadBtn_K2Node_ComponentBoundEvent_35_OnButtonClickedEvent__DelegateSignature");
 
 	UUI_ReplayInfo_C_BndEvt__LoadBtn_K2Node_ComponentBoundEvent_35_OnButtonClickedEvent__DelegateSignature_Params params;
 
@@ -116,7 +116,7 @@ void UUI_ReplayInfo_C::BndEvt__LoadBtn_K2Node_ComponentBoundEvent_35_OnButtonCli
 
 void UUI_ReplayInfo_C::ExecuteUbergraph_UI_ReplayInfo(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ReplayInfo.UI_ReplayInfo_C.ExecuteUbergraph_UI_ReplayInfo"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ReplayInfo.UI_ReplayInfo_C.ExecuteUbergraph_UI_ReplayInfo");
 
 	UUI_ReplayInfo_C_ExecuteUbergraph_UI_ReplayInfo_Params params;
 	params.EntryPoint = EntryPoint;
@@ -136,7 +136,7 @@ void UUI_ReplayInfo_C::ExecuteUbergraph_UI_ReplayInfo(int EntryPoint)
 
 void UUI_ReplayInfo_C::OnWatchReplayClicked__DelegateSignature(const struct FString& ReplayId)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ReplayInfo.UI_ReplayInfo_C.OnWatchReplayClicked__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ReplayInfo.UI_ReplayInfo_C.OnWatchReplayClicked__DelegateSignature");
 
 	UUI_ReplayInfo_C_OnWatchReplayClicked__DelegateSignature_Params params;
 	params.ReplayId = ReplayId;

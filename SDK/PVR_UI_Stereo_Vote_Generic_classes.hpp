@@ -38,7 +38,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("WidgetBlueprintGeneratedClass UI_Stereo_Vote_Generic.UI_Stereo_Vote_Generic_C"));
+		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass UI_Stereo_Vote_Generic.UI_Stereo_Vote_Generic_C");
 		return ptr;
 	}
 

@@ -19,7 +19,7 @@ namespace SDK
 
 void AVote_EndMatch_C::CreateContentWidget(class UUserWidget** Content)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vote_EndMatch.Vote_EndMatch_C.CreateContentWidget"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vote_EndMatch.Vote_EndMatch_C.CreateContentWidget");
 
 	AVote_EndMatch_C_CreateContentWidget_Params params;
 
@@ -39,7 +39,7 @@ void AVote_EndMatch_C::CreateContentWidget(class UUserWidget** Content)
 
 void AVote_EndMatch_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vote_EndMatch.Vote_EndMatch_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vote_EndMatch.Vote_EndMatch_C.UserConstructionScript");
 
 	AVote_EndMatch_C_UserConstructionScript_Params params;
 
@@ -58,7 +58,7 @@ void AVote_EndMatch_C::UserConstructionScript()
 
 void AVote_EndMatch_C::OnVoteEnded(bool* bSucceeded)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vote_EndMatch.Vote_EndMatch_C.OnVoteEnded"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vote_EndMatch.Vote_EndMatch_C.OnVoteEnded");
 
 	AVote_EndMatch_C_OnVoteEnded_Params params;
 	params.bSucceeded = bSucceeded;
@@ -78,7 +78,7 @@ void AVote_EndMatch_C::OnVoteEnded(bool* bSucceeded)
 
 void AVote_EndMatch_C::ExecuteUbergraph_Vote_EndMatch(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Vote_EndMatch.Vote_EndMatch_C.ExecuteUbergraph_Vote_EndMatch"));
+	static auto fn = UObject::FindObject<UFunction>("Function Vote_EndMatch.Vote_EndMatch_C.ExecuteUbergraph_Vote_EndMatch");
 
 	AVote_EndMatch_C_ExecuteUbergraph_Vote_EndMatch_Params params;
 	params.EntryPoint = EntryPoint;

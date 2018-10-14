@@ -23,7 +23,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class FacialAnimation.AudioCurveSourceComponent"));
+		static auto ptr = UObject::FindClass("Class FacialAnimation.AudioCurveSourceComponent");
 		return ptr;
 	}
 

@@ -20,7 +20,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("BlueprintGeneratedClass SuppresionSourceContext.SuppresionSourceContext_C"));
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass SuppresionSourceContext.SuppresionSourceContext_C");
 		return ptr;
 	}
 

@@ -29,7 +29,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("WidgetBlueprintGeneratedClass UI_Multiplayer.UI_Multiplayer_C"));
+		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass UI_Multiplayer.UI_Multiplayer_C");
 		return ptr;
 	}
 

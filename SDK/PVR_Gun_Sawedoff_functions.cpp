@@ -17,7 +17,7 @@ namespace SDK
 
 void AGun_Sawedoff_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Sawedoff.Gun_Sawedoff_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Sawedoff.Gun_Sawedoff_C.UserConstructionScript");
 
 	AGun_Sawedoff_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void AGun_Sawedoff_C::UserConstructionScript()
 
 void AGun_Sawedoff_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Sawedoff.Gun_Sawedoff_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Sawedoff.Gun_Sawedoff_C.ReceiveBeginPlay");
 
 	AGun_Sawedoff_C_ReceiveBeginPlay_Params params;
 
@@ -51,7 +51,7 @@ void AGun_Sawedoff_C::ReceiveBeginPlay()
 
 void AGun_Sawedoff_C::OnMagBoltRelease_Event_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Sawedoff.Gun_Sawedoff_C.OnMagBoltRelease_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Sawedoff.Gun_Sawedoff_C.OnMagBoltRelease_Event_1");
 
 	AGun_Sawedoff_C_OnMagBoltRelease_Event_1_Params params;
 
@@ -70,7 +70,7 @@ void AGun_Sawedoff_C::OnMagBoltRelease_Event_1()
 
 void AGun_Sawedoff_C::OnBarrelChanged_Event_1(bool bOpen)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Sawedoff.Gun_Sawedoff_C.OnBarrelChanged_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Sawedoff.Gun_Sawedoff_C.OnBarrelChanged_Event_1");
 
 	AGun_Sawedoff_C_OnBarrelChanged_Event_1_Params params;
 	params.bOpen = bOpen;
@@ -90,7 +90,7 @@ void AGun_Sawedoff_C::OnBarrelChanged_Event_1(bool bOpen)
 
 void AGun_Sawedoff_C::CustomEvent_2(const struct FName& Name)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Sawedoff.Gun_Sawedoff_C.CustomEvent_2"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Sawedoff.Gun_Sawedoff_C.CustomEvent_2");
 
 	AGun_Sawedoff_C_CustomEvent_2_Params params;
 	params.Name = Name;
@@ -108,7 +108,7 @@ void AGun_Sawedoff_C::CustomEvent_2(const struct FName& Name)
 
 void AGun_Sawedoff_C::SetupRemoval()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Sawedoff.Gun_Sawedoff_C.SetupRemoval"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Sawedoff.Gun_Sawedoff_C.SetupRemoval");
 
 	AGun_Sawedoff_C_SetupRemoval_Params params;
 
@@ -125,7 +125,7 @@ void AGun_Sawedoff_C::SetupRemoval()
 
 void AGun_Sawedoff_C::SetupClose()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Sawedoff.Gun_Sawedoff_C.SetupClose"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Sawedoff.Gun_Sawedoff_C.SetupClose");
 
 	AGun_Sawedoff_C_SetupClose_Params params;
 
@@ -144,7 +144,7 @@ void AGun_Sawedoff_C::SetupClose()
 
 void AGun_Sawedoff_C::ExecuteUbergraph_Gun_Sawedoff(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Sawedoff.Gun_Sawedoff_C.ExecuteUbergraph_Gun_Sawedoff"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Sawedoff.Gun_Sawedoff_C.ExecuteUbergraph_Gun_Sawedoff");
 
 	AGun_Sawedoff_C_ExecuteUbergraph_Gun_Sawedoff_Params params;
 	params.EntryPoint = EntryPoint;

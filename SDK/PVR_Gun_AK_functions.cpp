@@ -17,7 +17,7 @@ namespace SDK
 
 void AGun_AK_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_AK.Gun_AK_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_AK.Gun_AK_C.UserConstructionScript");
 
 	AGun_AK_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void AGun_AK_C::UserConstructionScript()
 
 void AGun_AK_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_AK.Gun_AK_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_AK.Gun_AK_C.ReceiveBeginPlay");
 
 	AGun_AK_C_ReceiveBeginPlay_Params params;
 
@@ -51,7 +51,7 @@ void AGun_AK_C::ReceiveBeginPlay()
 
 void AGun_AK_C::BndEvt__Skin_K2Node_ComponentBoundEvent_0_OnSkinChangedSignature__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_AK.Gun_AK_C.BndEvt__Skin_K2Node_ComponentBoundEvent_0_OnSkinChangedSignature__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_AK.Gun_AK_C.BndEvt__Skin_K2Node_ComponentBoundEvent_0_OnSkinChangedSignature__DelegateSignature");
 
 	AGun_AK_C_BndEvt__Skin_K2Node_ComponentBoundEvent_0_OnSkinChangedSignature__DelegateSignature_Params params;
 
@@ -70,7 +70,7 @@ void AGun_AK_C::BndEvt__Skin_K2Node_ComponentBoundEvent_0_OnSkinChangedSignature
 
 void AGun_AK_C::ExecuteUbergraph_Gun_AK(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_AK.Gun_AK_C.ExecuteUbergraph_Gun_AK"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_AK.Gun_AK_C.ExecuteUbergraph_Gun_AK");
 
 	AGun_AK_C_ExecuteUbergraph_Gun_AK_Params params;
 	params.EntryPoint = EntryPoint;

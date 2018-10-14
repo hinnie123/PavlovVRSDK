@@ -34,7 +34,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRGunState"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRGunState");
 		return ptr;
 	}
 
@@ -104,7 +104,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRItem"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRItem");
 		return ptr;
 	}
 
@@ -183,7 +183,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRBullet"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRBullet");
 		return ptr;
 	}
 
@@ -251,7 +251,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRPawn"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRPawn");
 		return ptr;
 	}
 
@@ -317,7 +317,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRControllerAnimInstance"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRControllerAnimInstance");
 		return ptr;
 	}
 
@@ -449,7 +449,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRGun"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRGun");
 		return ptr;
 	}
 
@@ -541,7 +541,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRAvatarAnimInstance"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRAvatarAnimInstance");
 		return ptr;
 	}
 
@@ -583,7 +583,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRInventory"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRInventory");
 		return ptr;
 	}
 
@@ -665,7 +665,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRController"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRController");
 		return ptr;
 	}
 
@@ -720,7 +720,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRItemController"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRItemController");
 		return ptr;
 	}
 
@@ -759,7 +759,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRAvatarComponent"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRAvatarComponent");
 		return ptr;
 	}
 
@@ -774,7 +774,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRBulletDamageType"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRBulletDamageType");
 		return ptr;
 	}
 
@@ -789,7 +789,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRBulletManager"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRBulletManager");
 		return ptr;
 	}
 
@@ -806,7 +806,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRBulletPenetrationInterface"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRBulletPenetrationInterface");
 		return ptr;
 	}
 
@@ -823,7 +823,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRCameraComponent"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRCameraComponent");
 		return ptr;
 	}
 
@@ -840,7 +840,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRGrabComponent"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRGrabComponent");
 		return ptr;
 	}
 
@@ -860,7 +860,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRMenu"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRMenu");
 		return ptr;
 	}
 
@@ -886,7 +886,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRHand"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRHand");
 		return ptr;
 	}
 
@@ -903,7 +903,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRGrabInterface"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRGrabInterface");
 		return ptr;
 	}
 
@@ -949,7 +949,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRGunAnimInstance"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRGunAnimInstance");
 		return ptr;
 	}
 
@@ -964,7 +964,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRHandAnimInstance"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRHandAnimInstance");
 		return ptr;
 	}
 
@@ -990,7 +990,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRDynamicHelperComponent"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRDynamicHelperComponent");
 		return ptr;
 	}
 
@@ -1008,7 +1008,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRGameMode"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRGameMode");
 		return ptr;
 	}
 
@@ -1052,7 +1052,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRHandleComponent"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRHandleComponent");
 		return ptr;
 	}
 
@@ -1071,7 +1071,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRInventoryLogic"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRInventoryLogic");
 		return ptr;
 	}
 
@@ -1104,7 +1104,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRMagazine"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRMagazine");
 		return ptr;
 	}
 
@@ -1132,7 +1132,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRLadder"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRLadder");
 		return ptr;
 	}
 
@@ -1154,7 +1154,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRMagazineSlotComponent"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRMagazineSlotComponent");
 		return ptr;
 	}
 
@@ -1173,7 +1173,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRMotionControllerComponent"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRMotionControllerComponent");
 		return ptr;
 	}
 
@@ -1212,7 +1212,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRMovementComponent"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRMovementComponent");
 		return ptr;
 	}
 
@@ -1240,7 +1240,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VROBBProxy"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VROBBProxy");
 		return ptr;
 	}
 
@@ -1256,7 +1256,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRPlayArea"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRPlayArea");
 		return ptr;
 	}
 
@@ -1289,7 +1289,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRPlayerEmulatorComponent"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRPlayerEmulatorComponent");
 		return ptr;
 	}
 
@@ -1310,7 +1310,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRPocketComponent"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRPocketComponent");
 		return ptr;
 	}
 
@@ -1337,7 +1337,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRSelectionComponent"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRSelectionComponent");
 		return ptr;
 	}
 
@@ -1364,7 +1364,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRSpectatorComponent"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRSpectatorComponent");
 		return ptr;
 	}
 
@@ -1382,7 +1382,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRStatics"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRStatics");
 		return ptr;
 	}
 
@@ -1407,7 +1407,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class VRFramework.VRStickComponent"));
+		static auto ptr = UObject::FindClass("Class VRFramework.VRStickComponent");
 		return ptr;
 	}
 

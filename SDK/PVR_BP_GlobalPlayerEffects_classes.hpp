@@ -21,7 +21,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("BlueprintGeneratedClass BP_GlobalPlayerEffects.BP_GlobalPlayerEffects_C"));
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass BP_GlobalPlayerEffects.BP_GlobalPlayerEffects_C");
 		return ptr;
 	}
 

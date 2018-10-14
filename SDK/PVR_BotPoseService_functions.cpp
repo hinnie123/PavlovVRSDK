@@ -21,7 +21,7 @@ namespace SDK
 
 void UBotPoseService_C::ReceiveTickAI(class AAIController** OwnerController, class APawn** ControlledPawn, float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BotPoseService.BotPoseService_C.ReceiveTickAI"));
+	static auto fn = UObject::FindObject<UFunction>("Function BotPoseService.BotPoseService_C.ReceiveTickAI");
 
 	UBotPoseService_C_ReceiveTickAI_Params params;
 	params.OwnerController = OwnerController;
@@ -43,7 +43,7 @@ void UBotPoseService_C::ReceiveTickAI(class AAIController** OwnerController, cla
 
 void UBotPoseService_C::ExecuteUbergraph_BotPoseService(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BotPoseService.BotPoseService_C.ExecuteUbergraph_BotPoseService"));
+	static auto fn = UObject::FindObject<UFunction>("Function BotPoseService.BotPoseService_C.ExecuteUbergraph_BotPoseService");
 
 	UBotPoseService_C_ExecuteUbergraph_BotPoseService_Params params;
 	params.EntryPoint = EntryPoint;

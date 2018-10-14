@@ -20,7 +20,7 @@ namespace SDK
 
 void UUI_ServerSettings_C::GetWeapobFilterEnum(const struct FString& StringEnum, EWeaponFilter* Enum)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerSettings.UI_ServerSettings_C.GetWeapobFilterEnum"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerSettings.UI_ServerSettings_C.GetWeapobFilterEnum");
 
 	UUI_ServerSettings_C_GetWeapobFilterEnum_Params params;
 	params.StringEnum = StringEnum;
@@ -44,7 +44,7 @@ void UUI_ServerSettings_C::GetWeapobFilterEnum(const struct FString& StringEnum,
 
 void UUI_ServerSettings_C::UpdateSettings(const struct FServerSettings& Settings, const struct FString& GameMode)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerSettings.UI_ServerSettings_C.UpdateSettings"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerSettings.UI_ServerSettings_C.UpdateSettings");
 
 	UUI_ServerSettings_C_UpdateSettings_Params params;
 	params.Settings = Settings;
@@ -63,7 +63,7 @@ void UUI_ServerSettings_C::UpdateSettings(const struct FServerSettings& Settings
 
 void UUI_ServerSettings_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerSettings.UI_ServerSettings_C.Construct"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerSettings.UI_ServerSettings_C.Construct");
 
 	UUI_ServerSettings_C_Construct_Params params;
 
@@ -80,7 +80,7 @@ void UUI_ServerSettings_C::Construct()
 
 void UUI_ServerSettings_C::BndEvt__applyBtn_K2Node_ComponentBoundEvent_104_OnButtonClicked__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerSettings.UI_ServerSettings_C.BndEvt__applyBtn_K2Node_ComponentBoundEvent_104_OnButtonClicked__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerSettings.UI_ServerSettings_C.BndEvt__applyBtn_K2Node_ComponentBoundEvent_104_OnButtonClicked__DelegateSignature");
 
 	UUI_ServerSettings_C_BndEvt__applyBtn_K2Node_ComponentBoundEvent_104_OnButtonClicked__DelegateSignature_Params params;
 
@@ -99,7 +99,7 @@ void UUI_ServerSettings_C::BndEvt__applyBtn_K2Node_ComponentBoundEvent_104_OnBut
 
 void UUI_ServerSettings_C::ExecuteUbergraph_UI_ServerSettings(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerSettings.UI_ServerSettings_C.ExecuteUbergraph_UI_ServerSettings"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerSettings.UI_ServerSettings_C.ExecuteUbergraph_UI_ServerSettings");
 
 	UUI_ServerSettings_C_ExecuteUbergraph_UI_ServerSettings_Params params;
 	params.EntryPoint = EntryPoint;
@@ -119,7 +119,7 @@ void UUI_ServerSettings_C::ExecuteUbergraph_UI_ServerSettings(int EntryPoint)
 
 void UUI_ServerSettings_C::OnSettingsApply__DelegateSignature(const struct FServerSettings& Settings)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ServerSettings.UI_ServerSettings_C.OnSettingsApply__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ServerSettings.UI_ServerSettings_C.OnSettingsApply__DelegateSignature");
 
 	UUI_ServerSettings_C_OnSettingsApply__DelegateSignature_Params params;
 	params.Settings = Settings;

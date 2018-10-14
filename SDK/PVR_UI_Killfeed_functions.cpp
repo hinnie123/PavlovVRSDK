@@ -17,7 +17,7 @@ namespace SDK
 
 void UUI_Killfeed_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Killfeed.UI_Killfeed_C.Construct"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Killfeed.UI_Killfeed_C.Construct");
 
 	UUI_Killfeed_C_Construct_Params params;
 
@@ -36,7 +36,7 @@ void UUI_Killfeed_C::Construct()
 
 void UUI_Killfeed_C::OnKillfeedEntry_Event_1(const struct FKillfeedEntry& NewEntry)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Killfeed.UI_Killfeed_C.OnKillfeedEntry_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Killfeed.UI_Killfeed_C.OnKillfeedEntry_Event_1");
 
 	UUI_Killfeed_C_OnKillfeedEntry_Event_1_Params params;
 	params.NewEntry = NewEntry;
@@ -57,7 +57,7 @@ void UUI_Killfeed_C::OnKillfeedEntry_Event_1(const struct FKillfeedEntry& NewEnt
 
 void UUI_Killfeed_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Killfeed.UI_Killfeed_C.Tick"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Killfeed.UI_Killfeed_C.Tick");
 
 	UUI_Killfeed_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -78,7 +78,7 @@ void UUI_Killfeed_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 
 void UUI_Killfeed_C::ExecuteUbergraph_UI_Killfeed(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Killfeed.UI_Killfeed_C.ExecuteUbergraph_UI_Killfeed"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Killfeed.UI_Killfeed_C.ExecuteUbergraph_UI_Killfeed");
 
 	UUI_Killfeed_C_ExecuteUbergraph_UI_Killfeed_Params params;
 	params.EntryPoint = EntryPoint;

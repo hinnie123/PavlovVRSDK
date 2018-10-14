@@ -26,7 +26,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("BlueprintGeneratedClass BP_GlassPanel.BP_GlassPanel_C"));
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass BP_GlassPanel.BP_GlassPanel_C");
 		return ptr;
 	}
 

@@ -33,7 +33,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("AnimBlueprintGeneratedClass M64_AnimBlueprint.M64_AnimBlueprint_C"));
+		static auto ptr = UObject::FindClass("AnimBlueprintGeneratedClass M64_AnimBlueprint.M64_AnimBlueprint_C");
 		return ptr;
 	}
 

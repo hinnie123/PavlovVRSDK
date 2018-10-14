@@ -19,7 +19,7 @@ namespace SDK
 
 struct FText UUI_Bomb_LCD_C::Get_NextDigit_Text_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Bomb_LCD.UI_Bomb_LCD_C.Get_NextDigit_Text_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Bomb_LCD.UI_Bomb_LCD_C.Get_NextDigit_Text_1");
 
 	UUI_Bomb_LCD_C_Get_NextDigit_Text_1_Params params;
 
@@ -40,7 +40,7 @@ struct FText UUI_Bomb_LCD_C::Get_NextDigit_Text_1()
 
 struct FText UUI_Bomb_LCD_C::Get_Code_Text_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Bomb_LCD.UI_Bomb_LCD_C.Get_Code_Text_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Bomb_LCD.UI_Bomb_LCD_C.Get_Code_Text_1");
 
 	UUI_Bomb_LCD_C_Get_Code_Text_1_Params params;
 
@@ -61,7 +61,7 @@ struct FText UUI_Bomb_LCD_C::Get_Code_Text_1()
 
 struct FText UUI_Bomb_LCD_C::Get_DigitToType_Text_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Bomb_LCD.UI_Bomb_LCD_C.Get_DigitToType_Text_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Bomb_LCD.UI_Bomb_LCD_C.Get_DigitToType_Text_1");
 
 	UUI_Bomb_LCD_C_Get_DigitToType_Text_1_Params params;
 
@@ -82,7 +82,7 @@ struct FText UUI_Bomb_LCD_C::Get_DigitToType_Text_1()
 
 struct FText UUI_Bomb_LCD_C::Get_timer_Text_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Bomb_LCD.UI_Bomb_LCD_C.Get_timer_Text_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Bomb_LCD.UI_Bomb_LCD_C.Get_timer_Text_1");
 
 	UUI_Bomb_LCD_C_Get_timer_Text_1_Params params;
 

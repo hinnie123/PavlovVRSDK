@@ -17,7 +17,7 @@ namespace SDK
 
 void AGun_Uzi_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Uzi.Gun_Uzi_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Uzi.Gun_Uzi_C.UserConstructionScript");
 
 	AGun_Uzi_C_UserConstructionScript_Params params;
 
@@ -36,7 +36,7 @@ void AGun_Uzi_C::UserConstructionScript()
 
 void AGun_Uzi_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Uzi.Gun_Uzi_C.ReceiveTick"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Uzi.Gun_Uzi_C.ReceiveTick");
 
 	AGun_Uzi_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -56,7 +56,7 @@ void AGun_Uzi_C::ReceiveTick(float* DeltaSeconds)
 
 void AGun_Uzi_C::ExecuteUbergraph_Gun_Uzi(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Uzi.Gun_Uzi_C.ExecuteUbergraph_Gun_Uzi"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Uzi.Gun_Uzi_C.ExecuteUbergraph_Gun_Uzi");
 
 	AGun_Uzi_C_ExecuteUbergraph_Gun_Uzi_Params params;
 	params.EntryPoint = EntryPoint;

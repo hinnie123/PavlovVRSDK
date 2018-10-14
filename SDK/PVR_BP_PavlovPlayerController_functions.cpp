@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_PavlovPlayerController_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovPlayerController.BP_PavlovPlayerController_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovPlayerController.BP_PavlovPlayerController_C.UserConstructionScript");
 
 	ABP_PavlovPlayerController_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void ABP_PavlovPlayerController_C::UserConstructionScript()
 
 void ABP_PavlovPlayerController_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovPlayerController.BP_PavlovPlayerController_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovPlayerController.BP_PavlovPlayerController_C.ReceiveBeginPlay");
 
 	ABP_PavlovPlayerController_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +53,7 @@ void ABP_PavlovPlayerController_C::ReceiveBeginPlay()
 
 void ABP_PavlovPlayerController_C::OnBuyingChanged_Event_1(bool bBuying)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovPlayerController.BP_PavlovPlayerController_C.OnBuyingChanged_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovPlayerController.BP_PavlovPlayerController_C.OnBuyingChanged_Event_1");
 
 	ABP_PavlovPlayerController_C_OnBuyingChanged_Event_1_Params params;
 	params.bBuying = bBuying;
@@ -73,7 +73,7 @@ void ABP_PavlovPlayerController_C::OnBuyingChanged_Event_1(bool bBuying)
 
 void ABP_PavlovPlayerController_C::ExecuteUbergraph_BP_PavlovPlayerController(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovPlayerController.BP_PavlovPlayerController_C.ExecuteUbergraph_BP_PavlovPlayerController"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovPlayerController.BP_PavlovPlayerController_C.ExecuteUbergraph_BP_PavlovPlayerController");
 
 	ABP_PavlovPlayerController_C_ExecuteUbergraph_BP_PavlovPlayerController_Params params;
 	params.EntryPoint = EntryPoint;

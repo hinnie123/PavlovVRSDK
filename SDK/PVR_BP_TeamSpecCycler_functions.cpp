@@ -20,7 +20,7 @@ namespace SDK
 
 void UBP_TeamSpecCycler_C::SpecIndex(int Index, bool* Success)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_TeamSpecCycler.BP_TeamSpecCycler_C.SpecIndex"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_TeamSpecCycler.BP_TeamSpecCycler_C.SpecIndex");
 
 	UBP_TeamSpecCycler_C_SpecIndex_Params params;
 	params.Index = Index;
@@ -41,7 +41,7 @@ void UBP_TeamSpecCycler_C::SpecIndex(int Index, bool* Success)
 
 void UBP_TeamSpecCycler_C::PushCurrent()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_TeamSpecCycler.BP_TeamSpecCycler_C.PushCurrent"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_TeamSpecCycler.BP_TeamSpecCycler_C.PushCurrent");
 
 	UBP_TeamSpecCycler_C_PushCurrent_Params params;
 
@@ -58,7 +58,7 @@ void UBP_TeamSpecCycler_C::PushCurrent()
 
 void UBP_TeamSpecCycler_C::CyclePrev()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_TeamSpecCycler.BP_TeamSpecCycler_C.CyclePrev"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_TeamSpecCycler.BP_TeamSpecCycler_C.CyclePrev");
 
 	UBP_TeamSpecCycler_C_CyclePrev_Params params;
 
@@ -75,7 +75,7 @@ void UBP_TeamSpecCycler_C::CyclePrev()
 
 void UBP_TeamSpecCycler_C::CycleNext()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_TeamSpecCycler.BP_TeamSpecCycler_C.CycleNext"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_TeamSpecCycler.BP_TeamSpecCycler_C.CycleNext");
 
 	UBP_TeamSpecCycler_C_CycleNext_Params params;
 
@@ -94,7 +94,7 @@ void UBP_TeamSpecCycler_C::CycleNext()
 
 void UBP_TeamSpecCycler_C::Cycle(bool Next)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_TeamSpecCycler.BP_TeamSpecCycler_C.Cycle"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_TeamSpecCycler.BP_TeamSpecCycler_C.Cycle");
 
 	UBP_TeamSpecCycler_C_Cycle_Params params;
 	params.Next = Next;
@@ -115,7 +115,7 @@ void UBP_TeamSpecCycler_C::Cycle(bool Next)
 
 void UBP_TeamSpecCycler_C::OnDrySpecPlayer__DelegateSignature(int Index, int TeamID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_TeamSpecCycler.BP_TeamSpecCycler_C.OnDrySpecPlayer__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_TeamSpecCycler.BP_TeamSpecCycler_C.OnDrySpecPlayer__DelegateSignature");
 
 	UBP_TeamSpecCycler_C_OnDrySpecPlayer__DelegateSignature_Params params;
 	params.Index = Index;
@@ -139,7 +139,7 @@ void UBP_TeamSpecCycler_C::OnDrySpecPlayer__DelegateSignature(int Index, int Tea
 
 void UBP_TeamSpecCycler_C::OnSpecPlayer__DelegateSignature(class APavlovPawn* Pawn, class APavlovPlayerState* PlayerState, int Index, int TeamID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_TeamSpecCycler.BP_TeamSpecCycler_C.OnSpecPlayer__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_TeamSpecCycler.BP_TeamSpecCycler_C.OnSpecPlayer__DelegateSignature");
 
 	UBP_TeamSpecCycler_C_OnSpecPlayer__DelegateSignature_Params params;
 	params.Pawn = Pawn;

@@ -24,7 +24,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class GeometryCache.GeometryCache"));
+		static auto ptr = UObject::FindClass("Class GeometryCache.GeometryCache");
 		return ptr;
 	}
 
@@ -40,7 +40,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class GeometryCache.GeometryCacheActor"));
+		static auto ptr = UObject::FindClass("Class GeometryCache.GeometryCacheActor");
 		return ptr;
 	}
 
@@ -66,7 +66,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class GeometryCache.GeometryCacheComponent"));
+		static auto ptr = UObject::FindClass("Class GeometryCache.GeometryCacheComponent");
 		return ptr;
 	}
 
@@ -96,7 +96,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class GeometryCache.GeometryCacheTrack"));
+		static auto ptr = UObject::FindClass("Class GeometryCache.GeometryCacheTrack");
 		return ptr;
 	}
 
@@ -113,7 +113,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class GeometryCache.GeometryCacheTrack_FlipbookAnimation"));
+		static auto ptr = UObject::FindClass("Class GeometryCache.GeometryCacheTrack_FlipbookAnimation");
 		return ptr;
 	}
 
@@ -131,7 +131,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class GeometryCache.GeometryCacheTrack_TransformAnimation"));
+		static auto ptr = UObject::FindClass("Class GeometryCache.GeometryCacheTrack_TransformAnimation");
 		return ptr;
 	}
 
@@ -149,7 +149,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class GeometryCache.GeometryCacheTrack_TransformGroupAnimation"));
+		static auto ptr = UObject::FindClass("Class GeometryCache.GeometryCacheTrack_TransformGroupAnimation");
 		return ptr;
 	}
 

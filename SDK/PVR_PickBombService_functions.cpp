@@ -21,7 +21,7 @@ namespace SDK
 
 void UPickBombService_C::ReceiveTickAI(class AAIController** OwnerController, class APawn** ControlledPawn, float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PickBombService.PickBombService_C.ReceiveTickAI"));
+	static auto fn = UObject::FindObject<UFunction>("Function PickBombService.PickBombService_C.ReceiveTickAI");
 
 	UPickBombService_C_ReceiveTickAI_Params params;
 	params.OwnerController = OwnerController;
@@ -43,7 +43,7 @@ void UPickBombService_C::ReceiveTickAI(class AAIController** OwnerController, cl
 
 void UPickBombService_C::ExecuteUbergraph_PickBombService(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PickBombService.PickBombService_C.ExecuteUbergraph_PickBombService"));
+	static auto fn = UObject::FindObject<UFunction>("Function PickBombService.PickBombService_C.ExecuteUbergraph_PickBombService");
 
 	UPickBombService_C_ExecuteUbergraph_PickBombService_Params params;
 	params.EntryPoint = EntryPoint;

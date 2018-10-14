@@ -19,7 +19,7 @@ namespace SDK
 
 void UUI_ReplayTeamStatus_C::Select(int Index)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ReplayTeamStatus.UI_ReplayTeamStatus_C.Select"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ReplayTeamStatus.UI_ReplayTeamStatus_C.Select");
 
 	UUI_ReplayTeamStatus_C_Select_Params params;
 	params.Index = Index;
@@ -37,7 +37,7 @@ void UUI_ReplayTeamStatus_C::Select(int Index)
 
 void UUI_ReplayTeamStatus_C::UpdatePlayerArray()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ReplayTeamStatus.UI_ReplayTeamStatus_C.UpdatePlayerArray"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ReplayTeamStatus.UI_ReplayTeamStatus_C.UpdatePlayerArray");
 
 	UUI_ReplayTeamStatus_C_UpdatePlayerArray_Params params;
 
@@ -54,7 +54,7 @@ void UUI_ReplayTeamStatus_C::UpdatePlayerArray()
 
 void UUI_ReplayTeamStatus_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ReplayTeamStatus.UI_ReplayTeamStatus_C.Construct"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ReplayTeamStatus.UI_ReplayTeamStatus_C.Construct");
 
 	UUI_ReplayTeamStatus_C_Construct_Params params;
 
@@ -74,7 +74,7 @@ void UUI_ReplayTeamStatus_C::Construct()
 
 void UUI_ReplayTeamStatus_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ReplayTeamStatus.UI_ReplayTeamStatus_C.Tick"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ReplayTeamStatus.UI_ReplayTeamStatus_C.Tick");
 
 	UUI_ReplayTeamStatus_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -95,7 +95,7 @@ void UUI_ReplayTeamStatus_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTi
 
 void UUI_ReplayTeamStatus_C::ExecuteUbergraph_UI_ReplayTeamStatus(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ReplayTeamStatus.UI_ReplayTeamStatus_C.ExecuteUbergraph_UI_ReplayTeamStatus"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ReplayTeamStatus.UI_ReplayTeamStatus_C.ExecuteUbergraph_UI_ReplayTeamStatus");
 
 	UUI_ReplayTeamStatus_C_ExecuteUbergraph_UI_ReplayTeamStatus_Params params;
 	params.EntryPoint = EntryPoint;

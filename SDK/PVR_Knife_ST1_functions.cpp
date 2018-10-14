@@ -17,7 +17,7 @@ namespace SDK
 
 void AKnife_ST1_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Knife_ST1.Knife_ST1_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Knife_ST1.Knife_ST1_C.UserConstructionScript");
 
 	AKnife_ST1_C_UserConstructionScript_Params params;
 
@@ -36,7 +36,7 @@ void AKnife_ST1_C::UserConstructionScript()
 
 void AKnife_ST1_C::OnBloodyChanged(bool* bNewBloody)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Knife_ST1.Knife_ST1_C.OnBloodyChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function Knife_ST1.Knife_ST1_C.OnBloodyChanged");
 
 	AKnife_ST1_C_OnBloodyChanged_Params params;
 	params.bNewBloody = bNewBloody;
@@ -54,7 +54,7 @@ void AKnife_ST1_C::OnBloodyChanged(bool* bNewBloody)
 
 void AKnife_ST1_C::OnDrop()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Knife_ST1.Knife_ST1_C.OnDrop"));
+	static auto fn = UObject::FindObject<UFunction>("Function Knife_ST1.Knife_ST1_C.OnDrop");
 
 	AKnife_ST1_C_OnDrop_Params params;
 
@@ -73,7 +73,7 @@ void AKnife_ST1_C::OnDrop()
 
 void AKnife_ST1_C::Physicalize(bool* bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Knife_ST1.Knife_ST1_C.Physicalize"));
+	static auto fn = UObject::FindObject<UFunction>("Function Knife_ST1.Knife_ST1_C.Physicalize");
 
 	AKnife_ST1_C_Physicalize_Params params;
 	params.bEnabled = bEnabled;
@@ -93,7 +93,7 @@ void AKnife_ST1_C::Physicalize(bool* bEnabled)
 
 void AKnife_ST1_C::OnPick(class AVRItemController** ByController)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Knife_ST1.Knife_ST1_C.OnPick"));
+	static auto fn = UObject::FindObject<UFunction>("Function Knife_ST1.Knife_ST1_C.OnPick");
 
 	AKnife_ST1_C_OnPick_Params params;
 	params.ByController = ByController;
@@ -113,7 +113,7 @@ void AKnife_ST1_C::OnPick(class AVRItemController** ByController)
 
 void AKnife_ST1_C::Used(bool* bJustPicked)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Knife_ST1.Knife_ST1_C.Used"));
+	static auto fn = UObject::FindObject<UFunction>("Function Knife_ST1.Knife_ST1_C.Used");
 
 	AKnife_ST1_C_Used_Params params;
 	params.bJustPicked = bJustPicked;
@@ -131,7 +131,7 @@ void AKnife_ST1_C::Used(bool* bJustPicked)
 
 void AKnife_ST1_C::Use()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Knife_ST1.Knife_ST1_C.Use"));
+	static auto fn = UObject::FindObject<UFunction>("Function Knife_ST1.Knife_ST1_C.Use");
 
 	AKnife_ST1_C_Use_Params params;
 
@@ -150,7 +150,7 @@ void AKnife_ST1_C::Use()
 
 void AKnife_ST1_C::ExecuteUbergraph_Knife_ST1(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Knife_ST1.Knife_ST1_C.ExecuteUbergraph_Knife_ST1"));
+	static auto fn = UObject::FindObject<UFunction>("Function Knife_ST1.Knife_ST1_C.ExecuteUbergraph_Knife_ST1");
 
 	AKnife_ST1_C_ExecuteUbergraph_Knife_ST1_Params params;
 	params.EntryPoint = EntryPoint;

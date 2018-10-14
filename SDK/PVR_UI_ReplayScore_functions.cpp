@@ -20,7 +20,7 @@ namespace SDK
 
 void UUI_ReplayScore_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ReplayScore.UI_ReplayScore_C.Tick"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ReplayScore.UI_ReplayScore_C.Tick");
 
 	UUI_ReplayScore_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -39,7 +39,7 @@ void UUI_ReplayScore_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 
 void UUI_ReplayScore_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ReplayScore.UI_ReplayScore_C.Construct"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ReplayScore.UI_ReplayScore_C.Construct");
 
 	UUI_ReplayScore_C_Construct_Params params;
 
@@ -58,7 +58,7 @@ void UUI_ReplayScore_C::Construct()
 
 void UUI_ReplayScore_C::ExecuteUbergraph_UI_ReplayScore(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_ReplayScore.UI_ReplayScore_C.ExecuteUbergraph_UI_ReplayScore"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ReplayScore.UI_ReplayScore_C.ExecuteUbergraph_UI_ReplayScore");
 
 	UUI_ReplayScore_C_ExecuteUbergraph_UI_ReplayScore_Params params;
 	params.EntryPoint = EntryPoint;

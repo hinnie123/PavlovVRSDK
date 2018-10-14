@@ -20,7 +20,7 @@ namespace SDK
 
 void USND_Service_C::ReceiveActivationAI(class AAIController** OwnerController, class APawn** ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SND_Service.SND_Service_C.ReceiveActivationAI"));
+	static auto fn = UObject::FindObject<UFunction>("Function SND_Service.SND_Service_C.ReceiveActivationAI");
 
 	USND_Service_C_ReceiveActivationAI_Params params;
 	params.OwnerController = OwnerController;
@@ -43,7 +43,7 @@ void USND_Service_C::ReceiveActivationAI(class AAIController** OwnerController, 
 
 void USND_Service_C::ReceiveTickAI(class AAIController** OwnerController, class APawn** ControlledPawn, float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SND_Service.SND_Service_C.ReceiveTickAI"));
+	static auto fn = UObject::FindObject<UFunction>("Function SND_Service.SND_Service_C.ReceiveTickAI");
 
 	USND_Service_C_ReceiveTickAI_Params params;
 	params.OwnerController = OwnerController;
@@ -65,7 +65,7 @@ void USND_Service_C::ReceiveTickAI(class AAIController** OwnerController, class 
 
 void USND_Service_C::ExecuteUbergraph_SND_Service(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SND_Service.SND_Service_C.ExecuteUbergraph_SND_Service"));
+	static auto fn = UObject::FindObject<UFunction>("Function SND_Service.SND_Service_C.ExecuteUbergraph_SND_Service");
 
 	USND_Service_C_ExecuteUbergraph_SND_Service_Params params;
 	params.EntryPoint = EntryPoint;

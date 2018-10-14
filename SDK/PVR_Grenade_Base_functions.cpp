@@ -17,7 +17,7 @@ namespace SDK
 
 void AGrenade_Base_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Grenade_Base.Grenade_Base_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Grenade_Base.Grenade_Base_C.UserConstructionScript");
 
 	AGrenade_Base_C_UserConstructionScript_Params params;
 
@@ -37,7 +37,7 @@ void AGrenade_Base_C::UserConstructionScript()
 
 void AGrenade_Base_C::BndEvt__PinHandle_K2Node_ComponentBoundEvent_0_VRHandleOnVectorInputReceivedSignature__DelegateSignature(const struct FVector& Input, const struct FVector& InputDelta)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Grenade_Base.Grenade_Base_C.BndEvt__PinHandle_K2Node_ComponentBoundEvent_0_VRHandleOnVectorInputReceivedSignature__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function Grenade_Base.Grenade_Base_C.BndEvt__PinHandle_K2Node_ComponentBoundEvent_0_VRHandleOnVectorInputReceivedSignature__DelegateSignature");
 
 	AGrenade_Base_C_BndEvt__PinHandle_K2Node_ComponentBoundEvent_0_VRHandleOnVectorInputReceivedSignature__DelegateSignature_Params params;
 	params.Input = Input;
@@ -56,7 +56,7 @@ void AGrenade_Base_C::BndEvt__PinHandle_K2Node_ComponentBoundEvent_0_VRHandleOnV
 
 void AGrenade_Base_C::Cycle()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Grenade_Base.Grenade_Base_C.Cycle"));
+	static auto fn = UObject::FindObject<UFunction>("Function Grenade_Base.Grenade_Base_C.Cycle");
 
 	AGrenade_Base_C_Cycle_Params params;
 
@@ -73,7 +73,7 @@ void AGrenade_Base_C::Cycle()
 
 void AGrenade_Base_C::OnDetonation()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Grenade_Base.Grenade_Base_C.OnDetonation"));
+	static auto fn = UObject::FindObject<UFunction>("Function Grenade_Base.Grenade_Base_C.OnDetonation");
 
 	AGrenade_Base_C_OnDetonation_Params params;
 
@@ -92,7 +92,7 @@ void AGrenade_Base_C::OnDetonation()
 
 void AGrenade_Base_C::Physicalize(bool* bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Grenade_Base.Grenade_Base_C.Physicalize"));
+	static auto fn = UObject::FindObject<UFunction>("Function Grenade_Base.Grenade_Base_C.Physicalize");
 
 	AGrenade_Base_C_Physicalize_Params params;
 	params.bEnabled = bEnabled;
@@ -112,7 +112,7 @@ void AGrenade_Base_C::Physicalize(bool* bEnabled)
 
 void AGrenade_Base_C::ExecuteUbergraph_Grenade_Base(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Grenade_Base.Grenade_Base_C.ExecuteUbergraph_Grenade_Base"));
+	static auto fn = UObject::FindObject<UFunction>("Function Grenade_Base.Grenade_Base_C.ExecuteUbergraph_Grenade_Base");
 
 	AGrenade_Base_C_ExecuteUbergraph_Grenade_Base_Params params;
 	params.EntryPoint = EntryPoint;

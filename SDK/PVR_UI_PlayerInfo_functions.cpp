@@ -19,7 +19,7 @@ namespace SDK
 
 ESlateVisibility UUI_PlayerInfo_C::GetVisibility_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PlayerInfo.UI_PlayerInfo_C.GetVisibility_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_PlayerInfo.UI_PlayerInfo_C.GetVisibility_1");
 
 	UUI_PlayerInfo_C_GetVisibility_1_Params params;
 
@@ -40,7 +40,7 @@ ESlateVisibility UUI_PlayerInfo_C::GetVisibility_1()
 
 struct FSlateBrush UUI_PlayerInfo_C::Get_Avatar_Brush_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PlayerInfo.UI_PlayerInfo_C.Get_Avatar_Brush_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_PlayerInfo.UI_PlayerInfo_C.Get_Avatar_Brush_1");
 
 	UUI_PlayerInfo_C_Get_Avatar_Brush_1_Params params;
 
@@ -61,7 +61,7 @@ struct FSlateBrush UUI_PlayerInfo_C::Get_Avatar_Brush_1()
 
 struct FText UUI_PlayerInfo_C::Get_PlayerName_Text_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PlayerInfo.UI_PlayerInfo_C.Get_PlayerName_Text_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_PlayerInfo.UI_PlayerInfo_C.Get_PlayerName_Text_1");
 
 	UUI_PlayerInfo_C_Get_PlayerName_Text_1_Params params;
 
@@ -82,7 +82,7 @@ struct FText UUI_PlayerInfo_C::Get_PlayerName_Text_1()
 
 struct FLinearColor UUI_PlayerInfo_C::GetColorAndOpacity_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PlayerInfo.UI_PlayerInfo_C.GetColorAndOpacity_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_PlayerInfo.UI_PlayerInfo_C.GetColorAndOpacity_1");
 
 	UUI_PlayerInfo_C_GetColorAndOpacity_1_Params params;
 
@@ -103,7 +103,7 @@ struct FLinearColor UUI_PlayerInfo_C::GetColorAndOpacity_1()
 
 struct FSlateBrush UUI_PlayerInfo_C::GetBrush_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PlayerInfo.UI_PlayerInfo_C.GetBrush_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_PlayerInfo.UI_PlayerInfo_C.GetBrush_1");
 
 	UUI_PlayerInfo_C_GetBrush_1_Params params;
 
@@ -124,7 +124,7 @@ struct FSlateBrush UUI_PlayerInfo_C::GetBrush_1()
 
 void UUI_PlayerInfo_C::SetPlayerState(class APavlovPlayerState* PlayerState)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PlayerInfo.UI_PlayerInfo_C.SetPlayerState"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_PlayerInfo.UI_PlayerInfo_C.SetPlayerState");
 
 	UUI_PlayerInfo_C_SetPlayerState_Params params;
 	params.PlayerState = PlayerState;
@@ -145,7 +145,7 @@ void UUI_PlayerInfo_C::SetPlayerState(class APavlovPlayerState* PlayerState)
 
 void UUI_PlayerInfo_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PlayerInfo.UI_PlayerInfo_C.Tick"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_PlayerInfo.UI_PlayerInfo_C.Tick");
 
 	UUI_PlayerInfo_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -166,7 +166,7 @@ void UUI_PlayerInfo_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 
 void UUI_PlayerInfo_C::ExecuteUbergraph_UI_PlayerInfo(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PlayerInfo.UI_PlayerInfo_C.ExecuteUbergraph_UI_PlayerInfo"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_PlayerInfo.UI_PlayerInfo_C.ExecuteUbergraph_UI_PlayerInfo");
 
 	UUI_PlayerInfo_C_ExecuteUbergraph_UI_PlayerInfo_Params params;
 	params.EntryPoint = EntryPoint;

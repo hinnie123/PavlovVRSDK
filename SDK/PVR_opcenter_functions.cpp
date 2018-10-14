@@ -17,7 +17,7 @@ namespace SDK
 
 void Aopcenter_C::OnInventoryUpdate_Event_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function opcenter.opcenter_C.OnInventoryUpdate_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function opcenter.opcenter_C.OnInventoryUpdate_Event_1");
 
 	Aopcenter_C_OnInventoryUpdate_Event_1_Params params;
 
@@ -34,7 +34,7 @@ void Aopcenter_C::OnInventoryUpdate_Event_1()
 
 void Aopcenter_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function opcenter.opcenter_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function opcenter.opcenter_C.ReceiveBeginPlay");
 
 	Aopcenter_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +53,7 @@ void Aopcenter_C::ReceiveBeginPlay()
 
 void Aopcenter_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function opcenter.opcenter_C.ReceiveTick"));
+	static auto fn = UObject::FindObject<UFunction>("Function opcenter.opcenter_C.ReceiveTick");
 
 	Aopcenter_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -71,7 +71,7 @@ void Aopcenter_C::ReceiveTick(float* DeltaSeconds)
 
 void Aopcenter_C::CheckAndSwapControllers()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function opcenter.opcenter_C.CheckAndSwapControllers"));
+	static auto fn = UObject::FindObject<UFunction>("Function opcenter.opcenter_C.CheckAndSwapControllers");
 
 	Aopcenter_C_CheckAndSwapControllers_Params params;
 
@@ -91,7 +91,7 @@ void Aopcenter_C::CheckAndSwapControllers()
 
 void Aopcenter_C::BndEvt__TriggerVolume_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function opcenter.opcenter_C.BndEvt__TriggerVolume_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function opcenter.opcenter_C.BndEvt__TriggerVolume_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature");
 
 	Aopcenter_C_BndEvt__TriggerVolume_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature_Params params;
 	params.OverlappedActor = OverlappedActor;
@@ -110,7 +110,7 @@ void Aopcenter_C::BndEvt__TriggerVolume_1_K2Node_ActorBoundEvent_0_ActorBeginOve
 
 void Aopcenter_C::Setup_Menu_Checker()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function opcenter.opcenter_C.Setup Menu Checker"));
+	static auto fn = UObject::FindObject<UFunction>("Function opcenter.opcenter_C.Setup Menu Checker");
 
 	Aopcenter_C_Setup_Menu_Checker_Params params;
 
@@ -127,7 +127,7 @@ void Aopcenter_C::Setup_Menu_Checker()
 
 void Aopcenter_C::CustomEvent_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function opcenter.opcenter_C.CustomEvent_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function opcenter.opcenter_C.CustomEvent_1");
 
 	Aopcenter_C_CustomEvent_1_Params params;
 
@@ -144,7 +144,7 @@ void Aopcenter_C::CustomEvent_1()
 
 void Aopcenter_C::CustomEvent_2()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function opcenter.opcenter_C.CustomEvent_2"));
+	static auto fn = UObject::FindObject<UFunction>("Function opcenter.opcenter_C.CustomEvent_2");
 
 	Aopcenter_C_CustomEvent_2_Params params;
 
@@ -163,7 +163,7 @@ void Aopcenter_C::CustomEvent_2()
 
 void Aopcenter_C::ExecuteUbergraph_opcenter(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function opcenter.opcenter_C.ExecuteUbergraph_opcenter"));
+	static auto fn = UObject::FindObject<UFunction>("Function opcenter.opcenter_C.ExecuteUbergraph_opcenter");
 
 	Aopcenter_C_ExecuteUbergraph_opcenter_Params params;
 	params.EntryPoint = EntryPoint;

@@ -21,7 +21,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("BlueprintGeneratedClass Shell_12Gauge_Alt.Shell_12Gauge_Alt_C"));
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass Shell_12Gauge_Alt.Shell_12Gauge_Alt_C");
 		return ptr;
 	}
 

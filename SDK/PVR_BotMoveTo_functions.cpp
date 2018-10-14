@@ -20,7 +20,7 @@ namespace SDK
 
 void UBotMoveTo_C::GetRandomLocation(class AVRPawn* PawnSelf, struct FVector* Location)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BotMoveTo.BotMoveTo_C.GetRandomLocation"));
+	static auto fn = UObject::FindObject<UFunction>("Function BotMoveTo.BotMoveTo_C.GetRandomLocation");
 
 	UBotMoveTo_C_GetRandomLocation_Params params;
 	params.PawnSelf = PawnSelf;
@@ -44,7 +44,7 @@ void UBotMoveTo_C::GetRandomLocation(class AVRPawn* PawnSelf, struct FVector* Lo
 
 void UBotMoveTo_C::GetMoveLocation(class APavlovPawn* PawnSelf, struct FVector* Location)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BotMoveTo.BotMoveTo_C.GetMoveLocation"));
+	static auto fn = UObject::FindObject<UFunction>("Function BotMoveTo.BotMoveTo_C.GetMoveLocation");
 
 	UBotMoveTo_C_GetMoveLocation_Params params;
 	params.PawnSelf = PawnSelf;
@@ -69,7 +69,7 @@ void UBotMoveTo_C::GetMoveLocation(class APavlovPawn* PawnSelf, struct FVector* 
 
 void UBotMoveTo_C::GetControllerAndGun(class AActor* Actor, class AGun_Base_C** Gun, class AVRItemController** Controller)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BotMoveTo.BotMoveTo_C.GetControllerAndGun"));
+	static auto fn = UObject::FindObject<UFunction>("Function BotMoveTo.BotMoveTo_C.GetControllerAndGun");
 
 	UBotMoveTo_C_GetControllerAndGun_Params params;
 	params.Actor = Actor;
@@ -94,7 +94,7 @@ void UBotMoveTo_C::GetControllerAndGun(class AActor* Actor, class AGun_Base_C** 
 
 void UBotMoveTo_C::OnFail_D8AD614E42922E19A998A988427840D0(TEnumAsByte<EPathFollowingResult> MovementResult)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BotMoveTo.BotMoveTo_C.OnFail_D8AD614E42922E19A998A988427840D0"));
+	static auto fn = UObject::FindObject<UFunction>("Function BotMoveTo.BotMoveTo_C.OnFail_D8AD614E42922E19A998A988427840D0");
 
 	UBotMoveTo_C_OnFail_D8AD614E42922E19A998A988427840D0_Params params;
 	params.MovementResult = MovementResult;
@@ -114,7 +114,7 @@ void UBotMoveTo_C::OnFail_D8AD614E42922E19A998A988427840D0(TEnumAsByte<EPathFoll
 
 void UBotMoveTo_C::OnSuccess_D8AD614E42922E19A998A988427840D0(TEnumAsByte<EPathFollowingResult> MovementResult)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BotMoveTo.BotMoveTo_C.OnSuccess_D8AD614E42922E19A998A988427840D0"));
+	static auto fn = UObject::FindObject<UFunction>("Function BotMoveTo.BotMoveTo_C.OnSuccess_D8AD614E42922E19A998A988427840D0");
 
 	UBotMoveTo_C_OnSuccess_D8AD614E42922E19A998A988427840D0_Params params;
 	params.MovementResult = MovementResult;
@@ -135,7 +135,7 @@ void UBotMoveTo_C::OnSuccess_D8AD614E42922E19A998A988427840D0(TEnumAsByte<EPathF
 
 void UBotMoveTo_C::ReceiveExecuteAI(class AAIController** OwnerController, class APawn** ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BotMoveTo.BotMoveTo_C.ReceiveExecuteAI"));
+	static auto fn = UObject::FindObject<UFunction>("Function BotMoveTo.BotMoveTo_C.ReceiveExecuteAI");
 
 	UBotMoveTo_C_ReceiveExecuteAI_Params params;
 	params.OwnerController = OwnerController;
@@ -156,7 +156,7 @@ void UBotMoveTo_C::ReceiveExecuteAI(class AAIController** OwnerController, class
 
 void UBotMoveTo_C::ExecuteUbergraph_BotMoveTo(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BotMoveTo.BotMoveTo_C.ExecuteUbergraph_BotMoveTo"));
+	static auto fn = UObject::FindObject<UFunction>("Function BotMoveTo.BotMoveTo_C.ExecuteUbergraph_BotMoveTo");
 
 	UBotMoveTo_C_ExecuteUbergraph_BotMoveTo_Params params;
 	params.EntryPoint = EntryPoint;

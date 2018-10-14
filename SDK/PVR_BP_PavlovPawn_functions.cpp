@@ -19,7 +19,7 @@ namespace SDK
 
 class UHolsterComponent* ABP_PavlovPawn_C::GetBombHolster()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovPawn.BP_PavlovPawn_C.GetBombHolster"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovPawn.BP_PavlovPawn_C.GetBombHolster");
 
 	ABP_PavlovPawn_C_GetBombHolster_Params params;
 
@@ -40,7 +40,7 @@ class UHolsterComponent* ABP_PavlovPawn_C::GetBombHolster()
 
 TArray<class UHolsterComponent*> ABP_PavlovPawn_C::GetGrenadeHolsters()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovPawn.BP_PavlovPawn_C.GetGrenadeHolsters"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovPawn.BP_PavlovPawn_C.GetGrenadeHolsters");
 
 	ABP_PavlovPawn_C_GetGrenadeHolsters_Params params;
 
@@ -61,7 +61,7 @@ TArray<class UHolsterComponent*> ABP_PavlovPawn_C::GetGrenadeHolsters()
 
 class UHolsterComponent* ABP_PavlovPawn_C::GetKnifeHolster()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovPawn.BP_PavlovPawn_C.GetKnifeHolster"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovPawn.BP_PavlovPawn_C.GetKnifeHolster");
 
 	ABP_PavlovPawn_C_GetKnifeHolster_Params params;
 
@@ -82,7 +82,7 @@ class UHolsterComponent* ABP_PavlovPawn_C::GetKnifeHolster()
 
 class UHolsterComponent* ABP_PavlovPawn_C::GetSideWeaponHolster()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovPawn.BP_PavlovPawn_C.GetSideWeaponHolster"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovPawn.BP_PavlovPawn_C.GetSideWeaponHolster");
 
 	ABP_PavlovPawn_C_GetSideWeaponHolster_Params params;
 
@@ -103,7 +103,7 @@ class UHolsterComponent* ABP_PavlovPawn_C::GetSideWeaponHolster()
 
 class UHolsterComponent* ABP_PavlovPawn_C::GetMainWeaponHolster()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovPawn.BP_PavlovPawn_C.GetMainWeaponHolster"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovPawn.BP_PavlovPawn_C.GetMainWeaponHolster");
 
 	ABP_PavlovPawn_C_GetMainWeaponHolster_Params params;
 
@@ -126,7 +126,7 @@ class UHolsterComponent* ABP_PavlovPawn_C::GetMainWeaponHolster()
 
 bool ABP_PavlovPawn_C::GetEquipmentByName(struct FName* EquipmentName, struct FEquipmentDefinition* Definition)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovPawn.BP_PavlovPawn_C.GetEquipmentByName"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovPawn.BP_PavlovPawn_C.GetEquipmentByName");
 
 	ABP_PavlovPawn_C_GetEquipmentByName_Params params;
 	params.EquipmentName = EquipmentName;
@@ -151,7 +151,7 @@ bool ABP_PavlovPawn_C::GetEquipmentByName(struct FName* EquipmentName, struct FE
 
 class UVRPocketComponent* ABP_PavlovPawn_C::GetAmmoPocket()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovPawn.BP_PavlovPawn_C.GetAmmoPocket"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovPawn.BP_PavlovPawn_C.GetAmmoPocket");
 
 	ABP_PavlovPawn_C_GetAmmoPocket_Params params;
 
@@ -170,7 +170,7 @@ class UVRPocketComponent* ABP_PavlovPawn_C::GetAmmoPocket()
 
 void ABP_PavlovPawn_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovPawn.BP_PavlovPawn_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovPawn.BP_PavlovPawn_C.UserConstructionScript");
 
 	ABP_PavlovPawn_C_UserConstructionScript_Params params;
 
@@ -187,7 +187,7 @@ void ABP_PavlovPawn_C::UserConstructionScript()
 
 void ABP_PavlovPawn_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovPawn.BP_PavlovPawn_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovPawn.BP_PavlovPawn_C.ReceiveBeginPlay");
 
 	ABP_PavlovPawn_C_ReceiveBeginPlay_Params params;
 
@@ -206,7 +206,7 @@ void ABP_PavlovPawn_C::ReceiveBeginPlay()
 
 void ABP_PavlovPawn_C::ReceivePossessed(class AController** NewController)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovPawn.BP_PavlovPawn_C.ReceivePossessed"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovPawn.BP_PavlovPawn_C.ReceivePossessed");
 
 	ABP_PavlovPawn_C_ReceivePossessed_Params params;
 	params.NewController = NewController;
@@ -224,7 +224,7 @@ void ABP_PavlovPawn_C::ReceivePossessed(class AController** NewController)
 
 void ABP_PavlovPawn_C::OnTeamIdChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovPawn.BP_PavlovPawn_C.OnTeamIdChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovPawn.BP_PavlovPawn_C.OnTeamIdChanged");
 
 	ABP_PavlovPawn_C_OnTeamIdChanged_Params params;
 
@@ -243,7 +243,7 @@ void ABP_PavlovPawn_C::OnTeamIdChanged()
 
 void ABP_PavlovPawn_C::OnCameraClipChanged(bool* bClipping)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovPawn.BP_PavlovPawn_C.OnCameraClipChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovPawn.BP_PavlovPawn_C.OnCameraClipChanged");
 
 	ABP_PavlovPawn_C_OnCameraClipChanged_Params params;
 	params.bClipping = bClipping;
@@ -261,7 +261,7 @@ void ABP_PavlovPawn_C::OnCameraClipChanged(bool* bClipping)
 
 void ABP_PavlovPawn_C::BlowHelmetOff()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovPawn.BP_PavlovPawn_C.BlowHelmetOff"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovPawn.BP_PavlovPawn_C.BlowHelmetOff");
 
 	ABP_PavlovPawn_C_BlowHelmetOff_Params params;
 
@@ -280,7 +280,7 @@ void ABP_PavlovPawn_C::BlowHelmetOff()
 
 void ABP_PavlovPawn_C::SetupWatch(class UWatch** WatchComp)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovPawn.BP_PavlovPawn_C.SetupWatch"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovPawn.BP_PavlovPawn_C.SetupWatch");
 
 	ABP_PavlovPawn_C_SetupWatch_Params params;
 	params.WatchComp = WatchComp;
@@ -301,7 +301,7 @@ void ABP_PavlovPawn_C::SetupWatch(class UWatch** WatchComp)
 
 void ABP_PavlovPawn_C::BndEvt__VoiceComponent_K2Node_ComponentBoundEvent_0_SteamOnRadioToggleSignature__DelegateSignature(bool bToggled, bool bLocalPlayer)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovPawn.BP_PavlovPawn_C.BndEvt__VoiceComponent_K2Node_ComponentBoundEvent_0_SteamOnRadioToggleSignature__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovPawn.BP_PavlovPawn_C.BndEvt__VoiceComponent_K2Node_ComponentBoundEvent_0_SteamOnRadioToggleSignature__DelegateSignature");
 
 	ABP_PavlovPawn_C_BndEvt__VoiceComponent_K2Node_ComponentBoundEvent_0_SteamOnRadioToggleSignature__DelegateSignature_Params params;
 	params.bToggled = bToggled;
@@ -322,7 +322,7 @@ void ABP_PavlovPawn_C::BndEvt__VoiceComponent_K2Node_ComponentBoundEvent_0_Steam
 
 void ABP_PavlovPawn_C::OnKill_Event_1(class AActor* Owner)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovPawn.BP_PavlovPawn_C.OnKill_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovPawn.BP_PavlovPawn_C.OnKill_Event_1");
 
 	ABP_PavlovPawn_C_OnKill_Event_1_Params params;
 	params.Owner = Owner;
@@ -342,7 +342,7 @@ void ABP_PavlovPawn_C::OnKill_Event_1(class AActor* Owner)
 
 void ABP_PavlovPawn_C::ExecuteUbergraph_BP_PavlovPawn(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PavlovPawn.BP_PavlovPawn_C.ExecuteUbergraph_BP_PavlovPawn"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovPawn.BP_PavlovPawn_C.ExecuteUbergraph_BP_PavlovPawn");
 
 	ABP_PavlovPawn_C_ExecuteUbergraph_BP_PavlovPawn_Params params;
 	params.EntryPoint = EntryPoint;

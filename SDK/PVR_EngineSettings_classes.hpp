@@ -33,7 +33,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class EngineSettings.ConsoleSettings"));
+		static auto ptr = UObject::FindClass("Class EngineSettings.ConsoleSettings");
 		return ptr;
 	}
 
@@ -63,7 +63,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class EngineSettings.GameMapsSettings"));
+		static auto ptr = UObject::FindClass("Class EngineSettings.GameMapsSettings");
 		return ptr;
 	}
 
@@ -91,7 +91,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class EngineSettings.GameNetworkManagerSettings"));
+		static auto ptr = UObject::FindClass("Class EngineSettings.GameNetworkManagerSettings");
 		return ptr;
 	}
 
@@ -110,7 +110,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class EngineSettings.GameSessionSettings"));
+		static auto ptr = UObject::FindClass("Class EngineSettings.GameSessionSettings");
 		return ptr;
 	}
 
@@ -125,7 +125,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class EngineSettings.GeneralEngineSettings"));
+		static auto ptr = UObject::FindClass("Class EngineSettings.GeneralEngineSettings");
 		return ptr;
 	}
 
@@ -161,7 +161,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class EngineSettings.GeneralProjectSettings"));
+		static auto ptr = UObject::FindClass("Class EngineSettings.GeneralProjectSettings");
 		return ptr;
 	}
 
@@ -179,7 +179,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class EngineSettings.HudSettings"));
+		static auto ptr = UObject::FindClass("Class EngineSettings.HudSettings");
 		return ptr;
 	}
 

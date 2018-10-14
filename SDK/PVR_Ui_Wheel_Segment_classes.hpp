@@ -31,7 +31,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("WidgetBlueprintGeneratedClass Ui_Wheel_Segment.Ui_Wheel_Segment_C"));
+		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass Ui_Wheel_Segment.Ui_Wheel_Segment_C");
 		return ptr;
 	}
 

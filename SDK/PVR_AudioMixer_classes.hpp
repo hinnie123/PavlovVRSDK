@@ -21,7 +21,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class AudioMixer.SoundEffectLowPassFilterPreset"));
+		static auto ptr = UObject::FindClass("Class AudioMixer.SoundEffectLowPassFilterPreset");
 		return ptr;
 	}
 
@@ -37,7 +37,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class AudioMixer.SubmixEffectReverbPreset"));
+		static auto ptr = UObject::FindClass("Class AudioMixer.SubmixEffectReverbPreset");
 		return ptr;
 	}
 
@@ -54,7 +54,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class AudioMixer.SubmixEffectSubmixEQPreset"));
+		static auto ptr = UObject::FindClass("Class AudioMixer.SubmixEffectSubmixEQPreset");
 		return ptr;
 	}
 
@@ -71,7 +71,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class AudioMixer.SubmixEffectTestPreset"));
+		static auto ptr = UObject::FindClass("Class AudioMixer.SubmixEffectTestPreset");
 		return ptr;
 	}
 

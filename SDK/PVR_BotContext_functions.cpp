@@ -21,7 +21,7 @@ namespace SDK
 
 void UBotContext_C::ProvideSingleLocation(class UObject** QuerierObject, class AActor** QuerierActor, struct FVector* ResultingLocation)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BotContext.BotContext_C.ProvideSingleLocation"));
+	static auto fn = UObject::FindObject<UFunction>("Function BotContext.BotContext_C.ProvideSingleLocation");
 
 	UBotContext_C_ProvideSingleLocation_Params params;
 	params.QuerierObject = QuerierObject;
@@ -47,7 +47,7 @@ void UBotContext_C::ProvideSingleLocation(class UObject** QuerierObject, class A
 
 void UBotContext_C::ProvideSingleActor(class UObject** QuerierObject, class AActor** QuerierActor, class AActor** ResultingActor)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BotContext.BotContext_C.ProvideSingleActor"));
+	static auto fn = UObject::FindObject<UFunction>("Function BotContext.BotContext_C.ProvideSingleActor");
 
 	UBotContext_C_ProvideSingleActor_Params params;
 	params.QuerierObject = QuerierObject;

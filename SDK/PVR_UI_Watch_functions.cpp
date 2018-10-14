@@ -19,7 +19,7 @@ namespace SDK
 
 struct FLinearColor UUI_Watch_C::Get_Helmet_ColorAndOpacity_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Watch.UI_Watch_C.Get_Helmet_ColorAndOpacity_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Watch.UI_Watch_C.Get_Helmet_ColorAndOpacity_1");
 
 	UUI_Watch_C_Get_Helmet_ColorAndOpacity_1_Params params;
 
@@ -41,7 +41,7 @@ struct FLinearColor UUI_Watch_C::Get_Helmet_ColorAndOpacity_1()
 
 void UUI_Watch_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Watch.UI_Watch_C.Tick"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Watch.UI_Watch_C.Tick");
 
 	UUI_Watch_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -62,7 +62,7 @@ void UUI_Watch_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 
 void UUI_Watch_C::ExecuteUbergraph_UI_Watch(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Watch.UI_Watch_C.ExecuteUbergraph_UI_Watch"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Watch.UI_Watch_C.ExecuteUbergraph_UI_Watch");
 
 	UUI_Watch_C_ExecuteUbergraph_UI_Watch_Params params;
 	params.EntryPoint = EntryPoint;

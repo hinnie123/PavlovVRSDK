@@ -17,7 +17,7 @@ namespace SDK
 
 void ASearchAndDestroyGameMode_C::ProcessRoundEndCondition()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.ProcessRoundEndCondition"));
+	static auto fn = UObject::FindObject<UFunction>("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.ProcessRoundEndCondition");
 
 	ASearchAndDestroyGameMode_C_ProcessRoundEndCondition_Params params;
 
@@ -34,7 +34,7 @@ void ASearchAndDestroyGameMode_C::ProcessRoundEndCondition()
 
 void ASearchAndDestroyGameMode_C::KillEveryone()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.KillEveryone"));
+	static auto fn = UObject::FindObject<UFunction>("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.KillEveryone");
 
 	ASearchAndDestroyGameMode_C_KillEveryone_Params params;
 
@@ -54,7 +54,7 @@ void ASearchAndDestroyGameMode_C::KillEveryone()
 
 void ASearchAndDestroyGameMode_C::GetTieredLosingCashAmmount(int LoseStreak, int* CashAmmount)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.GetTieredLosingCashAmmount"));
+	static auto fn = UObject::FindObject<UFunction>("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.GetTieredLosingCashAmmount");
 
 	ASearchAndDestroyGameMode_C_GetTieredLosingCashAmmount_Params params;
 	params.LoseStreak = LoseStreak;
@@ -77,7 +77,7 @@ void ASearchAndDestroyGameMode_C::GetTieredLosingCashAmmount(int LoseStreak, int
 
 void ASearchAndDestroyGameMode_C::GiveLosingCash(int TeamID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.GiveLosingCash"));
+	static auto fn = UObject::FindObject<UFunction>("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.GiveLosingCash");
 
 	ASearchAndDestroyGameMode_C_GiveLosingCash_Params params;
 	params.TeamID = TeamID;
@@ -95,7 +95,7 @@ void ASearchAndDestroyGameMode_C::GiveLosingCash(int TeamID)
 
 void ASearchAndDestroyGameMode_C::SwitchSides()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.SwitchSides"));
+	static auto fn = UObject::FindObject<UFunction>("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.SwitchSides");
 
 	ASearchAndDestroyGameMode_C_SwitchSides_Params params;
 
@@ -112,7 +112,7 @@ void ASearchAndDestroyGameMode_C::SwitchSides()
 
 void ASearchAndDestroyGameMode_C::GiveInitialCash()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.GiveInitialCash"));
+	static auto fn = UObject::FindObject<UFunction>("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.GiveInitialCash");
 
 	ASearchAndDestroyGameMode_C_GiveInitialCash_Params params;
 
@@ -129,7 +129,7 @@ void ASearchAndDestroyGameMode_C::GiveInitialCash()
 
 void ASearchAndDestroyGameMode_C::CleanUpBombing()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.CleanUpBombing"));
+	static auto fn = UObject::FindObject<UFunction>("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.CleanUpBombing");
 
 	ASearchAndDestroyGameMode_C_CleanUpBombing_Params params;
 
@@ -149,7 +149,7 @@ void ASearchAndDestroyGameMode_C::CleanUpBombing()
 
 void ASearchAndDestroyGameMode_C::ReportRoundWin(int TeamID, bool EndRound)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.ReportRoundWin"));
+	static auto fn = UObject::FindObject<UFunction>("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.ReportRoundWin");
 
 	ASearchAndDestroyGameMode_C_ReportRoundWin_Params params;
 	params.TeamID = TeamID;
@@ -170,7 +170,7 @@ void ASearchAndDestroyGameMode_C::ReportRoundWin(int TeamID, bool EndRound)
 
 void ASearchAndDestroyGameMode_C::GetBombCourierCandidate(class AController** Controller)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.GetBombCourierCandidate"));
+	static auto fn = UObject::FindObject<UFunction>("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.GetBombCourierCandidate");
 
 	ASearchAndDestroyGameMode_C_GetBombCourierCandidate_Params params;
 
@@ -190,7 +190,7 @@ void ASearchAndDestroyGameMode_C::GetBombCourierCandidate(class AController** Co
 
 void ASearchAndDestroyGameMode_C::GiveBombToTeam()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.GiveBombToTeam"));
+	static auto fn = UObject::FindObject<UFunction>("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.GiveBombToTeam");
 
 	ASearchAndDestroyGameMode_C_GiveBombToTeam_Params params;
 
@@ -209,7 +209,7 @@ void ASearchAndDestroyGameMode_C::GiveBombToTeam()
 
 void ASearchAndDestroyGameMode_C::SetPlantSpots(bool Enabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.SetPlantSpots"));
+	static auto fn = UObject::FindObject<UFunction>("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.SetPlantSpots");
 
 	ASearchAndDestroyGameMode_C_SetPlantSpots_Params params;
 	params.Enabled = Enabled;
@@ -229,7 +229,7 @@ void ASearchAndDestroyGameMode_C::SetPlantSpots(bool Enabled)
 
 void ASearchAndDestroyGameMode_C::GetWinningTeam(int* WinningTeam)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.GetWinningTeam"));
+	static auto fn = UObject::FindObject<UFunction>("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.GetWinningTeam");
 
 	ASearchAndDestroyGameMode_C_GetWinningTeam_Params params;
 
@@ -249,7 +249,7 @@ void ASearchAndDestroyGameMode_C::GetWinningTeam(int* WinningTeam)
 
 void ASearchAndDestroyGameMode_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.UserConstructionScript");
 
 	ASearchAndDestroyGameMode_C_UserConstructionScript_Params params;
 
@@ -269,7 +269,7 @@ void ASearchAndDestroyGameMode_C::UserConstructionScript()
 
 void ASearchAndDestroyGameMode_C::OnRoundStateChanged(EPavlovRoundState* OldState, EPavlovRoundState* NewState)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.OnRoundStateChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.OnRoundStateChanged");
 
 	ASearchAndDestroyGameMode_C_OnRoundStateChanged_Params params;
 	params.OldState = OldState;
@@ -288,7 +288,7 @@ void ASearchAndDestroyGameMode_C::OnRoundStateChanged(EPavlovRoundState* OldStat
 
 void ASearchAndDestroyGameMode_C::OnWaitingToStart()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.OnWaitingToStart"));
+	static auto fn = UObject::FindObject<UFunction>("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.OnWaitingToStart");
 
 	ASearchAndDestroyGameMode_C_OnWaitingToStart_Params params;
 
@@ -309,7 +309,7 @@ void ASearchAndDestroyGameMode_C::OnWaitingToStart()
 
 void ASearchAndDestroyGameMode_C::OnPlayerKilled(class APavlovPlayerState** PlayerState, class AController** Controller, class APavlovPawn** Pawn)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.OnPlayerKilled"));
+	static auto fn = UObject::FindObject<UFunction>("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.OnPlayerKilled");
 
 	ASearchAndDestroyGameMode_C_OnPlayerKilled_Params params;
 	params.PlayerState = PlayerState;
@@ -329,7 +329,7 @@ void ASearchAndDestroyGameMode_C::OnPlayerKilled(class APavlovPlayerState** Play
 
 void ASearchAndDestroyGameMode_C::GoAheadWithNewRound()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.GoAheadWithNewRound"));
+	static auto fn = UObject::FindObject<UFunction>("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.GoAheadWithNewRound");
 
 	ASearchAndDestroyGameMode_C_GoAheadWithNewRound_Params params;
 
@@ -346,7 +346,7 @@ void ASearchAndDestroyGameMode_C::GoAheadWithNewRound()
 
 void ASearchAndDestroyGameMode_C::EndOrRotateMap()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.EndOrRotateMap"));
+	static auto fn = UObject::FindObject<UFunction>("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.EndOrRotateMap");
 
 	ASearchAndDestroyGameMode_C_EndOrRotateMap_Params params;
 
@@ -363,7 +363,7 @@ void ASearchAndDestroyGameMode_C::EndOrRotateMap()
 
 void ASearchAndDestroyGameMode_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.ReceiveBeginPlay");
 
 	ASearchAndDestroyGameMode_C_ReceiveBeginPlay_Params params;
 
@@ -383,7 +383,7 @@ void ASearchAndDestroyGameMode_C::ReceiveBeginPlay()
 
 void ASearchAndDestroyGameMode_C::OnBombPlant(class ABombPlantSpot* Spot, class ABomb* Bomb)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.OnBombPlant"));
+	static auto fn = UObject::FindObject<UFunction>("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.OnBombPlant");
 
 	ASearchAndDestroyGameMode_C_OnBombPlant_Params params;
 	params.Spot = Spot;
@@ -404,7 +404,7 @@ void ASearchAndDestroyGameMode_C::OnBombPlant(class ABombPlantSpot* Spot, class 
 
 void ASearchAndDestroyGameMode_C::OnBombDetonation(class ABomb* Bomb)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.OnBombDetonation"));
+	static auto fn = UObject::FindObject<UFunction>("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.OnBombDetonation");
 
 	ASearchAndDestroyGameMode_C_OnBombDetonation_Params params;
 	params.Bomb = Bomb;
@@ -425,7 +425,7 @@ void ASearchAndDestroyGameMode_C::OnBombDetonation(class ABomb* Bomb)
 
 void ASearchAndDestroyGameMode_C::OnBombDefused_Event_1(class ABomb* Bomb, class AController* Defuser)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.OnBombDefused_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.OnBombDefused_Event_1");
 
 	ASearchAndDestroyGameMode_C_OnBombDefused_Event_1_Params params;
 	params.Bomb = Bomb;
@@ -446,7 +446,7 @@ void ASearchAndDestroyGameMode_C::OnBombDefused_Event_1(class ABomb* Bomb, class
 
 void ASearchAndDestroyGameMode_C::K2_PostLogin(class APlayerController** NewPlayer)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.K2_PostLogin"));
+	static auto fn = UObject::FindObject<UFunction>("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.K2_PostLogin");
 
 	ASearchAndDestroyGameMode_C_K2_PostLogin_Params params;
 	params.NewPlayer = NewPlayer;
@@ -466,7 +466,7 @@ void ASearchAndDestroyGameMode_C::K2_PostLogin(class APlayerController** NewPlay
 
 void ASearchAndDestroyGameMode_C::K2_OnLogout(class AController** ExitingController)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.K2_OnLogout"));
+	static auto fn = UObject::FindObject<UFunction>("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.K2_OnLogout");
 
 	ASearchAndDestroyGameMode_C_K2_OnLogout_Params params;
 	params.ExitingController = ExitingController;
@@ -484,7 +484,7 @@ void ASearchAndDestroyGameMode_C::K2_OnLogout(class AController** ExitingControl
 
 void ASearchAndDestroyGameMode_C::InitBombs()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.InitBombs"));
+	static auto fn = UObject::FindObject<UFunction>("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.InitBombs");
 
 	ASearchAndDestroyGameMode_C_InitBombs_Params params;
 
@@ -505,7 +505,7 @@ void ASearchAndDestroyGameMode_C::InitBombs()
 
 void ASearchAndDestroyGameMode_C::OnPlayerSpawned(class APavlovPlayerState** PlayerState, class AController** Controller, class APavlovPawn** Pawn)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.OnPlayerSpawned"));
+	static auto fn = UObject::FindObject<UFunction>("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.OnPlayerSpawned");
 
 	ASearchAndDestroyGameMode_C_OnPlayerSpawned_Params params;
 	params.PlayerState = PlayerState;
@@ -527,7 +527,7 @@ void ASearchAndDestroyGameMode_C::OnPlayerSpawned(class APavlovPlayerState** Pla
 
 void ASearchAndDestroyGameMode_C::ExecuteUbergraph_SearchAndDestroyGameMode(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.ExecuteUbergraph_SearchAndDestroyGameMode"));
+	static auto fn = UObject::FindObject<UFunction>("Function SearchAndDestroyGameMode.SearchAndDestroyGameMode_C.ExecuteUbergraph_SearchAndDestroyGameMode");
 
 	ASearchAndDestroyGameMode_C_ExecuteUbergraph_SearchAndDestroyGameMode_Params params;
 	params.EntryPoint = EntryPoint;

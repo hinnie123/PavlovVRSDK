@@ -20,7 +20,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("BlueprintGeneratedClass Bullet_50Cal.Bullet_50Cal_C"));
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass Bullet_50Cal.Bullet_50Cal_C");
 		return ptr;
 	}
 

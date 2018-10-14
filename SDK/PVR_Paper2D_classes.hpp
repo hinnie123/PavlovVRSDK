@@ -24,7 +24,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Paper2D.MaterialExpressionSpriteTextureSampler"));
+		static auto ptr = UObject::FindClass("Class Paper2D.MaterialExpressionSpriteTextureSampler");
 		return ptr;
 	}
 
@@ -41,7 +41,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Paper2D.PaperCharacter"));
+		static auto ptr = UObject::FindClass("Class Paper2D.PaperCharacter");
 		return ptr;
 	}
 
@@ -62,7 +62,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Paper2D.PaperFlipbook"));
+		static auto ptr = UObject::FindClass("Class Paper2D.PaperFlipbook");
 		return ptr;
 	}
 
@@ -86,7 +86,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Paper2D.PaperFlipbookActor"));
+		static auto ptr = UObject::FindClass("Class Paper2D.PaperFlipbookActor");
 		return ptr;
 	}
 
@@ -114,7 +114,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Paper2D.PaperFlipbookComponent"));
+		static auto ptr = UObject::FindClass("Class Paper2D.PaperFlipbookComponent");
 		return ptr;
 	}
 
@@ -155,7 +155,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Paper2D.PaperGroupedSpriteActor"));
+		static auto ptr = UObject::FindClass("Class Paper2D.PaperGroupedSpriteActor");
 		return ptr;
 	}
 
@@ -173,7 +173,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Paper2D.PaperGroupedSpriteComponent"));
+		static auto ptr = UObject::FindClass("Class Paper2D.PaperGroupedSpriteComponent");
 		return ptr;
 	}
 
@@ -201,7 +201,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Paper2D.PaperRuntimeSettings"));
+		static auto ptr = UObject::FindClass("Class Paper2D.PaperRuntimeSettings");
 		return ptr;
 	}
 
@@ -234,7 +234,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Paper2D.PaperSprite"));
+		static auto ptr = UObject::FindClass("Class Paper2D.PaperSprite");
 		return ptr;
 	}
 
@@ -250,7 +250,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Paper2D.PaperSpriteActor"));
+		static auto ptr = UObject::FindClass("Class Paper2D.PaperSpriteActor");
 		return ptr;
 	}
 
@@ -265,7 +265,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Paper2D.PaperSpriteAtlas"));
+		static auto ptr = UObject::FindClass("Class Paper2D.PaperSpriteAtlas");
 		return ptr;
 	}
 
@@ -283,7 +283,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Paper2D.PaperSpriteComponent"));
+		static auto ptr = UObject::FindClass("Class Paper2D.PaperSpriteComponent");
 		return ptr;
 	}
 
@@ -305,7 +305,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Paper2D.PaperTerrainActor"));
+		static auto ptr = UObject::FindClass("Class Paper2D.PaperTerrainActor");
 		return ptr;
 	}
 
@@ -334,7 +334,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Paper2D.PaperTerrainComponent"));
+		static auto ptr = UObject::FindClass("Class Paper2D.PaperTerrainComponent");
 		return ptr;
 	}
 
@@ -353,7 +353,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Paper2D.PaperTerrainMaterial"));
+		static auto ptr = UObject::FindClass("Class Paper2D.PaperTerrainMaterial");
 		return ptr;
 	}
 
@@ -369,7 +369,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Paper2D.PaperTerrainSplineComponent"));
+		static auto ptr = UObject::FindClass("Class Paper2D.PaperTerrainSplineComponent");
 		return ptr;
 	}
 
@@ -401,7 +401,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Paper2D.PaperTileLayer"));
+		static auto ptr = UObject::FindClass("Class Paper2D.PaperTileLayer");
 		return ptr;
 	}
 
@@ -436,7 +436,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Paper2D.PaperTileMap"));
+		static auto ptr = UObject::FindClass("Class Paper2D.PaperTileMap");
 		return ptr;
 	}
 
@@ -452,7 +452,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Paper2D.PaperTileMapActor"));
+		static auto ptr = UObject::FindClass("Class Paper2D.PaperTileMapActor");
 		return ptr;
 	}
 
@@ -479,7 +479,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Paper2D.PaperTileMapComponent"));
+		static auto ptr = UObject::FindClass("Class Paper2D.PaperTileMapComponent");
 		return ptr;
 	}
 
@@ -529,7 +529,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Paper2D.PaperTileSet"));
+		static auto ptr = UObject::FindClass("Class Paper2D.PaperTileSet");
 		return ptr;
 	}
 
@@ -544,7 +544,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class Paper2D.TileMapBlueprintLibrary"));
+		static auto ptr = UObject::FindClass("Class Paper2D.TileMapBlueprintLibrary");
 		return ptr;
 	}
 

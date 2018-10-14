@@ -19,7 +19,7 @@ namespace SDK
 
 void AGun_Base_C::UpdateChamberMesh(EVRGunChamberState ChamberState)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Base.Gun_Base_C.UpdateChamberMesh"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Base.Gun_Base_C.UpdateChamberMesh");
 
 	AGun_Base_C_UpdateChamberMesh_Params params;
 	params.ChamberState = ChamberState;
@@ -37,7 +37,7 @@ void AGun_Base_C::UpdateChamberMesh(EVRGunChamberState ChamberState)
 
 void AGun_Base_C::CreateChamberBullet()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Base.Gun_Base_C.CreateChamberBullet"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Base.Gun_Base_C.CreateChamberBullet");
 
 	AGun_Base_C_CreateChamberBullet_Params params;
 
@@ -56,7 +56,7 @@ void AGun_Base_C::CreateChamberBullet()
 
 class UVRHandleComponent* AGun_Base_C::GetChargingHandle()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Base.Gun_Base_C.GetChargingHandle"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Base.Gun_Base_C.GetChargingHandle");
 
 	AGun_Base_C_GetChargingHandle_Params params;
 
@@ -78,7 +78,7 @@ class UVRHandleComponent* AGun_Base_C::GetChargingHandle()
 
 void AGun_Base_C::SpawnAndEjectShell(int DetailMode, bool Live)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Base.Gun_Base_C.SpawnAndEjectShell"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Base.Gun_Base_C.SpawnAndEjectShell");
 
 	AGun_Base_C_SpawnAndEjectShell_Params params;
 	params.DetailMode = DetailMode;
@@ -97,7 +97,7 @@ void AGun_Base_C::SpawnAndEjectShell(int DetailMode, bool Live)
 
 void AGun_Base_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Base.Gun_Base_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Base.Gun_Base_C.UserConstructionScript");
 
 	AGun_Base_C_UserConstructionScript_Params params;
 
@@ -114,7 +114,7 @@ void AGun_Base_C::UserConstructionScript()
 
 void AGun_Base_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Base.Gun_Base_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Base.Gun_Base_C.ReceiveBeginPlay");
 
 	AGun_Base_C_ReceiveBeginPlay_Params params;
 
@@ -133,7 +133,7 @@ void AGun_Base_C::ReceiveBeginPlay()
 
 void AGun_Base_C::Physicalize(bool* bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Base.Gun_Base_C.Physicalize"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Base.Gun_Base_C.Physicalize");
 
 	AGun_Base_C_Physicalize_Params params;
 	params.bEnabled = bEnabled;
@@ -151,7 +151,7 @@ void AGun_Base_C::Physicalize(bool* bEnabled)
 
 void AGun_Base_C::Fired()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Base.Gun_Base_C.Fired"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Base.Gun_Base_C.Fired");
 
 	AGun_Base_C_Fired_Params params;
 
@@ -170,7 +170,7 @@ void AGun_Base_C::Fired()
 
 void AGun_Base_C::AttachMagazine(class AVRMagazine** MagazineToAttach)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Base.Gun_Base_C.AttachMagazine"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Base.Gun_Base_C.AttachMagazine");
 
 	AGun_Base_C_AttachMagazine_Params params;
 	params.MagazineToAttach = MagazineToAttach;
@@ -188,7 +188,7 @@ void AGun_Base_C::AttachMagazine(class AVRMagazine** MagazineToAttach)
 
 void AGun_Base_C::RecoilDrop()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Base.Gun_Base_C.RecoilDrop"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Base.Gun_Base_C.RecoilDrop");
 
 	AGun_Base_C_RecoilDrop_Params params;
 
@@ -207,7 +207,7 @@ void AGun_Base_C::RecoilDrop()
 
 void AGun_Base_C::OnRoundEjected(bool* bLive)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Base.Gun_Base_C.OnRoundEjected"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Base.Gun_Base_C.OnRoundEjected");
 
 	AGun_Base_C_OnRoundEjected_Params params;
 	params.bLive = bLive;
@@ -229,7 +229,7 @@ void AGun_Base_C::OnRoundEjected(bool* bLive)
 
 void AGun_Base_C::OnChamberStateChangedEvent(int ChamberIndex, EVRGunChamberState OldState, EVRGunChamberState NewState)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Base.Gun_Base_C.OnChamberStateChangedEvent"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Base.Gun_Base_C.OnChamberStateChangedEvent");
 
 	AGun_Base_C_OnChamberStateChangedEvent_Params params;
 	params.ChamberIndex = ChamberIndex;
@@ -249,7 +249,7 @@ void AGun_Base_C::OnChamberStateChangedEvent(int ChamberIndex, EVRGunChamberStat
 
 void AGun_Base_C::CustomEvent_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Base.Gun_Base_C.CustomEvent_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Base.Gun_Base_C.CustomEvent_1");
 
 	AGun_Base_C_CustomEvent_1_Params params;
 
@@ -268,7 +268,7 @@ void AGun_Base_C::CustomEvent_1()
 
 void AGun_Base_C::ExecuteUbergraph_Gun_Base(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Gun_Base.Gun_Base_C.ExecuteUbergraph_Gun_Base"));
+	static auto fn = UObject::FindObject<UFunction>("Function Gun_Base.Gun_Base_C.ExecuteUbergraph_Gun_Base");
 
 	AGun_Base_C_ExecuteUbergraph_Gun_Base_Params params;
 	params.EntryPoint = EntryPoint;

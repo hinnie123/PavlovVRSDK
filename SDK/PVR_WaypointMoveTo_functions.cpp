@@ -17,7 +17,7 @@ namespace SDK
 
 void UWaypointMoveTo_C::MoveToWaypoint()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WaypointMoveTo.WaypointMoveTo_C.MoveToWaypoint"));
+	static auto fn = UObject::FindObject<UFunction>("Function WaypointMoveTo.WaypointMoveTo_C.MoveToWaypoint");
 
 	UWaypointMoveTo_C_MoveToWaypoint_Params params;
 
@@ -36,7 +36,7 @@ void UWaypointMoveTo_C::MoveToWaypoint()
 
 void UWaypointMoveTo_C::GetMoveLocation(struct FVector* Location)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WaypointMoveTo.WaypointMoveTo_C.GetMoveLocation"));
+	static auto fn = UObject::FindObject<UFunction>("Function WaypointMoveTo.WaypointMoveTo_C.GetMoveLocation");
 
 	UWaypointMoveTo_C_GetMoveLocation_Params params;
 
@@ -59,7 +59,7 @@ void UWaypointMoveTo_C::GetMoveLocation(struct FVector* Location)
 
 void UWaypointMoveTo_C::ReceiveExecuteAI(class AAIController** OwnerController, class APawn** ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WaypointMoveTo.WaypointMoveTo_C.ReceiveExecuteAI"));
+	static auto fn = UObject::FindObject<UFunction>("Function WaypointMoveTo.WaypointMoveTo_C.ReceiveExecuteAI");
 
 	UWaypointMoveTo_C_ReceiveExecuteAI_Params params;
 	params.OwnerController = OwnerController;
@@ -82,7 +82,7 @@ void UWaypointMoveTo_C::ReceiveExecuteAI(class AAIController** OwnerController, 
 
 void UWaypointMoveTo_C::ReceiveTickAI(class AAIController** OwnerController, class APawn** ControlledPawn, float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WaypointMoveTo.WaypointMoveTo_C.ReceiveTickAI"));
+	static auto fn = UObject::FindObject<UFunction>("Function WaypointMoveTo.WaypointMoveTo_C.ReceiveTickAI");
 
 	UWaypointMoveTo_C_ReceiveTickAI_Params params;
 	params.OwnerController = OwnerController;
@@ -104,7 +104,7 @@ void UWaypointMoveTo_C::ReceiveTickAI(class AAIController** OwnerController, cla
 
 void UWaypointMoveTo_C::ExecuteUbergraph_WaypointMoveTo(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WaypointMoveTo.WaypointMoveTo_C.ExecuteUbergraph_WaypointMoveTo"));
+	static auto fn = UObject::FindObject<UFunction>("Function WaypointMoveTo.WaypointMoveTo_C.ExecuteUbergraph_WaypointMoveTo");
 
 	UWaypointMoveTo_C_ExecuteUbergraph_WaypointMoveTo_Params params;
 	params.EntryPoint = EntryPoint;

@@ -17,7 +17,7 @@ namespace SDK
 
 void UGameLiveStreamingFunctionLibrary::STATIC_StopWebCam()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.StopWebCam"));
+	static auto fn = UObject::FindObject<UFunction>("Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.StopWebCam");
 
 	UGameLiveStreamingFunctionLibrary_StopWebCam_Params params;
 
@@ -35,7 +35,7 @@ void UGameLiveStreamingFunctionLibrary::STATIC_StopWebCam()
 
 void UGameLiveStreamingFunctionLibrary::STATIC_StopBroadcastingGame()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.StopBroadcastingGame"));
+	static auto fn = UObject::FindObject<UFunction>("Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.StopBroadcastingGame");
 
 	UGameLiveStreamingFunctionLibrary_StopBroadcastingGame_Params params;
 
@@ -58,7 +58,7 @@ void UGameLiveStreamingFunctionLibrary::STATIC_StopBroadcastingGame()
 
 void UGameLiveStreamingFunctionLibrary::STATIC_StartWebCam(int DesiredWebCamWidth, int DesiredWebCamHeight, bool bMirrorWebCamImage, bool bDrawSimpleWebCamVideo)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.StartWebCam"));
+	static auto fn = UObject::FindObject<UFunction>("Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.StartWebCam");
 
 	UGameLiveStreamingFunctionLibrary_StartWebCam_Params params;
 	params.DesiredWebCamWidth = DesiredWebCamWidth;
@@ -93,7 +93,7 @@ void UGameLiveStreamingFunctionLibrary::STATIC_StartWebCam(int DesiredWebCamWidt
 
 void UGameLiveStreamingFunctionLibrary::STATIC_StartBroadcastingGame(const struct FString& LoginUserName, const struct FString& LoginPassword, int FrameRate, float ScreenScaling, bool bStartWebCam, int DesiredWebCamWidth, int DesiredWebCamHeight, bool bMirrorWebCamImage, bool bDrawSimpleWebCamVideo, bool bCaptureAudioFromComputer, bool bCaptureAudioFromMicrophone, class UTexture2D* CoverUpImage)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.StartBroadcastingGame"));
+	static auto fn = UObject::FindObject<UFunction>("Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.StartBroadcastingGame");
 
 	UGameLiveStreamingFunctionLibrary_StartBroadcastingGame_Params params;
 	params.LoginUserName = LoginUserName;
@@ -125,7 +125,7 @@ void UGameLiveStreamingFunctionLibrary::STATIC_StartBroadcastingGame(const struc
 
 bool UGameLiveStreamingFunctionLibrary::STATIC_IsWebCamEnabled()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.IsWebCamEnabled"));
+	static auto fn = UObject::FindObject<UFunction>("Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.IsWebCamEnabled");
 
 	UGameLiveStreamingFunctionLibrary_IsWebCamEnabled_Params params;
 
@@ -147,7 +147,7 @@ bool UGameLiveStreamingFunctionLibrary::STATIC_IsWebCamEnabled()
 
 bool UGameLiveStreamingFunctionLibrary::STATIC_IsBroadcastingGame()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.IsBroadcastingGame"));
+	static auto fn = UObject::FindObject<UFunction>("Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.IsBroadcastingGame");
 
 	UGameLiveStreamingFunctionLibrary_IsBroadcastingGame_Params params;
 
@@ -170,7 +170,7 @@ bool UGameLiveStreamingFunctionLibrary::STATIC_IsBroadcastingGame()
 
 class UQueryLiveStreamsCallbackProxy* UQueryLiveStreamsCallbackProxy::STATIC_QueryLiveStreams(const struct FString& GameName)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameLiveStreaming.QueryLiveStreamsCallbackProxy.QueryLiveStreams"));
+	static auto fn = UObject::FindObject<UFunction>("Function GameLiveStreaming.QueryLiveStreamsCallbackProxy.QueryLiveStreams");
 
 	UQueryLiveStreamsCallbackProxy_QueryLiveStreams_Params params;
 	params.GameName = GameName;

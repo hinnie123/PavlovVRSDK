@@ -19,7 +19,7 @@ namespace SDK
 
 struct FText UUI_KillerCam_KillerInfo_C::GetText_2()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_KillerCam_KillerInfo.UI_KillerCam_KillerInfo_C.GetText_2"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_KillerCam_KillerInfo.UI_KillerCam_KillerInfo_C.GetText_2");
 
 	UUI_KillerCam_KillerInfo_C_GetText_2_Params params;
 
@@ -40,7 +40,7 @@ struct FText UUI_KillerCam_KillerInfo_C::GetText_2()
 
 ESlateVisibility UUI_KillerCam_KillerInfo_C::GetVisibility_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_KillerCam_KillerInfo.UI_KillerCam_KillerInfo_C.GetVisibility_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_KillerCam_KillerInfo.UI_KillerCam_KillerInfo_C.GetVisibility_1");
 
 	UUI_KillerCam_KillerInfo_C_GetVisibility_1_Params params;
 
@@ -61,7 +61,7 @@ ESlateVisibility UUI_KillerCam_KillerInfo_C::GetVisibility_1()
 
 struct FSlateBrush UUI_KillerCam_KillerInfo_C::Get_weaponicon_Brush_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_KillerCam_KillerInfo.UI_KillerCam_KillerInfo_C.Get_weaponicon_Brush_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_KillerCam_KillerInfo.UI_KillerCam_KillerInfo_C.Get_weaponicon_Brush_1");
 
 	UUI_KillerCam_KillerInfo_C_Get_weaponicon_Brush_1_Params params;
 
@@ -82,7 +82,7 @@ struct FSlateBrush UUI_KillerCam_KillerInfo_C::Get_weaponicon_Brush_1()
 
 struct FLinearColor UUI_KillerCam_KillerInfo_C::GetColorAndOpacity_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_KillerCam_KillerInfo.UI_KillerCam_KillerInfo_C.GetColorAndOpacity_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_KillerCam_KillerInfo.UI_KillerCam_KillerInfo_C.GetColorAndOpacity_1");
 
 	UUI_KillerCam_KillerInfo_C_GetColorAndOpacity_1_Params params;
 
@@ -103,7 +103,7 @@ struct FLinearColor UUI_KillerCam_KillerInfo_C::GetColorAndOpacity_1()
 
 struct FSlateBrush UUI_KillerCam_KillerInfo_C::GetBrush_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_KillerCam_KillerInfo.UI_KillerCam_KillerInfo_C.GetBrush_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_KillerCam_KillerInfo.UI_KillerCam_KillerInfo_C.GetBrush_1");
 
 	UUI_KillerCam_KillerInfo_C_GetBrush_1_Params params;
 
@@ -124,7 +124,7 @@ struct FSlateBrush UUI_KillerCam_KillerInfo_C::GetBrush_1()
 
 struct FText UUI_KillerCam_KillerInfo_C::Get_TextBlock_1_Text_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_KillerCam_KillerInfo.UI_KillerCam_KillerInfo_C.Get_TextBlock_1_Text_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_KillerCam_KillerInfo.UI_KillerCam_KillerInfo_C.Get_TextBlock_1_Text_1");
 
 	UUI_KillerCam_KillerInfo_C_Get_TextBlock_1_Text_1_Params params;
 
@@ -145,7 +145,7 @@ struct FText UUI_KillerCam_KillerInfo_C::Get_TextBlock_1_Text_1()
 
 struct FSlateBrush UUI_KillerCam_KillerInfo_C::Get_Avatar_Brush_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_KillerCam_KillerInfo.UI_KillerCam_KillerInfo_C.Get_Avatar_Brush_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_KillerCam_KillerInfo.UI_KillerCam_KillerInfo_C.Get_Avatar_Brush_1");
 
 	UUI_KillerCam_KillerInfo_C_Get_Avatar_Brush_1_Params params;
 
@@ -164,7 +164,7 @@ struct FSlateBrush UUI_KillerCam_KillerInfo_C::Get_Avatar_Brush_1()
 
 void UUI_KillerCam_KillerInfo_C::GetText_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_KillerCam_KillerInfo.UI_KillerCam_KillerInfo_C.GetText_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_KillerCam_KillerInfo.UI_KillerCam_KillerInfo_C.GetText_1");
 
 	UUI_KillerCam_KillerInfo_C_GetText_1_Params params;
 

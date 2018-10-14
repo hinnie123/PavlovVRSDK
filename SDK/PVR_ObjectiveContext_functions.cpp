@@ -21,7 +21,7 @@ namespace SDK
 
 void UObjectiveContext_C::ProvideSingleLocation(class UObject** QuerierObject, class AActor** QuerierActor, struct FVector* ResultingLocation)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ObjectiveContext.ObjectiveContext_C.ProvideSingleLocation"));
+	static auto fn = UObject::FindObject<UFunction>("Function ObjectiveContext.ObjectiveContext_C.ProvideSingleLocation");
 
 	UObjectiveContext_C_ProvideSingleLocation_Params params;
 	params.QuerierObject = QuerierObject;

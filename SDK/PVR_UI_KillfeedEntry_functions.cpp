@@ -19,7 +19,7 @@ namespace SDK
 
 struct FSlateBrush UUI_KillfeedEntry_C::Get_DamageCauser_Brush_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_KillfeedEntry.UI_KillfeedEntry_C.Get_DamageCauser_Brush_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_KillfeedEntry.UI_KillfeedEntry_C.Get_DamageCauser_Brush_1");
 
 	UUI_KillfeedEntry_C_Get_DamageCauser_Brush_1_Params params;
 
@@ -40,7 +40,7 @@ struct FSlateBrush UUI_KillfeedEntry_C::Get_DamageCauser_Brush_1()
 
 ESlateVisibility UUI_KillfeedEntry_C::Get_DamageCauserBox_Visibility_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_KillfeedEntry.UI_KillfeedEntry_C.Get_DamageCauserBox_Visibility_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_KillfeedEntry.UI_KillfeedEntry_C.Get_DamageCauserBox_Visibility_1");
 
 	UUI_KillfeedEntry_C_Get_DamageCauserBox_Visibility_1_Params params;
 
@@ -61,7 +61,7 @@ ESlateVisibility UUI_KillfeedEntry_C::Get_DamageCauserBox_Visibility_1()
 
 ESlateVisibility UUI_KillfeedEntry_C::Get_Headshot_Visibility_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_KillfeedEntry.UI_KillfeedEntry_C.Get_Headshot_Visibility_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_KillfeedEntry.UI_KillfeedEntry_C.Get_Headshot_Visibility_1");
 
 	UUI_KillfeedEntry_C_Get_Headshot_Visibility_1_Params params;
 
@@ -82,7 +82,7 @@ ESlateVisibility UUI_KillfeedEntry_C::Get_Headshot_Visibility_1()
 
 ESlateVisibility UUI_KillfeedEntry_C::Get_Skull_Visibility_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_KillfeedEntry.UI_KillfeedEntry_C.Get_Skull_Visibility_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_KillfeedEntry.UI_KillfeedEntry_C.Get_Skull_Visibility_1");
 
 	UUI_KillfeedEntry_C_Get_Skull_Visibility_1_Params params;
 
@@ -103,7 +103,7 @@ ESlateVisibility UUI_KillfeedEntry_C::Get_Skull_Visibility_1()
 
 struct FSlateColor UUI_KillfeedEntry_C::Get_VictimLabel_ColorAndOpacity_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_KillfeedEntry.UI_KillfeedEntry_C.Get_VictimLabel_ColorAndOpacity_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_KillfeedEntry.UI_KillfeedEntry_C.Get_VictimLabel_ColorAndOpacity_1");
 
 	UUI_KillfeedEntry_C_Get_VictimLabel_ColorAndOpacity_1_Params params;
 
@@ -124,7 +124,7 @@ struct FSlateColor UUI_KillfeedEntry_C::Get_VictimLabel_ColorAndOpacity_1()
 
 struct FSlateColor UUI_KillfeedEntry_C::Get_KillerLabel_ColorAndOpacity_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_KillfeedEntry.UI_KillfeedEntry_C.Get_KillerLabel_ColorAndOpacity_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_KillfeedEntry.UI_KillfeedEntry_C.Get_KillerLabel_ColorAndOpacity_1");
 
 	UUI_KillfeedEntry_C_Get_KillerLabel_ColorAndOpacity_1_Params params;
 
@@ -145,7 +145,7 @@ struct FSlateColor UUI_KillfeedEntry_C::Get_KillerLabel_ColorAndOpacity_1()
 
 struct FLinearColor UUI_KillfeedEntry_C::GetColorAndOpacity_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_KillfeedEntry.UI_KillfeedEntry_C.GetColorAndOpacity_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_KillfeedEntry.UI_KillfeedEntry_C.GetColorAndOpacity_1");
 
 	UUI_KillfeedEntry_C_GetColorAndOpacity_1_Params params;
 
@@ -167,7 +167,7 @@ struct FLinearColor UUI_KillfeedEntry_C::GetColorAndOpacity_1()
 
 void UUI_KillfeedEntry_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_KillfeedEntry.UI_KillfeedEntry_C.Tick"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_KillfeedEntry.UI_KillfeedEntry_C.Tick");
 
 	UUI_KillfeedEntry_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -188,7 +188,7 @@ void UUI_KillfeedEntry_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 
 void UUI_KillfeedEntry_C::ExecuteUbergraph_UI_KillfeedEntry(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_KillfeedEntry.UI_KillfeedEntry_C.ExecuteUbergraph_UI_KillfeedEntry"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_KillfeedEntry.UI_KillfeedEntry_C.ExecuteUbergraph_UI_KillfeedEntry");
 
 	UUI_KillfeedEntry_C_ExecuteUbergraph_UI_KillfeedEntry_Params params;
 	params.EntryPoint = EntryPoint;

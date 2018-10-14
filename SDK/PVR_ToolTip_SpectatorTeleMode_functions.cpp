@@ -17,7 +17,7 @@ namespace SDK
 
 void AToolTip_SpectatorTeleMode_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_SpectatorTeleMode.ToolTip_SpectatorTeleMode_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_SpectatorTeleMode.ToolTip_SpectatorTeleMode_C.UserConstructionScript");
 
 	AToolTip_SpectatorTeleMode_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void AToolTip_SpectatorTeleMode_C::UserConstructionScript()
 
 void AToolTip_SpectatorTeleMode_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_SpectatorTeleMode.ToolTip_SpectatorTeleMode_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_SpectatorTeleMode.ToolTip_SpectatorTeleMode_C.ReceiveBeginPlay");
 
 	AToolTip_SpectatorTeleMode_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +53,7 @@ void AToolTip_SpectatorTeleMode_C::ReceiveBeginPlay()
 
 void AToolTip_SpectatorTeleMode_C::OnTriggerChanged_Event_1(bool bGripped)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_SpectatorTeleMode.ToolTip_SpectatorTeleMode_C.OnTriggerChanged_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_SpectatorTeleMode.ToolTip_SpectatorTeleMode_C.OnTriggerChanged_Event_1");
 
 	AToolTip_SpectatorTeleMode_C_OnTriggerChanged_Event_1_Params params;
 	params.bGripped = bGripped;
@@ -73,7 +73,7 @@ void AToolTip_SpectatorTeleMode_C::OnTriggerChanged_Event_1(bool bGripped)
 
 void AToolTip_SpectatorTeleMode_C::ExecuteUbergraph_ToolTip_SpectatorTeleMode(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_SpectatorTeleMode.ToolTip_SpectatorTeleMode_C.ExecuteUbergraph_ToolTip_SpectatorTeleMode"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_SpectatorTeleMode.ToolTip_SpectatorTeleMode_C.ExecuteUbergraph_ToolTip_SpectatorTeleMode");
 
 	AToolTip_SpectatorTeleMode_C_ExecuteUbergraph_ToolTip_SpectatorTeleMode_Params params;
 	params.EntryPoint = EntryPoint;

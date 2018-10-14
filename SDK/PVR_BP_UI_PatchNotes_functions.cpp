@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_UI_PatchNotes_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_UI_PatchNotes.BP_UI_PatchNotes_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function BP_UI_PatchNotes.BP_UI_PatchNotes_C.UserConstructionScript");
 
 	ABP_UI_PatchNotes_C_UserConstructionScript_Params params;
 

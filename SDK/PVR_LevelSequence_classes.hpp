@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class LevelSequence.LevelSequence"));
+		static auto ptr = UObject::FindClass("Class LevelSequence.LevelSequence");
 		return ptr;
 	}
 
@@ -38,7 +38,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class LevelSequence.LevelSequencePlayer"));
+		static auto ptr = UObject::FindClass("Class LevelSequence.LevelSequencePlayer");
 		return ptr;
 	}
 
@@ -55,7 +55,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class LevelSequence.LevelSequenceBurnInInitSettings"));
+		static auto ptr = UObject::FindClass("Class LevelSequence.LevelSequenceBurnInInitSettings");
 		return ptr;
 	}
 
@@ -74,7 +74,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class LevelSequence.LevelSequenceBurnInOptions"));
+		static auto ptr = UObject::FindClass("Class LevelSequence.LevelSequenceBurnInOptions");
 		return ptr;
 	}
 
@@ -98,7 +98,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class LevelSequence.LevelSequenceActor"));
+		static auto ptr = UObject::FindClass("Class LevelSequence.LevelSequenceActor");
 		return ptr;
 	}
 
@@ -123,7 +123,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("Class LevelSequence.LevelSequenceBurnIn"));
+		static auto ptr = UObject::FindClass("Class LevelSequence.LevelSequenceBurnIn");
 		return ptr;
 	}
 

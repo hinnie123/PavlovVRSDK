@@ -20,7 +20,7 @@ namespace SDK
 
 void UPlantingService_C::ReceiveActivationAI(class AAIController** OwnerController, class APawn** ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PlantingService.PlantingService_C.ReceiveActivationAI"));
+	static auto fn = UObject::FindObject<UFunction>("Function PlantingService.PlantingService_C.ReceiveActivationAI");
 
 	UPlantingService_C_ReceiveActivationAI_Params params;
 	params.OwnerController = OwnerController;
@@ -43,7 +43,7 @@ void UPlantingService_C::ReceiveActivationAI(class AAIController** OwnerControll
 
 void UPlantingService_C::ReceiveTickAI(class AAIController** OwnerController, class APawn** ControlledPawn, float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PlantingService.PlantingService_C.ReceiveTickAI"));
+	static auto fn = UObject::FindObject<UFunction>("Function PlantingService.PlantingService_C.ReceiveTickAI");
 
 	UPlantingService_C_ReceiveTickAI_Params params;
 	params.OwnerController = OwnerController;
@@ -65,7 +65,7 @@ void UPlantingService_C::ReceiveTickAI(class AAIController** OwnerController, cl
 
 void UPlantingService_C::ExecuteUbergraph_PlantingService(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function PlantingService.PlantingService_C.ExecuteUbergraph_PlantingService"));
+	static auto fn = UObject::FindObject<UFunction>("Function PlantingService.PlantingService_C.ExecuteUbergraph_PlantingService");
 
 	UPlantingService_C_ExecuteUbergraph_PlantingService_Params params;
 	params.EntryPoint = EntryPoint;

@@ -20,7 +20,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass(_xor_("BlueprintGeneratedClass ObjectiveContext.ObjectiveContext_C"));
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass ObjectiveContext.ObjectiveContext_C");
 		return ptr;
 	}
 

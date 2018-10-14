@@ -20,7 +20,7 @@ namespace SDK
 
 bool UOculusRiftBoundaryComponent::SetOuterBoundaryColor(const struct FColor& InBoundaryColor)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusRift.OculusRiftBoundaryComponent.SetOuterBoundaryColor"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusRift.OculusRiftBoundaryComponent.SetOuterBoundaryColor");
 
 	UOculusRiftBoundaryComponent_SetOuterBoundaryColor_Params params;
 	params.InBoundaryColor = InBoundaryColor;
@@ -43,7 +43,7 @@ bool UOculusRiftBoundaryComponent::SetOuterBoundaryColor(const struct FColor& In
 
 bool UOculusRiftBoundaryComponent::ResetOuterBoundaryColor()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusRift.OculusRiftBoundaryComponent.ResetOuterBoundaryColor"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusRift.OculusRiftBoundaryComponent.ResetOuterBoundaryColor");
 
 	UOculusRiftBoundaryComponent_ResetOuterBoundaryColor_Params params;
 
@@ -66,7 +66,7 @@ bool UOculusRiftBoundaryComponent::ResetOuterBoundaryColor()
 
 bool UOculusRiftBoundaryComponent::RequestOuterBoundaryVisible(bool BoundaryVisible)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusRift.OculusRiftBoundaryComponent.RequestOuterBoundaryVisible"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusRift.OculusRiftBoundaryComponent.RequestOuterBoundaryVisible");
 
 	UOculusRiftBoundaryComponent_RequestOuterBoundaryVisible_Params params;
 	params.BoundaryVisible = BoundaryVisible;
@@ -89,7 +89,7 @@ bool UOculusRiftBoundaryComponent::RequestOuterBoundaryVisible(bool BoundaryVisi
 
 void UOculusRiftBoundaryComponent::OculusOuterBoundaryTriggeredEvent__DelegateSignature(TArray<struct FBoundaryTestResult> OuterBoundsInteractionList)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("DelegateFunction OculusRift.OculusRiftBoundaryComponent.OculusOuterBoundaryTriggeredEvent__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction OculusRift.OculusRiftBoundaryComponent.OculusOuterBoundaryTriggeredEvent__DelegateSignature");
 
 	UOculusRiftBoundaryComponent_OculusOuterBoundaryTriggeredEvent__DelegateSignature_Params params;
 	params.OuterBoundsInteractionList = OuterBoundsInteractionList;
@@ -107,7 +107,7 @@ void UOculusRiftBoundaryComponent::OculusOuterBoundaryTriggeredEvent__DelegateSi
 
 void UOculusRiftBoundaryComponent::OculusOuterBoundaryReturnedEvent__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("DelegateFunction OculusRift.OculusRiftBoundaryComponent.OculusOuterBoundaryReturnedEvent__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction OculusRift.OculusRiftBoundaryComponent.OculusOuterBoundaryReturnedEvent__DelegateSignature");
 
 	UOculusRiftBoundaryComponent_OculusOuterBoundaryReturnedEvent__DelegateSignature_Params params;
 
@@ -126,7 +126,7 @@ void UOculusRiftBoundaryComponent::OculusOuterBoundaryReturnedEvent__DelegateSig
 
 bool UOculusRiftBoundaryComponent::IsOuterBoundaryTriggered()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusRift.OculusRiftBoundaryComponent.IsOuterBoundaryTriggered"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusRift.OculusRiftBoundaryComponent.IsOuterBoundaryTriggered");
 
 	UOculusRiftBoundaryComponent_IsOuterBoundaryTriggered_Params params;
 
@@ -148,7 +148,7 @@ bool UOculusRiftBoundaryComponent::IsOuterBoundaryTriggered()
 
 bool UOculusRiftBoundaryComponent::IsOuterBoundaryDisplayed()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusRift.OculusRiftBoundaryComponent.IsOuterBoundaryDisplayed"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusRift.OculusRiftBoundaryComponent.IsOuterBoundaryDisplayed");
 
 	UOculusRiftBoundaryComponent_IsOuterBoundaryDisplayed_Params params;
 
@@ -171,7 +171,7 @@ bool UOculusRiftBoundaryComponent::IsOuterBoundaryDisplayed()
 
 struct FBoundaryTestResult UOculusRiftBoundaryComponent::GetTriggeredPlayAreaInfo(ETrackedDeviceType DeviceType)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusRift.OculusRiftBoundaryComponent.GetTriggeredPlayAreaInfo"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusRift.OculusRiftBoundaryComponent.GetTriggeredPlayAreaInfo");
 
 	UOculusRiftBoundaryComponent_GetTriggeredPlayAreaInfo_Params params;
 	params.DeviceType = DeviceType;
@@ -194,7 +194,7 @@ struct FBoundaryTestResult UOculusRiftBoundaryComponent::GetTriggeredPlayAreaInf
 
 TArray<struct FBoundaryTestResult> UOculusRiftBoundaryComponent::GetTriggeredOuterBoundaryInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusRift.OculusRiftBoundaryComponent.GetTriggeredOuterBoundaryInfo"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusRift.OculusRiftBoundaryComponent.GetTriggeredOuterBoundaryInfo");
 
 	UOculusRiftBoundaryComponent_GetTriggeredOuterBoundaryInfo_Params params;
 
@@ -216,7 +216,7 @@ TArray<struct FBoundaryTestResult> UOculusRiftBoundaryComponent::GetTriggeredOut
 
 TArray<struct FVector> UOculusRiftBoundaryComponent::GetPlayAreaPoints()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusRift.OculusRiftBoundaryComponent.GetPlayAreaPoints"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusRift.OculusRiftBoundaryComponent.GetPlayAreaPoints");
 
 	UOculusRiftBoundaryComponent_GetPlayAreaPoints_Params params;
 
@@ -238,7 +238,7 @@ TArray<struct FVector> UOculusRiftBoundaryComponent::GetPlayAreaPoints()
 
 struct FVector UOculusRiftBoundaryComponent::GetPlayAreaDimensions()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusRift.OculusRiftBoundaryComponent.GetPlayAreaDimensions"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusRift.OculusRiftBoundaryComponent.GetPlayAreaDimensions");
 
 	UOculusRiftBoundaryComponent_GetPlayAreaDimensions_Params params;
 
@@ -260,7 +260,7 @@ struct FVector UOculusRiftBoundaryComponent::GetPlayAreaDimensions()
 
 TArray<struct FVector> UOculusRiftBoundaryComponent::GetOuterBoundaryPoints()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusRift.OculusRiftBoundaryComponent.GetOuterBoundaryPoints"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusRift.OculusRiftBoundaryComponent.GetOuterBoundaryPoints");
 
 	UOculusRiftBoundaryComponent_GetOuterBoundaryPoints_Params params;
 
@@ -282,7 +282,7 @@ TArray<struct FVector> UOculusRiftBoundaryComponent::GetOuterBoundaryPoints()
 
 struct FVector UOculusRiftBoundaryComponent::GetOuterBoundaryDimensions()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusRift.OculusRiftBoundaryComponent.GetOuterBoundaryDimensions"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusRift.OculusRiftBoundaryComponent.GetOuterBoundaryDimensions");
 
 	UOculusRiftBoundaryComponent_GetOuterBoundaryDimensions_Params params;
 
@@ -305,7 +305,7 @@ struct FVector UOculusRiftBoundaryComponent::GetOuterBoundaryDimensions()
 
 struct FBoundaryTestResult UOculusRiftBoundaryComponent::CheckIfPointWithinPlayArea(const struct FVector& Point)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusRift.OculusRiftBoundaryComponent.CheckIfPointWithinPlayArea"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusRift.OculusRiftBoundaryComponent.CheckIfPointWithinPlayArea");
 
 	UOculusRiftBoundaryComponent_CheckIfPointWithinPlayArea_Params params;
 	params.Point = Point;
@@ -329,7 +329,7 @@ struct FBoundaryTestResult UOculusRiftBoundaryComponent::CheckIfPointWithinPlayA
 
 struct FBoundaryTestResult UOculusRiftBoundaryComponent::CheckIfPointWithinOuterBounds(const struct FVector& Point)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function OculusRift.OculusRiftBoundaryComponent.CheckIfPointWithinOuterBounds"));
+	static auto fn = UObject::FindObject<UFunction>("Function OculusRift.OculusRiftBoundaryComponent.CheckIfPointWithinOuterBounds");
 
 	UOculusRiftBoundaryComponent_CheckIfPointWithinOuterBounds_Params params;
 	params.Point = Point;

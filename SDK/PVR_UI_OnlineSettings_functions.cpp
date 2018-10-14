@@ -19,7 +19,7 @@ namespace SDK
 
 void UUI_OnlineSettings_C::GetSelectedMap(struct FString* Map)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_OnlineSettings.UI_OnlineSettings_C.GetSelectedMap"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_OnlineSettings.UI_OnlineSettings_C.GetSelectedMap");
 
 	UUI_OnlineSettings_C_GetSelectedMap_Params params;
 
@@ -39,7 +39,7 @@ void UUI_OnlineSettings_C::GetSelectedMap(struct FString* Map)
 
 void UUI_OnlineSettings_C::BndEvt__UI_Button_37_K2Node_ComponentBoundEvent_5_OnButtonClicked__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_OnlineSettings.UI_OnlineSettings_C.BndEvt__UI_Button_37_K2Node_ComponentBoundEvent_5_OnButtonClicked__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_OnlineSettings.UI_OnlineSettings_C.BndEvt__UI_Button_37_K2Node_ComponentBoundEvent_5_OnButtonClicked__DelegateSignature");
 
 	UUI_OnlineSettings_C_BndEvt__UI_Button_37_K2Node_ComponentBoundEvent_5_OnButtonClicked__DelegateSignature_Params params;
 
@@ -59,7 +59,7 @@ void UUI_OnlineSettings_C::BndEvt__UI_Button_37_K2Node_ComponentBoundEvent_5_OnB
 
 void UUI_OnlineSettings_C::BndEvt__ComboBoxString_115_K2Node_ComponentBoundEvent_34_OnSelectionChangedEvent__DelegateSignature(const struct FString& SelectedItem, TEnumAsByte<ESelectInfo> SelectionType)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_OnlineSettings.UI_OnlineSettings_C.BndEvt__ComboBoxString_115_K2Node_ComponentBoundEvent_34_OnSelectionChangedEvent__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_OnlineSettings.UI_OnlineSettings_C.BndEvt__ComboBoxString_115_K2Node_ComponentBoundEvent_34_OnSelectionChangedEvent__DelegateSignature");
 
 	UUI_OnlineSettings_C_BndEvt__ComboBoxString_115_K2Node_ComponentBoundEvent_34_OnSelectionChangedEvent__DelegateSignature_Params params;
 	params.SelectedItem = SelectedItem;
@@ -80,7 +80,7 @@ void UUI_OnlineSettings_C::BndEvt__ComboBoxString_115_K2Node_ComponentBoundEvent
 
 void UUI_OnlineSettings_C::ExecuteUbergraph_UI_OnlineSettings(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_OnlineSettings.UI_OnlineSettings_C.ExecuteUbergraph_UI_OnlineSettings"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_OnlineSettings.UI_OnlineSettings_C.ExecuteUbergraph_UI_OnlineSettings");
 
 	UUI_OnlineSettings_C_ExecuteUbergraph_UI_OnlineSettings_Params params;
 	params.EntryPoint = EntryPoint;
@@ -100,7 +100,7 @@ void UUI_OnlineSettings_C::ExecuteUbergraph_UI_OnlineSettings(int EntryPoint)
 
 void UUI_OnlineSettings_C::OnMapChanged__DelegateSignature(const struct FString& Map)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_OnlineSettings.UI_OnlineSettings_C.OnMapChanged__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_OnlineSettings.UI_OnlineSettings_C.OnMapChanged__DelegateSignature");
 
 	UUI_OnlineSettings_C_OnMapChanged__DelegateSignature_Params params;
 	params.Map = Map;
@@ -118,7 +118,7 @@ void UUI_OnlineSettings_C::OnMapChanged__DelegateSignature(const struct FString&
 
 void UUI_OnlineSettings_C::OnModalEnd__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_OnlineSettings.UI_OnlineSettings_C.OnModalEnd__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_OnlineSettings.UI_OnlineSettings_C.OnModalEnd__DelegateSignature");
 
 	UUI_OnlineSettings_C_OnModalEnd__DelegateSignature_Params params;
 

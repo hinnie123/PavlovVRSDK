@@ -21,7 +21,7 @@ namespace SDK
 
 bool UBombState_C::PerformConditionCheckAI(class AAIController** OwnerController, class APawn** ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BombState.BombState_C.PerformConditionCheckAI"));
+	static auto fn = UObject::FindObject<UFunction>("Function BombState.BombState_C.PerformConditionCheckAI");
 
 	UBombState_C_PerformConditionCheckAI_Params params;
 	params.OwnerController = OwnerController;

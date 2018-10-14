@@ -17,7 +17,7 @@ namespace SDK
 
 void UUI_Muting_C::Update()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Muting.UI_Muting_C.Update"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Muting.UI_Muting_C.Update");
 
 	UUI_Muting_C_Update_Params params;
 
@@ -37,7 +37,7 @@ void UUI_Muting_C::Update()
 
 void UUI_Muting_C::UpdatePlayers(TArray<class UUI_Moderation_Player_C*>* Players, TArray<class APavlovPlayerState*>* PlayerArray)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Muting.UI_Muting_C.UpdatePlayers"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Muting.UI_Muting_C.UpdatePlayers");
 
 	UUI_Muting_C_UpdatePlayers_Params params;
 
@@ -62,7 +62,7 @@ void UUI_Muting_C::UpdatePlayers(TArray<class UUI_Moderation_Player_C*>* Players
 
 void UUI_Muting_C::CreatePlayerWidgets(class UVerticalBox* List, TArray<class UUI_Moderation_Player_C*>* TargetArray)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Muting.UI_Muting_C.CreatePlayerWidgets"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Muting.UI_Muting_C.CreatePlayerWidgets");
 
 	UUI_Muting_C_CreatePlayerWidgets_Params params;
 	params.List = List;
@@ -83,7 +83,7 @@ void UUI_Muting_C::CreatePlayerWidgets(class UVerticalBox* List, TArray<class UU
 
 void UUI_Muting_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Muting.UI_Muting_C.Construct"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Muting.UI_Muting_C.Construct");
 
 	UUI_Muting_C_Construct_Params params;
 
@@ -100,7 +100,7 @@ void UUI_Muting_C::Construct()
 
 void UUI_Muting_C::BndEvt__UI_ButtonSecondary_K2Node_ComponentBoundEvent_15_OnButtonClicked__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Muting.UI_Muting_C.BndEvt__UI_ButtonSecondary_K2Node_ComponentBoundEvent_15_OnButtonClicked__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Muting.UI_Muting_C.BndEvt__UI_ButtonSecondary_K2Node_ComponentBoundEvent_15_OnButtonClicked__DelegateSignature");
 
 	UUI_Muting_C_BndEvt__UI_ButtonSecondary_K2Node_ComponentBoundEvent_15_OnButtonClicked__DelegateSignature_Params params;
 
@@ -120,7 +120,7 @@ void UUI_Muting_C::BndEvt__UI_ButtonSecondary_K2Node_ComponentBoundEvent_15_OnBu
 
 void UUI_Muting_C::OnPlayerWidgetMuteChanged(bool Mute, const struct FString& ID)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Muting.UI_Muting_C.OnPlayerWidgetMuteChanged"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Muting.UI_Muting_C.OnPlayerWidgetMuteChanged");
 
 	UUI_Muting_C_OnPlayerWidgetMuteChanged_Params params;
 	params.Mute = Mute;
@@ -139,7 +139,7 @@ void UUI_Muting_C::OnPlayerWidgetMuteChanged(bool Mute, const struct FString& ID
 
 void UUI_Muting_C::UpdateList()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Muting.UI_Muting_C.UpdateList"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Muting.UI_Muting_C.UpdateList");
 
 	UUI_Muting_C_UpdateList_Params params;
 
@@ -158,7 +158,7 @@ void UUI_Muting_C::UpdateList()
 
 void UUI_Muting_C::ExecuteUbergraph_UI_Muting(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Muting.UI_Muting_C.ExecuteUbergraph_UI_Muting"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Muting.UI_Muting_C.ExecuteUbergraph_UI_Muting");
 
 	UUI_Muting_C_ExecuteUbergraph_UI_Muting_Params params;
 	params.EntryPoint = EntryPoint;
@@ -176,7 +176,7 @@ void UUI_Muting_C::ExecuteUbergraph_UI_Muting(int EntryPoint)
 
 void UUI_Muting_C::OnExit__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Muting.UI_Muting_C.OnExit__DelegateSignature"));
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Muting.UI_Muting_C.OnExit__DelegateSignature");
 
 	UUI_Muting_C_OnExit__DelegateSignature_Params params;
 

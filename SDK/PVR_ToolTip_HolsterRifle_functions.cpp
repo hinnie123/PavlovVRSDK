@@ -17,7 +17,7 @@ namespace SDK
 
 void AToolTip_HolsterRifle_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_HolsterRifle.ToolTip_HolsterRifle_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_HolsterRifle.ToolTip_HolsterRifle_C.UserConstructionScript");
 
 	AToolTip_HolsterRifle_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void AToolTip_HolsterRifle_C::UserConstructionScript()
 
 void AToolTip_HolsterRifle_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_HolsterRifle.ToolTip_HolsterRifle_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_HolsterRifle.ToolTip_HolsterRifle_C.ReceiveBeginPlay");
 
 	AToolTip_HolsterRifle_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +53,7 @@ void AToolTip_HolsterRifle_C::ReceiveBeginPlay()
 
 void AToolTip_HolsterRifle_C::OnDestroyed_Event_1(class AActor* DestroyedActor)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_HolsterRifle.ToolTip_HolsterRifle_C.OnDestroyed_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_HolsterRifle.ToolTip_HolsterRifle_C.OnDestroyed_Event_1");
 
 	AToolTip_HolsterRifle_C_OnDestroyed_Event_1_Params params;
 	params.DestroyedActor = DestroyedActor;
@@ -71,7 +71,7 @@ void AToolTip_HolsterRifle_C::OnDestroyed_Event_1(class AActor* DestroyedActor)
 
 void AToolTip_HolsterRifle_C::CustomEvent_1()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_HolsterRifle.ToolTip_HolsterRifle_C.CustomEvent_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_HolsterRifle.ToolTip_HolsterRifle_C.CustomEvent_1");
 
 	AToolTip_HolsterRifle_C_CustomEvent_1_Params params;
 
@@ -90,7 +90,7 @@ void AToolTip_HolsterRifle_C::CustomEvent_1()
 
 void AToolTip_HolsterRifle_C::ExecuteUbergraph_ToolTip_HolsterRifle(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_HolsterRifle.ToolTip_HolsterRifle_C.ExecuteUbergraph_ToolTip_HolsterRifle"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_HolsterRifle.ToolTip_HolsterRifle_C.ExecuteUbergraph_ToolTip_HolsterRifle");
 
 	AToolTip_HolsterRifle_C_ExecuteUbergraph_ToolTip_HolsterRifle_Params params;
 	params.EntryPoint = EntryPoint;

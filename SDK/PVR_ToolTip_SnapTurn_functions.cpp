@@ -17,7 +17,7 @@ namespace SDK
 
 void AToolTip_SnapTurn_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_SnapTurn.ToolTip_SnapTurn_C.UserConstructionScript"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_SnapTurn.ToolTip_SnapTurn_C.UserConstructionScript");
 
 	AToolTip_SnapTurn_C_UserConstructionScript_Params params;
 
@@ -34,7 +34,7 @@ void AToolTip_SnapTurn_C::UserConstructionScript()
 
 void AToolTip_SnapTurn_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_SnapTurn.ToolTip_SnapTurn_C.ReceiveBeginPlay"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_SnapTurn.ToolTip_SnapTurn_C.ReceiveBeginPlay");
 
 	AToolTip_SnapTurn_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +53,7 @@ void AToolTip_SnapTurn_C::ReceiveBeginPlay()
 
 void AToolTip_SnapTurn_C::OnDestroyed_Event_1(class AActor* DestroyedActor)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_SnapTurn.ToolTip_SnapTurn_C.OnDestroyed_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_SnapTurn.ToolTip_SnapTurn_C.OnDestroyed_Event_1");
 
 	AToolTip_SnapTurn_C_OnDestroyed_Event_1_Params params;
 	params.DestroyedActor = DestroyedActor;
@@ -73,7 +73,7 @@ void AToolTip_SnapTurn_C::OnDestroyed_Event_1(class AActor* DestroyedActor)
 
 void AToolTip_SnapTurn_C::OnSnapTurn_Event_1(float Delta)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_SnapTurn.ToolTip_SnapTurn_C.OnSnapTurn_Event_1"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_SnapTurn.ToolTip_SnapTurn_C.OnSnapTurn_Event_1");
 
 	AToolTip_SnapTurn_C_OnSnapTurn_Event_1_Params params;
 	params.Delta = Delta;
@@ -93,7 +93,7 @@ void AToolTip_SnapTurn_C::OnSnapTurn_Event_1(float Delta)
 
 void AToolTip_SnapTurn_C::ExecuteUbergraph_ToolTip_SnapTurn(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ToolTip_SnapTurn.ToolTip_SnapTurn_C.ExecuteUbergraph_ToolTip_SnapTurn"));
+	static auto fn = UObject::FindObject<UFunction>("Function ToolTip_SnapTurn.ToolTip_SnapTurn_C.ExecuteUbergraph_ToolTip_SnapTurn");
 
 	AToolTip_SnapTurn_C_ExecuteUbergraph_ToolTip_SnapTurn_Params params;
 	params.EntryPoint = EntryPoint;
