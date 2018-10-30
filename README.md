@@ -1,5 +1,5 @@
 # PavlovVRSDK
-SDK for Pavlov VR
+SDK for Pavlov VR 0.40.0
 
 Useful game info:
 ```
