@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -19,6 +19,26 @@ enum class EFlipbookCollisionMode : uint8_t
 	FirstFrameCollision            = 1,
 	EachFrameCollision             = 2,
 	EFlipbookCollisionMode_MAX     = 3
+};
+
+
+// Enum Paper2D.EPaperSpriteAtlasPadding
+enum class EPaperSpriteAtlasPadding : uint8_t
+{
+	DilateBorder                   = 0,
+	PadWithZero                    = 1,
+	EPaperSpriteAtlasPadding_MAX   = 2
+};
+
+
+// Enum Paper2D.ETileMapProjectionMode
+enum class ETileMapProjectionMode : uint8_t
+{
+	Orthogonal                     = 0,
+	IsometricDiamond               = 1,
+	IsometricStaggered             = 2,
+	HexagonalStaggered             = 3,
+	ETileMapProjectionMode_MAX     = 4
 };
 
 
@@ -71,26 +91,6 @@ enum class ESpriteCollisionMode : uint8_t
 };
 
 
-// Enum Paper2D.EPaperSpriteAtlasPadding
-enum class EPaperSpriteAtlasPadding : uint8_t
-{
-	DilateBorder                   = 0,
-	PadWithZero                    = 1,
-	EPaperSpriteAtlasPadding_MAX   = 2
-};
-
-
-// Enum Paper2D.ETileMapProjectionMode
-enum class ETileMapProjectionMode : uint8_t
-{
-	Orthogonal                     = 0,
-	IsometricDiamond               = 1,
-	IsometricStaggered             = 2,
-	HexagonalStaggered             = 3,
-	ETileMapProjectionMode_MAX     = 4
-};
-
-
 
 //---------------------------------------------------------------------------
 //Script Structs
@@ -109,9 +109,9 @@ struct FPaperFlipbookKeyFrame
 // 0x0050
 struct FSpriteInstanceData
 {
-	struct FMatrix                                     Transform;                                                // 0x0000(0x0040) (Edit, IsPlainOldData)
+	struct FMatrix                                     Transform;                                                // 0x0000(0x0040) (Edit, ZeroConstructor, IsPlainOldData)
 	class UPaperSprite*                                SourceSprite;                                             // 0x0040(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
-	struct FColor                                      VertexColor;                                              // 0x0048(0x0004) (Edit, IsPlainOldData)
+	struct FColor                                      VertexColor;                                              // 0x0048(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	int                                                MaterialIndex;                                            // 0x004C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 };
 
@@ -166,8 +166,8 @@ struct FSpriteGeometryShape
 	ESpriteShapeType                                   ShapeType;                                                // 0x0000(0x0001) (Edit, ZeroConstructor, EditConst, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	TArray<struct FVector2D>                           Vertices;                                                 // 0x0008(0x0010) (Edit, ZeroConstructor)
-	struct FVector2D                                   BoxSize;                                                  // 0x0018(0x0008) (Edit, EditConst, IsPlainOldData)
-	struct FVector2D                                   BoxPosition;                                              // 0x0020(0x0008) (Edit, EditConst, IsPlainOldData)
+	struct FVector2D                                   BoxSize;                                                  // 0x0018(0x0008) (Edit, ZeroConstructor, EditConst, IsPlainOldData)
+	struct FVector2D                                   BoxPosition;                                              // 0x0020(0x0008) (Edit, ZeroConstructor, EditConst, IsPlainOldData)
 	float                                              Rotation;                                                 // 0x0028(0x0004) (Edit, ZeroConstructor, EditConst, IsPlainOldData)
 	bool                                               bNegativeWinding;                                         // 0x002C(0x0001) (Edit, ZeroConstructor, EditConst, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x002D(0x0003) MISSED OFFSET
@@ -209,36 +209,36 @@ struct FPaperTileSetTerrain
 	unsigned char                                      UnknownData00[0x4];                                       // 0x0014(0x0004) MISSED OFFSET
 };
 
-// ScriptStruct Paper2D.SpriteAssetInitParameters
-// 0x0040
-struct FSpriteAssetInitParameters
-{
-	unsigned char                                      UnknownData00[0x40];                                      // 0x0000(0x0040) MISSED OFFSET
-};
-
 // ScriptStruct Paper2D.PaperSpriteAtlasSlot
-// 0x0038
+// 0x0040
 struct FPaperSpriteAtlasSlot
 {
-	TAssetPtr<class UPaperSprite>                      SpriteRef;                                                // 0x0000(0x0020)
-	int                                                AtlasIndex;                                               // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                X;                                                        // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                Y;                                                        // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                Width;                                                    // 0x002C(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                Height;                                                   // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x0034(0x0004) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x28];                                      // 0x0000(0x0028) UNKNOWN PROPERTY: SoftObjectProperty Paper2D.PaperSpriteAtlasSlot.SpriteRef
+	int                                                AtlasIndex;                                               // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                X;                                                        // 0x002C(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                Y;                                                        // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                Width;                                                    // 0x0034(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                Height;                                                   // 0x0038(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x4];                                       // 0x003C(0x0004) MISSED OFFSET
 };
 
 // ScriptStruct Paper2D.SpriteDrawCallRecord
 // 0x00D0
 struct FSpriteDrawCallRecord
 {
-	struct FVector                                     Destination;                                              // 0x0000(0x000C) (IsPlainOldData)
+	struct FVector                                     Destination;                                              // 0x0000(0x000C) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x000C(0x0004) MISSED OFFSET
 	class UTexture*                                    BaseTexture;                                              // 0x0010(0x0008) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x30];                                      // 0x0018(0x0030) MISSED OFFSET
-	struct FColor                                      Color;                                                    // 0x0048(0x0004) (IsPlainOldData)
+	struct FColor                                      Color;                                                    // 0x0048(0x0004) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData02[0x84];                                      // 0x004C(0x0084) MISSED OFFSET
+};
+
+// ScriptStruct Paper2D.SpriteAssetInitParameters
+// 0x0040
+struct FSpriteAssetInitParameters
+{
+	unsigned char                                      UnknownData00[0x40];                                      // 0x0000(0x0040) MISSED OFFSET
 };
 
 }

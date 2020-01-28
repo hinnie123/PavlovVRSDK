@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -44,15 +44,27 @@ enum class EGameplayTagMatchType : uint8_t
 };
 
 
+// Enum GameplayTags.EGameplayTagSelectionType
+enum class EGameplayTagSelectionType : uint8_t
+{
+	None                           = 0,
+	NonRestrictedOnly              = 1,
+	RestrictedOnly                 = 2,
+	All                            = 3,
+	EGameplayTagSelectionType_MAX  = 4
+};
+
+
 // Enum GameplayTags.EGameplayTagSourceType
 enum class EGameplayTagSourceType : uint8_t
 {
 	Native                         = 0,
 	DefaultTagList                 = 1,
 	TagList                        = 2,
-	DataTable                      = 3,
-	Invalid                        = 4,
-	EGameplayTagSourceType_MAX     = 5
+	RestrictedTagList              = 3,
+	DataTable                      = 4,
+	Invalid                        = 5,
+	EGameplayTagSourceType_MAX     = 6
 };
 
 
@@ -65,7 +77,15 @@ enum class EGameplayTagSourceType : uint8_t
 // 0x0008
 struct FGameplayTag
 {
-	struct FName                                       TagName;                                                  // 0x0000(0x0008) (Edit, ZeroConstructor, EditConst, IsPlainOldData)
+	struct FName                                       TagName;                                                  // 0x0000(0x0008) (Edit, ZeroConstructor, EditConst, SaveGame, IsPlainOldData)
+};
+
+// ScriptStruct GameplayTags.GameplayTagContainer
+// 0x0020
+struct FGameplayTagContainer
+{
+	TArray<struct FGameplayTag>                        GameplayTags;                                             // 0x0000(0x0010) (BlueprintVisible, ZeroConstructor, SaveGame)
+	TArray<struct FGameplayTag>                        ParentTags;                                               // 0x0010(0x0010) (ZeroConstructor, Transient)
 };
 
 // ScriptStruct GameplayTags.GameplayTagQuery
@@ -80,22 +100,15 @@ struct FGameplayTagQuery
 	struct FString                                     AutoDescription;                                          // 0x0038(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct GameplayTags.GameplayTagContainer
-// 0x0020
-struct FGameplayTagContainer
-{
-	TArray<struct FGameplayTag>                        GameplayTags;                                             // 0x0000(0x0010) (BlueprintVisible, ZeroConstructor)
-	TArray<struct FGameplayTag>                        ParentTags;                                               // 0x0010(0x0010) (ZeroConstructor, Transient)
-};
-
 // ScriptStruct GameplayTags.GameplayTagSource
-// 0x0018
+// 0x0020
 struct FGameplayTagSource
 {
 	struct FName                                       SourceName;                                               // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData)
 	EGameplayTagSourceType                             SourceType;                                               // 0x0008(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0009(0x0007) MISSED OFFSET
 	class UGameplayTagsList*                           SourceTagList;                                            // 0x0010(0x0008) (ZeroConstructor, IsPlainOldData)
+	class URestrictedGameplayTagsList*                 SourceRestrictedTagList;                                  // 0x0018(0x0008) (ZeroConstructor, IsPlainOldData)
 };
 
 // ScriptStruct GameplayTags.GameplayTagTableRow
@@ -106,12 +119,50 @@ struct FGameplayTagTableRow : public FTableRowBase
 	struct FString                                     DevComment;                                               // 0x0010(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
 };
 
+// ScriptStruct GameplayTags.RestrictedGameplayTagTableRow
+// 0x0008 (0x0028 - 0x0020)
+struct FRestrictedGameplayTagTableRow : public FGameplayTagTableRow
+{
+	bool                                               bAllowNonRestrictedChildren;                              // 0x0020(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0021(0x0007) MISSED OFFSET
+};
+
+// ScriptStruct GameplayTags.GameplayTagCategoryRemap
+// 0x0020
+struct FGameplayTagCategoryRemap
+{
+	struct FString                                     BaseCategory;                                             // 0x0000(0x0010) (Edit, ZeroConstructor)
+	TArray<struct FString>                             RemapCategories;                                          // 0x0010(0x0010) (Edit, ZeroConstructor)
+};
+
 // ScriptStruct GameplayTags.GameplayTagRedirect
 // 0x0010
 struct FGameplayTagRedirect
 {
 	struct FName                                       OldTagName;                                               // 0x0000(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
 	struct FName                                       NewTagName;                                               // 0x0008(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct GameplayTags.RestrictedConfigInfo
+// 0x0020
+struct FRestrictedConfigInfo
+{
+	struct FString                                     RestrictedConfigName;                                     // 0x0000(0x0010) (Edit, ZeroConstructor, Config)
+	TArray<struct FString>                             Owners;                                                   // 0x0010(0x0010) (Edit, ZeroConstructor, Config)
+};
+
+// ScriptStruct GameplayTags.GameplayTagCreationWidgetHelper
+// 0x0001
+struct FGameplayTagCreationWidgetHelper
+{
+	unsigned char                                      UnknownData00[0x1];                                       // 0x0000(0x0001) MISSED OFFSET
+};
+
+// ScriptStruct GameplayTags.GameplayTagReferenceHelper
+// 0x0010
+struct FGameplayTagReferenceHelper
+{
+	unsigned char                                      UnknownData00[0x10];                                      // 0x0000(0x0010) MISSED OFFSET
 };
 
 // ScriptStruct GameplayTags.GameplayTagNode

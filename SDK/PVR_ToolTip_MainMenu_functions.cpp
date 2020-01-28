@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -64,9 +64,9 @@ void AToolTip_MainMenu_C::ReceiveBeginPlay()
 
 
 // Function ToolTip_MainMenu.ToolTip_MainMenu_C.ExecuteUbergraph_ToolTip_MainMenu
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AToolTip_MainMenu_C::ExecuteUbergraph_ToolTip_MainMenu(int EntryPoint)
 {

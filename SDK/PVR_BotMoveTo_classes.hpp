@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -17,7 +17,7 @@ namespace SDK
 class UBotMoveTo_C : public UBTTask_BlueprintBase
 {
 public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x00A0(0x0008) (Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x00A0(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
 	struct FBlackboardKeySelector                      To;                                                       // 0x00A8(0x0028) (Edit, BlueprintVisible)
 	bool                                               WaitUntilFinished;                                        // 0x00D0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               Random;                                                   // 0x00D1(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)

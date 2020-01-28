@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,13 +13,13 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Class OnlineSubsystem.NamedInterfaces
-// 0x0098 (0x00C0 - 0x0028)
+// 0x0038 (0x0060 - 0x0028)
 class UNamedInterfaces : public UObject
 {
 public:
 	TArray<struct FNamedInterface>                     NamedInterfaces;                                          // 0x0028(0x0010) (ZeroConstructor)
 	TArray<struct FNamedInterfaceDef>                  NamedInterfaceDefs;                                       // 0x0038(0x0010) (ZeroConstructor, Config)
-	unsigned char                                      UnknownData00[0x78];                                      // 0x0048(0x0078) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x18];                                      // 0x0048(0x0018) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{

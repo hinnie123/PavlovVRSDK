@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -32,8 +32,8 @@ void ABaseGameMode_C::EndRound()
 // Function BaseGameMode.BaseGameMode_C.SpawnDefaultPawnFor
 // (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AController**            NewPlayer                      (Parm, ZeroConstructor, IsPlainOldData)
-// class AActor**                 StartSpot                      (Parm, ZeroConstructor, IsPlainOldData)
+// class AController**            NewPlayer                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// class AActor**                 StartSpot                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 // class APawn*                   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
 class APawn* ABaseGameMode_C::SpawnDefaultPawnFor(class AController** NewPlayer, class AActor** StartSpot)
@@ -71,32 +71,10 @@ void ABaseGameMode_C::UserConstructionScript()
 }
 
 
-// Function BaseGameMode.BaseGameMode_C.OnRoundStateChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// EPavlovRoundState*             OldState                       (Parm, ZeroConstructor, IsPlainOldData)
-// EPavlovRoundState*             NewState                       (Parm, ZeroConstructor, IsPlainOldData)
-
-void ABaseGameMode_C::OnRoundStateChanged(EPavlovRoundState* OldState, EPavlovRoundState* NewState)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function BaseGameMode.BaseGameMode_C.OnRoundStateChanged");
-
-	ABaseGameMode_C_OnRoundStateChanged_Params params;
-	params.OldState = OldState;
-	params.NewState = NewState;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function BaseGameMode.BaseGameMode_C.K2_OnSetMatchState
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// struct FName*                  NewState                       (Parm, ZeroConstructor, IsPlainOldData)
+// struct FName*                  NewState                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void ABaseGameMode_C::K2_OnSetMatchState(struct FName* NewState)
 {
@@ -116,9 +94,9 @@ void ABaseGameMode_C::K2_OnSetMatchState(struct FName* NewState)
 // Function BaseGameMode.BaseGameMode_C.OnPlayerSpawned
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// class APavlovPlayerState**     PlayerState                    (Parm, ZeroConstructor, IsPlainOldData)
-// class AController**            Controller                     (Parm, ZeroConstructor, IsPlainOldData)
-// class APavlovPawn**            Pawn                           (Parm, ZeroConstructor, IsPlainOldData)
+// class APavlovPlayerState**     PlayerState                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// class AController**            Controller                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// class APavlovPawn**            Pawn                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void ABaseGameMode_C::OnPlayerSpawned(class APavlovPlayerState** PlayerState, class AController** Controller, class APavlovPawn** Pawn)
 {
@@ -191,7 +169,7 @@ void ABaseGameMode_C::CheckForPlayers()
 // Function BaseGameMode.BaseGameMode_C.K2_OnLogout
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// class AController**            ExitingController              (Parm, ZeroConstructor, IsPlainOldData)
+// class AController**            ExitingController              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void ABaseGameMode_C::K2_OnLogout(class AController** ExitingController)
 {
@@ -208,10 +186,49 @@ void ABaseGameMode_C::K2_OnLogout(class AController** ExitingController)
 }
 
 
-// Function BaseGameMode.BaseGameMode_C.ExecuteUbergraph_BaseGameMode
-// (HasDefaults)
+// Function BaseGameMode.BaseGameMode_C.SpawnLootProxies
+// (BlueprintCallable, BlueprintEvent)
+
+void ABaseGameMode_C::SpawnLootProxies()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function BaseGameMode.BaseGameMode_C.SpawnLootProxies");
+
+	ABaseGameMode_C_SpawnLootProxies_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function BaseGameMode.BaseGameMode_C.OnRoundStateChanged
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// EPavlovRoundState*             OldState                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// EPavlovRoundState*             NewState                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+
+void ABaseGameMode_C::OnRoundStateChanged(EPavlovRoundState* OldState, EPavlovRoundState* NewState)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function BaseGameMode.BaseGameMode_C.OnRoundStateChanged");
+
+	ABaseGameMode_C_OnRoundStateChanged_Params params;
+	params.OldState = OldState;
+	params.NewState = NewState;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function BaseGameMode.BaseGameMode_C.ExecuteUbergraph_BaseGameMode
+// (Final, HasDefaults)
+// Parameters:
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void ABaseGameMode_C::ExecuteUbergraph_BaseGameMode(int EntryPoint)
 {

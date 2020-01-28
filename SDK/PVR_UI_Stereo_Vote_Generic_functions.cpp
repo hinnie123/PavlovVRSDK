@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -74,8 +74,8 @@ void UUI_Stereo_Vote_Generic_C::Construct()
 // Function UI_Stereo_Vote_Generic.UI_Stereo_Vote_Generic_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
-// float*                         InDeltaTime                    (Parm, ZeroConstructor, IsPlainOldData)
+// struct FGeometry*              MyGeometry                     (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData)
+// float*                         InDeltaTime                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Stereo_Vote_Generic_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
@@ -94,9 +94,9 @@ void UUI_Stereo_Vote_Generic_C::Tick(struct FGeometry* MyGeometry, float* InDelt
 
 
 // Function UI_Stereo_Vote_Generic.UI_Stereo_Vote_Generic_C.ExecuteUbergraph_UI_Stereo_Vote_Generic
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Stereo_Vote_Generic_C::ExecuteUbergraph_UI_Stereo_Vote_Generic(int EntryPoint)
 {

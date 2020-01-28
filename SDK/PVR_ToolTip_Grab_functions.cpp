@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -49,7 +49,7 @@ void AToolTip_Grab_C::ReceiveBeginPlay()
 // Function ToolTip_Grab.ToolTip_Grab_C.OnDestroyed_Event_1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                  DestroyedActor                 (Parm, ZeroConstructor, IsPlainOldData)
+// class AActor*                  DestroyedActor                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AToolTip_Grab_C::OnDestroyed_Event_1(class AActor* DestroyedActor)
 {
@@ -84,9 +84,9 @@ void AToolTip_Grab_C::CustomEvent_1()
 
 
 // Function ToolTip_Grab.ToolTip_Grab_C.ExecuteUbergraph_ToolTip_Grab
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AToolTip_Grab_C::ExecuteUbergraph_ToolTip_Grab(int EntryPoint)
 {

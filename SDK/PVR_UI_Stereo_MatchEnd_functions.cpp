@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -30,9 +30,9 @@ void UUI_Stereo_MatchEnd_C::Construct()
 
 
 // Function UI_Stereo_MatchEnd.UI_Stereo_MatchEnd_C.ExecuteUbergraph_UI_Stereo_MatchEnd
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Stereo_MatchEnd_C::ExecuteUbergraph_UI_Stereo_MatchEnd(int EntryPoint)
 {

@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -27,7 +27,7 @@ struct ABP_RoundEnd_C_ReceiveBeginPlay_Params
 // Function BP_RoundEnd.BP_RoundEnd_C.ExecuteUbergraph_BP_RoundEnd
 struct ABP_RoundEnd_C_ExecuteUbergraph_BP_RoundEnd_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

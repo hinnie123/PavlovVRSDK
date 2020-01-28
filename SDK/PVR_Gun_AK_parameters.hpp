@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -32,7 +32,7 @@ struct AGun_AK_C_BndEvt__Skin_K2Node_ComponentBoundEvent_0_OnSkinChangedSignatur
 // Function Gun_AK.Gun_AK_C.ExecuteUbergraph_Gun_AK
 struct AGun_AK_C_ExecuteUbergraph_Gun_AK_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

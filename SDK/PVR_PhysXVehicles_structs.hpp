@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -11,6 +11,16 @@ namespace SDK
 //---------------------------------------------------------------------------
 //Enums
 //---------------------------------------------------------------------------
+
+// Enum PhysXVehicles.EWheelSweepType
+enum class EWheelSweepType : uint8_t
+{
+	SimpleAndComplex               = 0,
+	Simple                         = 1,
+	Complex                        = 2,
+	EWheelSweepType_MAX            = 3
+};
+
 
 // Enum PhysXVehicles.EVehicleDifferential4W
 enum class EVehicleDifferential4W : uint8_t
@@ -30,23 +40,15 @@ enum class EVehicleDifferential4W : uint8_t
 //Script Structs
 //---------------------------------------------------------------------------
 
-// ScriptStruct PhysXVehicles.TireConfigMaterialFriction
-// 0x0010
-struct FTireConfigMaterialFriction
-{
-	class UPhysicalMaterial*                           PhysicalMaterial;                                         // 0x0000(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
-	float                                              FrictionScale;                                            // 0x0008(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x000C(0x0004) MISSED OFFSET
-};
-
 // ScriptStruct PhysXVehicles.WheelSetup
 // 0x0020
 struct FWheelSetup
 {
 	class UClass*                                      WheelClass;                                               // 0x0000(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
 	struct FName                                       BoneName;                                                 // 0x0008(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     AdditionalOffset;                                         // 0x0010(0x000C) (Edit, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x001C(0x0004) MISSED OFFSET
+	struct FVector                                     AdditionalOffset;                                         // 0x0010(0x000C) (Edit, ZeroConstructor, IsPlainOldData)
+	bool                                               bDisableSteering;                                         // 0x001C(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x001D(0x0003) MISSED OFFSET
 };
 
 // ScriptStruct PhysXVehicles.ReplicatedVehicleState
@@ -66,6 +68,15 @@ struct FVehicleInputRate
 {
 	float                                              RiseRate;                                                 // 0x0000(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              FallRate;                                                 // 0x0004(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct PhysXVehicles.TireConfigMaterialFriction
+// 0x0010
+struct FTireConfigMaterialFriction
+{
+	class UPhysicalMaterial*                           PhysicalMaterial;                                         // 0x0000(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              FrictionScale;                                            // 0x0008(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x000C(0x0004) MISSED OFFSET
 };
 
 // ScriptStruct PhysXVehicles.VehicleEngineData
@@ -120,18 +131,18 @@ struct FVehicleTransmissionData
 	unsigned char                                      UnknownData01[0x4];                                       // 0x002C(0x0004) MISSED OFFSET
 };
 
-// ScriptStruct PhysXVehicles.VehicleAnimInstanceProxy
-// 0x0010 (0x03D0 - 0x03C0)
-struct FVehicleAnimInstanceProxy : public FAnimInstanceProxy
-{
-	unsigned char                                      UnknownData00[0x10];                                      // 0x03C0(0x0010) MISSED OFFSET
-};
-
 // ScriptStruct PhysXVehicles.AnimNode_WheelHandler
-// 0x0018 (0x0088 - 0x0070)
+// 0x0018 (0x0108 - 0x00F0)
 struct FAnimNode_WheelHandler : public FAnimNode_SkeletalControlBase
 {
-	unsigned char                                      UnknownData00[0x18];                                      // 0x0070(0x0018) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x18];                                      // 0x00F0(0x0018) MISSED OFFSET
+};
+
+// ScriptStruct PhysXVehicles.VehicleAnimInstanceProxy
+// 0x0010 (0x0580 - 0x0570)
+struct FVehicleAnimInstanceProxy : public FAnimInstanceProxy
+{
+	unsigned char                                      UnknownData00[0x10];                                      // 0x0570(0x0010) MISSED OFFSET
 };
 
 }

@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -76,9 +76,9 @@ struct FText UUI_Skull_C::Get_PlayerName_Text_1()
 
 
 // Function UI_Skull.UI_Skull_C.GetColorAndOpacity_1
-// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FLinearColor            ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// struct FLinearColor            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
 struct FLinearColor UUI_Skull_C::GetColorAndOpacity_1()
 {
@@ -120,7 +120,7 @@ struct FSlateBrush UUI_Skull_C::GetBrush_1()
 // Function UI_Skull.UI_Skull_C.SetPlayerState
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class APavlovPlayerState*      PlayerState                    (Parm, ZeroConstructor, IsPlainOldData)
+// class APavlovPlayerState*      PlayerState                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Skull_C::SetPlayerState(class APavlovPlayerState* PlayerState)
 {
@@ -189,9 +189,9 @@ void UUI_Skull_C::Destruct()
 
 
 // Function UI_Skull.UI_Skull_C.ExecuteUbergraph_UI_Skull
-// (HasDefaults)
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Skull_C::ExecuteUbergraph_UI_Skull(int EntryPoint)
 {

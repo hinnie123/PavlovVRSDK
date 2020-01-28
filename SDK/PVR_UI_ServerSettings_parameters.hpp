@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -17,15 +17,15 @@ namespace SDK
 // Function UI_ServerSettings.UI_ServerSettings_C.GetWeapobFilterEnum
 struct UUI_ServerSettings_C_GetWeapobFilterEnum_Params
 {
-	struct FString                                     StringEnum;                                               // (Parm, ZeroConstructor)
+	struct FString                                     StringEnum;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 	EWeaponFilter                                      Enum;                                                     // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_ServerSettings.UI_ServerSettings_C.UpdateSettings
 struct UUI_ServerSettings_C_UpdateSettings_Params
 {
-	struct FServerSettings                             Settings;                                                 // (Parm)
-	struct FString                                     GameMode;                                                 // (Parm, ZeroConstructor)
+	struct FServerSettings                             Settings;                                                 // (BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FString                                     GameMode;                                                 // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 };
 
 // Function UI_ServerSettings.UI_ServerSettings_C.Construct
@@ -41,13 +41,13 @@ struct UUI_ServerSettings_C_BndEvt__applyBtn_K2Node_ComponentBoundEvent_104_OnBu
 // Function UI_ServerSettings.UI_ServerSettings_C.ExecuteUbergraph_UI_ServerSettings
 struct UUI_ServerSettings_C_ExecuteUbergraph_UI_ServerSettings_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_ServerSettings.UI_ServerSettings_C.OnSettingsApply__DelegateSignature
 struct UUI_ServerSettings_C_OnSettingsApply__DelegateSignature_Params
 {
-	struct FServerSettings                             Settings;                                                 // (Parm)
+	struct FServerSettings                             Settings;                                                 // (BlueprintVisible, BlueprintReadOnly, Parm)
 };
 
 }

@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 // Function UI_WorkshopMap.UI_WorkshopMap_C.SetDownloadProgress
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          Progress                       (Parm, ZeroConstructor, IsPlainOldData)
+// float                          Progress                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_WorkshopMap_C::SetDownloadProgress(float Progress)
 {
@@ -35,8 +35,8 @@ void UUI_WorkshopMap_C::SetDownloadProgress(float Progress)
 // Function UI_WorkshopMap.UI_WorkshopMap_C.OnMouseButtonDown
 // (BlueprintCosmetic, Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
-// struct FPointerEvent*          MouseEvent                     (ConstParm, Parm, OutParm, ReferenceParm)
+// struct FGeometry*              MyGeometry                     (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData)
+// struct FPointerEvent*          MouseEvent                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // struct FEventReply             ReturnValue                    (Parm, OutParm, ReturnParm)
 
 struct FEventReply UUI_WorkshopMap_C::OnMouseButtonDown(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
@@ -60,7 +60,7 @@ struct FEventReply UUI_WorkshopMap_C::OnMouseButtonDown(struct FGeometry* MyGeom
 // Function UI_WorkshopMap.UI_WorkshopMap_C.SetOfficial
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           Enabled                        (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           Enabled                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_WorkshopMap_C::SetOfficial(bool Enabled)
 {
@@ -80,7 +80,7 @@ void UUI_WorkshopMap_C::SetOfficial(bool Enabled)
 // Function UI_WorkshopMap.UI_WorkshopMap_C.SetActive
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           NewActive                      (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           NewActive                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_WorkshopMap_C::SetActive(bool NewActive)
 {
@@ -98,9 +98,9 @@ void UUI_WorkshopMap_C::SetActive(bool NewActive)
 
 
 // Function UI_WorkshopMap.UI_WorkshopMap_C.ExecuteUbergraph_UI_WorkshopMap
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_WorkshopMap_C::ExecuteUbergraph_UI_WorkshopMap(int EntryPoint)
 {
@@ -120,7 +120,7 @@ void UUI_WorkshopMap_C::ExecuteUbergraph_UI_WorkshopMap(int EntryPoint)
 // Function UI_WorkshopMap.UI_WorkshopMap_C.OnClicked__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UUI_WorkshopMap_C*       WorkshopMap                    (Parm, ZeroConstructor, IsPlainOldData)
+// class UUI_WorkshopMap_C*       WorkshopMap                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 
 void UUI_WorkshopMap_C::OnClicked__DelegateSignature(class UUI_WorkshopMap_C* WorkshopMap)
 {

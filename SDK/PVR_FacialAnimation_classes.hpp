@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,13 +13,13 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Class FacialAnimation.AudioCurveSourceComponent
-// 0x0040 (0x05F0 - 0x05B0)
+// 0x0040 (0x0690 - 0x0650)
 class UAudioCurveSourceComponent : public UAudioComponent
 {
 public:
-	unsigned char                                      UnknownData00[0x8];                                       // 0x05B0(0x0008) MISSED OFFSET
-	struct FName                                       CurveSourceBindingName;                                   // 0x05B8(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x30];                                      // 0x05C0(0x0030) MISSED OFFSET
+	struct FName                                       CurveSourceBindingName;                                   // 0x0650(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              CurveSyncOffset;                                          // 0x0658(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x34];                                      // 0x065C(0x0034) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{

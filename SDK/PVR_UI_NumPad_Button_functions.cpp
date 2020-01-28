@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,8 +15,8 @@ namespace SDK
 // Function UI_NumPad_Button.UI_NumPad_Button_C.OnMouseButtonDown
 // (BlueprintCosmetic, Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
-// struct FPointerEvent*          MouseEvent                     (ConstParm, Parm, OutParm, ReferenceParm)
+// struct FGeometry*              MyGeometry                     (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData)
+// struct FPointerEvent*          MouseEvent                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // struct FEventReply             ReturnValue                    (Parm, OutParm, ReturnParm)
 
 struct FEventReply UUI_NumPad_Button_C::OnMouseButtonDown(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
@@ -40,8 +40,8 @@ struct FEventReply UUI_NumPad_Button_C::OnMouseButtonDown(struct FGeometry* MyGe
 // Function UI_NumPad_Button.UI_NumPad_Button_C.OnMouseEnter
 // (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
-// struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
-// struct FPointerEvent*          MouseEvent                     (ConstParm, Parm, OutParm, ReferenceParm)
+// struct FGeometry*              MyGeometry                     (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData)
+// struct FPointerEvent*          MouseEvent                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
 void UUI_NumPad_Button_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
@@ -62,7 +62,7 @@ void UUI_NumPad_Button_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPoi
 // Function UI_NumPad_Button.UI_NumPad_Button_C.OnMouseLeave
 // (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
-// struct FPointerEvent*          MouseEvent                     (ConstParm, Parm, OutParm, ReferenceParm)
+// struct FPointerEvent*          MouseEvent                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
 void UUI_NumPad_Button_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 {
@@ -97,9 +97,9 @@ void UUI_NumPad_Button_C::Construct()
 
 
 // Function UI_NumPad_Button.UI_NumPad_Button_C.ExecuteUbergraph_UI_NumPad_Button
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_NumPad_Button_C::ExecuteUbergraph_UI_NumPad_Button(int EntryPoint)
 {
@@ -119,7 +119,7 @@ void UUI_NumPad_Button_C::ExecuteUbergraph_UI_NumPad_Button(int EntryPoint)
 // Function UI_NumPad_Button.UI_NumPad_Button_C.OnClick__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int                            Value                          (Parm, ZeroConstructor, IsPlainOldData)
+// int                            Value                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_NumPad_Button_C::OnClick__DelegateSignature(int Value)
 {

@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -49,7 +49,7 @@ void APliers_Basic_C::ReceiveBeginPlay()
 // Function Pliers_Basic.Pliers_Basic_C.Physicalize
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// bool*                          bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+// bool*                          bEnabled                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void APliers_Basic_C::Physicalize(bool* bEnabled)
 {
@@ -67,9 +67,9 @@ void APliers_Basic_C::Physicalize(bool* bEnabled)
 
 
 // Function Pliers_Basic.Pliers_Basic_C.ExecuteUbergraph_Pliers_Basic
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void APliers_Basic_C::ExecuteUbergraph_Pliers_Basic(int EntryPoint)
 {

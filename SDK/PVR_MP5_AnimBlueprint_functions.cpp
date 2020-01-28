@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -12,14 +12,14 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
-// Function MP5_AnimBlueprint.MP5_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_9FE0006F4F45BA927332BBB822A12C26
+// Function MP5_AnimBlueprint.MP5_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_E19CBB45488DBE528CCEB7BCB8DDCD04
 // (BlueprintEvent)
 
-void UMP5_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_9FE0006F4F45BA927332BBB822A12C26()
+void UMP5_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_E19CBB45488DBE528CCEB7BCB8DDCD04()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MP5_AnimBlueprint.MP5_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_9FE0006F4F45BA927332BBB822A12C26");
+	static auto fn = UObject::FindObject<UFunction>("Function MP5_AnimBlueprint.MP5_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_E19CBB45488DBE528CCEB7BCB8DDCD04");
 
-	UMP5_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_9FE0006F4F45BA927332BBB822A12C26_Params params;
+	UMP5_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_E19CBB45488DBE528CCEB7BCB8DDCD04_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -29,14 +29,14 @@ void UMP5_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimB
 }
 
 
-// Function MP5_AnimBlueprint.MP5_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_342901BC4179BE96F45E87918C95D10F
+// Function MP5_AnimBlueprint.MP5_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_C1ECA93947703689CA0FD2B903901FDE
 // (BlueprintEvent)
 
-void UMP5_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_342901BC4179BE96F45E87918C95D10F()
+void UMP5_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_C1ECA93947703689CA0FD2B903901FDE()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MP5_AnimBlueprint.MP5_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_342901BC4179BE96F45E87918C95D10F");
+	static auto fn = UObject::FindObject<UFunction>("Function MP5_AnimBlueprint.MP5_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_C1ECA93947703689CA0FD2B903901FDE");
 
-	UMP5_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_342901BC4179BE96F45E87918C95D10F_Params params;
+	UMP5_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_C1ECA93947703689CA0FD2B903901FDE_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -46,14 +46,14 @@ void UMP5_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimB
 }
 
 
-// Function MP5_AnimBlueprint.MP5_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_34B80EDE4EB26D4A1C2D45A026353FB8
+// Function MP5_AnimBlueprint.MP5_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_E3CBEFD448D9E2501F8FB98B13E1E870
 // (BlueprintEvent)
 
-void UMP5_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_34B80EDE4EB26D4A1C2D45A026353FB8()
+void UMP5_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_E3CBEFD448D9E2501F8FB98B13E1E870()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MP5_AnimBlueprint.MP5_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_34B80EDE4EB26D4A1C2D45A026353FB8");
+	static auto fn = UObject::FindObject<UFunction>("Function MP5_AnimBlueprint.MP5_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_E3CBEFD448D9E2501F8FB98B13E1E870");
 
-	UMP5_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_34B80EDE4EB26D4A1C2D45A026353FB8_Params params;
+	UMP5_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_E3CBEFD448D9E2501F8FB98B13E1E870_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -63,14 +63,31 @@ void UMP5_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimB
 }
 
 
-// Function MP5_AnimBlueprint.MP5_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_E15733D145DB9B26E8DE2E9986483E24
+// Function MP5_AnimBlueprint.MP5_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_C8A8AA364B3B2F9543D1D982EE720391
 // (BlueprintEvent)
 
-void UMP5_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_E15733D145DB9B26E8DE2E9986483E24()
+void UMP5_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_C8A8AA364B3B2F9543D1D982EE720391()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MP5_AnimBlueprint.MP5_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_E15733D145DB9B26E8DE2E9986483E24");
+	static auto fn = UObject::FindObject<UFunction>("Function MP5_AnimBlueprint.MP5_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_C8A8AA364B3B2F9543D1D982EE720391");
 
-	UMP5_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_E15733D145DB9B26E8DE2E9986483E24_Params params;
+	UMP5_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_C8A8AA364B3B2F9543D1D982EE720391_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function MP5_AnimBlueprint.MP5_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_1D1AB5E944E03DBCB5B4DDAD4EC45826
+// (BlueprintEvent)
+
+void UMP5_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_1D1AB5E944E03DBCB5B4DDAD4EC45826()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function MP5_AnimBlueprint.MP5_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_1D1AB5E944E03DBCB5B4DDAD4EC45826");
+
+	UMP5_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimBlueprint_AnimGraphNode_ModifyBone_1D1AB5E944E03DBCB5B4DDAD4EC45826_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -81,9 +98,9 @@ void UMP5_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_MP5_AnimB
 
 
 // Function MP5_AnimBlueprint.MP5_AnimBlueprint_C.ExecuteUbergraph_MP5_AnimBlueprint
-// (HasDefaults)
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UMP5_AnimBlueprint_C::ExecuteUbergraph_MP5_AnimBlueprint(int EntryPoint)
 {

@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 // Function Vote_KickPlayer.Vote_KickPlayer_C.CreateContentWidget
 // (Protected, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UUserWidget*             Content                        (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// class UUserWidget*             Content                        (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData)
 
 void AVote_KickPlayer_C::CreateContentWidget(class UUserWidget** Content)
 {
@@ -54,7 +54,7 @@ void AVote_KickPlayer_C::UserConstructionScript()
 // Function Vote_KickPlayer.Vote_KickPlayer_C.OnVoteEnded
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// bool*                          bSucceeded                     (Parm, ZeroConstructor, IsPlainOldData)
+// bool*                          bSucceeded                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AVote_KickPlayer_C::OnVoteEnded(bool* bSucceeded)
 {
@@ -72,9 +72,9 @@ void AVote_KickPlayer_C::OnVoteEnded(bool* bSucceeded)
 
 
 // Function Vote_KickPlayer.Vote_KickPlayer_C.ExecuteUbergraph_Vote_KickPlayer
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AVote_KickPlayer_C::ExecuteUbergraph_Vote_KickPlayer(int EntryPoint)
 {

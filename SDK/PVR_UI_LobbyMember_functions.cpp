@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -78,8 +78,8 @@ ESlateVisibility UUI_LobbyMember_C::Get_ReadyOverlay_Visibility_1()
 // Function UI_LobbyMember.UI_LobbyMember_C.OnMouseButtonDown
 // (BlueprintCosmetic, Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
-// struct FPointerEvent*          MouseEvent                     (ConstParm, Parm, OutParm, ReferenceParm)
+// struct FGeometry*              MyGeometry                     (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData)
+// struct FPointerEvent*          MouseEvent                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // struct FEventReply             ReturnValue                    (Parm, OutParm, ReturnParm)
 
 struct FEventReply UUI_LobbyMember_C::OnMouseButtonDown(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
@@ -124,7 +124,7 @@ ESlateVisibility UUI_LobbyMember_C::Get_OwnerIcon_Visibility_1()
 // Function UI_LobbyMember.UI_LobbyMember_C.IsMemberTalking
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int                            Index                          (Parm, ZeroConstructor, IsPlainOldData)
+// int                            Index                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 // bool                           Talking                        (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 
 void UUI_LobbyMember_C::IsMemberTalking(int Index, bool* Talking)
@@ -148,8 +148,8 @@ void UUI_LobbyMember_C::IsMemberTalking(int Index, bool* Talking)
 // Function UI_LobbyMember.UI_LobbyMember_C.GetTeamColor
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int                            inInt                          (Parm, ZeroConstructor, IsPlainOldData)
-// struct FLinearColor            ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// int                            inInt                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// struct FLinearColor            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
 struct FLinearColor UUI_LobbyMember_C::GetTeamColor(int inInt)
 {
@@ -190,9 +190,9 @@ struct FSlateBrush UUI_LobbyMember_C::Get_AvatarImage_Brush_1()
 
 
 // Function UI_LobbyMember.UI_LobbyMember_C.GetColorAndOpacity_1
-// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FLinearColor            ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// struct FLinearColor            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
 struct FLinearColor UUI_LobbyMember_C::GetColorAndOpacity_1()
 {
@@ -247,7 +247,7 @@ void UUI_LobbyMember_C::BndEvt__KickButton_K2Node_ComponentBoundEvent_165_OnButt
 // Function UI_LobbyMember.UI_LobbyMember_C.OnMouseLeave
 // (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
-// struct FPointerEvent*          MouseEvent                     (ConstParm, Parm, OutParm, ReferenceParm)
+// struct FPointerEvent*          MouseEvent                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
 void UUI_LobbyMember_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 {
@@ -265,9 +265,9 @@ void UUI_LobbyMember_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 
 
 // Function UI_LobbyMember.UI_LobbyMember_C.ExecuteUbergraph_UI_LobbyMember
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_LobbyMember_C::ExecuteUbergraph_UI_LobbyMember(int EntryPoint)
 {

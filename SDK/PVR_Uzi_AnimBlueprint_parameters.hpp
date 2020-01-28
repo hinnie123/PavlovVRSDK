@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,11 +13,6 @@ namespace SDK
 //---------------------------------------------------------------------------
 //Parameters
 //---------------------------------------------------------------------------
-
-// Function Uzi_AnimBlueprint.Uzi_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Uzi_AnimBlueprint_AnimGraphNode_BlendListByBool_7DE8E26746C91A6691AB9A95AD84C37A
-struct UUzi_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Uzi_AnimBlueprint_AnimGraphNode_BlendListByBool_7DE8E26746C91A6691AB9A95AD84C37A_Params
-{
-};
 
 // Function Uzi_AnimBlueprint.Uzi_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Uzi_AnimBlueprint_AnimGraphNode_ModifyBone_5962E4904DE903D990969EA7F4225A58
 struct UUzi_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Uzi_AnimBlueprint_AnimGraphNode_ModifyBone_5962E4904DE903D990969EA7F4225A58_Params
@@ -32,7 +27,7 @@ struct UUzi_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Uzi_Anim
 // Function Uzi_AnimBlueprint.Uzi_AnimBlueprint_C.ExecuteUbergraph_Uzi_AnimBlueprint
 struct UUzi_AnimBlueprint_C_ExecuteUbergraph_Uzi_AnimBlueprint_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

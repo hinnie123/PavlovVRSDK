@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -32,13 +32,13 @@ struct AGun_Revolver_C_ReceiveBeginPlay_Params
 // Function Gun_Revolver.Gun_Revolver_C.OnRevolverCylinderChanged_Event_1
 struct AGun_Revolver_C_OnRevolverCylinderChanged_Event_1_Params
 {
-	bool                                               bOpen;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bOpen;                                                    // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Gun_Revolver.Gun_Revolver_C.OnGesturePerformedDelegate
 struct AGun_Revolver_C_OnGesturePerformedDelegate_Params
 {
-	struct FName                                       Name;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FName                                       Name;                                                     // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Gun_Revolver.Gun_Revolver_C.SetupRemoval
@@ -69,7 +69,7 @@ struct AGun_Revolver_C_SetupClose_Params
 // Function Gun_Revolver.Gun_Revolver_C.ExecuteUbergraph_Gun_Revolver
 struct AGun_Revolver_C_ExecuteUbergraph_Gun_Revolver_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

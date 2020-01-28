@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -46,6 +46,43 @@ void AGrenade_Smoke_C::UserConstructionScript()
 }
 
 
+// Function Grenade_Smoke.Grenade_Smoke_C.OnDetonation
+// (Event, Public, BlueprintEvent)
+
+void AGrenade_Smoke_C::OnDetonation()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Grenade_Smoke.Grenade_Smoke_C.OnDetonation");
+
+	AGrenade_Smoke_C_OnDetonation_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Grenade_Smoke.Grenade_Smoke_C.SpawnSingleParticle
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FVector                 LocalOffset                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+
+void AGrenade_Smoke_C::SpawnSingleParticle(const struct FVector& LocalOffset)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Grenade_Smoke.Grenade_Smoke_C.SpawnSingleParticle");
+
+	AGrenade_Smoke_C_SpawnSingleParticle_Params params;
+	params.LocalOffset = LocalOffset;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function Grenade_Smoke.Grenade_Smoke_C.StartSmoke
 // (BlueprintCallable, BlueprintEvent)
 
@@ -63,34 +100,17 @@ void AGrenade_Smoke_C::StartSmoke()
 }
 
 
-// Function Grenade_Smoke.Grenade_Smoke_C.SpawnSingleParticle
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FVector                 LocalOffset                    (Parm, IsPlainOldData)
-
-void AGrenade_Smoke_C::SpawnSingleParticle(const struct FVector& LocalOffset)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Grenade_Smoke.Grenade_Smoke_C.SpawnSingleParticle");
-
-	AGrenade_Smoke_C_SpawnSingleParticle_Params params;
-	params.LocalOffset = LocalOffset;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Grenade_Smoke.Grenade_Smoke_C.OnDetonation
+// Function Grenade_Smoke.Grenade_Smoke_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
+// Parameters:
+// float*                         DeltaSeconds                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
-void AGrenade_Smoke_C::OnDetonation()
+void AGrenade_Smoke_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Grenade_Smoke.Grenade_Smoke_C.OnDetonation");
+	static auto fn = UObject::FindObject<UFunction>("Function Grenade_Smoke.Grenade_Smoke_C.ReceiveTick");
 
-	AGrenade_Smoke_C_OnDetonation_Params params;
+	AGrenade_Smoke_C_ReceiveTick_Params params;
+	params.DeltaSeconds = DeltaSeconds;
 
 	auto flags = fn->FunctionFlags;
 
@@ -117,30 +137,10 @@ void AGrenade_Smoke_C::ReceiveBeginPlay()
 }
 
 
-// Function Grenade_Smoke.Grenade_Smoke_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float*                         DeltaSeconds                   (Parm, ZeroConstructor, IsPlainOldData)
-
-void AGrenade_Smoke_C::ReceiveTick(float* DeltaSeconds)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Grenade_Smoke.Grenade_Smoke_C.ReceiveTick");
-
-	AGrenade_Smoke_C_ReceiveTick_Params params;
-	params.DeltaSeconds = DeltaSeconds;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function Grenade_Smoke.Grenade_Smoke_C.ExecuteUbergraph_Grenade_Smoke
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AGrenade_Smoke_C::ExecuteUbergraph_Grenade_Smoke(int EntryPoint)
 {

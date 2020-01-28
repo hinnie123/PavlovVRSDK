@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 // Function UI_ServerSettings.UI_ServerSettings_C.GetWeapobFilterEnum
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString                 StringEnum                     (Parm, ZeroConstructor)
+// struct FString                 StringEnum                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 // EWeaponFilter                  Enum                           (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 
 void UUI_ServerSettings_C::GetWeapobFilterEnum(const struct FString& StringEnum, EWeaponFilter* Enum)
@@ -39,8 +39,8 @@ void UUI_ServerSettings_C::GetWeapobFilterEnum(const struct FString& StringEnum,
 // Function UI_ServerSettings.UI_ServerSettings_C.UpdateSettings
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FServerSettings         Settings                       (Parm)
-// struct FString                 GameMode                       (Parm, ZeroConstructor)
+// struct FServerSettings         Settings                       (BlueprintVisible, BlueprintReadOnly, Parm)
+// struct FString                 GameMode                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_ServerSettings_C::UpdateSettings(const struct FServerSettings& Settings, const struct FString& GameMode)
 {
@@ -93,9 +93,9 @@ void UUI_ServerSettings_C::BndEvt__applyBtn_K2Node_ComponentBoundEvent_104_OnBut
 
 
 // Function UI_ServerSettings.UI_ServerSettings_C.ExecuteUbergraph_UI_ServerSettings
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_ServerSettings_C::ExecuteUbergraph_UI_ServerSettings(int EntryPoint)
 {
@@ -115,7 +115,7 @@ void UUI_ServerSettings_C::ExecuteUbergraph_UI_ServerSettings(int EntryPoint)
 // Function UI_ServerSettings.UI_ServerSettings_C.OnSettingsApply__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FServerSettings         Settings                       (Parm)
+// struct FServerSettings         Settings                       (BlueprintVisible, BlueprintReadOnly, Parm)
 
 void UUI_ServerSettings_C::OnSettingsApply__DelegateSignature(const struct FServerSettings& Settings)
 {

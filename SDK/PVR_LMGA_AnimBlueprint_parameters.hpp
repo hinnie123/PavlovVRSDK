@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -14,23 +14,8 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
-// Function LMGA_AnimBlueprint.LMGA_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_LMGA_AnimBlueprint_AnimGraphNode_BlendListByBool_DB6651F3494CB099AD77C4B643BE5D2B
-struct ULMGA_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_LMGA_AnimBlueprint_AnimGraphNode_BlendListByBool_DB6651F3494CB099AD77C4B643BE5D2B_Params
-{
-};
-
 // Function LMGA_AnimBlueprint.LMGA_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_LMGA_AnimBlueprint_AnimGraphNode_ModifyBone_F32C7C0142491A59783CC49C851CC96F
 struct ULMGA_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_LMGA_AnimBlueprint_AnimGraphNode_ModifyBone_F32C7C0142491A59783CC49C851CC96F_Params
-{
-};
-
-// Function LMGA_AnimBlueprint.LMGA_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_LMGA_AnimBlueprint_AnimGraphNode_BlendListByBool_E838DC9A437E32241F628B955331DBAD
-struct ULMGA_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_LMGA_AnimBlueprint_AnimGraphNode_BlendListByBool_E838DC9A437E32241F628B955331DBAD_Params
-{
-};
-
-// Function LMGA_AnimBlueprint.LMGA_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_LMGA_AnimBlueprint_AnimGraphNode_BlendListByBool_A931AE0A4BA04117B40BEC9662A19E51
-struct ULMGA_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_LMGA_AnimBlueprint_AnimGraphNode_BlendListByBool_A931AE0A4BA04117B40BEC9662A19E51_Params
 {
 };
 
@@ -62,7 +47,7 @@ struct ULMGA_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_LMGA_An
 // Function LMGA_AnimBlueprint.LMGA_AnimBlueprint_C.ExecuteUbergraph_LMGA_AnimBlueprint
 struct ULMGA_AnimBlueprint_C_ExecuteUbergraph_LMGA_AnimBlueprint_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

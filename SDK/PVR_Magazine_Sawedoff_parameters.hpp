@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -37,7 +37,7 @@ struct AMagazine_Sawedoff_C_OnReleasedFromGun_Params
 // Function Magazine_Sawedoff.Magazine_Sawedoff_C.ExecuteUbergraph_Magazine_Sawedoff
 struct AMagazine_Sawedoff_C_ExecuteUbergraph_Magazine_Sawedoff_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

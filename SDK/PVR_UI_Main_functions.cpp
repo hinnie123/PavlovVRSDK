@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -71,7 +71,7 @@ void UUI_Main_C::ToModeration()
 // Function UI_Main.UI_Main_C.CreateMapBrowser
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UUI_Workshop_C*          Broqwser                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// class UUI_Workshop_C*          Broqwser                       (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData)
 
 void UUI_Main_C::CreateMapBrowser(class UUI_Workshop_C** Broqwser)
 {
@@ -458,8 +458,8 @@ void UUI_Main_C::BndEvt__Button_0_K2Node_ComponentBoundEvent_229_OnButtonClicked
 // Function UI_Main.UI_Main_C.OnCommit_Event_1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FName                   MapUniqueId                    (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           Canceled                       (Parm, ZeroConstructor, IsPlainOldData)
+// struct FName                   MapUniqueId                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// bool                           Canceled                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Main_C::OnCommit_Event_1(const struct FName& MapUniqueId, bool Canceled)
 {
@@ -684,7 +684,7 @@ void UUI_Main_C::BndEvt__AbstainButton_K2Node_ComponentBoundEvent_828_OnButtonCl
 // Function UI_Main.UI_Main_C.OnVoteEnd
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AVote*                   Vote                           (Parm, ZeroConstructor, IsPlainOldData)
+// class AVote*                   Vote                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Main_C::OnVoteEnd(class AVote* Vote)
 {
@@ -718,10 +718,27 @@ void UUI_Main_C::BndEvt__Suicide_K2Node_ComponentBoundEvent_134_OnButtonClicked_
 }
 
 
+// Function UI_Main.UI_Main_C.BndEvt__TutorialButton_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UUI_Main_C::BndEvt__TutorialButton_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Main.UI_Main_C.BndEvt__TutorialButton_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature");
+
+	UUI_Main_C_BndEvt__TutorialButton_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function UI_Main.UI_Main_C.ExecuteUbergraph_UI_Main
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Main_C::ExecuteUbergraph_UI_Main(int EntryPoint)
 {

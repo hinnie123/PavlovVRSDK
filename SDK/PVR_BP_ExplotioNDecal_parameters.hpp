@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -27,7 +27,7 @@ struct ABP_ExplotionDecal_C_ReceiveBeginPlay_Params
 // Function BP_ExplotioNDecal.BP_ExplotionDecal_C.ExecuteUbergraph_BP_ExplotionDecal
 struct ABP_ExplotionDecal_C_ExecuteUbergraph_BP_ExplotionDecal_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

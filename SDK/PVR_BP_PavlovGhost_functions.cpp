@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,9 +13,9 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function BP_PavlovGhost.BP_PavlovGhost_C.SetVRScale
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          Scale                          (Parm, ZeroConstructor, IsPlainOldData)
+// float                          Scale                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void ABP_PavlovGhost_C::SetVRScale(float Scale)
 {
@@ -120,7 +120,7 @@ void ABP_PavlovGhost_C::OnTraveledToSpectatorRoom()
 // Function BP_PavlovGhost.BP_PavlovGhost_C.OnDestroyed_Event_1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                  DestroyedActor                 (Parm, ZeroConstructor, IsPlainOldData)
+// class AActor*                  DestroyedActor                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void ABP_PavlovGhost_C::OnDestroyed_Event_1(class AActor* DestroyedActor)
 {
@@ -140,7 +140,7 @@ void ABP_PavlovGhost_C::OnDestroyed_Event_1(class AActor* DestroyedActor)
 // Function BP_PavlovGhost.BP_PavlovGhost_C.BndEvt__Spectator_K2Node_ComponentBoundEvent_0_VROnSpectatorScaleSignature__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// float                          Scale                          (Parm, ZeroConstructor, IsPlainOldData)
+// float                          Scale                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void ABP_PavlovGhost_C::BndEvt__Spectator_K2Node_ComponentBoundEvent_0_VROnSpectatorScaleSignature__DelegateSignature(float Scale)
 {
@@ -177,14 +177,14 @@ void ABP_PavlovGhost_C::OnGraceTimeEnded()
 // Function BP_PavlovGhost.BP_PavlovGhost_C.OnTeamIdChanged
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// int*                           TeamID                         (Parm, ZeroConstructor, IsPlainOldData)
+// int*                           TeamId                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
-void ABP_PavlovGhost_C::OnTeamIdChanged(int* TeamID)
+void ABP_PavlovGhost_C::OnTeamIdChanged(int* TeamId)
 {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_PavlovGhost.BP_PavlovGhost_C.OnTeamIdChanged");
 
 	ABP_PavlovGhost_C_OnTeamIdChanged_Params params;
-	params.TeamID = TeamID;
+	params.TeamId = TeamId;
 
 	auto flags = fn->FunctionFlags;
 
@@ -229,9 +229,9 @@ void ABP_PavlovGhost_C::OnTeleport()
 
 
 // Function BP_PavlovGhost.BP_PavlovGhost_C.ExecuteUbergraph_BP_PavlovGhost
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void ABP_PavlovGhost_C::ExecuteUbergraph_BP_PavlovGhost(int EntryPoint)
 {

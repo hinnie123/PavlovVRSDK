@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -32,8 +32,8 @@ void AGrenade_Base_C::UserConstructionScript()
 // Function Grenade_Base.Grenade_Base_C.BndEvt__PinHandle_K2Node_ComponentBoundEvent_0_VRHandleOnVectorInputReceivedSignature__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// struct FVector                 Input                          (Parm, IsPlainOldData)
-// struct FVector                 InputDelta                     (Parm, IsPlainOldData)
+// struct FVector                 Input                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 InputDelta                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AGrenade_Base_C::BndEvt__PinHandle_K2Node_ComponentBoundEvent_0_VRHandleOnVectorInputReceivedSignature__DelegateSignature(const struct FVector& Input, const struct FVector& InputDelta)
 {
@@ -88,7 +88,7 @@ void AGrenade_Base_C::OnDetonation()
 // Function Grenade_Base.Grenade_Base_C.Physicalize
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// bool*                          bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+// bool*                          bEnabled                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AGrenade_Base_C::Physicalize(bool* bEnabled)
 {
@@ -106,9 +106,9 @@ void AGrenade_Base_C::Physicalize(bool* bEnabled)
 
 
 // Function Grenade_Base.Grenade_Base_C.ExecuteUbergraph_Grenade_Base
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AGrenade_Base_C::ExecuteUbergraph_Grenade_Base(int EntryPoint)
 {

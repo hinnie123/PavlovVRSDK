@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,7 +13,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function WaypointMoveTo.WaypointMoveTo_C.MoveToWaypoint
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 
 void UWaypointMoveTo_C::MoveToWaypoint()
 {
@@ -30,9 +30,9 @@ void UWaypointMoveTo_C::MoveToWaypoint()
 
 
 // Function WaypointMoveTo.WaypointMoveTo_C.GetMoveLocation
-// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FVector                 Location                       (Parm, OutParm, IsPlainOldData)
+// struct FVector                 Location                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 
 void UWaypointMoveTo_C::GetMoveLocation(struct FVector* Location)
 {
@@ -54,8 +54,8 @@ void UWaypointMoveTo_C::GetMoveLocation(struct FVector* Location)
 // Function WaypointMoveTo.WaypointMoveTo_C.ReceiveExecuteAI
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class AAIController**          OwnerController                (Parm, ZeroConstructor, IsPlainOldData)
-// class APawn**                  ControlledPawn                 (Parm, ZeroConstructor, IsPlainOldData)
+// class AAIController**          OwnerController                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// class APawn**                  ControlledPawn                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UWaypointMoveTo_C::ReceiveExecuteAI(class AAIController** OwnerController, class APawn** ControlledPawn)
 {
@@ -76,9 +76,9 @@ void UWaypointMoveTo_C::ReceiveExecuteAI(class AAIController** OwnerController, 
 // Function WaypointMoveTo.WaypointMoveTo_C.ReceiveTickAI
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class AAIController**          OwnerController                (Parm, ZeroConstructor, IsPlainOldData)
-// class APawn**                  ControlledPawn                 (Parm, ZeroConstructor, IsPlainOldData)
-// float*                         DeltaSeconds                   (Parm, ZeroConstructor, IsPlainOldData)
+// class AAIController**          OwnerController                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// class APawn**                  ControlledPawn                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// float*                         DeltaSeconds                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UWaypointMoveTo_C::ReceiveTickAI(class AAIController** OwnerController, class APawn** ControlledPawn, float* DeltaSeconds)
 {
@@ -98,9 +98,9 @@ void UWaypointMoveTo_C::ReceiveTickAI(class AAIController** OwnerController, cla
 
 
 // Function WaypointMoveTo.WaypointMoveTo_C.ExecuteUbergraph_WaypointMoveTo
-// (HasDefaults)
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UWaypointMoveTo_C::ExecuteUbergraph_WaypointMoveTo(int EntryPoint)
 {

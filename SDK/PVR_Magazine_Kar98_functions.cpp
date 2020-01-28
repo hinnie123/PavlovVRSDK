@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -64,9 +64,9 @@ void AMagazine_Kar98_C::OnLoadedIntoGun()
 
 
 // Function Magazine_Kar98.Magazine_Kar98_C.ExecuteUbergraph_Magazine_Kar98
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AMagazine_Kar98_C::ExecuteUbergraph_Magazine_Kar98(int EntryPoint)
 {

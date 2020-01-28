@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,7 +13,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_KillCam.BP_KillCam_C
-// 0x0000 (0x0438 - 0x0438)
+// 0x0000 (0x03D8 - 0x03D8)
 class ABP_KillCam_C : public AKillCam
 {
 public:

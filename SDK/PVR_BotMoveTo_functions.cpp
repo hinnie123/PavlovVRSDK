@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,10 +13,10 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function BotMoveTo.BotMoveTo_C.GetRandomLocation
-// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class AVRPawn*                 PawnSelf                       (Parm, ZeroConstructor, IsPlainOldData)
-// struct FVector                 Location                       (Parm, OutParm, IsPlainOldData)
+// class AVRPawn*                 PawnSelf                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 Location                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 
 void UBotMoveTo_C::GetRandomLocation(class AVRPawn* PawnSelf, struct FVector* Location)
 {
@@ -37,10 +37,10 @@ void UBotMoveTo_C::GetRandomLocation(class AVRPawn* PawnSelf, struct FVector* Lo
 
 
 // Function BotMoveTo.BotMoveTo_C.GetMoveLocation
-// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class APavlovPawn*             PawnSelf                       (Parm, ZeroConstructor, IsPlainOldData)
-// struct FVector                 Location                       (Parm, OutParm, IsPlainOldData)
+// class APavlovPawn*             PawnSelf                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 Location                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 
 void UBotMoveTo_C::GetMoveLocation(class APavlovPawn* PawnSelf, struct FVector* Location)
 {
@@ -63,7 +63,7 @@ void UBotMoveTo_C::GetMoveLocation(class APavlovPawn* PawnSelf, struct FVector* 
 // Function BotMoveTo.BotMoveTo_C.GetControllerAndGun
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
+// class AActor*                  Actor                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 // class AGun_Base_C*             Gun                            (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // class AVRItemController*       Controller                     (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 
@@ -90,7 +90,7 @@ void UBotMoveTo_C::GetControllerAndGun(class AActor* Actor, class AGun_Base_C** 
 // Function BotMoveTo.BotMoveTo_C.OnFail_D8AD614E42922E19A998A988427840D0
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TEnumAsByte<EPathFollowingResult> MovementResult                 (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EPathFollowingResult> MovementResult                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UBotMoveTo_C::OnFail_D8AD614E42922E19A998A988427840D0(TEnumAsByte<EPathFollowingResult> MovementResult)
 {
@@ -110,7 +110,7 @@ void UBotMoveTo_C::OnFail_D8AD614E42922E19A998A988427840D0(TEnumAsByte<EPathFoll
 // Function BotMoveTo.BotMoveTo_C.OnSuccess_D8AD614E42922E19A998A988427840D0
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TEnumAsByte<EPathFollowingResult> MovementResult                 (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EPathFollowingResult> MovementResult                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UBotMoveTo_C::OnSuccess_D8AD614E42922E19A998A988427840D0(TEnumAsByte<EPathFollowingResult> MovementResult)
 {
@@ -130,8 +130,8 @@ void UBotMoveTo_C::OnSuccess_D8AD614E42922E19A998A988427840D0(TEnumAsByte<EPathF
 // Function BotMoveTo.BotMoveTo_C.ReceiveExecuteAI
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class AAIController**          OwnerController                (Parm, ZeroConstructor, IsPlainOldData)
-// class APawn**                  ControlledPawn                 (Parm, ZeroConstructor, IsPlainOldData)
+// class AAIController**          OwnerController                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// class APawn**                  ControlledPawn                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UBotMoveTo_C::ReceiveExecuteAI(class AAIController** OwnerController, class APawn** ControlledPawn)
 {
@@ -150,9 +150,9 @@ void UBotMoveTo_C::ReceiveExecuteAI(class AAIController** OwnerController, class
 
 
 // Function BotMoveTo.BotMoveTo_C.ExecuteUbergraph_BotMoveTo
-// (HasDefaults)
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UBotMoveTo_C::ExecuteUbergraph_BotMoveTo(int EntryPoint)
 {

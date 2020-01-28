@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 // Function BP_PavlovGhostController.BP_PavlovGhostController_C.SetVRScale
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          Scale                          (Parm, ZeroConstructor, IsPlainOldData)
+// float                          Scale                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void ABP_PavlovGhostController_C::SetVRScale(float Scale)
 {
@@ -69,7 +69,7 @@ void ABP_PavlovGhostController_C::ReceiveBeginPlay()
 // Function BP_PavlovGhostController.BP_PavlovGhostController_C.GripChanged
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// bool*                          bNewGrip                       (Parm, ZeroConstructor, IsPlainOldData)
+// bool*                          bNewGrip                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void ABP_PavlovGhostController_C::GripChanged(bool* bNewGrip)
 {
@@ -89,7 +89,7 @@ void ABP_PavlovGhostController_C::GripChanged(bool* bNewGrip)
 // Function BP_PavlovGhostController.BP_PavlovGhostController_C.OnPointModeChanged
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// EGhostPointMode*               OldPointMode                   (Parm, ZeroConstructor, IsPlainOldData)
+// EGhostPointMode*               OldPointMode                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void ABP_PavlovGhostController_C::OnPointModeChanged(EGhostPointMode* OldPointMode)
 {
@@ -107,9 +107,9 @@ void ABP_PavlovGhostController_C::OnPointModeChanged(EGhostPointMode* OldPointMo
 
 
 // Function BP_PavlovGhostController.BP_PavlovGhostController_C.ExecuteUbergraph_BP_PavlovGhostController
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void ABP_PavlovGhostController_C::ExecuteUbergraph_BP_PavlovGhostController(int EntryPoint)
 {

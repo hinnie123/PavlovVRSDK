@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -49,7 +49,7 @@ void AToolTip_TwoHand_C::ReceiveBeginPlay()
 // Function ToolTip_TwoHand.ToolTip_TwoHand_C.OnDestroyed_Event_1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                  DestroyedActor                 (Parm, ZeroConstructor, IsPlainOldData)
+// class AActor*                  DestroyedActor                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AToolTip_TwoHand_C::OnDestroyed_Event_1(class AActor* DestroyedActor)
 {
@@ -84,9 +84,9 @@ void AToolTip_TwoHand_C::CustomEvent_1()
 
 
 // Function ToolTip_TwoHand.ToolTip_TwoHand_C.ExecuteUbergraph_ToolTip_TwoHand
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AToolTip_TwoHand_C::ExecuteUbergraph_ToolTip_TwoHand(int EntryPoint)
 {

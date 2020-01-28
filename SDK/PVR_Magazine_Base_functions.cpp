@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -49,7 +49,7 @@ void AMagazine_Base_C::UserConstructionScript()
 // Function Magazine_Base.Magazine_Base_C.Physicalize
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// bool*                          bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+// bool*                          bEnabled                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AMagazine_Base_C::Physicalize(bool* bEnabled)
 {
@@ -103,7 +103,7 @@ void AMagazine_Base_C::ReceiveBeginPlay()
 // Function Magazine_Base.Magazine_Base_C.Used
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// bool*                          bJustPicked                    (Parm, ZeroConstructor, IsPlainOldData)
+// bool*                          bJustPicked                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AMagazine_Base_C::Used(bool* bJustPicked)
 {
@@ -138,9 +138,9 @@ void AMagazine_Base_C::OnBulletsChanged()
 
 
 // Function Magazine_Base.Magazine_Base_C.ExecuteUbergraph_Magazine_Base
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AMagazine_Base_C::ExecuteUbergraph_Magazine_Base(int EntryPoint)
 {

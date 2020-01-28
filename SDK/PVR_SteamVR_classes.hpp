@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -48,7 +48,7 @@ public:
 
 	void STATIC_GetValidTrackedDeviceIds(ESteamVRTrackedDeviceType DeviceType, TArray<int>* OutTrackedDeviceIds);
 	bool STATIC_GetTrackedDevicePositionAndOrientation(int DeviceID, struct FVector* OutPosition, struct FRotator* OutOrientation);
-	bool STATIC_GetHandPositionAndOrientation(int ControllerIndex, EControllerHand Hand, struct FVector* OutPosition, struct FRotator* OutOrientation);
+	bool STATIC_GetHandPositionAndOrientation(int ControllerIndex, EControllerHand hand, struct FVector* OutPosition, struct FRotator* OutOrientation);
 };
 
 

@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -32,7 +32,7 @@ void AGun_Uzi_C::UserConstructionScript()
 // Function Gun_Uzi.Gun_Uzi_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// float*                         DeltaSeconds                   (Parm, ZeroConstructor, IsPlainOldData)
+// float*                         DeltaSeconds                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AGun_Uzi_C::ReceiveTick(float* DeltaSeconds)
 {
@@ -50,9 +50,9 @@ void AGun_Uzi_C::ReceiveTick(float* DeltaSeconds)
 
 
 // Function Gun_Uzi.Gun_Uzi_C.ExecuteUbergraph_Gun_Uzi
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AGun_Uzi_C::ExecuteUbergraph_Gun_Uzi(int EntryPoint)
 {

@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -76,9 +76,9 @@ struct FSlateBrush UUI_KillerCam_KillerInfo_C::Get_weaponicon_Brush_1()
 
 
 // Function UI_KillerCam_KillerInfo.UI_KillerCam_KillerInfo_C.GetColorAndOpacity_1
-// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FLinearColor            ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// struct FLinearColor            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
 struct FLinearColor UUI_KillerCam_KillerInfo_C::GetColorAndOpacity_1()
 {
@@ -160,9 +160,11 @@ struct FSlateBrush UUI_KillerCam_KillerInfo_C::Get_Avatar_Brush_1()
 
 
 // Function UI_KillerCam_KillerInfo.UI_KillerCam_KillerInfo_C.GetText_1
-// (Public, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FText                   ReturnValue                    (Parm, OutParm, ReturnParm)
 
-void UUI_KillerCam_KillerInfo_C::GetText_1()
+struct FText UUI_KillerCam_KillerInfo_C::GetText_1()
 {
 	static auto fn = UObject::FindObject<UFunction>("Function UI_KillerCam_KillerInfo.UI_KillerCam_KillerInfo_C.GetText_1");
 
@@ -173,6 +175,8 @@ void UUI_KillerCam_KillerInfo_C::GetText_1()
 	UObject::ProcessEvent(fn, &params);
 
 	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
 }
 
 

@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -14,31 +14,12 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
-// Function GameplayTags.GameplayTagAssetInterface.HasMatchingGameplayTag
-struct UGameplayTagAssetInterface_HasMatchingGameplayTag_Params
+// Function GameplayTags.BlueprintGameplayTagLibrary.RemoveGameplayTag
+struct UBlueprintGameplayTagLibrary_RemoveGameplayTag_Params
 {
-	struct FGameplayTag                                TagToCheck;                                               // (Parm)
+	struct FGameplayTagContainer                       TagContainer;                                             // (Parm, OutParm, ReferenceParm)
+	struct FGameplayTag                                Tag;                                                      // (Parm)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function GameplayTags.GameplayTagAssetInterface.HasAnyMatchingGameplayTags
-struct UGameplayTagAssetInterface_HasAnyMatchingGameplayTags_Params
-{
-	struct FGameplayTagContainer                       TagContainer;                                             // (ConstParm, Parm, OutParm, ReferenceParm)
-	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function GameplayTags.GameplayTagAssetInterface.HasAllMatchingGameplayTags
-struct UGameplayTagAssetInterface_HasAllMatchingGameplayTags_Params
-{
-	struct FGameplayTagContainer                       TagContainer;                                             // (ConstParm, Parm, OutParm, ReferenceParm)
-	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function GameplayTags.GameplayTagAssetInterface.GetOwnedGameplayTags
-struct UGameplayTagAssetInterface_GetOwnedGameplayTags_Params
-{
-	struct FGameplayTagContainer                       TagContainer;                                             // (Parm, OutParm)
 };
 
 // Function GameplayTags.BlueprintGameplayTagLibrary.NotEqual_TagTag
@@ -254,8 +235,35 @@ struct UBlueprintGameplayTagLibrary_AppendGameplayTagContainers_Params
 // Function GameplayTags.BlueprintGameplayTagLibrary.AddGameplayTag
 struct UBlueprintGameplayTagLibrary_AddGameplayTag_Params
 {
-	struct FGameplayTagContainer                       InOutTagContainer;                                        // (Parm, OutParm, ReferenceParm)
+	struct FGameplayTagContainer                       TagContainer;                                             // (Parm, OutParm, ReferenceParm)
 	struct FGameplayTag                                Tag;                                                      // (Parm)
+};
+
+// Function GameplayTags.GameplayTagAssetInterface.HasMatchingGameplayTag
+struct UGameplayTagAssetInterface_HasMatchingGameplayTag_Params
+{
+	struct FGameplayTag                                TagToCheck;                                               // (Parm)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function GameplayTags.GameplayTagAssetInterface.HasAnyMatchingGameplayTags
+struct UGameplayTagAssetInterface_HasAnyMatchingGameplayTags_Params
+{
+	struct FGameplayTagContainer                       TagContainer;                                             // (ConstParm, Parm, OutParm, ReferenceParm)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function GameplayTags.GameplayTagAssetInterface.HasAllMatchingGameplayTags
+struct UGameplayTagAssetInterface_HasAllMatchingGameplayTags_Params
+{
+	struct FGameplayTagContainer                       TagContainer;                                             // (ConstParm, Parm, OutParm, ReferenceParm)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function GameplayTags.GameplayTagAssetInterface.GetOwnedGameplayTags
+struct UGameplayTagAssetInterface_GetOwnedGameplayTags_Params
+{
+	struct FGameplayTagContainer                       TagContainer;                                             // (Parm, OutParm)
 };
 
 }

@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -34,14 +34,14 @@ struct UUI_Stereo_Vote_Generic_C_Construct_Params
 // Function UI_Stereo_Vote_Generic.UI_Stereo_Vote_Generic_C.Tick
 struct UUI_Stereo_Vote_Generic_C_Tick_Params
 {
-	struct FGeometry*                                  MyGeometry;                                               // (Parm, IsPlainOldData)
-	float*                                             InDeltaTime;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FGeometry*                                  MyGeometry;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData)
+	float*                                             InDeltaTime;                                              // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_Stereo_Vote_Generic.UI_Stereo_Vote_Generic_C.ExecuteUbergraph_UI_Stereo_Vote_Generic
 struct UUI_Stereo_Vote_Generic_C_ExecuteUbergraph_UI_Stereo_Vote_Generic_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -33,8 +33,8 @@ struct ABP_BotAIController_C_ReloadWeapon_Params
 // Function BP_BotAIController.BP_BotAIController_C.AreControllersFoes
 struct ABP_BotAIController_C_AreControllersFoes_Params
 {
-	class AController*                                 A;                                                        // (Parm, ZeroConstructor, IsPlainOldData)
-	class AController*                                 B;                                                        // (Parm, ZeroConstructor, IsPlainOldData)
+	class AController*                                 A;                                                        // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+	class AController*                                 B;                                                        // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               Is_Foe;                                                   // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -46,19 +46,19 @@ struct ABP_BotAIController_C_UserConstructionScript_Params
 // Function BP_BotAIController.BP_BotAIController_C.OnKill_Event_1
 struct ABP_BotAIController_C_OnKill_Event_1_Params
 {
-	class AActor*                                      Owner;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	class AActor*                                      Owner;                                                    // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BP_BotAIController.BP_BotAIController_C.OnUnpossess
 struct ABP_BotAIController_C_OnUnpossess_Params
 {
-	class APawn**                                      UnpossessedPawn;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	class APawn**                                      UnpossessedPawn;                                          // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BP_BotAIController.BP_BotAIController_C.OnPossess
 struct ABP_BotAIController_C_OnPossess_Params
 {
-	class APawn**                                      PossessedPawn;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	class APawn**                                      PossessedPawn;                                            // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BP_BotAIController.BP_BotAIController_C.ReceiveBeginPlay
@@ -69,7 +69,7 @@ struct ABP_BotAIController_C_ReceiveBeginPlay_Params
 // Function BP_BotAIController.BP_BotAIController_C.ExecuteUbergraph_BP_BotAIController
 struct ABP_BotAIController_C_ExecuteUbergraph_BP_BotAIController_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

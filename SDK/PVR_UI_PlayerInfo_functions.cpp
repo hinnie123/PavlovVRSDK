@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -76,9 +76,9 @@ struct FText UUI_PlayerInfo_C::Get_PlayerName_Text_1()
 
 
 // Function UI_PlayerInfo.UI_PlayerInfo_C.GetColorAndOpacity_1
-// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FLinearColor            ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// struct FLinearColor            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
 struct FLinearColor UUI_PlayerInfo_C::GetColorAndOpacity_1()
 {
@@ -120,7 +120,7 @@ struct FSlateBrush UUI_PlayerInfo_C::GetBrush_1()
 // Function UI_PlayerInfo.UI_PlayerInfo_C.SetPlayerState
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class APavlovPlayerState*      PlayerState                    (Parm, ZeroConstructor, IsPlainOldData)
+// class APavlovPlayerState*      PlayerState                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_PlayerInfo_C::SetPlayerState(class APavlovPlayerState* PlayerState)
 {
@@ -140,8 +140,8 @@ void UUI_PlayerInfo_C::SetPlayerState(class APavlovPlayerState* PlayerState)
 // Function UI_PlayerInfo.UI_PlayerInfo_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
-// float*                         InDeltaTime                    (Parm, ZeroConstructor, IsPlainOldData)
+// struct FGeometry*              MyGeometry                     (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData)
+// float*                         InDeltaTime                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_PlayerInfo_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
@@ -160,9 +160,9 @@ void UUI_PlayerInfo_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 
 
 // Function UI_PlayerInfo.UI_PlayerInfo_C.ExecuteUbergraph_UI_PlayerInfo
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_PlayerInfo_C::ExecuteUbergraph_UI_PlayerInfo(int EntryPoint)
 {

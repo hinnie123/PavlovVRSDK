@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -8,20 +8,6 @@
 
 namespace SDK
 {
-//---------------------------------------------------------------------------
-//Enums
-//---------------------------------------------------------------------------
-
-// Enum BuildPatchServices.EManifestFileHeader
-enum class EManifestFileHeader : uint8_t
-{
-	STORED_RAW                     = 0,
-	STORED_COMPRESSED              = 1,
-	STORED_MAX                     = 2
-};
-
-
-
 //---------------------------------------------------------------------------
 //Script Structs
 //---------------------------------------------------------------------------
@@ -37,13 +23,13 @@ struct FSHAHashData
 // 0x0018
 struct FChunkPartData
 {
-	struct FGuid                                       Guid;                                                     // 0x0000(0x0010) (IsPlainOldData)
+	struct FGuid                                       Guid;                                                     // 0x0000(0x0010) (ZeroConstructor, IsPlainOldData)
 	uint32_t                                           Offset;                                                   // 0x0010(0x0004) (ZeroConstructor, IsPlainOldData)
 	uint32_t                                           Size;                                                     // 0x0014(0x0004) (ZeroConstructor, IsPlainOldData)
 };
 
 // ScriptStruct BuildPatchServices.FileManifestData
-// 0x0070
+// 0x0068
 struct FFileManifestData
 {
 	struct FString                                     Filename;                                                 // 0x0000(0x0010) (ZeroConstructor)
@@ -56,14 +42,14 @@ struct FFileManifestData
 	struct FString                                     SymlinkTarget;                                            // 0x0050(0x0010) (ZeroConstructor)
 	bool                                               bIsReadOnly;                                              // 0x0060(0x0001) (ZeroConstructor, IsPlainOldData)
 	bool                                               bIsCompressed;                                            // 0x0061(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0xE];                                       // 0x0062(0x000E) MISSED OFFSET
+	unsigned char                                      UnknownData02[0x6];                                       // 0x0062(0x0006) MISSED OFFSET
 };
 
 // ScriptStruct BuildPatchServices.ChunkInfoData
 // 0x0040
 struct FChunkInfoData
 {
-	struct FGuid                                       Guid;                                                     // 0x0000(0x0010) (IsPlainOldData)
+	struct FGuid                                       Guid;                                                     // 0x0000(0x0010) (ZeroConstructor, IsPlainOldData)
 	uint64_t                                           Hash;                                                     // 0x0010(0x0008) (ZeroConstructor, IsPlainOldData)
 	struct FSHAHashData                                ShaHash;                                                  // 0x0018(0x0014)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x002C(0x0004) MISSED OFFSET

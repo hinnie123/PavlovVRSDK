@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -66,7 +66,7 @@ void AGun_Sawedoff_C::OnMagBoltRelease_Event_1()
 // Function Gun_Sawedoff.Gun_Sawedoff_C.OnBarrelChanged_Event_1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           bOpen                          (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bOpen                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AGun_Sawedoff_C::OnBarrelChanged_Event_1(bool bOpen)
 {
@@ -86,7 +86,7 @@ void AGun_Sawedoff_C::OnBarrelChanged_Event_1(bool bOpen)
 // Function Gun_Sawedoff.Gun_Sawedoff_C.CustomEvent_2
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FName                   Name                           (Parm, ZeroConstructor, IsPlainOldData)
+// struct FName                   Name                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AGun_Sawedoff_C::CustomEvent_2(const struct FName& Name)
 {
@@ -138,9 +138,9 @@ void AGun_Sawedoff_C::SetupClose()
 
 
 // Function Gun_Sawedoff.Gun_Sawedoff_C.ExecuteUbergraph_Gun_Sawedoff
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AGun_Sawedoff_C::ExecuteUbergraph_Gun_Sawedoff(int EntryPoint)
 {

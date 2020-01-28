@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -17,7 +17,7 @@ namespace SDK
 // Function BP_PavlovGhost.BP_PavlovGhost_C.SetVRScale
 struct ABP_PavlovGhost_C_SetVRScale_Params
 {
-	float                                              Scale;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              Scale;                                                    // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BP_PavlovGhost.BP_PavlovGhost_C.UserConstructionScript
@@ -48,13 +48,13 @@ struct ABP_PavlovGhost_C_OnTraveledToSpectatorRoom_Params
 // Function BP_PavlovGhost.BP_PavlovGhost_C.OnDestroyed_Event_1
 struct ABP_PavlovGhost_C_OnDestroyed_Event_1_Params
 {
-	class AActor*                                      DestroyedActor;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	class AActor*                                      DestroyedActor;                                           // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BP_PavlovGhost.BP_PavlovGhost_C.BndEvt__Spectator_K2Node_ComponentBoundEvent_0_VROnSpectatorScaleSignature__DelegateSignature
 struct ABP_PavlovGhost_C_BndEvt__Spectator_K2Node_ComponentBoundEvent_0_VROnSpectatorScaleSignature__DelegateSignature_Params
 {
-	float                                              Scale;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              Scale;                                                    // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BP_PavlovGhost.BP_PavlovGhost_C.OnGraceTimeEnded
@@ -65,7 +65,7 @@ struct ABP_PavlovGhost_C_OnGraceTimeEnded_Params
 // Function BP_PavlovGhost.BP_PavlovGhost_C.OnTeamIdChanged
 struct ABP_PavlovGhost_C_OnTeamIdChanged_Params
 {
-	int*                                               TeamID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	int*                                               TeamId;                                                   // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BP_PavlovGhost.BP_PavlovGhost_C.OnPreTeleport
@@ -81,7 +81,7 @@ struct ABP_PavlovGhost_C_OnTeleport_Params
 // Function BP_PavlovGhost.BP_PavlovGhost_C.ExecuteUbergraph_BP_PavlovGhost
 struct ABP_PavlovGhost_C_ExecuteUbergraph_BP_PavlovGhost_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

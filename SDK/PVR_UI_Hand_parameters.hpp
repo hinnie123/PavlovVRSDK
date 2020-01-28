@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -17,7 +17,7 @@ namespace SDK
 // Function UI_Hand.UI_Hand_C.SetScoreboard
 struct UUI_Hand_C_SetScoreboard_Params
 {
-	bool                                               Enabled;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               Enabled;                                                  // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

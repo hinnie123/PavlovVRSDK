@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 // Function ToolTipController_Base.ToolTipController_Base_C.GetCanvas
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UUI_ToolTipCanvas_C*     Widget                         (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// class UUI_ToolTipCanvas_C*     Widget                         (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData)
 
 void AToolTipController_Base_C::GetCanvas(class UUI_ToolTipCanvas_C** Widget)
 {
@@ -71,7 +71,7 @@ void AToolTipController_Base_C::ReceiveBeginPlay()
 // Function ToolTipController_Base.ToolTipController_Base_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// float*                         DeltaSeconds                   (Parm, ZeroConstructor, IsPlainOldData)
+// float*                         DeltaSeconds                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AToolTipController_Base_C::ReceiveTick(float* DeltaSeconds)
 {
@@ -89,9 +89,9 @@ void AToolTipController_Base_C::ReceiveTick(float* DeltaSeconds)
 
 
 // Function ToolTipController_Base.ToolTipController_Base_C.ExecuteUbergraph_ToolTipController_Base
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AToolTipController_Base_C::ExecuteUbergraph_ToolTipController_Base(int EntryPoint)
 {

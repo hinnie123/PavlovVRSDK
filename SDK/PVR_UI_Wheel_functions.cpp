@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,9 +13,9 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function UI_Wheel.UI_Wheel_C.Get_inner_ColorAndOpacity_1
-// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FLinearColor            ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// struct FLinearColor            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
 struct FLinearColor UUI_Wheel_C::Get_inner_ColorAndOpacity_1()
 {
@@ -53,8 +53,8 @@ void UUI_Wheel_C::Construct()
 // Function UI_Wheel.UI_Wheel_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
-// float*                         InDeltaTime                    (Parm, ZeroConstructor, IsPlainOldData)
+// struct FGeometry*              MyGeometry                     (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData)
+// float*                         InDeltaTime                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Wheel_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
@@ -90,9 +90,9 @@ void UUI_Wheel_C::OnWheelUpdate()
 
 
 // Function UI_Wheel.UI_Wheel_C.ExecuteUbergraph_UI_Wheel
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Wheel_C::ExecuteUbergraph_UI_Wheel(int EntryPoint)
 {

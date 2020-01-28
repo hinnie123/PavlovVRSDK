@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -12,14 +12,14 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
-// Function M9_AnimBlueprint.M9_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_M9_AnimBlueprint_AnimGraphNode_ModifyBone_4086458041BED2C76C8226980768D68B
+// Function M9_AnimBlueprint.M9_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_M9_AnimBlueprint_AnimGraphNode_ModifyBone_87628FA0472AFC3E6687F2883C7A1F89
 // (BlueprintEvent)
 
-void UM9_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_M9_AnimBlueprint_AnimGraphNode_ModifyBone_4086458041BED2C76C8226980768D68B()
+void UM9_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_M9_AnimBlueprint_AnimGraphNode_ModifyBone_87628FA0472AFC3E6687F2883C7A1F89()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function M9_AnimBlueprint.M9_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_M9_AnimBlueprint_AnimGraphNode_ModifyBone_4086458041BED2C76C8226980768D68B");
+	static auto fn = UObject::FindObject<UFunction>("Function M9_AnimBlueprint.M9_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_M9_AnimBlueprint_AnimGraphNode_ModifyBone_87628FA0472AFC3E6687F2883C7A1F89");
 
-	UM9_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_M9_AnimBlueprint_AnimGraphNode_ModifyBone_4086458041BED2C76C8226980768D68B_Params params;
+	UM9_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_M9_AnimBlueprint_AnimGraphNode_ModifyBone_87628FA0472AFC3E6687F2883C7A1F89_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -29,31 +29,14 @@ void UM9_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_M9_AnimBlu
 }
 
 
-// Function M9_AnimBlueprint.M9_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_M9_AnimBlueprint_AnimGraphNode_ModifyBone_94FB297C46B81B3281E9F293198D9E80
+// Function M9_AnimBlueprint.M9_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_M9_AnimBlueprint_AnimGraphNode_ModifyBone_60F625414B9FECF60F3BA1AC26F0893F
 // (BlueprintEvent)
 
-void UM9_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_M9_AnimBlueprint_AnimGraphNode_ModifyBone_94FB297C46B81B3281E9F293198D9E80()
+void UM9_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_M9_AnimBlueprint_AnimGraphNode_ModifyBone_60F625414B9FECF60F3BA1AC26F0893F()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function M9_AnimBlueprint.M9_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_M9_AnimBlueprint_AnimGraphNode_ModifyBone_94FB297C46B81B3281E9F293198D9E80");
+	static auto fn = UObject::FindObject<UFunction>("Function M9_AnimBlueprint.M9_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_M9_AnimBlueprint_AnimGraphNode_ModifyBone_60F625414B9FECF60F3BA1AC26F0893F");
 
-	UM9_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_M9_AnimBlueprint_AnimGraphNode_ModifyBone_94FB297C46B81B3281E9F293198D9E80_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function M9_AnimBlueprint.M9_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_M9_AnimBlueprint_AnimGraphNode_ModifyBone_A00145E84D268731D08740BA98E4630F
-// (BlueprintEvent)
-
-void UM9_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_M9_AnimBlueprint_AnimGraphNode_ModifyBone_A00145E84D268731D08740BA98E4630F()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function M9_AnimBlueprint.M9_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_M9_AnimBlueprint_AnimGraphNode_ModifyBone_A00145E84D268731D08740BA98E4630F");
-
-	UM9_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_M9_AnimBlueprint_AnimGraphNode_ModifyBone_A00145E84D268731D08740BA98E4630F_Params params;
+	UM9_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_M9_AnimBlueprint_AnimGraphNode_ModifyBone_60F625414B9FECF60F3BA1AC26F0893F_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -64,9 +47,9 @@ void UM9_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_M9_AnimBlu
 
 
 // Function M9_AnimBlueprint.M9_AnimBlueprint_C.ExecuteUbergraph_M9_AnimBlueprint
-// (HasDefaults)
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UM9_AnimBlueprint_C::ExecuteUbergraph_M9_AnimBlueprint(int EntryPoint)
 {

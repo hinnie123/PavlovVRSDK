@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 // Function BP_TeamSpecCycler.BP_TeamSpecCycler_C.SpecIndex
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int                            Index                          (Parm, ZeroConstructor, IsPlainOldData)
+// int                            Index                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 // bool                           Success                        (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 
 void UBP_TeamSpecCycler_C::SpecIndex(int Index, bool* Success)
@@ -90,7 +90,7 @@ void UBP_TeamSpecCycler_C::CycleNext()
 // Function BP_TeamSpecCycler.BP_TeamSpecCycler_C.Cycle
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           Next                           (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           Next                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UBP_TeamSpecCycler_C::Cycle(bool Next)
 {
@@ -110,16 +110,16 @@ void UBP_TeamSpecCycler_C::Cycle(bool Next)
 // Function BP_TeamSpecCycler.BP_TeamSpecCycler_C.OnDrySpecPlayer__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int                            Index                          (Parm, ZeroConstructor, IsPlainOldData)
-// int                            TeamID                         (Parm, ZeroConstructor, IsPlainOldData)
+// int                            Index                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// int                            TeamId                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
-void UBP_TeamSpecCycler_C::OnDrySpecPlayer__DelegateSignature(int Index, int TeamID)
+void UBP_TeamSpecCycler_C::OnDrySpecPlayer__DelegateSignature(int Index, int TeamId)
 {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_TeamSpecCycler.BP_TeamSpecCycler_C.OnDrySpecPlayer__DelegateSignature");
 
 	UBP_TeamSpecCycler_C_OnDrySpecPlayer__DelegateSignature_Params params;
 	params.Index = Index;
-	params.TeamID = TeamID;
+	params.TeamId = TeamId;
 
 	auto flags = fn->FunctionFlags;
 
@@ -132,12 +132,12 @@ void UBP_TeamSpecCycler_C::OnDrySpecPlayer__DelegateSignature(int Index, int Tea
 // Function BP_TeamSpecCycler.BP_TeamSpecCycler_C.OnSpecPlayer__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class APavlovPawn*             Pawn                           (Parm, ZeroConstructor, IsPlainOldData)
-// class APavlovPlayerState*      PlayerState                    (Parm, ZeroConstructor, IsPlainOldData)
-// int                            Index                          (Parm, ZeroConstructor, IsPlainOldData)
-// int                            TeamID                         (Parm, ZeroConstructor, IsPlainOldData)
+// class APavlovPawn*             Pawn                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// class APavlovPlayerState*      PlayerState                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// int                            Index                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// int                            TeamId                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
-void UBP_TeamSpecCycler_C::OnSpecPlayer__DelegateSignature(class APavlovPawn* Pawn, class APavlovPlayerState* PlayerState, int Index, int TeamID)
+void UBP_TeamSpecCycler_C::OnSpecPlayer__DelegateSignature(class APavlovPawn* Pawn, class APavlovPlayerState* PlayerState, int Index, int TeamId)
 {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_TeamSpecCycler.BP_TeamSpecCycler_C.OnSpecPlayer__DelegateSignature");
 
@@ -145,7 +145,7 @@ void UBP_TeamSpecCycler_C::OnSpecPlayer__DelegateSignature(class APavlovPawn* Pa
 	params.Pawn = Pawn;
 	params.PlayerState = PlayerState;
 	params.Index = Index;
-	params.TeamID = TeamID;
+	params.TeamId = TeamId;
 
 	auto flags = fn->FunctionFlags;
 

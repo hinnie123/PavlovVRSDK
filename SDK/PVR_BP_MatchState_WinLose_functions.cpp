@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -47,9 +47,9 @@ void ABP_MatchState_WinLose_C::ReceiveBeginPlay()
 
 
 // Function BP_MatchState_WinLose.BP_MatchState_WinLose_C.ExecuteUbergraph_BP_MatchState_WinLose
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void ABP_MatchState_WinLose_C::ExecuteUbergraph_BP_MatchState_WinLose(int EntryPoint)
 {

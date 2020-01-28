@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -32,7 +32,7 @@ struct UDrumShotgun_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_
 // Function DrumShotgun_AnimBlueprint.DrumShotgun_AnimBlueprint_C.ExecuteUbergraph_DrumShotgun_AnimBlueprint
 struct UDrumShotgun_AnimBlueprint_C_ExecuteUbergraph_DrumShotgun_AnimBlueprint_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

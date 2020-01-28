@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -23,6 +23,19 @@ enum class EBeaconConnectionState : uint8_t
 };
 
 
+// Enum OnlineSubsystemUtils.EClientRequestType
+enum class EClientRequestType : uint8_t
+{
+	NonePending                    = 0,
+	ExistingSessionReservation     = 1,
+	ReservationUpdate              = 2,
+	EmptyServerReservation         = 3,
+	Reconnect                      = 4,
+	Abandon                        = 5,
+	EClientRequestType_MAX         = 6
+};
+
+
 // Enum OnlineSubsystemUtils.EPartyReservationResult
 enum class EPartyReservationResult : uint8_t
 {
@@ -36,24 +49,13 @@ enum class EPartyReservationResult : uint8_t
 	ReservationNotFound            = 7,
 	ReservationAccepted            = 8,
 	ReservationDenied              = 9,
-	ReservationDenied_Banned       = 10,
-	ReservationRequestCanceled     = 11,
-	ReservationInvalid             = 12,
-	BadSessionId                   = 13,
-	EPartyReservationResult_MAX    = 14
-};
-
-
-// Enum OnlineSubsystemUtils.EClientRequestType
-enum class EClientRequestType : uint8_t
-{
-	NonePending                    = 0,
-	ExistingSessionReservation     = 1,
-	ReservationUpdate              = 2,
-	EmptyServerReservation         = 3,
-	Reconnect                      = 4,
-	Abandon                        = 5,
-	EClientRequestType_MAX         = 6
+	ReservationDenied_CrossPlayRestriction = 10,
+	ReservationDenied_Banned       = 11,
+	ReservationRequestCanceled     = 12,
+	ReservationInvalid             = 13,
+	BadSessionId                   = 14,
+	ReservationDenied_ContainsExistingPlayers = 15,
+	EPartyReservationResult_MAX    = 16
 };
 
 
@@ -69,26 +71,6 @@ struct FBlueprintSessionResult
 	unsigned char                                      UnknownData00[0xB8];                                      // 0x0000(0x00B8) MISSED OFFSET
 };
 
-// ScriptStruct OnlineSubsystemUtils.PlayerReservation
-// 0x0030
-struct FPlayerReservation
-{
-	struct FUniqueNetIdRepl                            UniqueId;                                                 // 0x0000(0x0018) (Transient)
-	struct FString                                     ValidationStr;                                            // 0x0018(0x0010) (ZeroConstructor, Transient)
-	float                                              ElapsedTime;                                              // 0x0028(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x002C(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct OnlineSubsystemUtils.PartyReservation
-// 0x0030
-struct FPartyReservation
-{
-	int                                                TeamNum;                                                  // 0x0000(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x0004(0x0004) MISSED OFFSET
-	struct FUniqueNetIdRepl                            PartyLeader;                                              // 0x0008(0x0018) (Transient)
-	TArray<struct FPlayerReservation>                  PartyMembers;                                             // 0x0020(0x0010) (ZeroConstructor, Transient)
-};
-
 // ScriptStruct OnlineSubsystemUtils.PIELoginSettingsInternal
 // 0x0040
 struct FPIELoginSettingsInternal
@@ -97,6 +79,28 @@ struct FPIELoginSettingsInternal
 	struct FString                                     Token;                                                    // 0x0010(0x0010) (Edit, ZeroConstructor, Transient)
 	struct FString                                     Type;                                                     // 0x0020(0x0010) (Edit, ZeroConstructor)
 	TArray<unsigned char>                              TokenBytes;                                               // 0x0030(0x0010) (ZeroConstructor)
+};
+
+// ScriptStruct OnlineSubsystemUtils.PlayerReservation
+// 0x0050
+struct FPlayerReservation
+{
+	struct FUniqueNetIdRepl                            UniqueId;                                                 // 0x0000(0x0028) (Transient)
+	struct FString                                     ValidationStr;                                            // 0x0028(0x0010) (ZeroConstructor, Transient)
+	struct FString                                     Platform;                                                 // 0x0038(0x0010) (ZeroConstructor, Transient)
+	bool                                               bAllowCrossplay;                                          // 0x0048(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0049(0x0003) MISSED OFFSET
+	float                                              ElapsedTime;                                              // 0x004C(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
+};
+
+// ScriptStruct OnlineSubsystemUtils.PartyReservation
+// 0x0040
+struct FPartyReservation
+{
+	int                                                TeamNum;                                                  // 0x0000(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x0004(0x0004) MISSED OFFSET
+	struct FUniqueNetIdRepl                            PartyLeader;                                              // 0x0008(0x0028) (Transient)
+	TArray<struct FPlayerReservation>                  PartyMembers;                                             // 0x0030(0x0010) (ZeroConstructor, Transient)
 };
 
 }

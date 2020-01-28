@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -11,6 +11,96 @@ namespace SDK
 //---------------------------------------------------------------------------
 //Functions
 //---------------------------------------------------------------------------
+
+// Function Landscape.LandscapeProxy.SetLandscapeMaterialVectorParameterValue
+// (Final, Native, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// struct FName                   ParameterName                  (Parm, ZeroConstructor, IsPlainOldData)
+// struct FLinearColor            Value                          (Parm, ZeroConstructor, IsPlainOldData)
+
+void ALandscapeProxy::SetLandscapeMaterialVectorParameterValue(const struct FName& ParameterName, const struct FLinearColor& Value)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Landscape.LandscapeProxy.SetLandscapeMaterialVectorParameterValue");
+
+	ALandscapeProxy_SetLandscapeMaterialVectorParameterValue_Params params;
+	params.ParameterName = ParameterName;
+	params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Landscape.LandscapeProxy.SetLandscapeMaterialTextureParameterValue
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FName                   ParameterName                  (Parm, ZeroConstructor, IsPlainOldData)
+// class UTexture*                Value                          (Parm, ZeroConstructor, IsPlainOldData)
+
+void ALandscapeProxy::SetLandscapeMaterialTextureParameterValue(const struct FName& ParameterName, class UTexture* Value)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Landscape.LandscapeProxy.SetLandscapeMaterialTextureParameterValue");
+
+	ALandscapeProxy_SetLandscapeMaterialTextureParameterValue_Params params;
+	params.ParameterName = ParameterName;
+	params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Landscape.LandscapeProxy.SetLandscapeMaterialScalarParameterValue
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FName                   ParameterName                  (Parm, ZeroConstructor, IsPlainOldData)
+// float                          Value                          (Parm, ZeroConstructor, IsPlainOldData)
+
+void ALandscapeProxy::SetLandscapeMaterialScalarParameterValue(const struct FName& ParameterName, float Value)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Landscape.LandscapeProxy.SetLandscapeMaterialScalarParameterValue");
+
+	ALandscapeProxy_SetLandscapeMaterialScalarParameterValue_Params params;
+	params.ParameterName = ParameterName;
+	params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Landscape.LandscapeProxy.EditorSetLandscapeMaterial
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UMaterialInterface*      NewLandscapeMaterial           (Parm, ZeroConstructor, IsPlainOldData)
+
+void ALandscapeProxy::EditorSetLandscapeMaterial(class UMaterialInterface* NewLandscapeMaterial)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Landscape.LandscapeProxy.EditorSetLandscapeMaterial");
+
+	ALandscapeProxy_EditorSetLandscapeMaterial_Params params;
+	params.NewLandscapeMaterial = NewLandscapeMaterial;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
 
 // Function Landscape.LandscapeProxy.EditorApplySpline
 // (Final, Native, Public, BlueprintCallable)
@@ -53,6 +143,69 @@ void ALandscapeProxy::EditorApplySpline(class USplineComponent* InSplineComponen
 }
 
 
+// Function Landscape.LandscapeProxy.ChangeUseTessellationComponentScreenSizeFalloff
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// bool                           InComponentScreenSizeToUseSubSections (Parm, ZeroConstructor, IsPlainOldData)
+
+void ALandscapeProxy::ChangeUseTessellationComponentScreenSizeFalloff(bool InComponentScreenSizeToUseSubSections)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Landscape.LandscapeProxy.ChangeUseTessellationComponentScreenSizeFalloff");
+
+	ALandscapeProxy_ChangeUseTessellationComponentScreenSizeFalloff_Params params;
+	params.InComponentScreenSizeToUseSubSections = InComponentScreenSizeToUseSubSections;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSizeFalloff
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// float                          InUseTessellationComponentScreenSizeFalloff (Parm, ZeroConstructor, IsPlainOldData)
+
+void ALandscapeProxy::ChangeTessellationComponentScreenSizeFalloff(float InUseTessellationComponentScreenSizeFalloff)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSizeFalloff");
+
+	ALandscapeProxy_ChangeTessellationComponentScreenSizeFalloff_Params params;
+	params.InUseTessellationComponentScreenSizeFalloff = InUseTessellationComponentScreenSizeFalloff;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSize
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// float                          InTessellationComponentScreenSize (Parm, ZeroConstructor, IsPlainOldData)
+
+void ALandscapeProxy::ChangeTessellationComponentScreenSize(float InTessellationComponentScreenSize)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSize");
+
+	ALandscapeProxy_ChangeTessellationComponentScreenSize_Params params;
+	params.InTessellationComponentScreenSize = InTessellationComponentScreenSize;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function Landscape.LandscapeProxy.ChangeLODDistanceFactor
 // (Native, Public, BlueprintCallable)
 // Parameters:
@@ -71,6 +224,73 @@ void ALandscapeProxy::ChangeLODDistanceFactor(float InLODDistanceFactor)
 	UObject::ProcessEvent(fn, &params);
 
 	fn->FunctionFlags = flags;
+}
+
+
+// Function Landscape.LandscapeProxy.ChangeComponentScreenSizeToUseSubSections
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// float                          InComponentScreenSizeToUseSubSections (Parm, ZeroConstructor, IsPlainOldData)
+
+void ALandscapeProxy::ChangeComponentScreenSizeToUseSubSections(float InComponentScreenSizeToUseSubSections)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Landscape.LandscapeProxy.ChangeComponentScreenSizeToUseSubSections");
+
+	ALandscapeProxy_ChangeComponentScreenSizeToUseSubSections_Params params;
+	params.InComponentScreenSizeToUseSubSections = InComponentScreenSizeToUseSubSections;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Landscape.LandscapeComponent.GetMaterialInstanceDynamic
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int                            InIndex                        (Parm, ZeroConstructor, IsPlainOldData)
+// class UMaterialInstanceDynamic* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UMaterialInstanceDynamic* ULandscapeComponent::GetMaterialInstanceDynamic(int InIndex)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Landscape.LandscapeComponent.GetMaterialInstanceDynamic");
+
+	ULandscapeComponent_GetMaterialInstanceDynamic_Params params;
+	params.InIndex = InIndex;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Landscape.LandscapeSplinesComponent.GetSplineMeshComponents
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// TArray<class USplineMeshComponent*> ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm)
+
+TArray<class USplineMeshComponent*> ULandscapeSplinesComponent::GetSplineMeshComponents()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Landscape.LandscapeSplinesComponent.GetSplineMeshComponents");
+
+	ULandscapeSplinesComponent_GetSplineMeshComponents_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
 }
 
 

@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -12,22 +12,17 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
-// Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function LevelSequence.LevelSequenceBurnInOptions.SetBurnIn
+// (Final, Native, Public, HasDefaults, BlueprintCallable)
 // Parameters:
-// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
-// class ULevelSequence*          LevelSequence                  (Parm, ZeroConstructor, IsPlainOldData)
-// struct FMovieSceneSequencePlaybackSettings Settings                       (Parm)
-// class ULevelSequencePlayer*    ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// struct FSoftClassPath          InBurnInClass                  (Parm, ZeroConstructor)
 
-class ULevelSequencePlayer* ULevelSequencePlayer::STATIC_CreateLevelSequencePlayer(class UObject* WorldContextObject, class ULevelSequence* LevelSequence, const struct FMovieSceneSequencePlaybackSettings& Settings)
+void ULevelSequenceBurnInOptions::SetBurnIn(const struct FSoftClassPath& InBurnInClass)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer");
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceBurnInOptions.SetBurnIn");
 
-	ULevelSequencePlayer_CreateLevelSequencePlayer_Params params;
-	params.WorldContextObject = WorldContextObject;
-	params.LevelSequence = LevelSequence;
-	params.Settings = Settings;
+	ULevelSequenceBurnInOptions_SetBurnIn_Params params;
+	params.InBurnInClass = InBurnInClass;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -35,8 +30,6 @@ class ULevelSequencePlayer* ULevelSequencePlayer::STATIC_CreateLevelSequencePlay
 	UObject::ProcessEvent(fn, &params);
 
 	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
 }
 
 
@@ -61,14 +54,35 @@ void ALevelSequenceActor::SetSequence(class ULevelSequence* InSequence)
 }
 
 
+// Function LevelSequence.LevelSequenceActor.SetEventReceivers
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// TArray<class AActor*>          AdditionalReceivers            (Parm, ZeroConstructor)
+
+void ALevelSequenceActor::SetEventReceivers(TArray<class AActor*> AdditionalReceivers)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.SetEventReceivers");
+
+	ALevelSequenceActor_SetEventReceivers_Params params;
+	params.AdditionalReceivers = AdditionalReceivers;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function LevelSequence.LevelSequenceActor.SetBinding
 // (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FMovieSceneObjectBindingPtr Binding                        (Parm)
+// struct FMovieSceneObjectBindingID Binding                        (Parm)
 // TArray<class AActor*>          Actors                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // bool                           bAllowBindingsFromAsset        (Parm, ZeroConstructor, IsPlainOldData)
 
-void ALevelSequenceActor::SetBinding(const struct FMovieSceneObjectBindingPtr& Binding, TArray<class AActor*> Actors, bool bAllowBindingsFromAsset)
+void ALevelSequenceActor::SetBinding(const struct FMovieSceneObjectBindingID& Binding, TArray<class AActor*> Actors, bool bAllowBindingsFromAsset)
 {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.SetBinding");
 
@@ -107,9 +121,9 @@ void ALevelSequenceActor::ResetBindings()
 // Function LevelSequence.LevelSequenceActor.ResetBinding
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// struct FMovieSceneObjectBindingPtr Binding                        (Parm)
+// struct FMovieSceneObjectBindingID Binding                        (Parm)
 
-void ALevelSequenceActor::ResetBinding(const struct FMovieSceneObjectBindingPtr& Binding)
+void ALevelSequenceActor::ResetBinding(const struct FMovieSceneObjectBindingID& Binding)
 {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.ResetBinding");
 
@@ -128,10 +142,10 @@ void ALevelSequenceActor::ResetBinding(const struct FMovieSceneObjectBindingPtr&
 // Function LevelSequence.LevelSequenceActor.RemoveBinding
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// struct FMovieSceneObjectBindingPtr Binding                        (Parm)
+// struct FMovieSceneObjectBindingID Binding                        (Parm)
 // class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
 
-void ALevelSequenceActor::RemoveBinding(const struct FMovieSceneObjectBindingPtr& Binding, class AActor* Actor)
+void ALevelSequenceActor::RemoveBinding(const struct FMovieSceneObjectBindingID& Binding, class AActor* Actor)
 {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.RemoveBinding");
 
@@ -151,15 +165,17 @@ void ALevelSequenceActor::RemoveBinding(const struct FMovieSceneObjectBindingPtr
 // Function LevelSequence.LevelSequenceActor.GetSequence
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           Load                           (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bLoad                          (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bInitializePlayer              (Parm, ZeroConstructor, IsPlainOldData)
 // class ULevelSequence*          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-class ULevelSequence* ALevelSequenceActor::GetSequence(bool Load)
+class ULevelSequence* ALevelSequenceActor::GetSequence(bool bLoad, bool bInitializePlayer)
 {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.GetSequence");
 
 	ALevelSequenceActor_GetSequence_Params params;
-	params.Load = Load;
+	params.bLoad = bLoad;
+	params.bInitializePlayer = bInitializePlayer;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -175,11 +191,11 @@ class ULevelSequence* ALevelSequenceActor::GetSequence(bool Load)
 // Function LevelSequence.LevelSequenceActor.AddBinding
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// struct FMovieSceneObjectBindingPtr Binding                        (Parm)
+// struct FMovieSceneObjectBindingID Binding                        (Parm)
 // class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           bAllowBindingsFromAsset        (Parm, ZeroConstructor, IsPlainOldData)
 
-void ALevelSequenceActor::AddBinding(const struct FMovieSceneObjectBindingPtr& Binding, class AActor* Actor, bool bAllowBindingsFromAsset)
+void ALevelSequenceActor::AddBinding(const struct FMovieSceneObjectBindingID& Binding, class AActor* Actor, bool bAllowBindingsFromAsset)
 {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.AddBinding");
 
@@ -234,6 +250,55 @@ class UClass* ULevelSequenceBurnIn::GetSettingsClass()
 	UObject::ProcessEvent(fn, &params);
 
 	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function LevelSequence.LevelSequenceDirector.OnCreated
+// (Event, Public, BlueprintEvent)
+
+void ULevelSequenceDirector::OnCreated()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceDirector.OnCreated");
+
+	ULevelSequenceDirector_OnCreated_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer
+// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
+// class ULevelSequence*          LevelSequence                  (Parm, ZeroConstructor, IsPlainOldData)
+// struct FMovieSceneSequencePlaybackSettings Settings                       (Parm)
+// class ALevelSequenceActor*     OutActor                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// class ULevelSequencePlayer*    ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class ULevelSequencePlayer* ULevelSequencePlayer::STATIC_CreateLevelSequencePlayer(class UObject* WorldContextObject, class ULevelSequence* LevelSequence, const struct FMovieSceneSequencePlaybackSettings& Settings, class ALevelSequenceActor** OutActor)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer");
+
+	ULevelSequencePlayer_CreateLevelSequencePlayer_Params params;
+	params.WorldContextObject = WorldContextObject;
+	params.LevelSequence = LevelSequence;
+	params.Settings = Settings;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (OutActor != nullptr)
+		*OutActor = params.OutActor;
 
 	return params.ReturnValue;
 }

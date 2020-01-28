@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -10,6 +10,7 @@ namespace SDK
 {
 TNameEntryArray* FName::GNames = nullptr;
 FUObjectArray* UObject::GObjects = nullptr;
+uintptr_t TUObjectArray::g_objects = 0;
 //---------------------------------------------------------------------------
 bool FWeakObjectPtr::IsValid() const
 {

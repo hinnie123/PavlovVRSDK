@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -29,13 +29,13 @@ struct UUI_BuyMenu_Segment_Content_C_Get_Cost_Text_1_Params
 // Function UI_BuyMenu_Segment_Content.UI_BuyMenu_Segment_Content_C.OnUpdated
 struct UUI_BuyMenu_Segment_Content_C_OnUpdated_Params
 {
-	struct FWheelSegment*                              Segment;                                                  // (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FWheelSegment*                              Segment;                                                  // (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
 
 // Function UI_BuyMenu_Segment_Content.UI_BuyMenu_Segment_Content_C.ExecuteUbergraph_UI_BuyMenu_Segment_Content
 struct UUI_BuyMenu_Segment_Content_C_ExecuteUbergraph_UI_BuyMenu_Segment_Content_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

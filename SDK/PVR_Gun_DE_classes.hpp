@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,10 +13,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass Gun_DE.Gun_DE_C
-// 0x0000 (0x09B0 - 0x09B0)
+// 0x0008 (0x0B38 - 0x0B30)
 class AGun_DE_C : public AHandGun_Base_C
 {
 public:
+	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x0B30(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
 
 	static UClass* StaticClass()
 	{
@@ -24,6 +25,10 @@ public:
 		return ptr;
 	}
 
+
+	void UserConstructionScript();
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_Gun_DE(int EntryPoint);
 };
 
 

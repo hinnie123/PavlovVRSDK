@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -49,7 +49,7 @@ void AToolTip_SpectatorTeleMode_C::ReceiveBeginPlay()
 // Function ToolTip_SpectatorTeleMode.ToolTip_SpectatorTeleMode_C.OnTriggerChanged_Event_1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           bGripped                       (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bGripped                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AToolTip_SpectatorTeleMode_C::OnTriggerChanged_Event_1(bool bGripped)
 {
@@ -67,9 +67,9 @@ void AToolTip_SpectatorTeleMode_C::OnTriggerChanged_Event_1(bool bGripped)
 
 
 // Function ToolTip_SpectatorTeleMode.ToolTip_SpectatorTeleMode_C.ExecuteUbergraph_ToolTip_SpectatorTeleMode
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AToolTip_SpectatorTeleMode_C::ExecuteUbergraph_ToolTip_SpectatorTeleMode(int EntryPoint)
 {

@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,6 +13,12 @@ namespace SDK
 //---------------------------------------------------------------------------
 //Parameters
 //---------------------------------------------------------------------------
+
+// Function Steamworks.SteamItem.GetType
+struct USteamItem_GetType_Params
+{
+	struct FName                                       ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
 
 // Function Steamworks.SteamLobby.SetVoiceChat
 struct USteamLobby_SetVoiceChat_Params
@@ -97,6 +103,12 @@ struct USteamLobby_GetLobbyData_Params
 	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 
+// Function Steamworks.SteamRadio.InitializePlaybackChannels
+struct ASteamRadio_InitializePlaybackChannels_Params
+{
+	class USoundCue*                                   ChannelCue;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
 // Function Steamworks.SteamVoiceComponent.ToggleRadio
 struct USteamVoiceComponent_ToggleRadio_Params
 {
@@ -153,28 +165,27 @@ struct USteamVoiceComponent_IsTalking_Params
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
-// Function Steamworks.SteamItem.GetType
-struct USteamItem_GetType_Params
-{
-	struct FName                                       ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function Steamworks.SteamRadio.InitializePlaybackChannels
-struct ASteamRadio_InitializePlaybackChannels_Params
-{
-	class USoundCue*                                   ChannelCue;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
 // Function Steamworks.SteamworksManager.SetVoiceRecording
 struct USteamworksManager_SetVoiceRecording_Params
 {
 	bool                                               bEnabled;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
+// Function Steamworks.SteamworksManager.RequestServerList
+struct USteamworksManager_RequestServerList_Params
+{
+	TArray<struct FSteamServerListKeyValue>            Filter;                                                   // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+};
+
 // Function Steamworks.SteamworksManager.RequestLobbyList
 struct USteamworksManager_RequestLobbyList_Params
 {
 	bool                                               bWithData;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Steamworks.SteamworksManager.RefreshServerList
+struct USteamworksManager_RefreshServerList_Params
+{
 };
 
 // Function Steamworks.SteamworksManager.OnPublicIpAddressResolved
@@ -194,6 +205,18 @@ struct USteamworksManager_JoinLobby_Params
 	struct FSteamLobbyInfo                             LobbyInfo;                                                // (Parm)
 };
 
+// Function Steamworks.SteamworksManager.IsServerListActive
+struct USteamworksManager_IsServerListActive_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Steamworks.SteamworksManager.IsRefreshingServerList
+struct USteamworksManager_IsRefreshingServerList_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
 // Function Steamworks.SteamworksManager.IsRecordingVoice
 struct USteamworksManager_IsRecordingVoice_Params
 {
@@ -205,6 +228,20 @@ struct USteamworksManager_HasInstanceOf_Params
 {
 	int                                                DefinitionId;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Steamworks.SteamworksManager.GetServerInfo
+struct USteamworksManager_GetServerInfo_Params
+{
+	int                                                Index;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FSteamServerInfo                            ServerInfo;                                               // (Parm, OutParm)
+	bool                                               bSuccessful;                                              // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Steamworks.SteamworksManager.GetServerCount
+struct USteamworksManager_GetServerCount_Params
+{
+	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Steamworks.SteamworksManager.GetPlayerNameByStringId
@@ -298,6 +335,13 @@ struct USteamworksManager_AddRequestLobbyListFilterSlotsAvailable_Params
 struct USteamworksManager_AddRequestLobbyListDistanceFilter_Params
 {
 	ESteamLobbyDistanceFilter                          DistanceFilter;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Steamworks.SteamworksStatics.GetSteamPersonaName
+struct USteamworksStatics_GetSteamPersonaName_Params
+{
+	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 
 // Function Steamworks.SteamworksStatics.GetLocalSteamId

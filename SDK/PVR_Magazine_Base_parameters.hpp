@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -27,7 +27,7 @@ struct AMagazine_Base_C_UserConstructionScript_Params
 // Function Magazine_Base.Magazine_Base_C.Physicalize
 struct AMagazine_Base_C_Physicalize_Params
 {
-	bool*                                              bEnabled;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	bool*                                              bEnabled;                                                 // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Magazine_Base.Magazine_Base_C.OnReleasedFromGun
@@ -43,7 +43,7 @@ struct AMagazine_Base_C_ReceiveBeginPlay_Params
 // Function Magazine_Base.Magazine_Base_C.Used
 struct AMagazine_Base_C_Used_Params
 {
-	bool*                                              bJustPicked;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	bool*                                              bJustPicked;                                              // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Magazine_Base.Magazine_Base_C.OnBulletsChanged
@@ -54,7 +54,7 @@ struct AMagazine_Base_C_OnBulletsChanged_Params
 // Function Magazine_Base.Magazine_Base_C.ExecuteUbergraph_Magazine_Base
 struct AMagazine_Base_C_ExecuteUbergraph_Magazine_Base_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

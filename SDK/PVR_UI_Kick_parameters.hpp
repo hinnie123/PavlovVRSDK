@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -22,15 +22,15 @@ struct UUI_Kick_C_Update_Params
 // Function UI_Kick.UI_Kick_C.UpdatePlayers
 struct UUI_Kick_C_UpdatePlayers_Params
 {
-	TArray<class UUI_Moderation_Player_C*>             Players;                                                  // (Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TArray<class APavlovPlayerState*>                  PlayerArray;                                              // (Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<class UUI_Moderation_Player_C*>             Players;                                                  // (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<class APavlovPlayerState*>                  PlayerArray;                                              // (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
 
 // Function UI_Kick.UI_Kick_C.CreatePlayerWidgets
 struct UUI_Kick_C_CreatePlayerWidgets_Params
 {
-	TArray<class UUI_Moderation_Player_C*>             TargetArray;                                              // (Parm, OutParm, ZeroConstructor, ReferenceParm)
-	class UVerticalBox*                                List;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
+	TArray<class UUI_Moderation_Player_C*>             TargetArray;                                              // (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	class UVerticalBox*                                List;                                                     // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 };
 
 // Function UI_Kick.UI_Kick_C.Construct
@@ -41,8 +41,8 @@ struct UUI_Kick_C_Construct_Params
 // Function UI_Kick.UI_Kick_C.OnPlayerWidgetSelectionChanged
 struct UUI_Kick_C_OnPlayerWidgetSelectionChanged_Params
 {
-	bool                                               Selected;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FString                                     ID;                                                       // (Parm, ZeroConstructor)
+	bool                                               Selected;                                                 // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+	struct FString                                     ID;                                                       // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 };
 
 // Function UI_Kick.UI_Kick_C.UpdateList
@@ -63,7 +63,7 @@ struct UUI_Kick_C_BndEvt__VoteButton_K2Node_ComponentBoundEvent_33_OnButtonClick
 // Function UI_Kick.UI_Kick_C.ExecuteUbergraph_UI_Kick
 struct UUI_Kick_C_ExecuteUbergraph_UI_Kick_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_Kick.UI_Kick_C.OnVoteInstigated__DelegateSignature

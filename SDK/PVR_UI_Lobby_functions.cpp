@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -12,10 +12,32 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function UI_Lobby.UI_Lobby_C.IsCoopLobby
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool                           TRUE                           (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+
+void UUI_Lobby_C::IsCoopLobby(bool* TRUE)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Lobby.UI_Lobby_C.IsCoopLobby");
+
+	UUI_Lobby_C_IsCoopLobby_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (TRUE != nullptr)
+		*TRUE = params.TRUE;
+}
+
+
 // Function UI_Lobby.UI_Lobby_C.GetLabelFromMap
 // (Public, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FString                 Selection                      (Parm, ZeroConstructor)
+// struct FString                 Selection                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_Lobby_C::GetLabelFromMap(const struct FString& Selection)
 {
@@ -35,7 +57,7 @@ void UUI_Lobby_C::GetLabelFromMap(const struct FString& Selection)
 // Function UI_Lobby.UI_Lobby_C.GetMapFromLabel
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FString                 Selection                      (Parm, ZeroConstructor)
+// struct FString                 Selection                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 // struct FString                 Map                            (Parm, OutParm, ZeroConstructor)
 
 void UUI_Lobby_C::GetMapFromLabel(const struct FString& Selection, struct FString* Map)
@@ -101,7 +123,7 @@ ESlateVisibility UUI_Lobby_C::Get_ReadyStartButton_Visibility_1()
 // Function UI_Lobby.UI_Lobby_C.LabelToTeam
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FString                 Selection                      (Parm, ZeroConstructor)
+// struct FString                 Selection                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
 int UUI_Lobby_C::LabelToTeam(const struct FString& Selection)
@@ -124,15 +146,15 @@ int UUI_Lobby_C::LabelToTeam(const struct FString& Selection)
 // Function UI_Lobby.UI_Lobby_C.TeamToLabel
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int                            TeamID                         (Parm, ZeroConstructor, IsPlainOldData)
+// int                            TeamId                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 // struct FString                 Label                          (Parm, OutParm, ZeroConstructor)
 
-void UUI_Lobby_C::TeamToLabel(int TeamID, struct FString* Label)
+void UUI_Lobby_C::TeamToLabel(int TeamId, struct FString* Label)
 {
 	static auto fn = UObject::FindObject<UFunction>("Function UI_Lobby.UI_Lobby_C.TeamToLabel");
 
 	UUI_Lobby_C_TeamToLabel_Params params;
-	params.TeamID = TeamID;
+	params.TeamId = TeamId;
 
 	auto flags = fn->FunctionFlags;
 
@@ -148,7 +170,7 @@ void UUI_Lobby_C::TeamToLabel(int TeamID, struct FString* Label)
 // Function UI_Lobby.UI_Lobby_C.UpdateSettingsEditable
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           Editable                       (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           Editable                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Lobby_C::UpdateSettingsEditable(bool Editable)
 {
@@ -168,7 +190,7 @@ void UUI_Lobby_C::UpdateSettingsEditable(bool Editable)
 // Function UI_Lobby.UI_Lobby_C.GameModeToLabel
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FString                 Selection                      (Parm, ZeroConstructor)
+// struct FString                 Selection                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
 
 struct FString UUI_Lobby_C::GameModeToLabel(const struct FString& Selection)
@@ -191,7 +213,7 @@ struct FString UUI_Lobby_C::GameModeToLabel(const struct FString& Selection)
 // Function UI_Lobby.UI_Lobby_C.LabelToGameMode
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FString                 Label                          (Parm, ZeroConstructor)
+// struct FString                 Label                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 // struct FString                 GameMode                       (Parm, OutParm, ZeroConstructor)
 
 void UUI_Lobby_C::LabelToGameMode(const struct FString& Label, struct FString* GameMode)
@@ -266,7 +288,7 @@ void UUI_Lobby_C::BndEvt__UI_ButtonSecondary_21_K2Node_ComponentBoundEvent_2_OnB
 // Function UI_Lobby.UI_Lobby_C.OnEnterLobby_Event_1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           bFailed                        (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bFailed                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Lobby_C::OnEnterLobby_Event_1(bool bFailed)
 {
@@ -303,7 +325,7 @@ void UUI_Lobby_C::UpdateLobby()
 // Function UI_Lobby.UI_Lobby_C.BndEvt__SettingGameMode_K2Node_ComponentBoundEvent_131_OnSelectionChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// struct FString                 Selection                      (Parm, ZeroConstructor)
+// struct FString                 Selection                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_Lobby_C::BndEvt__SettingGameMode_K2Node_ComponentBoundEvent_131_OnSelectionChanged__DelegateSignature(const struct FString& Selection)
 {
@@ -340,7 +362,7 @@ void UUI_Lobby_C::OnLobbyUpdated_Event_1()
 // Function UI_Lobby.UI_Lobby_C.BndEvt__SettingTeam_K2Node_ComponentBoundEvent_42_OnSelectionChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// struct FString                 Selection                      (Parm, ZeroConstructor)
+// struct FString                 Selection                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_Lobby_C::BndEvt__SettingTeam_K2Node_ComponentBoundEvent_42_OnSelectionChanged__DelegateSignature(const struct FString& Selection)
 {
@@ -360,7 +382,7 @@ void UUI_Lobby_C::BndEvt__SettingTeam_K2Node_ComponentBoundEvent_42_OnSelectionC
 // Function UI_Lobby.UI_Lobby_C.BndEvt__CheckboxVoiceMute_K2Node_ComponentBoundEvent_0_OnCheckStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// bool                           Checked                        (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           Checked                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Lobby_C::BndEvt__CheckboxVoiceMute_K2Node_ComponentBoundEvent_0_OnCheckStateChanged__DelegateSignature(bool Checked)
 {
@@ -380,7 +402,7 @@ void UUI_Lobby_C::BndEvt__CheckboxVoiceMute_K2Node_ComponentBoundEvent_0_OnCheck
 // Function UI_Lobby.UI_Lobby_C.BndEvt__CheckboxReady_K2Node_ComponentBoundEvent_112_OnCheckStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// bool                           Checked                        (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           Checked                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Lobby_C::BndEvt__CheckboxReady_K2Node_ComponentBoundEvent_112_OnCheckStateChanged__DelegateSignature(bool Checked)
 {
@@ -417,7 +439,7 @@ void UUI_Lobby_C::BndEvt__ReadyStartButton_K2Node_ComponentBoundEvent_143_OnButt
 // Function UI_Lobby.UI_Lobby_C.OnLobbyStateChanged_Event_1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ELobbyState                    NewState                       (Parm, ZeroConstructor, IsPlainOldData)
+// ELobbyState                    NewState                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Lobby_C::OnLobbyStateChanged_Event_1(ELobbyState NewState)
 {
@@ -437,8 +459,8 @@ void UUI_Lobby_C::OnLobbyStateChanged_Event_1(ELobbyState NewState)
 // Function UI_Lobby.UI_Lobby_C.OnLobbyStatusMessage_Event_1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString                 Message                        (Parm, ZeroConstructor)
-// bool                           bError                         (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 Message                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
+// bool                           bError                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Lobby_C::OnLobbyStatusMessage_Event_1(const struct FString& Message, bool bError)
 {
@@ -459,7 +481,7 @@ void UUI_Lobby_C::OnLobbyStatusMessage_Event_1(const struct FString& Message, bo
 // Function UI_Lobby.UI_Lobby_C.BndEvt__CheckboxFriendsOnly_K2Node_ComponentBoundEvent_20_OnCheckStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// bool                           Checked                        (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           Checked                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Lobby_C::BndEvt__CheckboxFriendsOnly_K2Node_ComponentBoundEvent_20_OnCheckStateChanged__DelegateSignature(bool Checked)
 {
@@ -479,7 +501,7 @@ void UUI_Lobby_C::BndEvt__CheckboxFriendsOnly_K2Node_ComponentBoundEvent_20_OnCh
 // Function UI_Lobby.UI_Lobby_C.BndEvt__SettingServer_K2Node_ComponentBoundEvent_30_OnSelectionChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// struct FString                 Selection                      (Parm, ZeroConstructor)
+// struct FString                 Selection                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_Lobby_C::BndEvt__SettingServer_K2Node_ComponentBoundEvent_30_OnSelectionChanged__DelegateSignature(const struct FString& Selection)
 {
@@ -533,8 +555,8 @@ void UUI_Lobby_C::BndEvt__MapButton_K2Node_ComponentBoundEvent_65_OnButtonClicke
 // Function UI_Lobby.UI_Lobby_C.OnCommit_Event_1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FName                   MapUniqueId                    (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           Canceled                       (Parm, ZeroConstructor, IsPlainOldData)
+// struct FName                   MapUniqueId                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// bool                           Canceled                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Lobby_C::OnCommit_Event_1(const struct FName& MapUniqueId, bool Canceled)
 {
@@ -555,8 +577,8 @@ void UUI_Lobby_C::OnCommit_Event_1(const struct FName& MapUniqueId, bool Cancele
 // Function UI_Lobby.UI_Lobby_C.UpdateMapDisplay
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FName                   MapId                          (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 MapLabel                       (Parm, ZeroConstructor)
+// struct FName                   MapId                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 MapLabel                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_Lobby_C::UpdateMapDisplay(const struct FName& MapId, const struct FString& MapLabel)
 {
@@ -594,7 +616,7 @@ void UUI_Lobby_C::OnDownloadBegin_Event_1()
 // Function UI_Lobby.UI_Lobby_C.OnDownloadProgress_Event_1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          Progress                       (Parm, ZeroConstructor, IsPlainOldData)
+// float                          Progress                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Lobby_C::OnDownloadProgress_Event_1(float Progress)
 {
@@ -631,7 +653,7 @@ void UUI_Lobby_C::BndEvt__CancelDowloadBtn_K2Node_ComponentBoundEvent_467_OnButt
 // Function UI_Lobby.UI_Lobby_C.BndEvt__CheckBots_K2Node_ComponentBoundEvent_63_OnCheckStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// bool                           Checked                        (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           Checked                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Lobby_C::BndEvt__CheckBots_K2Node_ComponentBoundEvent_63_OnCheckStateChanged__DelegateSignature(bool Checked)
 {
@@ -685,7 +707,7 @@ void UUI_Lobby_C::BndEvt__SetPinButton_K2Node_ComponentBoundEvent_538_OnButtonCl
 // Function UI_Lobby.UI_Lobby_C.BndEvt__CompetitiveCheckBox_K2Node_ComponentBoundEvent_0_OnCheckStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// bool                           Checked                        (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           Checked                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Lobby_C::BndEvt__CompetitiveCheckBox_K2Node_ComponentBoundEvent_0_OnCheckStateChanged__DelegateSignature(bool Checked)
 {
@@ -722,7 +744,7 @@ void UUI_Lobby_C::BndEvt__SettingsBtn_K2Node_ComponentBoundEvent_300_OnButtonCli
 // Function UI_Lobby.UI_Lobby_C.BndEvt__UI_ServerSettings_K2Node_ComponentBoundEvent_317_OnSettingsApply__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// struct FServerSettings         Settings                       (Parm)
+// struct FServerSettings         Settings                       (BlueprintVisible, BlueprintReadOnly, Parm)
 
 void UUI_Lobby_C::BndEvt__UI_ServerSettings_K2Node_ComponentBoundEvent_317_OnSettingsApply__DelegateSignature(const struct FServerSettings& Settings)
 {
@@ -739,10 +761,27 @@ void UUI_Lobby_C::BndEvt__UI_ServerSettings_K2Node_ComponentBoundEvent_317_OnSet
 }
 
 
+// Function UI_Lobby.UI_Lobby_C.BndEvt__leaveLobbyButton_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UUI_Lobby_C::BndEvt__leaveLobbyButton_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Lobby.UI_Lobby_C.BndEvt__leaveLobbyButton_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature");
+
+	UUI_Lobby_C_BndEvt__leaveLobbyButton_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function UI_Lobby.UI_Lobby_C.ExecuteUbergraph_UI_Lobby
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Lobby_C::ExecuteUbergraph_UI_Lobby(int EntryPoint)
 {
@@ -779,7 +818,7 @@ void UUI_Lobby_C::OnPinRequest__DelegateSignature()
 // Function UI_Lobby.UI_Lobby_C.OnMapChanged__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString                 Map                            (Parm, ZeroConstructor)
+// struct FString                 Map                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_Lobby_C::OnMapChanged__DelegateSignature(const struct FString& Map)
 {

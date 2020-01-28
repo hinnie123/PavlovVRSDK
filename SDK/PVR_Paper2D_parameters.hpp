@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -70,7 +70,7 @@ struct UPaperFlipbookComponent_Stop_Params
 // Function Paper2D.PaperFlipbookComponent.SetSpriteColor
 struct UPaperFlipbookComponent_SetSpriteColor_Params
 {
-	struct FLinearColor                                NewColor;                                                 // (Parm, IsPlainOldData)
+	struct FLinearColor                                NewColor;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Paper2D.PaperFlipbookComponent.SetPlayRate
@@ -156,12 +156,6 @@ struct UPaperFlipbookComponent_IsLooping_Params
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
-// Function Paper2D.PaperFlipbookComponent.GetSpriteMaterial
-struct UPaperFlipbookComponent_GetSpriteMaterial_Params
-{
-	class UMaterialInterface*                          ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
 // Function Paper2D.PaperFlipbookComponent.GetPlayRate
 struct UPaperFlipbookComponent_GetPlayRate_Params
 {
@@ -219,7 +213,7 @@ struct UPaperGroupedSpriteComponent_UpdateInstanceTransform_Params
 struct UPaperGroupedSpriteComponent_UpdateInstanceColor_Params
 {
 	int                                                InstanceIndex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FLinearColor                                NewInstanceColor;                                         // (Parm, IsPlainOldData)
+	struct FLinearColor                                NewInstanceColor;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bMarkRenderStateDirty;                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
@@ -227,7 +221,7 @@ struct UPaperGroupedSpriteComponent_UpdateInstanceColor_Params
 // Function Paper2D.PaperGroupedSpriteComponent.SortInstancesAlongAxis
 struct UPaperGroupedSpriteComponent_SortInstancesAlongAxis_Params
 {
-	struct FVector                                     WorldSpaceSortAxis;                                       // (Parm, IsPlainOldData)
+	struct FVector                                     WorldSpaceSortAxis;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Paper2D.PaperGroupedSpriteComponent.RemoveInstance
@@ -263,14 +257,23 @@ struct UPaperGroupedSpriteComponent_AddInstance_Params
 	struct FTransform                                  Transform;                                                // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 	class UPaperSprite*                                Sprite;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bWorldSpace;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FLinearColor                                Color;                                                    // (Parm, IsPlainOldData)
+	struct FLinearColor                                Color;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Paper2D.PaperSpriteBlueprintLibrary.MakeBrushFromSprite
+struct UPaperSpriteBlueprintLibrary_MakeBrushFromSprite_Params
+{
+	class UPaperSprite*                                Sprite;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                Width;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                Height;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FSlateBrush                                 ReturnValue;                                              // (Parm, OutParm, ReturnParm)
 };
 
 // Function Paper2D.PaperSpriteComponent.SetSpriteColor
 struct UPaperSpriteComponent_SetSpriteColor_Params
 {
-	struct FLinearColor                                NewColor;                                                 // (Parm, IsPlainOldData)
+	struct FLinearColor                                NewColor;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Paper2D.PaperSpriteComponent.SetSprite
@@ -289,13 +292,13 @@ struct UPaperSpriteComponent_GetSprite_Params
 // Function Paper2D.PaperTerrainComponent.SetTerrainColor
 struct UPaperTerrainComponent_SetTerrainColor_Params
 {
-	struct FLinearColor                                NewColor;                                                 // (Parm, IsPlainOldData)
+	struct FLinearColor                                NewColor;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Paper2D.PaperTileMapComponent.SetTileMapColor
 struct UPaperTileMapComponent_SetTileMapColor_Params
 {
-	struct FLinearColor                                NewColor;                                                 // (Parm, IsPlainOldData)
+	struct FLinearColor                                NewColor;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Paper2D.PaperTileMapComponent.SetTileMap
@@ -317,7 +320,7 @@ struct UPaperTileMapComponent_SetTile_Params
 // Function Paper2D.PaperTileMapComponent.SetLayerColor
 struct UPaperTileMapComponent_SetLayerColor_Params
 {
-	struct FLinearColor                                NewColor;                                                 // (Parm, IsPlainOldData)
+	struct FLinearColor                                NewColor;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                Layer;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -376,7 +379,7 @@ struct UPaperTileMapComponent_GetTilePolygon_Params
 // Function Paper2D.PaperTileMapComponent.GetTileMapColor
 struct UPaperTileMapComponent_GetTileMapColor_Params
 {
-	struct FLinearColor                                ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+	struct FLinearColor                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Paper2D.PaperTileMapComponent.GetTileCornerPosition
@@ -386,7 +389,7 @@ struct UPaperTileMapComponent_GetTileCornerPosition_Params
 	int                                                TileY;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                LayerIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bWorldSpace;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Paper2D.PaperTileMapComponent.GetTileCenterPosition
@@ -396,7 +399,7 @@ struct UPaperTileMapComponent_GetTileCenterPosition_Params
 	int                                                TileY;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                LayerIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bWorldSpace;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Paper2D.PaperTileMapComponent.GetTile
@@ -420,7 +423,7 @@ struct UPaperTileMapComponent_GetMapSize_Params
 struct UPaperTileMapComponent_GetLayerColor_Params
 {
 	int                                                Layer;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FLinearColor                                ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+	struct FLinearColor                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Paper2D.PaperTileMapComponent.CreateNewTileMap

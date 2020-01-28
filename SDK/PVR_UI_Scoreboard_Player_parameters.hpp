@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -29,13 +29,13 @@ struct UUI_Scoreboard_Player_C_GetBrush_1_Params
 // Function UI_Scoreboard_Player.UI_Scoreboard_Player_C.GetColorAndOpacity_3
 struct UUI_Scoreboard_Player_C_GetColorAndOpacity_3_Params
 {
-	struct FLinearColor                                ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+	struct FLinearColor                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function UI_Scoreboard_Player.UI_Scoreboard_Player_C.GetColorAndOpacity_2
 struct UUI_Scoreboard_Player_C_GetColorAndOpacity_2_Params
 {
-	struct FLinearColor                                ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+	struct FLinearColor                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function UI_Scoreboard_Player.UI_Scoreboard_Player_C.GetColorAndOpacity_1

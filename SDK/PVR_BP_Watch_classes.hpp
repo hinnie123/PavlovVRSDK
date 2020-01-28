@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,11 +13,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_Watch.BP_Watch_C
-// 0x0008 (0x0998 - 0x0990)
+// 0x0008 (0x06F8 - 0x06F0)
 class UBP_Watch_C : public UWatch
 {
 public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x0990(0x0008) (Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x06F0(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
 
 	static UClass* StaticClass()
 	{

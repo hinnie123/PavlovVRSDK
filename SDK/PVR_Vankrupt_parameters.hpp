@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -24,7 +24,7 @@ struct UVCollisionEffectComponent_OnActorHit_Params
 {
 	class AActor*                                      SelfActor;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	class AActor*                                      OtherActor;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     NormalImpulse;                                            // (Parm, IsPlainOldData)
+	struct FVector                                     NormalImpulse;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FHitResult                                  Hit;                                                      // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 };
 
@@ -49,10 +49,10 @@ struct UVHealthComponent_OnTakePointDamage_Params
 	class AActor*                                      DamagedActor;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              Damage;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	class AController*                                 InstigatedBy;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     HitLocation;                                              // (Parm, IsPlainOldData)
+	struct FVector                                     HitLocation;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	class UPrimitiveComponent*                         HitComponent;                                             // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ShotFromDirection;                                        // (Parm, IsPlainOldData)
+	struct FVector                                     ShotFromDirection;                                        // (Parm, ZeroConstructor, IsPlainOldData)
 	class UDamageType*                                 DamageType;                                               // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 	class AActor*                                      DamageCauser;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 };

@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -35,7 +35,7 @@ struct UUI_PlayerInfo_C_Get_PlayerName_Text_1_Params
 // Function UI_PlayerInfo.UI_PlayerInfo_C.GetColorAndOpacity_1
 struct UUI_PlayerInfo_C_GetColorAndOpacity_1_Params
 {
-	struct FLinearColor                                ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+	struct FLinearColor                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function UI_PlayerInfo.UI_PlayerInfo_C.GetBrush_1
@@ -47,20 +47,20 @@ struct UUI_PlayerInfo_C_GetBrush_1_Params
 // Function UI_PlayerInfo.UI_PlayerInfo_C.SetPlayerState
 struct UUI_PlayerInfo_C_SetPlayerState_Params
 {
-	class APavlovPlayerState*                          PlayerState;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	class APavlovPlayerState*                          PlayerState;                                              // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_PlayerInfo.UI_PlayerInfo_C.Tick
 struct UUI_PlayerInfo_C_Tick_Params
 {
-	struct FGeometry*                                  MyGeometry;                                               // (Parm, IsPlainOldData)
-	float*                                             InDeltaTime;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FGeometry*                                  MyGeometry;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData)
+	float*                                             InDeltaTime;                                              // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_PlayerInfo.UI_PlayerInfo_C.ExecuteUbergraph_UI_PlayerInfo
 struct UUI_PlayerInfo_C_ExecuteUbergraph_UI_PlayerInfo_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

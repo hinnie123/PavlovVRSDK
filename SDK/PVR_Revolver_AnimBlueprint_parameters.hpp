@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -14,18 +14,8 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
-// Function Revolver_AnimBlueprint.Revolver_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Revolver_AnimBlueprint_AnimGraphNode_ModifyBone_246AB514410BB81998AC70956EFCAD79
-struct URevolver_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Revolver_AnimBlueprint_AnimGraphNode_ModifyBone_246AB514410BB81998AC70956EFCAD79_Params
-{
-};
-
 // Function Revolver_AnimBlueprint.Revolver_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Revolver_AnimBlueprint_AnimGraphNode_ModifyBone_6BD892444A96C7468BE70DB3ED771526
 struct URevolver_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Revolver_AnimBlueprint_AnimGraphNode_ModifyBone_6BD892444A96C7468BE70DB3ED771526_Params
-{
-};
-
-// Function Revolver_AnimBlueprint.Revolver_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Revolver_AnimBlueprint_AnimGraphNode_BlendListByBool_7666FD294D9206F8A7227F923E791A21
-struct URevolver_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Revolver_AnimBlueprint_AnimGraphNode_BlendListByBool_7666FD294D9206F8A7227F923E791A21_Params
 {
 };
 
@@ -39,10 +29,15 @@ struct URevolver_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Rev
 {
 };
 
+// Function Revolver_AnimBlueprint.Revolver_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Revolver_AnimBlueprint_AnimGraphNode_ModifyBone_246AB514410BB81998AC70956EFCAD79
+struct URevolver_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_Revolver_AnimBlueprint_AnimGraphNode_ModifyBone_246AB514410BB81998AC70956EFCAD79_Params
+{
+};
+
 // Function Revolver_AnimBlueprint.Revolver_AnimBlueprint_C.ExecuteUbergraph_Revolver_AnimBlueprint
 struct URevolver_AnimBlueprint_C_ExecuteUbergraph_Revolver_AnimBlueprint_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

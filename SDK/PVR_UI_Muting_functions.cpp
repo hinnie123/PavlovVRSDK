@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -32,8 +32,8 @@ void UUI_Muting_C::Update()
 // Function UI_Muting.UI_Muting_C.UpdatePlayers
 // (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UUI_Moderation_Player_C*> Players                        (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<class APavlovPlayerState*> PlayerArray                    (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UUI_Moderation_Player_C*> Players                        (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class APavlovPlayerState*> PlayerArray                    (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UUI_Muting_C::UpdatePlayers(TArray<class UUI_Moderation_Player_C*>* Players, TArray<class APavlovPlayerState*>* PlayerArray)
 {
@@ -57,8 +57,8 @@ void UUI_Muting_C::UpdatePlayers(TArray<class UUI_Moderation_Player_C*>* Players
 // Function UI_Muting.UI_Muting_C.CreatePlayerWidgets
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UUI_Moderation_Player_C*> TargetArray                    (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// class UVerticalBox*            List                           (Parm, ZeroConstructor, IsPlainOldData)
+// TArray<class UUI_Moderation_Player_C*> TargetArray                    (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// class UVerticalBox*            List                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 
 void UUI_Muting_C::CreatePlayerWidgets(class UVerticalBox* List, TArray<class UUI_Moderation_Player_C*>* TargetArray)
 {
@@ -115,8 +115,8 @@ void UUI_Muting_C::BndEvt__UI_ButtonSecondary_K2Node_ComponentBoundEvent_15_OnBu
 // Function UI_Muting.UI_Muting_C.OnPlayerWidgetMuteChanged
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           Mute                           (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 ID                             (Parm, ZeroConstructor)
+// bool                           Mute                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 ID                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_Muting_C::OnPlayerWidgetMuteChanged(bool Mute, const struct FString& ID)
 {
@@ -152,9 +152,9 @@ void UUI_Muting_C::UpdateList()
 
 
 // Function UI_Muting.UI_Muting_C.ExecuteUbergraph_UI_Muting
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Muting_C::ExecuteUbergraph_UI_Muting(int EntryPoint)
 {

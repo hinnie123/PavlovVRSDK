@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -35,7 +35,7 @@ struct UUI_VideoSetting_C_Get_SliderWidget_Visibility_1_Params
 // Function UI_VideoSetting.UI_VideoSetting_C.SetValue
 struct UUI_VideoSetting_C_SetValue_Params
 {
-	int                                                Value;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                Value;                                                    // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_VideoSetting.UI_VideoSetting_C.GetValue
@@ -58,13 +58,13 @@ struct UUI_VideoSetting_C_BndEvt__SettingButton_K2Node_ComponentBoundEvent_0_OnV
 // Function UI_VideoSetting.UI_VideoSetting_C.BndEvt__SliderWidget_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature
 struct UUI_VideoSetting_C_BndEvt__SliderWidget_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature_Params
 {
-	float                                              Value;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              Value;                                                    // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_VideoSetting.UI_VideoSetting_C.ExecuteUbergraph_UI_VideoSetting
 struct UUI_VideoSetting_C_ExecuteUbergraph_UI_VideoSetting_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_VideoSetting.UI_VideoSetting_C.OnValueChaged__DelegateSignature

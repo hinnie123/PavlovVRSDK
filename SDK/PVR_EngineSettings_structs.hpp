@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -12,12 +12,22 @@ namespace SDK
 //Enums
 //---------------------------------------------------------------------------
 
+// Enum EngineSettings.EFourPlayerSplitScreenType
+enum class EFourPlayerSplitScreenType : uint8_t
+{
+	Grid                           = 0,
+	Vertical                       = 1,
+	EFourPlayerSplitScreenType_MAX = 2
+};
+
+
 // Enum EngineSettings.EThreePlayerSplitScreenType
 enum class EThreePlayerSplitScreenType : uint8_t
 {
 	FavorTop                       = 0,
 	FavorBottom                    = 1,
-	EThreePlayerSplitScreenType_MAX = 2
+	Vertical                       = 2,
+	EThreePlayerSplitScreenType_MAX = 3
 };
 
 
@@ -45,11 +55,11 @@ struct FAutoCompleteCommand
 };
 
 // ScriptStruct EngineSettings.GameModeName
-// 0x0020
+// 0x0028
 struct FGameModeName
 {
 	struct FString                                     Name;                                                     // 0x0000(0x0010) (Edit, ZeroConstructor)
-	struct FStringClassReference                       GameMode;                                                 // 0x0010(0x0010) (Edit)
+	struct FSoftClassPath                              GameMode;                                                 // 0x0010(0x0018) (Edit, ZeroConstructor)
 };
 
 }

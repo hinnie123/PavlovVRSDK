@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -11,6 +11,27 @@ namespace SDK
 //---------------------------------------------------------------------------
 //Functions
 //---------------------------------------------------------------------------
+
+// Function UI_Workshop.UI_Workshop_C.GetNonQuestVisibility
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// ESlateVisibility               ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+ESlateVisibility UUI_Workshop_C::GetNonQuestVisibility()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function UI_Workshop.UI_Workshop_C.GetNonQuestVisibility");
+
+	UUI_Workshop_C_GetNonQuestVisibility_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
 
 // Function UI_Workshop.UI_Workshop_C.Get_PageLabel_Text_1
 // (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
@@ -36,8 +57,8 @@ struct FText UUI_Workshop_C::Get_PageLabel_Text_1()
 // Function UI_Workshop.UI_Workshop_C.GetPageRange
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int                            Length                         (Parm, ZeroConstructor, IsPlainOldData)
-// int                            PageIndex                      (Parm, ZeroConstructor, IsPlainOldData)
+// int                            Length                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// int                            PageIndex                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 // int                            FirxtIndex                     (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // int                            LastIndex                      (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 
@@ -65,8 +86,8 @@ void UUI_Workshop_C::GetPageRange(int Length, int PageIndex, int* FirxtIndex, in
 // Function UI_Workshop.UI_Workshop_C.SetVote
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EWorkshopVoteType              VoteType                       (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           Visible                        (Parm, ZeroConstructor, IsPlainOldData)
+// EWorkshopVoteType              VoteType                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// bool                           Visible                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Workshop_C::SetVote(EWorkshopVoteType VoteType, bool Visible)
 {
@@ -85,9 +106,9 @@ void UUI_Workshop_C::SetVote(EWorkshopVoteType VoteType, bool Visible)
 
 
 // Function UI_Workshop.UI_Workshop_C.SetMapList
-// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString                 ItemToFind                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// struct FString                 ItemToFind                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UUI_Workshop_C::SetMapList(const struct FString& ItemToFind)
 {
@@ -107,7 +128,7 @@ void UUI_Workshop_C::SetMapList(const struct FString& ItemToFind)
 // Function UI_Workshop.UI_Workshop_C.SetProgressToMap
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          Progress                       (Parm, ZeroConstructor, IsPlainOldData)
+// float                          Progress                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Workshop_C::SetProgressToMap(float Progress)
 {
@@ -127,8 +148,8 @@ void UUI_Workshop_C::SetProgressToMap(float Progress)
 // Function UI_Workshop.UI_Workshop_C.GetMapInList
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FName                   ID                             (Parm, ZeroConstructor, IsPlainOldData)
-// class UUI_WorkshopMap_C*       Map                            (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// struct FName                   ID                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// class UUI_WorkshopMap_C*       Map                            (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData)
 
 void UUI_Workshop_C::GetMapInList(const struct FName& ID, class UUI_WorkshopMap_C** Map)
 {
@@ -202,7 +223,7 @@ void UUI_Workshop_C::UpdateWorkshopMapList()
 // Function UI_Workshop.UI_Workshop_C.Select
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FName                   MapId                          (Parm, ZeroConstructor, IsPlainOldData)
+// struct FName                   MapId                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Workshop_C::Select(const struct FName& MapId)
 {
@@ -220,7 +241,7 @@ void UUI_Workshop_C::Select(const struct FName& MapId)
 
 
 // Function UI_Workshop.UI_Workshop_C.UpdateInstalledMapList
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 
 void UUI_Workshop_C::UpdateInstalledMapList()
 {
@@ -256,7 +277,7 @@ void UUI_Workshop_C::Construct()
 // Function UI_Workshop.UI_Workshop_C.OnMapClicked
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UUI_WorkshopMap_C*       Map                            (Parm, ZeroConstructor, IsPlainOldData)
+// class UUI_WorkshopMap_C*       Map                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 
 void UUI_Workshop_C::OnMapClicked(class UUI_WorkshopMap_C* Map)
 {
@@ -310,8 +331,8 @@ void UUI_Workshop_C::BndEvt__CancelBtn_K2Node_ComponentBoundEvent_21_OnButtonCli
 // Function UI_Workshop.UI_Workshop_C.OnSubscriptionChanged
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FName                   ID                             (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           bSubscribed                    (Parm, ZeroConstructor, IsPlainOldData)
+// struct FName                   ID                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bSubscribed                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Workshop_C::OnSubscriptionChanged(const struct FName& ID, bool bSubscribed)
 {
@@ -332,7 +353,7 @@ void UUI_Workshop_C::OnSubscriptionChanged(const struct FName& ID, bool bSubscri
 // Function UI_Workshop.UI_Workshop_C.BndEvt__UI_WorkshopCombo_K2Node_ComponentBoundEvent_60_OnSelectionChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// struct FString                 Selection                      (Parm, ZeroConstructor)
+// struct FString                 Selection                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_Workshop_C::BndEvt__UI_WorkshopCombo_K2Node_ComponentBoundEvent_60_OnSelectionChanged__DelegateSignature(const struct FString& Selection)
 {
@@ -420,7 +441,7 @@ void UUI_Workshop_C::OnDownloadBegin_Event_1()
 // Function UI_Workshop.UI_Workshop_C.OnDownloadProgress_Event_1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          Progress                       (Parm, ZeroConstructor, IsPlainOldData)
+// float                          Progress                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Workshop_C::OnDownloadProgress_Event_1(float Progress)
 {
@@ -440,8 +461,8 @@ void UUI_Workshop_C::OnDownloadProgress_Event_1(float Progress)
 // Function UI_Workshop.UI_Workshop_C.OnCustomMapDownloadCompleted_Event_1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           bSucceed                       (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 ID                             (Parm, ZeroConstructor)
+// bool                           bSucceed                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 ID                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_Workshop_C::OnCustomMapDownloadCompleted_Event_1(bool bSucceed, const struct FString& ID)
 {
@@ -462,8 +483,8 @@ void UUI_Workshop_C::OnCustomMapDownloadCompleted_Event_1(bool bSucceed, const s
 // Function UI_Workshop.UI_Workshop_C.OnPreviewLoaded_Event_1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FName                   ID                             (Parm, ZeroConstructor, IsPlainOldData)
-// class UTexture2D*              Texture                        (Parm, ZeroConstructor, IsPlainOldData)
+// struct FName                   ID                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// class UTexture2D*              Texture                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Workshop_C::OnPreviewLoaded_Event_1(const struct FName& ID, class UTexture2D* Texture)
 {
@@ -518,8 +539,8 @@ void UUI_Workshop_C::BndEvt__VoteDownBtn_K2Node_ComponentBoundEvent_243_OnButton
 // Function UI_Workshop.UI_Workshop_C.OnRequestUserVote_Event_1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FName                   ID                             (Parm, ZeroConstructor, IsPlainOldData)
-// EWorkshopVoteType              VoteType                       (Parm, ZeroConstructor, IsPlainOldData)
+// struct FName                   ID                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// EWorkshopVoteType              VoteType                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Workshop_C::OnRequestUserVote_Event_1(const struct FName& ID, EWorkshopVoteType VoteType)
 {
@@ -589,9 +610,9 @@ void UUI_Workshop_C::OnGetMapListAdvancedResult_Event_2()
 
 
 // Function UI_Workshop.UI_Workshop_C.ExecuteUbergraph_UI_Workshop
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Workshop_C::ExecuteUbergraph_UI_Workshop(int EntryPoint)
 {
@@ -611,8 +632,8 @@ void UUI_Workshop_C::ExecuteUbergraph_UI_Workshop(int EntryPoint)
 // Function UI_Workshop.UI_Workshop_C.OnCommit__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FName                   MapUniqueId                    (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           Canceled                       (Parm, ZeroConstructor, IsPlainOldData)
+// struct FName                   MapUniqueId                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// bool                           Canceled                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Workshop_C::OnCommit__DelegateSignature(const struct FName& MapUniqueId, bool Canceled)
 {

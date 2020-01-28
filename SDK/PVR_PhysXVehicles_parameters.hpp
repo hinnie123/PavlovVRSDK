@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,30 +13,6 @@ namespace SDK
 //---------------------------------------------------------------------------
 //Parameters
 //---------------------------------------------------------------------------
-
-// Function PhysXVehicles.VehicleAnimInstance.GetVehicle
-struct UVehicleAnimInstance_GetVehicle_Params
-{
-	class AWheeledVehicle*                             ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function PhysXVehicles.VehicleWheel.GetSuspensionOffset
-struct UVehicleWheel_GetSuspensionOffset_Params
-{
-	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function PhysXVehicles.VehicleWheel.GetSteerAngle
-struct UVehicleWheel_GetSteerAngle_Params
-{
-	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function PhysXVehicles.VehicleWheel.GetRotationAngle
-struct UVehicleWheel_GetRotationAngle_Params
-{
-	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetUseAutoGears
 struct UWheeledVehicleMovementComponent_SetUseAutoGears_Params
@@ -72,7 +48,7 @@ struct UWheeledVehicleMovementComponent_SetHandbrakeInput_Params
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnoreMask
 struct UWheeledVehicleMovementComponent_SetGroupsToIgnoreMask_Params
 {
-	struct FNavAvoidanceMask                           GroupMask;                                                // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+	struct FNavAvoidanceMask                           GroupMask;                                                // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
 };
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnore
@@ -84,7 +60,7 @@ struct UWheeledVehicleMovementComponent_SetGroupsToIgnore_Params
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoidMask
 struct UWheeledVehicleMovementComponent_SetGroupsToAvoidMask_Params
 {
-	struct FNavAvoidanceMask                           GroupMask;                                                // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+	struct FNavAvoidanceMask                           GroupMask;                                                // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
 };
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoid
@@ -114,7 +90,7 @@ struct UWheeledVehicleMovementComponent_SetBrakeInput_Params
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroupMask
 struct UWheeledVehicleMovementComponent_SetAvoidanceGroupMask_Params
 {
-	struct FNavAvoidanceMask                           GroupMask;                                                // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+	struct FNavAvoidanceMask                           GroupMask;                                                // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
 };
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroup
@@ -194,6 +170,36 @@ struct USimpleWheeledVehicleMovementComponent_SetBrakeTorque_Params
 {
 	float                                              BrakeTorque;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                WheelIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function PhysXVehicles.VehicleAnimInstance.GetVehicle
+struct UVehicleAnimInstance_GetVehicle_Params
+{
+	class AWheeledVehicle*                             ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function PhysXVehicles.VehicleWheel.IsInAir
+struct UVehicleWheel_IsInAir_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function PhysXVehicles.VehicleWheel.GetSuspensionOffset
+struct UVehicleWheel_GetSuspensionOffset_Params
+{
+	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function PhysXVehicles.VehicleWheel.GetSteerAngle
+struct UVehicleWheel_GetSteerAngle_Params
+{
+	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function PhysXVehicles.VehicleWheel.GetRotationAngle
+struct UVehicleWheel_GetRotationAngle_Params
+{
+	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 }

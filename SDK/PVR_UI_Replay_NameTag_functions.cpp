@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,9 +13,9 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function UI_Replay_NameTag.UI_Replay_NameTag_C.GetColorAndOpacity_1
-// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FLinearColor            ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// struct FLinearColor            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
 struct FLinearColor UUI_Replay_NameTag_C::GetColorAndOpacity_1()
 {
@@ -78,7 +78,7 @@ struct FSlateColor UUI_Replay_NameTag_C::Get_playerName_ColorAndOpacity_1()
 // Function UI_Replay_NameTag.UI_Replay_NameTag_C.SetPlayerState
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class APavlovPlayerState*      PlayerState                    (Parm, ZeroConstructor, IsPlainOldData)
+// class APavlovPlayerState*      PlayerState                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Replay_NameTag_C::SetPlayerState(class APavlovPlayerState* PlayerState)
 {
@@ -98,8 +98,8 @@ void UUI_Replay_NameTag_C::SetPlayerState(class APavlovPlayerState* PlayerState)
 // Function UI_Replay_NameTag.UI_Replay_NameTag_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
-// float*                         InDeltaTime                    (Parm, ZeroConstructor, IsPlainOldData)
+// struct FGeometry*              MyGeometry                     (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData)
+// float*                         InDeltaTime                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Replay_NameTag_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
@@ -118,9 +118,9 @@ void UUI_Replay_NameTag_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime
 
 
 // Function UI_Replay_NameTag.UI_Replay_NameTag_C.ExecuteUbergraph_UI_Replay_NameTag
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Replay_NameTag_C::ExecuteUbergraph_UI_Replay_NameTag(int EntryPoint)
 {

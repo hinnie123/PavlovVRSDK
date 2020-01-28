@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -14,30 +14,30 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
-// Function DE_AnimBlueprint.DE_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_DE_AnimBlueprint_AnimGraphNode_ModifyBone_3D83252644BBE9AE4479988FA699391D
-struct UDE_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_DE_AnimBlueprint_AnimGraphNode_ModifyBone_3D83252644BBE9AE4479988FA699391D_Params
+// Function DE_AnimBlueprint.DE_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_DE_AnimBlueprint_AnimGraphNode_ModifyBone_A1C1645740341C959F2362BD8FFB30B1
+struct UDE_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_DE_AnimBlueprint_AnimGraphNode_ModifyBone_A1C1645740341C959F2362BD8FFB30B1_Params
 {
 };
 
-// Function DE_AnimBlueprint.DE_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_DE_AnimBlueprint_AnimGraphNode_ModifyBone_17F2F18446981027C70BEC8343E81BC8
-struct UDE_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_DE_AnimBlueprint_AnimGraphNode_ModifyBone_17F2F18446981027C70BEC8343E81BC8_Params
+// Function DE_AnimBlueprint.DE_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_DE_AnimBlueprint_AnimGraphNode_ModifyBone_CA8683964CE052706AB03C84903D1ACE
+struct UDE_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_DE_AnimBlueprint_AnimGraphNode_ModifyBone_CA8683964CE052706AB03C84903D1ACE_Params
 {
 };
 
-// Function DE_AnimBlueprint.DE_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_DE_AnimBlueprint_AnimGraphNode_ModifyBone_C346AAF0472CBCDEEC07AD9FA5878C83
-struct UDE_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_DE_AnimBlueprint_AnimGraphNode_ModifyBone_C346AAF0472CBCDEEC07AD9FA5878C83_Params
+// Function DE_AnimBlueprint.DE_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_DE_AnimBlueprint_AnimGraphNode_ModifyBone_E3932B7448F891FCA568ACB5344A0AA7
+struct UDE_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_DE_AnimBlueprint_AnimGraphNode_ModifyBone_E3932B7448F891FCA568ACB5344A0AA7_Params
 {
 };
 
-// Function DE_AnimBlueprint.DE_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_DE_AnimBlueprint_AnimGraphNode_ModifyBone_1181890C4F4F96A4A50F2CA2CD8C5267
-struct UDE_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_DE_AnimBlueprint_AnimGraphNode_ModifyBone_1181890C4F4F96A4A50F2CA2CD8C5267_Params
+// Function DE_AnimBlueprint.DE_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_DE_AnimBlueprint_AnimGraphNode_ModifyBone_95AE1AF440C453DE916925AD16E01249
+struct UDE_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_DE_AnimBlueprint_AnimGraphNode_ModifyBone_95AE1AF440C453DE916925AD16E01249_Params
 {
 };
 
 // Function DE_AnimBlueprint.DE_AnimBlueprint_C.ExecuteUbergraph_DE_AnimBlueprint
 struct UDE_AnimBlueprint_C_ExecuteUbergraph_DE_AnimBlueprint_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

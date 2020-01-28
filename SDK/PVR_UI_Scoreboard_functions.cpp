@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,8 +15,8 @@ namespace SDK
 // Function UI_Scoreboard.UI_Scoreboard_C.UpdatePlayers
 // (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UUI_Scoreboard_Player_C*> Players                        (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<class APavlovPlayerState*> PlayerArray                    (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UUI_Scoreboard_Player_C*> Players                        (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class APavlovPlayerState*> PlayerArray                    (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UUI_Scoreboard_C::UpdatePlayers(TArray<class UUI_Scoreboard_Player_C*>* Players, TArray<class APavlovPlayerState*>* PlayerArray)
 {
@@ -40,8 +40,8 @@ void UUI_Scoreboard_C::UpdatePlayers(TArray<class UUI_Scoreboard_Player_C*>* Pla
 // Function UI_Scoreboard.UI_Scoreboard_C.CreatePlayerWidgets
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UUI_Scoreboard_Player_C*> TargetArray                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// class UVerticalBox*            List                           (Parm, ZeroConstructor, IsPlainOldData)
+// TArray<class UUI_Scoreboard_Player_C*> TargetArray                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// class UVerticalBox*            List                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 
 void UUI_Scoreboard_C::CreatePlayerWidgets(TArray<class UUI_Scoreboard_Player_C*> TargetArray, class UVerticalBox* List)
 {
@@ -62,8 +62,8 @@ void UUI_Scoreboard_C::CreatePlayerWidgets(TArray<class UUI_Scoreboard_Player_C*
 // Function UI_Scoreboard.UI_Scoreboard_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
-// float*                         InDeltaTime                    (Parm, ZeroConstructor, IsPlainOldData)
+// struct FGeometry*              MyGeometry                     (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData)
+// float*                         InDeltaTime                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Scoreboard_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
@@ -99,9 +99,9 @@ void UUI_Scoreboard_C::Construct()
 
 
 // Function UI_Scoreboard.UI_Scoreboard_C.ExecuteUbergraph_UI_Scoreboard
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Scoreboard_C::ExecuteUbergraph_UI_Scoreboard(int EntryPoint)
 {

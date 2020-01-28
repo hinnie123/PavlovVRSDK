@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -17,7 +17,7 @@ namespace SDK
 // Function UI_ReplayPlayerStatus.UI_ReplayPlayerStatus_C.Get_header_ColorAndOpacity_1
 struct UUI_ReplayPlayerStatus_C_Get_header_ColorAndOpacity_1_Params
 {
-	struct FLinearColor                                ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+	struct FLinearColor                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function UI_ReplayPlayerStatus.UI_ReplayPlayerStatus_C.Get_Root_Visibility_1
@@ -35,8 +35,8 @@ struct UUI_ReplayPlayerStatus_C_Get_CashLabel_Text_1_Params
 // Function UI_ReplayPlayerStatus.UI_ReplayPlayerStatus_C.Initialize
 struct UUI_ReplayPlayerStatus_C_Initialize_Params
 {
-	bool                                               bLeft;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	int                                                TeamID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bLeft;                                                    // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+	int                                                TeamId;                                                   // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_ReplayPlayerStatus.UI_ReplayPlayerStatus_C.UpdateEquipment
@@ -52,14 +52,14 @@ struct UUI_ReplayPlayerStatus_C_Construct_Params
 // Function UI_ReplayPlayerStatus.UI_ReplayPlayerStatus_C.Tick
 struct UUI_ReplayPlayerStatus_C_Tick_Params
 {
-	struct FGeometry*                                  MyGeometry;                                               // (Parm, IsPlainOldData)
-	float*                                             InDeltaTime;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FGeometry*                                  MyGeometry;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData)
+	float*                                             InDeltaTime;                                              // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_ReplayPlayerStatus.UI_ReplayPlayerStatus_C.ExecuteUbergraph_UI_ReplayPlayerStatus
 struct UUI_ReplayPlayerStatus_C_ExecuteUbergraph_UI_ReplayPlayerStatus_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

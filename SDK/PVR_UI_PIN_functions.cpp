@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -83,7 +83,7 @@ void UUI_PIN_C::BndEvt__NumPad_K2Node_ComponentBoundEvent_1_OnErase__DelegateSig
 // Function UI_PIN.UI_PIN_C.BndEvt__NumPad_K2Node_ComponentBoundEvent_2_OnDigit__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// int                            Digit                          (Parm, ZeroConstructor, IsPlainOldData)
+// int                            Digit                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_PIN_C::BndEvt__NumPad_K2Node_ComponentBoundEvent_2_OnDigit__DelegateSignature(int Digit)
 {
@@ -101,9 +101,9 @@ void UUI_PIN_C::BndEvt__NumPad_K2Node_ComponentBoundEvent_2_OnDigit__DelegateSig
 
 
 // Function UI_PIN.UI_PIN_C.ExecuteUbergraph_UI_PIN
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_PIN_C::ExecuteUbergraph_UI_PIN(int EntryPoint)
 {
@@ -123,7 +123,7 @@ void UUI_PIN_C::ExecuteUbergraph_UI_PIN(int EntryPoint)
 // Function UI_PIN.UI_PIN_C.OnConfirm__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString                 PinString                      (Parm, ZeroConstructor)
+// struct FString                 PinString                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_PIN_C::OnConfirm__DelegateSignature(const struct FString& PinString)
 {

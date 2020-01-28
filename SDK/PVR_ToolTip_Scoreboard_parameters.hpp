@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -27,7 +27,7 @@ struct AToolTip_Scoreboard_C_ReceiveBeginPlay_Params
 // Function ToolTip_Scoreboard.ToolTip_Scoreboard_C.OnDestroyed_Event_1
 struct AToolTip_Scoreboard_C_OnDestroyed_Event_1_Params
 {
-	class AActor*                                      DestroyedActor;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	class AActor*                                      DestroyedActor;                                           // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function ToolTip_Scoreboard.ToolTip_Scoreboard_C.CustomEvent_1
@@ -38,7 +38,7 @@ struct AToolTip_Scoreboard_C_CustomEvent_1_Params
 // Function ToolTip_Scoreboard.ToolTip_Scoreboard_C.ExecuteUbergraph_ToolTip_Scoreboard
 struct AToolTip_Scoreboard_C_ExecuteUbergraph_ToolTip_Scoreboard_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

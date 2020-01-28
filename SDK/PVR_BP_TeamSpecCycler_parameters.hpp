@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -17,7 +17,7 @@ namespace SDK
 // Function BP_TeamSpecCycler.BP_TeamSpecCycler_C.SpecIndex
 struct UBP_TeamSpecCycler_C_SpecIndex_Params
 {
-	int                                                Index;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                Index;                                                    // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               Success;                                                  // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -39,23 +39,23 @@ struct UBP_TeamSpecCycler_C_CycleNext_Params
 // Function BP_TeamSpecCycler.BP_TeamSpecCycler_C.Cycle
 struct UBP_TeamSpecCycler_C_Cycle_Params
 {
-	bool                                               Next;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               Next;                                                     // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BP_TeamSpecCycler.BP_TeamSpecCycler_C.OnDrySpecPlayer__DelegateSignature
 struct UBP_TeamSpecCycler_C_OnDrySpecPlayer__DelegateSignature_Params
 {
-	int                                                Index;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	int                                                TeamID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                Index;                                                    // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+	int                                                TeamId;                                                   // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BP_TeamSpecCycler.BP_TeamSpecCycler_C.OnSpecPlayer__DelegateSignature
 struct UBP_TeamSpecCycler_C_OnSpecPlayer__DelegateSignature_Params
 {
-	class APavlovPawn*                                 Pawn;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	class APavlovPlayerState*                          PlayerState;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-	int                                                Index;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	int                                                TeamID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	class APavlovPawn*                                 Pawn;                                                     // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+	class APavlovPlayerState*                          PlayerState;                                              // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+	int                                                Index;                                                    // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+	int                                                TeamId;                                                   // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

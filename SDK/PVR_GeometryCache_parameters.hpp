@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -20,9 +20,24 @@ struct AGeometryCacheActor_GetGeometryCacheComponent_Params
 	class UGeometryCacheComponent*                     ReturnValue;                                              // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
 };
 
+// Function GeometryCache.GeometryCacheComponent.TickAtThisTime
+struct UGeometryCacheComponent_TickAtThisTime_Params
+{
+	float                                              Time;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bInIsRunning;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bInBackwards;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bInIsLooping;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
 // Function GeometryCache.GeometryCacheComponent.Stop
 struct UGeometryCacheComponent_Stop_Params
 {
+};
+
+// Function GeometryCache.GeometryCacheComponent.SetStartTimeOffset
+struct UGeometryCacheComponent_SetStartTimeOffset_Params
+{
+	float                                              NewStartTimeOffset;                                       // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function GeometryCache.GeometryCacheComponent.SetPlaybackSpeed
@@ -87,8 +102,38 @@ struct UGeometryCacheComponent_IsLooping_Params
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
+// Function GeometryCache.GeometryCacheComponent.GetStartTimeOffset
+struct UGeometryCacheComponent_GetStartTimeOffset_Params
+{
+	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
 // Function GeometryCache.GeometryCacheComponent.GetPlaybackSpeed
 struct UGeometryCacheComponent_GetPlaybackSpeed_Params
+{
+	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function GeometryCache.GeometryCacheComponent.GetPlaybackDirection
+struct UGeometryCacheComponent_GetPlaybackDirection_Params
+{
+	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function GeometryCache.GeometryCacheComponent.GetNumberOfFrames
+struct UGeometryCacheComponent_GetNumberOfFrames_Params
+{
+	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function GeometryCache.GeometryCacheComponent.GetDuration
+struct UGeometryCacheComponent_GetDuration_Params
+{
+	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function GeometryCache.GeometryCacheComponent.GetAnimationTime
+struct UGeometryCacheComponent_GetAnimationTime_Params
 {
 	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };

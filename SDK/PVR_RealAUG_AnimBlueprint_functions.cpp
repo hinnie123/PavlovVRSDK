@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -64,9 +64,9 @@ void URealAUG_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_RealA
 
 
 // Function RealAUG_AnimBlueprint.RealAUG_AnimBlueprint_C.ExecuteUbergraph_RealAUG_AnimBlueprint
-// (HasDefaults)
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void URealAUG_AnimBlueprint_C::ExecuteUbergraph_RealAUG_AnimBlueprint(int EntryPoint)
 {

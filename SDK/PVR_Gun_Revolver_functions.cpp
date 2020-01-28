@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -66,7 +66,7 @@ void AGun_Revolver_C::ReceiveBeginPlay()
 // Function Gun_Revolver.Gun_Revolver_C.OnRevolverCylinderChanged_Event_1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           bOpen                          (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bOpen                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AGun_Revolver_C::OnRevolverCylinderChanged_Event_1(bool bOpen)
 {
@@ -86,7 +86,7 @@ void AGun_Revolver_C::OnRevolverCylinderChanged_Event_1(bool bOpen)
 // Function Gun_Revolver.Gun_Revolver_C.OnGesturePerformedDelegate
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FName                   Name                           (Parm, ZeroConstructor, IsPlainOldData)
+// struct FName                   Name                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AGun_Revolver_C::OnGesturePerformedDelegate(const struct FName& Name)
 {
@@ -189,9 +189,9 @@ void AGun_Revolver_C::SetupClose()
 
 
 // Function Gun_Revolver.Gun_Revolver_C.ExecuteUbergraph_Gun_Revolver
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AGun_Revolver_C::ExecuteUbergraph_Gun_Revolver(int EntryPoint)
 {

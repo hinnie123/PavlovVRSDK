@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -12,23 +12,6 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
-// Function LMGA_AnimBlueprint.LMGA_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_LMGA_AnimBlueprint_AnimGraphNode_BlendListByBool_DB6651F3494CB099AD77C4B643BE5D2B
-// (BlueprintEvent)
-
-void ULMGA_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_LMGA_AnimBlueprint_AnimGraphNode_BlendListByBool_DB6651F3494CB099AD77C4B643BE5D2B()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function LMGA_AnimBlueprint.LMGA_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_LMGA_AnimBlueprint_AnimGraphNode_BlendListByBool_DB6651F3494CB099AD77C4B643BE5D2B");
-
-	ULMGA_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_LMGA_AnimBlueprint_AnimGraphNode_BlendListByBool_DB6651F3494CB099AD77C4B643BE5D2B_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function LMGA_AnimBlueprint.LMGA_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_LMGA_AnimBlueprint_AnimGraphNode_ModifyBone_F32C7C0142491A59783CC49C851CC96F
 // (BlueprintEvent)
 
@@ -37,40 +20,6 @@ void ULMGA_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_LMGA_Ani
 	static auto fn = UObject::FindObject<UFunction>("Function LMGA_AnimBlueprint.LMGA_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_LMGA_AnimBlueprint_AnimGraphNode_ModifyBone_F32C7C0142491A59783CC49C851CC96F");
 
 	ULMGA_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_LMGA_AnimBlueprint_AnimGraphNode_ModifyBone_F32C7C0142491A59783CC49C851CC96F_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function LMGA_AnimBlueprint.LMGA_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_LMGA_AnimBlueprint_AnimGraphNode_BlendListByBool_E838DC9A437E32241F628B955331DBAD
-// (BlueprintEvent)
-
-void ULMGA_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_LMGA_AnimBlueprint_AnimGraphNode_BlendListByBool_E838DC9A437E32241F628B955331DBAD()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function LMGA_AnimBlueprint.LMGA_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_LMGA_AnimBlueprint_AnimGraphNode_BlendListByBool_E838DC9A437E32241F628B955331DBAD");
-
-	ULMGA_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_LMGA_AnimBlueprint_AnimGraphNode_BlendListByBool_E838DC9A437E32241F628B955331DBAD_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function LMGA_AnimBlueprint.LMGA_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_LMGA_AnimBlueprint_AnimGraphNode_BlendListByBool_A931AE0A4BA04117B40BEC9662A19E51
-// (BlueprintEvent)
-
-void ULMGA_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_LMGA_AnimBlueprint_AnimGraphNode_BlendListByBool_A931AE0A4BA04117B40BEC9662A19E51()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function LMGA_AnimBlueprint.LMGA_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_LMGA_AnimBlueprint_AnimGraphNode_BlendListByBool_A931AE0A4BA04117B40BEC9662A19E51");
-
-	ULMGA_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_LMGA_AnimBlueprint_AnimGraphNode_BlendListByBool_A931AE0A4BA04117B40BEC9662A19E51_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -166,9 +115,9 @@ void ULMGA_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_LMGA_Ani
 
 
 // Function LMGA_AnimBlueprint.LMGA_AnimBlueprint_C.ExecuteUbergraph_LMGA_AnimBlueprint
-// (HasDefaults)
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void ULMGA_AnimBlueprint_C::ExecuteUbergraph_LMGA_AnimBlueprint(int EntryPoint)
 {

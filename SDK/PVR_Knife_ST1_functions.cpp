@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -32,7 +32,7 @@ void AKnife_ST1_C::UserConstructionScript()
 // Function Knife_ST1.Knife_ST1_C.OnBloodyChanged
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// bool*                          bNewBloody                     (Parm, ZeroConstructor, IsPlainOldData)
+// bool*                          bNewBloody                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AKnife_ST1_C::OnBloodyChanged(bool* bNewBloody)
 {
@@ -69,7 +69,7 @@ void AKnife_ST1_C::OnDrop()
 // Function Knife_ST1.Knife_ST1_C.Physicalize
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// bool*                          bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+// bool*                          bEnabled                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AKnife_ST1_C::Physicalize(bool* bEnabled)
 {
@@ -89,7 +89,7 @@ void AKnife_ST1_C::Physicalize(bool* bEnabled)
 // Function Knife_ST1.Knife_ST1_C.OnPick
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// class AVRItemController**      ByController                   (Parm, ZeroConstructor, IsPlainOldData)
+// class AVRItemController**      ByController                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AKnife_ST1_C::OnPick(class AVRItemController** ByController)
 {
@@ -109,7 +109,7 @@ void AKnife_ST1_C::OnPick(class AVRItemController** ByController)
 // Function Knife_ST1.Knife_ST1_C.Used
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// bool*                          bJustPicked                    (Parm, ZeroConstructor, IsPlainOldData)
+// bool*                          bJustPicked                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AKnife_ST1_C::Used(bool* bJustPicked)
 {
@@ -144,9 +144,9 @@ void AKnife_ST1_C::Use()
 
 
 // Function Knife_ST1.Knife_ST1_C.ExecuteUbergraph_Knife_ST1
-// (HasDefaults)
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AKnife_ST1_C::ExecuteUbergraph_Knife_ST1(int EntryPoint)
 {

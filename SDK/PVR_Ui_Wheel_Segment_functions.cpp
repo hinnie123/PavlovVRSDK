@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 // Function Ui_Wheel_Segment.Ui_Wheel_Segment_C.Update
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FWheelSegment           SegmentData                    (Parm)
+// struct FWheelSegment           SegmentData                    (BlueprintVisible, BlueprintReadOnly, Parm)
 
 void UUi_Wheel_Segment_C::Update(const struct FWheelSegment& SegmentData)
 {
@@ -33,9 +33,9 @@ void UUi_Wheel_Segment_C::Update(const struct FWheelSegment& SegmentData)
 
 
 // Function Ui_Wheel_Segment.Ui_Wheel_Segment_C.Get_Background_ColorAndOpacity_1
-// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FLinearColor            ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// struct FLinearColor            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
 struct FLinearColor UUi_Wheel_Segment_C::Get_Background_ColorAndOpacity_1()
 {
@@ -56,7 +56,7 @@ struct FLinearColor UUi_Wheel_Segment_C::Get_Background_ColorAndOpacity_1()
 // Function Ui_Wheel_Segment.Ui_Wheel_Segment_C.SetRadialAngle
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          Angle                          (Parm, ZeroConstructor, IsPlainOldData)
+// float                          Angle                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUi_Wheel_Segment_C::SetRadialAngle(float Angle)
 {
@@ -76,8 +76,8 @@ void UUi_Wheel_Segment_C::SetRadialAngle(float Angle)
 // Function Ui_Wheel_Segment.Ui_Wheel_Segment_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
-// float*                         InDeltaTime                    (Parm, ZeroConstructor, IsPlainOldData)
+// struct FGeometry*              MyGeometry                     (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData)
+// float*                         InDeltaTime                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUi_Wheel_Segment_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
@@ -96,9 +96,9 @@ void UUi_Wheel_Segment_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 
 
 // Function Ui_Wheel_Segment.Ui_Wheel_Segment_C.ExecuteUbergraph_Ui_Wheel_Segment
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUi_Wheel_Segment_C::ExecuteUbergraph_Ui_Wheel_Segment(int EntryPoint)
 {

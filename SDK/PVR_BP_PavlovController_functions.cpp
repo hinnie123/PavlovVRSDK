@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -98,9 +98,9 @@ void ABP_PavlovController_C::MakeWatchBlink()
 
 
 // Function BP_PavlovController.BP_PavlovController_C.ExecuteUbergraph_BP_PavlovController
-// (HasDefaults)
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void ABP_PavlovController_C::ExecuteUbergraph_BP_PavlovController(int EntryPoint)
 {

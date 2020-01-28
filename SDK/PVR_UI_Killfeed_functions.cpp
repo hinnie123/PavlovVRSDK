@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -32,7 +32,7 @@ void UUI_Killfeed_C::Construct()
 // Function UI_Killfeed.UI_Killfeed_C.OnKillfeedEntry_Event_1
 // (HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FKillfeedEntry          NewEntry                       (ConstParm, Parm, OutParm, ReferenceParm)
+// struct FKillfeedEntry          NewEntry                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
 void UUI_Killfeed_C::OnKillfeedEntry_Event_1(const struct FKillfeedEntry& NewEntry)
 {
@@ -52,8 +52,8 @@ void UUI_Killfeed_C::OnKillfeedEntry_Event_1(const struct FKillfeedEntry& NewEnt
 // Function UI_Killfeed.UI_Killfeed_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
-// float*                         InDeltaTime                    (Parm, ZeroConstructor, IsPlainOldData)
+// struct FGeometry*              MyGeometry                     (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData)
+// float*                         InDeltaTime                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Killfeed_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
@@ -72,9 +72,9 @@ void UUI_Killfeed_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 
 
 // Function UI_Killfeed.UI_Killfeed_C.ExecuteUbergraph_UI_Killfeed
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Killfeed_C::ExecuteUbergraph_UI_Killfeed(int EntryPoint)
 {

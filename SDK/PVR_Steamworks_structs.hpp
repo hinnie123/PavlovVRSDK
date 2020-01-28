@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -121,6 +121,14 @@ struct FSteamLobbyInfo
 	unsigned char                                      UnknownData02[0x8];                                       // 0x0030(0x0008) MISSED OFFSET
 };
 
+// ScriptStruct Steamworks.SteamRadioPlaybackChannel
+// 0x0010
+struct FSteamRadioPlaybackChannel
+{
+	class UAudioComponent*                             SoundComponent;                                           // 0x0000(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
+	class USoundWaveProcedural*                        SoundStreaming;                                           // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData)
+};
+
 // ScriptStruct Steamworks.SteamworksVoicePacket
 // 0x0010
 struct FSteamworksVoicePacket
@@ -128,12 +136,30 @@ struct FSteamworksVoicePacket
 	TArray<unsigned char>                              Data;                                                     // 0x0000(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct Steamworks.SteamRadioPlaybackChannel
-// 0x0010
-struct FSteamRadioPlaybackChannel
+// ScriptStruct Steamworks.SteamServerInfo
+// 0x0058
+struct FSteamServerInfo
 {
-	class UAudioComponent*                             SoundComponent;                                           // 0x0000(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
-	class USoundWaveProcedural*                        SoundStreaming;                                           // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData)
+	struct FString                                     Name;                                                     // 0x0000(0x0010) (BlueprintVisible, ZeroConstructor)
+	struct FString                                     MapName;                                                  // 0x0010(0x0010) (BlueprintVisible, ZeroConstructor)
+	struct FString                                     GameTags;                                                 // 0x0020(0x0010) (BlueprintVisible, ZeroConstructor)
+	int                                                Ping;                                                     // 0x0030(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x0034(0x0004) MISSED OFFSET
+	struct FString                                     ConnectAddress;                                           // 0x0038(0x0010) (BlueprintVisible, ZeroConstructor)
+	int                                                MaxSlots;                                                 // 0x0048(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	int                                                Slots;                                                    // 0x004C(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	int                                                BotSlots;                                                 // 0x0050(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bNeedPassword;                                            // 0x0054(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bSecure;                                                  // 0x0055(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x2];                                       // 0x0056(0x0002) MISSED OFFSET
+};
+
+// ScriptStruct Steamworks.SteamServerListKeyValue
+// 0x0010
+struct FSteamServerListKeyValue
+{
+	struct FName                                       Key;                                                      // 0x0000(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	struct FName                                       Value;                                                    // 0x0008(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 };
 
 }

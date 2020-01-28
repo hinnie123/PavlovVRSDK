@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -33,7 +33,7 @@ struct UUI_Main_C_ToModeration_Params
 // Function UI_Main.UI_Main_C.CreateMapBrowser
 struct UUI_Main_C_CreateMapBrowser_Params
 {
-	class UUI_Workshop_C*                              Broqwser;                                                 // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+	class UUI_Workshop_C*                              Broqwser;                                                 // (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData)
 };
 
 // Function UI_Main.UI_Main_C.ToMultiplayer
@@ -145,8 +145,8 @@ struct UUI_Main_C_BndEvt__Button_0_K2Node_ComponentBoundEvent_229_OnButtonClicke
 // Function UI_Main.UI_Main_C.OnCommit_Event_1
 struct UUI_Main_C_OnCommit_Event_1_Params
 {
-	struct FName                                       MapUniqueId;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               Canceled;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FName                                       MapUniqueId;                                              // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               Canceled;                                                 // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_Main.UI_Main_C.BndEvt__VoteMuteButton_K2Node_ComponentBoundEvent_285_OnButtonClicked__DelegateSignature
@@ -212,7 +212,7 @@ struct UUI_Main_C_BndEvt__AbstainButton_K2Node_ComponentBoundEvent_828_OnButtonC
 // Function UI_Main.UI_Main_C.OnVoteEnd
 struct UUI_Main_C_OnVoteEnd_Params
 {
-	class AVote*                                       Vote;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
+	class AVote*                                       Vote;                                                     // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_Main.UI_Main_C.BndEvt__Suicide_K2Node_ComponentBoundEvent_134_OnButtonClicked__DelegateSignature
@@ -220,10 +220,15 @@ struct UUI_Main_C_BndEvt__Suicide_K2Node_ComponentBoundEvent_134_OnButtonClicked
 {
 };
 
+// Function UI_Main.UI_Main_C.BndEvt__TutorialButton_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature
+struct UUI_Main_C_BndEvt__TutorialButton_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature_Params
+{
+};
+
 // Function UI_Main.UI_Main_C.ExecuteUbergraph_UI_Main
 struct UUI_Main_C_ExecuteUbergraph_UI_Main_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,14 +13,10 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass Gun_AutoSniper.Gun_AutoSniper_C
-// 0x0020 (0x09D0 - 0x09B0)
+// 0x0000 (0x0B30 - 0x0B30)
 class AGun_AutoSniper_C : public AGun_Base_C
 {
 public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x09B0(0x0008) (Transient, DuplicateTransient)
-	class USceneCaptureComponent2D*                    ScopeCapture;                                             // 0x09B8(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	class UStaticMeshComponent*                        ScopeLens;                                                // 0x09C0(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	class UStaticMeshComponent*                        Scope;                                                    // 0x09C8(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
@@ -28,13 +24,6 @@ public:
 		return ptr;
 	}
 
-
-	void SetScopeCapture(bool Capture);
-	void UserConstructionScript();
-	void OnPick(class AVRItemController** ByController);
-	void OnDrop();
-	void OnUnderExploitChanged(bool* bUnderExploit);
-	void ExecuteUbergraph_Gun_AutoSniper(int EntryPoint);
 };
 
 

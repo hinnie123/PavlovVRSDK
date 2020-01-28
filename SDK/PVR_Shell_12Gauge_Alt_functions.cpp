@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,9 +13,9 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function Shell_12Gauge_Alt.Shell_12Gauge_Alt_C.GetImpulseVector
-// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FVector                 ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// struct FVector                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
 struct FVector AShell_12Gauge_Alt_C::GetImpulseVector()
 {
@@ -68,9 +68,9 @@ void AShell_12Gauge_Alt_C::ReceiveBeginPlay()
 
 
 // Function Shell_12Gauge_Alt.Shell_12Gauge_Alt_C.ExecuteUbergraph_Shell_12Gauge_Alt
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AShell_12Gauge_Alt_C::ExecuteUbergraph_Shell_12Gauge_Alt(int EntryPoint)
 {

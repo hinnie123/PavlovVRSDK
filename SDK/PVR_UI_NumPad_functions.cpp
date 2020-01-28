@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -32,7 +32,7 @@ void UUI_NumPad_C::Construct()
 // Function UI_NumPad.UI_NumPad_C.OnKeyClicked
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int                            Value                          (Parm, ZeroConstructor, IsPlainOldData)
+// int                            Value                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_NumPad_C::OnKeyClicked(int Value)
 {
@@ -50,9 +50,9 @@ void UUI_NumPad_C::OnKeyClicked(int Value)
 
 
 // Function UI_NumPad.UI_NumPad_C.ExecuteUbergraph_UI_NumPad
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_NumPad_C::ExecuteUbergraph_UI_NumPad(int EntryPoint)
 {
@@ -72,7 +72,7 @@ void UUI_NumPad_C::ExecuteUbergraph_UI_NumPad(int EntryPoint)
 // Function UI_NumPad.UI_NumPad_C.OnDigit__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int                            Digit                          (Parm, ZeroConstructor, IsPlainOldData)
+// int                            Digit                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_NumPad_C::OnDigit__DelegateSignature(int Digit)
 {

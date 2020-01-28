@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -32,7 +32,7 @@ struct AToolTip_Spec_Cam_C_CustomEvent_1_Params
 // Function ToolTip_Spec_Cam.ToolTip_Spec_Cam_C.ExecuteUbergraph_ToolTip_Spec_Cam
 struct AToolTip_Spec_Cam_C_ExecuteUbergraph_ToolTip_Spec_Cam_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

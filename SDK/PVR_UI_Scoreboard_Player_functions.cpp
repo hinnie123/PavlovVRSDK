@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -55,9 +55,9 @@ struct FSlateBrush UUI_Scoreboard_Player_C::GetBrush_1()
 
 
 // Function UI_Scoreboard_Player.UI_Scoreboard_Player_C.GetColorAndOpacity_3
-// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FLinearColor            ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// struct FLinearColor            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
 struct FLinearColor UUI_Scoreboard_Player_C::GetColorAndOpacity_3()
 {
@@ -76,9 +76,9 @@ struct FLinearColor UUI_Scoreboard_Player_C::GetColorAndOpacity_3()
 
 
 // Function UI_Scoreboard_Player.UI_Scoreboard_Player_C.GetColorAndOpacity_2
-// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FLinearColor            ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// struct FLinearColor            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
 struct FLinearColor UUI_Scoreboard_Player_C::GetColorAndOpacity_2()
 {

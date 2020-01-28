@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -17,8 +17,8 @@ namespace SDK
 // Function UI_ReplayHUD.UI_ReplayHUD_C.SelectPlayerStatus
 struct UUI_ReplayHUD_C_SelectPlayerStatus_Params
 {
-	int                                                Index;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	int                                                TeamID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                Index;                                                    // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+	int                                                TeamId;                                                   // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_ReplayHUD.UI_ReplayHUD_C.GetBrush_1
@@ -30,7 +30,7 @@ struct UUI_ReplayHUD_C_GetBrush_1_Params
 // Function UI_ReplayHUD.UI_ReplayHUD_C.GetGameModeFromCombo
 struct UUI_ReplayHUD_C_GetGameModeFromCombo_Params
 {
-	class UComboBoxString*                             self2;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	class UComboBoxString*                             self2;                                                    // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 
@@ -53,7 +53,7 @@ struct UUI_ReplayHUD_C_GetReplayManager_Params
 // Function UI_ReplayHUD.UI_ReplayHUD_C.SetScrub
 struct UUI_ReplayHUD_C_SetScrub_Params
 {
-	float                                              Time;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              Time;                                                     // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_ReplayHUD.UI_ReplayHUD_C.GetVisibility_1
@@ -91,26 +91,26 @@ struct UUI_ReplayHUD_C_BndEvt__Button_1_K2Node_ComponentBoundEvent_177_OnButtonC
 // Function UI_ReplayHUD.UI_ReplayHUD_C.Tick
 struct UUI_ReplayHUD_C_Tick_Params
 {
-	struct FGeometry*                                  MyGeometry;                                               // (Parm, IsPlainOldData)
-	float*                                             InDeltaTime;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FGeometry*                                  MyGeometry;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData)
+	float*                                             InDeltaTime;                                              // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_ReplayHUD.UI_ReplayHUD_C.PushErrorMessage
 struct UUI_ReplayHUD_C_PushErrorMessage_Params
 {
-	struct FString                                     Message;                                                  // (Parm, ZeroConstructor)
+	struct FString                                     Message;                                                  // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 };
 
 // Function UI_ReplayHUD.UI_ReplayHUD_C.CustomEvent_1
 struct UUI_ReplayHUD_C_CustomEvent_1_Params
 {
-	bool                                               Enabled;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               Enabled;                                                  // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_ReplayHUD.UI_ReplayHUD_C.OnReplayListUpdated_Event_1
 struct UUI_ReplayHUD_C_OnReplayListUpdated_Event_1_Params
 {
-	bool                                               bSucceeded;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bSucceeded;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_ReplayHUD.UI_ReplayHUD_C.BndEvt__ScrubBtn_K2Node_ComponentBoundEvent_21_OnButtonPressedEvent__DelegateSignature
@@ -121,51 +121,51 @@ struct UUI_ReplayHUD_C_BndEvt__ScrubBtn_K2Node_ComponentBoundEvent_21_OnButtonPr
 // Function UI_ReplayHUD.UI_ReplayHUD_C.BndEvt__GameModeCombo_K2Node_ComponentBoundEvent_94_OnSelectionChangedEvent__DelegateSignature
 struct UUI_ReplayHUD_C_BndEvt__GameModeCombo_K2Node_ComponentBoundEvent_94_OnSelectionChangedEvent__DelegateSignature_Params
 {
-	struct FString                                     SelectedItem;                                             // (Parm, ZeroConstructor)
-	TEnumAsByte<ESelectInfo>                           SelectionType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FString                                     SelectedItem;                                             // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
+	TEnumAsByte<ESelectInfo>                           SelectionType;                                            // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_ReplayHUD.UI_ReplayHUD_C.BndEvt__CompCheckbox_K2Node_ComponentBoundEvent_103_OnCheckBoxComponentStateChanged__DelegateSignature
 struct UUI_ReplayHUD_C_BndEvt__CompCheckbox_K2Node_ComponentBoundEvent_103_OnCheckBoxComponentStateChanged__DelegateSignature_Params
 {
-	bool                                               bIsChecked;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bIsChecked;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_ReplayHUD.UI_ReplayHUD_C.CustomEvent_2
 struct UUI_ReplayHUD_C_CustomEvent_2_Params
 {
-	float                                              Progress;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              Progress;                                                 // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_ReplayHUD.UI_ReplayHUD_C.CustomEvent_3
 struct UUI_ReplayHUD_C_CustomEvent_3_Params
 {
-	struct FString                                     ReplayId;                                                 // (Parm, ZeroConstructor)
+	struct FString                                     ReplayId;                                                 // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 };
 
 // Function UI_ReplayHUD.UI_ReplayHUD_C.CustomEvent_4
 struct UUI_ReplayHUD_C_CustomEvent_4_Params
 {
-	bool                                               bSucceeded;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FString                                     Error;                                                    // (Parm, ZeroConstructor)
+	bool                                               bSucceeded;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+	struct FString                                     Error;                                                    // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 };
 
 // Function UI_ReplayHUD.UI_ReplayHUD_C.ExecuteUbergraph_UI_ReplayHUD
 struct UUI_ReplayHUD_C_ExecuteUbergraph_UI_ReplayHUD_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_ReplayHUD.UI_ReplayHUD_C.OnScrubPressed__DelegateSignature
 struct UUI_ReplayHUD_C_OnScrubPressed__DelegateSignature_Params
 {
-	float                                              Ratio;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              Ratio;                                                    // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_ReplayHUD.UI_ReplayHUD_C.OnMenuChanged__DelegateSignature
 struct UUI_ReplayHUD_C_OnMenuChanged__DelegateSignature_Params
 {
-	bool                                               Enabled;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               Enabled;                                                  // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

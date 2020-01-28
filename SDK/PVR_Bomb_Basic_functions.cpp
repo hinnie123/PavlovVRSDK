@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -66,7 +66,7 @@ void ABomb_Basic_C::OnPlanted()
 // Function Bomb_Basic.Bomb_Basic_C.Physicalize
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// bool*                          bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+// bool*                          bEnabled                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void ABomb_Basic_C::Physicalize(bool* bEnabled)
 {
@@ -103,7 +103,7 @@ void ABomb_Basic_C::ReceiveBeginPlay()
 // Function Bomb_Basic.Bomb_Basic_C.OnPlayerOcclusionChange
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// bool*                          bNewOccluded                   (Parm, ZeroConstructor, IsPlainOldData)
+// bool*                          bNewOccluded                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void ABomb_Basic_C::OnPlayerOcclusionChange(bool* bNewOccluded)
 {
@@ -121,9 +121,9 @@ void ABomb_Basic_C::OnPlayerOcclusionChange(bool* bNewOccluded)
 
 
 // Function Bomb_Basic.Bomb_Basic_C.ExecuteUbergraph_Bomb_Basic
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void ABomb_Basic_C::ExecuteUbergraph_Bomb_Basic(int EntryPoint)
 {

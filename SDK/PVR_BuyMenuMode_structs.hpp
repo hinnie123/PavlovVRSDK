@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -22,7 +22,9 @@ enum class EBuyMenuMode : uint8_t
 	NewEnumerator3                 = 4,
 	NewEnumerator5                 = 5,
 	NewEnumerator6                 = 6,
-	BuyMenuMode_MAX                = 7
+	NewEnumerator7                 = 7,
+	NewEnumerator8                 = 8,
+	BuyMenuMode_MAX                = 9
 };
 
 

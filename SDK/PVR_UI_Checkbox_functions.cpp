@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 // Function UI_Checkbox.UI_Checkbox_C.SetChecked
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           Checked                        (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           Checked                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Checkbox_C::SetChecked(bool Checked)
 {
@@ -74,8 +74,8 @@ void UUI_Checkbox_C::Construct()
 // Function UI_Checkbox.UI_Checkbox_C.OnMouseEnter
 // (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
-// struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
-// struct FPointerEvent*          MouseEvent                     (ConstParm, Parm, OutParm, ReferenceParm)
+// struct FGeometry*              MyGeometry                     (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData)
+// struct FPointerEvent*          MouseEvent                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
 void UUI_Checkbox_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
@@ -96,7 +96,7 @@ void UUI_Checkbox_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPointerE
 // Function UI_Checkbox.UI_Checkbox_C.OnMouseLeave
 // (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
-// struct FPointerEvent*          MouseEvent                     (ConstParm, Parm, OutParm, ReferenceParm)
+// struct FPointerEvent*          MouseEvent                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
 void UUI_Checkbox_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 {
@@ -116,7 +116,7 @@ void UUI_Checkbox_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 // Function UI_Checkbox.UI_Checkbox_C.BndEvt__CheckBoxWidget_K2Node_ComponentBoundEvent_26_OnCheckBoxComponentStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// bool                           bIsChecked                     (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bIsChecked                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Checkbox_C::BndEvt__CheckBoxWidget_K2Node_ComponentBoundEvent_26_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
 {
@@ -136,7 +136,7 @@ void UUI_Checkbox_C::BndEvt__CheckBoxWidget_K2Node_ComponentBoundEvent_26_OnChec
 // Function UI_Checkbox.UI_Checkbox_C.OnCheckStateChanged_Event
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           Checked                        (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           Checked                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Checkbox_C::OnCheckStateChanged_Event(bool Checked)
 {
@@ -154,9 +154,9 @@ void UUI_Checkbox_C::OnCheckStateChanged_Event(bool Checked)
 
 
 // Function UI_Checkbox.UI_Checkbox_C.ExecuteUbergraph_UI_Checkbox
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Checkbox_C::ExecuteUbergraph_UI_Checkbox(int EntryPoint)
 {
@@ -176,7 +176,7 @@ void UUI_Checkbox_C::ExecuteUbergraph_UI_Checkbox(int EntryPoint)
 // Function UI_Checkbox.UI_Checkbox_C.OnCheckStateChanged__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           Checked                        (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           Checked                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Checkbox_C::OnCheckStateChanged__DelegateSignature(bool Checked)
 {

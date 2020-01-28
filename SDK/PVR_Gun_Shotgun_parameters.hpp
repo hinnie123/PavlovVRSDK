@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -22,7 +22,7 @@ struct AGun_Shotgun_C_UnlockPump_Params
 // Function Gun_Shotgun.Gun_Shotgun_C.LockPump
 struct AGun_Shotgun_C_LockPump_Params
 {
-	float                                              LockRatio;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              LockRatio;                                                // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Gun_Shotgun.Gun_Shotgun_C.ShouldPumpByTrigger
@@ -34,13 +34,13 @@ struct AGun_Shotgun_C_ShouldPumpByTrigger_Params
 // Function Gun_Shotgun.Gun_Shotgun_C.ToggleReloadHandle
 struct AGun_Shotgun_C_ToggleReloadHandle_Params
 {
-	bool                                               Enabled;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               Enabled;                                                  // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Gun_Shotgun.Gun_Shotgun_C.PlayPumpHaptic
 struct AGun_Shotgun_C_PlayPumpHaptic_Params
 {
-	class UHapticFeedbackEffect_Base*                  HapticEffect;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	class UHapticFeedbackEffect_Base*                  HapticEffect;                                             // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Gun_Shotgun.Gun_Shotgun_C.UserConstructionScript
@@ -66,19 +66,19 @@ struct AGun_Shotgun_C_ReceiveBeginPlay_Params
 // Function Gun_Shotgun.Gun_Shotgun_C.ReceiveTick
 struct AGun_Shotgun_C_ReceiveTick_Params
 {
-	float*                                             DeltaSeconds;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	float*                                             DeltaSeconds;                                             // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Gun_Shotgun.Gun_Shotgun_C.OnPumpDelta
 struct AGun_Shotgun_C_OnPumpDelta_Params
 {
-	float                                              Delta;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              Delta;                                                    // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Gun_Shotgun.Gun_Shotgun_C.OnTwoHandGripChanged
 struct AGun_Shotgun_C_OnTwoHandGripChanged_Params
 {
-	bool*                                              bEnabled;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	bool*                                              bEnabled;                                                 // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Gun_Shotgun.Gun_Shotgun_C.OnActionChanged_Event_1
@@ -99,7 +99,7 @@ struct AGun_Shotgun_C_CustomEvent_1_Params
 // Function Gun_Shotgun.Gun_Shotgun_C.ExecuteUbergraph_Gun_Shotgun
 struct AGun_Shotgun_C_ExecuteUbergraph_Gun_Shotgun_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

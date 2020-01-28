@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,26 +13,25 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass SearchAndDestroyGameMode.SearchAndDestroyGameMode_C
-// 0x0034 (0x0631 - 0x05FD)
+// 0x0031 (0x0601 - 0x05D0)
 class ASearchAndDestroyGameMode_C : public ABaseGameMode_C
 {
 public:
-	unsigned char                                      UnknownData00[0x3];                                       // 0x05FD(0x0003) MISSED OFFSET
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x0600(0x0008) (Transient, DuplicateTransient)
-	int                                                MaxRounds;                                                // 0x0608(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	int                                                RoundNum;                                                 // 0x060C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	bool                                               BombPlanted;                                              // 0x0610(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	bool                                               TeamScored;                                               // 0x0611(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x2];                                       // 0x0612(0x0002) MISSED OFFSET
-	int                                                InitialCash;                                              // 0x0614(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	int                                                Team0LoseCount;                                           // 0x0618(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	int                                                Team1LoseCount;                                           // 0x061C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	bool                                               FirstRound;                                               // 0x0620(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x3];                                       // 0x0621(0x0003) MISSED OFFSET
-	float                                              BuyDuration;                                              // 0x0624(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              BuyMaxDistance;                                           // 0x0628(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              FreezeDuration;                                           // 0x062C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	bool                                               SuddenDeath;                                              // 0x0630(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x05D0(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
+	int                                                MaxRounds;                                                // 0x05D8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	int                                                RoundNum;                                                 // 0x05DC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               BombPlanted;                                              // 0x05E0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               TeamScored;                                               // 0x05E1(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x2];                                       // 0x05E2(0x0002) MISSED OFFSET
+	int                                                InitialCash;                                              // 0x05E4(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	int                                                Team0LoseCount;                                           // 0x05E8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	int                                                Team1LoseCount;                                           // 0x05EC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               FirstRound;                                               // 0x05F0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x05F1(0x0003) MISSED OFFSET
+	float                                              BuyDuration;                                              // 0x05F4(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	float                                              BuyMaxDistance;                                           // 0x05F8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	float                                              FreezeDuration;                                           // 0x05FC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               SuddenDeath;                                              // 0x0600(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
@@ -41,14 +40,18 @@ public:
 	}
 
 
+	void ProcessKillRewardAmmount(class APavlovPlayerState* Killer, int Cash, int* FixedCash);
+	void GetWinningTeamPure(int* WinningTeam);
+	void GetGunKillReward(class AGun* Gun, int* Reward);
+	int GetKillReward(class APavlovPlayerState** Killer, class APavlovPlayerState** Victim, struct FDamageTrackInfo* LastHitInfo);
 	void ProcessRoundEndCondition();
 	void KillEveryone();
 	void GetTieredLosingCashAmmount(int LoseStreak, int* CashAmmount);
-	void GiveLosingCash(int TeamID);
+	void GiveLosingCash(int TeamId);
 	void SwitchSides();
 	void GiveInitialCash();
 	void CleanUpBombing();
-	void ReportRoundWin(int TeamID, bool EndRound);
+	void ReportRoundWin(int TeamId, bool EndRound);
 	void GetBombCourierCandidate(class AController** Controller);
 	void GiveBombToTeam();
 	void SetPlantSpots(bool Enabled);
@@ -67,6 +70,7 @@ public:
 	void K2_OnLogout(class AController** ExitingController);
 	void InitBombs();
 	void OnPlayerSpawned(class APavlovPlayerState** PlayerState, class AController** Controller, class APavlovPawn** Pawn);
+	void AssignPlayerSkin(class APavlovPlayerState** PlayerState, class APavlovPawn** Pawn);
 	void ExecuteUbergraph_SearchAndDestroyGameMode(int EntryPoint);
 };
 

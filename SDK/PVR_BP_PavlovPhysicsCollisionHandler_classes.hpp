@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,7 +13,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_PavlovPhysicsCollisionHandler.BP_PavlovPhysicsCollisionHandler_C
-// 0x0000 (0x0040 - 0x0040)
+// 0x0000 (0x0048 - 0x0048)
 class UBP_PavlovPhysicsCollisionHandler_C : public UPavlovPhysicsCollisionHandler
 {
 public:

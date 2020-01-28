@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -47,9 +47,9 @@ void AGrenade_M64_C::OnDetonation()
 
 
 // Function Grenade_M64.Grenade_M64_C.ExecuteUbergraph_Grenade_M64
-// (HasDefaults)
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AGrenade_M64_C::ExecuteUbergraph_Grenade_M64(int EntryPoint)
 {

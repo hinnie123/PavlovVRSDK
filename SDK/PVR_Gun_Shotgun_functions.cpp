@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -32,7 +32,7 @@ void AGun_Shotgun_C::UnlockPump()
 // Function Gun_Shotgun.Gun_Shotgun_C.LockPump
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          LockRatio                      (Parm, ZeroConstructor, IsPlainOldData)
+// float                          LockRatio                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AGun_Shotgun_C::LockPump(float LockRatio)
 {
@@ -74,7 +74,7 @@ void AGun_Shotgun_C::ShouldPumpByTrigger(bool* Enabled)
 // Function Gun_Shotgun.Gun_Shotgun_C.ToggleReloadHandle
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           Enabled                        (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           Enabled                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AGun_Shotgun_C::ToggleReloadHandle(bool Enabled)
 {
@@ -94,7 +94,7 @@ void AGun_Shotgun_C::ToggleReloadHandle(bool Enabled)
 // Function Gun_Shotgun.Gun_Shotgun_C.PlayPumpHaptic
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UHapticFeedbackEffect_Base* HapticEffect                   (Parm, ZeroConstructor, IsPlainOldData)
+// class UHapticFeedbackEffect_Base* HapticEffect                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AGun_Shotgun_C::PlayPumpHaptic(class UHapticFeedbackEffect_Base* HapticEffect)
 {
@@ -182,7 +182,7 @@ void AGun_Shotgun_C::ReceiveBeginPlay()
 // Function Gun_Shotgun.Gun_Shotgun_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// float*                         DeltaSeconds                   (Parm, ZeroConstructor, IsPlainOldData)
+// float*                         DeltaSeconds                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AGun_Shotgun_C::ReceiveTick(float* DeltaSeconds)
 {
@@ -202,7 +202,7 @@ void AGun_Shotgun_C::ReceiveTick(float* DeltaSeconds)
 // Function Gun_Shotgun.Gun_Shotgun_C.OnPumpDelta
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          Delta                          (Parm, ZeroConstructor, IsPlainOldData)
+// float                          Delta                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AGun_Shotgun_C::OnPumpDelta(float Delta)
 {
@@ -222,7 +222,7 @@ void AGun_Shotgun_C::OnPumpDelta(float Delta)
 // Function Gun_Shotgun.Gun_Shotgun_C.OnTwoHandGripChanged
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// bool*                          bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+// bool*                          bEnabled                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AGun_Shotgun_C::OnTwoHandGripChanged(bool* bEnabled)
 {
@@ -291,9 +291,9 @@ void AGun_Shotgun_C::CustomEvent_1()
 
 
 // Function Gun_Shotgun.Gun_Shotgun_C.ExecuteUbergraph_Gun_Shotgun
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AGun_Shotgun_C::ExecuteUbergraph_Gun_Shotgun(int EntryPoint)
 {

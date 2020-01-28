@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,7 +13,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass Shell_50mm.Shell_50mm_C
-// 0x0000 (0x03C8 - 0x03C8)
+// 0x0000 (0x0371 - 0x0371)
 class AShell_50mm_C : public AShell_Base_C
 {
 public:

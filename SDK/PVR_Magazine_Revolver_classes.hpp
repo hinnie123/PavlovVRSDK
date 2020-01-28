@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,11 +13,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass Magazine_Revolver.Magazine_Revolver_C
-// 0x0008 (0x0590 - 0x0588)
+// 0x0008 (0x0540 - 0x0538)
 class AMagazine_Revolver_C : public AMagazine_Base_C
 {
 public:
-	class UCapsuleComponent*                           Capsule;                                                  // 0x0588(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UCapsuleComponent*                           Capsule;                                                  // 0x0538(0x0008) (BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{

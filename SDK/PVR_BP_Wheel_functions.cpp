@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -12,11 +12,98 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function BP_Wheel.BP_Wheel_C.DoesPickupSupportsAttachments
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FName                   EquipmentName                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// bool                           SupportsAttaments              (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+
+void ABP_Wheel_C::DoesPickupSupportsAttachments(const struct FName& EquipmentName, bool* SupportsAttaments)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.DoesPickupSupportsAttachments");
+
+	ABP_Wheel_C_DoesPickupSupportsAttachments_Params params;
+	params.EquipmentName = EquipmentName;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (SupportsAttaments != nullptr)
+		*SupportsAttaments = params.SupportsAttaments;
+}
+
+
+// Function BP_Wheel.BP_Wheel_C.DoesEquipmentSupportsAttachments
+// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FName                   EquipmentName                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// bool                           SupportsAttaments              (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+
+void ABP_Wheel_C::DoesEquipmentSupportsAttachments(const struct FName& EquipmentName, bool* SupportsAttaments)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.DoesEquipmentSupportsAttachments");
+
+	ABP_Wheel_C_DoesEquipmentSupportsAttachments_Params params;
+	params.EquipmentName = EquipmentName;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (SupportsAttaments != nullptr)
+		*SupportsAttaments = params.SupportsAttaments;
+}
+
+
+// Function BP_Wheel.BP_Wheel_C.EnqueDelayedUpdate
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_Wheel_C::EnqueDelayedUpdate()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.EnqueDelayedUpdate");
+
+	ABP_Wheel_C_EnqueDelayedUpdate_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function BP_Wheel.BP_Wheel_C.GetAttachmentList
+// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// TArray<struct FWheelSegment>   Segments                       (Parm, OutParm, ZeroConstructor)
+
+void ABP_Wheel_C::GetAttachmentList(TArray<struct FWheelSegment>* Segments)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.GetAttachmentList");
+
+	ABP_Wheel_C_GetAttachmentList_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (Segments != nullptr)
+		*Segments = params.Segments;
+}
+
+
 // Function BP_Wheel.BP_Wheel_C.EnableMenuFromGhost
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AVRPawn*                 self2                          (Parm, ZeroConstructor, IsPlainOldData)
-// class AVRPawn*                 self3                          (Parm, ZeroConstructor, IsPlainOldData)
+// class AVRPawn*                 self2                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// class AVRPawn*                 self3                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void ABP_Wheel_C::EnableMenuFromGhost(class AVRPawn* self2, class AVRPawn* self3)
 {
@@ -37,8 +124,8 @@ void ABP_Wheel_C::EnableMenuFromGhost(class AVRPawn* self2, class AVRPawn* self3
 // Function BP_Wheel.BP_Wheel_C.HandleTkCommit
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FWheelSegment           WheelSegment                   (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FName                   Selection                      (Parm, ZeroConstructor, IsPlainOldData)
+// struct FWheelSegment           WheelSegment                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FName                   Selection                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void ABP_Wheel_C::HandleTkCommit(const struct FWheelSegment& WheelSegment, const struct FName& Selection)
 {
@@ -110,8 +197,8 @@ void ABP_Wheel_C::CommitAndClose()
 // Function BP_Wheel.BP_Wheel_C.HandleBuyCommit
 // (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int                            A                              (Parm, ZeroConstructor, IsPlainOldData)
-// struct FWheelSegment           WheelSegment                   (ConstParm, Parm, OutParm, ReferenceParm)
+// int                            A                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// struct FWheelSegment           WheelSegment                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
 void ABP_Wheel_C::HandleBuyCommit(int A, const struct FWheelSegment& WheelSegment)
 {
@@ -132,7 +219,7 @@ void ABP_Wheel_C::HandleBuyCommit(int A, const struct FWheelSegment& WheelSegmen
 // Function BP_Wheel.BP_Wheel_C.SetCenterLabel
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FText                   CenterLabel                    (Parm)
+// struct FText                   CenterLabel                    (BlueprintVisible, BlueprintReadOnly, Parm)
 
 void ABP_Wheel_C::SetCenterLabel(const struct FText& CenterLabel)
 {
@@ -152,7 +239,7 @@ void ABP_Wheel_C::SetCenterLabel(const struct FText& CenterLabel)
 // Function BP_Wheel.BP_Wheel_C.GetBuySegment List
 // (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TEnumAsByte<EBuyMenuMode>      Index                          (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EBuyMenuMode>      Index                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 // TArray<struct FWheelSegment>   Segments                       (Parm, OutParm, ZeroConstructor)
 
 void ABP_Wheel_C::GetBuySegment_List(TEnumAsByte<EBuyMenuMode> Index, TArray<struct FWheelSegment>* Segments)
@@ -207,51 +294,19 @@ void ABP_Wheel_C::UserConstructionScript()
 }
 
 
-// Function BP_Wheel.BP_Wheel_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Wheel_C::ReceiveBeginPlay()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.ReceiveBeginPlay");
-
-	ABP_Wheel_C_ReceiveBeginPlay_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function BP_Wheel.BP_Wheel_C.OnBuyingChanged_Event_1
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_Wheel.BP_Wheel_C.OnCommit
+// (Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
-// bool                           bBuying                        (Parm, ZeroConstructor, IsPlainOldData)
+// int*                           Selection                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// struct FWheelSegment*          Segment                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void ABP_Wheel_C::OnBuyingChanged_Event_1(bool bBuying)
+void ABP_Wheel_C::OnCommit(int* Selection, struct FWheelSegment* Segment)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.OnBuyingChanged_Event_1");
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.OnCommit");
 
-	ABP_Wheel_C_OnBuyingChanged_Event_1_Params params;
-	params.bBuying = bBuying;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function BP_Wheel.BP_Wheel_C.UpdateBuyMenu
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Wheel_C::UpdateBuyMenu()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.UpdateBuyMenu");
-
-	ABP_Wheel_C_UpdateBuyMenu_Params params;
+	ABP_Wheel_C_OnCommit_Params params;
+	params.Selection = Selection;
+	params.Segment = Segment;
 
 	auto flags = fn->FunctionFlags;
 
@@ -278,6 +333,60 @@ void ABP_Wheel_C::OnEnabled()
 }
 
 
+// Function BP_Wheel.BP_Wheel_C.UpdateBuyMenu
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Wheel_C::UpdateBuyMenu()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.UpdateBuyMenu");
+
+	ABP_Wheel_C_UpdateBuyMenu_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function BP_Wheel.BP_Wheel_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Wheel_C::ReceiveBeginPlay()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.ReceiveBeginPlay");
+
+	ABP_Wheel_C_ReceiveBeginPlay_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function BP_Wheel.BP_Wheel_C.OnBuyingChanged_Event_1
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                           bBuying                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+
+void ABP_Wheel_C::OnBuyingChanged_Event_1(bool bBuying)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.OnBuyingChanged_Event_1");
+
+	ABP_Wheel_C_OnBuyingChanged_Event_1_Params params;
+	params.bBuying = bBuying;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function BP_Wheel.BP_Wheel_C.CustomEvent_1
 // (BlueprintCallable, BlueprintEvent)
 
@@ -295,32 +404,10 @@ void ABP_Wheel_C::CustomEvent_1()
 }
 
 
-// Function BP_Wheel.BP_Wheel_C.OnCommit
-// (Event, Public, HasOutParms, BlueprintEvent)
-// Parameters:
-// int*                           Selection                      (Parm, ZeroConstructor, IsPlainOldData)
-// struct FWheelSegment*          Segment                        (ConstParm, Parm, OutParm, ReferenceParm)
-
-void ABP_Wheel_C::OnCommit(int* Selection, struct FWheelSegment* Segment)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.OnCommit");
-
-	ABP_Wheel_C_OnCommit_Params params;
-	params.Selection = Selection;
-	params.Segment = Segment;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function BP_Wheel.BP_Wheel_C.ExecuteUbergraph_BP_Wheel
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void ABP_Wheel_C::ExecuteUbergraph_BP_Wheel(int EntryPoint)
 {

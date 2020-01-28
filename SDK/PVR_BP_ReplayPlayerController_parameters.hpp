@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -27,7 +27,7 @@ struct ABP_ReplayPlayerController_C_ReceiveBeginPlay_Params
 // Function BP_ReplayPlayerController.BP_ReplayPlayerController_C.ExecuteUbergraph_BP_ReplayPlayerController
 struct ABP_ReplayPlayerController_C_ExecuteUbergraph_BP_ReplayPlayerController_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

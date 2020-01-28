@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -17,7 +17,7 @@ namespace SDK
 // Function UI_Replay_NameTag.UI_Replay_NameTag_C.GetColorAndOpacity_1
 struct UUI_Replay_NameTag_C_GetColorAndOpacity_1_Params
 {
-	struct FLinearColor                                ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+	struct FLinearColor                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function UI_Replay_NameTag.UI_Replay_NameTag_C.GetBrush_1
@@ -35,20 +35,20 @@ struct UUI_Replay_NameTag_C_Get_playerName_ColorAndOpacity_1_Params
 // Function UI_Replay_NameTag.UI_Replay_NameTag_C.SetPlayerState
 struct UUI_Replay_NameTag_C_SetPlayerState_Params
 {
-	class APavlovPlayerState*                          PlayerState;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	class APavlovPlayerState*                          PlayerState;                                              // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_Replay_NameTag.UI_Replay_NameTag_C.Tick
 struct UUI_Replay_NameTag_C_Tick_Params
 {
-	struct FGeometry*                                  MyGeometry;                                               // (Parm, IsPlainOldData)
-	float*                                             InDeltaTime;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FGeometry*                                  MyGeometry;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData)
+	float*                                             InDeltaTime;                                              // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_Replay_NameTag.UI_Replay_NameTag_C.ExecuteUbergraph_UI_Replay_NameTag
 struct UUI_Replay_NameTag_C_ExecuteUbergraph_UI_Replay_NameTag_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

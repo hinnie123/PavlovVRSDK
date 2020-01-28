@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -83,7 +83,7 @@ void UUI_Multiplayer_C::OnButtonClicked_Event_1()
 // Function UI_Multiplayer.UI_Multiplayer_C.OnQuickmatchFailed_Event_1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString                 ErrorMessage                   (Parm, ZeroConstructor)
+// struct FString                 ErrorMessage                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_Multiplayer_C::OnQuickmatchFailed_Event_1(const struct FString& ErrorMessage)
 {
@@ -120,7 +120,7 @@ void UUI_Multiplayer_C::BndEvt__UI_OnlineSettings_K2Node_ComponentBoundEvent_20_
 // Function UI_Multiplayer.UI_Multiplayer_C.OnMatchmakingStateChanged_Event_1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EMatchmakingState              NewState                       (Parm, ZeroConstructor, IsPlainOldData)
+// EMatchmakingState              NewState                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Multiplayer_C::OnMatchmakingStateChanged_Event_1(EMatchmakingState NewState)
 {
@@ -174,7 +174,7 @@ void UUI_Multiplayer_C::OnSwitch()
 // Function UI_Multiplayer.UI_Multiplayer_C.UpdateMatchmakingState
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EMatchmakingState              NewState                       (Parm, ZeroConstructor, IsPlainOldData)
+// EMatchmakingState              NewState                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Multiplayer_C::UpdateMatchmakingState(EMatchmakingState NewState)
 {
@@ -211,7 +211,7 @@ void UUI_Multiplayer_C::BndEvt__UI_Lobby_K2Node_ComponentBoundEvent_3_OnPinReque
 // Function UI_Multiplayer.UI_Multiplayer_C.CustomEvent_1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString                 PinString                      (Parm, ZeroConstructor)
+// struct FString                 PinString                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_Multiplayer_C::CustomEvent_1(const struct FString& PinString)
 {
@@ -231,7 +231,7 @@ void UUI_Multiplayer_C::CustomEvent_1(const struct FString& PinString)
 // Function UI_Multiplayer.UI_Multiplayer_C.BndEvt__UI_Home_K2Node_ComponentBoundEvent_58_OnJoinServer__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// struct FPavlovServerInfo       ServerInfo                     (Parm)
+// struct FPavlovServerInfo       ServerInfo                     (BlueprintVisible, BlueprintReadOnly, Parm)
 
 void UUI_Multiplayer_C::BndEvt__UI_Home_K2Node_ComponentBoundEvent_58_OnJoinServer__DelegateSignature(const struct FPavlovServerInfo& ServerInfo)
 {
@@ -251,7 +251,7 @@ void UUI_Multiplayer_C::BndEvt__UI_Home_K2Node_ComponentBoundEvent_58_OnJoinServ
 // Function UI_Multiplayer.UI_Multiplayer_C.OnJoinServerPingConfirm
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString                 PinString                      (Parm, ZeroConstructor)
+// struct FString                 PinString                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_Multiplayer_C::OnJoinServerPingConfirm(const struct FString& PinString)
 {
@@ -269,9 +269,9 @@ void UUI_Multiplayer_C::OnJoinServerPingConfirm(const struct FString& PinString)
 
 
 // Function UI_Multiplayer.UI_Multiplayer_C.ExecuteUbergraph_UI_Multiplayer
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Multiplayer_C::ExecuteUbergraph_UI_Multiplayer(int EntryPoint)
 {

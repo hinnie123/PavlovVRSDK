@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -139,9 +139,9 @@ struct FSlateColor UUI_KillfeedEntry_C::Get_KillerLabel_ColorAndOpacity_1()
 
 
 // Function UI_KillfeedEntry.UI_KillfeedEntry_C.GetColorAndOpacity_1
-// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FLinearColor            ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// struct FLinearColor            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
 struct FLinearColor UUI_KillfeedEntry_C::GetColorAndOpacity_1()
 {
@@ -162,8 +162,8 @@ struct FLinearColor UUI_KillfeedEntry_C::GetColorAndOpacity_1()
 // Function UI_KillfeedEntry.UI_KillfeedEntry_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
-// float*                         InDeltaTime                    (Parm, ZeroConstructor, IsPlainOldData)
+// struct FGeometry*              MyGeometry                     (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData)
+// float*                         InDeltaTime                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_KillfeedEntry_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
@@ -182,9 +182,9 @@ void UUI_KillfeedEntry_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 
 
 // Function UI_KillfeedEntry.UI_KillfeedEntry_C.ExecuteUbergraph_UI_KillfeedEntry
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_KillfeedEntry_C::ExecuteUbergraph_UI_KillfeedEntry(int EntryPoint)
 {

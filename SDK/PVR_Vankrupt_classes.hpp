@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -12,45 +12,13 @@ namespace SDK
 //Classes
 //---------------------------------------------------------------------------
 
-// Class Vankrupt.VankruptGlobalStyle
-// 0x06E0 (0x0710 - 0x0030)
-class UVankruptGlobalStyle : public USlateWidgetStyleContainerBase
-{
-public:
-	struct FVGlobalStyle                               GlobalStyle;                                              // 0x0030(0x06E0) (Edit)
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class Vankrupt.VankruptGlobalStyle");
-		return ptr;
-	}
-
-};
-
-
-// Class Vankrupt.VankruptLobbyStyle
-// 0x1120 (0x1150 - 0x0030)
-class UVankruptLobbyStyle : public USlateWidgetStyleContainerBase
-{
-public:
-	struct FVLobbyStyle                                LobbyStyle;                                               // 0x0030(0x1120) (Edit)
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class Vankrupt.VankruptLobbyStyle");
-		return ptr;
-	}
-
-};
-
-
 // Class Vankrupt.VCollisionEffectComponent
 // 0x0038 (0x0128 - 0x00F0)
 class UVCollisionEffectComponent : public UActorComponent
 {
 public:
 	unsigned char                                      UnknownData00[0x8];                                       // 0x00F0(0x0008) MISSED OFFSET
-	struct FVector                                     PrevHitLocation;                                          // 0x00F8(0x000C) (IsPlainOldData)
+	struct FVector                                     PrevHitLocation;                                          // 0x00F8(0x000C) (ZeroConstructor, IsPlainOldData)
 	bool                                               bCanSpawnEffect;                                          // 0x0104(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x0105(0x0003) MISSED OFFSET
 	class UParticleSystem*                             VFX;                                                      // 0x0108(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
@@ -74,13 +42,13 @@ public:
 
 
 // Class Vankrupt.VDecalBSPProxy
-// 0x0018 (0x03A0 - 0x0388)
+// 0x0018 (0x0340 - 0x0328)
 class AVDecalBSPProxy : public AInfo
 {
 public:
-	bool                                               bUpdate;                                                  // 0x0388(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0389(0x0007) MISSED OFFSET
-	TArray<struct FVTriangleBSP>                       Triangles;                                                // 0x0390(0x0010) (Edit, ZeroConstructor)
+	bool                                               bUpdate;                                                  // 0x0328(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0329(0x0007) MISSED OFFSET
+	TArray<struct FVTriangleBSP>                       Triangles;                                                // 0x0330(0x0010) (Edit, ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
@@ -92,15 +60,15 @@ public:
 
 
 // Class Vankrupt.VDecalComponent
-// 0x0020 (0x0890 - 0x0870)
+// 0x0020 (0x0610 - 0x05F0)
 class UVDecalComponent : public UProceduralMeshComponent
 {
 public:
-	unsigned char                                      UnknownData00[0x10];                                      // 0x0870(0x0010) MISSED OFFSET
-	float                                              DecalSize;                                                // 0x0880(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bAsync;                                                   // 0x0884(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bDebug;                                                   // 0x0885(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	unsigned char                                      UnknownData01[0xA];                                       // 0x0886(0x000A) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x10];                                      // 0x05F0(0x0010) MISSED OFFSET
+	float                                              DecalSize;                                                // 0x0600(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bAsync;                                                   // 0x0604(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bDebug;                                                   // 0x0605(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	unsigned char                                      UnknownData01[0xA];                                       // 0x0606(0x000A) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -115,11 +83,11 @@ public:
 
 
 // Class Vankrupt.VGameInstance
-// 0x0010 (0x0100 - 0x00F0)
+// 0x0018 (0x00B8 - 0x00A0)
 class UVGameInstance : public UGameInstance
 {
 public:
-	unsigned char                                      UnknownData00[0x10];                                      // 0x00F0(0x0010) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x18];                                      // 0x00A0(0x0018) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -130,38 +98,19 @@ public:
 };
 
 
-// Class Vankrupt.VMap
-// 0x0040 (0x0068 - 0x0028)
-class UVMap : public UDataAsset
-{
-public:
-	struct FText                                       Title;                                                    // 0x0028(0x0018) (Edit)
-	struct FText                                       Name;                                                     // 0x0040(0x0018) (Edit)
-	struct FName                                       AbsolutePath;                                             // 0x0058(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
-	class UTexture2D*                                  Thumbnail;                                                // 0x0060(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class Vankrupt.VMap");
-		return ptr;
-	}
-
-};
-
-
 // Class Vankrupt.VGameOptions
-// 0x0060 (0x0088 - 0x0028)
+// 0x0060 (0x0090 - 0x0030)
 class UVGameOptions : public UDataAsset
 {
 public:
-	struct FText                                       Label;                                                    // 0x0028(0x0018) (Edit)
-	struct FText                                       Description;                                              // 0x0040(0x0018) (Edit)
-	class UTexture2D*                                  ThumbnailOverlay;                                         // 0x0058(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
-	struct FName                                       Type;                                                     // 0x0060(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
-	class UClass*                                      Mode;                                                     // 0x0068(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
-	uint32_t                                           MaxPlayers;                                               // 0x0070(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x0074(0x0004) MISSED OFFSET
-	TArray<class UVMap*>                               Maps;                                                     // 0x0078(0x0010) (Edit, ZeroConstructor)
+	struct FText                                       Label;                                                    // 0x0030(0x0018) (Edit)
+	struct FText                                       Description;                                              // 0x0048(0x0018) (Edit)
+	class UTexture2D*                                  ThumbnailOverlay;                                         // 0x0060(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+	struct FName                                       Type;                                                     // 0x0068(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+	class UClass*                                      Mode;                                                     // 0x0070(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+	uint32_t                                           MaxPlayers;                                               // 0x0078(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x007C(0x0004) MISSED OFFSET
+	TArray<class UVMap*>                               Maps;                                                     // 0x0080(0x0010) (Edit, ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
@@ -172,8 +121,24 @@ public:
 };
 
 
+// Class Vankrupt.VankruptGlobalStyle
+// 0x0670 (0x06A0 - 0x0030)
+class UVankruptGlobalStyle : public USlateWidgetStyleContainerBase
+{
+public:
+	struct FVGlobalStyle                               GlobalStyle;                                              // 0x0030(0x0670) (Edit)
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class Vankrupt.VankruptGlobalStyle");
+		return ptr;
+	}
+
+};
+
+
 // Class Vankrupt.VHealthComponent
-// 0x0118 (0x0208 - 0x00F0)
+// 0x0120 (0x0210 - 0x00F0)
 class UVHealthComponent : public UActorComponent
 {
 public:
@@ -190,11 +155,11 @@ public:
 	float                                              Health;                                                   // 0x018C(0x0004) (BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData)
 	bool                                               bDead;                                                    // 0x0190(0x0001) (BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData03[0x7];                                       // 0x0191(0x0007) MISSED OFFSET
-	struct FVHitboxInfo                                DefaultHitboxInfo;                                        // 0x0198(0x0038) (Edit, DisableEditOnInstance)
-	class UDataTable*                                  HitboxInfoTable;                                          // 0x01D0(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	struct FScriptMulticastDelegate                    OnKill;                                                   // 0x01D8(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnRevive;                                                 // 0x01E8(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnHitEffect;                                              // 0x01F8(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	struct FVHitboxInfo                                DefaultHitboxInfo;                                        // 0x0198(0x0040) (Edit, DisableEditOnInstance)
+	class UDataTable*                                  HitboxInfoTable;                                          // 0x01D8(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	struct FScriptMulticastDelegate                    OnKill;                                                   // 0x01E0(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnRevive;                                                 // 0x01F0(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnHitEffect;                                              // 0x0200(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 
 	static UClass* StaticClass()
 	{
@@ -231,30 +196,15 @@ public:
 };
 
 
-// Class Vankrupt.VLobbyGameMode
-// 0x0000 (0x0458 - 0x0458)
-class AVLobbyGameMode : public AGameMode
-{
-public:
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class Vankrupt.VLobbyGameMode");
-		return ptr;
-	}
-
-};
-
-
 // Class Vankrupt.VMenu
-// 0x0058 (0x03E0 - 0x0388)
+// 0x0058 (0x0380 - 0x0328)
 class AVMenu : public AActor
 {
 public:
-	unsigned char                                      UnknownData00[0x28];                                      // 0x0388(0x0028) MISSED OFFSET
-	class USlateWidgetStyleAsset*                      GlobalStyle;                                              // 0x03B0(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	struct FScriptMulticastDelegate                    OnPopupCommit;                                            // 0x03B8(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData01[0x18];                                      // 0x03C8(0x0018) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x28];                                      // 0x0328(0x0028) MISSED OFFSET
+	class USlateWidgetStyleAsset*                      GlobalStyle;                                              // 0x0350(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	struct FScriptMulticastDelegate                    OnPopupCommit;                                            // 0x0358(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	unsigned char                                      UnknownData01[0x18];                                      // 0x0368(0x0018) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -270,18 +220,18 @@ public:
 
 
 // Class Vankrupt.VLobby
-// 0x0098 (0x0478 - 0x03E0)
+// 0x0098 (0x0418 - 0x0380)
 class AVLobby : public AVMenu
 {
 public:
-	unsigned char                                      UnknownData00[0x48];                                      // 0x03E0(0x0048) MISSED OFFSET
-	class USlateWidgetStyleAsset*                      LobbyStyle;                                               // 0x0428(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	struct FText                                       Title;                                                    // 0x0430(0x0018) (Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class UVGameOptions*>                       AvailableOptions;                                         // 0x0448(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
-	EVLobbyMode                                        Mode;                                                     // 0x0458(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x7];                                       // 0x0459(0x0007) MISSED OFFSET
-	struct FVLobbySettings                             Settings;                                                 // 0x0460(0x0010) (BlueprintVisible, Net)
-	unsigned char                                      UnknownData02[0x8];                                       // 0x0470(0x0008) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x48];                                      // 0x0380(0x0048) MISSED OFFSET
+	class USlateWidgetStyleAsset*                      LobbyStyle;                                               // 0x03C8(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	struct FText                                       Title;                                                    // 0x03D0(0x0018) (Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class UVGameOptions*>                       AvailableOptions;                                         // 0x03E8(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
+	EVLobbyMode                                        Mode;                                                     // 0x03F8(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x7];                                       // 0x03F9(0x0007) MISSED OFFSET
+	struct FVLobbySettings                             Settings;                                                 // 0x0400(0x0010) (BlueprintVisible, Net)
+	unsigned char                                      UnknownData02[0x8];                                       // 0x0410(0x0008) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -299,6 +249,56 @@ public:
 };
 
 
+// Class Vankrupt.VLobbyGameMode
+// 0x0000 (0x0410 - 0x0410)
+class AVLobbyGameMode : public AGameMode
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class Vankrupt.VLobbyGameMode");
+		return ptr;
+	}
+
+};
+
+
+// Class Vankrupt.VankruptLobbyStyle
+// 0x1000 (0x1030 - 0x0030)
+class UVankruptLobbyStyle : public USlateWidgetStyleContainerBase
+{
+public:
+	struct FVLobbyStyle                                LobbyStyle;                                               // 0x0030(0x1000) (Edit)
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class Vankrupt.VankruptLobbyStyle");
+		return ptr;
+	}
+
+};
+
+
+// Class Vankrupt.VMap
+// 0x0040 (0x0070 - 0x0030)
+class UVMap : public UDataAsset
+{
+public:
+	struct FText                                       Title;                                                    // 0x0030(0x0018) (Edit)
+	struct FText                                       Name;                                                     // 0x0048(0x0018) (Edit)
+	struct FName                                       AbsolutePath;                                             // 0x0060(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+	class UTexture2D*                                  Thumbnail;                                                // 0x0068(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class Vankrupt.VMap");
+		return ptr;
+	}
+
+};
+
+
 // Class Vankrupt.VSpawnManagerComponent
 // 0x0070 (0x0160 - 0x00F0)
 class UVSpawnManagerComponent : public UActorComponent
@@ -307,7 +307,7 @@ public:
 	TArray<class AVSpawnPoint*>                        SpawnPoints;                                              // 0x00F0(0x0010) (ZeroConstructor)
 	TArray<struct FVSpawnPointDistance>                Distances;                                                // 0x0100(0x0010) (ZeroConstructor)
 	struct FTransform                                  LastSpawnTransform;                                       // 0x0110(0x0030) (BlueprintVisible, BlueprintReadOnly, IsPlainOldData)
-	struct FVector                                     ReferenceLocation;                                        // 0x0140(0x000C) (BlueprintVisible, IsPlainOldData)
+	struct FVector                                     ReferenceLocation;                                        // 0x0140(0x000C) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	float                                              ClosestThreashold;                                        // 0x014C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	float                                              SpawnPointCooldown;                                       // 0x0150(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0xC];                                       // 0x0154(0x000C) MISSED OFFSET
@@ -328,15 +328,15 @@ public:
 
 
 // Class Vankrupt.VSpawnPoint
-// 0x0020 (0x03A8 - 0x0388)
+// 0x0020 (0x0348 - 0x0328)
 class AVSpawnPoint : public AActor
 {
 public:
-	class UCapsuleComponent*                           Collision;                                                // 0x0388(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
-	class UBillboardComponent*                         Icon;                                                     // 0x0390(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
-	class UArrowComponent*                             Arrow;                                                    // 0x0398(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
-	float                                              LastSpawnAtSeconds;                                       // 0x03A0(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x03A4(0x0004) MISSED OFFSET
+	class UCapsuleComponent*                           Collision;                                                // 0x0328(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
+	class UBillboardComponent*                         Icon;                                                     // 0x0330(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
+	class UArrowComponent*                             Arrow;                                                    // 0x0338(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
+	float                                              LastSpawnAtSeconds;                                       // 0x0340(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x0344(0x0004) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{

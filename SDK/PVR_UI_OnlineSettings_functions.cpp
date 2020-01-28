@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -54,8 +54,8 @@ void UUI_OnlineSettings_C::BndEvt__UI_Button_37_K2Node_ComponentBoundEvent_5_OnB
 // Function UI_OnlineSettings.UI_OnlineSettings_C.BndEvt__ComboBoxString_115_K2Node_ComponentBoundEvent_34_OnSelectionChangedEvent__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// struct FString                 SelectedItem                   (Parm, ZeroConstructor)
-// TEnumAsByte<ESelectInfo>       SelectionType                  (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 SelectedItem                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
+// TEnumAsByte<ESelectInfo>       SelectionType                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_OnlineSettings_C::BndEvt__ComboBoxString_115_K2Node_ComponentBoundEvent_34_OnSelectionChangedEvent__DelegateSignature(const struct FString& SelectedItem, TEnumAsByte<ESelectInfo> SelectionType)
 {
@@ -74,9 +74,9 @@ void UUI_OnlineSettings_C::BndEvt__ComboBoxString_115_K2Node_ComponentBoundEvent
 
 
 // Function UI_OnlineSettings.UI_OnlineSettings_C.ExecuteUbergraph_UI_OnlineSettings
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_OnlineSettings_C::ExecuteUbergraph_UI_OnlineSettings(int EntryPoint)
 {
@@ -96,7 +96,7 @@ void UUI_OnlineSettings_C::ExecuteUbergraph_UI_OnlineSettings(int EntryPoint)
 // Function UI_OnlineSettings.UI_OnlineSettings_C.OnMapChanged__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString                 Map                            (Parm, ZeroConstructor)
+// struct FString                 Map                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_OnlineSettings_C::OnMapChanged__DelegateSignature(const struct FString& Map)
 {

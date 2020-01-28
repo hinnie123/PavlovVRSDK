@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,17 +13,17 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // AnimBlueprintGeneratedClass DrumShotgun_AnimBlueprint.DrumShotgun_AnimBlueprint_C
-// 0x02D8 (0x0708 - 0x0430)
+// 0x0460 (0x08A0 - 0x0440)
 class UDrumShotgun_AnimBlueprint_C : public UVRGunAnimInstance
 {
 public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x0430(0x0008) (Transient, DuplicateTransient)
-	struct FAnimNode_Root                              AnimGraphNode_Root_416355E142FD995957C5A08853F802D1;      // 0x0438(0x0048)
-	struct FAnimNode_ModifyBone                        AnimGraphNode_ModifyBone_6869D5684807FAAFE5BA37BDF51D783E;// 0x0480(0x00B0)
-	struct FAnimNode_ModifyBone                        AnimGraphNode_ModifyBone_2161316246D9CE68974F2B95B137AA99;// 0x0530(0x00B0)
-	struct FAnimNode_ConvertComponentToLocalSpace      AnimGraphNode_ComponentToLocalSpace_8C8B17E940A3AFCEECB99CB53DC0A129;// 0x05E0(0x0048)
-	struct FAnimNode_MeshSpaceRefPose                  AnimGraphNode_MeshRefPose_512F0EEF41CC549E921AFCAEB247FD0C;// 0x0628(0x0030)
-	struct FAnimNode_ModifyBone                        AnimGraphNode_ModifyBone_1536A28C42A9985A171187B454687DAF;// 0x0658(0x00B0)
+	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x0440(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
+	struct FAnimNode_Root                              AnimGraphNode_Root_416355E142FD995957C5A08853F802D1;      // 0x0448(0x0040)
+	struct FAnimNode_ModifyBone                        AnimGraphNode_ModifyBone_6869D5684807FAAFE5BA37BDF51D783E;// 0x0488(0x0138)
+	struct FAnimNode_ModifyBone                        AnimGraphNode_ModifyBone_2161316246D9CE68974F2B95B137AA99;// 0x05C0(0x0138)
+	struct FAnimNode_ConvertComponentToLocalSpace      AnimGraphNode_ComponentToLocalSpace_8C8B17E940A3AFCEECB99CB53DC0A129;// 0x06F8(0x0040)
+	struct FAnimNode_MeshSpaceRefPose                  AnimGraphNode_MeshRefPose_512F0EEF41CC549E921AFCAEB247FD0C;// 0x0738(0x0030)
+	struct FAnimNode_ModifyBone                        AnimGraphNode_ModifyBone_1536A28C42A9985A171187B454687DAF;// 0x0768(0x0138)
 
 	static UClass* StaticClass()
 	{

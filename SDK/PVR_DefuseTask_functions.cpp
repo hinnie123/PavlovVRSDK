@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,8 +15,8 @@ namespace SDK
 // Function DefuseTask.DefuseTask_C.CanDefuse
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class ABomb*                   Bomb                           (Parm, ZeroConstructor, IsPlainOldData)
-// class AActor*                  Pawn                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// class ABomb*                   Bomb                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// class AActor*                  Pawn                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
 bool UDefuseTask_C::CanDefuse(class ABomb* Bomb, class AActor* Pawn)
@@ -40,8 +40,8 @@ bool UDefuseTask_C::CanDefuse(class ABomb* Bomb, class AActor* Pawn)
 // Function DefuseTask.DefuseTask_C.ReceiveExecuteAI
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class AAIController**          OwnerController                (Parm, ZeroConstructor, IsPlainOldData)
-// class APawn**                  ControlledPawn                 (Parm, ZeroConstructor, IsPlainOldData)
+// class AAIController**          OwnerController                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// class APawn**                  ControlledPawn                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UDefuseTask_C::ReceiveExecuteAI(class AAIController** OwnerController, class APawn** ControlledPawn)
 {
@@ -60,9 +60,9 @@ void UDefuseTask_C::ReceiveExecuteAI(class AAIController** OwnerController, clas
 
 
 // Function DefuseTask.DefuseTask_C.ExecuteUbergraph_DefuseTask
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UDefuseTask_C::ExecuteUbergraph_DefuseTask(int EntryPoint)
 {

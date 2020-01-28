@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,7 +13,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_MainMenu.BP_MainMenu_C
-// 0x0000 (0x03A8 - 0x03A8)
+// 0x0000 (0x0348 - 0x0348)
 class ABP_MainMenu_C : public AMainMenu
 {
 public:

@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 // Function Vote_Base.Vote_Base_C.CreateContentWidget
 // (Protected, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UUserWidget*             Content                        (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// class UUserWidget*             Content                        (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData)
 
 void AVote_Base_C::CreateContentWidget(class UUserWidget** Content)
 {
@@ -71,7 +71,7 @@ void AVote_Base_C::ReceiveBeginPlay()
 // Function Vote_Base.Vote_Base_C.OnVoteEnded
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// bool*                          bSucceeded                     (Parm, ZeroConstructor, IsPlainOldData)
+// bool*                          bSucceeded                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AVote_Base_C::OnVoteEnded(bool* bSucceeded)
 {
@@ -89,9 +89,9 @@ void AVote_Base_C::OnVoteEnded(bool* bSucceeded)
 
 
 // Function Vote_Base.Vote_Base_C.ExecuteUbergraph_Vote_Base
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AVote_Base_C::ExecuteUbergraph_Vote_Base(int EntryPoint)
 {

@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 // Function UI_ServerSettingsIcons.UI_ServerSettingsIcons_C.UpdateIcons
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FServerSettings         ServerSettings                 (ConstParm, Parm, OutParm, ReferenceParm)
+// struct FServerSettings         ServerSettings                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
 void UUI_ServerSettingsIcons_C::UpdateIcons(const struct FServerSettings& ServerSettings)
 {
@@ -50,9 +50,9 @@ void UUI_ServerSettingsIcons_C::Construct()
 
 
 // Function UI_ServerSettingsIcons.UI_ServerSettingsIcons_C.ExecuteUbergraph_UI_ServerSettingsIcons
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_ServerSettingsIcons_C::ExecuteUbergraph_UI_ServerSettingsIcons(int EntryPoint)
 {

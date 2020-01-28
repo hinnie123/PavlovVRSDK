@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -37,19 +37,19 @@ struct UUI_PIN_C_BndEvt__NumPad_K2Node_ComponentBoundEvent_1_OnErase__DelegateSi
 // Function UI_PIN.UI_PIN_C.BndEvt__NumPad_K2Node_ComponentBoundEvent_2_OnDigit__DelegateSignature
 struct UUI_PIN_C_BndEvt__NumPad_K2Node_ComponentBoundEvent_2_OnDigit__DelegateSignature_Params
 {
-	int                                                Digit;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                Digit;                                                    // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_PIN.UI_PIN_C.ExecuteUbergraph_UI_PIN
 struct UUI_PIN_C_ExecuteUbergraph_UI_PIN_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_PIN.UI_PIN_C.OnConfirm__DelegateSignature
 struct UUI_PIN_C_OnConfirm__DelegateSignature_Params
 {
-	struct FString                                     PinString;                                                // (Parm, ZeroConstructor)
+	struct FString                                     PinString;                                                // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 };
 
 }

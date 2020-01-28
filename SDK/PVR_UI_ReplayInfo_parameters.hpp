@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -45,13 +45,13 @@ struct UUI_ReplayInfo_C_BndEvt__LoadBtn_K2Node_ComponentBoundEvent_35_OnButtonCl
 // Function UI_ReplayInfo.UI_ReplayInfo_C.ExecuteUbergraph_UI_ReplayInfo
 struct UUI_ReplayInfo_C_ExecuteUbergraph_UI_ReplayInfo_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_ReplayInfo.UI_ReplayInfo_C.OnWatchReplayClicked__DelegateSignature
 struct UUI_ReplayInfo_C_OnWatchReplayClicked__DelegateSignature_Params
 {
-	struct FString                                     ReplayId;                                                 // (Parm, ZeroConstructor)
+	struct FString                                     ReplayId;                                                 // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 };
 
 }

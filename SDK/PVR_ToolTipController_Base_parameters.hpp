@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -17,7 +17,7 @@ namespace SDK
 // Function ToolTipController_Base.ToolTipController_Base_C.GetCanvas
 struct AToolTipController_Base_C_GetCanvas_Params
 {
-	class UUI_ToolTipCanvas_C*                         Widget;                                                   // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+	class UUI_ToolTipCanvas_C*                         Widget;                                                   // (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData)
 };
 
 // Function ToolTipController_Base.ToolTipController_Base_C.UserConstructionScript
@@ -33,13 +33,13 @@ struct AToolTipController_Base_C_ReceiveBeginPlay_Params
 // Function ToolTipController_Base.ToolTipController_Base_C.ReceiveTick
 struct AToolTipController_Base_C_ReceiveTick_Params
 {
-	float*                                             DeltaSeconds;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	float*                                             DeltaSeconds;                                             // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function ToolTipController_Base.ToolTipController_Base_C.ExecuteUbergraph_ToolTipController_Base
 struct AToolTipController_Base_C_ExecuteUbergraph_ToolTipController_Base_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

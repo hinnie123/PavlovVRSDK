@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -78,7 +78,7 @@ ESlateVisibility UUI_VideoSetting_C::Get_SliderWidget_Visibility_1()
 // Function UI_VideoSetting.UI_VideoSetting_C.SetValue
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int                            Value                          (Parm, ZeroConstructor, IsPlainOldData)
+// int                            Value                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_VideoSetting_C::SetValue(int Value)
 {
@@ -158,7 +158,7 @@ void UUI_VideoSetting_C::BndEvt__SettingButton_K2Node_ComponentBoundEvent_0_OnVa
 // Function UI_VideoSetting.UI_VideoSetting_C.BndEvt__SliderWidget_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// float                          Value                          (Parm, ZeroConstructor, IsPlainOldData)
+// float                          Value                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_VideoSetting_C::BndEvt__SliderWidget_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature(float Value)
 {
@@ -176,9 +176,9 @@ void UUI_VideoSetting_C::BndEvt__SliderWidget_K2Node_ComponentBoundEvent_1_OnFlo
 
 
 // Function UI_VideoSetting.UI_VideoSetting_C.ExecuteUbergraph_UI_VideoSetting
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_VideoSetting_C::ExecuteUbergraph_UI_VideoSetting(int EntryPoint)
 {

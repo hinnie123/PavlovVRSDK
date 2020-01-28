@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -27,7 +27,7 @@ struct AToolTip_Locomotion_C_ReceiveBeginPlay_Params
 // Function ToolTip_Locomotion.ToolTip_Locomotion_C.ExecuteUbergraph_ToolTip_Locomotion
 struct AToolTip_Locomotion_C_ExecuteUbergraph_ToolTip_Locomotion_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

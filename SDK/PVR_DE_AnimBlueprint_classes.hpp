@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,20 +13,19 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // AnimBlueprintGeneratedClass DE_AnimBlueprint.DE_AnimBlueprint_C
-// 0x0488 (0x08B8 - 0x0430)
+// 0x05E0 (0x0A20 - 0x0440)
 class UDE_AnimBlueprint_C : public UVRGunAnimInstance
 {
 public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x0430(0x0008) (Transient, DuplicateTransient)
-	struct FAnimNode_ModifyBone                        AnimGraphNode_ModifyBone_23E7B04148C323C6E5F0BF9A2BC6F476;// 0x0438(0x00B0)
-	struct FAnimNode_ConvertLocalToComponentSpace      AnimGraphNode_LocalToComponentSpace_8FEEA8A0482BFEFC26179E867DFE2625;// 0x04E8(0x0048)
-	struct FAnimNode_RefPose                           AnimGraphNode_LocalRefPose_13A457534CBB6BAB5247B093B75F95D3;// 0x0530(0x0038)
-	struct FAnimNode_ModifyBone                        AnimGraphNode_ModifyBone_17F2F18446981027C70BEC8343E81BC8;// 0x0568(0x00B0)
-	struct FAnimNode_ConvertComponentToLocalSpace      AnimGraphNode_ComponentToLocalSpace_0ACFE2F345D0EC41C7C62FBDA16055FC;// 0x0618(0x0048)
-	struct FAnimNode_ModifyBone                        AnimGraphNode_ModifyBone_3D83252644BBE9AE4479988FA699391D;// 0x0660(0x00B0)
-	struct FAnimNode_ModifyBone                        AnimGraphNode_ModifyBone_C346AAF0472CBCDEEC07AD9FA5878C83;// 0x0710(0x00B0)
-	struct FAnimNode_Root                              AnimGraphNode_Root_67FB6D6C47AAF319E7D039BB06D7F4B2;      // 0x07C0(0x0048)
-	struct FAnimNode_ModifyBone                        AnimGraphNode_ModifyBone_1181890C4F4F96A4A50F2CA2CD8C5267;// 0x0808(0x00B0)
+	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x0440(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
+	struct FAnimNode_ConvertLocalToComponentSpace      AnimGraphNode_LocalToComponentSpace_F3BF337041A54D027010B695C23109B7;// 0x0448(0x0040)
+	struct FAnimNode_RefPose                           AnimGraphNode_LocalRefPose_B69EAB26418EDF37E2566FB8BC7A27C6;// 0x0488(0x0038)
+	struct FAnimNode_Root                              AnimGraphNode_Root_60A9BA3940D7C091A3454C967627AC2C;      // 0x04C0(0x0040)
+	struct FAnimNode_ConvertComponentToLocalSpace      AnimGraphNode_ComponentToLocalSpace_97AF94D14774E743F92C5DB9104615AE;// 0x0500(0x0040)
+	struct FAnimNode_ModifyBone                        AnimGraphNode_ModifyBone_E3932B7448F891FCA568ACB5344A0AA7;// 0x0540(0x0138)
+	struct FAnimNode_ModifyBone                        AnimGraphNode_ModifyBone_CA8683964CE052706AB03C84903D1ACE;// 0x0678(0x0138)
+	struct FAnimNode_ModifyBone                        AnimGraphNode_ModifyBone_A1C1645740341C959F2362BD8FFB30B1;// 0x07B0(0x0138)
+	struct FAnimNode_ModifyBone                        AnimGraphNode_ModifyBone_95AE1AF440C453DE916925AD16E01249;// 0x08E8(0x0138)
 
 	static UClass* StaticClass()
 	{
@@ -35,10 +34,10 @@ public:
 	}
 
 
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_DE_AnimBlueprint_AnimGraphNode_ModifyBone_3D83252644BBE9AE4479988FA699391D();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_DE_AnimBlueprint_AnimGraphNode_ModifyBone_17F2F18446981027C70BEC8343E81BC8();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_DE_AnimBlueprint_AnimGraphNode_ModifyBone_C346AAF0472CBCDEEC07AD9FA5878C83();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_DE_AnimBlueprint_AnimGraphNode_ModifyBone_1181890C4F4F96A4A50F2CA2CD8C5267();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_DE_AnimBlueprint_AnimGraphNode_ModifyBone_A1C1645740341C959F2362BD8FFB30B1();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_DE_AnimBlueprint_AnimGraphNode_ModifyBone_CA8683964CE052706AB03C84903D1ACE();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_DE_AnimBlueprint_AnimGraphNode_ModifyBone_E3932B7448F891FCA568ACB5344A0AA7();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_DE_AnimBlueprint_AnimGraphNode_ModifyBone_95AE1AF440C453DE916925AD16E01249();
 	void ExecuteUbergraph_DE_AnimBlueprint(int EntryPoint);
 };
 

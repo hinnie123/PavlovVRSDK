@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -32,7 +32,7 @@ void UUI_ServerBrowserEntry_C::BndEvt__JoinButton_K2Node_ComponentBoundEvent_16_
 // Function UI_ServerBrowserEntry.UI_ServerBrowserEntry_C.Update
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPavlovServerInfo       ServerInfoA                    (Parm)
+// struct FPavlovServerInfo       ServerInfoA                    (BlueprintVisible, BlueprintReadOnly, Parm)
 
 void UUI_ServerBrowserEntry_C::Update(const struct FPavlovServerInfo& ServerInfoA)
 {
@@ -50,9 +50,9 @@ void UUI_ServerBrowserEntry_C::Update(const struct FPavlovServerInfo& ServerInfo
 
 
 // Function UI_ServerBrowserEntry.UI_ServerBrowserEntry_C.ExecuteUbergraph_UI_ServerBrowserEntry
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_ServerBrowserEntry_C::ExecuteUbergraph_UI_ServerBrowserEntry(int EntryPoint)
 {
@@ -72,7 +72,7 @@ void UUI_ServerBrowserEntry_C::ExecuteUbergraph_UI_ServerBrowserEntry(int EntryP
 // Function UI_ServerBrowserEntry.UI_ServerBrowserEntry_C.OnJoinClicked__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPavlovServerInfo       Server                         (Parm)
+// struct FPavlovServerInfo       Server                         (BlueprintVisible, BlueprintReadOnly, Parm)
 
 void UUI_ServerBrowserEntry_C::OnJoinClicked__DelegateSignature(const struct FPavlovServerInfo& Server)
 {

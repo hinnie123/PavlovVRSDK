@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,11 +13,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function BotContext.BotContext_C.ProvideSingleLocation
-// (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
+// (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// class UObject**                QuerierObject                  (Parm, ZeroConstructor, IsPlainOldData)
-// class AActor**                 QuerierActor                   (Parm, ZeroConstructor, IsPlainOldData)
-// struct FVector                 ResultingLocation              (Parm, OutParm, IsPlainOldData)
+// class UObject**                QuerierObject                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// class AActor**                 QuerierActor                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 ResultingLocation              (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 
 void UBotContext_C::ProvideSingleLocation(class UObject** QuerierObject, class AActor** QuerierActor, struct FVector* ResultingLocation)
 {
@@ -41,8 +41,8 @@ void UBotContext_C::ProvideSingleLocation(class UObject** QuerierObject, class A
 // Function BotContext.BotContext_C.ProvideSingleActor
 // (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// class UObject**                QuerierObject                  (Parm, ZeroConstructor, IsPlainOldData)
-// class AActor**                 QuerierActor                   (Parm, ZeroConstructor, IsPlainOldData)
+// class UObject**                QuerierObject                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// class AActor**                 QuerierActor                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 // class AActor*                  ResultingActor                 (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 
 void UBotContext_C::ProvideSingleActor(class UObject** QuerierObject, class AActor** QuerierActor, class AActor** ResultingActor)

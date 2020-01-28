@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -32,7 +32,7 @@ void UUI_ServerBrowser_C::UpdatePageLabel()
 // Function UI_ServerBrowser.UI_ServerBrowser_C.GetMapFromLabel
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FString                 Label                          (Parm, ZeroConstructor)
+// struct FString                 Label                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 // struct FString                 Map                            (Parm, OutParm, ZeroConstructor)
 
 void UUI_ServerBrowser_C::GetMapFromLabel(const struct FString& Label, struct FString* Map)
@@ -56,7 +56,7 @@ void UUI_ServerBrowser_C::GetMapFromLabel(const struct FString& Label, struct FS
 // Function UI_ServerBrowser.UI_ServerBrowser_C.GetGameModeFromLabel
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FString                 Value                          (Parm, ZeroConstructor)
+// struct FString                 Value                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
 
 struct FString UUI_ServerBrowser_C::GetGameModeFromLabel(const struct FString& Value)
@@ -130,7 +130,7 @@ void UUI_ServerBrowser_C::OnServerListUpdated_Event()
 // Function UI_ServerBrowser.UI_ServerBrowser_C.BndEvt__UI_ServerFilter_C_0_K2Node_ComponentBoundEvent_3_OnSelectionChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// struct FString                 Selection                      (Parm, ZeroConstructor)
+// struct FString                 Selection                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_ServerBrowser_C::BndEvt__UI_ServerFilter_C_0_K2Node_ComponentBoundEvent_3_OnSelectionChanged__DelegateSignature(const struct FString& Selection)
 {
@@ -150,7 +150,7 @@ void UUI_ServerBrowser_C::BndEvt__UI_ServerFilter_C_0_K2Node_ComponentBoundEvent
 // Function UI_ServerBrowser.UI_ServerBrowser_C.BndEvt__FriendsFiltercombo_K2Node_ComponentBoundEvent_14_OnSelectionChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// struct FString                 Selection                      (Parm, ZeroConstructor)
+// struct FString                 Selection                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_ServerBrowser_C::BndEvt__FriendsFiltercombo_K2Node_ComponentBoundEvent_14_OnSelectionChanged__DelegateSignature(const struct FString& Selection)
 {
@@ -170,7 +170,7 @@ void UUI_ServerBrowser_C::BndEvt__FriendsFiltercombo_K2Node_ComponentBoundEvent_
 // Function UI_ServerBrowser.UI_ServerBrowser_C.BndEvt__GameModeFilterCombo_K2Node_ComponentBoundEvent_17_OnSelectionChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// struct FString                 Selection                      (Parm, ZeroConstructor)
+// struct FString                 Selection                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_ServerBrowser_C::BndEvt__GameModeFilterCombo_K2Node_ComponentBoundEvent_17_OnSelectionChanged__DelegateSignature(const struct FString& Selection)
 {
@@ -207,7 +207,7 @@ void UUI_ServerBrowser_C::BndEvt__RefreshButton_K2Node_ComponentBoundEvent_41_On
 // Function UI_ServerBrowser.UI_ServerBrowser_C.OnEntryJoinServer
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPavlovServerInfo       Server                         (Parm)
+// struct FPavlovServerInfo       Server                         (BlueprintVisible, BlueprintReadOnly, Parm)
 
 void UUI_ServerBrowser_C::OnEntryJoinServer(const struct FPavlovServerInfo& Server)
 {
@@ -259,9 +259,9 @@ void UUI_ServerBrowser_C::BndEvt__Button_1_K2Node_ComponentBoundEvent_346_OnButt
 
 
 // Function UI_ServerBrowser.UI_ServerBrowser_C.ExecuteUbergraph_UI_ServerBrowser
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_ServerBrowser_C::ExecuteUbergraph_UI_ServerBrowser(int EntryPoint)
 {
@@ -281,7 +281,7 @@ void UUI_ServerBrowser_C::ExecuteUbergraph_UI_ServerBrowser(int EntryPoint)
 // Function UI_ServerBrowser.UI_ServerBrowser_C.OnJoinServer__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPavlovServerInfo       ServerInfo                     (Parm)
+// struct FPavlovServerInfo       ServerInfo                     (BlueprintVisible, BlueprintReadOnly, Parm)
 
 void UUI_ServerBrowser_C::OnJoinServer__DelegateSignature(const struct FPavlovServerInfo& ServerInfo)
 {

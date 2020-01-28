@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -49,7 +49,7 @@ void AToolTip_SnapTurn_C::ReceiveBeginPlay()
 // Function ToolTip_SnapTurn.ToolTip_SnapTurn_C.OnDestroyed_Event_1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                  DestroyedActor                 (Parm, ZeroConstructor, IsPlainOldData)
+// class AActor*                  DestroyedActor                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AToolTip_SnapTurn_C::OnDestroyed_Event_1(class AActor* DestroyedActor)
 {
@@ -69,7 +69,7 @@ void AToolTip_SnapTurn_C::OnDestroyed_Event_1(class AActor* DestroyedActor)
 // Function ToolTip_SnapTurn.ToolTip_SnapTurn_C.OnSnapTurn_Event_1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          Delta                          (Parm, ZeroConstructor, IsPlainOldData)
+// float                          Delta                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AToolTip_SnapTurn_C::OnSnapTurn_Event_1(float Delta)
 {
@@ -87,9 +87,9 @@ void AToolTip_SnapTurn_C::OnSnapTurn_Event_1(float Delta)
 
 
 // Function ToolTip_SnapTurn.ToolTip_SnapTurn_C.ExecuteUbergraph_ToolTip_SnapTurn
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AToolTip_SnapTurn_C::ExecuteUbergraph_ToolTip_SnapTurn(int EntryPoint)
 {

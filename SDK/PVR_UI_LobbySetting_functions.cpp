@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -12,10 +12,31 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function UI_LobbySetting.UI_LobbySetting_C.Get_Label_Text_1
+// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FText                   ReturnValue                    (Parm, OutParm, ReturnParm)
+
+struct FText UUI_LobbySetting_C::Get_Label_Text_1()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function UI_LobbySetting.UI_LobbySetting_C.Get_Label_Text_1");
+
+	UUI_LobbySetting_C_Get_Label_Text_1_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function UI_LobbySetting.UI_LobbySetting_C.SetSelectionByIndex
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int                            Index                          (Parm, ZeroConstructor, IsPlainOldData)
+// int                            Index                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_LobbySetting_C::SetSelectionByIndex(int Index)
 {
@@ -79,7 +100,7 @@ void UUI_LobbySetting_C::GetSelectedValue(struct FString* Value)
 // Function UI_LobbySetting.UI_LobbySetting_C.SetSelectionByValue
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString                 String                         (Parm, ZeroConstructor)
+// struct FString                 String                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_LobbySetting_C::SetSelectionByValue(const struct FString& String)
 {
@@ -99,8 +120,8 @@ void UUI_LobbySetting_C::SetSelectionByValue(const struct FString& String)
 // Function UI_LobbySetting.UI_LobbySetting_C.On_Combo_GenerateWidget_1
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString                 Item                           (Parm, ZeroConstructor)
-// class UWidget*                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// struct FString                 Item                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
+// class UWidget*                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
 
 class UWidget* UUI_LobbySetting_C::On_Combo_GenerateWidget_1(const struct FString& Item)
 {
@@ -139,7 +160,7 @@ void UUI_LobbySetting_C::BuildCombo()
 // Function UI_LobbySetting.UI_LobbySetting_C.SetSelection
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString                 Value                          (Parm, ZeroConstructor)
+// struct FString                 Value                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_LobbySetting_C::SetSelection(const struct FString& Value)
 {
@@ -218,8 +239,8 @@ void UUI_LobbySetting_C::Construct()
 // Function UI_LobbySetting.UI_LobbySetting_C.BndEvt__Combo_K2Node_ComponentBoundEvent_40_OnSelectionChangedEvent__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// struct FString                 SelectedItem                   (Parm, ZeroConstructor)
-// TEnumAsByte<ESelectInfo>       SelectionType                  (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 SelectedItem                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
+// TEnumAsByte<ESelectInfo>       SelectionType                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_LobbySetting_C::BndEvt__Combo_K2Node_ComponentBoundEvent_40_OnSelectionChangedEvent__DelegateSignature(const struct FString& SelectedItem, TEnumAsByte<ESelectInfo> SelectionType)
 {
@@ -255,9 +276,9 @@ void UUI_LobbySetting_C::BndEvt__Combo_K2Node_ComponentBoundEvent_3_OnOpeningEve
 
 
 // Function UI_LobbySetting.UI_LobbySetting_C.ExecuteUbergraph_UI_LobbySetting
-// ()
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_LobbySetting_C::ExecuteUbergraph_UI_LobbySetting(int EntryPoint)
 {
@@ -277,7 +298,7 @@ void UUI_LobbySetting_C::ExecuteUbergraph_UI_LobbySetting(int EntryPoint)
 // Function UI_LobbySetting.UI_LobbySetting_C.OnSelectionChanged__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString                 Selection                      (Parm, ZeroConstructor)
+// struct FString                 Selection                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_LobbySetting_C::OnSelectionChanged__DelegateSignature(const struct FString& Selection)
 {

@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -47,9 +47,9 @@ void ABP_Killfeed_C::OnDisplayModeUpdated()
 
 
 // Function BP_Killfeed.BP_Killfeed_C.ExecuteUbergraph_BP_Killfeed
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void ABP_Killfeed_C::ExecuteUbergraph_BP_Killfeed(int EntryPoint)
 {

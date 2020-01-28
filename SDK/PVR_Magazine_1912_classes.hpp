@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,7 +13,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass Magazine_1912.Magazine_1911_C
-// 0x0000 (0x0588 - 0x0588)
+// 0x0000 (0x0538 - 0x0538)
 class AMagazine_1911_C : public AMagazine_Base_C
 {
 public:

@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -137,6 +137,1576 @@ void AAirplaneRoyale::ClearBase(class APavlovPawn* Pawn)
 
 	AAirplaneRoyale_ClearBase_Params params;
 	params.Pawn = Pawn;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.AmmoBox.SetAmmoCount
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int                            NewAmmoCount                   (Parm, ZeroConstructor, IsPlainOldData)
+
+void AAmmoBox::SetAmmoCount(int NewAmmoCount)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.AmmoBox.SetAmmoCount");
+
+	AAmmoBox_SetAmmoCount_Params params;
+	params.NewAmmoCount = NewAmmoCount;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.AmmoBox.OnRep_AmmoCount
+// (Final, Native, Private)
+
+void AAmmoBox::OnRep_AmmoCount()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.AmmoBox.OnRep_AmmoCount");
+
+	AAmmoBox_OnRep_AmmoCount_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.AmmoBox.OnAmmoCountChanged
+// (Native, Event, Public, BlueprintEvent)
+
+void AAmmoBox::OnAmmoCountChanged()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.AmmoBox.OnAmmoCountChanged");
+
+	AAmmoBox_OnAmmoCountChanged_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.Attachment.OnGunTickChanged
+// (Native, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void AAttachment::OnGunTickChanged(bool bEnabled)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Attachment.OnGunTickChanged");
+
+	AAttachment_OnGunTickChanged_Params params;
+	params.bEnabled = bEnabled;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.Attachment.GunTick
+// (Native, Event, Public, BlueprintEvent)
+// Parameters:
+// float                          DeltaTime                      (Parm, ZeroConstructor, IsPlainOldData)
+
+void AAttachment::GunTick(float DeltaTime)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Attachment.GunTick");
+
+	AAttachment_GunTick_Params params;
+	params.DeltaTime = DeltaTime;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.AttachmentSight.GetLenseMesh
+// (Native, Event, Public, HasOutParms, BlueprintEvent)
+// Parameters:
+// int                            MaterialIndex                  (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// class UMeshComponent*          ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+
+class UMeshComponent* AAttachmentSight::GetLenseMesh(int* MaterialIndex)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.AttachmentSight.GetLenseMesh");
+
+	AAttachmentSight_GetLenseMesh_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (MaterialIndex != nullptr)
+		*MaterialIndex = params.MaterialIndex;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.AttachmentSight.ApplyZeroing
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                          Delta                          (Parm, ZeroConstructor, IsPlainOldData)
+
+void AAttachmentSight::ApplyZeroing(float Delta)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.AttachmentSight.ApplyZeroing");
+
+	AAttachmentSight_ApplyZeroing_Params params;
+	params.Delta = Delta;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.AvatarSkin.Update
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+
+void UAvatarSkin::Update()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.AvatarSkin.Update");
+
+	UAvatarSkin_Update_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.AvatarSkin.SetStencilValue
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// unsigned char                  Value                          (Parm, ZeroConstructor, IsPlainOldData)
+
+void UAvatarSkin::SetStencilValue(unsigned char Value)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.AvatarSkin.SetStencilValue");
+
+	UAvatarSkin_SetStencilValue_Params params;
+	params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.AvatarSkin.SetRenderToCustomDepth
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void UAvatarSkin::SetRenderToCustomDepth(bool bEnabled)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.AvatarSkin.SetRenderToCustomDepth");
+
+	UAvatarSkin_SetRenderToCustomDepth_Params params;
+	params.bEnabled = bEnabled;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.AvatarSkin.RemoveUsedComponent
+// (Final, Native, Protected, BlueprintCallable)
+// Parameters:
+// class UActorComponent*         Component                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+
+void UAvatarSkin::RemoveUsedComponent(class UActorComponent* Component)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.AvatarSkin.RemoveUsedComponent");
+
+	UAvatarSkin_RemoveUsedComponent_Params params;
+	params.Component = Component;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.AvatarSkin.GetPawn
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class APavlovPawn*             ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class APavlovPawn* UAvatarSkin::GetPawn()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.AvatarSkin.GetPawn");
+
+	UAvatarSkin_GetPawn_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.AvatarSkin.GetBaseMeshComponent
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class USkeletalMeshComponent*  ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+
+class USkeletalMeshComponent* UAvatarSkin::GetBaseMeshComponent()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.AvatarSkin.GetBaseMeshComponent");
+
+	UAvatarSkin_GetBaseMeshComponent_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.AvatarSkin.CreateChildSkeletalMeshComponent
+// (Final, Native, Protected, BlueprintCallable)
+// Parameters:
+// class USkeletalMesh*           SkeletalMesh                   (Parm, ZeroConstructor, IsPlainOldData)
+// class USkeletalMeshComponent*  ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+
+class USkeletalMeshComponent* UAvatarSkin::CreateChildSkeletalMeshComponent(class USkeletalMesh* SkeletalMesh)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.AvatarSkin.CreateChildSkeletalMeshComponent");
+
+	UAvatarSkin_CreateChildSkeletalMeshComponent_Params params;
+	params.SkeletalMesh = SkeletalMesh;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.AvatarSkin.AddUsedComponent
+// (Final, Native, Protected, BlueprintCallable)
+// Parameters:
+// class UActorComponent*         Component                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+
+void UAvatarSkin::AddUsedComponent(class UActorComponent* Component)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.AvatarSkin.AddUsedComponent");
+
+	UAvatarSkin_AddUsedComponent_Params params;
+	params.Component = Component;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.AzureGameMode.Travel
+// (Final, Native, Public)
+
+void AAzureGameMode::Travel()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.AzureGameMode.Travel");
+
+	AAzureGameMode_Travel_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.AzureServer.SoftTick
+// (Final, Native, Public)
+
+void UAzureServer::SoftTick()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.AzureServer.SoftTick");
+
+	UAzureServer_SoftTick_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.TerminateGameSession
+// (Final, Native, Public, BlueprintCallable)
+
+void APavlovGameMode::TerminateGameSession()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.TerminateGameSession");
+
+	APavlovGameMode_TerminateGameSession_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.SwitchTeam
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class AController*             Controller                     (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameMode::SwitchTeam(class AController* Controller)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SwitchTeam");
+
+	APavlovGameMode_SwitchTeam_Params params;
+	params.Controller = Controller;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.Suicide
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class AController*             Controller                     (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameMode::Suicide(class AController* Controller)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.Suicide");
+
+	APavlovGameMode_Suicide_Params params;
+	params.Controller = Controller;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.StopReplayRecording
+// (Final, Native, Protected, BlueprintCallable)
+
+void APavlovGameMode::StopReplayRecording()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.StopReplayRecording");
+
+	APavlovGameMode_StopReplayRecording_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.StartReplayRecording
+// (Final, Native, Protected, BlueprintCallable)
+
+void APavlovGameMode::StartReplayRecording()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.StartReplayRecording");
+
+	APavlovGameMode_StartReplayRecording_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.SpawnPlayer
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AController*             Controller                     (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameMode::SpawnPlayer(class AController* Controller)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SpawnPlayer");
+
+	APavlovGameMode_SpawnPlayer_Params params;
+	params.Controller = Controller;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.SpawnPavlovPawn
+// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+// class AController*             Controller                     (Parm, ZeroConstructor, IsPlainOldData)
+// struct FTransform              Transform                      (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+// class APavlovPawn*             ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class APavlovPawn* APavlovGameMode::SpawnPavlovPawn(class AController* Controller, const struct FTransform& Transform)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SpawnPavlovPawn");
+
+	APavlovGameMode_SpawnPavlovPawn_Params params;
+	params.Controller = Controller;
+	params.Transform = Transform;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameMode.SpawnAndPossesPawns
+// (Final, Native, Public, BlueprintCallable)
+
+void APavlovGameMode::SpawnAndPossesPawns()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SpawnAndPossesPawns");
+
+	APavlovGameMode_SpawnAndPossesPawns_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.ShuffleTeams
+// (Final, Native, Public, BlueprintCallable)
+
+void APavlovGameMode::ShuffleTeams()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.ShuffleTeams");
+
+	APavlovGameMode_ShuffleTeams_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.SetTeamCash
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// int                            TeamId                         (Parm, ZeroConstructor, IsPlainOldData)
+// int                            CashAmmount                    (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameMode::SetTeamCash(int TeamId, int CashAmmount)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SetTeamCash");
+
+	APavlovGameMode_SetTeamCash_Params params;
+	params.TeamId = TeamId;
+	params.CashAmmount = CashAmmount;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.SetRoundState
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// EPavlovRoundState              State                          (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameMode::SetRoundState(EPavlovRoundState State)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SetRoundState");
+
+	APavlovGameMode_SetRoundState_Params params;
+	params.State = State;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.SetPawnsInvulnerable
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameMode::SetPawnsInvulnerable(bool bEnabled)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SetPawnsInvulnerable");
+
+	APavlovGameMode_SetPawnsInvulnerable_Params params;
+	params.bEnabled = bEnabled;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.SetMovement
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameMode::SetMovement(bool bEnabled)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SetMovement");
+
+	APavlovGameMode_SetMovement_Params params;
+	params.bEnabled = bEnabled;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.SetEveryoneCash
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// int                            CashAmmount                    (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameMode::SetEveryoneCash(int CashAmmount)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SetEveryoneCash");
+
+	APavlovGameMode_SetEveryoneCash_Params params;
+	params.CashAmmount = CashAmmount;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.SetAttackingTeam
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int                            TeamId                         (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameMode::SetAttackingTeam(int TeamId)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SetAttackingTeam");
+
+	APavlovGameMode_SetAttackingTeam_Params params;
+	params.TeamId = TeamId;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.RotateMap
+// (Final, Native, Public, BlueprintCallable)
+
+void APavlovGameMode::RotateMap()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.RotateMap");
+
+	APavlovGameMode_RotateMap_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.ResetScore
+// (Final, Native, Public, BlueprintCallable)
+
+void APavlovGameMode::ResetScore()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.ResetScore");
+
+	APavlovGameMode_ResetScore_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.PunishTeamKiller
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class APavlovPlayerState*      TeamKiller                     (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameMode::PunishTeamKiller(class APavlovPlayerState* TeamKiller)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.PunishTeamKiller");
+
+	APavlovGameMode_PunishTeamKiller_Params params;
+	params.TeamKiller = TeamKiller;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.PostRoundCleanUp
+// (Final, Native, Public, BlueprintCallable)
+
+void APavlovGameMode::PostRoundCleanUp()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.PostRoundCleanUp");
+
+	APavlovGameMode_PostRoundCleanUp_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.PerformServerTravel
+// (Final, Native, Protected)
+
+void APavlovGameMode::PerformServerTravel()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.PerformServerTravel");
+
+	APavlovGameMode_PerformServerTravel_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.OnSteamTicketValidation
+// (Final, Native, Protected)
+// Parameters:
+// struct FString                 SteamUserId                    (Parm, ZeroConstructor)
+// ESteamAuthResponse             Response                       (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 OwnerSteamUserId               (Parm, ZeroConstructor)
+
+void APavlovGameMode::OnSteamTicketValidation(const struct FString& SteamUserId, ESteamAuthResponse Response, const struct FString& OwnerSteamUserId)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.OnSteamTicketValidation");
+
+	APavlovGameMode_OnSteamTicketValidation_Params params;
+	params.SteamUserId = SteamUserId;
+	params.Response = Response;
+	params.OwnerSteamUserId = OwnerSteamUserId;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.OnRoundStateChanged
+// (Native, Event, Public, BlueprintEvent)
+// Parameters:
+// EPavlovRoundState              OldState                       (Parm, ZeroConstructor, IsPlainOldData)
+// EPavlovRoundState              NewState                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameMode::OnRoundStateChanged(EPavlovRoundState OldState, EPavlovRoundState NewState)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.OnRoundStateChanged");
+
+	APavlovGameMode_OnRoundStateChanged_Params params;
+	params.OldState = OldState;
+	params.NewState = NewState;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.OnPlayerSpawned
+// (Native, Event, Public, BlueprintEvent)
+// Parameters:
+// class APavlovPlayerState*      PlayerState                    (Parm, ZeroConstructor, IsPlainOldData)
+// class AController*             Controller                     (Parm, ZeroConstructor, IsPlainOldData)
+// class APavlovPawn*             Pawn                           (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameMode::OnPlayerSpawned(class APavlovPlayerState* PlayerState, class AController* Controller, class APavlovPawn* Pawn)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.OnPlayerSpawned");
+
+	APavlovGameMode_OnPlayerSpawned_Params params;
+	params.PlayerState = PlayerState;
+	params.Controller = Controller;
+	params.Pawn = Pawn;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.OnPlayerKilled
+// (Native, Event, Public, BlueprintEvent)
+// Parameters:
+// class APavlovPlayerState*      PlayerState                    (Parm, ZeroConstructor, IsPlainOldData)
+// class AController*             Controller                     (Parm, ZeroConstructor, IsPlainOldData)
+// class APavlovPawn*             Pawn                           (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameMode::OnPlayerKilled(class APavlovPlayerState* PlayerState, class AController* Controller, class APavlovPawn* Pawn)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.OnPlayerKilled");
+
+	APavlovGameMode_OnPlayerKilled_Params params;
+	params.PlayerState = PlayerState;
+	params.Controller = Controller;
+	params.Pawn = Pawn;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.OnPawnKilled
+// (Final, Native, Protected)
+// Parameters:
+// class AActor*                  OwnerActor                     (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameMode::OnPawnKilled(class AActor* OwnerActor)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.OnPawnKilled");
+
+	APavlovGameMode_OnPawnKilled_Params params;
+	params.OwnerActor = OwnerActor;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.OnKillVolumeOverlap
+// (Final, Native, Protected)
+// Parameters:
+// class AActor*                  OverlappedActor                (Parm, ZeroConstructor, IsPlainOldData)
+// class AActor*                  OtherActor                     (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameMode::OnKillVolumeOverlap(class AActor* OverlappedActor, class AActor* OtherActor)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.OnKillVolumeOverlap");
+
+	APavlovGameMode_OnKillVolumeOverlap_Params params;
+	params.OverlappedActor = OverlappedActor;
+	params.OtherActor = OtherActor;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.MakeNavmeshStatic
+// (Final, Native, Protected)
+
+void APavlovGameMode::MakeNavmeshStatic()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.MakeNavmeshStatic");
+
+	APavlovGameMode_MakeNavmeshStatic_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.KickByStringId
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// struct FString                 ID                             (Parm, ZeroConstructor)
+// struct FText                   KickReason                     (ConstParm, Parm, OutParm, ReferenceParm)
+// bool                           bBan                           (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameMode::KickByStringId(const struct FString& ID, const struct FText& KickReason, bool bBan)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.KickByStringId");
+
+	APavlovGameMode_KickByStringId_Params params;
+	params.ID = ID;
+	params.KickReason = KickReason;
+	params.bBan = bBan;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.KickByPlayerState
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// class APavlovPlayerState*      PlayerState                    (Parm, ZeroConstructor, IsPlainOldData)
+// struct FText                   KickReason                     (ConstParm, Parm, OutParm, ReferenceParm)
+// bool                           bBan                           (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameMode::KickByPlayerState(class APavlovPlayerState* PlayerState, const struct FText& KickReason, bool bBan)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.KickByPlayerState");
+
+	APavlovGameMode_KickByPlayerState_Params params;
+	params.PlayerState = PlayerState;
+	params.KickReason = KickReason;
+	params.bBan = bBan;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.IsTeamDead
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int                            TeamId                         (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool APavlovGameMode::IsTeamDead(int TeamId)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.IsTeamDead");
+
+	APavlovGameMode_IsTeamDead_Params params;
+	params.TeamId = TeamId;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameMode.IncrementTeamScore
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int                            TeamId                         (Parm, ZeroConstructor, IsPlainOldData)
+// int                            Score                          (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameMode::IncrementTeamScore(int TeamId, int Score)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.IncrementTeamScore");
+
+	APavlovGameMode_IncrementTeamScore_Params params;
+	params.TeamId = TeamId;
+	params.Score = Score;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.IncrementPlayerScore
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class APlayerState*            PlayerState                    (Parm, ZeroConstructor, IsPlainOldData)
+// int                            Score                          (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameMode::IncrementPlayerScore(class APlayerState* PlayerState, int Score)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.IncrementPlayerScore");
+
+	APavlovGameMode_IncrementPlayerScore_Params params;
+	params.PlayerState = PlayerState;
+	params.Score = Score;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.GiveTeamCash
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// int                            TeamId                         (Parm, ZeroConstructor, IsPlainOldData)
+// int                            CashAmmount                    (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameMode::GiveTeamCash(int TeamId, int CashAmmount)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.GiveTeamCash");
+
+	APavlovGameMode_GiveTeamCash_Params params;
+	params.TeamId = TeamId;
+	params.CashAmmount = CashAmmount;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.GiveItem
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class APavlovPawn*             Pawn                           (Parm, ZeroConstructor, IsPlainOldData)
+// class UClass*                  ItemClass                      (Parm, ZeroConstructor, IsPlainOldData)
+// float                          BlockDuration                  (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bLoaded                        (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameMode::GiveItem(class APavlovPawn* Pawn, class UClass* ItemClass, float BlockDuration, bool bLoaded)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.GiveItem");
+
+	APavlovGameMode_GiveItem_Params params;
+	params.Pawn = Pawn;
+	params.ItemClass = ItemClass;
+	params.BlockDuration = BlockDuration;
+	params.bLoaded = bLoaded;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.GiveEveryoneCash
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// int                            CashAmmount                    (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameMode::GiveEveryoneCash(int CashAmmount)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.GiveEveryoneCash");
+
+	APavlovGameMode_GiveEveryoneCash_Params params;
+	params.CashAmmount = CashAmmount;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.GetTeamStatus
+// (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int                            TeamId                         (Parm, ZeroConstructor, IsPlainOldData)
+// int                            Num                            (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// int                            Casualties                     (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameMode::GetTeamStatus(int TeamId, int* Num, int* Casualties)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.GetTeamStatus");
+
+	APavlovGameMode_GetTeamStatus_Params params;
+	params.TeamId = TeamId;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (Num != nullptr)
+		*Num = params.Num;
+	if (Casualties != nullptr)
+		*Casualties = params.Casualties;
+}
+
+
+// Function Pavlov.PavlovGameMode.GetTeamRealPlayerCount
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int                            TeamId                         (Parm, ZeroConstructor, IsPlainOldData)
+// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+int APavlovGameMode::GetTeamRealPlayerCount(int TeamId)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.GetTeamRealPlayerCount");
+
+	APavlovGameMode_GetTeamRealPlayerCount_Params params;
+	params.TeamId = TeamId;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameMode.GetSteamAudioGun
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+struct FString APavlovGameMode::GetSteamAudioGun()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.GetSteamAudioGun");
+
+	APavlovGameMode_GetSteamAudioGun_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameMode.GetRealPlayerCount
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+int APavlovGameMode::GetRealPlayerCount()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.GetRealPlayerCount");
+
+	APavlovGameMode_GetRealPlayerCount_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameMode.GetRandomController
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int                            TeamFilter                     (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bRealPlayer                    (Parm, ZeroConstructor, IsPlainOldData)
+// class AController*             ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class AController* APavlovGameMode::GetRandomController(int TeamFilter, bool bRealPlayer)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.GetRandomController");
+
+	APavlovGameMode_GetRandomController_Params params;
+	params.TeamFilter = TeamFilter;
+	params.bRealPlayer = bRealPlayer;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameMode.GetMaxPlayerCount
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+int APavlovGameMode::GetMaxPlayerCount()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.GetMaxPlayerCount");
+
+	APavlovGameMode_GetMaxPlayerCount_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameMode.GetKillReward
+// (Native, Event, Public, HasOutParms, BlueprintEvent)
+// Parameters:
+// class APavlovPlayerState*      Killer                         (Parm, ZeroConstructor, IsPlainOldData)
+// class APavlovPlayerState*      Victim                         (Parm, ZeroConstructor, IsPlainOldData)
+// struct FDamageTrackInfo        LastHitInfo                    (ConstParm, Parm, OutParm, ReferenceParm)
+// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+int APavlovGameMode::GetKillReward(class APavlovPlayerState* Killer, class APavlovPlayerState* Victim, const struct FDamageTrackInfo& LastHitInfo)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.GetKillReward");
+
+	APavlovGameMode_GetKillReward_Params params;
+	params.Killer = Killer;
+	params.Victim = Victim;
+	params.LastHitInfo = LastHitInfo;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameMode.GetDynamicSpawnPointForTeam
+// (Final, Native, Protected, BlueprintCallable)
+// Parameters:
+// int                            TeamId                         (Parm, ZeroConstructor, IsPlainOldData)
+// class APlayerSpawnPoint*       ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class APlayerSpawnPoint* APavlovGameMode::GetDynamicSpawnPointForTeam(int TeamId)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.GetDynamicSpawnPointForTeam");
+
+	APavlovGameMode_GetDynamicSpawnPointForTeam_Params params;
+	params.TeamId = TeamId;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameMode.GetDynamicOccludedSpawnPoint
+// (Final, Native, Protected, BlueprintCallable)
+// Parameters:
+// int                            TeamId                         (Parm, ZeroConstructor, IsPlainOldData)
+// class APlayerSpawnPoint*       ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class APlayerSpawnPoint* APavlovGameMode::GetDynamicOccludedSpawnPoint(int TeamId)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.GetDynamicOccludedSpawnPoint");
+
+	APavlovGameMode_GetDynamicOccludedSpawnPoint_Params params;
+	params.TeamId = TeamId;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameMode.DestroyBot
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class AController*             Controller                     (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameMode::DestroyBot(class AController* Controller)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.DestroyBot");
+
+	APavlovGameMode_DestroyBot_Params params;
+	params.Controller = Controller;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.CreateDedicatedServerSession
+// (Final, Native, Public, BlueprintCallable)
+
+void APavlovGameMode::CreateDedicatedServerSession()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.CreateDedicatedServerSession");
+
+	APavlovGameMode_CreateDedicatedServerSession_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.CreateBot
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int                            TeamId                         (Parm, ZeroConstructor, IsPlainOldData)
+// class AController*             ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class AController* APavlovGameMode::CreateBot(int TeamId)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.CreateBot");
+
+	APavlovGameMode_CreateBot_Params params;
+	params.TeamId = TeamId;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameMode.CleanUpItems
+// (Final, Native, Public, BlueprintCallable)
+
+void APavlovGameMode::CleanUpItems()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.CleanUpItems");
+
+	APavlovGameMode_CleanUpItems_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.CanChangeScore
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool APavlovGameMode::CanChangeScore()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.CanChangeScore");
+
+	APavlovGameMode_CanChangeScore_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameMode.AssignPlayerSkin
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APavlovPlayerState*      PlayerState                    (Parm, ZeroConstructor, IsPlainOldData)
+// class APavlovPawn*             Pawn                           (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameMode::AssignPlayerSkin(class APavlovPlayerState* PlayerState, class APavlovPawn* Pawn)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.AssignPlayerSkin");
+
+	APavlovGameMode_AssignPlayerSkin_Params params;
+	params.PlayerState = PlayerState;
+	params.Pawn = Pawn;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.AddExtraRoundTime
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                          ExtraTime                      (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameMode::AddExtraRoundTime(float ExtraTime)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.AddExtraRoundTime");
+
+	APavlovGameMode_AddExtraRoundTime_Params params;
+	params.ExtraTime = ExtraTime;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameMode.AddAssist
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class APavlovPlayerState*      PlayerState                    (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameMode::AddAssist(class APavlovPlayerState* PlayerState)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.AddAssist");
+
+	APavlovGameMode_AddAssist_Params params;
+	params.PlayerState = PlayerState;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.BattlegroundsGameMode.PerformWaitingHeartBeat
+// (Final, Native, Protected)
+
+void ABattlegroundsGameMode::PerformWaitingHeartBeat()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.BattlegroundsGameMode.PerformWaitingHeartBeat");
+
+	ABattlegroundsGameMode_PerformWaitingHeartBeat_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.BattlegroundsGameMode.PerformGameHeartBeat
+// (Final, Native, Protected)
+
+void ABattlegroundsGameMode::PerformGameHeartBeat()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.BattlegroundsGameMode.PerformGameHeartBeat");
+
+	ABattlegroundsGameMode_PerformGameHeartBeat_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.BloodPuddle.OnPour
+// (Event, Public, HasOutParms, HasDefaults, BlueprintEvent)
+// Parameters:
+// struct FTransform              Transform                      (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+
+void ABloodPuddle::OnPour(const struct FTransform& Transform)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.BloodPuddle.OnPour");
+
+	ABloodPuddle_OnPour_Params params;
+	params.Transform = Transform;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.BloodPuddle.OnOwnerEndPlay
+// (Final, Native, Private)
+// Parameters:
+// class AActor*                  OwnerActor                     (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EEndPlayReason>    Reason                         (Parm, ZeroConstructor, IsPlainOldData)
+
+void ABloodPuddle::OnOwnerEndPlay(class AActor* OwnerActor, TEnumAsByte<EEndPlayReason> Reason)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.BloodPuddle.OnOwnerEndPlay");
+
+	ABloodPuddle_OnOwnerEndPlay_Params params;
+	params.OwnerActor = OwnerActor;
+	params.Reason = Reason;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -468,7 +2038,7 @@ bool ABomb::IsButtonPressed(int Index)
 // (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // int                            Index                          (Parm, ZeroConstructor, IsPlainOldData)
-// struct FVector                 ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// struct FVector                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
 struct FVector ABomb::GetWireLocation(int Index)
 {
@@ -491,7 +2061,7 @@ struct FVector ABomb::GetWireLocation(int Index)
 // Function Pavlov.Bomb.GetClosestValidWireIndex
 // (Final, Native, Public, HasDefaults, BlueprintCallable)
 // Parameters:
-// struct FVector                 Location                       (Parm, IsPlainOldData)
+// struct FVector                 Location                       (Parm, ZeroConstructor, IsPlainOldData)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
 int ABomb::GetClosestValidWireIndex(const struct FVector& Location)
@@ -942,6 +2512,737 @@ void UDamageTrackerComponent::GatherAssists(TArray<struct FDamageTrackInfo>* Ass
 }
 
 
+// Function Pavlov.DedicatedServer.TravelNextTick
+// (Final, Native, Protected)
+
+void UDedicatedServer::TravelNextTick()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.DedicatedServer.TravelNextTick");
+
+	UDedicatedServer_TravelNextTick_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.DedicatedServer.OnMapDownloaded
+// (Final, Native, Protected)
+// Parameters:
+// bool                           bSucceed                       (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 ID                             (Parm, ZeroConstructor)
+
+void UDedicatedServer::OnMapDownloaded(bool bSucceed, const struct FString& ID)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.DedicatedServer.OnMapDownloaded");
+
+	UDedicatedServer_OnMapDownloaded_Params params;
+	params.bSucceed = bSucceed;
+	params.ID = ID;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.Destructible.OnShatter
+// (Event, Public, HasDefaults, BlueprintEvent)
+// Parameters:
+// struct FVector                 Normal                         (Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 Location                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void ADestructible::OnShatter(const struct FVector& Normal, const struct FVector& Location)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Destructible.OnShatter");
+
+	ADestructible_OnShatter_Params params;
+	params.Normal = Normal;
+	params.Location = Location;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.Destructible.MulticastOnShatter
+// (Net, NetReliable, Native, Event, NetMulticast, Public)
+// Parameters:
+// struct FVector_NetQuantizeNormal Normal                         (Parm)
+// struct FVector_NetQuantize     Location                       (Parm)
+
+void ADestructible::MulticastOnShatter(const struct FVector_NetQuantizeNormal& Normal, const struct FVector_NetQuantize& Location)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Destructible.MulticastOnShatter");
+
+	ADestructible_MulticastOnShatter_Params params;
+	params.Normal = Normal;
+	params.Location = Location;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.DoubleBarrelGunState.SetBarrel
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                           bOpen                          (Parm, ZeroConstructor, IsPlainOldData)
+
+void UDoubleBarrelGunState::SetBarrel(bool bOpen)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.DoubleBarrelGunState.SetBarrel");
+
+	UDoubleBarrelGunState_SetBarrel_Params params;
+	params.bOpen = bOpen;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.FlyingHelmet.ApplyImpulse
+// (Final, Native, Private)
+
+void AFlyingHelmet::ApplyImpulse()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.FlyingHelmet.ApplyImpulse");
+
+	AFlyingHelmet_ApplyImpulse_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.GestureComponent.RegisterGesture
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FGestureSetup           Setup                          (Parm)
+
+void UGestureComponent::RegisterGesture(const struct FGestureSetup& Setup)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GestureComponent.RegisterGesture");
+
+	UGestureComponent_RegisterGesture_Params params;
+	params.Setup = Setup;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovItemController.UpdateUIState
+// (Final, Native, Protected)
+
+void APavlovItemController::UpdateUIState()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.UpdateUIState");
+
+	APavlovItemController_UpdateUIState_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovItemController.SetWheelEnabled
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovItemController::SetWheelEnabled(bool bEnabled)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.SetWheelEnabled");
+
+	APavlovItemController_SetWheelEnabled_Params params;
+	params.bEnabled = bEnabled;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovItemController.SetMenu
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovItemController::SetMenu(bool bEnabled)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.SetMenu");
+
+	APavlovItemController_SetMenu_Params params;
+	params.bEnabled = bEnabled;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovItemController.SetKillfeed
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovItemController::SetKillfeed(bool bEnabled)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.SetKillfeed");
+
+	APavlovItemController_SetKillfeed_Params params;
+	params.bEnabled = bEnabled;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovItemController.OnTeamIdChanged
+// (Native, Event, Public, BlueprintEvent)
+// Parameters:
+// int                            TeamId                         (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovItemController::OnTeamIdChanged(int TeamId)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.OnTeamIdChanged");
+
+	APavlovItemController_OnTeamIdChanged_Params params;
+	params.TeamId = TeamId;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovItemController.OnSelectionPicked
+// (Final, Native, Protected)
+// Parameters:
+// class AVRItem*                 Item                           (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovItemController::OnSelectionPicked(class AVRItem* Item)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.OnSelectionPicked");
+
+	APavlovItemController_OnSelectionPicked_Params params;
+	params.Item = Item;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovItemController.IsWheelEnabled
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool APavlovItemController::IsWheelEnabled()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.IsWheelEnabled");
+
+	APavlovItemController_IsWheelEnabled_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovItemController.IsTwoHandReloadEnabled
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool APavlovItemController::IsTwoHandReloadEnabled()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.IsTwoHandReloadEnabled");
+
+	APavlovItemController_IsTwoHandReloadEnabled_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovItemController.IsTwoHandGripEnabled
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool APavlovItemController::IsTwoHandGripEnabled()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.IsTwoHandGripEnabled");
+
+	APavlovItemController_IsTwoHandGripEnabled_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovItemController.IsMenuActive
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool APavlovItemController::IsMenuActive()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.IsMenuActive");
+
+	APavlovItemController_IsMenuActive_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovItemController.GetOppositeHandController
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class APavlovItemController*   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class APavlovItemController* APavlovItemController::GetOppositeHandController()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.GetOppositeHandController");
+
+	APavlovItemController_GetOppositeHandController_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovItemController.GetFingerPointLocation
+// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FVector                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+struct FVector APavlovItemController::GetFingerPointLocation()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.GetFingerPointLocation");
+
+	APavlovItemController_GetFingerPointLocation_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovItemController.ForceTwoHandGrip
+// (Final, Native, Public, BlueprintCallable)
+
+void APavlovItemController::ForceTwoHandGrip()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.ForceTwoHandGrip");
+
+	APavlovItemController_ForceTwoHandGrip_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovItemController.ClearWheelInstance
+// (Final, Native, Public, BlueprintCallable)
+
+void APavlovItemController::ClearWheelInstance()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.ClearWheelInstance");
+
+	APavlovItemController_ClearWheelInstance_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.GhostItemController.OnPointModeChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EGhostPointMode                OldPointMode                   (Parm, ZeroConstructor, IsPlainOldData)
+
+void AGhostItemController::OnPointModeChanged(EGhostPointMode OldPointMode)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostItemController.OnPointModeChanged");
+
+	AGhostItemController_OnPointModeChanged_Params params;
+	params.OldPointMode = OldPointMode;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.GhostItemController.ChangePointMode
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// EGhostPointMode                NewPointMode                   (Parm, ZeroConstructor, IsPlainOldData)
+
+void AGhostItemController::ChangePointMode(EGhostPointMode NewPointMode)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostItemController.ChangePointMode");
+
+	AGhostItemController_ChangePointMode_Params params;
+	params.NewPointMode = NewPointMode;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawnBase.GetNonDominantController
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class APavlovItemController*   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class APavlovItemController* APavlovPawnBase::GetNonDominantController()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawnBase.GetNonDominantController");
+
+	APavlovPawnBase_GetNonDominantController_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovPawnBase.GetDominantController
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class APavlovItemController*   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class APavlovItemController* APavlovPawnBase::GetDominantController()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawnBase.GetDominantController");
+
+	APavlovPawnBase_GetDominantController_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.GhostPawn.SpawnTags
+// (Final, Native, Public, BlueprintCallable)
+
+void AGhostPawn::SpawnTags()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostPawn.SpawnTags");
+
+	AGhostPawn_SpawnTags_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.GhostPawn.OnTraveledToSpectatorRoom
+// (Event, Protected, BlueprintEvent)
+
+void AGhostPawn::OnTraveledToSpectatorRoom()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostPawn.OnTraveledToSpectatorRoom");
+
+	AGhostPawn_OnTraveledToSpectatorRoom_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.GhostPawn.OnTeamIdChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// int                            TeamId                         (Parm, ZeroConstructor, IsPlainOldData)
+
+void AGhostPawn::OnTeamIdChanged(int TeamId)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostPawn.OnTeamIdChanged");
+
+	AGhostPawn_OnTeamIdChanged_Params params;
+	params.TeamId = TeamId;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.GhostPawn.OnGraceTimeEnded
+// (Event, Public, BlueprintEvent)
+
+void AGhostPawn::OnGraceTimeEnded()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostPawn.OnGraceTimeEnded");
+
+	AGhostPawn_OnGraceTimeEnded_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.GhostPawn.EndGraceTime
+// (Final, Native, Protected)
+
+void AGhostPawn::EndGraceTime()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostPawn.EndGraceTime");
+
+	AGhostPawn_EndGraceTime_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.GhostPawn.CreateVoiceComponent
+// (Final, Native, Protected)
+
+void AGhostPawn::CreateVoiceComponent()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostPawn.CreateVoiceComponent");
+
+	AGhostPawn_CreateVoiceComponent_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.GhostPawn.ClientTravelToSpectatorRoom
+// (Net, NetReliable, Native, Event, Protected, NetClient)
+
+void AGhostPawn::ClientTravelToSpectatorRoom()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostPawn.ClientTravelToSpectatorRoom");
+
+	AGhostPawn_ClientTravelToSpectatorRoom_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.GhostPawn.ClientSpawnKillCam
+// (Net, Native, Event, Public, NetClient)
+// Parameters:
+// struct FKillInfo               KillInfo                       (ConstParm, Parm, ReferenceParm)
+
+void AGhostPawn::ClientSpawnKillCam(const struct FKillInfo& KillInfo)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostPawn.ClientSpawnKillCam");
+
+	AGhostPawn_ClientSpawnKillCam_Params params;
+	params.KillInfo = KillInfo;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.GhostPawn.ClearTags
+// (Final, Native, Public, BlueprintCallable)
+
+void AGhostPawn::ClearTags()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostPawn.ClearTags");
+
+	AGhostPawn_ClearTags_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.GlobalPlayerEffects.SwitchState
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// EPlayerEffectState             NewState                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void AGlobalPlayerEffects::SwitchState(EPlayerEffectState NewState)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GlobalPlayerEffects.SwitchState");
+
+	AGlobalPlayerEffects_SwitchState_Params params;
+	params.NewState = NewState;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.GlobalPlayerEffects.InstigateFlash
+// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+// float                          Duration                       (Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 Location                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
+
+void AGlobalPlayerEffects::InstigateFlash(float Duration, const struct FVector& Location)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GlobalPlayerEffects.InstigateFlash");
+
+	AGlobalPlayerEffects_InstigateFlash_Params params;
+	params.Duration = Duration;
+	params.Location = Location;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function Pavlov.Grenade.ServerRemoveSafetyPin
 // (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 
@@ -1078,7 +3379,7 @@ void AGrenade::OnProjectileStop(const struct FHitResult& ImpactResult)
 // (Native, Protected, HasOutParms, HasDefaults)
 // Parameters:
 // struct FHitResult              ImpactResult                   (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-// struct FVector                 ImpactVelocity                 (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+// struct FVector                 ImpactVelocity                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
 
 void AGrenade::OnProjectileBounce(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity)
 {
@@ -1118,9 +3419,9 @@ void AGrenade::OnDetonation()
 // Function Pavlov.Grenade.MulticastThrow
 // (Net, NetReliable, Native, Event, NetMulticast, Public, HasDefaults)
 // Parameters:
-// struct FVector                 Location                       (Parm, IsPlainOldData)
-// struct FRotator                Rotation                       (Parm, IsPlainOldData)
-// struct FVector                 Velocity                       (Parm, IsPlainOldData)
+// struct FVector                 Location                       (Parm, ZeroConstructor, IsPlainOldData)
+// struct FRotator                Rotation                       (Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 Velocity                       (Parm, ZeroConstructor, IsPlainOldData)
 
 void AGrenade::MulticastThrow(const struct FVector& Location, const struct FRotator& Rotation, const struct FVector& Velocity)
 {
@@ -1212,17 +3513,16 @@ void AGrenade::Detonate()
 }
 
 
-// Function Pavlov.Knife.SetBloody
-// (Final, Native, Public, BlueprintCallable)
+// Function Pavlov.Gun.SupportsSuppressorAttachments
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-void AKnife::SetBloody(bool bEnabled)
+bool AGun::SupportsSuppressorAttachments()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Knife.SetBloody");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Gun.SupportsSuppressorAttachments");
 
-	AKnife_SetBloody_Params params;
-	params.bEnabled = bEnabled;
+	AGun_SupportsSuppressorAttachments_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -1230,44 +3530,21 @@ void AKnife::SetBloody(bool bEnabled)
 	UObject::ProcessEvent(fn, &params);
 
 	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
 }
 
 
-// Function Pavlov.Knife.OnRep_Bloody
-// (Final, Native, Private)
-
-void AKnife::OnRep_Bloody()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Knife.OnRep_Bloody");
-
-	AKnife_OnRep_Bloody_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.Knife.OnEndOverlap
-// (Final, Native, Private)
+// Function Pavlov.Gun.SupportsSightAttachments
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// class UPrimitiveComponent*     OverlappedComponent            (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// class AActor*                  OtherActor                     (Parm, ZeroConstructor, IsPlainOldData)
-// class UPrimitiveComponent*     OtherComp                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// int                            OtherBodyIndex                 (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-void AKnife::OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
+bool AGun::SupportsSightAttachments()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Knife.OnEndOverlap");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Gun.SupportsSightAttachments");
 
-	AKnife_OnEndOverlap_Params params;
-	params.OverlappedComponent = OverlappedComponent;
-	params.OtherActor = OtherActor;
-	params.OtherComp = OtherComp;
-	params.OtherBodyIndex = OtherBodyIndex;
+	AGun_SupportsSightAttachments_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -1275,50 +3552,43 @@ void AKnife::OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class 
 	UObject::ProcessEvent(fn, &params);
 
 	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
 }
 
 
-// Function Pavlov.Knife.OnBloodyChanged
-// (Event, Public, BlueprintEvent)
+// Function Pavlov.Gun.SupportsGripAttachments
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           bNewBloody                     (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-void AKnife::OnBloodyChanged(bool bNewBloody)
+bool AGun::SupportsGripAttachments()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Knife.OnBloodyChanged");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Gun.SupportsGripAttachments");
 
-	AKnife_OnBloodyChanged_Params params;
-	params.bNewBloody = bNewBloody;
+	AGun_SupportsGripAttachments_Params params;
 
 	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(fn, &params);
 
 	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
 }
 
 
-// Function Pavlov.Knife.OnBeginOverlap
-// (Final, Native, Private, HasOutParms)
+// Function Pavlov.Gun.SupportsAttachments
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// class UPrimitiveComponent*     OverlappedComponent            (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// class AActor*                  OtherActor                     (Parm, ZeroConstructor, IsPlainOldData)
-// class UPrimitiveComponent*     OtherComp                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// int                            OtherBodyIndex                 (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           bFromSweep                     (Parm, ZeroConstructor, IsPlainOldData)
-// struct FHitResult              SweepResult                    (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-void AKnife::OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
+bool AGun::SupportsAttachments()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Knife.OnBeginOverlap");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Gun.SupportsAttachments");
 
-	AKnife_OnBeginOverlap_Params params;
-	params.OverlappedComponent = OverlappedComponent;
-	params.OtherActor = OtherActor;
-	params.OtherComp = OtherComp;
-	params.OtherBodyIndex = OtherBodyIndex;
-	params.bFromSweep = bFromSweep;
-	params.SweepResult = SweepResult;
+	AGun_SupportsAttachments_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -1326,354 +3596,8 @@ void AKnife::OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, clas
 	UObject::ProcessEvent(fn, &params);
 
 	fn->FunctionFlags = flags;
-}
 
-
-// Function Pavlov.Knife.EnableTicking
-// (Final, Native, Public, BlueprintCallable)
-
-void AKnife::EnableTicking()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Knife.EnableTicking");
-
-	AKnife_EnableTicking_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.Destructible.OnShatter
-// (Event, Public, HasDefaults, BlueprintEvent)
-// Parameters:
-// struct FVector                 Normal                         (Parm, IsPlainOldData)
-// struct FVector                 Location                       (Parm, IsPlainOldData)
-
-void ADestructible::OnShatter(const struct FVector& Normal, const struct FVector& Location)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Destructible.OnShatter");
-
-	ADestructible_OnShatter_Params params;
-	params.Normal = Normal;
-	params.Location = Location;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.Destructible.MulticastOnShatter
-// (Net, NetReliable, Native, Event, NetMulticast, Public)
-// Parameters:
-// struct FVector_NetQuantizeNormal Normal                         (Parm)
-// struct FVector_NetQuantize     Location                       (Parm)
-
-void ADestructible::MulticastOnShatter(const struct FVector_NetQuantizeNormal& Normal, const struct FVector_NetQuantize& Location)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Destructible.MulticastOnShatter");
-
-	ADestructible_MulticastOnShatter_Params params;
-	params.Normal = Normal;
-	params.Location = Location;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.DoubleBarrelGunState.SetBarrel
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                           bOpen                          (Parm, ZeroConstructor, IsPlainOldData)
-
-void UDoubleBarrelGunState::SetBarrel(bool bOpen)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.DoubleBarrelGunState.SetBarrel");
-
-	UDoubleBarrelGunState_SetBarrel_Params params;
-	params.bOpen = bOpen;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovMovementComponent.ServerDeployParachute
-// (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
-
-void UPavlovMovementComponent::ServerDeployParachute()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovMovementComponent.ServerDeployParachute");
-
-	UPavlovMovementComponent_ServerDeployParachute_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovMovementComponent.OnRep_PrachuteState
-// (Final, Native, Private)
-
-void UPavlovMovementComponent::OnRep_PrachuteState()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovMovementComponent.OnRep_PrachuteState");
-
-	UPavlovMovementComponent_OnRep_PrachuteState_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovMovementComponent.MulticastOnParachuteDeployed
-// (Net, Native, Event, NetMulticast, Public)
-
-void UPavlovMovementComponent::MulticastOnParachuteDeployed()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovMovementComponent.MulticastOnParachuteDeployed");
-
-	UPavlovMovementComponent_MulticastOnParachuteDeployed_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.GestureComponent.RegisterGesture
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// struct FGestureSetup           Setup                          (Parm)
-
-void UGestureComponent::RegisterGesture(const struct FGestureSetup& Setup)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GestureComponent.RegisterGesture");
-
-	UGestureComponent_RegisterGesture_Params params;
-	params.Setup = Setup;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.GhostPawn.SpawnTags
-// (Final, Native, Public, BlueprintCallable)
-
-void AGhostPawn::SpawnTags()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostPawn.SpawnTags");
-
-	AGhostPawn_SpawnTags_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.GhostPawn.OnTraveledToSpectatorRoom
-// (Event, Protected, BlueprintEvent)
-
-void AGhostPawn::OnTraveledToSpectatorRoom()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostPawn.OnTraveledToSpectatorRoom");
-
-	AGhostPawn_OnTraveledToSpectatorRoom_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.GhostPawn.OnTeamIdChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// int                            TeamID                         (Parm, ZeroConstructor, IsPlainOldData)
-
-void AGhostPawn::OnTeamIdChanged(int TeamID)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostPawn.OnTeamIdChanged");
-
-	AGhostPawn_OnTeamIdChanged_Params params;
-	params.TeamID = TeamID;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.GhostPawn.OnGraceTimeEnded
-// (Event, Public, BlueprintEvent)
-
-void AGhostPawn::OnGraceTimeEnded()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostPawn.OnGraceTimeEnded");
-
-	AGhostPawn_OnGraceTimeEnded_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.GhostPawn.EndGraceTime
-// (Final, Native, Protected)
-
-void AGhostPawn::EndGraceTime()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostPawn.EndGraceTime");
-
-	AGhostPawn_EndGraceTime_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.GhostPawn.ClientTravelToSpectatorRoom
-// (Net, NetReliable, Native, Event, Protected, NetClient)
-
-void AGhostPawn::ClientTravelToSpectatorRoom()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostPawn.ClientTravelToSpectatorRoom");
-
-	AGhostPawn_ClientTravelToSpectatorRoom_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.GhostPawn.ClientSpawnKillCam
-// (Net, Native, Event, Public, NetClient)
-// Parameters:
-// struct FKillInfo               KillInfo                       (ConstParm, Parm, ReferenceParm)
-
-void AGhostPawn::ClientSpawnKillCam(const struct FKillInfo& KillInfo)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostPawn.ClientSpawnKillCam");
-
-	AGhostPawn_ClientSpawnKillCam_Params params;
-	params.KillInfo = KillInfo;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.GhostPawn.ClearTags
-// (Final, Native, Public, BlueprintCallable)
-
-void AGhostPawn::ClearTags()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostPawn.ClearTags");
-
-	AGhostPawn_ClearTags_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.GlobalPlayerEffects.SwitchState
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// EPlayerEffectState             NewState                       (Parm, ZeroConstructor, IsPlainOldData)
-
-void AGlobalPlayerEffects::SwitchState(EPlayerEffectState NewState)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GlobalPlayerEffects.SwitchState");
-
-	AGlobalPlayerEffects_SwitchState_Params params;
-	params.NewState = NewState;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.GlobalPlayerEffects.InstigateFlash
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                          Duration                       (Parm, ZeroConstructor, IsPlainOldData)
-
-void AGlobalPlayerEffects::InstigateFlash(float Duration)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GlobalPlayerEffects.InstigateFlash");
-
-	AGlobalPlayerEffects_InstigateFlash_Params params;
-	params.Duration = Duration;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
+	return params.ReturnValue;
 }
 
 
@@ -1772,8 +3696,8 @@ void AGun::OnSliderUngrabbed()
 // Function Pavlov.Gun.OnSliderInputReceived
 // (Final, Native, Private, HasDefaults)
 // Parameters:
-// struct FVector                 Input                          (Parm, IsPlainOldData)
-// struct FVector                 InputDelta                     (Parm, IsPlainOldData)
+// struct FVector                 Input                          (Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 InputDelta                     (Parm, ZeroConstructor, IsPlainOldData)
 
 void AGun::OnSliderInputReceived(const struct FVector& Input, const struct FVector& InputDelta)
 {
@@ -1818,6 +3742,24 @@ void AGun::OnRecoilDropCooldown()
 	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Gun.OnRecoilDropCooldown");
 
 	AGun_OnRecoilDropCooldown_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.Gun.OnAttachmentChanged
+// (Native, Event, Public, BlueprintEvent)
+
+void AGun::OnAttachmentChanged()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Gun.OnAttachmentChanged");
+
+	AGun_OnAttachmentChanged_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -1880,6 +3822,78 @@ bool AGun::IsBeingGripped()
 	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Gun.IsBeingGripped");
 
 	AGun_IsBeingGripped_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.Gun.IsAttachmentCompatible
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UClass*                  GunClass                       (Parm, ZeroConstructor, IsPlainOldData)
+// class UClass*                  AttachmentClass                (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool AGun::STATIC_IsAttachmentCompatible(class UClass* GunClass, class UClass* AttachmentClass)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Gun.IsAttachmentCompatible");
+
+	AGun_IsAttachmentCompatible_Params params;
+	params.GunClass = GunClass;
+	params.AttachmentClass = AttachmentClass;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.Gun.HasAttachment
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UClass*                  AttachmentClass                (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool AGun::HasAttachment(class UClass* AttachmentClass)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Gun.HasAttachment");
+
+	AGun_HasAttachment_Params params;
+	params.AttachmentClass = AttachmentClass;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.Gun.GetAttachmentList
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// TArray<class AAttachment*>     ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+TArray<class AAttachment*> AGun::GetAttachmentList()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Gun.GetAttachmentList");
+
+	AGun_GetAttachmentList_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -2121,6 +4135,1009 @@ void UHolsterComponent::AttachItemLocally()
 }
 
 
+// Function Pavlov.ImpairInterface.MarkAsImpaired
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EImpairedType                  Type                           (Parm, ZeroConstructor, IsPlainOldData)
+// class AActor*                  EventActor                     (Parm, ZeroConstructor, IsPlainOldData)
+// class AController*             Instigator                     (Parm, ZeroConstructor, IsPlainOldData)
+
+void UImpairInterface::MarkAsImpaired(EImpairedType Type, class AActor* EventActor, class AController* Instigator)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.ImpairInterface.MarkAsImpaired");
+
+	UImpairInterface_MarkAsImpaired_Params params;
+	params.Type = Type;
+	params.EventActor = EventActor;
+	params.Instigator = Instigator;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.ImpairInterface.GetImpairedEyesViewPoint
+// (Native, Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FVector                 OutLocation                    (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// struct FRotator                OutRotation                    (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+
+void UImpairInterface::GetImpairedEyesViewPoint(struct FVector* OutLocation, struct FRotator* OutRotation)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.ImpairInterface.GetImpairedEyesViewPoint");
+
+	UImpairInterface_GetImpairedEyesViewPoint_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (OutLocation != nullptr)
+		*OutLocation = params.OutLocation;
+	if (OutRotation != nullptr)
+		*OutRotation = params.OutRotation;
+}
+
+
+// Function Pavlov.InstancedSourceBusComponent.SilenceAudioComponent
+// (Final, Native, Protected)
+
+void UInstancedSourceBusComponent::SilenceAudioComponent()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.InstancedSourceBusComponent.SilenceAudioComponent");
+
+	UInstancedSourceBusComponent_SilenceAudioComponent_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.InstancedSourceBusComponent.Play
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class USoundBase*              Sound                          (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bForceNoOcclusion              (Parm, ZeroConstructor, IsPlainOldData)
+// class UAudioComponent*         ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+
+class UAudioComponent* UInstancedSourceBusComponent::Play(class USoundBase* Sound, bool bForceNoOcclusion)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.InstancedSourceBusComponent.Play");
+
+	UInstancedSourceBusComponent_Play_Params params;
+	params.Sound = Sound;
+	params.bForceNoOcclusion = bForceNoOcclusion;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.InstancedSourceBusComponent.OnSourceBusAudioFinished
+// (Final, Native, Protected)
+// Parameters:
+// class UAudioComponent*         Comp                           (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+
+void UInstancedSourceBusComponent::OnSourceBusAudioFinished(class UAudioComponent* Comp)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.InstancedSourceBusComponent.OnSourceBusAudioFinished");
+
+	UInstancedSourceBusComponent_OnSourceBusAudioFinished_Params params;
+	params.Comp = Comp;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.InstancedSourceBusComponent.OnAudioFinished
+// (Final, Native, Protected)
+// Parameters:
+// class UAudioComponent*         Comp                           (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+
+void UInstancedSourceBusComponent::OnAudioFinished(class UAudioComponent* Comp)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.InstancedSourceBusComponent.OnAudioFinished");
+
+	UInstancedSourceBusComponent_OnAudioFinished_Params params;
+	params.Comp = Comp;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.InstancedSourceBusComponent.GetAudioComponent
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UAudioComponent*         ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+
+class UAudioComponent* UInstancedSourceBusComponent::GetAudioComponent()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.InstancedSourceBusComponent.GetAudioComponent");
+
+	UInstancedSourceBusComponent_GetAudioComponent_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.Killfeed.Show
+// (Final, Native, Public, BlueprintCallable)
+
+void AKillfeed::Show()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Killfeed.Show");
+
+	AKillfeed_Show_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.Killfeed.OnDisplayModeUpdated
+// (Event, Public, BlueprintEvent)
+
+void AKillfeed::OnDisplayModeUpdated()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Killfeed.OnDisplayModeUpdated");
+
+	AKillfeed_OnDisplayModeUpdated_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.Killfeed.Hide
+// (Final, Native, Public, BlueprintCallable)
+
+void AKillfeed::Hide()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Killfeed.Hide");
+
+	AKillfeed_Hide_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.Knife.SetBloody
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void AKnife::SetBloody(bool bEnabled)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Knife.SetBloody");
+
+	AKnife_SetBloody_Params params;
+	params.bEnabled = bEnabled;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.Knife.OnRep_Bloody
+// (Final, Native, Private)
+
+void AKnife::OnRep_Bloody()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Knife.OnRep_Bloody");
+
+	AKnife_OnRep_Bloody_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.Knife.OnEndOverlap
+// (Final, Native, Private)
+// Parameters:
+// class UPrimitiveComponent*     OverlappedComponent            (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// class AActor*                  OtherActor                     (Parm, ZeroConstructor, IsPlainOldData)
+// class UPrimitiveComponent*     OtherComp                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// int                            OtherBodyIndex                 (Parm, ZeroConstructor, IsPlainOldData)
+
+void AKnife::OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Knife.OnEndOverlap");
+
+	AKnife_OnEndOverlap_Params params;
+	params.OverlappedComponent = OverlappedComponent;
+	params.OtherActor = OtherActor;
+	params.OtherComp = OtherComp;
+	params.OtherBodyIndex = OtherBodyIndex;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.Knife.OnBloodyChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                           bNewBloody                     (Parm, ZeroConstructor, IsPlainOldData)
+
+void AKnife::OnBloodyChanged(bool bNewBloody)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Knife.OnBloodyChanged");
+
+	AKnife_OnBloodyChanged_Params params;
+	params.bNewBloody = bNewBloody;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.Knife.OnBeginOverlap
+// (Final, Native, Private, HasOutParms)
+// Parameters:
+// class UPrimitiveComponent*     OverlappedComponent            (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// class AActor*                  OtherActor                     (Parm, ZeroConstructor, IsPlainOldData)
+// class UPrimitiveComponent*     OtherComp                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// int                            OtherBodyIndex                 (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bFromSweep                     (Parm, ZeroConstructor, IsPlainOldData)
+// struct FHitResult              SweepResult                    (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+
+void AKnife::OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Knife.OnBeginOverlap");
+
+	AKnife_OnBeginOverlap_Params params;
+	params.OverlappedComponent = OverlappedComponent;
+	params.OtherActor = OtherActor;
+	params.OtherComp = OtherComp;
+	params.OtherBodyIndex = OtherBodyIndex;
+	params.bFromSweep = bFromSweep;
+	params.SweepResult = SweepResult;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.Knife.MulticastOnStab
+// (Net, Native, Event, NetMulticast, Public)
+
+void AKnife::MulticastOnStab()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Knife.MulticastOnStab");
+
+	AKnife_MulticastOnStab_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.Knife.EnableTicking
+// (Final, Native, Public, BlueprintCallable)
+
+void AKnife::EnableTicking()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Knife.EnableTicking");
+
+	AKnife_EnableTicking_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.LootSpawner.SetLootIndexByName
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// struct FName                   Name                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
+// bool                           bNetUpdate                     (Parm, ZeroConstructor, IsPlainOldData)
+
+void ALootSpawner::SetLootIndexByName(const struct FName& Name, bool bNetUpdate)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.LootSpawner.SetLootIndexByName");
+
+	ALootSpawner_SetLootIndexByName_Params params;
+	params.Name = Name;
+	params.bNetUpdate = bNetUpdate;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.LootSpawner.OnRep_LootIndex
+// (Final, Native, Protected)
+
+void ALootSpawner::OnRep_LootIndex()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.LootSpawner.OnRep_LootIndex");
+
+	ALootSpawner_OnRep_LootIndex_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.LootSpawner.OnLootChanged
+// (Native, Event, Public, HasOutParms, BlueprintEvent)
+// Parameters:
+// unsigned char                  Index                          (Parm, ZeroConstructor, IsPlainOldData)
+// struct FName                   Name                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
+
+void ALootSpawner::OnLootChanged(unsigned char Index, const struct FName& Name)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.LootSpawner.OnLootChanged");
+
+	ALootSpawner_OnLootChanged_Params params;
+	params.Index = Index;
+	params.Name = Name;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.LootSpawner.NetworkUpdate
+// (Final, Native, Public, BlueprintCallable)
+
+void ALootSpawner::NetworkUpdate()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.LootSpawner.NetworkUpdate");
+
+	ALootSpawner_NetworkUpdate_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.LootSpawner.IsClear
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool ALootSpawner::IsClear()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.LootSpawner.IsClear");
+
+	ALootSpawner_IsClear_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.LootSpawner.GetLootNameByIndex
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// unsigned char                  Index                          (Parm, ZeroConstructor, IsPlainOldData)
+// struct FName                   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+struct FName ALootSpawner::GetLootNameByIndex(unsigned char Index)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.LootSpawner.GetLootNameByIndex");
+
+	ALootSpawner_GetLootNameByIndex_Params params;
+	params.Index = Index;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.LootSpawner.GetLootName
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FName                   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+struct FName ALootSpawner::GetLootName()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.LootSpawner.GetLootName");
+
+	ALootSpawner_GetLootName_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.LootSpawner.GetLootIndexByName
+// (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FName                   Name                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
+// unsigned char                  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+unsigned char ALootSpawner::GetLootIndexByName(const struct FName& Name)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.LootSpawner.GetLootIndexByName");
+
+	ALootSpawner_GetLootIndexByName_Params params;
+	params.Name = Name;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.LootSpawner.ClearLoot
+// (Final, Native, Public, BlueprintCallable)
+
+void ALootSpawner::ClearLoot()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.LootSpawner.ClearLoot");
+
+	ALootSpawner_ClearLoot_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.Matchmaking.Queue
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// struct FMatchSettings          Settings                       (ConstParm, Parm, OutParm, ReferenceParm)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UMatchmaking::Queue(const struct FMatchSettings& Settings)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Matchmaking.Queue");
+
+	UMatchmaking_Queue_Params params;
+	params.Settings = Settings;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.Matchmaking.PollTicket
+// (Final, Native, Protected)
+
+void UMatchmaking::PollTicket()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Matchmaking.PollTicket");
+
+	UMatchmaking_PollTicket_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.Matchmaking.IsInQueue
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UMatchmaking::IsInQueue()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Matchmaking.IsInQueue");
+
+	UMatchmaking_IsInQueue_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.Matchmaking.DelayedConnect
+// (Final, Native, Protected)
+
+void UMatchmaking::DelayedConnect()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Matchmaking.DelayedConnect");
+
+	UMatchmaking_DelayedConnect_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.Matchmaking.Cancel
+// (Final, Native, Public, BlueprintCallable)
+
+void UMatchmaking::Cancel()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Matchmaking.Cancel");
+
+	UMatchmaking_Cancel_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.MenuUniverse.SetEnabled
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void AMenuUniverse::SetEnabled(bool bEnabled)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.MenuUniverse.SetEnabled");
+
+	AMenuUniverse_SetEnabled_Params params;
+	params.bEnabled = bEnabled;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.MenuUniverse.OnViewTargetChangingFrom
+// (Native, Event, Public, BlueprintEvent)
+// Parameters:
+// class AActor*                  ViewTarget                     (Parm, ZeroConstructor, IsPlainOldData)
+
+void AMenuUniverse::OnViewTargetChangingFrom(class AActor* ViewTarget)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.MenuUniverse.OnViewTargetChangingFrom");
+
+	AMenuUniverse_OnViewTargetChangingFrom_Params params;
+	params.ViewTarget = ViewTarget;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.MenuUniverse.OnHeadsetScaleChanged
+// (Native, Protected)
+// Parameters:
+// float                          NewScale                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void AMenuUniverse::OnHeadsetScaleChanged(float NewScale)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.MenuUniverse.OnHeadsetScaleChanged");
+
+	AMenuUniverse_OnHeadsetScaleChanged_Params params;
+	params.NewScale = NewScale;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.MenuUniverse.OnEnableChanged
+// (Native, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void AMenuUniverse::OnEnableChanged(bool bEnabled)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.MenuUniverse.OnEnableChanged");
+
+	AMenuUniverse_OnEnableChanged_Params params;
+	params.bEnabled = bEnabled;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.MenuUniverse.IsEnabled
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool AMenuUniverse::IsEnabled()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.MenuUniverse.IsEnabled");
+
+	AMenuUniverse_IsEnabled_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.MenuUniverse.CreateView
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UClass*                  ViewClass                      (Parm, ZeroConstructor, IsPlainOldData)
+// class UClass*                  WidgetClass                    (Parm, ZeroConstructor, IsPlainOldData)
+// class AMenuUniverseView*       ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class AMenuUniverseView* AMenuUniverse::CreateView(class UClass* ViewClass, class UClass* WidgetClass)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.MenuUniverse.CreateView");
+
+	AMenuUniverse_CreateView_Params params;
+	params.ViewClass = ViewClass;
+	params.WidgetClass = WidgetClass;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.MenuUniverse.AdjustFacingPivot
+// (Final, Native, Public, BlueprintCallable)
+
+void AMenuUniverse::AdjustFacingPivot()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.MenuUniverse.AdjustFacingPivot");
+
+	AMenuUniverse_AdjustFacingPivot_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.MenuUniverseController.OnTriggerReleased
+// (Final, Native, Private)
+
+void UMenuUniverseController::OnTriggerReleased()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.MenuUniverseController.OnTriggerReleased");
+
+	UMenuUniverseController_OnTriggerReleased_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.MenuUniverseController.OnTriggerPressed
+// (Final, Native, Private)
+
+void UMenuUniverseController::OnTriggerPressed()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.MenuUniverseController.OnTriggerPressed");
+
+	UMenuUniverseController_OnTriggerPressed_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.MenuUniverseController.OnTouchpadY
+// (Final, Native, Private)
+// Parameters:
+// float                          Value                          (Parm, ZeroConstructor, IsPlainOldData)
+
+void UMenuUniverseController::OnTouchpadY(float Value)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.MenuUniverseController.OnTouchpadY");
+
+	UMenuUniverseController_OnTouchpadY_Params params;
+	params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.MenuUniverseController.OnTouchpadX
+// (Final, Native, Private)
+// Parameters:
+// float                          Value                          (Parm, ZeroConstructor, IsPlainOldData)
+
+void UMenuUniverseController::OnTouchpadX(float Value)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.MenuUniverseController.OnTouchpadX");
+
+	UMenuUniverseController_OnTouchpadX_Params params;
+	params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.MenuUniverseController.OnMenuReleased
+// (Final, Native, Private)
+
+void UMenuUniverseController::OnMenuReleased()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.MenuUniverseController.OnMenuReleased");
+
+	UMenuUniverseController_OnMenuReleased_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.MenuUniverseController.OnMenuPressed
+// (Final, Native, Private)
+
+void UMenuUniverseController::OnMenuPressed()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.MenuUniverseController.OnMenuPressed");
+
+	UMenuUniverseController_OnMenuPressed_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.MenuUniverseView.GetMenuUniverse
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class AMenuUniverse*           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class AMenuUniverse* AMenuUniverseView::GetMenuUniverse()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.MenuUniverseView.GetMenuUniverse");
+
+	AMenuUniverseView_GetMenuUniverse_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.MenuUniverseView.CreateWidgetComponent
+// (Final, Native, Public, BlueprintCallable)
+
+void AMenuUniverseView::CreateWidgetComponent()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.MenuUniverseView.CreateWidgetComponent");
+
+	AMenuUniverseView_CreateWidgetComponent_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.Modal.Commit
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// struct FModalCommitParams      Params                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
+
+void UModal::Commit(const struct FModalCommitParams& Params)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Modal.Commit");
+
+	UModal_Commit_Params params;
+	params.Params = Params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.OculusInputBinding.ApplyEmulated
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                 WorldContext                   (Parm, ZeroConstructor, IsPlainOldData)
+
+void UOculusInputBinding::STATIC_ApplyEmulated(class UObject* WorldContext)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.OculusInputBinding.ApplyEmulated");
+
+	UOculusInputBinding_ApplyEmulated_Params params;
+	params.WorldContext = WorldContext;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function Pavlov.PavlovAIController.SetTargetPawn
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -2217,6 +5234,1564 @@ class APavlovPawn* APavlovAIController::GetTargetPawn()
 }
 
 
+// Function Pavlov.PavlovAvatarAnimInstance.GetFingerBlend
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// bool                           bRight                         (Parm, ZeroConstructor, IsPlainOldData)
+// EFinger                        Finger                         (Parm, ZeroConstructor, IsPlainOldData)
+// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+float UPavlovAvatarAnimInstance::GetFingerBlend(bool bRight, EFinger Finger)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovAvatarAnimInstance.GetFingerBlend");
+
+	UPavlovAvatarAnimInstance_GetFingerBlend_Params params;
+	params.bRight = bRight;
+	params.Finger = Finger;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameInstance.UpdateServerList
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FString                 Map                            (Parm, ZeroConstructor)
+// struct FString                 GameMode                       (Parm, ZeroConstructor)
+// bool                           bFriendsOnly                   (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bPrivateOnly                   (Parm, ZeroConstructor, IsPlainOldData)
+
+void UPavlovGameInstance::UpdateServerList(const struct FString& Map, const struct FString& GameMode, bool bFriendsOnly, bool bPrivateOnly)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.UpdateServerList");
+
+	UPavlovGameInstance_UpdateServerList_Params params;
+	params.Map = Map;
+	params.GameMode = GameMode;
+	params.bFriendsOnly = bFriendsOnly;
+	params.bPrivateOnly = bPrivateOnly;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.TickServerConnect
+// (Final, Native, Protected)
+
+void UPavlovGameInstance::TickServerConnect()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.TickServerConnect");
+
+	UPavlovGameInstance_TickServerConnect_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.TestServerConnect
+// (Final, Exec, Native, Protected)
+// Parameters:
+// struct FString                 ConnectURL                     (Parm, ZeroConstructor)
+// struct FString                 MapId                          (Parm, ZeroConstructor)
+// float                          Delay                          (Parm, ZeroConstructor, IsPlainOldData)
+
+void UPavlovGameInstance::TestServerConnect(const struct FString& ConnectURL, const struct FString& MapId, float Delay)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.TestServerConnect");
+
+	UPavlovGameInstance_TestServerConnect_Params params;
+	params.ConnectURL = ConnectURL;
+	params.MapId = MapId;
+	params.Delay = Delay;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.SetMuted
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class APavlovPlayerState*      PlayerState                    (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void UPavlovGameInstance::SetMuted(class APavlovPlayerState* PlayerState, bool bEnabled)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.SetMuted");
+
+	UPavlovGameInstance_SetMuted_Params params;
+	params.PlayerState = PlayerState;
+	params.bEnabled = bEnabled;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.SetMatchmakingState
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// EMatchmakingState              NewState                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void UPavlovGameInstance::SetMatchmakingState(EMatchmakingState NewState)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.SetMatchmakingState");
+
+	UPavlovGameInstance_SetMatchmakingState_Params params;
+	params.NewState = NewState;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.SetItemRotation
+// (Final, Exec, Native, Public)
+// Parameters:
+// float                          Roll                           (Parm, ZeroConstructor, IsPlainOldData)
+// float                          Pitch                          (Parm, ZeroConstructor, IsPlainOldData)
+// float                          Yaw                            (Parm, ZeroConstructor, IsPlainOldData)
+
+void UPavlovGameInstance::SetItemRotation(float Roll, float Pitch, float Yaw)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.SetItemRotation");
+
+	UPavlovGameInstance_SetItemRotation_Params params;
+	params.Roll = Roll;
+	params.Pitch = Pitch;
+	params.Yaw = Yaw;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.ServerConnect
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// struct FServerConnectParams    Params                         (ConstParm, Parm, OutParm, ReferenceParm)
+
+void UPavlovGameInstance::ServerConnect(const struct FServerConnectParams& Params)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.ServerConnect");
+
+	UPavlovGameInstance_ServerConnect_Params params;
+	params.Params = Params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.RetrieveMasterServerSessionId
+// (Final, Native, Public)
+
+void UPavlovGameInstance::RetrieveMasterServerSessionId()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.RetrieveMasterServerSessionId");
+
+	UPavlovGameInstance_RetrieveMasterServerSessionId_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.ResumeShaderPreCompilation
+// (Final, Native, Public, BlueprintCallable)
+
+void UPavlovGameInstance::ResumeShaderPreCompilation()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.ResumeShaderPreCompilation");
+
+	UPavlovGameInstance_ResumeShaderPreCompilation_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.ResetTutorial
+// (Final, Exec, Native, Public)
+
+void UPavlovGameInstance::ResetTutorial()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.ResetTutorial");
+
+	UPavlovGameInstance_ResetTutorial_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.ResetPhononScene
+// (Final, Exec, Native, Public)
+
+void UPavlovGameInstance::ResetPhononScene()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.ResetPhononScene");
+
+	UPavlovGameInstance_ResetPhononScene_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.ReportServerState
+// (Final, Native, Protected)
+
+void UPavlovGameInstance::ReportServerState()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.ReportServerState");
+
+	UPavlovGameInstance_ReportServerState_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.QuickMatch
+// (Final, Native, Public, BlueprintCallable)
+
+void UPavlovGameInstance::QuickMatch()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.QuickMatch");
+
+	UPavlovGameInstance_QuickMatch_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.QueryForGameSession
+// (Final, Native, Public)
+
+void UPavlovGameInstance::QueryForGameSession()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.QueryForGameSession");
+
+	UPavlovGameInstance_QueryForGameSession_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.OpenMap_Implementation
+// (Final, Native, Public)
+
+void UPavlovGameInstance::OpenMap_Implementation()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OpenMap_Implementation");
+
+	UPavlovGameInstance_OpenMap_Implementation_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.OpenMap
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FString                 Map                            (Parm, ZeroConstructor)
+// struct FString                 Options                        (Parm, ZeroConstructor)
+
+void UPavlovGameInstance::OpenMap(const struct FString& Map, const struct FString& Options)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OpenMap");
+
+	UPavlovGameInstance_OpenMap_Params params;
+	params.Map = Map;
+	params.Options = Options;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.OnWorkshopSpecificQuery
+// (Final, Native, Protected)
+
+void UPavlovGameInstance::OnWorkshopSpecificQuery()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnWorkshopSpecificQuery");
+
+	UPavlovGameInstance_OnWorkshopSpecificQuery_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.OnSteamServersConnected
+// (Final, Native, Public)
+
+void UPavlovGameInstance::OnSteamServersConnected()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnSteamServersConnected");
+
+	UPavlovGameInstance_OnSteamServersConnected_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.OnSteamLobbyListUpdated
+// (Final, Native, Public)
+
+void UPavlovGameInstance::OnSteamLobbyListUpdated()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnSteamLobbyListUpdated");
+
+	UPavlovGameInstance_OnSteamLobbyListUpdated_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.OnServerMapDownloaded
+// (Final, Native, Protected)
+// Parameters:
+// bool                           bSucceed                       (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 ID                             (Parm, ZeroConstructor)
+
+void UPavlovGameInstance::OnServerMapDownloaded(bool bSucceed, const struct FString& ID)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnServerMapDownloaded");
+
+	UPavlovGameInstance_OnServerMapDownloaded_Params params;
+	params.bSucceed = bSucceed;
+	params.ID = ID;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.OnServerConnectMapDownloaded
+// (Final, Native, Protected)
+// Parameters:
+// bool                           bSucceed                       (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 ID                             (Parm, ZeroConstructor)
+
+void UPavlovGameInstance::OnServerConnectMapDownloaded(bool bSucceed, const struct FString& ID)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnServerConnectMapDownloaded");
+
+	UPavlovGameInstance_OnServerConnectMapDownloaded_Params params;
+	params.bSucceed = bSucceed;
+	params.ID = ID;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.OnNetworkFailure
+// (Final, Native, Public)
+// Parameters:
+// class UWorld*                  World                          (Parm, ZeroConstructor, IsPlainOldData)
+// class UNetDriver*              NetDriver                      (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ENetworkFailure>   FailureType                    (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 ErrorString                    (Parm, ZeroConstructor)
+
+void UPavlovGameInstance::OnNetworkFailure(class UWorld* World, class UNetDriver* NetDriver, TEnumAsByte<ENetworkFailure> FailureType, const struct FString& ErrorString)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnNetworkFailure");
+
+	UPavlovGameInstance_OnNetworkFailure_Params params;
+	params.World = World;
+	params.NetDriver = NetDriver;
+	params.FailureType = FailureType;
+	params.ErrorString = ErrorString;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.OnLeftLobby
+// (Final, Native, Public)
+// Parameters:
+// ESteamLobbyChatMemberStateChange StateChange                    (Parm, ZeroConstructor, IsPlainOldData)
+
+void UPavlovGameInstance::OnLeftLobby(ESteamLobbyChatMemberStateChange StateChange)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnLeftLobby");
+
+	UPavlovGameInstance_OnLeftLobby_Params params;
+	params.StateChange = StateChange;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.OnEnterLobby
+// (Final, Native, Public)
+// Parameters:
+// bool                           bFailed                        (Parm, ZeroConstructor, IsPlainOldData)
+
+void UPavlovGameInstance::OnEnterLobby(bool bFailed)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnEnterLobby");
+
+	UPavlovGameInstance_OnEnterLobby_Params params;
+	params.bFailed = bFailed;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.OnClientMapDownloaded
+// (Final, Native, Public)
+// Parameters:
+// bool                           bSucceed                       (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 ID                             (Parm, ZeroConstructor)
+
+void UPavlovGameInstance::OnClientMapDownloaded(bool bSucceed, const struct FString& ID)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnClientMapDownloaded");
+
+	UPavlovGameInstance_OnClientMapDownloaded_Params params;
+	params.bSucceed = bSucceed;
+	params.ID = ID;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.OnAuthSessionTicketResponse
+// (Final, Native, Public)
+// Parameters:
+// bool                           bSucceed                       (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 HexAuthTicket                  (Parm, ZeroConstructor)
+
+void UPavlovGameInstance::OnAuthSessionTicketResponse(bool bSucceed, const struct FString& HexAuthTicket)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnAuthSessionTicketResponse");
+
+	UPavlovGameInstance_OnAuthSessionTicketResponse_Params params;
+	params.bSucceed = bSucceed;
+	params.HexAuthTicket = HexAuthTicket;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.JoinServer
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// struct FPavlovServerInfo       ServerInfo                     (ConstParm, Parm, OutParm, ReferenceParm)
+
+void UPavlovGameInstance::JoinServer(const struct FPavlovServerInfo& ServerInfo)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.JoinServer");
+
+	UPavlovGameInstance_JoinServer_Params params;
+	params.ServerInfo = ServerInfo;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.JoinPinProtectedServer
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// struct FPavlovServerInfo       ServerInfo                     (ConstParm, Parm, OutParm, ReferenceParm)
+// struct FString                 Pin                            (Parm, ZeroConstructor)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UPavlovGameInstance::JoinPinProtectedServer(const struct FPavlovServerInfo& ServerInfo, const struct FString& Pin)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.JoinPinProtectedServer");
+
+	UPavlovGameInstance_JoinPinProtectedServer_Params params;
+	params.ServerInfo = ServerInfo;
+	params.Pin = Pin;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameInstance.IsMuted
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class APavlovPlayerState*      PlayerState                    (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UPavlovGameInstance::IsMuted(class APavlovPlayerState* PlayerState)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.IsMuted");
+
+	UPavlovGameInstance_IsMuted_Params params;
+	params.PlayerState = PlayerState;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameInstance.InitClientProxies
+// (Final, Native, Public)
+
+void UPavlovGameInstance::InitClientProxies()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.InitClientProxies");
+
+	UPavlovGameInstance_InitClientProxies_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.HasGameSession
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UPavlovGameInstance::HasGameSession()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.HasGameSession");
+
+	UPavlovGameInstance_HasGameSession_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameInstance.GetUIManager
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UUIManager*              ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UUIManager* UPavlovGameInstance::GetUIManager()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.GetUIManager");
+
+	UPavlovGameInstance_GetUIManager_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameInstance.GetTutorial
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UTutorial*               ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UTutorial* UPavlovGameInstance::GetTutorial()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.GetTutorial");
+
+	UPavlovGameInstance_GetTutorial_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameInstance.GetServerBrowser
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UServerBrowser*          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UServerBrowser* UPavlovGameInstance::GetServerBrowser()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.GetServerBrowser");
+
+	UPavlovGameInstance_GetServerBrowser_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameInstance.GetOnlineRegion
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// EOnlineRegion                  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+EOnlineRegion UPavlovGameInstance::GetOnlineRegion()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.GetOnlineRegion");
+
+	UPavlovGameInstance_GetOnlineRegion_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameInstance.GetOculusScale
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+float UPavlovGameInstance::GetOculusScale()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.GetOculusScale");
+
+	UPavlovGameInstance_GetOculusScale_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameInstance.GetMapListAdvanced
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int                            Compatibility                  (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bFavoriteOnly                  (Parm, ZeroConstructor, IsPlainOldData)
+
+void UPavlovGameInstance::GetMapListAdvanced(int Compatibility, bool bFavoriteOnly)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.GetMapListAdvanced");
+
+	UPavlovGameInstance_GetMapListAdvanced_Params params;
+	params.Compatibility = Compatibility;
+	params.bFavoriteOnly = bFavoriteOnly;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.GetMapList
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int                            Compatibility                  (Parm, ZeroConstructor, IsPlainOldData)
+// TArray<class UPavlov_Map*>     ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+TArray<class UPavlov_Map*> UPavlovGameInstance::GetMapList(int Compatibility)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.GetMapList");
+
+	UPavlovGameInstance_GetMapList_Params params;
+	params.Compatibility = Compatibility;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameInstance.GetMap
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FString                 UniqueId                       (Parm, ZeroConstructor)
+// class UPavlov_Map*             ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UPavlov_Map* UPavlovGameInstance::GetMap(const struct FString& UniqueId)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.GetMap");
+
+	UPavlovGameInstance_GetMap_Params params;
+	params.UniqueId = UniqueId;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameInstance.DumpLobbyData
+// (Final, Exec, Native, Public)
+
+void UPavlovGameInstance::DumpLobbyData()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.DumpLobbyData");
+
+	UPavlovGameInstance_DumpLobbyData_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.DisplayNetworkFailureMessage
+// (Final, Native, Public)
+
+void UPavlovGameInstance::DisplayNetworkFailureMessage()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.DisplayNetworkFailureMessage");
+
+	UPavlovGameInstance_DisplayNetworkFailureMessage_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.DisplayMessageImpl
+// (Final, Native, Public)
+
+void UPavlovGameInstance::DisplayMessageImpl()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.DisplayMessageImpl");
+
+	UPavlovGameInstance_DisplayMessageImpl_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.DisplayMessage
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FString                 Message                        (Parm, ZeroConstructor)
+// bool                           bDeferredDelay                 (Parm, ZeroConstructor, IsPlainOldData)
+
+void UPavlovGameInstance::DisplayMessage(const struct FString& Message, bool bDeferredDelay)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.DisplayMessage");
+
+	UPavlovGameInstance_DisplayMessage_Params params;
+	params.Message = Message;
+	params.bDeferredDelay = bDeferredDelay;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.CreateLobby
+// (Final, Native, Public, BlueprintCallable)
+
+void UPavlovGameInstance::CreateLobby()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.CreateLobby");
+
+	UPavlovGameInstance_CreateLobby_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.CreateGameSession
+// (Final, Native, Public, BlueprintCallable)
+
+void UPavlovGameInstance::CreateGameSession()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.CreateGameSession");
+
+	UPavlovGameInstance_CreateGameSession_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.CreateCoopLobby
+// (Final, Native, Public, BlueprintCallable)
+
+void UPavlovGameInstance::CreateCoopLobby()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.CreateCoopLobby");
+
+	UPavlovGameInstance_CreateCoopLobby_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.CheckPlacementStatus
+// (Final, Native, Public)
+
+void UPavlovGameInstance::CheckPlacementStatus()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.CheckPlacementStatus");
+
+	UPavlovGameInstance_CheckPlacementStatus_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.CancelServerFind
+// (Final, Native, Public, BlueprintCallable)
+
+void UPavlovGameInstance::CancelServerFind()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.CancelServerFind");
+
+	UPavlovGameInstance_CancelServerFind_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.CancelQuickmatch
+// (Final, Native, Public, BlueprintCallable)
+
+void UPavlovGameInstance::CancelQuickmatch()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.CancelQuickmatch");
+
+	UPavlovGameInstance_CancelQuickmatch_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameInstance.ApplyOculusBindings
+// (Final, Exec, Native, Public)
+
+void UPavlovGameInstance::ApplyOculusBindings()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.ApplyOculusBindings");
+
+	UPavlovGameInstance_ApplyOculusBindings_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameState.UnpauseMatchTime
+// (Final, Native, Public, BlueprintCallable)
+
+void APavlovGameState::UnpauseMatchTime()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.UnpauseMatchTime");
+
+	APavlovGameState_UnpauseMatchTime_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameState.ResetMatchTime
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                           bPause                         (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameState::ResetMatchTime(bool bPause)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.ResetMatchTime");
+
+	APavlovGameState_ResetMatchTime_Params params;
+	params.bPause = bPause;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameState.PauseMatchTime
+// (Final, Native, Public, BlueprintCallable)
+
+void APavlovGameState::PauseMatchTime()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.PauseMatchTime");
+
+	APavlovGameState_PauseMatchTime_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameState.MulticastOnKillfeedEntry
+// (Net, NetReliable, Native, Event, NetMulticast, Public, BlueprintCallable)
+// Parameters:
+// struct FKillfeedEntry          NewEntry                       (ConstParm, Parm, ReferenceParm)
+
+void APavlovGameState::MulticastOnKillfeedEntry(const struct FKillfeedEntry& NewEntry)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.MulticastOnKillfeedEntry");
+
+	APavlovGameState_MulticastOnKillfeedEntry_Params params;
+	params.NewEntry = NewEntry;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameState.GetTeamScore
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int                            TeamId                         (Parm, ZeroConstructor, IsPlainOldData)
+// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+int APavlovGameState::GetTeamScore(int TeamId)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetTeamScore");
+
+	APavlovGameState_GetTeamScore_Params params;
+	params.TeamId = TeamId;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameState.GetTeamArray
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// TArray<class APavlovPlayerState*> TeamArray                      (Parm, OutParm, ZeroConstructor)
+// int                            TeamId                         (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameState::GetTeamArray(int TeamId, TArray<class APavlovPlayerState*>* TeamArray)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetTeamArray");
+
+	APavlovGameState_GetTeamArray_Params params;
+	params.TeamId = TeamId;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (TeamArray != nullptr)
+		*TeamArray = params.TeamArray;
+}
+
+
+// Function Pavlov.PavlovGameState.GetSortedPlayerArray
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// TArray<class APavlovPlayerState*> SortedPlayerArray              (Parm, OutParm, ZeroConstructor)
+// int                            FilterByTeamId                 (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameState::GetSortedPlayerArray(int FilterByTeamId, TArray<class APavlovPlayerState*>* SortedPlayerArray)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetSortedPlayerArray");
+
+	APavlovGameState_GetSortedPlayerArray_Params params;
+	params.FilterByTeamId = FilterByTeamId;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (SortedPlayerArray != nullptr)
+		*SortedPlayerArray = params.SortedPlayerArray;
+}
+
+
+// Function Pavlov.PavlovGameState.GetPlayerStringId
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class APavlovPlayerState*      PlayerState                    (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+struct FString APavlovGameState::GetPlayerStringId(class APavlovPlayerState* PlayerState)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetPlayerStringId");
+
+	APavlovGameState_GetPlayerStringId_Params params;
+	params.PlayerState = PlayerState;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameState.GetPlayerStateByStringId
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FString                 StringId                       (Parm, ZeroConstructor)
+// class APavlovPlayerState*      ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class APavlovPlayerState* APavlovGameState::GetPlayerStateByStringId(const struct FString& StringId)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetPlayerStateByStringId");
+
+	APavlovGameState_GetPlayerStateByStringId_Params params;
+	params.StringId = StringId;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameState.GetPlayerByScore
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int                            Index                          (Parm, ZeroConstructor, IsPlainOldData)
+// int                            TeamId                         (Parm, ZeroConstructor, IsPlainOldData)
+// class APavlovPlayerState*      ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class APavlovPlayerState* APavlovGameState::GetPlayerByScore(int Index, int TeamId)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetPlayerByScore");
+
+	APavlovGameState_GetPlayerByScore_Params params;
+	params.Index = Index;
+	params.TeamId = TeamId;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameState.GetMatchResult
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// EMatchResult                   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+EMatchResult APavlovGameState::GetMatchResult()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetMatchResult");
+
+	APavlovGameState_GetMatchResult_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameState.GetEquipmentNameByIndex
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int                            Index                          (Parm, ZeroConstructor, IsPlainOldData)
+// struct FName                   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+struct FName APavlovGameState::GetEquipmentNameByIndex(int Index)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetEquipmentNameByIndex");
+
+	APavlovGameState_GetEquipmentNameByIndex_Params params;
+	params.Index = Index;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameState.GetEquipmentNameByClass
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UClass*                  ItemClass                      (Parm, ZeroConstructor, IsPlainOldData)
+// struct FName                   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+struct FName APavlovGameState::GetEquipmentNameByClass(class UClass* ItemClass)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetEquipmentNameByClass");
+
+	APavlovGameState_GetEquipmentNameByClass_Params params;
+	params.ItemClass = ItemClass;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameState.GetEquipmentKillBonus
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FName                   EquipmentName                  (Parm, ZeroConstructor, IsPlainOldData)
+// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+int APavlovGameState::GetEquipmentKillBonus(const struct FName& EquipmentName)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetEquipmentKillBonus");
+
+	APavlovGameState_GetEquipmentKillBonus_Params params;
+	params.EquipmentName = EquipmentName;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameState.GetEquipmentIndexByName
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FName                   EquipmentName                  (Parm, ZeroConstructor, IsPlainOldData)
+// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+int APavlovGameState::GetEquipmentIndexByName(const struct FName& EquipmentName)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetEquipmentIndexByName");
+
+	APavlovGameState_GetEquipmentIndexByName_Params params;
+	params.EquipmentName = EquipmentName;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameState.GetEquipmentDataByClass
+// (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UClass*                  ItemClass                      (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bSuccess                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// struct FEquipmentData          ReturnValue                    (Parm, OutParm, ReturnParm)
+
+struct FEquipmentData APavlovGameState::GetEquipmentDataByClass(class UClass* ItemClass, bool* bSuccess)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetEquipmentDataByClass");
+
+	APavlovGameState_GetEquipmentDataByClass_Params params;
+	params.ItemClass = ItemClass;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (bSuccess != nullptr)
+		*bSuccess = params.bSuccess;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameState.GetEquipmentData
+// (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FName                   EquipmentName                  (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bSuccess                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// struct FEquipmentData          ReturnValue                    (Parm, OutParm, ReturnParm)
+
+struct FEquipmentData APavlovGameState::GetEquipmentData(const struct FName& EquipmentName, bool* bSuccess)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetEquipmentData");
+
+	APavlovGameState_GetEquipmentData_Params params;
+	params.EquipmentName = EquipmentName;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (bSuccess != nullptr)
+		*bSuccess = params.bSuccess;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameState.GetEquipmentCost
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FName                   EquipmentName                  (Parm, ZeroConstructor, IsPlainOldData)
+// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+int APavlovGameState::GetEquipmentCost(const struct FName& EquipmentName)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetEquipmentCost");
+
+	APavlovGameState_GetEquipmentCost_Params params;
+	params.EquipmentName = EquipmentName;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameState.GetEquipmentClassByName
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FName                   EquipmentName                  (Parm, ZeroConstructor, IsPlainOldData)
+// class UClass*                  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UClass* APavlovGameState::GetEquipmentClassByName(const struct FName& EquipmentName)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetEquipmentClassByName");
+
+	APavlovGameState_GetEquipmentClassByName_Params params;
+	params.EquipmentName = EquipmentName;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameState.DisplayMatchStateOverlay
+// (Net, NetReliable, Native, Event, NetMulticast, Public, BlueprintCallable)
+// Parameters:
+// class UClass*                  OverlayClass                   (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovGameState::DisplayMatchStateOverlay(class UClass* OverlayClass)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.DisplayMatchStateOverlay");
+
+	APavlovGameState_DisplayMatchStateOverlay_Params params;
+	params.OverlayClass = OverlayClass;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameState.ArePlayersEnemies
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class APlayerState*            A                              (Parm, ZeroConstructor, IsPlainOldData)
+// class APlayerState*            B                              (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool APavlovGameState::ArePlayersEnemies(class APlayerState* A, class APlayerState* B)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.ArePlayersEnemies");
+
+	APavlovGameState_ArePlayersEnemies_Params params;
+	params.A = A;
+	params.B = B;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Pavlov.PavlovGameUserSettings.UseOOBLocomotion
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -2227,6 +6802,28 @@ bool UPavlovGameUserSettings::UseOOBLocomotion()
 	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.UseOOBLocomotion");
 
 	UPavlovGameUserSettings_UseOOBLocomotion_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameUserSettings.UseGrabForce
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UPavlovGameUserSettings::UseGrabForce()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.UseGrabForce");
+
+	UPavlovGameUserSettings_UseGrabForce_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -2261,6 +6858,27 @@ bool UPavlovGameUserSettings::ShouldSwapControllers()
 }
 
 
+// Function Pavlov.PavlovGameUserSettings.SetVoiceDevice
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FString                 DeviceURL                      (Parm, ZeroConstructor)
+
+void UPavlovGameUserSettings::SetVoiceDevice(const struct FString& DeviceURL)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetVoiceDevice");
+
+	UPavlovGameUserSettings_SetVoiceDevice_Params params;
+	params.DeviceURL = DeviceURL;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function Pavlov.PavlovGameUserSettings.SetVirtualStock
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -2273,6 +6891,48 @@ void UPavlovGameUserSettings::SetVirtualStock(class UObject* WorldContextObject,
 
 	UPavlovGameUserSettings_SetVirtualStock_Params params;
 	params.WorldContextObject = WorldContextObject;
+	params.bEnabled = bEnabled;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameUserSettings.SetUseGrabForce
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void UPavlovGameUserSettings::SetUseGrabForce(bool bEnabled)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetUseGrabForce");
+
+	UPavlovGameUserSettings_SetUseGrabForce_Params params;
+	params.bEnabled = bEnabled;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameUserSettings.SetUseAudioThread
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void UPavlovGameUserSettings::SetUseAudioThread(bool bEnabled)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetUseAudioThread");
+
+	UPavlovGameUserSettings_SetUseAudioThread_Params params;
 	params.bEnabled = bEnabled;
 
 	auto flags = fn->FunctionFlags;
@@ -2347,17 +7007,17 @@ void UPavlovGameUserSettings::SetSwapControllers(bool bEnabled)
 }
 
 
-// Function Pavlov.PavlovGameUserSettings.SetSnapTurnDisabled
+// Function Pavlov.PavlovGameUserSettings.SetStartUpMap
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 NewStartUpMap                  (Parm, ZeroConstructor)
 
-void UPavlovGameUserSettings::SetSnapTurnDisabled(bool bEnabled)
+void UPavlovGameUserSettings::SetStartUpMap(const struct FString& NewStartUpMap)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetSnapTurnDisabled");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetStartUpMap");
 
-	UPavlovGameUserSettings_SetSnapTurnDisabled_Params params;
-	params.bEnabled = bEnabled;
+	UPavlovGameUserSettings_SetStartUpMap_Params params;
+	params.NewStartUpMap = NewStartUpMap;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -2431,6 +7091,27 @@ void UPavlovGameUserSettings::SetSmoothTurn(bool bEnabled)
 }
 
 
+// Function Pavlov.PavlovGameUserSettings.SetSmoothLocomotionMode
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// EVRSmoothLocomotionMode        NewMode                        (Parm, ZeroConstructor, IsPlainOldData)
+
+void UPavlovGameUserSettings::SetSmoothLocomotionMode(EVRSmoothLocomotionMode NewMode)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetSmoothLocomotionMode");
+
+	UPavlovGameUserSettings_SetSmoothLocomotionMode_Params params;
+	params.NewMode = NewMode;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function Pavlov.PavlovGameUserSettings.SetResolutionQuality
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -2442,6 +7123,27 @@ void UPavlovGameUserSettings::SetResolutionQuality(float Quality)
 
 	UPavlovGameUserSettings_SetResolutionQuality_Params params;
 	params.Quality = Quality;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameUserSettings.SetRealTimeReverb
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void UPavlovGameUserSettings::SetRealTimeReverb(bool bEnabled)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetRealTimeReverb");
+
+	UPavlovGameUserSettings_SetRealTimeReverb_Params params;
+	params.bEnabled = bEnabled;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -2476,13 +7178,15 @@ void UPavlovGameUserSettings::SetPrimaryRegion(EOnlineRegion Region)
 // Function Pavlov.PavlovGameUserSettings.SetPlayerRightHanded
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
+// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           bRightHanded                   (Parm, ZeroConstructor, IsPlainOldData)
 
-void UPavlovGameUserSettings::SetPlayerRightHanded(bool bRightHanded)
+void UPavlovGameUserSettings::SetPlayerRightHanded(class UObject* WorldContextObject, bool bRightHanded)
 {
 	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetPlayerRightHanded");
 
 	UPavlovGameUserSettings_SetPlayerRightHanded_Params params;
+	params.WorldContextObject = WorldContextObject;
 	params.bRightHanded = bRightHanded;
 
 	auto flags = fn->FunctionFlags;
@@ -2557,6 +7261,27 @@ void UPavlovGameUserSettings::SetOffHandAction(ECustomAction Action)
 }
 
 
+// Function Pavlov.PavlovGameUserSettings.SetNoAmbisonics
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void UPavlovGameUserSettings::SetNoAmbisonics(bool bEnabled)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetNoAmbisonics");
+
+	UPavlovGameUserSettings_SetNoAmbisonics_Params params;
+	params.bEnabled = bEnabled;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function Pavlov.PavlovGameUserSettings.SetMountFriendly
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -2568,6 +7293,50 @@ void UPavlovGameUserSettings::SetMountFriendly(bool bFriendly)
 
 	UPavlovGameUserSettings_SetMountFriendly_Params params;
 	params.bFriendly = bFriendly;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameUserSettings.SetMenuScoreboardSwaped
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void UPavlovGameUserSettings::SetMenuScoreboardSwaped(bool bEnabled)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetMenuScoreboardSwaped");
+
+	UPavlovGameUserSettings_SetMenuScoreboardSwaped_Params params;
+	params.bEnabled = bEnabled;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameUserSettings.SetMapAsFavorite
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UPavlov_Map*             Map                            (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void UPavlovGameUserSettings::SetMapAsFavorite(class UPavlov_Map* Map, bool bEnabled)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetMapAsFavorite");
+
+	UPavlovGameUserSettings_SetMapAsFavorite_Params params;
+	params.Map = Map;
+	params.bEnabled = bEnabled;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -2715,6 +7484,48 @@ void UPavlovGameUserSettings::SetGripMode(EGripMode NewGripMode)
 
 	UPavlovGameUserSettings_SetGripMode_Params params;
 	params.NewGripMode = NewGripMode;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameUserSettings.SetGrabForceThreashold
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                          Value                          (Parm, ZeroConstructor, IsPlainOldData)
+
+void UPavlovGameUserSettings::SetGrabForceThreashold(float Value)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetGrabForceThreashold");
+
+	UPavlovGameUserSettings_SetGrabForceThreashold_Params params;
+	params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovGameUserSettings.SetGoreLevel
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// EGoreLevel                     Level                          (Parm, ZeroConstructor, IsPlainOldData)
+
+void UPavlovGameUserSettings::SetGoreLevel(EGoreLevel Level)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.SetGoreLevel");
+
+	UPavlovGameUserSettings_SetGoreLevel_Params params;
+	params.Level = Level;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -2959,28 +7770,6 @@ bool UPavlovGameUserSettings::IsSnapTurnEnabled()
 }
 
 
-// Function Pavlov.PavlovGameUserSettings.IsSnapTurnDisabled
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-bool UPavlovGameUserSettings::IsSnapTurnDisabled()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.IsSnapTurnDisabled");
-
-	UPavlovGameUserSettings_IsSnapTurnDisabled_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
 // Function Pavlov.PavlovGameUserSettings.IsSmoothTurnEnabled
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -3069,6 +7858,28 @@ bool UPavlovGameUserSettings::IsMountFriendly()
 }
 
 
+// Function Pavlov.PavlovGameUserSettings.IsMenuScoreboardSwapped
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UPavlovGameUserSettings::IsMenuScoreboardSwapped()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.IsMenuScoreboardSwapped");
+
+	UPavlovGameUserSettings_IsMenuScoreboardSwapped_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Pavlov.PavlovGameUserSettings.IsLiteFootStepHapticsEnabled
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -3145,6 +7956,30 @@ bool UPavlovGameUserSettings::IsFreeSpectatingEnabled()
 	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.IsFreeSpectatingEnabled");
 
 	UPavlovGameUserSettings_IsFreeSpectatingEnabled_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameUserSettings.IsFavoriteMap
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UPavlov_Map*             Map                            (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UPavlovGameUserSettings::IsFavoriteMap(class UPavlov_Map* Map)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.IsFavoriteMap");
+
+	UPavlovGameUserSettings_IsFavoriteMap_Params params;
+	params.Map = Map;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -3289,6 +8124,28 @@ bool UPavlovGameUserSettings::HasLegacyGrip()
 }
 
 
+// Function Pavlov.PavlovGameUserSettings.GetVoiceDevice
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+struct FString UPavlovGameUserSettings::GetVoiceDevice()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.GetVoiceDevice");
+
+	UPavlovGameUserSettings_GetVoiceDevice_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Pavlov.PavlovGameUserSettings.GetVirtualStock
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -3299,6 +8156,50 @@ bool UPavlovGameUserSettings::GetVirtualStock()
 	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.GetVirtualStock");
 
 	UPavlovGameUserSettings_GetVirtualStock_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameUserSettings.GetUseAudioThread
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UPavlovGameUserSettings::GetUseAudioThread()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.GetUseAudioThread");
+
+	UPavlovGameUserSettings_GetUseAudioThread_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameUserSettings.GetStartUpMap
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+struct FString UPavlovGameUserSettings::GetStartUpMap()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.GetStartUpMap");
+
+	UPavlovGameUserSettings_GetStartUpMap_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -3347,6 +8248,50 @@ float UPavlovGameUserSettings::GetSmoothTurnRate()
 	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.GetSmoothTurnRate");
 
 	UPavlovGameUserSettings_GetSmoothTurnRate_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameUserSettings.GetSmoothLocomotionMode
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// EVRSmoothLocomotionMode        ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+EVRSmoothLocomotionMode UPavlovGameUserSettings::GetSmoothLocomotionMode()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.GetSmoothLocomotionMode");
+
+	UPavlovGameUserSettings_GetSmoothLocomotionMode_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameUserSettings.GetRealTimeVoiceReverb
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UPavlovGameUserSettings::GetRealTimeVoiceReverb()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.GetRealTimeVoiceReverb");
+
+	UPavlovGameUserSettings_GetRealTimeVoiceReverb_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -3425,6 +8370,28 @@ ECustomAction UPavlovGameUserSettings::GetOffHandAction()
 }
 
 
+// Function Pavlov.PavlovGameUserSettings.GetNoAmbisonics
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UPavlovGameUserSettings::GetNoAmbisonics()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.GetNoAmbisonics");
+
+	UPavlovGameUserSettings_GetNoAmbisonics_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Pavlov.PavlovGameUserSettings.GetMainHandAction
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -3491,6 +8458,50 @@ EGripMode UPavlovGameUserSettings::GetGripMode()
 }
 
 
+// Function Pavlov.PavlovGameUserSettings.GetGrabForceThreashold
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+float UPavlovGameUserSettings::GetGrabForceThreashold()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.GetGrabForceThreashold");
+
+	UPavlovGameUserSettings_GetGrabForceThreashold_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovGameUserSettings.GetGoreLevel
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// EGoreLevel                     ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+EGoreLevel UPavlovGameUserSettings::GetGoreLevel()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameUserSettings.GetGoreLevel");
+
+	UPavlovGameUserSettings_GetGoreLevel_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Pavlov.PavlovGameUserSettings.ForceNoPostProcessing
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -3512,1231 +8523,18 @@ void UPavlovGameUserSettings::ForceNoPostProcessing(bool bEnabled)
 }
 
 
-// Function Pavlov.PavlovPawn.WearKevlar
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                           bWithHelmet                    (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovPawn::WearKevlar(bool bWithHelmet)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.WearKevlar");
-
-	APavlovPawn_WearKevlar_Params params;
-	params.bWithHelmet = bWithHelmet;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.UpdateLocomotion
-// (Final, Native, Public, BlueprintCallable)
-
-void APavlovPawn::UpdateLocomotion()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.UpdateLocomotion");
-
-	APavlovPawn_UpdateLocomotion_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.TakePointDamage
-// (Final, Native, Private, HasDefaults)
-// Parameters:
-// class AActor*                  DamagedActor                   (Parm, ZeroConstructor, IsPlainOldData)
-// float                          Damage                         (Parm, ZeroConstructor, IsPlainOldData)
-// class AController*             InstigatedBy                   (Parm, ZeroConstructor, IsPlainOldData)
-// struct FVector                 HitLocation                    (Parm, IsPlainOldData)
-// class UPrimitiveComponent*     HitComponent                   (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// struct FName                   BoneName                       (Parm, ZeroConstructor, IsPlainOldData)
-// struct FVector                 ShotFromDirection              (Parm, IsPlainOldData)
-// class UDamageType*             DamageType                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-// class AActor*                  DamageCauser                   (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovPawn::TakePointDamage(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, const struct FVector& HitLocation, class UPrimitiveComponent* HitComponent, const struct FName& BoneName, const struct FVector& ShotFromDirection, class UDamageType* DamageType, class AActor* DamageCauser)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.TakePointDamage");
-
-	APavlovPawn_TakePointDamage_Params params;
-	params.DamagedActor = DamagedActor;
-	params.Damage = Damage;
-	params.InstigatedBy = InstigatedBy;
-	params.HitLocation = HitLocation;
-	params.HitComponent = HitComponent;
-	params.BoneName = BoneName;
-	params.ShotFromDirection = ShotFromDirection;
-	params.DamageType = DamageType;
-	params.DamageCauser = DamageCauser;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.SetupWatch
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class UWatch*                  WatchComp                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-
-void APavlovPawn::SetupWatch(class UWatch* WatchComp)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.SetupWatch");
-
-	APavlovPawn_SetupWatch_Params params;
-	params.WatchComp = WatchComp;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.SetTeamId
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int                            NewTeamId                      (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovPawn::SetTeamId(int NewTeamId)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.SetTeamId");
-
-	APavlovPawn_SetTeamId_Params params;
-	params.NewTeamId = NewTeamId;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.ServerReportFallDamage
-// (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
-// Parameters:
-// float                          Damage                         (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovPawn::ServerReportFallDamage(float Damage)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.ServerReportFallDamage");
-
-	APavlovPawn_ServerReportFallDamage_Params params;
-	params.Damage = Damage;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.ServerGiveMagazine
-// (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
-// Parameters:
-// bool                           bOffHand                       (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovPawn::ServerGiveMagazine(bool bOffHand)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.ServerGiveMagazine");
-
-	APavlovPawn_ServerGiveMagazine_Params params;
-	params.bOffHand = bOffHand;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.ServerGive
-// (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
-// Parameters:
-// struct FName                   EquipmentName                  (Parm, ZeroConstructor, IsPlainOldData)
-// struct FName                   Skin                           (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovPawn::ServerGive(const struct FName& EquipmentName, const struct FName& Skin)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.ServerGive");
-
-	APavlovPawn_ServerGive_Params params;
-	params.EquipmentName = EquipmentName;
-	params.Skin = Skin;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.ServerDeployParachute
-// (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
-
-void APavlovPawn::ServerDeployParachute()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.ServerDeployParachute");
-
-	APavlovPawn_ServerDeployParachute_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.OnVoiceChanged
-// (Final, Native, Private)
-// Parameters:
-// bool                           bTalking                       (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           bLocal                         (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovPawn::OnVoiceChanged(bool bTalking, bool bLocal)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnVoiceChanged");
-
-	APavlovPawn_OnVoiceChanged_Params params;
-	params.bTalking = bTalking;
-	params.bLocal = bLocal;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.OnTeamIdChanged
-// (Native, Event, Protected, BlueprintEvent)
-
-void APavlovPawn::OnTeamIdChanged()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnTeamIdChanged");
-
-	APavlovPawn_OnTeamIdChanged_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.OnRevive
-// (Final, Native, Private)
-// Parameters:
-// class AActor*                  OwnerActor                     (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovPawn::OnRevive(class AActor* OwnerActor)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnRevive");
-
-	APavlovPawn_OnRevive_Params params;
-	params.OwnerActor = OwnerActor;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.OnRep_TeamId
-// (Native, Protected)
-
-void APavlovPawn::OnRep_TeamId()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnRep_TeamId");
-
-	APavlovPawn_OnRep_TeamId_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.OnRep_HelmetArmour
-// (Final, Native, Private)
-
-void APavlovPawn::OnRep_HelmetArmour()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnRep_HelmetArmour");
-
-	APavlovPawn_OnRep_HelmetArmour_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.OnRep_Armour
-// (Final, Native, Private)
-
-void APavlovPawn::OnRep_Armour()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnRep_Armour");
-
-	APavlovPawn_OnRep_Armour_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.OnKill
-// (Final, Native, Private)
-// Parameters:
-// class AActor*                  OwnerActor                     (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovPawn::OnKill(class AActor* OwnerActor)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnKill");
-
-	APavlovPawn_OnKill_Params params;
-	params.OwnerActor = OwnerActor;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.OnImpactDamage
-// (Event, Public, HasOutParms, BlueprintEvent)
-// Parameters:
-// struct FImpactDamage           ImpactDamage                   (ConstParm, Parm, OutParm, ReferenceParm)
-
-void APavlovPawn::OnImpactDamage(const struct FImpactDamage& ImpactDamage)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnImpactDamage");
-
-	APavlovPawn_OnImpactDamage_Params params;
-	params.ImpactDamage = ImpactDamage;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.OnCameraClipChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// bool                           bClipping                      (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovPawn::OnCameraClipChanged(bool bClipping)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnCameraClipChanged");
-
-	APavlovPawn_OnCameraClipChanged_Params params;
-	params.bClipping = bClipping;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.MulticastTeleportTo
-// (Net, NetReliable, Native, Event, NetMulticast, Public, HasDefaults)
-// Parameters:
-// struct FVector                 DestLocation                   (Parm, IsPlainOldData)
-// struct FRotator                DestRotation                   (Parm, IsPlainOldData)
-
-void APavlovPawn::MulticastTeleportTo(const struct FVector& DestLocation, const struct FRotator& DestRotation)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastTeleportTo");
-
-	APavlovPawn_MulticastTeleportTo_Params params;
-	params.DestLocation = DestLocation;
-	params.DestRotation = DestRotation;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.MulticastOnWearArmour
-// (Net, Native, Event, NetMulticast, Public)
-
-void APavlovPawn::MulticastOnWearArmour()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnWearArmour");
-
-	APavlovPawn_MulticastOnWearArmour_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.MulticastOnReset
-// (Net, NetReliable, Native, Event, NetMulticast, Public)
-
-void APavlovPawn::MulticastOnReset()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnReset");
-
-	APavlovPawn_MulticastOnReset_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.MulticastOnRadialDeath
-// (Net, Native, Event, NetMulticast, Public)
-// Parameters:
-// struct FVector_NetQuantize     Origin                         (Parm)
-
-void APavlovPawn::MulticastOnRadialDeath(const struct FVector_NetQuantize& Origin)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnRadialDeath");
-
-	APavlovPawn_MulticastOnRadialDeath_Params params;
-	params.Origin = Origin;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.MulticastOnImpactDamage
-// (Net, Native, Event, NetMulticast, Public)
-// Parameters:
-// struct FImpactDamage           ImpactDamage                   (Parm)
-
-void APavlovPawn::MulticastOnImpactDamage(const struct FImpactDamage& ImpactDamage)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnImpactDamage");
-
-	APavlovPawn_MulticastOnImpactDamage_Params params;
-	params.ImpactDamage = ImpactDamage;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.MulticastOnHitSlow
-// (Net, NetReliable, Native, Event, NetMulticast, Public)
-
-void APavlovPawn::MulticastOnHitSlow()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnHitSlow");
-
-	APavlovPawn_MulticastOnHitSlow_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.MulticastOnHit
-// (Net, Native, Event, NetMulticast, Public)
-// Parameters:
-// struct FVector_NetQuantize     Location                       (Parm)
-// struct FVector_NetQuantizeNormal Normal                         (Parm)
-// class APlayerState*            Shooter                        (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           bOnArmor                       (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovPawn::MulticastOnHit(const struct FVector_NetQuantize& Location, const struct FVector_NetQuantizeNormal& Normal, class APlayerState* Shooter, bool bOnArmor)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnHit");
-
-	APavlovPawn_MulticastOnHit_Params params;
-	params.Location = Location;
-	params.Normal = Normal;
-	params.Shooter = Shooter;
-	params.bOnArmor = bOnArmor;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.MulticastOnHelmetHit
-// (Net, Native, Event, NetMulticast, Public)
-// Parameters:
-// struct FVector_NetQuantize     Location                       (Parm)
-// struct FVector_NetQuantizeNormal Direction                      (Parm)
-
-void APavlovPawn::MulticastOnHelmetHit(const struct FVector_NetQuantize& Location, const struct FVector_NetQuantizeNormal& Direction)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnHelmetHit");
-
-	APavlovPawn_MulticastOnHelmetHit_Params params;
-	params.Location = Location;
-	params.Direction = Direction;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.MulticastOnHelmetBlownoff
-// (Net, Native, Event, NetMulticast, Public)
-
-void APavlovPawn::MulticastOnHelmetBlownoff()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnHelmetBlownoff");
-
-	APavlovPawn_MulticastOnHelmetBlownoff_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.MulticastOnHeadshot
-// (Net, NetReliable, Native, Event, NetMulticast, Public)
-
-void APavlovPawn::MulticastOnHeadshot()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnHeadshot");
-
-	APavlovPawn_MulticastOnHeadshot_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.MulticastAdjustAvatarScale
-// (Net, NetReliable, Native, Event, NetMulticast, Public)
-// Parameters:
-// float                          PlayerHeight                   (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovPawn::MulticastAdjustAvatarScale(float PlayerHeight)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastAdjustAvatarScale");
-
-	APavlovPawn_MulticastAdjustAvatarScale_Params params;
-	params.PlayerHeight = PlayerHeight;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.LoadEquipment
-// (Final, Native, Public, HasOutParms, BlueprintCallable)
-// Parameters:
-// struct FEquipmentDefinition    Definition                     (ConstParm, Parm, OutParm, ReferenceParm)
-
-void APavlovPawn::LoadEquipment(const struct FEquipmentDefinition& Definition)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.LoadEquipment");
-
-	APavlovPawn_LoadEquipment_Params params;
-	params.Definition = Definition;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.IsSprinting
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-bool APavlovPawn::IsSprinting()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.IsSprinting");
-
-	APavlovPawn_IsSprinting_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovPawn.IsDead
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-bool APavlovPawn::IsDead()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.IsDead");
-
-	APavlovPawn_IsDead_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovPawn.IsCameraClipping
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-bool APavlovPawn::IsCameraClipping()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.IsCameraClipping");
-
-	APavlovPawn_IsCameraClipping_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovPawn.GiveBomb
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class ABomb*                   Bomb                           (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovPawn::GiveBomb(class ABomb* Bomb)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GiveBomb");
-
-	APavlovPawn_GiveBomb_Params params;
-	params.Bomb = Bomb;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.Give
-// (Final, Exec, Native, Public, BlueprintCallable)
-// Parameters:
-// struct FName                   EquipmentName                  (Parm, ZeroConstructor, IsPlainOldData)
-// struct FName                   Skin                           (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           bWithAmmo                      (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           bByBuyMenu                     (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovPawn::Give(const struct FName& EquipmentName, const struct FName& Skin, bool bWithAmmo, bool bByBuyMenu)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.Give");
-
-	APavlovPawn_Give_Params params;
-	params.EquipmentName = EquipmentName;
-	params.Skin = Skin;
-	params.bWithAmmo = bWithAmmo;
-	params.bByBuyMenu = bByBuyMenu;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.GetSideWeaponHolster
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class UHolsterComponent*       ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
-
-class UHolsterComponent* APavlovPawn::GetSideWeaponHolster()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetSideWeaponHolster");
-
-	APavlovPawn_GetSideWeaponHolster_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovPawn.GetNonDominantController
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class APavlovItemController*   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-class APavlovItemController* APavlovPawn::GetNonDominantController()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetNonDominantController");
-
-	APavlovPawn_GetNonDominantController_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovPawn.GetMainWeaponHolster
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class UHolsterComponent*       ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
-
-class UHolsterComponent* APavlovPawn::GetMainWeaponHolster()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetMainWeaponHolster");
-
-	APavlovPawn_GetMainWeaponHolster_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovPawn.GetKnifeHolster
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class UHolsterComponent*       ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
-
-class UHolsterComponent* APavlovPawn::GetKnifeHolster()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetKnifeHolster");
-
-	APavlovPawn_GetKnifeHolster_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovPawn.GetHealth
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-float APavlovPawn::GetHealth()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetHealth");
-
-	APavlovPawn_GetHealth_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovPawn.GetGrenadeHolsters
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// TArray<class UHolsterComponent*> ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm)
-
-TArray<class UHolsterComponent*> APavlovPawn::GetGrenadeHolsters()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetGrenadeHolsters");
-
-	APavlovPawn_GetGrenadeHolsters_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovPawn.GetEquipmentByName
-// (Event, Public, HasOutParms, BlueprintEvent)
-// Parameters:
-// struct FName                   EquipmentName                  (Parm, ZeroConstructor, IsPlainOldData)
-// struct FEquipmentDefinition    Definition                     (Parm, OutParm)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-bool APavlovPawn::GetEquipmentByName(const struct FName& EquipmentName, struct FEquipmentDefinition* Definition)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetEquipmentByName");
-
-	APavlovPawn_GetEquipmentByName_Params params;
-	params.EquipmentName = EquipmentName;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	if (Definition != nullptr)
-		*Definition = params.Definition;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovPawn.GetDominantController
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class APavlovItemController*   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-class APavlovItemController* APavlovPawn::GetDominantController()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetDominantController");
-
-	APavlovPawn_GetDominantController_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovPawn.GetBombHolster
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class UHolsterComponent*       ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
-
-class UHolsterComponent* APavlovPawn::GetBombHolster()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetBombHolster");
-
-	APavlovPawn_GetBombHolster_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovPawn.GetAmmoPocket
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class UVRPocketComponent*      ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
-
-class UVRPocketComponent* APavlovPawn::GetAmmoPocket()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetAmmoPocket");
-
-	APavlovPawn_GetAmmoPocket_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovPawn.DropEquipment
-// (Final, Native, Public, BlueprintCallable)
-
-void APavlovPawn::DropEquipment()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.DropEquipment");
-
-	APavlovPawn_DropEquipment_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.ClientClearSoundMix
-// (Net, NetReliable, Native, Event, Public, NetClient)
-
-void APavlovPawn::ClientClearSoundMix()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.ClientClearSoundMix");
-
-	APavlovPawn_ClientClearSoundMix_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.BlowHelmetOff
-// (Event, Public, BlueprintEvent)
-
-void APavlovPawn::BlowHelmetOff()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.BlowHelmetOff");
-
-	APavlovPawn_BlowHelmetOff_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.AddHitSlow
-// (Final, Native, Public, BlueprintCallable)
-
-void APavlovPawn::AddHitSlow()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.AddHitSlow");
-
-	APavlovPawn_AddHitSlow_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovPawn.ActivateCameraClip
-// (Final, Native, Private)
-
-void APavlovPawn::ActivateCameraClip()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.ActivateCameraClip");
-
-	APavlovPawn_ActivateCameraClip_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameState.MulticastOnKillfeedEntry
-// (Net, NetReliable, Native, Event, NetMulticast, Public, BlueprintCallable)
-// Parameters:
-// struct FKillfeedEntry          NewEntry                       (ConstParm, Parm, ReferenceParm)
-
-void APavlovGameState::MulticastOnKillfeedEntry(const struct FKillfeedEntry& NewEntry)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.MulticastOnKillfeedEntry");
-
-	APavlovGameState_MulticastOnKillfeedEntry_Params params;
-	params.NewEntry = NewEntry;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameState.GetTeamScore
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int                            TeamID                         (Parm, ZeroConstructor, IsPlainOldData)
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-int APavlovGameState::GetTeamScore(int TeamID)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetTeamScore");
-
-	APavlovGameState_GetTeamScore_Params params;
-	params.TeamID = TeamID;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovGameState.GetTeamArray
-// (Final, Native, Public, HasOutParms, BlueprintCallable)
-// Parameters:
-// TArray<class APavlovPlayerState*> TeamArray                      (Parm, OutParm, ZeroConstructor)
-// int                            TeamID                         (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovGameState::GetTeamArray(int TeamID, TArray<class APavlovPlayerState*>* TeamArray)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetTeamArray");
-
-	APavlovGameState_GetTeamArray_Params params;
-	params.TeamID = TeamID;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	if (TeamArray != nullptr)
-		*TeamArray = params.TeamArray;
-}
-
-
-// Function Pavlov.PavlovGameState.GetSortedPlayerArray
-// (Final, Native, Public, HasOutParms, BlueprintCallable)
-// Parameters:
-// TArray<class APavlovPlayerState*> SortedPlayerArray              (Parm, OutParm, ZeroConstructor)
-// int                            FilterByTeamId                 (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovGameState::GetSortedPlayerArray(int FilterByTeamId, TArray<class APavlovPlayerState*>* SortedPlayerArray)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetSortedPlayerArray");
-
-	APavlovGameState_GetSortedPlayerArray_Params params;
-	params.FilterByTeamId = FilterByTeamId;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	if (SortedPlayerArray != nullptr)
-		*SortedPlayerArray = params.SortedPlayerArray;
-}
-
-
-// Function Pavlov.PavlovGameState.GetPlayerStringId
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class APavlovPlayerState*      PlayerState                    (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-
-struct FString APavlovGameState::GetPlayerStringId(class APavlovPlayerState* PlayerState)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetPlayerStringId");
-
-	APavlovGameState_GetPlayerStringId_Params params;
-	params.PlayerState = PlayerState;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovGameState.GetPlayerStateByStringId
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// struct FString                 StringId                       (Parm, ZeroConstructor)
-// class APavlovPlayerState*      ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-class APavlovPlayerState* APavlovGameState::GetPlayerStateByStringId(const struct FString& StringId)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetPlayerStateByStringId");
-
-	APavlovGameState_GetPlayerStateByStringId_Params params;
-	params.StringId = StringId;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovGameState.GetPlayerByScore
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int                            Index                          (Parm, ZeroConstructor, IsPlainOldData)
-// int                            TeamID                         (Parm, ZeroConstructor, IsPlainOldData)
-// class APavlovPlayerState*      ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-class APavlovPlayerState* APavlovGameState::GetPlayerByScore(int Index, int TeamID)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetPlayerByScore");
-
-	APavlovGameState_GetPlayerByScore_Params params;
-	params.Index = Index;
-	params.TeamID = TeamID;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovGameState.GetMatchResult
+// Function Pavlov.PavlovHandAnimInstance.GetFingerBlend
 // (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// EMatchResult                   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// EFinger                        Finger                         (Parm, ZeroConstructor, IsPlainOldData)
+// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-EMatchResult APavlovGameState::GetMatchResult()
+float UPavlovHandAnimInstance::GetFingerBlend(EFinger Finger)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetMatchResult");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovHandAnimInstance.GetFingerBlend");
 
-	APavlovGameState_GetMatchResult_Params params;
+	UPavlovHandAnimInstance_GetFingerBlend_Params params;
+	params.Finger = Finger;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -4746,1031 +8544,6 @@ EMatchResult APavlovGameState::GetMatchResult()
 	fn->FunctionFlags = flags;
 
 	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovGameState.GetEquipmentNameByClass
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class UClass*                  ItemClass                      (Parm, ZeroConstructor, IsPlainOldData)
-// struct FName                   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-struct FName APavlovGameState::GetEquipmentNameByClass(class UClass* ItemClass)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetEquipmentNameByClass");
-
-	APavlovGameState_GetEquipmentNameByClass_Params params;
-	params.ItemClass = ItemClass;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovGameState.GetEquipmentDataByClass
-// (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class UClass*                  ItemClass                      (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           bSuccess                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// struct FEquipmentData          ReturnValue                    (Parm, OutParm, ReturnParm)
-
-struct FEquipmentData APavlovGameState::GetEquipmentDataByClass(class UClass* ItemClass, bool* bSuccess)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetEquipmentDataByClass");
-
-	APavlovGameState_GetEquipmentDataByClass_Params params;
-	params.ItemClass = ItemClass;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	if (bSuccess != nullptr)
-		*bSuccess = params.bSuccess;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovGameState.GetEquipmentData
-// (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// struct FName                   EquipmentName                  (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           bSuccess                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// struct FEquipmentData          ReturnValue                    (Parm, OutParm, ReturnParm)
-
-struct FEquipmentData APavlovGameState::GetEquipmentData(const struct FName& EquipmentName, bool* bSuccess)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetEquipmentData");
-
-	APavlovGameState_GetEquipmentData_Params params;
-	params.EquipmentName = EquipmentName;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	if (bSuccess != nullptr)
-		*bSuccess = params.bSuccess;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovGameState.GetEquipmentCost
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// struct FName                   EquipmentName                  (Parm, ZeroConstructor, IsPlainOldData)
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-int APavlovGameState::GetEquipmentCost(const struct FName& EquipmentName)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.GetEquipmentCost");
-
-	APavlovGameState_GetEquipmentCost_Params params;
-	params.EquipmentName = EquipmentName;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovGameState.DisplayMatchStateOverlay
-// (Net, NetReliable, Native, Event, NetMulticast, Public, BlueprintCallable)
-// Parameters:
-// class UClass*                  OverlayClass                   (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovGameState::DisplayMatchStateOverlay(class UClass* OverlayClass)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameState.DisplayMatchStateOverlay");
-
-	APavlovGameState_DisplayMatchStateOverlay_Params params;
-	params.OverlayClass = OverlayClass;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.TerminateGameSession
-// (Final, Native, Public, BlueprintCallable)
-
-void APavlovGameMode::TerminateGameSession()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.TerminateGameSession");
-
-	APavlovGameMode_TerminateGameSession_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.SwitchTeam
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class AController*             Controller                     (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovGameMode::SwitchTeam(class AController* Controller)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SwitchTeam");
-
-	APavlovGameMode_SwitchTeam_Params params;
-	params.Controller = Controller;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.Suicide
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class AController*             Controller                     (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovGameMode::Suicide(class AController* Controller)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.Suicide");
-
-	APavlovGameMode_Suicide_Params params;
-	params.Controller = Controller;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.StopReplayRecording
-// (Final, Native, Protected, BlueprintCallable)
-
-void APavlovGameMode::StopReplayRecording()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.StopReplayRecording");
-
-	APavlovGameMode_StopReplayRecording_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.StartReplayRecording
-// (Final, Native, Protected, BlueprintCallable)
-
-void APavlovGameMode::StartReplayRecording()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.StartReplayRecording");
-
-	APavlovGameMode_StartReplayRecording_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.SpawnPlayer
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AController*             Controller                     (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovGameMode::SpawnPlayer(class AController* Controller)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SpawnPlayer");
-
-	APavlovGameMode_SpawnPlayer_Params params;
-	params.Controller = Controller;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.SpawnAndPossesPawns
-// (Final, Native, Public, BlueprintCallable)
-
-void APavlovGameMode::SpawnAndPossesPawns()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SpawnAndPossesPawns");
-
-	APavlovGameMode_SpawnAndPossesPawns_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.ShuffleTeams
-// (Final, Native, Public, BlueprintCallable)
-
-void APavlovGameMode::ShuffleTeams()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.ShuffleTeams");
-
-	APavlovGameMode_ShuffleTeams_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.SetTeamCash
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// int                            TeamID                         (Parm, ZeroConstructor, IsPlainOldData)
-// int                            CashAmmount                    (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovGameMode::SetTeamCash(int TeamID, int CashAmmount)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SetTeamCash");
-
-	APavlovGameMode_SetTeamCash_Params params;
-	params.TeamID = TeamID;
-	params.CashAmmount = CashAmmount;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.SetRoundState
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// EPavlovRoundState              State                          (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovGameMode::SetRoundState(EPavlovRoundState State)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SetRoundState");
-
-	APavlovGameMode_SetRoundState_Params params;
-	params.State = State;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.SetPawnsInvulnerable
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovGameMode::SetPawnsInvulnerable(bool bEnabled)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SetPawnsInvulnerable");
-
-	APavlovGameMode_SetPawnsInvulnerable_Params params;
-	params.bEnabled = bEnabled;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.SetMovement
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovGameMode::SetMovement(bool bEnabled)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SetMovement");
-
-	APavlovGameMode_SetMovement_Params params;
-	params.bEnabled = bEnabled;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.SetEveryoneCash
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// int                            CashAmmount                    (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovGameMode::SetEveryoneCash(int CashAmmount)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SetEveryoneCash");
-
-	APavlovGameMode_SetEveryoneCash_Params params;
-	params.CashAmmount = CashAmmount;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.SetAttackingTeam
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int                            TeamID                         (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovGameMode::SetAttackingTeam(int TeamID)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.SetAttackingTeam");
-
-	APavlovGameMode_SetAttackingTeam_Params params;
-	params.TeamID = TeamID;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.RotateMap
-// (Final, Native, Public, BlueprintCallable)
-
-void APavlovGameMode::RotateMap()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.RotateMap");
-
-	APavlovGameMode_RotateMap_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.ResetScore
-// (Final, Native, Public, BlueprintCallable)
-
-void APavlovGameMode::ResetScore()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.ResetScore");
-
-	APavlovGameMode_ResetScore_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.PunishTeamKiller
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class APavlovPlayerState*      TeamKiller                     (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovGameMode::PunishTeamKiller(class APavlovPlayerState* TeamKiller)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.PunishTeamKiller");
-
-	APavlovGameMode_PunishTeamKiller_Params params;
-	params.TeamKiller = TeamKiller;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.PostRoundCleanUp
-// (Final, Native, Public, BlueprintCallable)
-
-void APavlovGameMode::PostRoundCleanUp()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.PostRoundCleanUp");
-
-	APavlovGameMode_PostRoundCleanUp_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.PerformServerTravel
-// (Final, Native, Protected)
-
-void APavlovGameMode::PerformServerTravel()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.PerformServerTravel");
-
-	APavlovGameMode_PerformServerTravel_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.OnSteamTicketValidation
-// (Final, Native, Protected)
-// Parameters:
-// struct FString                 SteamUserId                    (Parm, ZeroConstructor)
-// ESteamAuthResponse             Response                       (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 OwnerSteamUserId               (Parm, ZeroConstructor)
-
-void APavlovGameMode::OnSteamTicketValidation(const struct FString& SteamUserId, ESteamAuthResponse Response, const struct FString& OwnerSteamUserId)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.OnSteamTicketValidation");
-
-	APavlovGameMode_OnSteamTicketValidation_Params params;
-	params.SteamUserId = SteamUserId;
-	params.Response = Response;
-	params.OwnerSteamUserId = OwnerSteamUserId;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.OnRoundStateChanged
-// (Native, Event, Public, BlueprintEvent)
-// Parameters:
-// EPavlovRoundState              OldState                       (Parm, ZeroConstructor, IsPlainOldData)
-// EPavlovRoundState              NewState                       (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovGameMode::OnRoundStateChanged(EPavlovRoundState OldState, EPavlovRoundState NewState)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.OnRoundStateChanged");
-
-	APavlovGameMode_OnRoundStateChanged_Params params;
-	params.OldState = OldState;
-	params.NewState = NewState;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.OnPlayerSpawned
-// (Native, Event, Public, BlueprintEvent)
-// Parameters:
-// class APavlovPlayerState*      PlayerState                    (Parm, ZeroConstructor, IsPlainOldData)
-// class AController*             Controller                     (Parm, ZeroConstructor, IsPlainOldData)
-// class APavlovPawn*             Pawn                           (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovGameMode::OnPlayerSpawned(class APavlovPlayerState* PlayerState, class AController* Controller, class APavlovPawn* Pawn)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.OnPlayerSpawned");
-
-	APavlovGameMode_OnPlayerSpawned_Params params;
-	params.PlayerState = PlayerState;
-	params.Controller = Controller;
-	params.Pawn = Pawn;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.OnPlayerKilled
-// (Native, Event, Public, BlueprintEvent)
-// Parameters:
-// class APavlovPlayerState*      PlayerState                    (Parm, ZeroConstructor, IsPlainOldData)
-// class AController*             Controller                     (Parm, ZeroConstructor, IsPlainOldData)
-// class APavlovPawn*             Pawn                           (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovGameMode::OnPlayerKilled(class APavlovPlayerState* PlayerState, class AController* Controller, class APavlovPawn* Pawn)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.OnPlayerKilled");
-
-	APavlovGameMode_OnPlayerKilled_Params params;
-	params.PlayerState = PlayerState;
-	params.Controller = Controller;
-	params.Pawn = Pawn;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.OnPawnKilled
-// (Final, Native, Protected)
-// Parameters:
-// class AActor*                  OwnerActor                     (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovGameMode::OnPawnKilled(class AActor* OwnerActor)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.OnPawnKilled");
-
-	APavlovGameMode_OnPawnKilled_Params params;
-	params.OwnerActor = OwnerActor;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.OnKillVolumeOverlap
-// (Final, Native, Protected)
-// Parameters:
-// class AActor*                  OverlappedActor                (Parm, ZeroConstructor, IsPlainOldData)
-// class AActor*                  OtherActor                     (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovGameMode::OnKillVolumeOverlap(class AActor* OverlappedActor, class AActor* OtherActor)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.OnKillVolumeOverlap");
-
-	APavlovGameMode_OnKillVolumeOverlap_Params params;
-	params.OverlappedActor = OverlappedActor;
-	params.OtherActor = OtherActor;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.MakeNavmeshStatic
-// (Final, Native, Protected)
-
-void APavlovGameMode::MakeNavmeshStatic()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.MakeNavmeshStatic");
-
-	APavlovGameMode_MakeNavmeshStatic_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.KickByStringId
-// (Final, Native, Public, HasOutParms, BlueprintCallable)
-// Parameters:
-// struct FString                 ID                             (Parm, ZeroConstructor)
-// struct FText                   KickReason                     (ConstParm, Parm, OutParm, ReferenceParm)
-// bool                           bBan                           (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovGameMode::KickByStringId(const struct FString& ID, const struct FText& KickReason, bool bBan)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.KickByStringId");
-
-	APavlovGameMode_KickByStringId_Params params;
-	params.ID = ID;
-	params.KickReason = KickReason;
-	params.bBan = bBan;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.IsTeamDead
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int                            TeamID                         (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-bool APavlovGameMode::IsTeamDead(int TeamID)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.IsTeamDead");
-
-	APavlovGameMode_IsTeamDead_Params params;
-	params.TeamID = TeamID;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovGameMode.IncrementTeamScore
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int                            TeamID                         (Parm, ZeroConstructor, IsPlainOldData)
-// int                            Score                          (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovGameMode::IncrementTeamScore(int TeamID, int Score)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.IncrementTeamScore");
-
-	APavlovGameMode_IncrementTeamScore_Params params;
-	params.TeamID = TeamID;
-	params.Score = Score;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.IncrementPlayerScore
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class APlayerState*            PlayerState                    (Parm, ZeroConstructor, IsPlainOldData)
-// int                            Score                          (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovGameMode::IncrementPlayerScore(class APlayerState* PlayerState, int Score)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.IncrementPlayerScore");
-
-	APavlovGameMode_IncrementPlayerScore_Params params;
-	params.PlayerState = PlayerState;
-	params.Score = Score;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.GiveTeamCash
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// int                            TeamID                         (Parm, ZeroConstructor, IsPlainOldData)
-// int                            CashAmmount                    (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovGameMode::GiveTeamCash(int TeamID, int CashAmmount)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.GiveTeamCash");
-
-	APavlovGameMode_GiveTeamCash_Params params;
-	params.TeamID = TeamID;
-	params.CashAmmount = CashAmmount;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.GiveItem
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class APavlovPawn*             Pawn                           (Parm, ZeroConstructor, IsPlainOldData)
-// class UClass*                  ItemClass                      (Parm, ZeroConstructor, IsPlainOldData)
-// float                          BlockDuration                  (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           bLoaded                        (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovGameMode::GiveItem(class APavlovPawn* Pawn, class UClass* ItemClass, float BlockDuration, bool bLoaded)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.GiveItem");
-
-	APavlovGameMode_GiveItem_Params params;
-	params.Pawn = Pawn;
-	params.ItemClass = ItemClass;
-	params.BlockDuration = BlockDuration;
-	params.bLoaded = bLoaded;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.GiveEveryoneCash
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// int                            CashAmmount                    (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovGameMode::GiveEveryoneCash(int CashAmmount)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.GiveEveryoneCash");
-
-	APavlovGameMode_GiveEveryoneCash_Params params;
-	params.CashAmmount = CashAmmount;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.GetTeamStatus
-// (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int                            TeamID                         (Parm, ZeroConstructor, IsPlainOldData)
-// int                            Num                            (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// int                            Casualties                     (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-
-void APavlovGameMode::GetTeamStatus(int TeamID, int* Num, int* Casualties)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.GetTeamStatus");
-
-	APavlovGameMode_GetTeamStatus_Params params;
-	params.TeamID = TeamID;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	if (Num != nullptr)
-		*Num = params.Num;
-	if (Casualties != nullptr)
-		*Casualties = params.Casualties;
-}
-
-
-// Function Pavlov.PavlovGameMode.GetTeamRealPlayerCount
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int                            TeamID                         (Parm, ZeroConstructor, IsPlainOldData)
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-int APavlovGameMode::GetTeamRealPlayerCount(int TeamID)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.GetTeamRealPlayerCount");
-
-	APavlovGameMode_GetTeamRealPlayerCount_Params params;
-	params.TeamID = TeamID;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovGameMode.GetRealPlayerCount
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-int APavlovGameMode::GetRealPlayerCount()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.GetRealPlayerCount");
-
-	APavlovGameMode_GetRealPlayerCount_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovGameMode.GetRandomController
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int                            TeamFilter                     (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           bRealPlayer                    (Parm, ZeroConstructor, IsPlainOldData)
-// class AController*             ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-class AController* APavlovGameMode::GetRandomController(int TeamFilter, bool bRealPlayer)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.GetRandomController");
-
-	APavlovGameMode_GetRandomController_Params params;
-	params.TeamFilter = TeamFilter;
-	params.bRealPlayer = bRealPlayer;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovGameMode.CreateDedicatedServerSession
-// (Final, Native, Public, BlueprintCallable)
-
-void APavlovGameMode::CreateDedicatedServerSession()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.CreateDedicatedServerSession");
-
-	APavlovGameMode_CreateDedicatedServerSession_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.CleanUpItems
-// (Final, Native, Public, BlueprintCallable)
-
-void APavlovGameMode::CleanUpItems()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.CleanUpItems");
-
-	APavlovGameMode_CleanUpItems_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.CanChangeScore
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-bool APavlovGameMode::CanChangeScore()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.CanChangeScore");
-
-	APavlovGameMode_CanChangeScore_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovGameMode.AddExtraRoundTime
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                          ExtraTime                      (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovGameMode::AddExtraRoundTime(float ExtraTime)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.AddExtraRoundTime");
-
-	APavlovGameMode_AddExtraRoundTime_Params params;
-	params.ExtraTime = ExtraTime;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameMode.AddAssist
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class APavlovPlayerState*      PlayerState                    (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovGameMode::AddAssist(class APavlovPlayerState* PlayerState)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameMode.AddAssist");
-
-	APavlovGameMode_AddAssist_Params params;
-	params.PlayerState = PlayerState;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
 }
 
 
@@ -5984,14 +8757,14 @@ void UPavlovLobby::SetCompetitiveMode(int CompMode)
 // Function Pavlov.PavlovLobby.RequestTeam
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// int                            TeamID                         (Parm, ZeroConstructor, IsPlainOldData)
+// int                            TeamId                         (Parm, ZeroConstructor, IsPlainOldData)
 
-void UPavlovLobby::RequestTeam(int TeamID)
+void UPavlovLobby::RequestTeam(int TeamId)
 {
 	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovLobby.RequestTeam");
 
 	UPavlovLobby_RequestTeam_Params params;
-	params.TeamID = TeamID;
+	params.TeamId = TeamId;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -6249,23 +9022,14 @@ bool UPavlovLobby::DoesMemberWantsToStart(int Index)
 }
 
 
-// Function Pavlov.PavlovGameInstance.UpdateServerList
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// struct FString                 Map                            (Parm, ZeroConstructor)
-// struct FString                 GameMode                       (Parm, ZeroConstructor)
-// bool                           bFriendsOnly                   (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           bPrivateOnly                   (Parm, ZeroConstructor, IsPlainOldData)
+// Function Pavlov.PavlovMovementComponent.ServerDeployParachute
+// (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 
-void UPavlovGameInstance::UpdateServerList(const struct FString& Map, const struct FString& GameMode, bool bFriendsOnly, bool bPrivateOnly)
+void UPavlovMovementComponent::ServerDeployParachute()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.UpdateServerList");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovMovementComponent.ServerDeployParachute");
 
-	UPavlovGameInstance_UpdateServerList_Params params;
-	params.Map = Map;
-	params.GameMode = GameMode;
-	params.bFriendsOnly = bFriendsOnly;
-	params.bPrivateOnly = bPrivateOnly;
+	UPavlovMovementComponent_ServerDeployParachute_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -6276,18 +9040,109 @@ void UPavlovGameInstance::UpdateServerList(const struct FString& Map, const stru
 }
 
 
-// Function Pavlov.PavlovGameInstance.SetMuted
+// Function Pavlov.PavlovMovementComponent.OnRep_PrachuteState
+// (Final, Native, Private)
+
+void UPavlovMovementComponent::OnRep_PrachuteState()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovMovementComponent.OnRep_PrachuteState");
+
+	UPavlovMovementComponent_OnRep_PrachuteState_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovMovementComponent.MulticastOnParachuteDeployed
+// (Net, Native, Event, NetMulticast, Public)
+
+void UPavlovMovementComponent::MulticastOnParachuteDeployed()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovMovementComponent.MulticastOnParachuteDeployed");
+
+	UPavlovMovementComponent_MulticastOnParachuteDeployed_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.WearKevlar
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class APavlovPlayerState*      PlayerState                    (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bWithHelmet                    (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovPawn::WearKevlar(bool bWithHelmet)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.WearKevlar");
+
+	APavlovPawn_WearKevlar_Params params;
+	params.bWithHelmet = bWithHelmet;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.WearHelmet
+// (Final, Native, Public, BlueprintCallable)
+
+void APavlovPawn::WearHelmet()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.WearHelmet");
+
+	APavlovPawn_WearHelmet_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.UpdateLocomotion
+// (Final, Native, Public, BlueprintCallable)
+
+void APavlovPawn::UpdateLocomotion()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.UpdateLocomotion");
+
+	APavlovPawn_UpdateLocomotion_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.ToggleRadio
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
 // bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
 
-void UPavlovGameInstance::SetMuted(class APavlovPlayerState* PlayerState, bool bEnabled)
+void APavlovPawn::ToggleRadio(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.SetMuted");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.ToggleRadio");
 
-	UPavlovGameInstance_SetMuted_Params params;
-	params.PlayerState = PlayerState;
+	APavlovPawn_ToggleRadio_Params params;
 	params.bEnabled = bEnabled;
 
 	auto flags = fn->FunctionFlags;
@@ -6299,17 +9154,55 @@ void UPavlovGameInstance::SetMuted(class APavlovPlayerState* PlayerState, bool b
 }
 
 
-// Function Pavlov.PavlovGameInstance.SetMatchmakingState
+// Function Pavlov.PavlovPawn.TakePointDamage
+// (Final, Native, Private, HasDefaults)
+// Parameters:
+// class AActor*                  DamagedActor                   (Parm, ZeroConstructor, IsPlainOldData)
+// float                          Damage                         (Parm, ZeroConstructor, IsPlainOldData)
+// class AController*             InstigatedBy                   (Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 HitLocation                    (Parm, ZeroConstructor, IsPlainOldData)
+// class UPrimitiveComponent*     HitComponent                   (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// struct FName                   BoneName                       (Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 ShotFromDirection              (Parm, ZeroConstructor, IsPlainOldData)
+// class UDamageType*             DamageType                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// class AActor*                  DamageCauser                   (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovPawn::TakePointDamage(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, const struct FVector& HitLocation, class UPrimitiveComponent* HitComponent, const struct FName& BoneName, const struct FVector& ShotFromDirection, class UDamageType* DamageType, class AActor* DamageCauser)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.TakePointDamage");
+
+	APavlovPawn_TakePointDamage_Params params;
+	params.DamagedActor = DamagedActor;
+	params.Damage = Damage;
+	params.InstigatedBy = InstigatedBy;
+	params.HitLocation = HitLocation;
+	params.HitComponent = HitComponent;
+	params.BoneName = BoneName;
+	params.ShotFromDirection = ShotFromDirection;
+	params.DamageType = DamageType;
+	params.DamageCauser = DamageCauser;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.SpawnHitFeedbackSound
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// EMatchmakingState              NewState                       (Parm, ZeroConstructor, IsPlainOldData)
+// EHitFeedbackType               Type                           (Parm, ZeroConstructor, IsPlainOldData)
+// class UAudioComponent*         ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
 
-void UPavlovGameInstance::SetMatchmakingState(EMatchmakingState NewState)
+class UAudioComponent* APavlovPawn::SpawnHitFeedbackSound(EHitFeedbackType Type)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.SetMatchmakingState");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.SpawnHitFeedbackSound");
 
-	UPavlovGameInstance_SetMatchmakingState_Params params;
-	params.NewState = NewState;
+	APavlovPawn_SpawnHitFeedbackSound_Params params;
+	params.Type = Type;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -6317,17 +9210,28 @@ void UPavlovGameInstance::SetMatchmakingState(EMatchmakingState NewState)
 	UObject::ProcessEvent(fn, &params);
 
 	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
 }
 
 
-// Function Pavlov.PavlovGameInstance.RetrieveMasterServerSessionId
-// (Final, Native, Public)
+// Function Pavlov.PavlovPawn.SpawnHeadshotEffect
+// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+// class APlayerState*            Killer                         (Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 HitLocation                    (Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 HitDirection                   (Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 WorldHitLocation               (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 WorldHitDirection              (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 
-void UPavlovGameInstance::RetrieveMasterServerSessionId()
+void APavlovPawn::SpawnHeadshotEffect(class APlayerState* Killer, const struct FVector& HitLocation, const struct FVector& HitDirection, struct FVector* WorldHitLocation, struct FVector* WorldHitDirection)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.RetrieveMasterServerSessionId");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.SpawnHeadshotEffect");
 
-	UPavlovGameInstance_RetrieveMasterServerSessionId_Params params;
+	APavlovPawn_SpawnHeadshotEffect_Params params;
+	params.Killer = Killer;
+	params.HitLocation = HitLocation;
+	params.HitDirection = HitDirection;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -6335,20 +9239,27 @@ void UPavlovGameInstance::RetrieveMasterServerSessionId()
 	UObject::ProcessEvent(fn, &params);
 
 	fn->FunctionFlags = flags;
+
+	if (WorldHitLocation != nullptr)
+		*WorldHitLocation = params.WorldHitLocation;
+	if (WorldHitDirection != nullptr)
+		*WorldHitDirection = params.WorldHitDirection;
 }
 
 
-// Function Pavlov.PavlovGameInstance.ResetTutorial
-// (Final, Exec, Native, Public)
+// Function Pavlov.PavlovPawn.SetupWatch
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class UWatch*                  WatchComp                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 
-void UPavlovGameInstance::ResetTutorial()
+void APavlovPawn::SetupWatch(class UWatch* WatchComp)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.ResetTutorial");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.SetupWatch");
 
-	UPavlovGameInstance_ResetTutorial_Params params;
+	APavlovPawn_SetupWatch_Params params;
+	params.WatchComp = WatchComp;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -6356,91 +9267,17 @@ void UPavlovGameInstance::ResetTutorial()
 }
 
 
-// Function Pavlov.PavlovGameInstance.ReportServerState
-// (Final, Native, Protected)
-
-void UPavlovGameInstance::ReportServerState()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.ReportServerState");
-
-	UPavlovGameInstance_ReportServerState_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameInstance.QuickMatch
-// (Final, Native, Public, BlueprintCallable)
-
-void UPavlovGameInstance::QuickMatch()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.QuickMatch");
-
-	UPavlovGameInstance_QuickMatch_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameInstance.QueryForGameSession
-// (Final, Native, Public)
-
-void UPavlovGameInstance::QueryForGameSession()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.QueryForGameSession");
-
-	UPavlovGameInstance_QueryForGameSession_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameInstance.OpenMap_Implementation
-// (Final, Native, Public)
-
-void UPavlovGameInstance::OpenMap_Implementation()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OpenMap_Implementation");
-
-	UPavlovGameInstance_OpenMap_Implementation_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameInstance.OpenMap
+// Function Pavlov.PavlovPawn.SetTeamId
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// struct FString                 Map                            (Parm, ZeroConstructor)
-// struct FString                 Options                        (Parm, ZeroConstructor)
+// int                            NewTeamId                      (Parm, ZeroConstructor, IsPlainOldData)
 
-void UPavlovGameInstance::OpenMap(const struct FString& Map, const struct FString& Options)
+void APavlovPawn::SetTeamId(int NewTeamId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OpenMap");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.SetTeamId");
 
-	UPavlovGameInstance_OpenMap_Params params;
-	params.Map = Map;
-	params.Options = Options;
+	APavlovPawn_SetTeamId_Params params;
+	params.NewTeamId = NewTeamId;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -6451,55 +9288,17 @@ void UPavlovGameInstance::OpenMap(const struct FString& Map, const struct FStrin
 }
 
 
-// Function Pavlov.PavlovGameInstance.OnWorkshopSpecificQuery
-// (Final, Native, Protected)
-
-void UPavlovGameInstance::OnWorkshopSpecificQuery()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnWorkshopSpecificQuery");
-
-	UPavlovGameInstance_OnWorkshopSpecificQuery_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameInstance.OnSteamLobbyListUpdated
-// (Final, Native, Public)
-
-void UPavlovGameInstance::OnSteamLobbyListUpdated()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnSteamLobbyListUpdated");
-
-	UPavlovGameInstance_OnSteamLobbyListUpdated_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameInstance.OnServerMapDownloaded
-// (Final, Native, Protected)
+// Function Pavlov.PavlovPawn.SetAvatarSkin
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                           bSucceed                       (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 ID                             (Parm, ZeroConstructor)
+// class UClass*                  NewSkinClass                   (Parm, ZeroConstructor, IsPlainOldData)
 
-void UPavlovGameInstance::OnServerMapDownloaded(bool bSucceed, const struct FString& ID)
+void APavlovPawn::SetAvatarSkin(class UClass* NewSkinClass)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnServerMapDownloaded");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.SetAvatarSkin");
 
-	UPavlovGameInstance_OnServerMapDownloaded_Params params;
-	params.bSucceed = bSucceed;
-	params.ID = ID;
+	APavlovPawn_SetAvatarSkin_Params params;
+	params.NewSkinClass = NewSkinClass;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -6510,23 +9309,17 @@ void UPavlovGameInstance::OnServerMapDownloaded(bool bSucceed, const struct FStr
 }
 
 
-// Function Pavlov.PavlovGameInstance.OnNetworkFailure
-// (Final, Native, Public)
+// Function Pavlov.PavlovPawn.ServerUpdateFingerTracking
+// (Final, Net, NetReliable, Native, Event, Private, NetServer, NetValidate)
 // Parameters:
-// class UWorld*                  World                          (Parm, ZeroConstructor, IsPlainOldData)
-// class UNetDriver*              NetDriver                      (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<ENetworkFailure>   FailureType                    (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 ErrorString                    (Parm, ZeroConstructor)
+// struct FFingerTracking         Data                           (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData)
 
-void UPavlovGameInstance::OnNetworkFailure(class UWorld* World, class UNetDriver* NetDriver, TEnumAsByte<ENetworkFailure> FailureType, const struct FString& ErrorString)
+void APavlovPawn::ServerUpdateFingerTracking(const struct FFingerTracking& Data)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnNetworkFailure");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.ServerUpdateFingerTracking");
 
-	UPavlovGameInstance_OnNetworkFailure_Params params;
-	params.World = World;
-	params.NetDriver = NetDriver;
-	params.FailureType = FailureType;
-	params.ErrorString = ErrorString;
+	APavlovPawn_ServerUpdateFingerTracking_Params params;
+	params.Data = Data;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -6537,17 +9330,17 @@ void UPavlovGameInstance::OnNetworkFailure(class UWorld* World, class UNetDriver
 }
 
 
-// Function Pavlov.PavlovGameInstance.OnLeftLobby
-// (Final, Native, Public)
+// Function Pavlov.PavlovPawn.ServerSetRadioChannel
+// (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 // Parameters:
-// ESteamLobbyChatMemberStateChange StateChange                    (Parm, ZeroConstructor, IsPlainOldData)
+// unsigned char                  Channel                        (Parm, ZeroConstructor, IsPlainOldData)
 
-void UPavlovGameInstance::OnLeftLobby(ESteamLobbyChatMemberStateChange StateChange)
+void APavlovPawn::ServerSetRadioChannel(unsigned char Channel)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnLeftLobby");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.ServerSetRadioChannel");
 
-	UPavlovGameInstance_OnLeftLobby_Params params;
-	params.StateChange = StateChange;
+	APavlovPawn_ServerSetRadioChannel_Params params;
+	params.Channel = Channel;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -6558,19 +9351,17 @@ void UPavlovGameInstance::OnLeftLobby(ESteamLobbyChatMemberStateChange StateChan
 }
 
 
-// Function Pavlov.PavlovGameInstance.OnLadderOverlap
-// (Final, Native, Public)
+// Function Pavlov.PavlovPawn.ServerReportFallDamage
+// (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 // Parameters:
-// class AActor*                  OverlappedActor                (Parm, ZeroConstructor, IsPlainOldData)
-// class AActor*                  OtherActor                     (Parm, ZeroConstructor, IsPlainOldData)
+// float                          Damage                         (Parm, ZeroConstructor, IsPlainOldData)
 
-void UPavlovGameInstance::OnLadderOverlap(class AActor* OverlappedActor, class AActor* OtherActor)
+void APavlovPawn::ServerReportFallDamage(float Damage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnLadderOverlap");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.ServerReportFallDamage");
 
-	UPavlovGameInstance_OnLadderOverlap_Params params;
-	params.OverlappedActor = OverlappedActor;
-	params.OtherActor = OtherActor;
+	APavlovPawn_ServerReportFallDamage_Params params;
+	params.Damage = Damage;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -6581,17 +9372,17 @@ void UPavlovGameInstance::OnLadderOverlap(class AActor* OverlappedActor, class A
 }
 
 
-// Function Pavlov.PavlovGameInstance.OnEnterLobby
-// (Final, Native, Public)
+// Function Pavlov.PavlovPawn.ServerGiveMagazine
+// (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 // Parameters:
-// bool                           bFailed                        (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bOffHand                       (Parm, ZeroConstructor, IsPlainOldData)
 
-void UPavlovGameInstance::OnEnterLobby(bool bFailed)
+void APavlovPawn::ServerGiveMagazine(bool bOffHand)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnEnterLobby");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.ServerGiveMagazine");
 
-	UPavlovGameInstance_OnEnterLobby_Params params;
-	params.bFailed = bFailed;
+	APavlovPawn_ServerGiveMagazine_Params params;
+	params.bOffHand = bOffHand;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -6602,19 +9393,19 @@ void UPavlovGameInstance::OnEnterLobby(bool bFailed)
 }
 
 
-// Function Pavlov.PavlovGameInstance.OnClientMapDownloaded
-// (Final, Native, Public)
+// Function Pavlov.PavlovPawn.ServerGive
+// (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 // Parameters:
-// bool                           bSucceed                       (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 ID                             (Parm, ZeroConstructor)
+// struct FName                   EquipmentName                  (Parm, ZeroConstructor, IsPlainOldData)
+// struct FName                   Skin                           (Parm, ZeroConstructor, IsPlainOldData)
 
-void UPavlovGameInstance::OnClientMapDownloaded(bool bSucceed, const struct FString& ID)
+void APavlovPawn::ServerGive(const struct FName& EquipmentName, const struct FName& Skin)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnClientMapDownloaded");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.ServerGive");
 
-	UPavlovGameInstance_OnClientMapDownloaded_Params params;
-	params.bSucceed = bSucceed;
-	params.ID = ID;
+	APavlovPawn_ServerGive_Params params;
+	params.EquipmentName = EquipmentName;
+	params.Skin = Skin;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -6625,19 +9416,71 @@ void UPavlovGameInstance::OnClientMapDownloaded(bool bSucceed, const struct FStr
 }
 
 
-// Function Pavlov.PavlovGameInstance.OnAuthSessionTicketResponse
-// (Final, Native, Public)
+// Function Pavlov.PavlovPawn.ServerDeployParachute
+// (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
+
+void APavlovPawn::ServerDeployParachute()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.ServerDeployParachute");
+
+	APavlovPawn_ServerDeployParachute_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.SanityCheck
+// (Final, Native, Public, BlueprintCallable)
+
+void APavlovPawn::SanityCheck()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.SanityCheck");
+
+	APavlovPawn_SanityCheck_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.OnTeamIdChanged
+// (Native, Event, Protected, BlueprintEvent)
+
+void APavlovPawn::OnTeamIdChanged()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnTeamIdChanged");
+
+	APavlovPawn_OnTeamIdChanged_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.OnRevive
+// (Final, Native, Private)
 // Parameters:
-// bool                           bSucceed                       (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 HexAuthTicket                  (Parm, ZeroConstructor)
+// class AActor*                  OwnerActor                     (Parm, ZeroConstructor, IsPlainOldData)
 
-void UPavlovGameInstance::OnAuthSessionTicketResponse(bool bSucceed, const struct FString& HexAuthTicket)
+void APavlovPawn::OnRevive(class AActor* OwnerActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.OnAuthSessionTicketResponse");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnRevive");
 
-	UPavlovGameInstance_OnAuthSessionTicketResponse_Params params;
-	params.bSucceed = bSucceed;
-	params.HexAuthTicket = HexAuthTicket;
+	APavlovPawn_OnRevive_Params params;
+	params.OwnerActor = OwnerActor;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -6648,17 +9491,483 @@ void UPavlovGameInstance::OnAuthSessionTicketResponse(bool bSucceed, const struc
 }
 
 
-// Function Pavlov.PavlovGameInstance.JoinServer
+// Function Pavlov.PavlovPawn.OnRep_TeamId
+// (Native, Protected)
+
+void APavlovPawn::OnRep_TeamId()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnRep_TeamId");
+
+	APavlovPawn_OnRep_TeamId_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.OnRep_RadioChannel
+// (Final, Native, Private)
+
+void APavlovPawn::OnRep_RadioChannel()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnRep_RadioChannel");
+
+	APavlovPawn_OnRep_RadioChannel_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.OnRep_HelmetArmour
+// (Final, Native, Private)
+
+void APavlovPawn::OnRep_HelmetArmour()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnRep_HelmetArmour");
+
+	APavlovPawn_OnRep_HelmetArmour_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.OnRep_AvatarSkinClass
+// (Final, Native, Private)
+
+void APavlovPawn::OnRep_AvatarSkinClass()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnRep_AvatarSkinClass");
+
+	APavlovPawn_OnRep_AvatarSkinClass_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.OnRep_Armour
+// (Final, Native, Private)
+
+void APavlovPawn::OnRep_Armour()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnRep_Armour");
+
+	APavlovPawn_OnRep_Armour_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.OnKill
+// (Final, Native, Private)
+// Parameters:
+// class AActor*                  OwnerActor                     (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovPawn::OnKill(class AActor* OwnerActor)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnKill");
+
+	APavlovPawn_OnKill_Params params;
+	params.OwnerActor = OwnerActor;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.OnImpactDamage
+// (Event, Public, HasOutParms, BlueprintEvent)
+// Parameters:
+// struct FImpactDamage           ImpactDamage                   (ConstParm, Parm, OutParm, ReferenceParm)
+
+void APavlovPawn::OnImpactDamage(const struct FImpactDamage& ImpactDamage)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnImpactDamage");
+
+	APavlovPawn_OnImpactDamage_Params params;
+	params.ImpactDamage = ImpactDamage;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.OnDismember
+// (Final, Native, Public, HasOutParms)
+// Parameters:
+// struct FWoundInfo              WoundInfo                      (ConstParm, Parm, OutParm, ReferenceParm)
+// struct FPreBakedWound          PreBakedWound                  (ConstParm, Parm, OutParm, ReferenceParm)
+
+void APavlovPawn::OnDismember(const struct FWoundInfo& WoundInfo, const struct FPreBakedWound& PreBakedWound)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnDismember");
+
+	APavlovPawn_OnDismember_Params params;
+	params.WoundInfo = WoundInfo;
+	params.PreBakedWound = PreBakedWound;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.OnCameraClipChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                           bClipping                      (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovPawn::OnCameraClipChanged(bool bClipping)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.OnCameraClipChanged");
+
+	APavlovPawn_OnCameraClipChanged_Params params;
+	params.bClipping = bClipping;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.MulticastTeleportTo
+// (Net, NetReliable, Native, Event, NetMulticast, Public, HasDefaults)
+// Parameters:
+// struct FVector                 DestLocation                   (Parm, ZeroConstructor, IsPlainOldData)
+// struct FRotator                DestRotation                   (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovPawn::MulticastTeleportTo(const struct FVector& DestLocation, const struct FRotator& DestRotation)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastTeleportTo");
+
+	APavlovPawn_MulticastTeleportTo_Params params;
+	params.DestLocation = DestLocation;
+	params.DestRotation = DestRotation;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.MulticastResetPawn
+// (Net, NetReliable, Native, Event, NetMulticast, Public)
+
+void APavlovPawn::MulticastResetPawn()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastResetPawn");
+
+	APavlovPawn_MulticastResetPawn_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.MulticastOnZombieHit
+// (Net, Native, Event, NetMulticast, Public)
+
+void APavlovPawn::MulticastOnZombieHit()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnZombieHit");
+
+	APavlovPawn_MulticastOnZombieHit_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.MulticastOnWearArmour
+// (Net, Native, Event, NetMulticast, Public)
+
+void APavlovPawn::MulticastOnWearArmour()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnWearArmour");
+
+	APavlovPawn_MulticastOnWearArmour_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.MulticastOnRadialDeath
+// (Net, Native, Event, NetMulticast, Public)
+// Parameters:
+// struct FVector_NetQuantize     Origin                         (Parm)
+
+void APavlovPawn::MulticastOnRadialDeath(const struct FVector_NetQuantize& Origin)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnRadialDeath");
+
+	APavlovPawn_MulticastOnRadialDeath_Params params;
+	params.Origin = Origin;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.MulticastOnMagazineGrabbed
+// (Net, Native, Event, NetMulticast, Public)
+// Parameters:
+// bool                           bDominant                      (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovPawn::MulticastOnMagazineGrabbed(bool bDominant)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnMagazineGrabbed");
+
+	APavlovPawn_MulticastOnMagazineGrabbed_Params params;
+	params.bDominant = bDominant;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.MulticastOnImpactDamage
+// (Net, Native, Event, NetMulticast, Public)
+// Parameters:
+// struct FImpactDamage           ImpactDamage                   (Parm)
+
+void APavlovPawn::MulticastOnImpactDamage(const struct FImpactDamage& ImpactDamage)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnImpactDamage");
+
+	APavlovPawn_MulticastOnImpactDamage_Params params;
+	params.ImpactDamage = ImpactDamage;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.MulticastOnHitSlow
+// (Net, NetReliable, Native, Event, NetMulticast, Public)
+
+void APavlovPawn::MulticastOnHitSlow()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnHitSlow");
+
+	APavlovPawn_MulticastOnHitSlow_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.MulticastOnHit
+// (Net, Native, Event, NetMulticast, Public)
+// Parameters:
+// struct FVector_NetQuantize     Location                       (Parm)
+// struct FVector_NetQuantizeNormal Normal                         (Parm)
+// class APlayerState*            Shooter                        (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bOnArmor                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovPawn::MulticastOnHit(const struct FVector_NetQuantize& Location, const struct FVector_NetQuantizeNormal& Normal, class APlayerState* Shooter, bool bOnArmor)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnHit");
+
+	APavlovPawn_MulticastOnHit_Params params;
+	params.Location = Location;
+	params.Normal = Normal;
+	params.Shooter = Shooter;
+	params.bOnArmor = bOnArmor;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.MulticastOnHelmetHit
+// (Net, Native, Event, NetMulticast, Public)
+// Parameters:
+// struct FVector_NetQuantize     Location                       (Parm)
+// struct FVector_NetQuantizeNormal Direction                      (Parm)
+
+void APavlovPawn::MulticastOnHelmetHit(const struct FVector_NetQuantize& Location, const struct FVector_NetQuantizeNormal& Direction)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnHelmetHit");
+
+	APavlovPawn_MulticastOnHelmetHit_Params params;
+	params.Location = Location;
+	params.Direction = Direction;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.MulticastOnHelmetBlownoff
+// (Net, Native, Event, NetMulticast, Public)
+
+void APavlovPawn::MulticastOnHelmetBlownoff()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnHelmetBlownoff");
+
+	APavlovPawn_MulticastOnHelmetBlownoff_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.MulticastOnHeadshot
+// (Net, NetReliable, Native, Event, NetMulticast, Public, HasDefaults)
+// Parameters:
+// class APlayerState*            Killer                         (Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 HitLocation                    (Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 HitDirection                   (Parm, ZeroConstructor, IsPlainOldData)
+// unsigned char                  WoundRate                      (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovPawn::MulticastOnHeadshot(class APlayerState* Killer, const struct FVector& HitLocation, const struct FVector& HitDirection, unsigned char WoundRate)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnHeadshot");
+
+	APavlovPawn_MulticastOnHeadshot_Params params;
+	params.Killer = Killer;
+	params.HitLocation = HitLocation;
+	params.HitDirection = HitDirection;
+	params.WoundRate = WoundRate;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.MulticastOnFallDamage
+// (Net, Native, Event, NetMulticast, Public)
+
+void APavlovPawn::MulticastOnFallDamage()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastOnFallDamage");
+
+	APavlovPawn_MulticastOnFallDamage_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.MulticastAdjustAvatarScale
+// (Net, NetReliable, Native, Event, NetMulticast, Public)
+// Parameters:
+// float                          PlayerHeight                   (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovPawn::MulticastAdjustAvatarScale(float PlayerHeight)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.MulticastAdjustAvatarScale");
+
+	APavlovPawn_MulticastAdjustAvatarScale_Params params;
+	params.PlayerHeight = PlayerHeight;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.LoadEquipment
 // (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FPavlovServerInfo       ServerInfo                     (ConstParm, Parm, OutParm, ReferenceParm)
+// struct FEquipmentDefinition    definition                     (ConstParm, Parm, OutParm, ReferenceParm)
 
-void UPavlovGameInstance::JoinServer(const struct FPavlovServerInfo& ServerInfo)
+void APavlovPawn::LoadEquipment(const struct FEquipmentDefinition& definition)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.JoinServer");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.LoadEquipment");
 
-	UPavlovGameInstance_JoinServer_Params params;
-	params.ServerInfo = ServerInfo;
+	APavlovPawn_LoadEquipment_Params params;
+	params.definition = definition;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -6669,20 +9978,84 @@ void UPavlovGameInstance::JoinServer(const struct FPavlovServerInfo& ServerInfo)
 }
 
 
-// Function Pavlov.PavlovGameInstance.JoinPinProtectedServer
+// Function Pavlov.PavlovPawn.IsSprinting
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool APavlovPawn::IsSprinting()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.IsSprinting");
+
+	APavlovPawn_IsSprinting_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovPawn.IsDead
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool APavlovPawn::IsDead()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.IsDead");
+
+	APavlovPawn_IsDead_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovPawn.IsCameraClipping
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool APavlovPawn::IsCameraClipping()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.IsCameraClipping");
+
+	APavlovPawn_IsCameraClipping_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovPawn.GiveItem
 // (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FPavlovServerInfo       ServerInfo                     (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FString                 Pin                            (Parm, ZeroConstructor)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// struct FGiveItemParams         Params                         (ConstParm, Parm, OutParm, ReferenceParm)
+// class AVRItem*                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-bool UPavlovGameInstance::JoinPinProtectedServer(const struct FPavlovServerInfo& ServerInfo, const struct FString& Pin)
+class AVRItem* APavlovPawn::GiveItem(const struct FGiveItemParams& Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.JoinPinProtectedServer");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GiveItem");
 
-	UPavlovGameInstance_JoinPinProtectedServer_Params params;
-	params.ServerInfo = ServerInfo;
-	params.Pin = Pin;
+	APavlovPawn_GiveItem_Params params;
+	params.Params = Params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -6695,38 +10068,17 @@ bool UPavlovGameInstance::JoinPinProtectedServer(const struct FPavlovServerInfo&
 }
 
 
-// Function Pavlov.PavlovGameInstance.IsMuted
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function Pavlov.PavlovPawn.GiveBomb
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class APavlovPlayerState*      PlayerState                    (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// class ABomb*                   Bomb                           (Parm, ZeroConstructor, IsPlainOldData)
 
-bool UPavlovGameInstance::IsMuted(class APavlovPlayerState* PlayerState)
+void APavlovPawn::GiveBomb(class ABomb* Bomb)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.IsMuted");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GiveBomb");
 
-	UPavlovGameInstance_IsMuted_Params params;
-	params.PlayerState = PlayerState;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovGameInstance.InitClientProxies
-// (Final, Native, Public)
-
-void UPavlovGameInstance::InitClientProxies()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.InitClientProxies");
-
-	UPavlovGameInstance_InitClientProxies_Params params;
+	APavlovPawn_GiveBomb_Params params;
+	params.Bomb = Bomb;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -6737,16 +10089,23 @@ void UPavlovGameInstance::InitClientProxies()
 }
 
 
-// Function Pavlov.PavlovGameInstance.HasGameSession
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function Pavlov.PavlovPawn.Give
+// (Final, Exec, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// struct FName                   EquipmentName                  (Parm, ZeroConstructor, IsPlainOldData)
+// struct FName                   Skin                           (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bWithAmmo                      (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bByBuyMenu                     (Parm, ZeroConstructor, IsPlainOldData)
 
-bool UPavlovGameInstance::HasGameSession()
+void APavlovPawn::Give(const struct FName& EquipmentName, const struct FName& Skin, bool bWithAmmo, bool bByBuyMenu)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.HasGameSession");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.Give");
 
-	UPavlovGameInstance_HasGameSession_Params params;
+	APavlovPawn_Give_Params params;
+	params.EquipmentName = EquipmentName;
+	params.Skin = Skin;
+	params.bWithAmmo = bWithAmmo;
+	params.bByBuyMenu = bByBuyMenu;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -6754,24 +10113,21 @@ bool UPavlovGameInstance::HasGameSession()
 	UObject::ProcessEvent(fn, &params);
 
 	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
 }
 
 
-// Function Pavlov.PavlovGameInstance.GetTutorial
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function Pavlov.PavlovPawn.GetSideWeaponHolster
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// class UTutorial*               ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// class UHolsterComponent*       ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
 
-class UTutorial* UPavlovGameInstance::GetTutorial()
+class UHolsterComponent* APavlovPawn::GetSideWeaponHolster()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.GetTutorial");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetSideWeaponHolster");
 
-	UPavlovGameInstance_GetTutorial_Params params;
+	APavlovPawn_GetSideWeaponHolster_Params params;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -6781,16 +10137,64 @@ class UTutorial* UPavlovGameInstance::GetTutorial()
 }
 
 
-// Function Pavlov.PavlovGameInstance.GetOnlineRegion
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function Pavlov.PavlovPawn.GetMainWeaponHolster
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// EOnlineRegion                  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// class UHolsterComponent*       ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
 
-EOnlineRegion UPavlovGameInstance::GetOnlineRegion()
+class UHolsterComponent* APavlovPawn::GetMainWeaponHolster()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.GetOnlineRegion");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetMainWeaponHolster");
 
-	UPavlovGameInstance_GetOnlineRegion_Params params;
+	APavlovPawn_GetMainWeaponHolster_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovPawn.GetKnifeHolster
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class UHolsterComponent*       ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+
+class UHolsterComponent* APavlovPawn::GetKnifeHolster()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetKnifeHolster");
+
+	APavlovPawn_GetKnifeHolster_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovPawn.GetItemOfClass
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UClass*                  ItemClass                      (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bSkipHands                     (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bSubClass                      (Parm, ZeroConstructor, IsPlainOldData)
+// class AVRItem*                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class AVRItem* APavlovPawn::GetItemOfClass(class UClass* ItemClass, bool bSkipHands, bool bSubClass)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetItemOfClass");
+
+	APavlovPawn_GetItemOfClass_Params params;
+	params.ItemClass = ItemClass;
+	params.bSkipHands = bSkipHands;
+	params.bSubClass = bSubClass;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -6803,16 +10207,40 @@ EOnlineRegion UPavlovGameInstance::GetOnlineRegion()
 }
 
 
-// Function Pavlov.PavlovGameInstance.GetOculusScale
+// Function Pavlov.PavlovPawn.GetHoldingItemByName
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FName                   ItemName                       (Parm, ZeroConstructor, IsPlainOldData)
+// class AVRItem*                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class AVRItem* APavlovPawn::GetHoldingItemByName(const struct FName& ItemName)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetHoldingItemByName");
+
+	APavlovPawn_GetHoldingItemByName_Params params;
+	params.ItemName = ItemName;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovPawn.GetHealth
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-float UPavlovGameInstance::GetOculusScale()
+float APavlovPawn::GetHealth()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.GetOculusScale");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetHealth");
 
-	UPavlovGameInstance_GetOculusScale_Params params;
+	APavlovPawn_GetHealth_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -6825,39 +10253,21 @@ float UPavlovGameInstance::GetOculusScale()
 }
 
 
-// Function Pavlov.PavlovGameInstance.GetMapListAdvanced
-// (Final, Native, Public, BlueprintCallable)
+// Function Pavlov.PavlovPawn.GetHeadSpaceHitVectors
+// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FPavlov_MapCompatibility Compatibility                  (Parm, IsPlainOldData)
+// struct FVector                 HitLocation                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
+// struct FVector                 HitDirection                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
+// struct FVector                 HeadSpaceHitLocation           (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 HeadSpaceHitDirection          (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 
-void UPavlovGameInstance::GetMapListAdvanced(const struct FPavlov_MapCompatibility& Compatibility)
+void APavlovPawn::GetHeadSpaceHitVectors(const struct FVector& HitLocation, const struct FVector& HitDirection, struct FVector* HeadSpaceHitLocation, struct FVector* HeadSpaceHitDirection)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.GetMapListAdvanced");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetHeadSpaceHitVectors");
 
-	UPavlovGameInstance_GetMapListAdvanced_Params params;
-	params.Compatibility = Compatibility;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameInstance.GetMapList
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// struct FPavlov_MapCompatibility Compatibility                  (Parm, IsPlainOldData)
-// TArray<class UPavlov_Map*>     ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-
-TArray<class UPavlov_Map*> UPavlovGameInstance::GetMapList(const struct FPavlov_MapCompatibility& Compatibility)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.GetMapList");
-
-	UPavlovGameInstance_GetMapList_Params params;
-	params.Compatibility = Compatibility;
+	APavlovPawn_GetHeadSpaceHitVectors_Params params;
+	params.HitLocation = HitLocation;
+	params.HitDirection = HitDirection;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -6866,444 +10276,136 @@ TArray<class UPavlov_Map*> UPavlovGameInstance::GetMapList(const struct FPavlov_
 
 	fn->FunctionFlags = flags;
 
-	return params.ReturnValue;
+	if (HeadSpaceHitLocation != nullptr)
+		*HeadSpaceHitLocation = params.HeadSpaceHitLocation;
+	if (HeadSpaceHitDirection != nullptr)
+		*HeadSpaceHitDirection = params.HeadSpaceHitDirection;
 }
 
 
-// Function Pavlov.PavlovGameInstance.GetMap
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// struct FString                 UniqueId                       (Parm, ZeroConstructor)
-// class UPavlov_Map*             ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-class UPavlov_Map* UPavlovGameInstance::GetMap(const struct FString& UniqueId)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.GetMap");
-
-	UPavlovGameInstance_GetMap_Params params;
-	params.UniqueId = UniqueId;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovGameInstance.DisplayNetworkFailureMessage
-// (Final, Native, Public)
-
-void UPavlovGameInstance::DisplayNetworkFailureMessage()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.DisplayNetworkFailureMessage");
-
-	UPavlovGameInstance_DisplayNetworkFailureMessage_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameInstance.DisplayMessageImpl
-// (Final, Native, Public)
-
-void UPavlovGameInstance::DisplayMessageImpl()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.DisplayMessageImpl");
-
-	UPavlovGameInstance_DisplayMessageImpl_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameInstance.DisplayMessage
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// struct FString                 Message                        (Parm, ZeroConstructor)
-// bool                           bDeferredDelay                 (Parm, ZeroConstructor, IsPlainOldData)
-
-void UPavlovGameInstance::DisplayMessage(const struct FString& Message, bool bDeferredDelay)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.DisplayMessage");
-
-	UPavlovGameInstance_DisplayMessage_Params params;
-	params.Message = Message;
-	params.bDeferredDelay = bDeferredDelay;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameInstance.CreateLobby
-// (Final, Native, Public, BlueprintCallable)
-
-void UPavlovGameInstance::CreateLobby()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.CreateLobby");
-
-	UPavlovGameInstance_CreateLobby_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameInstance.CreateGameSession
-// (Final, Native, Public, BlueprintCallable)
-
-void UPavlovGameInstance::CreateGameSession()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.CreateGameSession");
-
-	UPavlovGameInstance_CreateGameSession_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameInstance.CheckPlacementStatus
-// (Final, Native, Public)
-
-void UPavlovGameInstance::CheckPlacementStatus()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.CheckPlacementStatus");
-
-	UPavlovGameInstance_CheckPlacementStatus_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameInstance.CancelServerFind
-// (Final, Native, Public, BlueprintCallable)
-
-void UPavlovGameInstance::CancelServerFind()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.CancelServerFind");
-
-	UPavlovGameInstance_CancelServerFind_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovGameInstance.CancelQuickmatch
-// (Final, Native, Public, BlueprintCallable)
-
-void UPavlovGameInstance::CancelQuickmatch()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovGameInstance.CancelQuickmatch");
-
-	UPavlovGameInstance_CancelQuickmatch_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovItemController.UpdateUIState
-// (Final, Native, Protected)
-
-void APavlovItemController::UpdateUIState()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.UpdateUIState");
-
-	APavlovItemController_UpdateUIState_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovItemController.SetWheelEnabled
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovItemController::SetWheelEnabled(bool bEnabled)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.SetWheelEnabled");
-
-	APavlovItemController_SetWheelEnabled_Params params;
-	params.bEnabled = bEnabled;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovItemController.SetMenu
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovItemController::SetMenu(bool bEnabled)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.SetMenu");
-
-	APavlovItemController_SetMenu_Params params;
-	params.bEnabled = bEnabled;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovItemController.SetKillfeed
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovItemController::SetKillfeed(bool bEnabled)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.SetKillfeed");
-
-	APavlovItemController_SetKillfeed_Params params;
-	params.bEnabled = bEnabled;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovItemController.OnSelectionPicked
-// (Final, Native, Protected)
-// Parameters:
-// class AVRItem*                 Item                           (Parm, ZeroConstructor, IsPlainOldData)
-
-void APavlovItemController::OnSelectionPicked(class AVRItem* Item)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.OnSelectionPicked");
-
-	APavlovItemController_OnSelectionPicked_Params params;
-	params.Item = Item;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovItemController.IsTwoHandReloadEnabled
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-bool APavlovItemController::IsTwoHandReloadEnabled()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.IsTwoHandReloadEnabled");
-
-	APavlovItemController_IsTwoHandReloadEnabled_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovItemController.IsTwoHandGripEnabled
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-bool APavlovItemController::IsTwoHandGripEnabled()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.IsTwoHandGripEnabled");
-
-	APavlovItemController_IsTwoHandGripEnabled_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovItemController.IsMenuActive
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-bool APavlovItemController::IsMenuActive()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.IsMenuActive");
-
-	APavlovItemController_IsMenuActive_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovItemController.GetOppositeHandController
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class APavlovItemController*   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-class APavlovItemController* APavlovItemController::GetOppositeHandController()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.GetOppositeHandController");
-
-	APavlovItemController_GetOppositeHandController_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovItemController.GetFingerPointLocation
-// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// struct FVector                 ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
-
-struct FVector APavlovItemController::GetFingerPointLocation()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.GetFingerPointLocation");
-
-	APavlovItemController_GetFingerPointLocation_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Pavlov.PavlovItemController.ForceTwoHandGrip
-// (Final, Native, Public, BlueprintCallable)
-
-void APavlovItemController::ForceTwoHandGrip()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.ForceTwoHandGrip");
-
-	APavlovItemController_ForceTwoHandGrip_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.PavlovItemController.ClearWheelInstance
-// (Final, Native, Public, BlueprintCallable)
-
-void APavlovItemController::ClearWheelInstance()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovItemController.ClearWheelInstance");
-
-	APavlovItemController_ClearWheelInstance_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.GhostItemController.OnPointModeChanged
+// Function Pavlov.PavlovPawn.GetGrenadeHolsters
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// EGhostPointMode                OldPointMode                   (Parm, ZeroConstructor, IsPlainOldData)
+// TArray<class UHolsterComponent*> ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm)
 
-void AGhostItemController::OnPointModeChanged(EGhostPointMode OldPointMode)
+TArray<class UHolsterComponent*> APavlovPawn::GetGrenadeHolsters()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostItemController.OnPointModeChanged");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetGrenadeHolsters");
 
-	AGhostItemController_OnPointModeChanged_Params params;
-	params.OldPointMode = OldPointMode;
+	APavlovPawn_GetGrenadeHolsters_Params params;
 
 	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovPawn.GetEquipmentByName
+// (Event, Public, HasOutParms, BlueprintEvent)
+// Parameters:
+// struct FName                   EquipmentName                  (Parm, ZeroConstructor, IsPlainOldData)
+// struct FEquipmentDefinition    definition                     (Parm, OutParm)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool APavlovPawn::GetEquipmentByName(const struct FName& EquipmentName, struct FEquipmentDefinition* definition)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetEquipmentByName");
+
+	APavlovPawn_GetEquipmentByName_Params params;
+	params.EquipmentName = EquipmentName;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (definition != nullptr)
+		*definition = params.definition;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovPawn.GetBombHolster
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class UHolsterComponent*       ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+
+class UHolsterComponent* APavlovPawn::GetBombHolster()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetBombHolster");
+
+	APavlovPawn_GetBombHolster_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovPawn.GetAvatarSkin
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UAvatarSkin*             ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+
+class UAvatarSkin* APavlovPawn::GetAvatarSkin()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetAvatarSkin");
+
+	APavlovPawn_GetAvatarSkin_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovPawn.GetAmmoPocket
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class UVRPocketComponent*      ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+
+class UVRPocketComponent* APavlovPawn::GetAmmoPocket()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.GetAmmoPocket");
+
+	APavlovPawn_GetAmmoPocket_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovPawn.DropEquipment
+// (Final, Native, Public, BlueprintCallable)
+
+void APavlovPawn::DropEquipment()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.DropEquipment");
+
+	APavlovPawn_DropEquipment_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -7311,17 +10413,126 @@ void AGhostItemController::OnPointModeChanged(EGhostPointMode OldPointMode)
 }
 
 
-// Function Pavlov.GhostItemController.ChangePointMode
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// EGhostPointMode                NewPointMode                   (Parm, ZeroConstructor, IsPlainOldData)
+// Function Pavlov.PavlovPawn.ClientSanityCheck
+// (Net, NetReliable, Native, Event, Public, NetClient)
 
-void AGhostItemController::ChangePointMode(EGhostPointMode NewPointMode)
+void APavlovPawn::ClientSanityCheck()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.GhostItemController.ChangePointMode");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.ClientSanityCheck");
 
-	AGhostItemController_ChangePointMode_Params params;
-	params.NewPointMode = NewPointMode;
+	APavlovPawn_ClientSanityCheck_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.ClientClearSoundMix
+// (Net, NetReliable, Native, Event, Public, NetClient)
+
+void APavlovPawn::ClientClearSoundMix()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.ClientClearSoundMix");
+
+	APavlovPawn_ClientClearSoundMix_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.CanListenToRadio
+// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool APavlovPawn::CanListenToRadio()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.CanListenToRadio");
+
+	APavlovPawn_CanListenToRadio_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovPawn.BlowHelmetOff
+// (Native, Event, Public, BlueprintEvent)
+
+void APavlovPawn::BlowHelmetOff()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.BlowHelmetOff");
+
+	APavlovPawn_BlowHelmetOff_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.ApplyDelayedWound
+// (Final, Native, Private)
+
+void APavlovPawn::ApplyDelayedWound()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.ApplyDelayedWound");
+
+	APavlovPawn_ApplyDelayedWound_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.AddHitSlow
+// (Final, Native, Public, BlueprintCallable)
+
+void APavlovPawn::AddHitSlow()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.AddHitSlow");
+
+	APavlovPawn_AddHitSlow_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPawn.ActivateCameraClip
+// (Final, Native, Private)
+
+void APavlovPawn::ActivateCameraClip()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPawn.ActivateCameraClip");
+
+	APavlovPawn_ActivateCameraClip_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -7749,6 +10960,71 @@ void APavlovPlayerController::ServerReportShatter(class ADestructible* Destructi
 }
 
 
+// Function Pavlov.PavlovPlayerController.ServerReportKnifeDamage
+// (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
+// Parameters:
+// struct FClientKnifeDamage      Info                           (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovPlayerController::ServerReportKnifeDamage(const struct FClientKnifeDamage& Info)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ServerReportKnifeDamage");
+
+	APavlovPlayerController_ServerReportKnifeDamage_Params params;
+	params.Info = Info;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPlayerController.ServerReportHandenessChange
+// (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
+// Parameters:
+// bool                           bRightHanded                   (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovPlayerController::ServerReportHandenessChange(bool bRightHanded)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ServerReportHandenessChange");
+
+	APavlovPlayerController_ServerReportHandenessChange_Params params;
+	params.bRightHanded = bRightHanded;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPlayerController.ServerReportCorpseHit
+// (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
+// Parameters:
+// class APavlovPawn*             PawnCorpse                     (Parm, ZeroConstructor, IsPlainOldData)
+// struct FImpactDamage           ImpactDamage                   (ConstParm, Parm, ReferenceParm)
+
+void APavlovPlayerController::ServerReportCorpseHit(class APavlovPawn* PawnCorpse, const struct FImpactDamage& ImpactDamage)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ServerReportCorpseHit");
+
+	APavlovPlayerController_ServerReportCorpseHit_Params params;
+	params.PawnCorpse = PawnCorpse;
+	params.ImpactDamage = ImpactDamage;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function Pavlov.PavlovPlayerController.ServerReportBulletHit
 // (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 // Parameters:
@@ -7760,6 +11036,49 @@ void APavlovPlayerController::ServerReportBulletHit(const struct FClientBulletHi
 
 	APavlovPlayerController_ServerReportBulletHit_Params params;
 	params.Hit = Hit;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPlayerController.ServerProcessZombieDamage
+// (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
+
+void APavlovPlayerController::ServerProcessZombieDamage()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ServerProcessZombieDamage");
+
+	APavlovPlayerController_ServerProcessZombieDamage_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPlayerController.ServerKnockZombie
+// (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
+// Parameters:
+// class AZAICharacter*           Zombie                         (Parm, ZeroConstructor, IsPlainOldData)
+// EZKnockBackDirection           Direction                      (Parm, ZeroConstructor, IsPlainOldData)
+// unsigned char                  Flags                          (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovPlayerController::ServerKnockZombie(class AZAICharacter* Zombie, EZKnockBackDirection Direction, unsigned char Flags)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ServerKnockZombie");
+
+	APavlovPlayerController_ServerKnockZombie_Params params;
+	params.Zombie = Zombie;
+	params.Direction = Direction;
+	params.Flags = Flags;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -7919,6 +11238,52 @@ void APavlovPlayerController::PunishTeamKiller()
 }
 
 
+// Function Pavlov.PavlovPlayerController.OnZombieClientKnock
+// (Final, Native, Public)
+// Parameters:
+// class AZAICharacter*           Zombie                         (Parm, ZeroConstructor, IsPlainOldData)
+// EZKnockBackDirection           Direction                      (Parm, ZeroConstructor, IsPlainOldData)
+// unsigned char                  Flags                          (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovPlayerController::OnZombieClientKnock(class AZAICharacter* Zombie, EZKnockBackDirection Direction, unsigned char Flags)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.OnZombieClientKnock");
+
+	APavlovPlayerController_OnZombieClientKnock_Params params;
+	params.Zombie = Zombie;
+	params.Direction = Direction;
+	params.Flags = Flags;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPlayerController.OnMenuUniverseChanged
+// (Final, Native, Private)
+// Parameters:
+// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void APavlovPlayerController::OnMenuUniverseChanged(bool bEnabled)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.OnMenuUniverseChanged");
+
+	APavlovPlayerController_OnMenuUniverseChanged_Params params;
+	params.bEnabled = bEnabled;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function Pavlov.PavlovPlayerController.OnAuthTimedout
 // (Final, Native, Protected)
 
@@ -7963,7 +11328,7 @@ void APavlovPlayerController::OnAuthTicketReceived(bool bSucceed, const struct F
 // Function Pavlov.PavlovPlayerController.MulticastDebugPoint
 // (Net, NetReliable, Native, Event, NetMulticast, Public, HasDefaults)
 // Parameters:
-// struct FVector                 Location                       (Parm, IsPlainOldData)
+// struct FVector                 Location                       (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString                 Text                           (Parm, ZeroConstructor)
 
 void APavlovPlayerController::MulticastDebugPoint(const struct FVector& Location, const struct FString& Text)
@@ -7980,6 +11345,28 @@ void APavlovPlayerController::MulticastDebugPoint(const struct FVector& Location
 	UObject::ProcessEvent(fn, &params);
 
 	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPlayerController.GetHeadMountedDisplayScale
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+float APavlovPlayerController::GetHeadMountedDisplayScale()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.GetHeadMountedDisplayScale");
+
+	APavlovPlayerController_GetHeadMountedDisplayScale_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
 }
 
 
@@ -8001,29 +11388,6 @@ void APavlovPlayerController::ForgiveTeamKiller()
 }
 
 
-// Function Pavlov.PavlovPlayerController.ClientVoiceChat
-// (Net, NetReliable, Native, Event, Public, NetClient)
-// Parameters:
-// class USteamVoiceComponent*    VoiceComponent                 (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// struct FSteamworksVoicePacket  VoicePacket                    (ConstParm, Parm, ReferenceParm)
-
-void APavlovPlayerController::ClientVoiceChat(class USteamVoiceComponent* VoiceComponent, const struct FSteamworksVoicePacket& VoicePacket)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ClientVoiceChat");
-
-	APavlovPlayerController_ClientVoiceChat_Params params;
-	params.VoiceComponent = VoiceComponent;
-	params.VoicePacket = VoicePacket;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function Pavlov.PavlovPlayerController.ClientSetBuying
 // (Net, NetReliable, Native, Event, Public, NetClient)
 // Parameters:
@@ -8035,6 +11399,27 @@ void APavlovPlayerController::ClientSetBuying(bool bEnabled)
 
 	APavlovPlayerController_ClientSetBuying_Params params;
 	params.bEnabled = bEnabled;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPlayerController.ClientServerConnect
+// (Net, NetReliable, Native, Event, Public, NetClient)
+// Parameters:
+// struct FServerConnectParams    Params                         (ConstParm, Parm, ReferenceParm)
+
+void APavlovPlayerController::ClientServerConnect(const struct FServerConnectParams& Params)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ClientServerConnect");
+
+	APavlovPlayerController_ClientServerConnect_Params params;
+	params.Params = Params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -8103,16 +11488,18 @@ void APavlovPlayerController::ClientOnTeamKilled(class APavlovPlayerState* Culpr
 
 
 // Function Pavlov.PavlovPlayerController.ClientInstigateFlash
-// (Net, NetReliable, Native, Event, Public, NetClient, BlueprintCallable)
+// (Net, NetReliable, Native, Event, Public, HasDefaults, NetClient, BlueprintCallable)
 // Parameters:
 // float                          Seconds                        (Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 Location                       (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData)
 
-void APavlovPlayerController::ClientInstigateFlash(float Seconds)
+void APavlovPlayerController::ClientInstigateFlash(float Seconds, const struct FVector& Location)
 {
 	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ClientInstigateFlash");
 
 	APavlovPlayerController_ClientInstigateFlash_Params params;
 	params.Seconds = Seconds;
+	params.Location = Location;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -8134,6 +11521,27 @@ void APavlovPlayerController::ClientDisplayMessage(const struct FString& Message
 
 	APavlovPlayerController_ClientDisplayMessage_Params params;
 	params.Message = Message;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPlayerController.ClientConnectTo
+// (Net, NetReliable, Native, Event, Public, NetClient)
+// Parameters:
+// struct FString                 ConnectURL                     (Parm, ZeroConstructor)
+
+void APavlovPlayerController::ClientConnectTo(const struct FString& ConnectURL)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ClientConnectTo");
+
+	APavlovPlayerController_ClientConnectTo_Params params;
+	params.ConnectURL = ConnectURL;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -8206,6 +11614,24 @@ void APavlovPlayerController::BoardVehicle(class APavlovWheeledVehicle* Vehicle,
 }
 
 
+// Function Pavlov.PavlovPlayerController.ApplySkippedHeadMountedDisplayScale
+// (Final, Native, Public, BlueprintCallable)
+
+void APavlovPlayerController::ApplySkippedHeadMountedDisplayScale()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerController.ApplySkippedHeadMountedDisplayScale");
+
+	APavlovPlayerController_ApplySkippedHeadMountedDisplayScale_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function Pavlov.PavlovPlayerState.Reset
 // (Final, Native, Public, BlueprintCallable)
 
@@ -8214,6 +11640,24 @@ void APavlovPlayerState::Reset()
 	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerState.Reset");
 
 	APavlovPlayerState_Reset_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovPlayerState.OnRep_Flair
+// (Native, Public)
+
+void APavlovPlayerState::OnRep_Flair()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovPlayerState.OnRep_Flair");
+
+	APavlovPlayerState_OnRep_Flair_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -8411,6 +11855,28 @@ void UPavlovStatics::STATIC_SwapHands(class UObject* WorldContextObject)
 }
 
 
+// Function Pavlov.PavlovStatics.SupportsGripForce
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UPavlovStatics::STATIC_SupportsGripForce()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.SupportsGripForce");
+
+	UPavlovStatics_SupportsGripForce_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Pavlov.PavlovStatics.SpawnLocalSound2DByPawn
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -8457,6 +11923,29 @@ void UPavlovStatics::STATIC_SpawnLocalSound2D(class APlayerController* Controlle
 }
 
 
+// Function Pavlov.PavlovStatics.SpawnHitFeedbackSound
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
+// EHitFeedbackType               Type                           (Parm, ZeroConstructor, IsPlainOldData)
+
+void UPavlovStatics::STATIC_SpawnHitFeedbackSound(class UObject* WorldContextObject, EHitFeedbackType Type)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.SpawnHitFeedbackSound");
+
+	UPavlovStatics_SpawnHitFeedbackSound_Params params;
+	params.WorldContextObject = WorldContextObject;
+	params.Type = Type;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function Pavlov.PavlovStatics.SetPlayerEffectsDisabled
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -8480,6 +11969,56 @@ void UPavlovStatics::STATIC_SetPlayerEffectsDisabled(class UObject* WorldContext
 }
 
 
+// Function Pavlov.PavlovStatics.SetActorNetDormancy
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ENetDormancy>      Dormancy                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void UPavlovStatics::STATIC_SetActorNetDormancy(class AActor* Actor, TEnumAsByte<ENetDormancy> Dormancy)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.SetActorNetDormancy");
+
+	UPavlovStatics_SetActorNetDormancy_Params params;
+	params.Actor = Actor;
+	params.Dormancy = Dormancy;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovStatics.OpenPavlovMapById
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 ID                             (Parm, ZeroConstructor)
+// struct FString                 Options                        (Parm, ZeroConstructor)
+// bool                           bNoDelay                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void UPavlovStatics::STATIC_OpenPavlovMapById(class UObject* WorldContextObject, const struct FString& ID, const struct FString& Options, bool bNoDelay)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.OpenPavlovMapById");
+
+	UPavlovStatics_OpenPavlovMapById_Params params;
+	params.WorldContextObject = WorldContextObject;
+	params.ID = ID;
+	params.Options = Options;
+	params.bNoDelay = bNoDelay;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function Pavlov.PavlovStatics.IsReplay
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -8492,6 +12031,50 @@ bool UPavlovStatics::STATIC_IsReplay(class UObject* WorldContextObject)
 
 	UPavlovStatics_IsReplay_Params params;
 	params.WorldContextObject = WorldContextObject;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovStatics.IsQuestServer
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UPavlovStatics::STATIC_IsQuestServer()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.IsQuestServer");
+
+	UPavlovStatics_IsQuestServer_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovStatics.IsQuest
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UPavlovStatics::STATIC_IsQuest()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.IsQuest");
+
+	UPavlovStatics_IsQuest_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -8574,6 +12157,27 @@ bool UPavlovStatics::STATIC_IsBombDropped(class UObject* WorldContextObject)
 }
 
 
+// Function Pavlov.PavlovStatics.GoToStartUpMap
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
+
+void UPavlovStatics::STATIC_GoToStartUpMap(class UObject* WorldContextObject)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.GoToStartUpMap");
+
+	UPavlovStatics_GoToStartUpMap_Params params;
+	params.WorldContextObject = WorldContextObject;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function Pavlov.PavlovStatics.GetWorkshop
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -8585,6 +12189,54 @@ class UWorkshop* UPavlovStatics::STATIC_GetWorkshop(class UObject* WorldContextO
 	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.GetWorkshop");
 
 	UPavlovStatics_GetWorkshop_Params params;
+	params.WorldContextObject = WorldContextObject;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovStatics.GetUserId
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+struct FString UPavlovStatics::STATIC_GetUserId(class UObject* WorldContextObject)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.GetUserId");
+
+	UPavlovStatics_GetUserId_Params params;
+	params.WorldContextObject = WorldContextObject;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovStatics.GetUIManager
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
+// class UUIManager*              ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UUIManager* UPavlovStatics::STATIC_GetUIManager(class UObject* WorldContextObject)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.GetUIManager");
+
+	UPavlovStatics_GetUIManager_Params params;
 	params.WorldContextObject = WorldContextObject;
 
 	auto flags = fn->FunctionFlags;
@@ -8634,6 +12286,32 @@ class ASpectatorTVCamera* UPavlovStatics::STATIC_GetSpectatorTVCamera(class UObj
 
 	UPavlovStatics_GetSpectatorTVCamera_Params params;
 	params.WorldContextObject = WorldContextObject;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovStatics.GetRefPoseBoneTransform
+// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// class USkeletalMeshComponent*  SkelMesh                       (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// struct FName                   BoneName                       (Parm, ZeroConstructor, IsPlainOldData)
+// struct FTransform              ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+
+struct FTransform UPavlovStatics::STATIC_GetRefPoseBoneTransform(class USkeletalMeshComponent* SkelMesh, const struct FName& BoneName)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.GetRefPoseBoneTransform");
+
+	UPavlovStatics_GetRefPoseBoneTransform_Params params;
+	params.SkelMesh = SkelMesh;
+	params.BoneName = BoneName;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -8770,6 +12448,54 @@ class UPavlovGameUserSettings* UPavlovStatics::STATIC_GetPavlovGameUserSettings(
 }
 
 
+// Function Pavlov.PavlovStatics.GetPavlovGameInstance
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
+// class UPavlovGameInstance*     ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UPavlovGameInstance* UPavlovStatics::STATIC_GetPavlovGameInstance(class UObject* WorldContextObject)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.GetPavlovGameInstance");
+
+	UPavlovStatics_GetPavlovGameInstance_Params params;
+	params.WorldContextObject = WorldContextObject;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovStatics.GetMenuUniverseInstance
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
+// class AMenuUniverse*           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class AMenuUniverse* UPavlovStatics::STATIC_GetMenuUniverseInstance(class UObject* WorldContextObject)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.GetMenuUniverseInstance");
+
+	UPavlovStatics_GetMenuUniverseInstance_Params params;
+	params.WorldContextObject = WorldContextObject;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Pavlov.PavlovStatics.GetLocalPlayerState
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -8818,6 +12544,80 @@ struct FTransform UPavlovStatics::STATIC_GetLocalPlayerCameraTransform(class UOb
 }
 
 
+// Function Pavlov.PavlovStatics.GetDefaultObject
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UClass*                  ObjectClass                    (Parm, ZeroConstructor, IsPlainOldData)
+// class UObject*                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UObject* UPavlovStatics::STATIC_GetDefaultObject(class UClass* ObjectClass)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.GetDefaultObject");
+
+	UPavlovStatics_GetDefaultObject_Params params;
+	params.ObjectClass = ObjectClass;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovStatics.GetControllerByPlayerState
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class APlayerState*            PlayerState                    (Parm, ZeroConstructor, IsPlainOldData)
+// class AController*             ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class AController* UPavlovStatics::STATIC_GetControllerByPlayerState(class APlayerState* PlayerState)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.GetControllerByPlayerState");
+
+	UPavlovStatics_GetControllerByPlayerState_Params params;
+	params.PlayerState = PlayerState;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.PavlovStatics.GetBoneTransform
+// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// class USkeletalMeshComponent*  SkelMesh                       (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// struct FName                   BoneName                       (Parm, ZeroConstructor, IsPlainOldData)
+// struct FTransform              ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+
+struct FTransform UPavlovStatics::STATIC_GetBoneTransform(class USkeletalMeshComponent* SkelMesh, const struct FName& BoneName)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.GetBoneTransform");
+
+	UPavlovStatics_GetBoneTransform_Params params;
+	params.SkelMesh = SkelMesh;
+	params.BoneName = BoneName;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Pavlov.PavlovStatics.GetBombInstance
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -8842,11 +12642,53 @@ class ABomb* UPavlovStatics::STATIC_GetBombInstance(class UObject* WorldContextO
 }
 
 
+// Function Pavlov.PavlovStatics.ForceNoSoundOcclusion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UAudioComponent*         AudioComp                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+
+void UPavlovStatics::STATIC_ForceNoSoundOcclusion(class UAudioComponent* AudioComp)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.ForceNoSoundOcclusion");
+
+	UPavlovStatics_ForceNoSoundOcclusion_Params params;
+	params.AudioComp = AudioComp;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.PavlovStatics.FlushActorNetDormancy
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
+
+void UPavlovStatics::STATIC_FlushActorNetDormancy(class AActor* Actor)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.PavlovStatics.FlushActorNetDormancy");
+
+	UPavlovStatics_FlushActorNetDormancy_Params params;
+	params.Actor = Actor;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function Pavlov.PavlovStatics.FindClosestBombPlantSpot
 // (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
 // class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
-// struct FVector                 RefLocation                    (Parm, IsPlainOldData)
+// struct FVector                 RefLocation                    (Parm, ZeroConstructor, IsPlainOldData)
 // class ABombPlantSpot*          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
 class ABombPlantSpot* UPavlovStatics::STATIC_FindClosestBombPlantSpot(class UObject* WorldContextObject, const struct FVector& RefLocation)
@@ -9132,6 +12974,96 @@ void URevolverGunState::SetCylinder(bool bOpen)
 }
 
 
+// Function Pavlov.ServerBrowser.Update
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                           bUpdatePings                   (Parm, ZeroConstructor, IsPlainOldData)
+
+void UServerBrowser::Update(bool bUpdatePings)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.ServerBrowser.Update");
+
+	UServerBrowser_Update_Params params;
+	params.bUpdatePings = bUpdatePings;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.ServerBrowser.OnPingFailure
+// (Final, Native, Protected)
+// Parameters:
+// class UPingIP*                 PingOperation                  (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 Hostname                       (Parm, ZeroConstructor)
+
+void UServerBrowser::OnPingFailure(class UPingIP* PingOperation, const struct FString& Hostname)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.ServerBrowser.OnPingFailure");
+
+	UServerBrowser_OnPingFailure_Params params;
+	params.PingOperation = PingOperation;
+	params.Hostname = Hostname;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.ServerBrowser.OnPingComplete
+// (Final, Native, Protected)
+// Parameters:
+// class UPingIP*                 PingOperation                  (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 Hostname                       (Parm, ZeroConstructor)
+// int                            TimeMS                         (Parm, ZeroConstructor, IsPlainOldData)
+
+void UServerBrowser::OnPingComplete(class UPingIP* PingOperation, const struct FString& Hostname, int TimeMS)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.ServerBrowser.OnPingComplete");
+
+	UServerBrowser_OnPingComplete_Params params;
+	params.PingOperation = PingOperation;
+	params.Hostname = Hostname;
+	params.TimeMS = TimeMS;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.Shell.SpawnHitEffect
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// struct FHitResult              HitResult                      (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+
+void AShell::SpawnHitEffect(const struct FHitResult& HitResult)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Shell.SpawnHitEffect");
+
+	AShell_SpawnHitEffect_Params params;
+	params.HitResult = HitResult;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function Pavlov.SkinComponent.RequestSkin
 // (Net, NetReliable, Native, Event, Public, NetServer, BlueprintCallable, NetValidate)
 // Parameters:
@@ -9287,14 +13219,18 @@ void ASpectatorTVCamera::AddYawInput(float Value)
 }
 
 
-// Function Pavlov.Killfeed.Show
-// (Final, Native, Public, BlueprintCallable)
+// Function Pavlov.SurfaceFXAsset.GetSoundBySurfaceType
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// TEnumAsByte<EPhysicalSurface>  SurfaceType                    (Parm, ZeroConstructor, IsPlainOldData)
+// class USoundCue*               ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-void AKillfeed::Show()
+class USoundCue* USurfaceFXAsset::GetSoundBySurfaceType(TEnumAsByte<EPhysicalSurface> SurfaceType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Killfeed.Show");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.SurfaceFXAsset.GetSoundBySurfaceType");
 
-	AKillfeed_Show_Params params;
+	USurfaceFXAsset_GetSoundBySurfaceType_Params params;
+	params.SurfaceType = SurfaceType;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -9302,137 +13238,23 @@ void AKillfeed::Show()
 	UObject::ProcessEvent(fn, &params);
 
 	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
 }
 
 
-// Function Pavlov.Killfeed.OnDisplayModeUpdated
-// (Event, Public, BlueprintEvent)
-
-void AKillfeed::OnDisplayModeUpdated()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Killfeed.OnDisplayModeUpdated");
-
-	AKillfeed_OnDisplayModeUpdated_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.Killfeed.Hide
-// (Final, Native, Public, BlueprintCallable)
-
-void AKillfeed::Hide()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Killfeed.Hide");
-
-	AKillfeed_Hide_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.Vote.OnVoteEnded
-// (Native, Event, Public, BlueprintEvent)
+// Function Pavlov.SurfaceFXAsset.GetParticleBySurfaceType
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           bSucceeded                     (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EPhysicalSurface>  SurfaceType                    (Parm, ZeroConstructor, IsPlainOldData)
+// class UParticleSystem*         ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-void AVote::OnVoteEnded(bool bSucceeded)
+class UParticleSystem* USurfaceFXAsset::GetParticleBySurfaceType(TEnumAsByte<EPhysicalSurface> SurfaceType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Vote.OnVoteEnded");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.SurfaceFXAsset.GetParticleBySurfaceType");
 
-	AVote_OnVoteEnded_Params params;
-	params.bSucceeded = bSucceeded;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.Vote.MulticastOnVoteEnded
-// (Net, NetReliable, Native, Event, NetMulticast, Public)
-// Parameters:
-// bool                           bSucceeded                     (Parm, ZeroConstructor, IsPlainOldData)
-
-void AVote::MulticastOnVoteEnded(bool bSucceeded)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Vote.MulticastOnVoteEnded");
-
-	AVote_MulticastOnVoteEnded_Params params;
-	params.bSucceeded = bSucceeded;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.Watch.OnKillfeedEntry
-// (Final, Native, Private, HasOutParms)
-// Parameters:
-// struct FKillfeedEntry          NewEntry                       (ConstParm, Parm, OutParm, ReferenceParm)
-
-void UWatch::OnKillfeedEntry(const struct FKillfeedEntry& NewEntry)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Watch.OnKillfeedEntry");
-
-	UWatch_OnKillfeedEntry_Params params;
-	params.NewEntry = NewEntry;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.Watch.OnKillConfirmationPush
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class APavlovPlayerState*      Victim                         (Parm, ZeroConstructor, IsPlainOldData)
-
-void UWatch::OnKillConfirmationPush(class APavlovPlayerState* Victim)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Watch.OnKillConfirmationPush");
-
-	UWatch_OnKillConfirmationPush_Params params;
-	params.Victim = Victim;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.Watch.GetWatchAttachComponent
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// class USceneComponent*         ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
-
-class USceneComponent* UWatch::GetWatchAttachComponent()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Watch.GetWatchAttachComponent");
-
-	UWatch_GetWatchAttachComponent_Params params;
+	USurfaceFXAsset_GetParticleBySurfaceType_Params params;
+	params.SurfaceType = SurfaceType;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -9493,7 +13315,7 @@ void UTutorial::TerminateToolTip(const struct FName& ID)
 // Parameters:
 // struct FName                   ID                             (Parm, ZeroConstructor, IsPlainOldData)
 // class UObject*                 Context                        (Parm, ZeroConstructor, IsPlainOldData)
-// struct FVector                 ContextLocation                (Parm, IsPlainOldData)
+// struct FVector                 ContextLocation                (Parm, ZeroConstructor, IsPlainOldData)
 
 void UTutorial::ShowToolTip(const struct FName& ID, class UObject* Context, const struct FVector& ContextLocation)
 {
@@ -9644,8 +13466,8 @@ void AUberWheel::SetEnabled(bool bEnabled)
 // (Native, Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
 // struct FWheelSegment           Segment                        (Parm, OutParm)
-// class UUserWidget*             Instance                       (Parm, ZeroConstructor, IsPlainOldData)
-// class UUserWidget*             ContentInstance                (Parm, ZeroConstructor, IsPlainOldData)
+// class UUserWidget*             Instance                       (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// class UUserWidget*             ContentInstance                (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 
 void AUberWheel::OnUpdateSegment(class UUserWidget* Instance, class UUserWidget* ContentInstance, struct FWheelSegment* Segment)
 {
@@ -9728,6 +13550,367 @@ bool AUberWheel::IsEnabled()
 }
 
 
+// Function Pavlov.UIManager.ShowMenuUniverse
+// (Final, Native, Public, BlueprintCallable)
+
+void UUIManager::ShowMenuUniverse()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.UIManager.ShowMenuUniverse");
+
+	UUIManager_ShowMenuUniverse_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.UIManager.SetMenuUniverse
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void UUIManager::SetMenuUniverse(bool bEnabled)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.UIManager.SetMenuUniverse");
+
+	UUIManager_SetMenuUniverse_Params params;
+	params.bEnabled = bEnabled;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.UIManager.HideMenuUniverse
+// (Final, Native, Public, BlueprintCallable)
+
+void UUIManager::HideMenuUniverse()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.UIManager.HideMenuUniverse");
+
+	UUIManager_HideMenuUniverse_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.UIManager.GetModalInstance
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UModal*                  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UModal* UUIManager::GetModalInstance()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.UIManager.GetModalInstance");
+
+	UUIManager_GetModalInstance_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.UIManager.GetMenuUniverse
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class AMenuUniverse*           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class AMenuUniverse* UUIManager::GetMenuUniverse()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.UIManager.GetMenuUniverse");
+
+	UUIManager_GetMenuUniverse_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.UIManager.DismissMOTD
+// (Final, Native, Public, BlueprintCallable)
+
+void UUIManager::DismissMOTD()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.UIManager.DismissMOTD");
+
+	UUIManager_DismissMOTD_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.UIManager.CreateModalMessageBox
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// struct FText                   Message                        (ConstParm, Parm, OutParm, ReferenceParm)
+// EModalMessageBoxType           Type                           (Parm, ZeroConstructor, IsPlainOldData)
+// class UModal*                  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UModal* UUIManager::CreateModalMessageBox(const struct FText& Message, EModalMessageBoxType Type)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.UIManager.CreateModalMessageBox");
+
+	UUIManager_CreateModalMessageBox_Params params;
+	params.Message = Message;
+	params.Type = Type;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.UIManager.CreateModal
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UClass*                  ModalClass                     (Parm, ZeroConstructor, IsPlainOldData)
+// class UClass*                  ModalContent                   (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bCreateView                    (Parm, ZeroConstructor, IsPlainOldData)
+// class UModal*                  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UModal* UUIManager::CreateModal(class UClass* ModalClass, class UClass* ModalContent, bool bCreateView)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.UIManager.CreateModal");
+
+	UUIManager_CreateModal_Params params;
+	params.ModalClass = ModalClass;
+	params.ModalContent = ModalContent;
+	params.bCreateView = bCreateView;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.UIManager.ClearModalInstance
+// (Final, Native, Public, BlueprintCallable)
+
+void UUIManager::ClearModalInstance()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.UIManager.ClearModalInstance");
+
+	UUIManager_ClearModalInstance_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.VoiceComponent.OnEnvelopeValue
+// (Final, Native, Private)
+// Parameters:
+// class USoundWave*              PlayingSoundWave               (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// float                          Value                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+
+void UVoiceComponent::OnEnvelopeValue(class USoundWave* PlayingSoundWave, float Value)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.VoiceComponent.OnEnvelopeValue");
+
+	UVoiceComponent_OnEnvelopeValue_Params params;
+	params.PlayingSoundWave = PlayingSoundWave;
+	params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.VoiceRouter.ServerOnVoice
+// (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
+// Parameters:
+// struct FPavlovVoicePacket      VoicePacket                    (ConstParm, Parm, ReferenceParm)
+
+void AVoiceRouter::ServerOnVoice(const struct FPavlovVoicePacket& VoicePacket)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.VoiceRouter.ServerOnVoice");
+
+	AVoiceRouter_ServerOnVoice_Params params;
+	params.VoicePacket = VoicePacket;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.VoiceRouter.ClientOnVoiceBunch
+// (Net, NetReliable, Native, Event, Public, NetClient)
+// Parameters:
+// struct FVoicePacketBunch       VoiceBunch                     (ConstParm, Parm, ReferenceParm)
+
+void AVoiceRouter::ClientOnVoiceBunch(const struct FVoicePacketBunch& VoiceBunch)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.VoiceRouter.ClientOnVoiceBunch");
+
+	AVoiceRouter_ClientOnVoiceBunch_Params params;
+	params.VoiceBunch = VoiceBunch;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.Vote.OnVoteEnded
+// (Native, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                           bSucceeded                     (Parm, ZeroConstructor, IsPlainOldData)
+
+void AVote::OnVoteEnded(bool bSucceeded)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Vote.OnVoteEnded");
+
+	AVote_OnVoteEnded_Params params;
+	params.bSucceeded = bSucceeded;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.Vote.MulticastOnVoteEnded
+// (Net, NetReliable, Native, Event, NetMulticast, Public)
+// Parameters:
+// bool                           bSucceeded                     (Parm, ZeroConstructor, IsPlainOldData)
+
+void AVote::MulticastOnVoteEnded(bool bSucceeded)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Vote.MulticastOnVoteEnded");
+
+	AVote_MulticastOnVoteEnded_Params params;
+	params.bSucceeded = bSucceeded;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.Watch.OnKillfeedEntry
+// (Final, Native, Private, HasOutParms)
+// Parameters:
+// struct FKillfeedEntry          NewEntry                       (ConstParm, Parm, OutParm, ReferenceParm)
+
+void UWatch::OnKillfeedEntry(const struct FKillfeedEntry& NewEntry)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Watch.OnKillfeedEntry");
+
+	UWatch_OnKillfeedEntry_Params params;
+	params.NewEntry = NewEntry;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.Watch.OnKillConfirmationPush
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class APavlovPlayerState*      Victim                         (Parm, ZeroConstructor, IsPlainOldData)
+
+void UWatch::OnKillConfirmationPush(class APavlovPlayerState* Victim)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Watch.OnKillConfirmationPush");
+
+	UWatch_OnKillConfirmationPush_Params params;
+	params.Victim = Victim;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.Watch.GetWatchAttachComponent
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class USceneComponent*         ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+
+class USceneComponent* UWatch::GetWatchAttachComponent()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Watch.GetWatchAttachComponent");
+
+	UWatch_GetWatchAttachComponent_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Pavlov.Waypoint.GetNextWaypointTo
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -9758,7 +13941,7 @@ class AWaypoint* AWaypoint::GetNextWaypointTo(class AWaypoint* TargetWaypoint, i
 // (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
 // class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
-// struct FVector                 Location                       (Parm, IsPlainOldData)
+// struct FVector                 Location                       (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           bOnlyLeaf                      (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           bUseNavMesh                    (Parm, ZeroConstructor, IsPlainOldData)
 // class AWaypoint*               ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
@@ -10126,88 +14309,16 @@ void UWorkshop::CheckForDownload()
 }
 
 
-// Function Pavlov.Zombie.Revive
-// (Final, Native, Public, BlueprintCallable)
-
-void AZombie::Revive()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Zombie.Revive");
-
-	AZombie_Revive_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.Zombie.OnRep_Health
-// (Final, Native, Private)
-
-void AZombie::OnRep_Health()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Zombie.OnRep_Health");
-
-	AZombie_OnRep_Health_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.Zombie.OnRep_Dead
-// (Final, Native, Private)
-
-void AZombie::OnRep_Dead()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Zombie.OnRep_Dead");
-
-	AZombie_OnRep_Dead_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.Zombie.Kill
-// (Final, Native, Public, BlueprintCallable)
-
-void AZombie::Kill()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Zombie.Kill");
-
-	AZombie_Kill_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Pavlov.Zombie.IsDead
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function Pavlov.WoundAux.GetAvatarSkin
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// class UAvatarSkin*             ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
 
-bool AZombie::IsDead()
+class UAvatarSkin* AWoundAux::GetAvatarSkin()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Zombie.IsDead");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.WoundAux.GetAvatarSkin");
 
-	AZombie_IsDead_Params params;
+	AWoundAux_GetAvatarSkin_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -10220,23 +14331,226 @@ bool AZombie::IsDead()
 }
 
 
-// Function Pavlov.Zombie.AddWound
-// (Final, Native, Public, HasDefaults, BlueprintCallable)
+// Function Pavlov.WoundAux.GetAttachSocket
+// (Native, Event, Public, BlueprintEvent)
 // Parameters:
-// EZombieWoundType               Type                           (Parm, ZeroConstructor, IsPlainOldData)
-// struct FName                   RefBone                        (Parm, ZeroConstructor, IsPlainOldData)
-// struct FVector                 Location                       (Parm, IsPlainOldData)
-// float                          Scale                          (Parm, ZeroConstructor, IsPlainOldData)
+// struct FName                   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-void AZombie::AddWound(EZombieWoundType Type, const struct FName& RefBone, const struct FVector& Location, float Scale)
+struct FName AWoundAux::GetAttachSocket()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Zombie.AddWound");
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.WoundAux.GetAttachSocket");
 
-	AZombie_AddWound_Params params;
-	params.Type = Type;
-	params.RefBone = RefBone;
-	params.Location = Location;
-	params.Scale = Scale;
+	AWoundAux_GetAttachSocket_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.WoundComponent.SetMasterPoseComponent
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class USkeletalMeshComponent*  MeshComponent                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+
+void UWoundComponent::SetMasterPoseComponent(class USkeletalMeshComponent* MeshComponent)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.WoundComponent.SetMasterPoseComponent");
+
+	UWoundComponent_SetMasterPoseComponent_Params params;
+	params.MeshComponent = MeshComponent;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.WoundComponent.ResetWounds
+// (Final, Native, Public, BlueprintCallable)
+
+void UWoundComponent::ResetWounds()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.WoundComponent.ResetWounds");
+
+	UWoundComponent_ResetWounds_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.WoundComponent.ReportHit
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// struct FWoundInfo              WoundInfo                      (ConstParm, Parm, OutParm, ReferenceParm)
+
+void UWoundComponent::ReportHit(const struct FWoundInfo& WoundInfo)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.WoundComponent.ReportHit");
+
+	UWoundComponent_ReportHit_Params params;
+	params.WoundInfo = WoundInfo;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.WoundComponent.GetBoneState
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// struct FName                   BoneName                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
+// struct FWoundBoneState         ReturnValue                    (Parm, OutParm, ReturnParm)
+
+struct FWoundBoneState UWoundComponent::GetBoneState(const struct FName& BoneName)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.WoundComponent.GetBoneState");
+
+	UWoundComponent_GetBoneState_Params params;
+	params.BoneName = BoneName;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.WoundComponent.ApplyInheritedCustomDepthValues
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UMeshComponent*          MeshComponent                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+
+void UWoundComponent::ApplyInheritedCustomDepthValues(class UMeshComponent* MeshComponent)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.WoundComponent.ApplyInheritedCustomDepthValues");
+
+	UWoundComponent_ApplyInheritedCustomDepthValues_Params params;
+	params.MeshComponent = MeshComponent;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.WoundComponent.AddMesh
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class USkeletalMeshComponent*  MeshComponent                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+
+void UWoundComponent::AddMesh(class USkeletalMeshComponent* MeshComponent)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.WoundComponent.AddMesh");
+
+	UWoundComponent_AddMesh_Params params;
+	params.MeshComponent = MeshComponent;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.Zombie.OnWoundMaterialCreated
+// (Final, Native, Private)
+// Parameters:
+// class UMaterialInstanceDynamic* MaterialInstance               (Parm, ZeroConstructor, IsPlainOldData)
+
+void AZombie::OnWoundMaterialCreated(class UMaterialInstanceDynamic* MaterialInstance)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Zombie.OnWoundMaterialCreated");
+
+	AZombie_OnWoundMaterialCreated_Params params;
+	params.MaterialInstance = MaterialInstance;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.Zombie.MulticastOnHit
+// (Net, Native, Event, NetMulticast, Public)
+// Parameters:
+// struct FZombieHitInfo          HitInfo                        (ConstParm, Parm, ReferenceParm)
+
+void AZombie::MulticastOnHit(const struct FZombieHitInfo& HitInfo)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Zombie.MulticastOnHit");
+
+	AZombie_MulticastOnHit_Params params;
+	params.HitInfo = HitInfo;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Pavlov.Zombie.GetWoundComponent
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UWoundComponent*         ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+
+class UWoundComponent* AZombie::GetWoundComponent()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Zombie.GetWoundComponent");
+
+	AZombie_GetWoundComponent_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Pavlov.Zombie.ApplyLastHitEffect
+// (Final, Native, Private)
+
+void AZombie::ApplyLastHitEffect()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Pavlov.Zombie.ApplyLastHitEffect");
+
+	AZombie_ApplyLastHitEffect_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;

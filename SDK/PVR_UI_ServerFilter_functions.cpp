@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -37,7 +37,7 @@ void UUI_ServerFilter_C::GetSelection(struct FString* Selection)
 // Function UI_ServerFilter.UI_ServerFilter_C.SetSelection
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString                 Value                          (Parm, ZeroConstructor)
+// struct FString                 Value                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_ServerFilter_C::SetSelection(const struct FString& Value)
 {
@@ -116,8 +116,8 @@ void UUI_ServerFilter_C::Construct()
 // Function UI_ServerFilter.UI_ServerFilter_C.BndEvt__Combo_K2Node_ComponentBoundEvent_40_OnSelectionChangedEvent__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// struct FString                 SelectedItem                   (Parm, ZeroConstructor)
-// TEnumAsByte<ESelectInfo>       SelectionType                  (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 SelectedItem                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
+// TEnumAsByte<ESelectInfo>       SelectionType                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_ServerFilter_C::BndEvt__Combo_K2Node_ComponentBoundEvent_40_OnSelectionChangedEvent__DelegateSignature(const struct FString& SelectedItem, TEnumAsByte<ESelectInfo> SelectionType)
 {
@@ -136,9 +136,9 @@ void UUI_ServerFilter_C::BndEvt__Combo_K2Node_ComponentBoundEvent_40_OnSelection
 
 
 // Function UI_ServerFilter.UI_ServerFilter_C.ExecuteUbergraph_UI_ServerFilter
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_ServerFilter_C::ExecuteUbergraph_UI_ServerFilter(int EntryPoint)
 {
@@ -158,7 +158,7 @@ void UUI_ServerFilter_C::ExecuteUbergraph_UI_ServerFilter(int EntryPoint)
 // Function UI_ServerFilter.UI_ServerFilter_C.OnSelectionChanged__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString                 Selection                      (Parm, ZeroConstructor)
+// struct FString                 Selection                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_ServerFilter_C::OnSelectionChanged__DelegateSignature(const struct FString& Selection)
 {

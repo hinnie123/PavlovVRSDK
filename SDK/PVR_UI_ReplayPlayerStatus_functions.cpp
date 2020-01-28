@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,9 +13,9 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function UI_ReplayPlayerStatus.UI_ReplayPlayerStatus_C.Get_header_ColorAndOpacity_1
-// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FLinearColor            ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// struct FLinearColor            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
 struct FLinearColor UUI_ReplayPlayerStatus_C::Get_header_ColorAndOpacity_1()
 {
@@ -78,16 +78,16 @@ struct FText UUI_ReplayPlayerStatus_C::Get_CashLabel_Text_1()
 // Function UI_ReplayPlayerStatus.UI_ReplayPlayerStatus_C.Initialize
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           bLeft                          (Parm, ZeroConstructor, IsPlainOldData)
-// int                            TeamID                         (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bLeft                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// int                            TeamId                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
-void UUI_ReplayPlayerStatus_C::Initialize(bool bLeft, int TeamID)
+void UUI_ReplayPlayerStatus_C::Initialize(bool bLeft, int TeamId)
 {
 	static auto fn = UObject::FindObject<UFunction>("Function UI_ReplayPlayerStatus.UI_ReplayPlayerStatus_C.Initialize");
 
 	UUI_ReplayPlayerStatus_C_Initialize_Params params;
 	params.bLeft = bLeft;
-	params.TeamID = TeamID;
+	params.TeamId = TeamId;
 
 	auto flags = fn->FunctionFlags;
 
@@ -134,8 +134,8 @@ void UUI_ReplayPlayerStatus_C::Construct()
 // Function UI_ReplayPlayerStatus.UI_ReplayPlayerStatus_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
-// float*                         InDeltaTime                    (Parm, ZeroConstructor, IsPlainOldData)
+// struct FGeometry*              MyGeometry                     (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData)
+// float*                         InDeltaTime                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_ReplayPlayerStatus_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
@@ -154,9 +154,9 @@ void UUI_ReplayPlayerStatus_C::Tick(struct FGeometry* MyGeometry, float* InDelta
 
 
 // Function UI_ReplayPlayerStatus.UI_ReplayPlayerStatus_C.ExecuteUbergraph_UI_ReplayPlayerStatus
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_ReplayPlayerStatus_C::ExecuteUbergraph_UI_ReplayPlayerStatus(int EntryPoint)
 {

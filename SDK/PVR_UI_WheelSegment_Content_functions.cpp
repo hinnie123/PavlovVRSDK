@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 // Function UI_WheelSegment_Content.UI_WheelSegment_Content_C.OnUpdated
 // (HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FWheelSegment           Segment                        (ConstParm, Parm, OutParm, ReferenceParm)
+// struct FWheelSegment           Segment                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
 void UUI_WheelSegment_Content_C::OnUpdated(const struct FWheelSegment& Segment)
 {
@@ -33,9 +33,9 @@ void UUI_WheelSegment_Content_C::OnUpdated(const struct FWheelSegment& Segment)
 
 
 // Function UI_WheelSegment_Content.UI_WheelSegment_Content_C.ExecuteUbergraph_UI_WheelSegment_Content
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_WheelSegment_Content_C::ExecuteUbergraph_UI_WheelSegment_Content(int EntryPoint)
 {

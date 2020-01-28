@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -80,8 +80,8 @@ void USteamVRFunctionLibrary::STATIC_GetValidTrackedDeviceIds(ESteamVRTrackedDev
 // (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
 // int                            DeviceID                       (Parm, ZeroConstructor, IsPlainOldData)
-// struct FVector                 OutPosition                    (Parm, OutParm, IsPlainOldData)
-// struct FRotator                OutOrientation                 (Parm, OutParm, IsPlainOldData)
+// struct FVector                 OutPosition                    (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// struct FRotator                OutOrientation                 (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
 bool USteamVRFunctionLibrary::STATIC_GetTrackedDevicePositionAndOrientation(int DeviceID, struct FVector* OutPosition, struct FRotator* OutOrientation)
@@ -111,18 +111,18 @@ bool USteamVRFunctionLibrary::STATIC_GetTrackedDevicePositionAndOrientation(int 
 // (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
 // int                            ControllerIndex                (Parm, ZeroConstructor, IsPlainOldData)
-// EControllerHand                Hand                           (Parm, ZeroConstructor, IsPlainOldData)
-// struct FVector                 OutPosition                    (Parm, OutParm, IsPlainOldData)
-// struct FRotator                OutOrientation                 (Parm, OutParm, IsPlainOldData)
+// EControllerHand                hand                           (Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 OutPosition                    (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// struct FRotator                OutOrientation                 (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-bool USteamVRFunctionLibrary::STATIC_GetHandPositionAndOrientation(int ControllerIndex, EControllerHand Hand, struct FVector* OutPosition, struct FRotator* OutOrientation)
+bool USteamVRFunctionLibrary::STATIC_GetHandPositionAndOrientation(int ControllerIndex, EControllerHand hand, struct FVector* OutPosition, struct FRotator* OutOrientation)
 {
 	static auto fn = UObject::FindObject<UFunction>("Function SteamVR.SteamVRFunctionLibrary.GetHandPositionAndOrientation");
 
 	USteamVRFunctionLibrary_GetHandPositionAndOrientation_Params params;
 	params.ControllerIndex = ControllerIndex;
-	params.Hand = Hand;
+	params.hand = hand;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;

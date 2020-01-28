@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -35,7 +35,7 @@ struct UUI_KillerCam_KillerInfo_C_Get_weaponicon_Brush_1_Params
 // Function UI_KillerCam_KillerInfo.UI_KillerCam_KillerInfo_C.GetColorAndOpacity_1
 struct UUI_KillerCam_KillerInfo_C_GetColorAndOpacity_1_Params
 {
-	struct FLinearColor                                ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+	struct FLinearColor                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function UI_KillerCam_KillerInfo.UI_KillerCam_KillerInfo_C.GetBrush_1
@@ -59,6 +59,7 @@ struct UUI_KillerCam_KillerInfo_C_Get_Avatar_Brush_1_Params
 // Function UI_KillerCam_KillerInfo.UI_KillerCam_KillerInfo_C.GetText_1
 struct UUI_KillerCam_KillerInfo_C_GetText_1_Params
 {
+	struct FText                                       ReturnValue;                                              // (Parm, OutParm, ReturnParm)
 };
 
 }

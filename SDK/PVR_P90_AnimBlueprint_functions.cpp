@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -12,14 +12,14 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
-// Function P90_AnimBlueprint.P90_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_7EF2332D423D3E51E04F399EDA60350B
+// Function P90_AnimBlueprint.P90_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_DBD1B350484AB5145F8DC9BA59731C59
 // (BlueprintEvent)
 
-void UP90_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_7EF2332D423D3E51E04F399EDA60350B()
+void UP90_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_DBD1B350484AB5145F8DC9BA59731C59()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function P90_AnimBlueprint.P90_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_7EF2332D423D3E51E04F399EDA60350B");
+	static auto fn = UObject::FindObject<UFunction>("Function P90_AnimBlueprint.P90_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_DBD1B350484AB5145F8DC9BA59731C59");
 
-	UP90_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_7EF2332D423D3E51E04F399EDA60350B_Params params;
+	UP90_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_DBD1B350484AB5145F8DC9BA59731C59_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -29,14 +29,14 @@ void UP90_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimB
 }
 
 
-// Function P90_AnimBlueprint.P90_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_6B01186740C3081C6D007287CDE7FBFA
+// Function P90_AnimBlueprint.P90_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_07D300CF4AF50B337DB27EA934ADD3A1
 // (BlueprintEvent)
 
-void UP90_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_6B01186740C3081C6D007287CDE7FBFA()
+void UP90_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_07D300CF4AF50B337DB27EA934ADD3A1()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function P90_AnimBlueprint.P90_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_6B01186740C3081C6D007287CDE7FBFA");
+	static auto fn = UObject::FindObject<UFunction>("Function P90_AnimBlueprint.P90_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_07D300CF4AF50B337DB27EA934ADD3A1");
 
-	UP90_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_6B01186740C3081C6D007287CDE7FBFA_Params params;
+	UP90_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_07D300CF4AF50B337DB27EA934ADD3A1_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -46,14 +46,31 @@ void UP90_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimB
 }
 
 
-// Function P90_AnimBlueprint.P90_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_68F3318C46BD6A91EB230DBA65CAED42
+// Function P90_AnimBlueprint.P90_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_696219014466477756AAC3BE97B037EF
 // (BlueprintEvent)
 
-void UP90_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_68F3318C46BD6A91EB230DBA65CAED42()
+void UP90_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_696219014466477756AAC3BE97B037EF()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function P90_AnimBlueprint.P90_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_68F3318C46BD6A91EB230DBA65CAED42");
+	static auto fn = UObject::FindObject<UFunction>("Function P90_AnimBlueprint.P90_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_696219014466477756AAC3BE97B037EF");
 
-	UP90_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_68F3318C46BD6A91EB230DBA65CAED42_Params params;
+	UP90_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_696219014466477756AAC3BE97B037EF_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function P90_AnimBlueprint.P90_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_3DFF87BF4AB13942AAD330B680CEB22B
+// (BlueprintEvent)
+
+void UP90_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_3DFF87BF4AB13942AAD330B680CEB22B()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function P90_AnimBlueprint.P90_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_3DFF87BF4AB13942AAD330B680CEB22B");
+
+	UP90_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimBlueprint_AnimGraphNode_ModifyBone_3DFF87BF4AB13942AAD330B680CEB22B_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -64,9 +81,9 @@ void UP90_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_P90_AnimB
 
 
 // Function P90_AnimBlueprint.P90_AnimBlueprint_C.ExecuteUbergraph_P90_AnimBlueprint
-// (HasDefaults)
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UP90_AnimBlueprint_C::ExecuteUbergraph_P90_AnimBlueprint(int EntryPoint)
 {

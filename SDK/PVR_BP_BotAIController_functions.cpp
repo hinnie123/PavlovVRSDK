@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -70,8 +70,8 @@ void ABP_BotAIController_C::ReloadWeapon()
 // Function BP_BotAIController.BP_BotAIController_C.AreControllersFoes
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class AController*             A                              (Parm, ZeroConstructor, IsPlainOldData)
-// class AController*             B                              (Parm, ZeroConstructor, IsPlainOldData)
+// class AController*             A                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// class AController*             B                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 // bool                           Is_Foe                         (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 
 void ABP_BotAIController_C::AreControllersFoes(class AController* A, class AController* B, bool* Is_Foe)
@@ -113,7 +113,7 @@ void ABP_BotAIController_C::UserConstructionScript()
 // Function BP_BotAIController.BP_BotAIController_C.OnKill_Event_1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                  Owner                          (Parm, ZeroConstructor, IsPlainOldData)
+// class AActor*                  Owner                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void ABP_BotAIController_C::OnKill_Event_1(class AActor* Owner)
 {
@@ -133,7 +133,7 @@ void ABP_BotAIController_C::OnKill_Event_1(class AActor* Owner)
 // Function BP_BotAIController.BP_BotAIController_C.OnUnpossess
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// class APawn**                  UnpossessedPawn                (Parm, ZeroConstructor, IsPlainOldData)
+// class APawn**                  UnpossessedPawn                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void ABP_BotAIController_C::OnUnpossess(class APawn** UnpossessedPawn)
 {
@@ -153,7 +153,7 @@ void ABP_BotAIController_C::OnUnpossess(class APawn** UnpossessedPawn)
 // Function BP_BotAIController.BP_BotAIController_C.OnPossess
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// class APawn**                  PossessedPawn                  (Parm, ZeroConstructor, IsPlainOldData)
+// class APawn**                  PossessedPawn                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void ABP_BotAIController_C::OnPossess(class APawn** PossessedPawn)
 {
@@ -188,9 +188,9 @@ void ABP_BotAIController_C::ReceiveBeginPlay()
 
 
 // Function BP_BotAIController.BP_BotAIController_C.ExecuteUbergraph_BP_BotAIController
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void ABP_BotAIController_C::ExecuteUbergraph_BP_BotAIController(int EntryPoint)
 {

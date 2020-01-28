@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -50,21 +50,24 @@ public:
 class TUObjectArray
 {
 public:
+	static uintptr_t g_objects;
+
 	inline int32_t Num() const
 	{
-		return NumElements;
+		return *(int32_t*)((uintptr_t)GetModuleHandleA(0) + g_objects + 0x14);
 	}
-
+ 
 	inline UObject* GetByIndex(int32_t index) const
 	{
-		return Objects[index].Object;
+		static auto objects = *(uintptr_t*)((uintptr_t)GetModuleHandleA(0) + g_objects);
+		return (UObject*)(*(uintptr_t*)(*(uintptr_t*)(objects + 8 * (index / 0x10000)) + 24 * (index % 0x10000)));
 	}
 
 	inline FUObjectItem* GetItemByIndex(int32_t index) const
 	{
 		if (index < NumElements)
 		{
-			return &Objects[index];
+			return (FUObjectItem*)GetByIndex(index);
 		}
 		return nullptr;
 	}

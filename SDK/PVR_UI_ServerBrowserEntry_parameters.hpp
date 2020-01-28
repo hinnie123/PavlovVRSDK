@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -22,19 +22,19 @@ struct UUI_ServerBrowserEntry_C_BndEvt__JoinButton_K2Node_ComponentBoundEvent_16
 // Function UI_ServerBrowserEntry.UI_ServerBrowserEntry_C.Update
 struct UUI_ServerBrowserEntry_C_Update_Params
 {
-	struct FPavlovServerInfo                           ServerInfoA;                                              // (Parm)
+	struct FPavlovServerInfo                           ServerInfoA;                                              // (BlueprintVisible, BlueprintReadOnly, Parm)
 };
 
 // Function UI_ServerBrowserEntry.UI_ServerBrowserEntry_C.ExecuteUbergraph_UI_ServerBrowserEntry
 struct UUI_ServerBrowserEntry_C_ExecuteUbergraph_UI_ServerBrowserEntry_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UI_ServerBrowserEntry.UI_ServerBrowserEntry_C.OnJoinClicked__DelegateSignature
 struct UUI_ServerBrowserEntry_C_OnJoinClicked__DelegateSignature_Params
 {
-	struct FPavlovServerInfo                           Server;                                                   // (Parm)
+	struct FPavlovServerInfo                           Server;                                                   // (BlueprintVisible, BlueprintReadOnly, Parm)
 };
 
 }

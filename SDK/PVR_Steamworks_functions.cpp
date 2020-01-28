@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -11,6 +11,28 @@ namespace SDK
 //---------------------------------------------------------------------------
 //Functions
 //---------------------------------------------------------------------------
+
+// Function Steamworks.SteamItem.GetType
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FName                   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+struct FName USteamItem::GetType()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamItem.GetType");
+
+	USteamItem_GetType_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
 
 // Function Steamworks.SteamLobby.SetVoiceChat
 // (Final, Native, Public, BlueprintCallable)
@@ -301,6 +323,27 @@ struct FString USteamLobby::GetLobbyData(const struct FString& Key)
 }
 
 
+// Function Steamworks.SteamRadio.InitializePlaybackChannels
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class USoundCue*               ChannelCue                     (Parm, ZeroConstructor, IsPlainOldData)
+
+void ASteamRadio::InitializePlaybackChannels(class USoundCue* ChannelCue)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamRadio.InitializePlaybackChannels");
+
+	ASteamRadio_InitializePlaybackChannels_Params params;
+	params.ChannelCue = ChannelCue;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function Steamworks.SteamVoiceComponent.ToggleRadio
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -500,49 +543,6 @@ bool USteamVoiceComponent::IsTalking()
 }
 
 
-// Function Steamworks.SteamItem.GetType
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// struct FName                   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-struct FName USteamItem::GetType()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamItem.GetType");
-
-	USteamItem_GetType_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Steamworks.SteamRadio.InitializePlaybackChannels
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class USoundCue*               ChannelCue                     (Parm, ZeroConstructor, IsPlainOldData)
-
-void ASteamRadio::InitializePlaybackChannels(class USoundCue* ChannelCue)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamRadio.InitializePlaybackChannels");
-
-	ASteamRadio_InitializePlaybackChannels_Params params;
-	params.ChannelCue = ChannelCue;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function Steamworks.SteamworksManager.SetVoiceRecording
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -564,6 +564,27 @@ void USteamworksManager::SetVoiceRecording(bool bEnabled)
 }
 
 
+// Function Steamworks.SteamworksManager.RequestServerList
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// TArray<struct FSteamServerListKeyValue> Filter                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+
+void USteamworksManager::RequestServerList(TArray<struct FSteamServerListKeyValue> Filter)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksManager.RequestServerList");
+
+	USteamworksManager_RequestServerList_Params params;
+	params.Filter = Filter;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function Steamworks.SteamworksManager.RequestLobbyList
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -575,6 +596,24 @@ void USteamworksManager::RequestLobbyList(bool bWithData)
 
 	USteamworksManager_RequestLobbyList_Params params;
 	params.bWithData = bWithData;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Steamworks.SteamworksManager.RefreshServerList
+// (Final, Native, Public, BlueprintCallable)
+
+void USteamworksManager::RefreshServerList()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksManager.RefreshServerList");
+
+	USteamworksManager_RefreshServerList_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -645,6 +684,50 @@ void USteamworksManager::JoinLobby(const struct FSteamLobbyInfo& LobbyInfo)
 }
 
 
+// Function Steamworks.SteamworksManager.IsServerListActive
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool USteamworksManager::IsServerListActive()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksManager.IsServerListActive");
+
+	USteamworksManager_IsServerListActive_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Steamworks.SteamworksManager.IsRefreshingServerList
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool USteamworksManager::IsRefreshingServerList()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksManager.IsRefreshingServerList");
+
+	USteamworksManager_IsRefreshingServerList_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Steamworks.SteamworksManager.IsRecordingVoice
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -679,6 +762,56 @@ bool USteamworksManager::HasInstanceOf(int DefinitionId)
 
 	USteamworksManager_HasInstanceOf_Params params;
 	params.DefinitionId = DefinitionId;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Steamworks.SteamworksManager.GetServerInfo
+// (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int                            Index                          (Parm, ZeroConstructor, IsPlainOldData)
+// struct FSteamServerInfo        ServerInfo                     (Parm, OutParm)
+// bool                           bSuccessful                    (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+
+void USteamworksManager::GetServerInfo(int Index, struct FSteamServerInfo* ServerInfo, bool* bSuccessful)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksManager.GetServerInfo");
+
+	USteamworksManager_GetServerInfo_Params params;
+	params.Index = Index;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (ServerInfo != nullptr)
+		*ServerInfo = params.ServerInfo;
+	if (bSuccessful != nullptr)
+		*bSuccessful = params.bSuccessful;
+}
+
+
+// Function Steamworks.SteamworksManager.GetServerCount
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+int USteamworksManager::GetServerCount()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksManager.GetServerCount");
+
+	USteamworksManager_GetServerCount_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -1002,6 +1135,30 @@ void USteamworksManager::AddRequestLobbyListDistanceFilter(ESteamLobbyDistanceFi
 	UObject::ProcessEvent(fn, &params);
 
 	fn->FunctionFlags = flags;
+}
+
+
+// Function Steamworks.SteamworksStatics.GetSteamPersonaName
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+struct FString USteamworksStatics::STATIC_GetSteamPersonaName(class UObject* WorldContextObject)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function Steamworks.SteamworksStatics.GetSteamPersonaName");
+
+	USteamworksStatics_GetSteamPersonaName_Params params;
+	params.WorldContextObject = WorldContextObject;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
 }
 
 

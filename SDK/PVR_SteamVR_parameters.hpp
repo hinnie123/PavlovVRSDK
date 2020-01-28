@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -36,8 +36,8 @@ struct USteamVRFunctionLibrary_GetValidTrackedDeviceIds_Params
 struct USteamVRFunctionLibrary_GetTrackedDevicePositionAndOrientation_Params
 {
 	int                                                DeviceID;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     OutPosition;                                              // (Parm, OutParm, IsPlainOldData)
-	struct FRotator                                    OutOrientation;                                           // (Parm, OutParm, IsPlainOldData)
+	struct FVector                                     OutPosition;                                              // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+	struct FRotator                                    OutOrientation;                                           // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -45,9 +45,9 @@ struct USteamVRFunctionLibrary_GetTrackedDevicePositionAndOrientation_Params
 struct USteamVRFunctionLibrary_GetHandPositionAndOrientation_Params
 {
 	int                                                ControllerIndex;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	EControllerHand                                    Hand;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     OutPosition;                                              // (Parm, OutParm, IsPlainOldData)
-	struct FRotator                                    OutOrientation;                                           // (Parm, OutParm, IsPlainOldData)
+	EControllerHand                                    hand;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     OutPosition;                                              // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+	struct FRotator                                    OutOrientation;                                           // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 

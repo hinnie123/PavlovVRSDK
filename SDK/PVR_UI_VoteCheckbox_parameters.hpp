@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -17,7 +17,7 @@ namespace SDK
 // Function UI_VoteCheckbox.UI_VoteCheckbox_C.SetState
 struct UUI_VoteCheckbox_C_SetState_Params
 {
-	EVoteState                                         State;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	EVoteState                                         State;                                                    // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

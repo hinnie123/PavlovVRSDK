@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 // Function BP_Watch.BP_Watch_C.OnKillConfirmationPush
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// class APavlovPlayerState**     Victim                         (Parm, ZeroConstructor, IsPlainOldData)
+// class APavlovPlayerState**     Victim                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UBP_Watch_C::OnKillConfirmationPush(class APavlovPlayerState** Victim)
 {
@@ -33,9 +33,9 @@ void UBP_Watch_C::OnKillConfirmationPush(class APavlovPlayerState** Victim)
 
 
 // Function BP_Watch.BP_Watch_C.ExecuteUbergraph_BP_Watch
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UBP_Watch_C::ExecuteUbergraph_BP_Watch(int EntryPoint)
 {

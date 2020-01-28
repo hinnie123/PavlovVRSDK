@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -11,6 +11,22 @@ namespace SDK
 //---------------------------------------------------------------------------
 //Classes
 //---------------------------------------------------------------------------
+
+// Class SlateCore.SlateWidgetStyleContainerBase
+// 0x0008 (0x0030 - 0x0028)
+class USlateWidgetStyleContainerBase : public UObject
+{
+public:
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0028(0x0008) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class SlateCore.SlateWidgetStyleContainerBase");
+		return ptr;
+	}
+
+};
+
 
 // Class SlateCore.FontBulkData
 // 0x0098 (0x00C0 - 0x0028)
@@ -73,37 +89,6 @@ public:
 };
 
 
-// Class SlateCore.SlateWidgetStyleContainerInterface
-// 0x0000 (0x0028 - 0x0028)
-class USlateWidgetStyleContainerInterface : public UInterface
-{
-public:
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class SlateCore.SlateWidgetStyleContainerInterface");
-		return ptr;
-	}
-
-};
-
-
-// Class SlateCore.SlateWidgetStyleContainerBase
-// 0x0008 (0x0030 - 0x0028)
-class USlateWidgetStyleContainerBase : public UObject
-{
-public:
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0028(0x0008) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class SlateCore.SlateWidgetStyleContainerBase");
-		return ptr;
-	}
-
-};
-
-
 // Class SlateCore.SlateWidgetStyleAsset
 // 0x0008 (0x0030 - 0x0028)
 class USlateWidgetStyleAsset : public UObject
@@ -114,6 +99,21 @@ public:
 	static UClass* StaticClass()
 	{
 		static auto ptr = UObject::FindClass("Class SlateCore.SlateWidgetStyleAsset");
+		return ptr;
+	}
+
+};
+
+
+// Class SlateCore.SlateWidgetStyleContainerInterface
+// 0x0000 (0x0028 - 0x0028)
+class USlateWidgetStyleContainerInterface : public UInterface
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class SlateCore.SlateWidgetStyleContainerInterface");
 		return ptr;
 	}
 

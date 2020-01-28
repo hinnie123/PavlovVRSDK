@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -17,7 +17,7 @@ namespace SDK
 // Function Vote_Base.Vote_Base_C.CreateContentWidget
 struct AVote_Base_C_CreateContentWidget_Params
 {
-	class UUserWidget*                                 Content;                                                  // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+	class UUserWidget*                                 Content;                                                  // (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData)
 };
 
 // Function Vote_Base.Vote_Base_C.UserConstructionScript
@@ -33,13 +33,13 @@ struct AVote_Base_C_ReceiveBeginPlay_Params
 // Function Vote_Base.Vote_Base_C.OnVoteEnded
 struct AVote_Base_C_OnVoteEnded_Params
 {
-	bool*                                              bSucceeded;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	bool*                                              bSucceeded;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Vote_Base.Vote_Base_C.ExecuteUbergraph_Vote_Base
 struct AVote_Base_C_ExecuteUbergraph_Vote_Base_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

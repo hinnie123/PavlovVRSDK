@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 // Function UI_ReplayTeamStatus.UI_ReplayTeamStatus_C.Select
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int                            Index                          (Parm, ZeroConstructor, IsPlainOldData)
+// int                            Index                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_ReplayTeamStatus_C::Select(int Index)
 {
@@ -69,8 +69,8 @@ void UUI_ReplayTeamStatus_C::Construct()
 // Function UI_ReplayTeamStatus.UI_ReplayTeamStatus_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
-// float*                         InDeltaTime                    (Parm, ZeroConstructor, IsPlainOldData)
+// struct FGeometry*              MyGeometry                     (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData)
+// float*                         InDeltaTime                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_ReplayTeamStatus_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
@@ -89,9 +89,9 @@ void UUI_ReplayTeamStatus_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTi
 
 
 // Function UI_ReplayTeamStatus.UI_ReplayTeamStatus_C.ExecuteUbergraph_UI_ReplayTeamStatus
-// (HasDefaults)
+// (Final, HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_ReplayTeamStatus_C::ExecuteUbergraph_UI_ReplayTeamStatus(int EntryPoint)
 {

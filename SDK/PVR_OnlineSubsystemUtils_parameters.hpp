@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -277,16 +277,6 @@ struct APartyBeaconClient_ClientCancelReservationResponse_Params
 	TEnumAsByte<EPartyReservationResult>               ReservationResponse;                                      // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function OnlineSubsystemUtils.TestBeaconClient.ServerPong
-struct ATestBeaconClient_ServerPong_Params
-{
-};
-
-// Function OnlineSubsystemUtils.TestBeaconClient.ClientPing
-struct ATestBeaconClient_ClientPing_Params
-{
-};
-
 // Function OnlineSubsystemUtils.QuitMatchCallbackProxy.QuitMatch
 struct UQuitMatchCallbackProxy_QuitMatch_Params
 {
@@ -304,6 +294,16 @@ struct UShowLoginUICallbackProxy_ShowExternalLoginUI_Params
 	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 	class APlayerController*                           InPlayerController;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 	class UShowLoginUICallbackProxy*                   ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function OnlineSubsystemUtils.TestBeaconClient.ServerPong
+struct ATestBeaconClient_ServerPong_Params
+{
+};
+
+// Function OnlineSubsystemUtils.TestBeaconClient.ClientPing
+struct ATestBeaconClient_ClientPing_Params
+{
 };
 
 // Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.RegisterTurnBasedMatchInterfaceObject
@@ -340,6 +340,12 @@ struct UTurnBasedBlueprintLibrary_GetIsMyTurn_Params
 	class APlayerController*                           PlayerController;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FString                                     MatchID;                                                  // (Parm, ZeroConstructor)
 	bool                                               bIsMyTurn;                                                // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function OnlineSubsystemUtils.VoipListenerSynthComponent.IsIdling
+struct UVoipListenerSynthComponent_IsIdling_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 }

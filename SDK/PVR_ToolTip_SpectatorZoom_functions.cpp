@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -49,7 +49,7 @@ void AToolTip_SpectatorZoom_C::ReceiveBeginPlay()
 // Function ToolTip_SpectatorZoom.ToolTip_SpectatorZoom_C.CustomEvent_2
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          Scale                          (Parm, ZeroConstructor, IsPlainOldData)
+// float                          Scale                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AToolTip_SpectatorZoom_C::CustomEvent_2(float Scale)
 {
@@ -67,9 +67,9 @@ void AToolTip_SpectatorZoom_C::CustomEvent_2(float Scale)
 
 
 // Function ToolTip_SpectatorZoom.ToolTip_SpectatorZoom_C.ExecuteUbergraph_ToolTip_SpectatorZoom
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AToolTip_SpectatorZoom_C::ExecuteUbergraph_ToolTip_SpectatorZoom(int EntryPoint)
 {

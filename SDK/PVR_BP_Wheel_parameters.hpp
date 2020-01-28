@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -14,18 +14,43 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function BP_Wheel.BP_Wheel_C.DoesPickupSupportsAttachments
+struct ABP_Wheel_C_DoesPickupSupportsAttachments_Params
+{
+	struct FName                                       EquipmentName;                                            // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               SupportsAttaments;                                        // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function BP_Wheel.BP_Wheel_C.DoesEquipmentSupportsAttachments
+struct ABP_Wheel_C_DoesEquipmentSupportsAttachments_Params
+{
+	struct FName                                       EquipmentName;                                            // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               SupportsAttaments;                                        // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function BP_Wheel.BP_Wheel_C.EnqueDelayedUpdate
+struct ABP_Wheel_C_EnqueDelayedUpdate_Params
+{
+};
+
+// Function BP_Wheel.BP_Wheel_C.GetAttachmentList
+struct ABP_Wheel_C_GetAttachmentList_Params
+{
+	TArray<struct FWheelSegment>                       Segments;                                                 // (Parm, OutParm, ZeroConstructor)
+};
+
 // Function BP_Wheel.BP_Wheel_C.EnableMenuFromGhost
 struct ABP_Wheel_C_EnableMenuFromGhost_Params
 {
-	class AVRPawn*                                     self2;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	class AVRPawn*                                     self3;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	class AVRPawn*                                     self2;                                                    // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+	class AVRPawn*                                     self3;                                                    // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BP_Wheel.BP_Wheel_C.HandleTkCommit
 struct ABP_Wheel_C_HandleTkCommit_Params
 {
-	struct FWheelSegment                               WheelSegment;                                             // (ConstParm, Parm, OutParm, ReferenceParm)
-	struct FName                                       Selection;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FWheelSegment                               WheelSegment;                                             // (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FName                                       Selection;                                                // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BP_Wheel.BP_Wheel_C.SwitchToTKMenu
@@ -46,20 +71,20 @@ struct ABP_Wheel_C_CommitAndClose_Params
 // Function BP_Wheel.BP_Wheel_C.HandleBuyCommit
 struct ABP_Wheel_C_HandleBuyCommit_Params
 {
-	int                                                A;                                                        // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FWheelSegment                               WheelSegment;                                             // (ConstParm, Parm, OutParm, ReferenceParm)
+	int                                                A;                                                        // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+	struct FWheelSegment                               WheelSegment;                                             // (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
 
 // Function BP_Wheel.BP_Wheel_C.SetCenterLabel
 struct ABP_Wheel_C_SetCenterLabel_Params
 {
-	struct FText                                       CenterLabel;                                              // (Parm)
+	struct FText                                       CenterLabel;                                              // (BlueprintVisible, BlueprintReadOnly, Parm)
 };
 
 // Function BP_Wheel.BP_Wheel_C.GetBuySegment List
 struct ABP_Wheel_C_GetBuySegment_List_Params
 {
-	TEnumAsByte<EBuyMenuMode>                          Index;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBuyMenuMode>                          Index;                                                    // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 	TArray<struct FWheelSegment>                       Segments;                                                 // (Parm, OutParm, ZeroConstructor)
 };
 
@@ -73,6 +98,23 @@ struct ABP_Wheel_C_UserConstructionScript_Params
 {
 };
 
+// Function BP_Wheel.BP_Wheel_C.OnCommit
+struct ABP_Wheel_C_OnCommit_Params
+{
+	int*                                               Selection;                                                // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+	struct FWheelSegment*                              Segment;                                                  // (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+
+// Function BP_Wheel.BP_Wheel_C.OnEnabled
+struct ABP_Wheel_C_OnEnabled_Params
+{
+};
+
+// Function BP_Wheel.BP_Wheel_C.UpdateBuyMenu
+struct ABP_Wheel_C_UpdateBuyMenu_Params
+{
+};
+
 // Function BP_Wheel.BP_Wheel_C.ReceiveBeginPlay
 struct ABP_Wheel_C_ReceiveBeginPlay_Params
 {
@@ -81,17 +123,7 @@ struct ABP_Wheel_C_ReceiveBeginPlay_Params
 // Function BP_Wheel.BP_Wheel_C.OnBuyingChanged_Event_1
 struct ABP_Wheel_C_OnBuyingChanged_Event_1_Params
 {
-	bool                                               bBuying;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function BP_Wheel.BP_Wheel_C.UpdateBuyMenu
-struct ABP_Wheel_C_UpdateBuyMenu_Params
-{
-};
-
-// Function BP_Wheel.BP_Wheel_C.OnEnabled
-struct ABP_Wheel_C_OnEnabled_Params
-{
+	bool                                               bBuying;                                                  // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BP_Wheel.BP_Wheel_C.CustomEvent_1
@@ -99,17 +131,10 @@ struct ABP_Wheel_C_CustomEvent_1_Params
 {
 };
 
-// Function BP_Wheel.BP_Wheel_C.OnCommit
-struct ABP_Wheel_C_OnCommit_Params
-{
-	int*                                               Selection;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FWheelSegment*                              Segment;                                                  // (ConstParm, Parm, OutParm, ReferenceParm)
-};
-
 // Function BP_Wheel.BP_Wheel_C.ExecuteUbergraph_BP_Wheel
 struct ABP_Wheel_C_ExecuteUbergraph_BP_Wheel_Params
 {
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

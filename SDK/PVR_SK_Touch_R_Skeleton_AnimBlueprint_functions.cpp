@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -29,27 +29,10 @@ void USK_Touch_R_Skeleton_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbe
 }
 
 
-// Function SK_Touch_R_Skeleton_AnimBlueprint.SK_Touch_R_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_SK_Touch_R_Skeleton_AnimBlueprint_AnimGraphNode_ModifyBone_5C7E0700415C7D73C34489B671511E51
-// (BlueprintEvent)
-
-void USK_Touch_R_Skeleton_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SK_Touch_R_Skeleton_AnimBlueprint_AnimGraphNode_ModifyBone_5C7E0700415C7D73C34489B671511E51()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function SK_Touch_R_Skeleton_AnimBlueprint.SK_Touch_R_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_SK_Touch_R_Skeleton_AnimBlueprint_AnimGraphNode_ModifyBone_5C7E0700415C7D73C34489B671511E51");
-
-	USK_Touch_R_Skeleton_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_SK_Touch_R_Skeleton_AnimBlueprint_AnimGraphNode_ModifyBone_5C7E0700415C7D73C34489B671511E51_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function SK_Touch_R_Skeleton_AnimBlueprint.SK_Touch_R_Skeleton_AnimBlueprint_C.ExecuteUbergraph_SK_Touch_R_Skeleton_AnimBlueprint
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void USK_Touch_R_Skeleton_AnimBlueprint_C::ExecuteUbergraph_SK_Touch_R_Skeleton_AnimBlueprint(int EntryPoint)
 {

@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -47,9 +47,9 @@ void UKar98_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Kar98_A
 
 
 // Function Kar98_AnimBlueprint.Kar98_AnimBlueprint_C.ExecuteUbergraph_Kar98_AnimBlueprint
-// (HasDefaults)
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UKar98_AnimBlueprint_C::ExecuteUbergraph_Kar98_AnimBlueprint(int EntryPoint)
 {

@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 // Function BP_SpectatorTVCamera.BP_SpectatorTVCamera_C.GetSceneCapture
 // (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USceneCaptureComponent2D* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// class USceneCaptureComponent2D* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
 
 class USceneCaptureComponent2D* ABP_SpectatorTVCamera_C::GetSceneCapture()
 {
@@ -85,9 +85,9 @@ void ABP_SpectatorTVCamera_C::OnAttachedToFocusedPawn()
 
 
 // Function BP_SpectatorTVCamera.BP_SpectatorTVCamera_C.ExecuteUbergraph_BP_SpectatorTVCamera
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void ABP_SpectatorTVCamera_C::ExecuteUbergraph_BP_SpectatorTVCamera(int EntryPoint)
 {

@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,8 +15,8 @@ namespace SDK
 // Function UI_WorkshopCombo.UI_WorkshopCombo_C.On_Combo_GenerateWidget_1
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString                 Item                           (Parm, ZeroConstructor)
-// class UWidget*                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// struct FString                 Item                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
+// class UWidget*                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
 
 class UWidget* UUI_WorkshopCombo_C::On_Combo_GenerateWidget_1(const struct FString& Item)
 {
@@ -55,7 +55,7 @@ void UUI_WorkshopCombo_C::BuildCombo()
 // Function UI_WorkshopCombo.UI_WorkshopCombo_C.SetSelection
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString                 Value                          (Parm, ZeroConstructor)
+// struct FString                 Value                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_WorkshopCombo_C::SetSelection(const struct FString& Value)
 {
@@ -134,8 +134,8 @@ void UUI_WorkshopCombo_C::Construct()
 // Function UI_WorkshopCombo.UI_WorkshopCombo_C.BndEvt__Combo_K2Node_ComponentBoundEvent_40_OnSelectionChangedEvent__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// struct FString                 SelectedItem                   (Parm, ZeroConstructor)
-// TEnumAsByte<ESelectInfo>       SelectionType                  (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 SelectedItem                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
+// TEnumAsByte<ESelectInfo>       SelectionType                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_WorkshopCombo_C::BndEvt__Combo_K2Node_ComponentBoundEvent_40_OnSelectionChangedEvent__DelegateSignature(const struct FString& SelectedItem, TEnumAsByte<ESelectInfo> SelectionType)
 {
@@ -171,9 +171,9 @@ void UUI_WorkshopCombo_C::BndEvt__Combo_K2Node_ComponentBoundEvent_3_OnOpeningEv
 
 
 // Function UI_WorkshopCombo.UI_WorkshopCombo_C.ExecuteUbergraph_UI_WorkshopCombo
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_WorkshopCombo_C::ExecuteUbergraph_UI_WorkshopCombo(int EntryPoint)
 {
@@ -193,7 +193,7 @@ void UUI_WorkshopCombo_C::ExecuteUbergraph_UI_WorkshopCombo(int EntryPoint)
 // Function UI_WorkshopCombo.UI_WorkshopCombo_C.OnSelectionChanged__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString                 Selection                      (Parm, ZeroConstructor)
+// struct FString                 Selection                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_WorkshopCombo_C::OnSelectionChanged__DelegateSignature(const struct FString& Selection)
 {

@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -49,7 +49,7 @@ void AToolTip_Spec_Cycle_C::ReceiveBeginPlay()
 // Function ToolTip_Spec_Cycle.ToolTip_Spec_Cycle_C.OnControllerTriggerChanged
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           bTriggered                     (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bTriggered                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AToolTip_Spec_Cycle_C::OnControllerTriggerChanged(bool bTriggered)
 {
@@ -69,7 +69,7 @@ void AToolTip_Spec_Cycle_C::OnControllerTriggerChanged(bool bTriggered)
 // Function ToolTip_Spec_Cycle.ToolTip_Spec_Cycle_C.OnDestroyed_Event_1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                  DestroyedActor                 (Parm, ZeroConstructor, IsPlainOldData)
+// class AActor*                  DestroyedActor                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AToolTip_Spec_Cycle_C::OnDestroyed_Event_1(class AActor* DestroyedActor)
 {
@@ -87,9 +87,9 @@ void AToolTip_Spec_Cycle_C::OnDestroyed_Event_1(class AActor* DestroyedActor)
 
 
 // Function ToolTip_Spec_Cycle.ToolTip_Spec_Cycle_C.ExecuteUbergraph_ToolTip_Spec_Cycle
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void AToolTip_Spec_Cycle_C::ExecuteUbergraph_ToolTip_Spec_Cycle(int EntryPoint)
 {

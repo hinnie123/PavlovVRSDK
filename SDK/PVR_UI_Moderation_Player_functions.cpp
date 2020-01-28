@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,9 +13,9 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function UI_Moderation_Player.UI_Moderation_Player_C.GetColorAndOpacity_4
-// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FLinearColor            ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// struct FLinearColor            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
 struct FLinearColor UUI_Moderation_Player_C::GetColorAndOpacity_4()
 {
@@ -36,8 +36,8 @@ struct FLinearColor UUI_Moderation_Player_C::GetColorAndOpacity_4()
 // Function UI_Moderation_Player.UI_Moderation_Player_C.OnMouseButtonDown
 // (BlueprintCosmetic, Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
-// struct FPointerEvent*          MouseEvent                     (ConstParm, Parm, OutParm, ReferenceParm)
+// struct FGeometry*              MyGeometry                     (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData)
+// struct FPointerEvent*          MouseEvent                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // struct FEventReply             ReturnValue                    (Parm, OutParm, ReturnParm)
 
 struct FEventReply UUI_Moderation_Player_C::OnMouseButtonDown(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
@@ -122,9 +122,9 @@ struct FSlateBrush UUI_Moderation_Player_C::GetBrush_1()
 
 
 // Function UI_Moderation_Player.UI_Moderation_Player_C.GetColorAndOpacity_3
-// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FLinearColor            ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// struct FLinearColor            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
 struct FLinearColor UUI_Moderation_Player_C::GetColorAndOpacity_3()
 {
@@ -143,9 +143,9 @@ struct FLinearColor UUI_Moderation_Player_C::GetColorAndOpacity_3()
 
 
 // Function UI_Moderation_Player.UI_Moderation_Player_C.GetColorAndOpacity_2
-// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FLinearColor            ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// struct FLinearColor            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
 struct FLinearColor UUI_Moderation_Player_C::GetColorAndOpacity_2()
 {
@@ -187,7 +187,7 @@ struct FSlateColor UUI_Moderation_Player_C::GetColorAndOpacity_1()
 // Function UI_Moderation_Player.UI_Moderation_Player_C.BndEvt__CheckBox_108_K2Node_ComponentBoundEvent_58_OnCheckBoxComponentStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// bool                           bIsChecked                     (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bIsChecked                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Moderation_Player_C::BndEvt__CheckBox_108_K2Node_ComponentBoundEvent_58_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
 {
@@ -205,9 +205,9 @@ void UUI_Moderation_Player_C::BndEvt__CheckBox_108_K2Node_ComponentBoundEvent_58
 
 
 // Function UI_Moderation_Player.UI_Moderation_Player_C.ExecuteUbergraph_UI_Moderation_Player
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Moderation_Player_C::ExecuteUbergraph_UI_Moderation_Player(int EntryPoint)
 {
@@ -227,8 +227,8 @@ void UUI_Moderation_Player_C::ExecuteUbergraph_UI_Moderation_Player(int EntryPoi
 // Function UI_Moderation_Player.UI_Moderation_Player_C.OnSelectionChanged__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           Selected                       (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 ID                             (Parm, ZeroConstructor)
+// bool                           Selected                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 ID                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_Moderation_Player_C::OnSelectionChanged__DelegateSignature(bool Selected, const struct FString& ID)
 {
@@ -249,8 +249,8 @@ void UUI_Moderation_Player_C::OnSelectionChanged__DelegateSignature(bool Selecte
 // Function UI_Moderation_Player.UI_Moderation_Player_C.OnMuteChanged__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           Mute                           (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 ID                             (Parm, ZeroConstructor)
+// bool                           Mute                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 ID                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_Moderation_Player_C::OnMuteChanged__DelegateSignature(bool Mute, const struct FString& ID)
 {

@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -12,12 +12,45 @@ namespace SDK
 //Enums
 //---------------------------------------------------------------------------
 
+// Enum MediaAssets.EMediaWebcamCaptureDeviceFilter
+enum class EMediaWebcamCaptureDeviceFilter : uint8_t
+{
+	DepthSensor                    = 0,
+	Front                          = 1,
+	Rear                           = 2,
+	Unknown                        = 3,
+	EMediaWebcamCaptureDeviceFilter_MAX = 4
+};
+
+
+// Enum MediaAssets.EMediaVideoCaptureDeviceFilter
+enum class EMediaVideoCaptureDeviceFilter : uint8_t
+{
+	Card                           = 0,
+	Software                       = 1,
+	Unknown                        = 2,
+	Webcam                         = 3,
+	EMediaVideoCaptureDeviceFilter_MAX = 4
+};
+
+
+// Enum MediaAssets.EMediaAudioCaptureDeviceFilter
+enum class EMediaAudioCaptureDeviceFilter : uint8_t
+{
+	Card                           = 0,
+	Microphone                     = 1,
+	Software                       = 2,
+	Unknown                        = 3,
+	EMediaAudioCaptureDeviceFilter_MAX = 4
+};
+
+
 // Enum MediaAssets.EMediaPlayerTrack
 enum class EMediaPlayerTrack : uint8_t
 {
 	Audio                          = 0,
-	Binary                         = 1,
-	Caption                        = 2,
+	Caption                        = 1,
+	Metadata                       = 2,
 	Script                         = 3,
 	Subtitle                       = 4,
 	Text                           = 5,
@@ -26,27 +59,27 @@ enum class EMediaPlayerTrack : uint8_t
 };
 
 
+// Enum MediaAssets.EMediaSoundChannels
+enum class EMediaSoundChannels : uint8_t
+{
+	Mono                           = 0,
+	Stereo                         = 1,
+	Surround                       = 2,
+	EMediaSoundChannels_MAX        = 3
+};
+
+
 
 //---------------------------------------------------------------------------
 //Script Structs
 //---------------------------------------------------------------------------
 
-// ScriptStruct MediaAssets.MediaPlayerOverlay
+// ScriptStruct MediaAssets.MediaCaptureDevice
 // 0x0028
-struct FMediaPlayerOverlay
+struct FMediaCaptureDevice
 {
-	bool                                               HasPosition;                                              // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
-	struct FVector2D                                   Position;                                                 // 0x0004(0x0008) (IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x000C(0x0004) MISSED OFFSET
-	struct FText                                       Text;                                                     // 0x0010(0x0018)
-};
-
-// ScriptStruct MediaAssets.MediaSubtitle
-// 0x0030
-struct FMediaSubtitle
-{
-	unsigned char                                      UnknownData00[0x30];                                      // 0x0000(0x0030) MISSED OFFSET
+	struct FText                                       DisplayName;                                              // 0x0000(0x0018) (BlueprintVisible, BlueprintReadOnly, Transient)
+	struct FString                                     URL;                                                      // 0x0018(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient)
 };
 
 }

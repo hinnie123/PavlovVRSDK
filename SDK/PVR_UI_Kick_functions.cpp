@@ -1,4 +1,4 @@
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -32,8 +32,8 @@ void UUI_Kick_C::Update()
 // Function UI_Kick.UI_Kick_C.UpdatePlayers
 // (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UUI_Moderation_Player_C*> Players                        (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<class APavlovPlayerState*> PlayerArray                    (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UUI_Moderation_Player_C*> Players                        (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class APavlovPlayerState*> PlayerArray                    (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UUI_Kick_C::UpdatePlayers(TArray<class UUI_Moderation_Player_C*>* Players, TArray<class APavlovPlayerState*>* PlayerArray)
 {
@@ -57,8 +57,8 @@ void UUI_Kick_C::UpdatePlayers(TArray<class UUI_Moderation_Player_C*>* Players, 
 // Function UI_Kick.UI_Kick_C.CreatePlayerWidgets
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UUI_Moderation_Player_C*> TargetArray                    (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// class UVerticalBox*            List                           (Parm, ZeroConstructor, IsPlainOldData)
+// TArray<class UUI_Moderation_Player_C*> TargetArray                    (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// class UVerticalBox*            List                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 
 void UUI_Kick_C::CreatePlayerWidgets(class UVerticalBox* List, TArray<class UUI_Moderation_Player_C*>* TargetArray)
 {
@@ -98,8 +98,8 @@ void UUI_Kick_C::Construct()
 // Function UI_Kick.UI_Kick_C.OnPlayerWidgetSelectionChanged
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           Selected                       (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 ID                             (Parm, ZeroConstructor)
+// bool                           Selected                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 ID                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor)
 
 void UUI_Kick_C::OnPlayerWidgetSelectionChanged(bool Selected, const struct FString& ID)
 {
@@ -169,9 +169,9 @@ void UUI_Kick_C::BndEvt__VoteButton_K2Node_ComponentBoundEvent_33_OnButtonClicke
 
 
 // Function UI_Kick.UI_Kick_C.ExecuteUbergraph_UI_Kick
-// ()
+// (Final)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 
 void UUI_Kick_C::ExecuteUbergraph_UI_Kick(int EntryPoint)
 {

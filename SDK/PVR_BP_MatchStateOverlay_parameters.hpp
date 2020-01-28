@@ -1,6 +1,6 @@
 #pragma once
 
-// PavlovVR (0.40.0) SDK
+// PavlovVR (Dumped by Hinnie) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -17,9 +17,9 @@ namespace SDK
 // Function BP_MatchStateOverlay.BP_MatchStateOverlay_C.OffsetLayer
 struct ABP_MatchStateOverlay_C_OffsetLayer_Params
 {
-	struct FVector                                     Offset;                                                   // (Parm, IsPlainOldData)
-	class USceneComponent*                             Overlay;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	float                                              Yaw;                                                      // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     Offset;                                                   // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+	class USceneComponent*                             Overlay;                                                  // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+	float                                              Yaw;                                                      // (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BP_MatchStateOverlay.BP_MatchStateOverlay_C.UserConstructionScript
