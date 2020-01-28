@@ -1,5 +1,5 @@
 # PavlovVRSDK
-SDK for Pavlov VR 0.40.0
+SDK for Pavlov VR 0.60.12
 
 Useful game info:
 ```
@@ -27,8 +27,8 @@ WorldToScreen:
 48 89 5C 24 ? 48 89 74 24 ? 57 48 81 EC ? ? ? ? 41 0F B6 F9
 \x48\x89\x5C\x24\x00\x48\x89\x74\x24\x00\x57\x48\x81\xEC\x00\x00\x00\x00\x41\x0F\xB6\xF9 xxxx?xxxx?xxxx????xxxx
 
-ProcessEvent: 58
-CreateDefaultObject: 95
+ProcessEvent: 64
+CreateDefaultObject: 103
 ```
 
 Useful files:
