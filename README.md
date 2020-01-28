@@ -29,6 +29,24 @@ WorldToScreen:
 
 ProcessEvent: 64
 CreateDefaultObject: 103
+
+void init_sdk()
+{
+	const auto gname_addr = utils::find_pattern("48 8B 05 ? ? ? ? 48 85 C0 75 5F");
+	auto offset = *(uint32_t*)(gname_addr + 3);
+	SDK::FName::GNames = (SDK::TNameEntryArray*)(*(uintptr_t*)(gname_addr + 7 + offset));
+
+	const auto objects_addr = utils::find_pattern("4C 8B 15 ? ? ? ? 8D 43 01");
+	offset = *(int32_t*)(objects_addr + 3);
+	SDK::TUObjectArray::g_objects = (uintptr_t)(objects_addr + 7 + offset) - (uintptr_t)GetModuleHandleA(0);
+}
+
+Loop actors like so:
+auto actors = GWorld->PersistentLevel->GetActors();
+for (size_t i = 0; i < actors.Num(); ++i)
+{
+	SDK::AActor* actor = actors[i];
+}
 ```
 
 Useful files:
